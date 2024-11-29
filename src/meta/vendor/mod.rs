@@ -1,0 +1,143 @@
+use eyre::Result;
+
+use super::JavaMetaData;
+
+pub mod adoptopenjdk;
+pub mod corretto;
+pub mod temurin;
+pub mod zulu;
+
+/// Represents a vendor of Java distributions
+///
+/// A vendor is responsible for fetching the metadata of all available Java versions
+///
+pub trait Vendor {
+    /// Returns the name of the vendor
+    fn get_name(&self) -> String;
+
+    /// Fetches the metadata of all available Java versions for a vendor
+    fn fetch(&self) -> Result<Vec<JavaMetaData>>;
+}
+
+/// Returns the file extension of a package which is either `dmg`, `msi`, `tar.gz` or `zip`
+fn get_extension(package_name: &str) -> String {
+    let re = regex::Regex::new(r"^.*\.(dmg|msi|tar\.gz|zip)$").unwrap();
+    re.replace(package_name, "$1").to_string()
+}
+
+/// Normalizes the architecture string to a common format
+fn normalize_architecture(architecture: &str) -> String {
+    match architecture {
+        "amd64" | "x64" | "x86_64" | "x86-64" => "x86_64".to_string(),
+        "x32" | "x86" | "x86_32" | "x86-32" | "i386" | "i586" | "i686" => "i686".to_string(),
+        "aarch64" | "arm64" => "aarch64".to_string(),
+        "arm" | "arm32" | "armv7" | "aarch32sf" => "arm".to_string(),
+        "arm32-vfp-hflt" | "aarch32hf" => "arm32-vfp-hflt".to_string(),
+        "ppc64" => "ppc64".to_string(),
+        "ppc64le" => "ppc64le".to_string(),
+        "s390" => "s390".to_string(),
+        "s390x" => "s390x".to_string(),
+        "sparcv9" => "sparc".to_string(),
+        "riscv64" => "riscv64".to_string(),
+        _ => format!("unknown-arch-{architecture}"),
+    }
+}
+
+/// Normalizes the OS string to a common format
+pub fn normalize_os(os: &str) -> String {
+    match os.to_lowercase().as_str() {
+        "linux" | "alpine-linux" => "linux".to_string(),
+        "mac" | "macos" | "macosx" | "osx" | "darwin" => "macosx".to_string(),
+        "win" | "windows" => "windows".to_string(),
+        "solaris" => "solaris".to_string(),
+        "aix" => "aix".to_string(),
+        _ => format!("unknown-os-{os}"),
+    }
+}
+
+/// Normalizes a major only version string to a semver compatible format
+/// Examples:
+/// ```plaintext
+/// 18 -> 18.0.0
+/// 18-beta -> 18.0.0-beta
+/// 18+build -> 18.0.0+build
+/// ```
+pub fn normalize_version(version: &str) -> String {
+    let re = regex::Regex::new(r"^([0-9]+)([-+].+)?$").unwrap();
+    if let Some(caps) = re.captures(version) {
+        let major = caps.get(1).map_or("", |m| m.as_str());
+        let suffix = caps.get(2).map_or("", |m| m.as_str());
+        if suffix.is_empty() {
+            format!("{}.0.0", major)
+        } else {
+            format!("{}.0.0{}", major, suffix)
+        }
+    } else {
+        version.to_string()
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_normalize_architecture() {
+        assert_eq!(normalize_architecture("amd64"), "x86_64");
+        assert_eq!(normalize_architecture("x64"), "x86_64");
+        assert_eq!(normalize_architecture("x86_64"), "x86_64");
+        assert_eq!(normalize_architecture("x86-64"), "x86_64");
+        assert_eq!(normalize_architecture("x32"), "i686");
+        assert_eq!(normalize_architecture("x86"), "i686");
+        assert_eq!(normalize_architecture("x86_32"), "i686");
+        assert_eq!(normalize_architecture("x86-32"), "i686");
+        assert_eq!(normalize_architecture("i386"), "i686");
+        assert_eq!(normalize_architecture("i586"), "i686");
+        assert_eq!(normalize_architecture("i686"), "i686");
+        assert_eq!(normalize_architecture("aarch64"), "aarch64");
+        assert_eq!(normalize_architecture("arm64"), "aarch64");
+        assert_eq!(normalize_architecture("arm"), "arm");
+        assert_eq!(normalize_architecture("arm32"), "arm");
+        assert_eq!(normalize_architecture("armv7"), "arm");
+        assert_eq!(normalize_architecture("aarch32sf"), "arm");
+        assert_eq!(normalize_architecture("arm32-vfp-hflt"), "arm32-vfp-hflt");
+        assert_eq!(normalize_architecture("aarch32hf"), "arm32-vfp-hflt");
+        assert_eq!(normalize_architecture("ppc64"), "ppc64");
+        assert_eq!(normalize_architecture("ppc64le"), "ppc64le");
+        assert_eq!(normalize_architecture("s390"), "s390");
+        assert_eq!(normalize_architecture("s390x"), "s390x");
+        assert_eq!(normalize_architecture("sparcv9"), "sparc");
+        assert_eq!(normalize_architecture("riscv64"), "riscv64");
+        assert_eq!(normalize_architecture("unknown"), "unknown-arch-unknown");
+    }
+
+    #[test]
+    fn test_normalize_os() {
+        assert_eq!(normalize_os("linux"), "linux");
+        assert_eq!(normalize_os("alpine-linux"), "linux");
+        assert_eq!(normalize_os("mac"), "macosx");
+        assert_eq!(normalize_os("macos"), "macosx");
+        assert_eq!(normalize_os("macosx"), "macosx");
+        assert_eq!(normalize_os("osx"), "macosx");
+        assert_eq!(normalize_os("darwin"), "macosx");
+        assert_eq!(normalize_os("win"), "windows");
+        assert_eq!(normalize_os("windows"), "windows");
+        assert_eq!(normalize_os("solaris"), "solaris");
+        assert_eq!(normalize_os("aix"), "aix");
+        assert_eq!(normalize_os("unknown"), "unknown-os-unknown");
+    }
+
+    #[test]
+    fn test_normalize_version() {
+        assert_eq!(normalize_version("1"), "1.0.0");
+        assert_eq!(normalize_version("1-beta"), "1.0.0-beta");
+        assert_eq!(normalize_version("1+build"), "1.0.0+build");
+        assert_eq!(normalize_version("1.2"), "1.2");
+        assert_eq!(normalize_version("1.2.3"), "1.2.3");
+        assert_eq!(normalize_version("1.2-beta"), "1.2-beta");
+        assert_eq!(normalize_version("1.2+build"), "1.2+build");
+        assert_eq!(normalize_version("1.2.3-beta"), "1.2.3-beta");
+        assert_eq!(normalize_version("1.2.3+build"), "1.2.3+build");
+        assert_eq!(normalize_version("invalid"), "invalid");
+    }
+}
