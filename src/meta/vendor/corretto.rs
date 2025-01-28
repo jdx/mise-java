@@ -5,7 +5,7 @@ use crate::{
 use comrak::{markdown_to_html, ComrakOptions};
 use eyre::Result;
 use indoc::formatdoc;
-use log::error;
+use log::{debug, error};
 use scraper::{Html, Selector};
 use xx::regex;
 
@@ -20,6 +20,7 @@ impl Vendor for Corretto {
 
     fn fetch_metadata(&self, meta_data: &mut Vec<JavaMetaData>) -> Result<()> {
         for version in &["8", "11", "jdk", "17", "18", "19", "20", "21", "22", "23"] {
+            debug!("[corretto] fetching releases for version: {version}");
             let repo = format!("corretto/corretto-{}", version);
             let releases = github::list_releases(repo.as_str())?;
 
@@ -123,17 +124,22 @@ fn body_to_html(body: &str) -> String {
 }
 
 fn meta_from_name(name: &str) -> Result<(String, String, String)> {
+    debug!("[corretto] parsing name: {}", name);
     let capture = regex!(r".*?-corretto(-devel|-jdk)?[\-_]([\w\d._]+(-\d)?)-?(alpine-linux|linux|macosx|windows)?[._\-](amd64|arm64|armv7|aarch64|x64|i386|x86|x86_64)(-(jdk|jre|musl-headless))?\.(.*)")
         .captures(name)
         .ok_or_else(|| eyre::eyre!("Regular expression failed for name: {}", name))?;
 
-    let mut os = capture.get(4).unwrap().as_str().to_string();
     let arch = capture.get(5).unwrap().as_str().to_string();
     let ext = capture.get(8).unwrap().as_str().to_string();
-    os = match ext.as_str() {
-        "rpm" => "linux".to_string(),
-        "deb" => "linux".to_string(),
-        _ => os,
+    let os = match capture.get(4) {
+        Some(os) => os.as_str().to_string(),
+        None => {
+            if ext == "rpm" || ext == "deb" {
+                "linux".to_string()
+            } else {
+                "unknown".to_string()
+            }
+        }
     };
 
     Ok((os, arch, ext))
