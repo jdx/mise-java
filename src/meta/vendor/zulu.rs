@@ -29,7 +29,7 @@ impl Vendor for Zulu {
               &page={page}",
               page = page, page_size = page_size,
             };
-            debug!("Fetching {}", api_url);
+            debug!("[zulu] fetching packages at {}", api_url);
             match HTTP.get_json::<Vec<Package>>(api_url.as_str()) {
                 Ok(packages) => {
                     all_packages.extend(packages);

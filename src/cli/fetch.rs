@@ -1,5 +1,7 @@
+use std::thread;
+
 use eyre::Result;
-use log::info;
+use log::{error, info};
 use rusqlite::params;
 
 use crate::meta::{self, vendor::Vendor};
@@ -10,28 +12,56 @@ pub struct Fetch {}
 
 impl Fetch {
     pub fn run(self) -> Result<()> {
-        // TODO: fetch data from all vendors
-        // TODO: parallelize fetching
+        // TODO: implement all vendors
         let vendors: Vec<Box<dyn Vendor>> = vec![
-            // Box::new(meta::vendor::adoptopenjdk::AdoptOpenJDK {}),
-            // Box::new(meta::vendor::corretto::Corretto {}),
+            Box::new(meta::vendor::adoptopenjdk::AdoptOpenJDK {}),
+            Box::new(meta::vendor::corretto::Corretto {}),
             Box::new(meta::vendor::microsoft::Microsoft {}),
-            // Box::new(meta::vendor::temurin::Temurin {}),
-            // Box::new(meta::vendor::zulu::Zulu {}),
+            Box::new(meta::vendor::temurin::Temurin {}),
+            Box::new(meta::vendor::zulu::Zulu {}),
         ];
 
+        info!("fetching all vendors");
+        let start = std::time::Instant::now();
+        let mut tasks = vec![];
         for vendor in vendors {
-            let name = vendor.get_name();
-            info!("[{}] fetching data", name);
-            let meta_data = vendor.fetch()?;
+            let task = thread::Builder::new()
+                .name(vendor.get_name())
+                .spawn(move || {
+                    let name = vendor.get_name();
+                    info!("[{}] fetching meta data", name);
+                    let meta_data = match vendor.fetch() {
+                        Ok(data) => data,
+                        Err(err) => {
+                            error!("[{}] failed to fetch meta data: {}", name, err);
+                            return;
+                        }
+                    };
 
-            // Write to JSON file
-            info!("[{}] writing to JSON", name);
-            store_json(&meta_data, &format!("data/{name}.json"))?;
-            info!("[{}] writing to SQLite", name);
-            // store_sqlite(&meta_data, "data/meta.sqlite3")?;
+                    // Write to JSON file
+                    info!("[{}] writing to JSON", name);
+                    match store_json(&meta_data, &format!("data/{name}.json")) {
+                        Ok(_) => {}
+                        Err(err) => {
+                            error!("[{}] failed to write to JSON: {}", name, err);
+                            return;
+                        }
+                    };
+                    // info!("[{}] writing to SQLite", name);
+                    // store_sqlite(&meta_data, "data/meta.sqlite3")?;
+                })
+                .unwrap();
+            tasks.push(task);
         }
 
+        for task in tasks {
+            task.join().unwrap();
+        }
+
+        info!(
+            "fetched all vendors in {:.2} seconds",
+            start.elapsed().as_secs_f32()
+        );
         Ok(())
     }
 }

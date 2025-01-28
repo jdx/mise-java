@@ -17,8 +17,9 @@ impl Vendor for Temurin {
     fn fetch_metadata(&self, meta_data: &mut Vec<JavaMetaData>) -> Result<()> {
         // get available releases
         // https://api.adoptium.net/v3/info/available_releases
-        let available_releases = HTTP
-            .get_json::<AvailableReleases>("https://api.adoptium.net/v3/info/available_releases")?;
+        let api_releases_url = "https://api.adoptium.net/v3/info/available_releases";
+        debug!("[temurin] fetching releases [{}]", api_releases_url);
+        let available_releases = HTTP.get_json::<AvailableReleases>(&api_releases_url)?;
 
         // get meta data for a specific release
         // https://api.adoptium.net/v3/assets/feature_releases/${release}/ga?page=${page}&page_size=20&project=jdk&sort_order=ASC&vendor=adoptium

@@ -1,5 +1,5 @@
 use eyre::Result;
-use log::{debug, info};
+use log::info;
 
 use super::JavaMetaData;
 
@@ -13,20 +13,18 @@ pub mod zulu;
 ///
 /// A vendor is responsible for fetching the metadata of all available Java versions
 ///
-pub trait Vendor {
+pub trait Vendor: Send + Sync {
     /// Returns the name of the vendor
     fn get_name(&self) -> String;
 
     /// Fetches the metadata of all available Java versions for a vendor
     fn fetch(&self) -> Result<Vec<JavaMetaData>> {
-        debug!("[{}] fetching available releases", self.get_name());
-        let start = std::time::Instant::now();
-
         let mut meta_data = Vec::new();
+        let start = std::time::Instant::now();
         self.fetch_metadata(&mut meta_data)?;
 
         info!(
-            "[{}] fetched {} entries in {}",
+            "[{}] fetched {} entries in {:.2} seconds",
             self.get_name(),
             meta_data.len(),
             start.elapsed().as_secs_f32()
@@ -38,9 +36,9 @@ pub trait Vendor {
     fn fetch_metadata(&self, metadata: &mut Vec<JavaMetaData>) -> Result<()>;
 }
 
-/// Returns the file extension of a package which is either `dmg`, `msi`, `tar.gz` or `zip`
+/// Returns the file extension of a package which is either `deb`, `dmg`, `msi`, `pkg`, `tar.gz` or `zip`
 fn get_extension(package_name: &str) -> String {
-    let re = regex::Regex::new(r"^.*\.(dmg|msi|tar\.gz|zip)$").unwrap();
+    let re = regex::Regex::new(r"^.*\.(dep|dmg|msi|pkg|tar\.gz|zip)$").unwrap();
     re.replace(package_name, "$1").to_string()
 }
 
@@ -101,6 +99,15 @@ mod tests {
     use super::*;
 
     #[test]
+    fn test_get_extension() {
+        assert_eq!(get_extension("jdk-8u292-linux-x64.tar.gz"), "tar.gz");
+        assert_eq!(get_extension("jdk-8u292-linux-x64.pkg"), "pkg");
+        assert_eq!(get_extension("jdk-8u292-windows-x64.msi"), "msi");
+        assert_eq!(get_extension("jdk-8u292-windows-x64.zip"), "zip");
+        assert_eq!(get_extension("jdk-8u292-macosx-x64.dmg"), "dmg");
+    }
+
+    #[test]
     fn test_normalize_architecture() {
         assert_eq!(normalize_architecture("amd64"), "x86_64");
         assert_eq!(normalize_architecture("x64"), "x86_64");
@@ -133,6 +140,7 @@ mod tests {
     #[test]
     fn test_normalize_os() {
         assert_eq!(normalize_os("linux"), "linux");
+        assert_eq!(normalize_os("alpine"), "linux");
         assert_eq!(normalize_os("alpine-linux"), "linux");
         assert_eq!(normalize_os("mac"), "macosx");
         assert_eq!(normalize_os("macos"), "macosx");

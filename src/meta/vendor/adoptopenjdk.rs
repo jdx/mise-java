@@ -18,9 +18,10 @@ impl Vendor for AdoptOpenJDK {
     fn fetch_metadata(&self, meta_data: &mut Vec<JavaMetaData>) -> Result<()> {
         // get available releases
         // https://api.adoptium.net/v3/info/available_releases
-        let available_releases = HTTP.get_json::<AvailableReleases>(
-            "https://api.adoptopenjdk.net/v3/info/available_releases",
-        )?;
+
+        let api_releases_url = "https://api.adoptium.net/v3/info/available_releases";
+        debug!("[adoptopenjdk] fetching releases [{}]", api_releases_url);
+        let available_releases = HTTP.get_json::<AvailableReleases>(api_releases_url)?;
 
         // get meta data for a specific release
         // https://api.adoptium.net/v3/assets/feature_releases/${release}/ga?page=${page}&page_size=20&project=jdk&sort_order=ASC&vendor=adoptium
@@ -30,7 +31,7 @@ impl Vendor for AdoptOpenJDK {
             let page_size = 1000;
 
             loop {
-                let api_url = formatdoc! {"https://api.adoptopenjdk.net/v3/assets/feature_releases/{release}/ga
+                let api_release_url = formatdoc! {"https://api.adoptopenjdk.net/v3/assets/feature_releases/{release}/ga
                    ?page={page}
                    &page_size={page_size}
                    &project=jdk
@@ -43,7 +44,7 @@ impl Vendor for AdoptOpenJDK {
                     release, page
                 );
 
-                match HTTP.get_json::<Vec<ReleaseGA>>(api_url.as_str()) {
+                match HTTP.get_json::<Vec<ReleaseGA>>(api_release_url.as_str()) {
                     Ok(resp) => {
                         resp.iter()
                             .for_each(|release| ga_releases.push(release.clone()));
