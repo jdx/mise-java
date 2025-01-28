@@ -1,12 +1,11 @@
 use crate::{
-    debug,
     github::{self, GitHubRelease},
     meta::JavaMetaData,
 };
 use comrak::{markdown_to_html, ComrakOptions};
 use eyre::Result;
 use indoc::formatdoc;
-use log::{error, info};
+use log::error;
 use scraper::{Html, Selector};
 use xx::regex;
 
@@ -19,11 +18,7 @@ impl Vendor for Corretto {
         "corretto".to_string()
     }
 
-    fn fetch(&self) -> Result<Vec<JavaMetaData>> {
-        debug!("[corretto] fetching available releases");
-
-        let mut meta_data = Vec::new();
-
+    fn fetch_metadata(&self, meta_data: &mut Vec<JavaMetaData>) -> Result<()> {
         for version in &["8", "11", "jdk", "17", "18", "19", "20", "21", "22", "23"] {
             let repo = format!("corretto/corretto-{}", version);
             let releases = github::list_releases(repo.as_str())?;
@@ -32,9 +27,7 @@ impl Vendor for Corretto {
                 meta_data.extend(map_release(&release));
             }
         }
-
-        info!("[corretto] fetched {} entries", meta_data.len());
-        Ok(meta_data)
+        Ok(())
     }
 }
 
@@ -137,14 +130,10 @@ fn meta_from_name(name: &str) -> Result<(String, String, String)> {
     let mut os = capture.get(4).unwrap().as_str().to_string();
     let arch = capture.get(5).unwrap().as_str().to_string();
     let ext = capture.get(8).unwrap().as_str().to_string();
-    match ext.as_str() {
-        "rpm" => {
-            os = "linux".to_string();
-        }
-        "deb" => {
-            os = "linux".to_string();
-        }
-        _ => (),
+    os = match ext.as_str() {
+        "rpm" => "linux".to_string(),
+        "deb" => "linux".to_string(),
+        _ => os,
     };
 
     Ok((os, arch, ext))

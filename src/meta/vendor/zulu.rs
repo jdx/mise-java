@@ -1,7 +1,7 @@
 use eyre::Result;
 use indoc::formatdoc;
 use itertools::Itertools;
-use log::{debug, info};
+use log::debug;
 use serde::{Deserialize, Serialize};
 
 use crate::{http::HTTP, meta::JavaMetaData};
@@ -15,9 +15,7 @@ impl Vendor for Zulu {
         "zulu".to_string()
     }
 
-    fn fetch(&self) -> Result<Vec<JavaMetaData>> {
-        debug!("[zulu] fetching available releases");
-
+    fn fetch_metadata(&self, meta_data: &mut Vec<JavaMetaData>) -> Result<()> {
         let mut page = 1;
         let page_size = 1000;
         let mut all_packages: Vec<Package> = Vec::new();
@@ -42,10 +40,9 @@ impl Vendor for Zulu {
             }
         }
 
-        let meta_data = map(all_packages);
-        info!("[zulu] fetched {} entries", meta_data.len());
+        meta_data.extend(map(all_packages));
 
-        Ok(meta_data)
+        Ok(())
     }
 }
 

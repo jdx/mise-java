@@ -18,7 +18,6 @@ pub enum Commands {
 impl Commands {
     pub fn run(self) -> Result<()> {
         match self {
-            #[cfg(debug_assertions)]
             Self::Fetch(cmd) => cmd.run(),
             Self::Export(cmd) => cmd.run(),
             Self::Version(cmd) => cmd.run(),

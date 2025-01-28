@@ -1,0 +1,107 @@
+use crate::{http::HTTP, meta::JavaMetaData};
+use eyre::Result;
+use log::{debug, error};
+use scraper::{ElementRef, Html, Selector};
+use xx::regex;
+
+use super::{normalize_architecture, normalize_os, normalize_version, Vendor};
+
+pub struct Microsoft {}
+
+impl Vendor for Microsoft {
+    fn get_name(&self) -> String {
+        "microsoft".to_string()
+    }
+
+    fn fetch_metadata(&self, meta_data: &mut Vec<JavaMetaData>) -> Result<()> {
+        let urls = vec![
+            "https://docs.microsoft.com/en-us/java/openjdk/download",
+            "https://learn.microsoft.com/en-us/java/openjdk/older-releases",
+        ];
+
+        for url in urls {
+            let releases_html = HTTP.get_text(url)?;
+            let document = Html::parse_document(&releases_html);
+
+            let a_selector = Selector::parse("a:is([href$='.tar.gz'], [href$='.zip'], [href$='.msi'],[href$='.dmg'],[href$='.pkg'])").unwrap();
+            for a in document.select(&a_selector) {
+                // skip debug symbols releases
+                let name = a.text().collect::<String>();
+                if name.contains("-debugsymbols-") || name.contains("-sources-") {
+                    continue;
+                }
+                let release = match map_release(&a) {
+                    Ok(release) => release,
+                    Err(e) => {
+                        // older release might contain unsupported versions
+                        if url.contains("older-releases") {
+                            debug!("[microsoft] error parsing release: {}", name);
+                        } else {
+                            error!("[microsoft] error parsing release: {:?}", e);
+                        }
+                        continue;
+                    }
+                };
+                meta_data.push(release);
+            }
+        }
+
+        Ok(())
+    }
+}
+
+fn map_release(a: &ElementRef<'_>) -> Result<JavaMetaData> {
+    let href = a
+        .value()
+        .attr("href")
+        .ok_or_else(|| eyre::eyre!("No href found"))?;
+    let name = a.text().collect::<String>();
+    let (version, os, arch, ext) = match meta_from_name(&name) {
+        Ok((version, os, arch, ext)) => (version, os, arch, ext),
+        Err(e) => return Err(e),
+    };
+
+    let sha256 = match HTTP.get_text(format!("{}.sha256sum.txt", &href)) {
+        Ok(sha) => sha.split_whitespace().next().unwrap().to_string(),
+        Err(e) => {
+            error!("[microsoft] error fetching sha256sum for {name}: {e}");
+            "".to_string()
+        }
+    };
+
+    Ok(JavaMetaData {
+        architecture: normalize_architecture(&arch),
+        features: if os == "alpine" {
+            Some(vec!["musl".to_string()])
+        } else {
+            Some(vec![])
+        },
+        filename: name.to_string(),
+        file_type: ext,
+        image_type: "jdk".to_string(),
+        java_version: normalize_version(&version),
+        jvm_impl: "hotspot".to_string(),
+        os: normalize_os(&os),
+        release_type: "ga".to_string(),
+        sha256,
+        url: href.to_string(),
+        version: normalize_version(&version),
+        vendor: "microsoft".to_string(),
+        ..Default::default()
+    })
+}
+
+fn meta_from_name(name: &str) -> Result<(String, String, String, String)> {
+    let capture = regex!(
+        r"^microsoft-jdk-([0-9+.]{3,})-?.*-(alpine|linux|macos|macOS|windows)-(x64|aarch64)\.(.*)$"
+    )
+    .captures(name)
+    .ok_or_else(|| eyre::eyre!("Regular expression did not match name: {}", name))?;
+
+    let version = capture.get(1).unwrap().as_str().to_string();
+    let os = capture.get(2).unwrap().as_str().to_string();
+    let arch = capture.get(3).unwrap().as_str().to_string();
+    let ext = capture.get(4).unwrap().as_str().to_string();
+
+    Ok((version, os, arch, ext))
+}

@@ -1,6 +1,6 @@
 use eyre::Result;
 use indoc::formatdoc;
-use log::{debug, info};
+use log::debug;
 use serde::{Deserialize, Serialize};
 
 use crate::{http::HTTP, meta::JavaMetaData};
@@ -14,8 +14,7 @@ impl Vendor for Temurin {
         "temurin".to_string()
     }
 
-    fn fetch(&self) -> Result<Vec<JavaMetaData>> {
-        debug!("[temurin] fetching available releases");
+    fn fetch_metadata(&self, meta_data: &mut Vec<JavaMetaData>) -> Result<()> {
         // get available releases
         // https://api.adoptium.net/v3/info/available_releases
         let available_releases = HTTP
@@ -38,7 +37,6 @@ impl Vendor for Temurin {
                      page = page, page_size = page_size, release = release,
                 };
                 debug!("[temurin] fetching release [{}] page [{}]", release, page);
-                // TODO replace with HTTP::get
                 match HTTP.get_json::<Vec<ReleaseGA>>(api_url.as_str()) {
                     Ok(resp) => {
                         resp.iter()
@@ -51,15 +49,14 @@ impl Vendor for Temurin {
             }
         }
 
-        let meta_data: Vec<JavaMetaData> = map(ga_releases)
-            .iter()
-            .filter(|m| !vec!["sbom"].contains(&m.image_type.as_str()))
-            .cloned()
-            .collect();
+        meta_data.extend(
+            map(ga_releases)
+                .iter()
+                .filter(|m| !vec!["sbom"].contains(&m.image_type.as_str()))
+                .cloned(),
+        );
 
-        info!("[temurin] fetched {} entries", meta_data.len());
-
-        Ok(meta_data)
+        Ok(())
     }
 }
 

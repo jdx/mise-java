@@ -1,9 +1,11 @@
 use eyre::Result;
+use log::{debug, info};
 
 use super::JavaMetaData;
 
 pub mod adoptopenjdk;
 pub mod corretto;
+pub mod microsoft;
 pub mod temurin;
 pub mod zulu;
 
@@ -16,7 +18,24 @@ pub trait Vendor {
     fn get_name(&self) -> String;
 
     /// Fetches the metadata of all available Java versions for a vendor
-    fn fetch(&self) -> Result<Vec<JavaMetaData>>;
+    fn fetch(&self) -> Result<Vec<JavaMetaData>> {
+        debug!("[{}] fetching available releases", self.get_name());
+        let start = std::time::Instant::now();
+
+        let mut meta_data = Vec::new();
+        self.fetch_metadata(&mut meta_data)?;
+
+        info!(
+            "[{}] fetched {} entries in {}",
+            self.get_name(),
+            meta_data.len(),
+            start.elapsed().as_secs_f32()
+        );
+        Ok(meta_data)
+    }
+
+    /// Fetches the metadata of all available Java versions for a vendor
+    fn fetch_metadata(&self, metadata: &mut Vec<JavaMetaData>) -> Result<()>;
 }
 
 /// Returns the file extension of a package which is either `dmg`, `msi`, `tar.gz` or `zip`
@@ -46,7 +65,7 @@ fn normalize_architecture(architecture: &str) -> String {
 /// Normalizes the OS string to a common format
 pub fn normalize_os(os: &str) -> String {
     match os.to_lowercase().as_str() {
-        "linux" | "alpine-linux" => "linux".to_string(),
+        "linux" | "alpine" | "alpine-linux" => "linux".to_string(),
         "mac" | "macos" | "macosx" | "osx" | "darwin" => "macosx".to_string(),
         "win" | "windows" => "windows".to_string(),
         "solaris" => "solaris".to_string(),

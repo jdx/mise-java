@@ -11,9 +11,11 @@ pub struct Fetch {}
 impl Fetch {
     pub fn run(self) -> Result<()> {
         // TODO: fetch data from all vendors
+        // TODO: parallelize fetching
         let vendors: Vec<Box<dyn Vendor>> = vec![
             // Box::new(meta::vendor::adoptopenjdk::AdoptOpenJDK {}),
-            Box::new(meta::vendor::corretto::Corretto {}),
+            // Box::new(meta::vendor::corretto::Corretto {}),
+            Box::new(meta::vendor::microsoft::Microsoft {}),
             // Box::new(meta::vendor::temurin::Temurin {}),
             // Box::new(meta::vendor::zulu::Zulu {}),
         ];

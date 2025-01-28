@@ -3,7 +3,7 @@ use std::vec;
 use crate::{http::HTTP, meta::JavaMetaData};
 use eyre::Result;
 use indoc::formatdoc;
-use log::{debug, info};
+use log::debug;
 use serde::{Deserialize, Serialize};
 
 use super::{get_extension, normalize_architecture, normalize_os, normalize_version, Vendor};
@@ -15,8 +15,7 @@ impl Vendor for AdoptOpenJDK {
         "adoptopenjdk".to_string()
     }
 
-    fn fetch(&self) -> Result<Vec<JavaMetaData>> {
-        debug!("[adoptopenjdk] fetching available releases");
+    fn fetch_metadata(&self, meta_data: &mut Vec<JavaMetaData>) -> Result<()> {
         // get available releases
         // https://api.adoptium.net/v3/info/available_releases
         let available_releases = HTTP.get_json::<AvailableReleases>(
@@ -56,15 +55,14 @@ impl Vendor for AdoptOpenJDK {
             }
         }
 
-        let meta_data: Vec<JavaMetaData> = map(ga_releases)
-            .iter()
-            .filter(|m| !vec!["sbom"].contains(&m.image_type.as_str()))
-            .cloned()
-            .collect();
+        meta_data.extend(
+            map(ga_releases)
+                .iter()
+                .filter(|m| !vec!["sbom"].contains(&m.image_type.as_str()))
+                .cloned(),
+        );
 
-        info!("[adoptopenjdk] fetched {} entries", meta_data.len());
-
-        Ok(meta_data)
+        Ok(())
     }
 }
 
