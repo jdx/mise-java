@@ -8,7 +8,7 @@ use eyre::Result;
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct GitHubRelease {
     pub assets: Vec<GitHubAsset>,
-    pub body: String,
+    pub body: Option<String>,
     pub draft: bool,
     pub prerelease: bool,
     pub tag_name: String,

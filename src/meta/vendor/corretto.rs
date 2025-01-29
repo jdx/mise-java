@@ -35,8 +35,11 @@ impl Vendor for Corretto {
 fn map_release(release: &GitHubRelease) -> Vec<JavaMetaData> {
     let mut metadata = Vec::new();
     let version = release.tag_name.clone();
+    let html = match release.body {
+        Some(ref body) => body_to_html(body.as_str()),
+        None => return metadata,
+    };
 
-    let html = body_to_html(release.body.as_str());
     let fragment = Html::parse_fragment(&html);
     let table_row_selector = Selector::parse("table tr").unwrap();
     for table_row in fragment.select(&table_row_selector).skip(1) {
@@ -98,7 +101,7 @@ fn map_release(release: &GitHubRelease) -> Vec<JavaMetaData> {
                     }
                     if let Some(code) = code_iter.next() {
                         let sha256 = code.text().collect::<String>();
-                        metadata_entry.sha256 = sha256;
+                        metadata_entry.sha256 = Some(sha256);
                     };
                 }
                 _ => (),

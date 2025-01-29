@@ -62,10 +62,10 @@ fn map_release(a: &ElementRef<'_>) -> Result<JavaMetaData> {
     };
 
     let sha256 = match HTTP.get_text(format!("{}.sha256sum.txt", &href)) {
-        Ok(sha) => sha.split_whitespace().next().unwrap().to_string(),
+        Ok(sha) => sha.split_whitespace().next().map(|s| s.to_string()),
         Err(e) => {
             error!("[microsoft] error fetching sha256sum for {name}: {e}");
-            "".to_string()
+            None
         }
     };
 

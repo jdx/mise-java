@@ -17,7 +17,7 @@ pub struct JavaMetaData {
     pub release_type: String,
     pub sha1: Option<String>,
     pub sha1_file: Option<String>,
-    pub sha256: String,
+    pub sha256: Option<String>,
     pub sha256_file: Option<String>,
     pub sha512: Option<String>,
     pub sha512_file: Option<String>,

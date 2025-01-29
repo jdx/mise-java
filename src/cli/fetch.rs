@@ -2,7 +2,6 @@ use std::thread;
 
 use eyre::Result;
 use log::{error, info};
-use rusqlite::params;
 
 use crate::meta::{self, vendor::Vendor};
 
@@ -16,6 +15,7 @@ impl Fetch {
         let vendors: Vec<Box<dyn Vendor>> = vec![
             Box::new(meta::vendor::adoptopenjdk::AdoptOpenJDK {}),
             Box::new(meta::vendor::corretto::Corretto {}),
+            Box::new(meta::vendor::liberica::Liberica {}),
             Box::new(meta::vendor::microsoft::Microsoft {}),
             Box::new(meta::vendor::temurin::Temurin {}),
             Box::new(meta::vendor::zulu::Zulu {}),
@@ -73,47 +73,47 @@ fn store_json(meta_data: &Vec<meta::JavaMetaData>, json_path: &str) -> Result<()
     Ok(())
 }
 
-fn store_sqlite(meta_data: &Vec<meta::JavaMetaData>, db_path: &str) -> Result<()> {
-    let mut conn = rusqlite::Connection::open(db_path)?;
-
-    let tx = conn.transaction()?;
-    {
-        let mut stmt = tx.prepare(
-            "INSERT OR REPLACE INTO 
-            JAVA_META_DATA
-              (architecture, features, file_type, filename, image_type, java_version, jvm_impl, md5, os, release_type, sha1, sha256, sha512, size, url, vendor, version)
-            VALUES
-              (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11, ?12, ?13, ?14, ?15, ?16, ?17)",
-        )?;
-
-        for data in meta_data {
-            let features = data.features.clone().unwrap_or_default().join(",");
-
-            stmt.execute(params![
-                data.architecture,
-                features,
-                data.file_type,
-                data.filename,
-                data.image_type,
-                data.java_version,
-                data.jvm_impl,
-                data.md5,
-                data.os,
-                data.release_type,
-                data.sha1,
-                data.sha256,
-                data.sha512,
-                data.size,
-                data.url,
-                data.vendor,
-                data.version,
-            ])?;
-        }
-    }
-    tx.commit()?;
-
-    Ok(())
-}
+// fn store_sqlite(meta_data: &Vec<meta::JavaMetaData>, db_path: &str) -> Result<()> {
+//     let mut conn = rusqlite::Connection::open(db_path)?;
+//
+//     let tx = conn.transaction()?;
+//     {
+//         let mut stmt = tx.prepare(
+//             "INSERT OR REPLACE INTO
+//             JAVA_META_DATA
+//               (architecture, features, file_type, filename, image_type, java_version, jvm_impl, md5, os, release_type, sha1, sha256, sha512, size, url, vendor, version)
+//             VALUES
+//               (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11, ?12, ?13, ?14, ?15, ?16, ?17)",
+//         )?;
+//
+//         for data in meta_data {
+//             let features = data.features.clone().unwrap_or_default().join(",");
+//
+//             stmt.execute(params![
+//                 data.architecture,
+//                 features,
+//                 data.file_type,
+//                 data.filename,
+//                 data.image_type,
+//                 data.java_version,
+//                 data.jvm_impl,
+//                 data.md5,
+//                 data.os,
+//                 data.release_type,
+//                 data.sha1,
+//                 data.sha256,
+//                 data.sha512,
+//                 data.size,
+//                 data.url,
+//                 data.vendor,
+//                 data.version,
+//             ])?;
+//         }
+//     }
+//     tx.commit()?;
+//
+//     Ok(())
+// }
 
 static AFTER_LONG_HELP: &str = color_print::cstr!(
     r#"<bold><underline>Examples:</underline></bold>

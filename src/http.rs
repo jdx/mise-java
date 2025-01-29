@@ -13,7 +13,7 @@ use crate::cli::version;
 use crate::env;
 use crate::tokio::RUNTIME;
 
-pub static HTTP: Lazy<Client> = Lazy::new(|| Client::new(Duration::from_secs(3)).unwrap());
+pub static HTTP: Lazy<Client> = Lazy::new(|| Client::new(Duration::from_secs(30)).unwrap());
 
 #[derive(Debug)]
 pub struct Client {

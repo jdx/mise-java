@@ -92,7 +92,7 @@ fn map(release_ga: Vec<ReleaseGA>) -> Vec<JavaMetaData> {
                 os: normalize_os(binary.os.as_str()),
                 sha1: None,
                 sha1_file: None,
-                sha256: package_checksum.unwrap_or_default(),
+                sha256: package_checksum,
                 sha256_file: package_checksum_file.unwrap_or_default(),
                 sha512: None,
                 sha512_file: None,

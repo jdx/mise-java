@@ -77,7 +77,7 @@ fn map(packages: Vec<Package>) -> Vec<JavaMetaData> {
             release_type: release_type.to_string(),
             sha1: None,
             sha1_file: None,
-            sha256: package.sha256_hash,
+            sha256: Some(package.sha256_hash),
             sha256_file: None,
             sha512: None,
             sha512_file: None,

@@ -5,6 +5,7 @@ use super::JavaMetaData;
 
 pub mod adoptopenjdk;
 pub mod corretto;
+pub mod liberica;
 pub mod microsoft;
 pub mod temurin;
 pub mod zulu;
@@ -33,7 +34,7 @@ pub trait Vendor: Send + Sync {
     }
 
     /// Fetches the metadata of all available Java versions for a vendor
-    fn fetch_metadata(&self, metadata: &mut Vec<JavaMetaData>) -> Result<()>;
+    fn fetch_metadata(&self, meta_data: &mut Vec<JavaMetaData>) -> Result<()>;
 }
 
 /// Returns the file extension of a package which is either `deb`, `dmg`, `msi`, `pkg`, `tar.gz` or `zip`
