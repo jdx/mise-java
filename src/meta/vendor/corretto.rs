@@ -5,13 +5,19 @@ use crate::{
 use comrak::{markdown_to_html, ComrakOptions};
 use eyre::Result;
 use indoc::formatdoc;
-use log::{debug, error};
+use log::debug;
 use scraper::{Html, Selector};
 use xx::regex;
 
 use super::{normalize_architecture, normalize_os, normalize_version, Vendor};
 
 pub struct Corretto {}
+
+struct FileNameMeta {
+    arch: String,
+    os: String,
+    ext: String,
+}
 
 impl Vendor for Corretto {
     fn get_name(&self) -> String {
@@ -65,30 +71,21 @@ fn map_release(release: &GitHubRelease) -> Vec<JavaMetaData> {
                 // Download Link
                 2 => {
                     let a_selector = Selector::parse("a").unwrap();
-                    let a = fragment.select(&a_selector).next();
-                    match a {
-                        Some(a) => {
-                            let name = a.text().collect::<String>();
-                            let url = a.value().attr("href").unwrap();
-
-                            metadata_entry.filename = name.clone();
-                            metadata_entry.url = url.to_string();
-                            let (os, arch, ext) = match meta_from_name(name.clone().as_str()) {
-                                Ok((os, arch, ext)) => (os, arch, ext),
-                                Err(e) => {
-                                    error!("Failed to parse name: {:?}", e);
-                                    continue;
-                                }
-                            };
-
-                            if os == "alpine-linux" {
+                    let anchor = fragment.select(&a_selector).next();
+                    if let Some(a) = anchor {
+                        let name = a.text().collect::<String>();
+                        let url = a.value().attr("href").unwrap();
+                        if let Ok(filename_meta) = meta_from_name(name.clone().as_str()) {
+                            if filename_meta.os == "alpine-linux" {
                                 metadata_entry.features = Some(vec!["musl".to_string()]);
                             }
-                            metadata_entry.os = normalize_os(os.as_str());
-                            metadata_entry.architecture = normalize_architecture(&arch);
-                            metadata_entry.file_type = ext;
+                            metadata_entry.architecture =
+                                normalize_architecture(&filename_meta.arch);
+                            metadata_entry.filename = name.clone();
+                            metadata_entry.file_type = filename_meta.ext;
+                            metadata_entry.os = normalize_os(&filename_meta.os);
+                            metadata_entry.url = url.to_string();
                         }
-                        None => (),
                     }
                 }
                 // Checksum
@@ -126,11 +123,11 @@ fn body_to_html(body: &str) -> String {
     markdown_to_html(&markdown_input, &options)
 }
 
-fn meta_from_name(name: &str) -> Result<(String, String, String)> {
+fn meta_from_name(name: &str) -> Result<FileNameMeta> {
     debug!("[corretto] parsing name: {}", name);
     let capture = regex!(r".*?-corretto(-devel|-jdk)?[\-_]([\w\d._]+(-\d)?)-?(alpine-linux|linux|macosx|windows)?[._\-](amd64|arm64|armv7|aarch64|x64|i386|x86|x86_64)(-(jdk|jre|musl-headless))?\.(.*)")
         .captures(name)
-        .ok_or_else(|| eyre::eyre!("Regular expression failed for name: {}", name))?;
+        .ok_or_else(|| eyre::eyre!("regular expression failed for name: {}", name))?;
 
     let arch = capture.get(5).unwrap().as_str().to_string();
     let ext = capture.get(8).unwrap().as_str().to_string();
@@ -145,5 +142,5 @@ fn meta_from_name(name: &str) -> Result<(String, String, String)> {
         }
     };
 
-    Ok((os, arch, ext))
+    Ok(FileNameMeta { arch, os, ext })
 }

@@ -6,12 +6,21 @@ use crate::{
     meta::JavaMetaData,
 };
 use eyre::Result;
-use log::warn;
+use log::{debug, warn};
 use xx::regex;
 
 use super::{normalize_architecture, normalize_os, normalize_version, Vendor};
 
 pub struct Liberica {}
+
+struct FileNameMeta {
+    image_type: String,
+    release_type: String,
+    os: String,
+    arch: String,
+    feature: String,
+    ext: String,
+}
 
 impl Vendor for Liberica {
     fn get_name(&self) -> String {
@@ -39,8 +48,8 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
             continue;
         }
         let filename = asset.name.clone();
-        let (image_type, release_type, os, arch, feature, ext) = meta_from_name(&filename)?;
-        let features = normalize_features(&feature);
+        let filename_meta = meta_from_name(&filename)?;
+        let features = normalize_features(&filename_meta.feature);
         let sha1 = match sha1sums.get(&filename) {
             Some(sha1) => Some(sha1.clone()),
             None => {
@@ -50,15 +59,15 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
         };
         let url = asset.browser_download_url.clone();
         meta_data.push(JavaMetaData {
-            architecture: normalize_architecture(&arch),
+            architecture: normalize_architecture(&filename_meta.arch),
             features: Some(features),
             filename,
-            file_type: ext,
-            image_type,
+            file_type: filename_meta.ext,
+            image_type: filename_meta.image_type,
             java_version: normalize_version(&version),
             jvm_impl: "hotspot".to_string(),
-            os: normalize_os(&os),
-            release_type,
+            os: normalize_os(&filename_meta.os),
+            release_type: filename_meta.release_type,
             sha1,
             url,
             vendor: "liberica".to_string(),
@@ -105,12 +114,13 @@ fn get_sha1sums(release: &GitHubRelease) -> Result<HashMap<String, String>> {
     Ok(sha1sums)
 }
 
-fn meta_from_name(name: &str) -> Result<(String, String, String, String, String, String)> {
+fn meta_from_name(name: &str) -> Result<FileNameMeta> {
+    debug!("[liberica] parsing name: {}", name);
     let capture = regex!(
         r"^bellsoft-(jre|jdk)(.+)-(?:ea-)?(linux|windows|macos|solaris)-(amd64|i386|i586|aarch64|arm64|ppc64le|arm32-vfp-hflt|x64|sparcv9|riscv64)-?(fx|lite|full|musl|musl-lite|crac|musl-crac|leyden|musl-leyden|lite-leyden|musl-lite-leyden)?\.(apk|deb|rpm|msi|dmg|pkg|tar\.gz|zip)$"
     )
     .captures(name)
-    .ok_or_else(|| eyre::eyre!("Regular expression did not match name: {}", name))?;
+    .ok_or_else(|| eyre::eyre!("regular expression did not match name: {}", name))?;
 
     let image_type = capture.get(1).map_or("jdk", |m| m.as_str()).to_string();
     let release_type = capture.get(2).map_or("ga", |m| m.as_str()).to_string();
@@ -119,7 +129,14 @@ fn meta_from_name(name: &str) -> Result<(String, String, String, String, String,
     let feature = capture.get(5).map_or("", |m| m.as_str()).to_string();
     let ext = capture.get(6).unwrap().as_str().to_string();
 
-    Ok((image_type, release_type, os, arch, feature, ext))
+    Ok(FileNameMeta {
+        image_type,
+        release_type,
+        os,
+        arch,
+        feature,
+        ext,
+    })
 }
 
 fn normalize_features(input: &str) -> Vec<String> {

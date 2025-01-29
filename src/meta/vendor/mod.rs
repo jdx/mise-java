@@ -37,9 +37,9 @@ pub trait Vendor: Send + Sync {
     fn fetch_metadata(&self, meta_data: &mut Vec<JavaMetaData>) -> Result<()>;
 }
 
-/// Returns the file extension of a package which is either `deb`, `dmg`, `msi`, `pkg`, `tar.gz` or `zip`
+/// Returns the file extension of a package which is either `apk`, `deb`, `dmg`, `msi`, `pkg`, `rpm`, `tar.gz` or `zip`
 fn get_extension(package_name: &str) -> String {
-    let re = regex::Regex::new(r"^.*\.(dep|dmg|msi|pkg|tar\.gz|zip)$").unwrap();
+    let re = regex::Regex::new(r"^.*\.(apk|dep|dmg|msi|pkg|rpm|tar\.gz|zip)$").unwrap();
     re.replace(package_name, "$1").to_string()
 }
 
@@ -101,11 +101,13 @@ mod tests {
 
     #[test]
     fn test_get_extension() {
-        assert_eq!(get_extension("jdk-8u292-linux-x64.tar.gz"), "tar.gz");
-        assert_eq!(get_extension("jdk-8u292-linux-x64.pkg"), "pkg");
-        assert_eq!(get_extension("jdk-8u292-windows-x64.msi"), "msi");
-        assert_eq!(get_extension("jdk-8u292-windows-x64.zip"), "zip");
+        assert_eq!(get_extension("jdk-8u292-linux-x64.apk"), "apk");
         assert_eq!(get_extension("jdk-8u292-macosx-x64.dmg"), "dmg");
+        assert_eq!(get_extension("jdk-8u292-windows-x64.msi"), "msi");
+        assert_eq!(get_extension("jdk-8u292-linux-x64.pkg"), "pkg");
+        assert_eq!(get_extension("jdk-8u292-linux-x64.rpm"), "rpm");
+        assert_eq!(get_extension("jdk-8u292-linux-x64.tar.gz"), "tar.gz");
+        assert_eq!(get_extension("jdk-8u292-windows-x64.zip"), "zip");
     }
 
     #[test]

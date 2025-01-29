@@ -8,6 +8,13 @@ use super::{normalize_architecture, normalize_os, normalize_version, Vendor};
 
 pub struct Microsoft {}
 
+struct FileNameMeta {
+    arch: String,
+    ext: String,
+    os: String,
+    version: String,
+}
+
 impl Vendor for Microsoft {
     fn get_name(&self) -> String {
         "microsoft".to_string()
@@ -56,11 +63,7 @@ fn map_release(a: &ElementRef<'_>) -> Result<JavaMetaData> {
         .attr("href")
         .ok_or_else(|| eyre::eyre!("No href found"))?;
     let name = a.text().collect::<String>();
-    let (version, os, arch, ext) = match meta_from_name(&name) {
-        Ok((version, os, arch, ext)) => (version, os, arch, ext),
-        Err(e) => return Err(e),
-    };
-
+    let filename_meta = meta_from_name(&name)?;
     let sha256 = match HTTP.get_text(format!("{}.sha256sum.txt", &href)) {
         Ok(sha) => sha.split_whitespace().next().map(|s| s.to_string()),
         Err(e) => {
@@ -70,38 +73,44 @@ fn map_release(a: &ElementRef<'_>) -> Result<JavaMetaData> {
     };
 
     Ok(JavaMetaData {
-        architecture: normalize_architecture(&arch),
-        features: if os == "alpine" {
+        architecture: normalize_architecture(&filename_meta.arch),
+        features: if filename_meta.os == "alpine" {
             Some(vec!["musl".to_string()])
         } else {
             Some(vec![])
         },
         filename: name.to_string(),
-        file_type: ext,
+        file_type: filename_meta.ext,
         image_type: "jdk".to_string(),
-        java_version: normalize_version(&version),
+        java_version: normalize_version(&filename_meta.version),
         jvm_impl: "hotspot".to_string(),
-        os: normalize_os(&os),
+        os: normalize_os(&filename_meta.os),
         release_type: "ga".to_string(),
         sha256,
         url: href.to_string(),
-        version: normalize_version(&version),
+        version: normalize_version(&filename_meta.version),
         vendor: "microsoft".to_string(),
         ..Default::default()
     })
 }
 
-fn meta_from_name(name: &str) -> Result<(String, String, String, String)> {
+fn meta_from_name(name: &str) -> Result<FileNameMeta> {
+    debug!("[microsoft] parsing name: {}", name);
     let capture = regex!(
         r"^microsoft-jdk-([0-9+.]{3,})-?.*-(alpine|linux|macos|macOS|windows)-(x64|aarch64)\.(.*)$"
     )
     .captures(name)
-    .ok_or_else(|| eyre::eyre!("Regular expression did not match name: {}", name))?;
+    .ok_or_else(|| eyre::eyre!("regular expression did not match name: {}", name))?;
 
     let version = capture.get(1).unwrap().as_str().to_string();
     let os = capture.get(2).unwrap().as_str().to_string();
     let arch = capture.get(3).unwrap().as_str().to_string();
     let ext = capture.get(4).unwrap().as_str().to_string();
 
-    Ok((version, os, arch, ext))
+    Ok(FileNameMeta {
+        arch,
+        ext,
+        os,
+        version,
+    })
 }
