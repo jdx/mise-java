@@ -5,6 +5,7 @@ use super::JavaMetaData;
 
 pub mod adoptopenjdk;
 pub mod corretto;
+pub mod graalvm;
 pub mod liberica;
 pub mod microsoft;
 pub mod temurin;

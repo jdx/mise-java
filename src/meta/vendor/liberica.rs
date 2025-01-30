@@ -43,10 +43,8 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
     let sha1sums = get_sha1sums(release)?;
     let version = release.tag_name.clone();
     let mut meta_data = vec![];
-    for asset in &release.assets {
-        if skip(&asset) {
-            continue;
-        }
+    let assets = release.assets.iter().filter(|asset| include(asset));
+    for asset in assets {
         let filename = asset.name.clone();
         let filename_meta = meta_from_name(&filename)?;
         let features = normalize_features(&filename_meta.feature);
@@ -62,12 +60,12 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
             architecture: normalize_architecture(&filename_meta.arch),
             features: Some(features),
             filename,
-            file_type: filename_meta.ext,
-            image_type: filename_meta.image_type,
+            file_type: filename_meta.ext.clone(),
+            image_type: filename_meta.image_type.clone(),
             java_version: normalize_version(&version),
             jvm_impl: "hotspot".to_string(),
             os: normalize_os(&filename_meta.os),
-            release_type: filename_meta.release_type,
+            release_type: filename_meta.release_type.clone(),
             sha1,
             url,
             vendor: "liberica".to_string(),
@@ -78,7 +76,7 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
     Ok(meta_data)
 }
 
-fn skip(asset: &github::GitHubAsset) -> bool {
+fn include(asset: &github::GitHubAsset) -> bool {
     asset.name.ends_with(".bom")
         || asset.name.ends_with(".json")
         || asset.name.ends_with(".txt")

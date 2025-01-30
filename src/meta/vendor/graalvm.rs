@@ -1,0 +1,157 @@
+use super::{normalize_architecture, normalize_os, normalize_version, Vendor};
+use crate::{
+    github::{self, GitHubAsset, GitHubRelease},
+    http::HTTP,
+    meta::JavaMetaData,
+};
+use eyre::Result;
+use log::{debug, warn};
+use xx::regex;
+
+pub struct GraalVM {}
+
+struct FileNameMeta {
+    arch: String,
+    ext: String,
+    java_version: String,
+    os: String,
+    version: String,
+}
+
+impl Vendor for GraalVM {
+    fn get_name(&self) -> String {
+        "graalvm".to_string()
+    }
+
+    fn fetch_metadata(&self, meta_data: &mut Vec<JavaMetaData>) -> Result<()> {
+        let releases = github::list_releases("graalvm/graalvm-ce-builds")?;
+        for release in &releases {
+            if release.prerelease {
+                continue;
+            }
+            meta_data.extend(map_release(release)?);
+        }
+        Ok(())
+    }
+}
+
+fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
+    let mut meta_data = vec![];
+
+    let assets = release.assets.iter().filter(|asset| include(asset));
+    for asset in assets {
+        if asset.name.starts_with("graalvm-ce") {
+            meta_data.push(map_ce(asset)?);
+        } else if asset.name.starts_with("graalvm-community") {
+            meta_data.push(map_community(asset)?);
+        }
+    }
+    Ok(meta_data)
+}
+
+fn map_ce(asset: &GitHubAsset) -> Result<JavaMetaData> {
+    let sha256sum = get_sha256sum(asset);
+    let filename = asset.name.clone();
+    let filename_meta = meta_from_name_ce(&filename)?;
+    let features = vec![];
+    let url = asset.browser_download_url.clone();
+    let version = normalize_version(&filename_meta.version);
+    Ok(JavaMetaData {
+        architecture: normalize_architecture(&filename_meta.arch),
+        features: Some(features),
+        filename,
+        file_type: filename_meta.ext.clone(),
+        image_type: "jdk".to_string(),
+        java_version: filename_meta.java_version.clone(),
+        jvm_impl: "graalvm".to_string(),
+        os: normalize_os(&filename_meta.os),
+        release_type: "ga".to_string(),
+        sha256: sha256sum,
+        url,
+        vendor: "graalvm".to_string(),
+        version: format!("{}+java{}", version, filename_meta.java_version.clone()),
+        ..Default::default()
+    })
+}
+
+fn map_community(asset: &GitHubAsset) -> Result<JavaMetaData> {
+    let sha256sum = get_sha256sum(asset);
+    let filename = asset.name.clone();
+    let filename_meta = meta_from_name_community(&filename)?;
+    let features = vec![];
+    let url = asset.browser_download_url.clone();
+    let version = normalize_version(&filename_meta.version);
+    Ok(JavaMetaData {
+        architecture: normalize_architecture(&filename_meta.arch),
+        features: Some(features),
+        filename,
+        file_type: filename_meta.ext.clone(),
+        image_type: "jdk".to_string(),
+        java_version: version.clone(),
+        jvm_impl: "graalvm".to_string(),
+        os: normalize_os(&filename_meta.os),
+        release_type: "ga".to_string(),
+        sha256: sha256sum,
+        url,
+        vendor: "graalvm-community".to_string(),
+        version,
+        ..Default::default()
+    })
+}
+
+fn get_sha256sum(asset: &GitHubAsset) -> Option<String> {
+    let sha256_url = format!("{}.sha256", asset.browser_download_url);
+    match HTTP.get_text(&sha256_url) {
+        Ok(sha256) => Some(sha256),
+        Err(_) => {
+            warn!("unable to find SHA256 for asset: {}", asset.name);
+            None
+        }
+    }
+}
+
+fn include(asset: &GitHubAsset) -> bool {
+    (asset.name.starts_with("graalvm-ce") || asset.name.starts_with("graalvm-community"))
+        && (asset.name.ends_with(".tar.gz") || asset.name.ends_with(".zip"))
+}
+
+fn meta_from_name_ce(name: &str) -> Result<FileNameMeta> {
+    debug!("[graalvm] parsing name: {}", name);
+    let capture = regex!(r"^graalvm-ce-(?:complete-)?java([0-9]{1,2})-(linux|darwin|windows)-(aarch64|amd64)-([0-9+.]{2,})\.(zip|tar\.gz)$")
+        .captures(name)
+        .ok_or_else(|| eyre::eyre!("regular expression did not match name: {}", name))?;
+
+    let java_version = capture.get(1).unwrap().as_str().to_string();
+    let os = capture.get(2).unwrap().as_str().to_string();
+    let arch = capture.get(3).unwrap().as_str().to_string();
+    let version = capture.get(4).unwrap().as_str().to_string();
+    let ext = capture.get(5).unwrap().as_str().to_string();
+
+    Ok(FileNameMeta {
+        arch,
+        ext,
+        java_version,
+        os,
+        version,
+    })
+}
+
+fn meta_from_name_community(name: &str) -> Result<FileNameMeta> {
+    debug!("[graalvm] parsing name: {}", name);
+    let capture = regex!(r"^graalvm-community-jdk-([0-9]{1,2}\.[0-9]{1}\.[0-9]{1,3})_(linux|macos|windows)-(aarch64|x64)_bin\.(zip|tar\.gz)$")
+      .captures(name)
+      .ok_or_else(|| eyre::eyre!("regular expression did not match name: {}", name))?;
+
+    let java_version = capture.get(1).unwrap().as_str().to_string();
+    let os = capture.get(2).unwrap().as_str().to_string();
+    let arch = capture.get(3).unwrap().as_str().to_string();
+    let ext = capture.get(4).unwrap().as_str().to_string();
+
+    Ok(FileNameMeta {
+        arch,
+        ext,
+        java_version: java_version.clone(),
+        os,
+        version: java_version.clone(),
+    })
+}

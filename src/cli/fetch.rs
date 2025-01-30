@@ -15,6 +15,7 @@ impl Fetch {
         let vendors: Vec<Box<dyn Vendor>> = vec![
             Box::new(meta::vendor::adoptopenjdk::AdoptOpenJDK {}),
             Box::new(meta::vendor::corretto::Corretto {}),
+            Box::new(meta::vendor::graalvm::GraalVM {}),
             Box::new(meta::vendor::liberica::Liberica {}),
             Box::new(meta::vendor::microsoft::Microsoft {}),
             Box::new(meta::vendor::temurin::Temurin {}),

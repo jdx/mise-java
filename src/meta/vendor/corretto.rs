@@ -5,7 +5,7 @@ use crate::{
 use comrak::{markdown_to_html, ComrakOptions};
 use eyre::Result;
 use indoc::formatdoc;
-use log::debug;
+use log::{debug, warn};
 use scraper::{Html, Selector};
 use xx::regex;
 
@@ -31,19 +31,22 @@ impl Vendor for Corretto {
             let releases = github::list_releases(repo.as_str())?;
 
             for release in &releases {
-                meta_data.extend(map_release(&release));
+                meta_data.extend(map_release(&release)?);
             }
         }
         Ok(())
     }
 }
 
-fn map_release(release: &GitHubRelease) -> Vec<JavaMetaData> {
-    let mut metadata = Vec::new();
+fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
+    let mut meta_data = Vec::new();
     let version = release.tag_name.clone();
     let html = match release.body {
         Some(ref body) => body_to_html(body.as_str()),
-        None => return metadata,
+        None => {
+            warn!("[corretto] no body found for release: {version}");
+            return Ok(meta_data);
+        }
     };
 
     let fragment = Html::parse_fragment(&html);
@@ -104,10 +107,10 @@ fn map_release(release: &GitHubRelease) -> Vec<JavaMetaData> {
                 _ => (),
             }
         }
-        metadata.push(metadata_entry);
+        meta_data.push(metadata_entry);
     }
 
-    metadata
+    Ok(meta_data)
 }
 
 fn body_to_html(body: &str) -> String {
