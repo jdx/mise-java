@@ -18,6 +18,7 @@ impl Fetch {
             Box::new(meta::vendor::graalvm::GraalVM {}),
             Box::new(meta::vendor::liberica::Liberica {}),
             Box::new(meta::vendor::microsoft::Microsoft {}),
+            Box::new(meta::vendor::oracle::Oracle {}),
             Box::new(meta::vendor::temurin::Temurin {}),
             Box::new(meta::vendor::zulu::Zulu {}),
         ];
