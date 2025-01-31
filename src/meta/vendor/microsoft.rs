@@ -61,13 +61,14 @@ fn map_release(a: &ElementRef<'_>) -> Result<JavaMetaData> {
     let href = a
         .value()
         .attr("href")
-        .ok_or_else(|| eyre::eyre!("No href found"))?;
+        .ok_or_else(|| eyre::eyre!("no href found"))?;
     let name = a.text().collect::<String>();
     let filename_meta = meta_from_name(&name)?;
-    let sha256 = match HTTP.get_text(format!("{}.sha256sum.txt", &href)) {
+    let sha256_url = format!("{}.sha256sum.txt", &href);
+    let sha256 = match HTTP.get_text(&sha256_url) {
         Ok(sha) => sha.split_whitespace().next().map(|s| s.to_string()),
         Err(e) => {
-            error!("[microsoft] error fetching sha256sum for {name}: {e}");
+            error!("error fetching sha256sum for {name}: {e}");
             None
         }
     };
@@ -87,6 +88,7 @@ fn map_release(a: &ElementRef<'_>) -> Result<JavaMetaData> {
         os: normalize_os(&filename_meta.os),
         release_type: "ga".to_string(),
         sha256,
+        sha256_url: Some(sha256_url),
         url: href.to_string(),
         version: normalize_version(&filename_meta.version),
         vendor: "microsoft".to_string(),

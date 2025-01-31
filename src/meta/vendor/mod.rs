@@ -8,6 +8,7 @@ pub mod corretto;
 pub mod graalvm;
 pub mod liberica;
 pub mod microsoft;
+pub mod oracle;
 pub mod temurin;
 pub mod zulu;
 

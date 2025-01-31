@@ -73,8 +73,8 @@ fn map(release_ga: Vec<ReleaseGA>) -> Vec<JavaMetaData> {
     for release in release_ga {
         for binary in release.binaries {
             let package = binary.package.clone();
-            let package_checksum = package.as_ref().map(|p| p.checksum.clone());
-            let package_checksum_file = package.as_ref().map(|p| p.checksum_link.clone());
+            let package_checksum = package.as_ref().map_or(None, |p| p.checksum.clone());
+            let package_checksum_link = package.as_ref().map_or(None, |p| p.checksum_link.clone());
             let package_link = package.as_ref().map(|p| p.link.clone());
             let package_name = package.as_ref().map(|p| p.name.clone());
             let package_extension = package_name.as_ref().map(|p| get_extension(p));
@@ -91,16 +91,15 @@ fn map(release_ga: Vec<ReleaseGA>) -> Vec<JavaMetaData> {
                 md5_file: None,
                 os: normalize_os(binary.os.as_str()),
                 sha1: None,
-                sha1_file: None,
                 sha256: package_checksum,
-                sha256_file: package_checksum_file.unwrap_or_default(),
+                sha256_url: package_checksum_link,
                 sha512: None,
-                sha512_file: None,
                 size: package.as_ref().map(|p| p.size).unwrap_or(0),
                 release_type: release.release_type.clone().to_string(),
                 url: package_link.unwrap_or_default().to_string(),
                 vendor: "temurin".to_string(),
                 version: normalize_version(release.version_data.semver.clone().as_str()),
+                ..Default::default()
             };
 
             meta_data.push(java_meta_data);
@@ -148,7 +147,7 @@ struct Binary {
 
 #[derive(Clone, Debug, Deserialize, Serialize)]
 struct Installer {
-    checksum: String,
+    checksum: Option<String>,
     checksum_link: Option<String>,
     link: String,
     name: String,
@@ -157,7 +156,7 @@ struct Installer {
 
 #[derive(Clone, Debug, Deserialize, Serialize)]
 struct Package {
-    checksum: String,
+    checksum: Option<String>,
     checksum_link: Option<String>,
     link: String,
     name: String,

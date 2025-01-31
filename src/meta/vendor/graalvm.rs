@@ -50,7 +50,14 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
 }
 
 fn map_ce(asset: &GitHubAsset) -> Result<JavaMetaData> {
-    let sha256sum = get_sha256sum(asset);
+    let sha256_url = format!("{}.sha256", asset.browser_download_url);
+    let sha256sum = match HTTP.get_text(&sha256_url) {
+        Ok(sha256) => Some(sha256),
+        Err(_) => {
+            warn!("unable to find SHA256 for asset: {}", asset.name);
+            None
+        }
+    };
     let filename = asset.name.clone();
     let filename_meta = meta_from_name_ce(&filename)?;
     let features = vec![];
@@ -75,7 +82,14 @@ fn map_ce(asset: &GitHubAsset) -> Result<JavaMetaData> {
 }
 
 fn map_community(asset: &GitHubAsset) -> Result<JavaMetaData> {
-    let sha256sum = get_sha256sum(asset);
+    let sha256_url = format!("{}.sha256", asset.browser_download_url);
+    let sha256sum = match HTTP.get_text(&sha256_url) {
+        Ok(sha256) => Some(sha256),
+        Err(_) => {
+            warn!("unable to find SHA256 for asset: {}", asset.name);
+            None
+        }
+    };
     let filename = asset.name.clone();
     let filename_meta = meta_from_name_community(&filename)?;
     let features = vec![];
@@ -92,22 +106,12 @@ fn map_community(asset: &GitHubAsset) -> Result<JavaMetaData> {
         os: normalize_os(&filename_meta.os),
         release_type: "ga".to_string(),
         sha256: sha256sum,
+        sha256_url: Some(sha256_url),
         url,
         vendor: "graalvm-community".to_string(),
         version,
         ..Default::default()
     })
-}
-
-fn get_sha256sum(asset: &GitHubAsset) -> Option<String> {
-    let sha256_url = format!("{}.sha256", asset.browser_download_url);
-    match HTTP.get_text(&sha256_url) {
-        Ok(sha256) => Some(sha256),
-        Err(_) => {
-            warn!("unable to find SHA256 for asset: {}", asset.name);
-            None
-        }
-    }
 }
 
 fn include(asset: &GitHubAsset) -> bool {

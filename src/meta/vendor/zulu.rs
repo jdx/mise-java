@@ -71,20 +71,14 @@ fn map(packages: Vec<Package>) -> Vec<JavaMetaData> {
             image_type: package.java_package_type,
             java_version,
             jvm_impl: "hotspot".to_string(),
-            md5: None,
-            md5_file: None,
             os,
             release_type: release_type.to_string(),
-            sha1: None,
-            sha1_file: None,
             sha256: Some(package.sha256_hash),
-            sha256_file: None,
-            sha512: None,
-            sha512_file: None,
             size: package.size,
             url: package.download_url,
             vendor: "zulu".to_string(),
             version,
+            ..Default::default()
         };
         meta_data.push(meta);
     }
