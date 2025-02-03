@@ -20,7 +20,7 @@ CREATE TABLE JAVA_META_DATA (
     release_type TEXT,
     sha1 TEXT,
     sha1_url TEXT,
-    sha256 TEXT NOT NULL,
+    sha256 TEXT,
     sha256_url TEXT,
     sha512 TEXT,
     sha512_url TEXT,
@@ -28,5 +28,13 @@ CREATE TABLE JAVA_META_DATA (
     "url" TEXT NOT NULL,
     vendor TEXT,
     "version" TEXT,
-    PRIMARY KEY ("url", sha256)
+    PRIMARY KEY ("url")
 );
+
+-- Create Index on JAVA_META_DATA for
+-- * architecture
+-- * os
+-- * vendor
+CREATE INDEX JAVA_META_DATA_IDX_ARCHITECTURE ON JAVA_META_DATA (architecture);
+CREATE INDEX JAVA_META_DATA_IDX_OS ON JAVA_META_DATA (os);
+CREATE INDEX JAVA_META_DATA_IDX_VENDOR ON JAVA_META_DATA (vendor);

@@ -18,7 +18,7 @@ mod output;
 fn main() -> eyre::Result<()> {
     env_logger::builder()
         .format_target(false)
-        .format_timestamp(None)
+        .format_timestamp_millis()
         .init();
 
     let args = std::env::args().collect_vec();
