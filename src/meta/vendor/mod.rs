@@ -1,4 +1,6 @@
+use comrak::{markdown_to_html, ComrakOptions};
 use eyre::Result;
+use indoc::formatdoc;
 use log::info;
 
 use super::JavaMetaData;
@@ -6,6 +8,7 @@ use super::JavaMetaData;
 pub mod adoptopenjdk;
 pub mod corretto;
 pub mod graalvm;
+pub mod jetbrains;
 pub mod liberica;
 pub mod microsoft;
 pub mod openjdk;
@@ -46,6 +49,20 @@ fn get_extension(package_name: &str) -> String {
     re.replace(package_name, "$1").to_string()
 }
 
+/// Returns HTML from a Markdown
+pub fn md_to_html(md: &str) -> String {
+    let markdown_input = formatdoc! {r#"
+  {markdown}
+  "#,
+      markdown = md.replace("\\r\\n", "\n"),
+    };
+
+    let mut options = ComrakOptions::default();
+    options.extension.table = true;
+
+    markdown_to_html(&markdown_input, &options)
+}
+
 /// Normalizes the architecture string to a common format
 fn normalize_architecture(architecture: &str) -> String {
     match architecture {
@@ -67,7 +84,7 @@ fn normalize_architecture(architecture: &str) -> String {
 /// Normalizes the OS string to a common format
 pub fn normalize_os(os: &str) -> String {
     match os.to_lowercase().as_str() {
-        "linux" | "alpine" | "alpine-linux" => "linux".to_string(),
+        "linux" | "alpine" | "alpine-linux" | "linux-musl" => "linux".to_string(),
         "mac" | "macos" | "macosx" | "osx" | "darwin" => "macosx".to_string(),
         "win" | "windows" => "windows".to_string(),
         "solaris" => "solaris".to_string(),

@@ -2,14 +2,12 @@ use crate::{
     github::{self, GitHubRelease},
     meta::JavaMetaData,
 };
-use comrak::{markdown_to_html, ComrakOptions};
 use eyre::Result;
-use indoc::formatdoc;
 use log::{debug, warn};
 use scraper::{Html, Selector};
 use xx::regex;
 
-use super::{normalize_architecture, normalize_os, normalize_version, Vendor};
+use super::{md_to_html, normalize_architecture, normalize_os, normalize_version, Vendor};
 
 pub struct Corretto {}
 
@@ -42,7 +40,7 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
     let mut meta_data = Vec::new();
     let version = release.tag_name.clone();
     let html = match release.body {
-        Some(ref body) => body_to_html(body.as_str()),
+        Some(ref body) => md_to_html(body.as_str()),
         None => {
             warn!("[corretto] no body found for release: {version}");
             return Ok(meta_data);
@@ -111,19 +109,6 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
     }
 
     Ok(meta_data)
-}
-
-fn body_to_html(body: &str) -> String {
-    let markdown_input = formatdoc! {r#"
-      {markdown}
-      "#,
-      markdown = body.replace("\\r\\n", "\n"),
-    };
-
-    let mut options = ComrakOptions::default();
-    options.extension.table = true;
-
-    markdown_to_html(&markdown_input, &options)
 }
 
 fn meta_from_name(name: &str) -> Result<FileNameMeta> {
