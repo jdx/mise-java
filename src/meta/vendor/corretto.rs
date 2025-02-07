@@ -9,6 +9,7 @@ use xx::regex;
 
 use super::{md_to_html, normalize_architecture, normalize_os, normalize_version, Vendor};
 
+#[derive(Clone, Copy, Debug)]
 pub struct Corretto {}
 
 struct FileNameMeta {

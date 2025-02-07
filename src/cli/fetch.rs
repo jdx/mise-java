@@ -1,39 +1,31 @@
-use std::thread;
+use std::{collections::HashMap, thread};
 
 use eyre::Result;
 use log::{error, info};
 use rusqlite::params;
 
-use crate::meta::{self, vendor::Vendor};
+use crate::meta::{self, vendor::VENDORS};
 
 #[derive(Debug, clap::Args)]
 #[clap(verbatim_doc_comment, after_long_help = AFTER_LONG_HELP)]
-pub struct Fetch {}
+pub struct Fetch {
+    // TODO support fetching single vendors
+    //vendors: Option<Vec<String>>,
+}
 
 impl Fetch {
     pub fn run(self) -> Result<()> {
-        // TODO: implement all vendors
-        let vendors: Vec<Box<dyn Vendor>> = vec![
-            Box::new(meta::vendor::adoptopenjdk::AdoptOpenJDK {}),
-            Box::new(meta::vendor::corretto::Corretto {}),
-            Box::new(meta::vendor::graalvm::GraalVM {}),
-            Box::new(meta::vendor::jetbrains::Jetbrains {}),
-            Box::new(meta::vendor::liberica::Liberica {}),
-            Box::new(meta::vendor::microsoft::Microsoft {}),
-            Box::new(meta::vendor::openjdk::OpenJDK {}),
-            Box::new(meta::vendor::oracle::Oracle {}),
-            Box::new(meta::vendor::temurin::Temurin {}),
-            Box::new(meta::vendor::zulu::Zulu {}),
-        ];
+        let vendors: HashMap<_, _> = VENDORS.iter().map(|v| (v.get_name(), v)).collect();
 
         info!("fetching all vendors");
         let start = std::time::Instant::now();
         let mut tasks = vec![];
-        for vendor in vendors {
+
+        // TODO: use a thread pool here
+        for (name, vendor) in vendors {
             let task = thread::Builder::new()
-                .name(vendor.get_name())
+                .name(name.clone())
                 .spawn(move || {
-                    let name = vendor.get_name();
                     info!("[{}] fetching meta data", name);
                     let meta_data = match vendor.fetch() {
                         Ok(data) => data,
@@ -43,7 +35,7 @@ impl Fetch {
                         }
                     };
 
-                    // Write to JSON file
+                    // TODO move to JSON module
                     info!("[{}] writing to JSON", name);
                     match store_json(&meta_data, &format!("data/{name}.json")) {
                         Ok(_) => {}
@@ -52,6 +44,7 @@ impl Fetch {
                             return;
                         }
                     };
+                    // TODO move to DB module
                     info!("[{}] writing to SQLite", name);
                     match store_sqlite(&meta_data, "data/meta.sqlite3") {
                         Ok(_) => {}
@@ -89,6 +82,21 @@ fn store_sqlite(meta_data: &Vec<meta::JavaMetaData>, db_path: &str) -> Result<()
 
     let tx = conn.transaction()?;
     {
+        // TODO change to a real UPSERT (INSERT ON CONFLICT)
+        /*
+        INSERT INTO
+          TABLE ()
+          VALUES ()
+        ON CONFLICT(url) DO UPDATE SET
+          md5=excluded.md5,
+          sha1=excluded.sha1
+          sha256=excluded.sha256
+          sha512=excluded.sha512
+        WHERE excluded.md5 != TABLE.md5
+          OR excluded.sha1 != TABLE.sha1
+          OR excluded.sha256 != TABLE.sha256
+          OR excluded.sha512 != TABLE.sha512;
+        */
         let mut stmt = tx.prepare(
             "INSERT OR REPLACE INTO
             JAVA_META_DATA

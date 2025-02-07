@@ -7,6 +7,7 @@ use crate::{http::HTTP, meta::JavaMetaData};
 
 use super::{normalize_architecture, normalize_os, normalize_version, Vendor};
 
+#[derive(Clone, Copy, Debug)]
 pub struct OpenJDK {}
 
 struct FileNameMeta {

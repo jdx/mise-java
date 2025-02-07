@@ -8,6 +8,7 @@ use eyre::Result;
 use log::{debug, warn};
 use xx::regex;
 
+#[derive(Clone, Copy, Debug)]
 pub struct GraalVM {}
 
 struct FileNameMeta {

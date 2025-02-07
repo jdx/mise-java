@@ -5,7 +5,7 @@ use scraper::{ElementRef, Html, Selector};
 use xx::regex;
 
 use super::{normalize_architecture, normalize_os, normalize_version, Vendor};
-
+#[derive(Clone, Copy, Debug)]
 pub struct Oracle {}
 
 struct FileNameMeta {

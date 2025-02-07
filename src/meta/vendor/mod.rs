@@ -1,3 +1,5 @@
+use std::sync::LazyLock;
+
 use comrak::{markdown_to_html, ComrakOptions};
 use eyre::Result;
 use indoc::formatdoc;
@@ -15,6 +17,22 @@ pub mod openjdk;
 pub mod oracle;
 pub mod temurin;
 pub mod zulu;
+
+// TODO: implement all vendors
+pub static VENDORS: LazyLock<Vec<Box<dyn Vendor>>> = LazyLock::new(|| {
+    vec![
+        Box::new(adoptopenjdk::AdoptOpenJDK {}),
+        Box::new(corretto::Corretto {}),
+        Box::new(graalvm::GraalVM {}),
+        Box::new(jetbrains::Jetbrains {}),
+        Box::new(liberica::Liberica {}),
+        Box::new(microsoft::Microsoft {}),
+        Box::new(openjdk::OpenJDK {}),
+        Box::new(oracle::Oracle {}),
+        Box::new(temurin::Temurin {}),
+        Box::new(zulu::Zulu {}),
+    ]
+});
 
 /// Represents a vendor of Java distributions
 ///

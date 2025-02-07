@@ -8,6 +8,7 @@ use serde::{Deserialize, Serialize};
 
 use super::{get_extension, normalize_architecture, normalize_os, normalize_version, Vendor};
 
+#[derive(Clone, Copy, Debug)]
 pub struct AdoptOpenJDK {}
 
 impl Vendor for AdoptOpenJDK {
