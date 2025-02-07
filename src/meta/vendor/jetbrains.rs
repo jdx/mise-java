@@ -5,7 +5,7 @@ use crate::{
 };
 use eyre::Result;
 use log::{debug, error, warn};
-use scraper::{Html, Selector};
+use scraper::{ElementRef, Html, Selector};
 use xx::regex;
 
 use super::{md_to_html, normalize_architecture, normalize_os, normalize_version, Vendor};
@@ -29,67 +29,72 @@ impl Vendor for Jetbrains {
     fn fetch_metadata(&self, meta_data: &mut Vec<crate::meta::JavaMetaData>) -> eyre::Result<()> {
         let releases = github::list_releases("JetBrains/JetBrainsRuntime")?;
         for release in &releases {
-            meta_data.extend(map_release(release)?);
+            let version = release.tag_name.as_str();
+            let html = match release.body {
+                Some(ref body) => md_to_html(body.as_str()),
+                None => {
+                    warn!("[jetbrains] no body found for release: {version}");
+                    continue;
+                }
+            };
+            let fragment = Html::parse_fragment(&html);
+            let a_selector =
+                Selector::parse("table a:is([href$='.pkg'], [href$='.tar.gz'], [href$='.zip'])")
+                    .unwrap();
+            for a in fragment.select(&a_selector) {
+                let release = match map_release(&release, &a) {
+                    Ok(release) => release,
+                    Err(e) => {
+                        error!("[jetbrains] error parsing release: {:?}", e);
+                        continue;
+                    }
+                };
+                meta_data.push(release);
+            }
         }
         Ok(())
     }
 }
 
-fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
-    let mut meta_data = vec![];
-    let version = release.tag_name.clone();
-    let html = match release.body {
-        Some(ref body) => md_to_html(body.as_str()),
-        None => {
-            warn!("[jetbrains] no body found for release: {version}");
-            return Ok(meta_data);
+fn map_release(release: &GitHubRelease, a: &ElementRef<'_>) -> Result<JavaMetaData> {
+    let href = a
+        .value()
+        .attr("href")
+        .ok_or_else(|| eyre::eyre!("no href found"))?;
+    let name = href
+        .split("/")
+        .last()
+        .ok_or_else(|| eyre::eyre!("no name found"))?
+        .to_string();
+    let filename_meta = meta_from_name(&name)?;
+    let sha512_url = format!("{}.checksum", &href);
+    let sha512 = match HTTP.get_text(&sha512_url) {
+        Ok(sha) => sha.split_whitespace().next().map(|s| s.to_string()),
+        Err(e) => {
+            error!("error fetching sha512sum for {name}: {e}");
+            None
         }
     };
-    let fragment = Html::parse_fragment(&html);
-    let a_selector =
-        Selector::parse("table a:is([href$='.pkg'], [href$='.tar.gz'], [href$='.zip'])").unwrap();
-    for a in fragment.select(&a_selector) {
-        let href = a
-            .value()
-            .attr("href")
-            .ok_or_else(|| eyre::eyre!("no href found"))?;
-        let name = href
-            .split("/")
-            .last()
-            .ok_or_else(|| eyre::eyre!("no name found"))?
-            .to_string();
-        let filename_meta = meta_from_name(&name)?;
-        let features = normalize_features(&name);
-        let sha512_url = format!("{}.checksum", &href);
-        let sha512 = match HTTP.get_text(&sha512_url) {
-            Ok(sha) => sha.split_whitespace().next().map(|s| s.to_string()),
-            Err(e) => {
-                error!("error fetching sha512sum for {name}: {e}");
-                None
-            }
-        };
-        meta_data.push(JavaMetaData {
-            architecture: normalize_architecture(&filename_meta.arch),
-            features: Some(features),
-            filename: name.to_string(),
-            file_type: filename_meta.ext,
-            image_type: filename_meta.image_type,
-            java_version: normalize_version(&filename_meta.version),
-            jvm_impl: "hotspot".to_string(),
-            os: normalize_os(&filename_meta.os),
-            release_type: match release.prerelease {
-                true => "ea".to_string(),
-                false => "ga".to_string(),
-            },
-            sha512,
-            sha512_url: Some(sha512_url),
-            url: href.to_string(),
-            version: normalize_version(&filename_meta.version),
-            vendor: "jetbrains".to_string(),
-            ..Default::default()
-        });
-    }
-    Ok(meta_data)
+    Ok(JavaMetaData {
+        architecture: normalize_architecture(&filename_meta.arch),
+        features: normalize_features(&name),
+        filename: name.to_string(),
+        file_type: filename_meta.ext,
+        image_type: filename_meta.image_type,
+        java_version: normalize_version(&filename_meta.version),
+        jvm_impl: "hotspot".to_string(),
+        os: normalize_os(&filename_meta.os),
+        release_type: match release.prerelease {
+            true => "ea".to_string(),
+            false => "ga".to_string(),
+        },
+        sha512,
+        sha512_url: Some(sha512_url),
+        url: href.to_string(),
+        version: normalize_version(&filename_meta.version),
+        vendor: "jetbrains".to_string(),
+        ..Default::default()
+    })
 }
 
 fn meta_from_name(name: &str) -> Result<FileNameMeta> {
@@ -117,7 +122,7 @@ fn meta_from_name(name: &str) -> Result<FileNameMeta> {
     })
 }
 
-fn normalize_features(name: &str) -> Vec<String> {
+fn normalize_features(name: &str) -> Option<Vec<String>> {
     let mut features = vec![];
     let name = name.to_lowercase();
     if name.contains("_diz") {
@@ -139,5 +144,9 @@ fn normalize_features(name: &str) -> Vec<String> {
     if name.contains("musl") {
         features.push("musl".to_string());
     }
-    features
+    if features.is_empty() {
+        None
+    } else {
+        Some(features)
+    }
 }

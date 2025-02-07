@@ -30,7 +30,14 @@ impl Vendor for GraalVM {
             if release.prerelease {
                 continue;
             }
-            meta_data.extend(map_release(release)?);
+            let data = match map_release(release) {
+                Ok(data) => data,
+                Err(e) => {
+                    warn!("[graalvm] error parsing release: {:?}", e);
+                    continue;
+                }
+            };
+            meta_data.extend(data);
         }
         Ok(())
     }
@@ -38,7 +45,6 @@ impl Vendor for GraalVM {
 
 fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
     let mut meta_data = vec![];
-
     let assets = release.assets.iter().filter(|asset| include(asset));
     for asset in assets {
         if asset.name.starts_with("graalvm-ce") {
@@ -61,12 +67,10 @@ fn map_ce(asset: &GitHubAsset) -> Result<JavaMetaData> {
     };
     let filename = asset.name.clone();
     let filename_meta = meta_from_name_ce(&filename)?;
-    let features = vec![];
     let url = asset.browser_download_url.clone();
     let version = normalize_version(&filename_meta.version);
     Ok(JavaMetaData {
         architecture: normalize_architecture(&filename_meta.arch),
-        features: Some(features),
         filename,
         file_type: filename_meta.ext.clone(),
         image_type: "jdk".to_string(),
@@ -93,12 +97,10 @@ fn map_community(asset: &GitHubAsset) -> Result<JavaMetaData> {
     };
     let filename = asset.name.clone();
     let filename_meta = meta_from_name_community(&filename)?;
-    let features = vec![];
     let url = asset.browser_download_url.clone();
     let version = normalize_version(&filename_meta.version);
     Ok(JavaMetaData {
         architecture: normalize_architecture(&filename_meta.arch),
-        features: Some(features),
         filename,
         file_type: filename_meta.ext.clone(),
         image_type: "jdk".to_string(),

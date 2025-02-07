@@ -12,7 +12,7 @@ pub struct JavaMetaData {
     pub java_version: String,
     pub jvm_impl: String,
     pub md5: Option<String>,
-    pub md5_file: Option<String>,
+    pub md5_url: Option<String>,
     pub os: String,
     pub release_type: String,
     pub sha1: Option<String>,

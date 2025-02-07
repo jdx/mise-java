@@ -24,7 +24,7 @@ impl Vendor for Temurin {
 
         // get meta data for a specific release
         // https://api.adoptium.net/v3/assets/feature_releases/${release}/ga?page=${page}&page_size=20&project=jdk&sort_order=ASC&vendor=adoptium
-        let mut ga_releases: Vec<ReleaseGA> = Vec::new();
+        let mut releases: Vec<Release> = Vec::new();
         for release in available_releases.available_releases {
             let mut page = 0;
             let page_size = 1000;
@@ -39,10 +39,10 @@ impl Vendor for Temurin {
                      page = page, page_size = page_size, release = release,
                 };
                 debug!("[temurin] fetching release [{}] page [{}]", release, page);
-                match HTTP.get_json::<Vec<ReleaseGA>>(api_url.as_str()) {
+                match HTTP.get_json::<Vec<Release>>(api_url.as_str()) {
                     Ok(resp) => {
                         resp.iter()
-                            .for_each(|release| ga_releases.push(release.clone()));
+                            .for_each(|release| releases.push(release.clone()));
                         page += 1;
                         continue;
                     }
@@ -52,7 +52,7 @@ impl Vendor for Temurin {
         }
 
         meta_data.extend(
-            map(ga_releases)
+            map_releases(releases)
                 .iter()
                 .filter(|m| !vec!["sbom"].contains(&m.image_type.as_str()))
                 .cloned(),
@@ -69,9 +69,9 @@ fn normalize_features(features: &str) -> Vec<String> {
     }
 }
 
-fn map(release_ga: Vec<ReleaseGA>) -> Vec<JavaMetaData> {
+fn map_releases(releases: Vec<Release>) -> Vec<JavaMetaData> {
     let mut meta_data = Vec::new();
-    for release in release_ga {
+    for release in releases {
         for binary in release.binaries {
             let package = binary.package.clone();
             let package_checksum = package.as_ref().map_or(None, |p| p.checksum.clone());
@@ -88,13 +88,9 @@ fn map(release_ga: Vec<ReleaseGA>) -> Vec<JavaMetaData> {
                 filename: package_name.unwrap_or_default().to_string(),
                 java_version: release.version_data.openjdk_version.clone().to_string(),
                 jvm_impl: binary.jvm_impl,
-                md5: None,
-                md5_file: None,
                 os: normalize_os(binary.os.as_str()),
-                sha1: None,
                 sha256: package_checksum,
                 sha256_url: package_checksum_link,
-                sha512: None,
                 size: package.as_ref().map(|p| p.size).unwrap_or(0),
                 release_type: release.release_type.clone().to_string(),
                 url: package_link.unwrap_or_default().to_string(),
@@ -120,7 +116,7 @@ struct AvailableReleases {
 }
 
 #[derive(Clone, Debug, Deserialize, Serialize)]
-struct ReleaseGA {
+struct Release {
     binaries: Vec<Binary>,
     release_name: String,
     release_type: String,

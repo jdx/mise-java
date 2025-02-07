@@ -41,13 +41,13 @@ impl Vendor for Zulu {
             }
         }
 
-        meta_data.extend(map(all_packages));
+        meta_data.extend(map_packages(all_packages));
 
         Ok(())
     }
 }
 
-fn map(packages: Vec<Package>) -> Vec<JavaMetaData> {
+fn map_packages(packages: Vec<Package>) -> Vec<JavaMetaData> {
     let mut meta_data: Vec<JavaMetaData> = Vec::new();
     for package in packages {
         let architecture = normalize_architecture(&package.arch);
