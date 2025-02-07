@@ -4,25 +4,33 @@ use eyre::Result;
 use log::{error, info};
 use rusqlite::params;
 
-use crate::meta::{self, vendor::VENDORS};
+use crate::meta::{
+    self,
+    vendor::{Vendor, VENDORS},
+};
 
 #[derive(Debug, clap::Args)]
 #[clap(verbatim_doc_comment, after_long_help = AFTER_LONG_HELP)]
 pub struct Fetch {
-    // TODO support fetching single vendors
-    //vendors: Option<Vec<String>>,
+    /// Vendor(s) to fetch
+    /// e.g.: openjdk, zulu
+    #[clap(value_name = "VENDOR")]
+    pub vendors: Vec<String>,
 }
 
 impl Fetch {
     pub fn run(self) -> Result<()> {
-        let vendors: HashMap<_, _> = VENDORS.iter().map(|v| (v.get_name(), v)).collect();
+        if self.vendors.is_empty() {
+            info!("fetching all vendors");
+        } else {
+            info!("fetching vendors: {:?}", self.vendors);
+        }
 
-        info!("fetching all vendors");
         let start = std::time::Instant::now();
         let mut tasks = vec![];
 
         // TODO: use a thread pool here
-        for (name, vendor) in vendors {
+        for (name, vendor) in self.get_vendors() {
             let task = thread::Builder::new()
                 .name(name.clone())
                 .spawn(move || {
@@ -67,6 +75,14 @@ impl Fetch {
             start.elapsed().as_secs_f32()
         );
         Ok(())
+    }
+
+    fn get_vendors(&self) -> HashMap<String, &'static Box<dyn Vendor>> {
+        VENDORS
+            .iter()
+            .map(|v| (v.get_name(), v))
+            .filter(|(k, _v)| self.vendors.is_empty() || self.vendors.contains(k))
+            .collect()
     }
 }
 
