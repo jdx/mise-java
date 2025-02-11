@@ -15,6 +15,7 @@ pub mod liberica;
 pub mod microsoft;
 pub mod openjdk;
 pub mod oracle;
+pub mod sapmachine;
 pub mod temurin;
 pub mod zulu;
 
@@ -29,6 +30,7 @@ pub static VENDORS: LazyLock<Vec<Box<dyn Vendor>>> = LazyLock::new(|| {
         Box::new(microsoft::Microsoft {}),
         Box::new(openjdk::OpenJDK {}),
         Box::new(oracle::Oracle {}),
+        Box::new(sapmachine::SAPMachine {}),
         Box::new(temurin::Temurin {}),
         Box::new(zulu::Zulu {}),
     ]

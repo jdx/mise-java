@@ -22,6 +22,7 @@ pub struct GitHubTag {
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct GitHubAsset {
     pub browser_download_url: String,
+    pub content_type: String,
     pub name: String,
     pub size: u64,
 }
