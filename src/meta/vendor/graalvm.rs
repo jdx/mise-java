@@ -5,7 +5,7 @@ use crate::{
     meta::JavaMetaData,
 };
 use eyre::Result;
-use log::{debug, warn};
+use log::{debug, error, warn};
 use xx::regex;
 
 #[derive(Clone, Copy, Debug)]
@@ -47,16 +47,26 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
     let mut meta_data = vec![];
     let assets = release.assets.iter().filter(|asset| include(asset));
     for asset in assets {
-        if asset.name.starts_with("graalvm-ce") {
-            meta_data.push(map_ce(asset)?);
+        let release = if asset.name.starts_with("graalvm-ce") {
+            map_ce(&asset)
         } else if asset.name.starts_with("graalvm-community") {
-            meta_data.push(map_community(asset)?);
+            map_community(&asset)
+        } else {
+            continue;
+        };
+
+        match release {
+            Ok(release) => meta_data.push(release),
+            Err(e) => error!("[graalvm] error parsing release: {:?}", e),
         }
     }
     Ok(meta_data)
 }
 
 fn map_ce(asset: &GitHubAsset) -> Result<JavaMetaData> {
+    // TODO centralize and handle fetch error with None url return value
+    //      only fetch if enabled or unknown (some vendors require 1000s of requests)
+    //      fetch_checksum(url: &str) -> Result<(Option<String>, Option<String>)>
     let sha256_url = format!("{}.sha256", asset.browser_download_url);
     let sha256sum = match HTTP.get_text(&sha256_url) {
         Ok(sha256) => Some(sha256),
