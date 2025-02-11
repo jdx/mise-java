@@ -6,6 +6,7 @@ use crate::cli::version::VERSION;
 
 pub mod build_time;
 mod cli;
+mod config;
 mod env;
 mod github;
 mod http;

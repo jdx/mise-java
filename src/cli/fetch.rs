@@ -4,9 +4,12 @@ use eyre::Result;
 use log::{error, info};
 use rusqlite::params;
 
-use crate::meta::{
-    self,
-    vendor::{Vendor, VENDORS},
+use crate::{
+    config::Conf,
+    meta::{
+        self,
+        vendor::{Vendor, VENDORS},
+    },
 };
 
 #[derive(Debug, clap::Args)]
@@ -43,22 +46,38 @@ impl Fetch {
                         }
                     };
 
-                    // TODO move to JSON module
-                    info!("[{}] writing to JSON", name);
-                    match store_json(&meta_data, &format!("data/{name}.json")) {
-                        Ok(_) => {}
+                    let conf = match Conf::try_get() {
+                        Ok(conf) => conf,
                         Err(err) => {
-                            error!("[{}] failed to write to JSON: {}", name, err);
+                            error!("[{}] failed to load configuration: {}", name, err);
                             return;
                         }
                     };
+
+                    // TODO move to JSON module
+                    if let Some(json_path) = conf.json.path {
+                        info!("[{}] writing to JSON", name);
+                        match store_json(
+                            &meta_data,
+                            &format!("{path}{name}.json", path = json_path, name = name),
+                        ) {
+                            Ok(_) => {}
+                            Err(err) => {
+                                error!("[{}] failed to write to JSON: {}", name, err);
+                                return;
+                            }
+                        }
+                    }
+
                     // TODO move to DB module
-                    info!("[{}] writing to SQLite", name);
-                    match store_sqlite(&meta_data, "data/meta.sqlite3") {
-                        Ok(_) => {}
-                        Err(err) => {
-                            error!("[{}] failed to write to SQLite: {}", name, err);
-                            return;
+                    if let Some(db_path) = conf.sqlite.path {
+                        info!("[{}] writing to SQLite", name);
+                        match store_sqlite(&meta_data, &db_path) {
+                            Ok(_) => {}
+                            Err(err) => {
+                                error!("[{}] failed to write to SQLite: {}", name, err);
+                                return;
+                            }
                         }
                     }
                 })

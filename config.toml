@@ -1,0 +1,9 @@
+[sqlite]
+# Path to SQLite3 database file
+path = "data/meta.sqlite3"
+
+[fetch]
+
+[json]
+# Directory to store JSON files in form of "{vendor}.json"
+path = "data/"
