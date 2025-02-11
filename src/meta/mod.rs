@@ -21,7 +21,7 @@ pub struct JavaMetaData {
     pub sha256_url: Option<String>,
     pub sha512: Option<String>,
     pub sha512_url: Option<String>,
-    pub size: u64,
+    pub size: Option<u64>,
     pub url: String,
     pub vendor: String,
     pub version: String,

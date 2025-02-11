@@ -5,7 +5,7 @@ use scraper::{ElementRef, Html, Selector};
 use xx::regex;
 
 use super::{normalize_architecture, normalize_os, normalize_version, Vendor};
-#[derive(Clone, Copy, Debug)]
+
 pub struct Oracle {}
 
 struct FileNameMeta {
@@ -65,6 +65,7 @@ fn map_release(a: &ElementRef<'_>) -> Result<JavaMetaData> {
 
     Ok(JavaMetaData {
         architecture: normalize_architecture(&filename_meta.arch),
+        features: Some(vec![]),
         filename: name.to_string(),
         file_type: filename_meta.ext,
         image_type: "jdk".to_string(),

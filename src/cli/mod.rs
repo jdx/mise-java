@@ -28,7 +28,7 @@ impl Commands {
 impl Cli {
     pub fn command() -> clap::Command {
         Commands::augment_subcommands(
-            clap::Command::new("jmdb")
+            clap::Command::new("jmeta")
                 .version(version::VERSION.to_string())
                 .about(env!("CARGO_PKG_DESCRIPTION"))
                 .author("Roland Schär <@roele>")
@@ -60,7 +60,7 @@ impl Cli {
 }
 
 const LONG_ABOUT: &str = indoc! {"
-jmdb is a tool for managing Java metadata. https://github.com/roele/jmdb
+jmeta is a tool for managing Java metadata. https://github.com/roele/jmeta
 
-A database which contains metadata about the various Java distributions.
+A tool to manage metadata about the various Java distributions.
 "};

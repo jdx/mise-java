@@ -8,7 +8,7 @@ use crate::{
 };
 
 #[derive(Debug, clap::Args)]
-#[clap(about = "Show jmdb version", alias = "v")]
+#[clap(about = "Show jmeta version", alias = "v")]
 pub struct Version {}
 
 pub static OS: Lazy<String> = Lazy::new(|| std::env::consts::OS.into());
@@ -44,7 +44,7 @@ impl Version {
 }
 
 pub fn print_version_if_requested(args: &[String]) -> std::io::Result<()> {
-    if args.len() == 2 && *env::BINARY_NAME == "jmdb" {
+    if args.len() == 2 && *env::BINARY_NAME == "jmeta" {
         let cmd = &args[1].to_lowercase();
         if cmd == "version" || cmd == "-v" || cmd == "--version" {
             show_version()?;

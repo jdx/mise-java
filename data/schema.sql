@@ -7,7 +7,7 @@ DROP TABLE IF EXISTS JAVA_META_DATA;
 --
 --
 CREATE TABLE JAVA_META_DATA (
-    architecture TEXT,
+    architecture TEXT NOT NULL,
     features TEXT,
     file_type TEXT,
     "filename" TEXT,
@@ -15,8 +15,8 @@ CREATE TABLE JAVA_META_DATA (
     java_version TEXT,
     jvm_impl TEXT,
     md5 TEXT,
-    md5_file TEXT,
-    os TEXT,
+    md5_url TEXT,
+    os TEXT NOT NULL,
     release_type TEXT,
     sha1 TEXT,
     sha1_url TEXT,
@@ -26,9 +26,9 @@ CREATE TABLE JAVA_META_DATA (
     sha512_url TEXT,
     "size" INTEGER,
     "url" TEXT NOT NULL,
-    vendor TEXT,
-    "version" TEXT,
-    PRIMARY KEY ("url")
+    vendor TEXT NOT NULL,
+    "version" TEXT NOT NULL,
+    PRIMARY KEY (architecture, os, vendor, "version")
 );
 
 -- Create Index on JAVA_META_DATA for
@@ -38,3 +38,4 @@ CREATE TABLE JAVA_META_DATA (
 CREATE INDEX JAVA_META_DATA_IDX_ARCHITECTURE ON JAVA_META_DATA (architecture);
 CREATE INDEX JAVA_META_DATA_IDX_OS ON JAVA_META_DATA (os);
 CREATE INDEX JAVA_META_DATA_IDX_VENDOR ON JAVA_META_DATA (vendor);
+CREATE INDEX JAVA_META_DATA_IDX_VERSION ON JAVA_META_DATA ("version");

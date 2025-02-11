@@ -75,7 +75,7 @@ fn map_packages(packages: Vec<Package>) -> Vec<JavaMetaData> {
             os,
             release_type: release_type.to_string(),
             sha256: Some(package.sha256_hash),
-            size: package.size,
+            size: Some(package.size),
             url: package.download_url,
             vendor: "zulu".to_string(),
             version,
