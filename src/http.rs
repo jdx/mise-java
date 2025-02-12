@@ -11,7 +11,7 @@ use tokio::io::AsyncWriteExt;
 
 use crate::cli::version;
 use crate::env;
-use crate::tokio::RUNTIME;
+use crate::runtime::RUNTIME;
 
 pub static HTTP: Lazy<Client> = Lazy::new(|| Client::new(Duration::from_secs(30)).unwrap());
 
@@ -56,12 +56,6 @@ impl Client {
     where
         T: serde::de::DeserializeOwned,
     {
-        // let url = url.into_url()?;
-        // let req = self.reqwest.get(url.clone());
-        // let resp = req.send().await?;
-        // debug!("GET {url} {}", resp.status());
-        // resp.error_for_status_ref()?;
-        // Ok(resp.json::<T>().await?)
         self.get_json_with_headers_async(url)
             .await
             .map(|(json, _)| json)

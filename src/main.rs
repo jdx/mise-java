@@ -11,7 +11,7 @@ mod env;
 mod github;
 mod http;
 mod meta;
-mod tokio;
+mod runtime;
 
 #[macro_use]
 mod output;
