@@ -20,7 +20,6 @@ impl Vendor for Zulu {
         let mut page = 1;
         let page_size = 1000;
         let mut all_packages: Vec<Package> = Vec::new();
-
         loop {
             let api_url = formatdoc! {"https://api.azul.com/metadata/v1/zulu/packages
               ?availability_types=ca
@@ -35,14 +34,11 @@ impl Vendor for Zulu {
                 Ok(packages) => {
                     all_packages.extend(packages);
                     page += 1;
-                    continue;
                 }
                 Err(_) => break,
             }
         }
-
         meta_data.extend(map_packages(all_packages));
-
         Ok(())
     }
 }

@@ -1,11 +1,14 @@
 use eyre::Result;
 use log::{debug, error};
-use scraper::{ElementRef, Html, Selector};
+use rayon::iter::{IntoParallelIterator, ParallelIterator};
 use xx::regex;
 
 use crate::{http::HTTP, meta::JavaMetaData};
 
-use super::{normalize_architecture, normalize_os, normalize_version, Vendor};
+use super::{
+    anchors_from_html, normalize_architecture, normalize_os, normalize_version, AnchorElement,
+    Vendor,
+};
 
 #[derive(Clone, Copy, Debug)]
 pub struct OpenJDK {}
@@ -23,35 +26,41 @@ impl Vendor for OpenJDK {
     }
 
     fn fetch_metadata(&self, meta_data: &mut Vec<crate::meta::JavaMetaData>) -> eyre::Result<()> {
-        for version in vec![
+        let anchors: Vec<AnchorElement> = vec![
             "archive", "21", "22", "23", "24", "leyden", "loom", "valhalla",
-        ] {
+        ]
+        .into_par_iter()
+        .flat_map(|version| {
             let url = format!("http://jdk.java.net/{version}/");
-            let releases_html = HTTP.get_text(url)?;
-            let document = Html::parse_document(&releases_html);
+            let releases_html = match HTTP.get_text(url) {
+                Ok(releases_html) => releases_html,
+                Err(e) => {
+                    error!("[openjdk] error fetching releases: {:?}", e);
+                    "".to_string()
+                }
+            };
+            anchors_from_html(&releases_html, "a:is([href$='.tar.gz'], [href$='.zip'])")
+        })
+        .collect();
 
-            let a_selector = Selector::parse("a:is([href$='.tar.gz'], [href$='.zip'])").unwrap();
-            for a in document.select(&a_selector) {
-                let release = match map_release(&a) {
-                    Ok(release) => release,
-                    Err(e) => {
-                        error!("[openjdk] error parsing release: {:?}", e);
-                        continue;
-                    }
-                };
-                meta_data.push(release);
-            }
-        }
+        let data = anchors
+            .into_par_iter()
+            .filter_map(|anchor| match map_release(&anchor) {
+                Ok(release) => Some(release),
+                Err(e) => {
+                    error!("[openjdk] error parsing release: {:?}", e);
+                    None
+                }
+            })
+            .collect::<Vec<JavaMetaData>>();
+        meta_data.extend(data);
         Ok(())
     }
 }
 
-fn map_release(a: &ElementRef<'_>) -> Result<JavaMetaData> {
-    let href = a
-        .value()
-        .attr("href")
-        .ok_or_else(|| eyre::eyre!("no href found"))?;
-    let name = href
+fn map_release(a: &AnchorElement) -> Result<JavaMetaData> {
+    let name = a
+        .href
         .split("/")
         .last()
         .ok_or_else(|| eyre::eyre!("no name found"))?
@@ -63,11 +72,11 @@ fn map_release(a: &ElementRef<'_>) -> Result<JavaMetaData> {
     } else {
         Some(vec![])
     };
-    let sha256_url = format!("{}.sha256", &href);
+    let sha256_url = format!("{}.sha256", &a.href);
     let sha256 = match HTTP.get_text(&sha256_url) {
         Ok(sha) => sha.split_whitespace().next().map(|s| s.to_string()),
         Err(e) => {
-            error!("error fetching sha256sum for {name}: {e}");
+            error!("error fetching sha256sum for {}: {}", name, e);
             None
         }
     };
@@ -75,7 +84,7 @@ fn map_release(a: &ElementRef<'_>) -> Result<JavaMetaData> {
     Ok(JavaMetaData {
         architecture: normalize_architecture(&arch),
         features,
-        filename: name.to_string(),
+        filename: name.clone(),
         file_type: filename_meta.ext,
         image_type: "jdk".to_string(),
         java_version: normalize_version(&filename_meta.version),
@@ -84,7 +93,7 @@ fn map_release(a: &ElementRef<'_>) -> Result<JavaMetaData> {
         release_type: normalize_release_type(&filename_meta.version),
         sha256,
         sha256_url: Some(sha256_url),
-        url: href.to_string(),
+        url: a.href.clone(),
         version: normalize_version(&filename_meta.version),
         vendor: "openjdk".to_string(),
         ..Default::default()

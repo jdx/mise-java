@@ -1,9 +1,13 @@
 use crate::{http::HTTP, meta::JavaMetaData};
 use eyre::Result;
 use log::{debug, error};
-use scraper::{ElementRef, Html, Selector};
+
+use rayon::iter::IntoParallelIterator;
+use rayon::iter::ParallelIterator;
 use xx::regex;
 
+use super::anchors_from_html;
+use super::AnchorElement;
 use super::{normalize_architecture, normalize_os, normalize_version, Vendor};
 
 #[derive(Clone, Copy, Debug)]
@@ -27,49 +31,43 @@ impl Vendor for Microsoft {
             "https://learn.microsoft.com/en-us/java/openjdk/older-releases",
         ];
 
-        for url in urls {
-            let releases_html = HTTP.get_text(url)?;
-            let document = Html::parse_document(&releases_html);
-
-            let a_selector = Selector::parse("a:is([href$='.tar.gz'], [href$='.zip'], [href$='.msi'],[href$='.dmg'],[href$='.pkg'])").unwrap();
-            for a in document.select(&a_selector) {
-                // skip debug symbols releases
-                let name = a.text().collect::<String>();
-                if name.contains("-debugsymbols-") || name.contains("-sources-") {
-                    continue;
+        // ElementRef is not Send, so we can't use rayon, so we have to turn it into a usable struct
+        let anchors: Vec<AnchorElement> = urls.into_iter().flat_map(|url| {
+            let releases_html = match HTTP.get_text(url) {
+                Ok(releases_html) => releases_html,
+                Err(e) => {
+                    error!("[microsoft] error fetching releases: {:?}", e);
+                    "".to_string()
                 }
-                let release = match map_release(&a) {
-                    Ok(release) => release,
-                    Err(e) => {
-                        // older release might contain unsupported versions
-                        if url.contains("older-releases") {
-                            debug!("[microsoft] error parsing release: {}", name);
-                        } else {
-                            error!("[microsoft] error parsing release: {:?}", e);
-                        }
-                        continue;
-                    }
-                };
-                meta_data.push(release);
-            }
-        }
+            };
+            anchors_from_html(&releases_html, "a:is([href$='.tar.gz'], [href$='.zip'], [href$='.msi'],[href$='.dmg'],[href$='.pkg'])")
+        }).collect();
 
+        let data = anchors
+            .into_par_iter()
+            .filter(|anchor| {
+                !anchor.name.contains("-debugsymbols-") && !anchor.name.contains("-sources-")
+            })
+            .flat_map(|anchor| match map_release(&anchor) {
+                Ok(release) => vec![release],
+                Err(e) => {
+                    error!("[microsoft] error parsing release: {:?}", e);
+                    vec![]
+                }
+            })
+            .collect::<Vec<JavaMetaData>>();
+        meta_data.extend(data);
         Ok(())
     }
 }
 
-fn map_release(a: &ElementRef<'_>) -> Result<JavaMetaData> {
-    let href = a
-        .value()
-        .attr("href")
-        .ok_or_else(|| eyre::eyre!("no href found"))?;
-    let name = a.text().collect::<String>();
-    let filename_meta = meta_from_name(&name)?;
-    let sha256_url = format!("{}.sha256sum.txt", &href);
+fn map_release(a: &AnchorElement) -> Result<JavaMetaData> {
+    let filename_meta = meta_from_name(&a.name)?;
+    let sha256_url = format!("{}.sha256sum.txt", &a.href);
     let sha256 = match HTTP.get_text(&sha256_url) {
         Ok(sha) => sha.split_whitespace().next().map(|s| s.to_string()),
         Err(e) => {
-            error!("error fetching sha256sum for {name}: {e}");
+            error!("error fetching sha256sum for {}: {}", a.name, e);
             None
         }
     };
@@ -81,7 +79,7 @@ fn map_release(a: &ElementRef<'_>) -> Result<JavaMetaData> {
         } else {
             Some(vec![])
         },
-        filename: name.to_string(),
+        filename: a.name.clone(),
         file_type: filename_meta.ext,
         image_type: "jdk".to_string(),
         java_version: normalize_version(&filename_meta.version),
@@ -90,7 +88,7 @@ fn map_release(a: &ElementRef<'_>) -> Result<JavaMetaData> {
         release_type: "ga".to_string(),
         sha256,
         sha256_url: Some(sha256_url),
-        url: href.to_string(),
+        url: a.href.clone(),
         version: normalize_version(&filename_meta.version),
         vendor: "microsoft".to_string(),
         ..Default::default()

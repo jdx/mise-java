@@ -6,6 +6,8 @@ use crate::{
 };
 use eyre::Result;
 use log::{debug, error, warn};
+use rayon::iter::IntoParallelIterator;
+use rayon::iter::ParallelIterator;
 use xx::regex;
 
 #[derive(Clone, Copy, Debug)]
@@ -26,19 +28,16 @@ impl Vendor for GraalVM {
 
     fn fetch_metadata(&self, meta_data: &mut Vec<JavaMetaData>) -> Result<()> {
         let releases = github::list_releases("graalvm/graalvm-ce-builds")?;
-        for release in &releases {
-            if release.prerelease {
-                continue;
-            }
-            let data = match map_release(release) {
-                Ok(data) => data,
-                Err(e) => {
-                    warn!("[graalvm] error parsing release: {:?}", e);
-                    continue;
-                }
-            };
-            meta_data.extend(data);
-        }
+        let data = releases
+            .into_par_iter()
+            .flat_map(|release| {
+                map_release(&release).unwrap_or_else(|err| {
+                    warn!("[graalvm] error parsing release: {:?}", err);
+                    vec![]
+                })
+            })
+            .collect::<Vec<JavaMetaData>>();
+        meta_data.extend(data);
         Ok(())
     }
 }

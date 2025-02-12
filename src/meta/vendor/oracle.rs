@@ -1,10 +1,13 @@
 use crate::{http::HTTP, meta::JavaMetaData};
 use eyre::Result;
 use log::{debug, error};
-use scraper::{ElementRef, Html, Selector};
+use rayon::iter::{IntoParallelIterator, ParallelIterator};
 use xx::regex;
 
-use super::{normalize_architecture, normalize_os, normalize_version, Vendor};
+use super::{
+    anchors_from_html, normalize_architecture, normalize_os, normalize_version, AnchorElement,
+    Vendor,
+};
 
 pub struct Oracle {}
 
@@ -21,40 +24,44 @@ impl Vendor for Oracle {
     }
 
     fn fetch_metadata(&self, meta_data: &mut Vec<JavaMetaData>) -> Result<()> {
-        for version in 17..=23 {
-            let url = format!("https://www.oracle.com/java/technologies/javase/jdk{version}-archive-downloads.html");
-            let releases_html = HTTP.get_text(url)?;
-            let document = Html::parse_document(&releases_html);
-
-            let a_selector = Selector::parse("a:is([href$='.dep'],[href$='.dmg'], [href$='.exe'], [href$='.msi'], [href$='.rpm'], [href$='.tar.gz'], [href$='.zip'])").unwrap();
-            for a in document.select(&a_selector) {
-                let release = match map_release(&a) {
-                    Ok(release) => release,
+        let anchors = (17..=23)
+            .into_par_iter()
+            .flat_map(|version| {
+                let url = format!("https://www.oracle.com/java/technologies/javase/jdk{version}-archive-downloads.html");
+                let releases_html = match HTTP.get_text(&url) {
+                    Ok(releases_html) => releases_html,
                     Err(e) => {
-                        error!("[oracle] error parsing release: {:?}", e);
-                        continue;
+                        error!("[oracle] error fetching releases: {:?}", e);
+                        "".to_string()
                     }
                 };
-                meta_data.push(release);
-            }
-        }
+                anchors_from_html(&releases_html, "a:is([href$='.dep'],[href$='.dmg'], [href$='.exe'], [href$='.msi'], [href$='.rpm'], [href$='.tar.gz'], [href$='.zip'])")
+            })
+            .collect::<Vec<_>>();
+        let data = anchors
+            .into_par_iter()
+            .flat_map(|anchor| match map_release(&anchor) {
+                Ok(release) => vec![release],
+                Err(e) => {
+                    error!("[oracle] error parsing release: {:?}", e);
+                    vec![]
+                }
+            })
+            .collect::<Vec<_>>();
+        meta_data.extend(data);
         Ok(())
     }
 }
 
-fn map_release(a: &ElementRef<'_>) -> Result<JavaMetaData> {
-    let href = a
-        .value()
-        .attr("href")
-        .ok_or_else(|| eyre::eyre!("no href found"))?;
-    let a_text = a.text().collect::<String>();
-    let name = a_text
+fn map_release(a: &AnchorElement) -> Result<JavaMetaData> {
+    let name = a
+        .name
         .split("/")
         .last()
         .ok_or_else(|| eyre::eyre!("no name found"))?
         .to_string();
     let filename_meta = meta_from_name(&name)?;
-    let sha256_url = format!("{}.sha256", &href);
+    let sha256_url = format!("{}.sha256", &a.href);
     let sha256 = match HTTP.get_text(&sha256_url) {
         Ok(sha) => sha.split_whitespace().next().map(|s| s.to_string()),
         Err(e) => {
@@ -75,7 +82,7 @@ fn map_release(a: &ElementRef<'_>) -> Result<JavaMetaData> {
         release_type: "ga".to_string(),
         sha256,
         sha256_url: Some(sha256_url),
-        url: href.to_string(),
+        url: a.href.clone(),
         version: normalize_version(&filename_meta.version),
         vendor: "oracle".to_string(),
         ..Default::default()

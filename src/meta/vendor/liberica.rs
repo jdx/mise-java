@@ -7,6 +7,8 @@ use crate::{
 };
 use eyre::Result;
 use log::{debug, warn};
+use rayon::iter::IntoParallelIterator;
+use rayon::iter::ParallelIterator;
 use xx::regex;
 
 use super::{normalize_architecture, normalize_os, normalize_version, Vendor};
@@ -30,12 +32,16 @@ impl Vendor for Liberica {
 
     fn fetch_metadata(&self, meta_data: &mut Vec<crate::meta::JavaMetaData>) -> eyre::Result<()> {
         let releases = github::list_releases("bell-sw/Liberica")?;
-        for release in &releases {
-            if release.prerelease {
-                continue;
-            }
-            meta_data.extend(map_release(release)?);
-        }
+        let data = releases
+            .into_par_iter()
+            .flat_map(|release| {
+                map_release(&release).unwrap_or_else(|err| {
+                    warn!("[liberica] error parsing release: {:?}", err);
+                    vec![]
+                })
+            })
+            .collect::<Vec<JavaMetaData>>();
+        meta_data.extend(data);
         Ok(())
     }
 }

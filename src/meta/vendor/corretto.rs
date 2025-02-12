@@ -4,6 +4,8 @@ use crate::{
 };
 use eyre::Result;
 use log::{debug, warn};
+use rayon::iter::IntoParallelIterator;
+use rayon::iter::ParallelIterator;
 use scraper::{Html, Selector};
 use xx::regex;
 
@@ -28,10 +30,16 @@ impl Vendor for Corretto {
             debug!("[corretto] fetching releases for version: {version}");
             let repo = format!("corretto/corretto-{}", version);
             let releases = github::list_releases(repo.as_str())?;
-
-            for release in &releases {
-                meta_data.extend(map_release(&release)?);
-            }
+            let data = releases
+                .into_par_iter()
+                .flat_map(|release| {
+                    map_release(&release).unwrap_or_else(|err| {
+                        warn!("[corretto] failed to map release: {}", err);
+                        vec![]
+                    })
+                })
+                .collect::<Vec<JavaMetaData>>();
+            meta_data.extend(data);
         }
         Ok(())
     }

@@ -9,8 +9,6 @@ use crate::{
     sqlite::Sqlite,
 };
 
-const NUM_THREADS: usize = 10;
-
 #[derive(Debug, clap::Args)]
 #[clap(verbatim_doc_comment, after_long_help = AFTER_LONG_HELP)]
 pub struct Fetch {
@@ -30,9 +28,7 @@ impl Fetch {
 
         let start = std::time::Instant::now();
 
-        let pool = rayon::ThreadPoolBuilder::new()
-            .num_threads(NUM_THREADS)
-            .build()?;
+        let pool = rayon::ThreadPoolBuilder::default().build()?;
         pool.scope(|s| {
             let run = |name: String, vendor: Arc<dyn Vendor>| {
                 s.spawn(move |_| {
@@ -62,8 +58,7 @@ impl Fetch {
             };
 
             let (tx, rx) = unbounded();
-            let v = self.get_vendors();
-            for (name, vendor) in v {
+            for (name, vendor) in self.get_vendors() {
                 tx.send((name, vendor)).unwrap();
             }
             drop(tx);

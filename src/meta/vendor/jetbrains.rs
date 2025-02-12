@@ -5,6 +5,8 @@ use crate::{
 };
 use eyre::Result;
 use log::{debug, error, warn};
+use rayon::iter::IntoParallelIterator;
+use rayon::iter::ParallelIterator;
 use scraper::{ElementRef, Html, Selector};
 use xx::regex;
 
@@ -28,30 +30,36 @@ impl Vendor for Jetbrains {
 
     fn fetch_metadata(&self, meta_data: &mut Vec<crate::meta::JavaMetaData>) -> eyre::Result<()> {
         let releases = github::list_releases("JetBrains/JetBrainsRuntime")?;
-        for release in &releases {
-            let version = release.tag_name.as_str();
-            let html = match release.body {
-                Some(ref body) => md_to_html(body.as_str()),
-                None => {
-                    warn!("[jetbrains] no body found for release: {version}");
-                    continue;
-                }
-            };
-            let fragment = Html::parse_fragment(&html);
-            let a_selector =
-                Selector::parse("table a:is([href$='.pkg'], [href$='.tar.gz'], [href$='.zip'])")
-                    .unwrap();
-            for a in fragment.select(&a_selector) {
-                let release = match map_release(&release, &a) {
-                    Ok(release) => release,
-                    Err(e) => {
-                        error!("[jetbrains] error parsing release: {:?}", e);
-                        continue;
+        let data = releases
+            .into_par_iter()
+            .flat_map(|release| {
+                let mut data = vec![];
+                let version = release.tag_name.as_str();
+                let html = match release.body {
+                    Some(ref body) => md_to_html(body.as_str()),
+                    None => {
+                        warn!("[jetbrains] no body found for release: {version}");
+                        return data;
                     }
                 };
-                meta_data.push(release);
-            }
-        }
+                let fragment = Html::parse_fragment(&html);
+                let a_selector = Selector::parse(
+                    "table a:is([href$='.pkg'], [href$='.tar.gz'], [href$='.zip'])",
+                )
+                .unwrap();
+
+                for a in fragment.select(&a_selector) {
+                    match map_release(&release, &a) {
+                        Ok(release) => data.push(release),
+                        Err(e) => {
+                            error!("[jetbrains] error parsing release: {:?}", e);
+                        }
+                    }
+                }
+                data
+            })
+            .collect::<Vec<JavaMetaData>>();
+        meta_data.extend(data);
         Ok(())
     }
 }

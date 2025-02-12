@@ -4,6 +4,7 @@ use comrak::{markdown_to_html, ComrakOptions};
 use eyre::Result;
 use indoc::formatdoc;
 use log::info;
+use scraper::{Html, Selector};
 
 use super::JavaMetaData;
 
@@ -63,6 +64,12 @@ pub trait Vendor: Send + Sync {
     fn fetch_metadata(&self, meta_data: &mut Vec<JavaMetaData>) -> Result<()>;
 }
 
+/// An anchor element with a name and href
+pub struct AnchorElement {
+    name: String,
+    href: String,
+}
+
 /// Returns the file extension of a package which is either `apk`, `deb`, `dmg`, `msi`, `pkg`, `rpm`, `tar.gz` or `zip`
 fn get_extension(package_name: &str) -> String {
     let re = regex::Regex::new(r"^.*\.(apk|dep|dmg|msi|pkg|rpm|tar\.gz|zip)$").unwrap();
@@ -81,6 +88,20 @@ pub fn md_to_html(md: &str) -> String {
     options.extension.table = true;
 
     markdown_to_html(&markdown_input, &options)
+}
+
+/// Extract anchor elements from HTML
+pub fn anchors_from_html(html: &str, selector: &str) -> Vec<AnchorElement> {
+    let document = Html::parse_document(&html);
+    let a_selector = Selector::parse(selector).unwrap();
+    document
+        .select(&a_selector)
+        .map(|a| {
+            let name = a.text().collect::<String>();
+            let href = a.value().attr("href").unwrap_or("").to_string();
+            AnchorElement { name, href }
+        })
+        .collect::<Vec<AnchorElement>>()
 }
 
 /// Normalizes the architecture string to a common format

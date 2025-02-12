@@ -5,6 +5,8 @@ use crate::{
 };
 use eyre::Result;
 use log::{debug, warn};
+use rayon::iter::IntoParallelIterator;
+use rayon::iter::ParallelIterator;
 use xx::regex;
 
 use super::{normalize_architecture, normalize_os, normalize_version, Vendor};
@@ -27,16 +29,16 @@ impl Vendor for SAPMachine {
 
     fn fetch_metadata(&self, meta_data: &mut Vec<crate::meta::JavaMetaData>) -> eyre::Result<()> {
         let releases = github::list_releases("SAP/SapMachine")?;
-        for release in &releases {
-            let data = match map_release(release) {
-                Ok(data) => data,
-                Err(e) => {
-                    warn!("[sapmachine] error parsing release: {:?}", e);
-                    continue;
-                }
-            };
-            meta_data.extend(data);
-        }
+        let data: Vec<JavaMetaData> = releases
+            .into_par_iter()
+            .flat_map(|release| {
+                map_release(&release).unwrap_or_else(|err| {
+                    warn!("[sapmachine] failed to map release: {}", err);
+                    vec![]
+                })
+            })
+            .collect();
+        meta_data.extend(data);
         Ok(())
     }
 }
