@@ -68,11 +68,15 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
             true => meta_from_name_rpm(&filename)?,
             false => meta_from_name(&filename)?,
         };
+        let features = match filename_meta.features.is_empty() {
+            true => Some(vec![]),
+            false => Some(vec![filename_meta.features.clone()]),
+        };
         let url = asset.browser_download_url.clone();
         let version = normalize_version(&filename_meta.version);
         meta_data.push(JavaMetaData {
             architecture: normalize_architecture(&filename_meta.arch),
-            features: Some(vec![filename_meta.features]),
+            features,
             filename,
             file_type: filename_meta.ext.clone(),
             image_type: filename_meta.image_type.clone(),
