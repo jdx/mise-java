@@ -1,4 +1,4 @@
-use std::sync::LazyLock;
+use std::sync::{Arc, LazyLock};
 
 use comrak::{markdown_to_html, ComrakOptions};
 use eyre::Result;
@@ -20,19 +20,19 @@ pub mod temurin;
 pub mod zulu;
 
 // TODO: implement all vendors
-pub static VENDORS: LazyLock<Vec<Box<dyn Vendor>>> = LazyLock::new(|| {
+pub static VENDORS: LazyLock<Vec<Arc<dyn Vendor>>> = LazyLock::new(|| {
     vec![
-        Box::new(adoptopenjdk::AdoptOpenJDK {}),
-        Box::new(corretto::Corretto {}),
-        Box::new(graalvm::GraalVM {}),
-        Box::new(jetbrains::Jetbrains {}),
-        Box::new(liberica::Liberica {}),
-        Box::new(microsoft::Microsoft {}),
-        Box::new(openjdk::OpenJDK {}),
-        Box::new(oracle::Oracle {}),
-        Box::new(sapmachine::SAPMachine {}),
-        Box::new(temurin::Temurin {}),
-        Box::new(zulu::Zulu {}),
+        Arc::new(adoptopenjdk::AdoptOpenJDK {}),
+        Arc::new(corretto::Corretto {}),
+        Arc::new(graalvm::GraalVM {}),
+        Arc::new(jetbrains::Jetbrains {}),
+        Arc::new(liberica::Liberica {}),
+        Arc::new(microsoft::Microsoft {}),
+        Arc::new(openjdk::OpenJDK {}),
+        Arc::new(oracle::Oracle {}),
+        Arc::new(sapmachine::SAPMachine {}),
+        Arc::new(temurin::Temurin {}),
+        Arc::new(zulu::Zulu {}),
     ]
 });
 

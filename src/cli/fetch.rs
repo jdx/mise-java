@@ -1,13 +1,15 @@
-use std::{collections::HashMap, thread};
-
+use crossbeam_channel::{select, unbounded};
 use eyre::Result;
 use log::{error, info};
+use std::{collections::HashMap, sync::Arc};
 
 use crate::{
     json::Json,
     meta::vendor::{Vendor, VENDORS},
     sqlite::Sqlite,
 };
+
+const NUM_THREADS: usize = 10;
 
 #[derive(Debug, clap::Args)]
 #[clap(verbatim_doc_comment, after_long_help = AFTER_LONG_HELP)]
@@ -27,13 +29,13 @@ impl Fetch {
         }
 
         let start = std::time::Instant::now();
-        let mut tasks = vec![];
 
-        // TODO: use a thread pool here
-        for (name, vendor) in self.get_vendors() {
-            let task = thread::Builder::new()
-                .name(name.clone())
-                .spawn(move || {
+        let pool = rayon::ThreadPoolBuilder::new()
+            .num_threads(NUM_THREADS)
+            .build()?;
+        pool.scope(|s| {
+            let run = |name: String, vendor: Arc<dyn Vendor>| {
+                s.spawn(move |_| {
                     info!("[{}] fetching meta data", name);
                     let meta_data = match vendor.fetch() {
                         Ok(data) => data,
@@ -56,14 +58,27 @@ impl Fetch {
                             error!("[{}] failed to write to SQLite: {}", name, err);
                         }
                     };
-                })
-                .unwrap();
-            tasks.push(task);
-        }
+                });
+            };
 
-        for task in tasks {
-            task.join().unwrap();
-        }
+            let (tx, rx) = unbounded();
+            let v = self.get_vendors();
+            for (name, vendor) in v {
+                tx.send((name, vendor)).unwrap();
+            }
+            drop(tx);
+
+            loop {
+                select! {
+                    recv(rx) -> msg => {
+                        match msg {
+                            Ok((name, vendor)) => run(name, vendor),
+                            Err(_) => break,
+                        }
+                    }
+                }
+            }
+        });
 
         info!(
             "fetched all vendors in {:.2} seconds",
@@ -72,10 +87,10 @@ impl Fetch {
         Ok(())
     }
 
-    fn get_vendors(&self) -> HashMap<String, &'static Box<dyn Vendor>> {
+    fn get_vendors(&self) -> HashMap<String, Arc<dyn Vendor>> {
         VENDORS
             .iter()
-            .map(|v| (v.get_name(), v))
+            .map(|v| (v.get_name(), v.to_owned()))
             .filter(|(k, _v)| self.vendors.is_empty() || self.vendors.contains(k))
             .collect()
     }
