@@ -26,7 +26,7 @@ impl Vendor for Zulu {
               ?availability_types=ca
               &release_status=both
               &page_size={page_size}
-              &include_fields=arch,archive_type,java_package_features,java_package_type,lib_c_type,os,release_status,sha256_hash,size
+              &include_fields=arch,archive_type,crac_supported,javafx_bundled,java_package_features,java_package_type,lib_c_type,os,release_status,sha256_hash,size
               &page={page}",
               page = page, page_size = page_size,
             };
