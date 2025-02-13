@@ -1,10 +1,11 @@
 use eyre::Result;
 use indoc::formatdoc;
 use itertools::Itertools;
-use log::debug;
+use log::{debug, warn};
 use serde::{Deserialize, Serialize};
 
 use crate::{http::HTTP, meta::JavaMetaData};
+use xx::regex;
 
 use super::{normalize_architecture, normalize_os, normalize_version, Vendor};
 
@@ -38,15 +39,22 @@ impl Vendor for Zulu {
                 Err(_) => break,
             }
         }
-        meta_data.extend(map_packages(all_packages));
+        meta_data.extend(map_packages(all_packages)?);
         Ok(())
     }
 }
 
-fn map_packages(packages: Vec<Package>) -> Vec<JavaMetaData> {
+fn map_packages(packages: Vec<Package>) -> Result<Vec<JavaMetaData>> {
     let mut meta_data: Vec<JavaMetaData> = Vec::new();
     for package in packages {
-        let architecture = normalize_architecture(&package.arch);
+        let arch = match arch_from_name(&package.name) {
+            Ok(arch) => arch,
+            Err(_) => {
+                warn!("[zulu] failed to parse architecture for: {}", &package.name);
+                &package.arch
+            }
+        };
+        let architecture = normalize_architecture(&arch);
         let release_type = &package.release_status;
         let features = normalize_features(&package);
         let os = normalize_os(&package.os);
@@ -79,7 +87,17 @@ fn map_packages(packages: Vec<Package>) -> Vec<JavaMetaData> {
         };
         meta_data.push(meta);
     }
-    meta_data
+    Ok(meta_data)
+}
+
+fn arch_from_name(name: &str) -> Result<&str> {
+    debug!("[zulu] parsing name: {}", name);
+    let capture = regex!(r"^.*[._-](aarch32hf|aarch32sf|aarch64|amd64|arm64|musl_aarch64|i386|i686|musl_x64|ppc32hf|ppc32spe|ppc64|sparcv9|x64|x86_64|x86lx64)\..*$")
+        .captures(name)
+        .ok_or_else(|| eyre::eyre!("regular expression failed for name: {}", name))?;
+
+    let arch = capture.get(1).unwrap().as_str();
+    Ok(arch)
 }
 
 fn normalize_features(package: &Package) -> Vec<String> {
