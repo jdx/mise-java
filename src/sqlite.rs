@@ -27,7 +27,7 @@ impl Sqlite {
               (architecture, features, file_type, filename, image_type, java_version, jvm_impl, md5, os, release_type, sha1, sha256, sha512, size, url, vendor, version)
             VALUES
               (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9, ?10, ?11, ?12, ?13, ?14, ?15, ?16, ?17)
-            ON CONFLICT(architecture, os, vendor, version) DO UPDATE SET
+            ON CONFLICT(url) DO UPDATE SET
               architecture = excluded.architecture,
               features = excluded.features,
               file_type = excluded.file_type,
