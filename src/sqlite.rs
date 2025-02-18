@@ -36,6 +36,7 @@ impl Sqlite {
               java_version = excluded.java_version,
               jvm_impl = excluded.jvm_impl,
               md5 = excluded.md5,
+              modified_at = CURRENT_TIMESTAMP,
               os = excluded.os,
               release_type = excluded.release_type,
               sha1 = excluded.sha1,
@@ -59,7 +60,10 @@ impl Sqlite {
 
             let mut result = 0;
             for data in meta_data {
-                let features = data.features.clone().unwrap_or_default().join(",");
+                let features = match &data.features {
+                    Some(values) if !values.is_empty() => Some(values.join(",")),
+                    _ => None,
+                };
                 result += stmt.execute(params![
                     data.architecture,
                     features,

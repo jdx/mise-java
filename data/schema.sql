@@ -8,6 +8,7 @@ DROP TABLE IF EXISTS JAVA_META_DATA;
 --
 CREATE TABLE IF NOT EXISTS JAVA_META_DATA (
     architecture TEXT NOT NULL,
+    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
     features TEXT,
     file_type TEXT,
     "filename" TEXT,
@@ -16,6 +17,7 @@ CREATE TABLE IF NOT EXISTS JAVA_META_DATA (
     jvm_impl TEXT,
     md5 TEXT,
     md5_url TEXT,
+    modified_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
     os TEXT NOT NULL,
     release_type TEXT NOT NULL,
     sha1 TEXT,
