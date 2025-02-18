@@ -17,12 +17,12 @@ use super::{normalize_architecture, normalize_os, normalize_version, Vendor};
 pub struct Liberica {}
 
 struct FileNameMeta {
-    image_type: String,
-    release_type: String,
-    os: String,
     arch: String,
-    feature: String,
     ext: String,
+    feature: String,
+    image_type: String,
+    os: String,
+    version: String,
 }
 
 impl Vendor for Liberica {
@@ -48,7 +48,6 @@ impl Vendor for Liberica {
 
 fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
     let sha1sums = get_sha1sums(release)?;
-    let version = release.tag_name.clone();
     let mut meta_data = vec![];
     let assets = release.assets.iter().filter(|asset| include(asset));
     for asset in assets {
@@ -65,18 +64,18 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
         let url = asset.browser_download_url.clone();
         meta_data.push(JavaMetaData {
             architecture: normalize_architecture(&filename_meta.arch),
-            features: features,
+            features,
             filename,
             file_type: filename_meta.ext.clone(),
             image_type: filename_meta.image_type.clone(),
-            java_version: normalize_version(&version),
+            java_version: normalize_version(&filename_meta.version),
             jvm_impl: "hotspot".to_string(),
             os: normalize_os(&filename_meta.os),
-            release_type: filename_meta.release_type.clone(),
+            release_type: get_release_type(&filename_meta.version, release.prerelease),
             sha1,
             url,
             vendor: "liberica".to_string(),
-            version: normalize_version(&version),
+            version: normalize_version(&filename_meta.version),
             ..Default::default()
         });
     }
@@ -128,20 +127,30 @@ fn meta_from_name(name: &str) -> Result<FileNameMeta> {
     .ok_or_else(|| eyre::eyre!("regular expression did not match name: {}", name))?;
 
     let image_type = capture.get(1).map_or("jdk", |m| m.as_str()).to_string();
-    let release_type = capture.get(2).map_or("ga", |m| m.as_str()).to_string();
+    let version = capture.get(2).unwrap().as_str().to_string();
     let os = capture.get(3).unwrap().as_str().to_string();
     let arch = capture.get(4).unwrap().as_str().to_string();
     let feature = capture.get(5).map_or("", |m| m.as_str()).to_string();
     let ext = capture.get(6).unwrap().as_str().to_string();
 
     Ok(FileNameMeta {
-        image_type,
-        release_type,
-        os,
         arch,
-        feature,
         ext,
+        feature,
+        image_type,
+        os,
+        version,
     })
+}
+
+fn get_release_type(version: &str, is_prerelease: bool) -> String {
+    if is_prerelease {
+        "ea".to_string()
+    } else if version.contains("ea") {
+        "ea".to_string()
+    } else {
+        "ga".to_string()
+    }
 }
 
 fn normalize_features(input: &str) -> Option<Vec<String>> {
