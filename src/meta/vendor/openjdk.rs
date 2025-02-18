@@ -70,7 +70,7 @@ fn map_release(a: &AnchorElement) -> Result<JavaMetaData> {
     let features = if arch.contains("x64-musl") {
         Some(vec!["musl".to_string()])
     } else {
-        Some(vec![])
+        None
     };
     let sha256_url = format!("{}.sha256", &a.href);
     let sha256 = match HTTP.get_text(&sha256_url) {

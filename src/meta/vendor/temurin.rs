@@ -65,10 +65,10 @@ impl Vendor for Temurin {
     }
 }
 
-fn normalize_features(features: &str) -> Vec<String> {
+fn normalize_features(features: &str) -> Option<Vec<String>> {
     match features {
-        "large" => vec!["large_heap".to_string()],
-        _ => vec![],
+        "large" => Some(vec!["large_heap".to_string()]),
+        _ => None,
     }
 }
 
@@ -85,7 +85,7 @@ fn map_release(release: &Release) -> Vec<JavaMetaData> {
         let java_meta_data = JavaMetaData {
             architecture: normalize_architecture(binary.architecture.as_str()),
             image_type: binary.image_type.clone(),
-            features: Some(normalize_features(binary.heap_size.clone().as_str())),
+            features: normalize_features(binary.heap_size.clone().as_str()),
             file_type: package_extension.unwrap_or_default().to_string(),
             filename: package_name.unwrap_or_default().to_string(),
             java_version: release.version_data.openjdk_version.clone().to_string(),

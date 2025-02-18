@@ -71,7 +71,7 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
             false => meta_from_name(&filename)?,
         };
         let features = match filename_meta.features.is_empty() {
-            true => Some(vec![]),
+            true => None,
             false => Some(vec![filename_meta.features.clone()]),
         };
         let url = asset.browser_download_url.clone();

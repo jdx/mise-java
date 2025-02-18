@@ -80,7 +80,6 @@ fn map_ce(asset: &GitHubAsset) -> Result<JavaMetaData> {
     let version = normalize_version(&filename_meta.version);
     Ok(JavaMetaData {
         architecture: normalize_architecture(&filename_meta.arch),
-        features: Some(vec![]),
         filename,
         file_type: filename_meta.ext.clone(),
         image_type: "jdk".to_string(),

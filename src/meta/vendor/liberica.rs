@@ -65,7 +65,7 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
         let url = asset.browser_download_url.clone();
         meta_data.push(JavaMetaData {
             architecture: normalize_architecture(&filename_meta.arch),
-            features: Some(features),
+            features: features,
             filename,
             file_type: filename_meta.ext.clone(),
             image_type: filename_meta.image_type.clone(),
@@ -144,7 +144,7 @@ fn meta_from_name(name: &str) -> Result<FileNameMeta> {
     })
 }
 
-fn normalize_features(input: &str) -> Vec<String> {
+fn normalize_features(input: &str) -> Option<Vec<String>> {
     let mut features = Vec::new();
     match input {
         "full" => {
@@ -165,7 +165,10 @@ fn normalize_features(input: &str) -> Vec<String> {
             );
         }
     }
-    features
+    match features.is_empty() {
+        true => None,
+        false => Some(features),
+    }
 }
 
 #[cfg(test)]
@@ -174,18 +177,35 @@ mod tests {
 
     #[test]
     fn test_normalize_features() {
-        assert_eq!(normalize_features("fx"), vec!["javafx"]);
-        assert_eq!(normalize_features("musl-leyden"), vec!["musl", "leyden"]);
+        assert_eq!(normalize_features("fx"), Some(vec!["javafx".to_string()]));
+        assert_eq!(
+            normalize_features("musl-leyden"),
+            Some(vec!["musl".to_string(), "leyden".to_string()])
+        );
         assert_eq!(
             normalize_features("musl-lite-leyden"),
-            vec!["musl", "lite", "leyden"]
+            Some(vec![
+                "musl".to_string(),
+                "lite".to_string(),
+                "leyden".to_string()
+            ])
         );
-        assert_eq!(normalize_features("musl-crac"), vec!["musl", "crac"]);
-        assert_eq!(normalize_features("musl-lite"), vec!["musl", "lite"]);
-        assert_eq!(normalize_features("musl"), vec!["musl"]);
+        assert_eq!(
+            normalize_features("musl-crac"),
+            Some(vec!["musl".to_string(), "crac".to_string()])
+        );
+        assert_eq!(
+            normalize_features("musl-lite"),
+            Some(vec!["musl".to_string(), "lite".to_string()])
+        );
+        assert_eq!(normalize_features("musl"), Some(vec!["musl".to_string()]));
         assert_eq!(
             normalize_features("full"),
-            vec!["libericafx", "minimal-vm", "javafx"]
+            Some(vec![
+                "libericafx".to_string(),
+                "minimal-vm".to_string(),
+                "javafx".to_string()
+            ])
         );
     }
 }

@@ -71,7 +71,7 @@ fn map_packages(packages: Vec<Package>) -> Result<Vec<JavaMetaData>> {
         let meta = JavaMetaData {
             architecture,
             file_type: package.archive_type,
-            features: Some(features),
+            features,
             filename: package.name,
             image_type: package.java_package_type,
             java_version,
@@ -100,7 +100,7 @@ fn arch_from_name(name: &str) -> Result<&str> {
     Ok(arch)
 }
 
-fn normalize_features(package: &Package) -> Vec<String> {
+fn normalize_features(package: &Package) -> Option<Vec<String>> {
     let mut features = Vec::new();
     match package.javafx_bundled {
         Some(true) => features.push("javafx".to_string()),
@@ -117,7 +117,10 @@ fn normalize_features(package: &Package) -> Vec<String> {
         },
         None => {}
     }
-    features
+    match features.is_empty() {
+        true => None,
+        false => Some(features),
+    }
 }
 
 #[derive(Debug, Deserialize, Serialize)]

@@ -77,7 +77,7 @@ fn map_release(a: &AnchorElement) -> Result<JavaMetaData> {
         features: if filename_meta.os == "alpine" {
             Some(vec!["musl".to_string()])
         } else {
-            Some(vec![])
+            None
         },
         filename: a.name.clone(),
         file_type: filename_meta.ext,

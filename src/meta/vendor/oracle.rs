@@ -72,7 +72,7 @@ fn map_release(a: &AnchorElement) -> Result<JavaMetaData> {
 
     Ok(JavaMetaData {
         architecture: normalize_architecture(&filename_meta.arch),
-        features: Some(vec![]),
+        features: None,
         filename: name.to_string(),
         file_type: filename_meta.ext,
         image_type: "jdk".to_string(),

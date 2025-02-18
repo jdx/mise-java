@@ -60,7 +60,6 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
     let table_row_selector = Selector::parse("table tr").unwrap();
     for table_row in fragment.select(&table_row_selector).skip(1) {
         let mut metadata_entry = JavaMetaData {
-            features: Some(vec![]),
             java_version: normalize_version(version.as_str()),
             jvm_impl: "hotspot".to_string(),
             release_type: "ga".to_string(),

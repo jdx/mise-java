@@ -152,9 +152,8 @@ fn normalize_features(name: &str) -> Option<Vec<String>> {
     if name.contains("musl") {
         features.push("musl".to_string());
     }
-    if features.is_empty() {
-        None
-    } else {
-        Some(features)
+    match features.is_empty() {
+        true => None,
+        false => Some(features),
     }
 }
