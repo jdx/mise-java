@@ -84,14 +84,14 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
 }
 
 fn include(asset: &github::GitHubAsset) -> bool {
-    asset.name.ends_with(".bom")
+    !(asset.name.ends_with(".bom")
         || asset.name.ends_with(".json")
         || asset.name.ends_with(".txt")
         || asset.name.ends_with("-src.tar.gz")
         || asset.name.ends_with("-src-full.tar.gz")
         || asset.name.ends_with("-src-crac.tar.gz")
         || asset.name.ends_with("-src-leyden.tar.gz")
-        || asset.name.contains("-full-nosign")
+        || asset.name.contains("-full-nosign"))
 }
 
 fn get_sha1sums(release: &GitHubRelease) -> Result<HashMap<String, String>> {
