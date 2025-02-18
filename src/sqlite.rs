@@ -57,9 +57,10 @@ impl Sqlite {
             ;"
           )?;
 
+            let mut result = 0;
             for data in meta_data {
                 let features = data.features.clone().unwrap_or_default().join(",");
-                stmt.execute(params![
+                result += stmt.execute(params![
                     data.architecture,
                     features,
                     data.file_type,
@@ -79,6 +80,7 @@ impl Sqlite {
                     data.version,
                 ])?;
             }
+            info!("[{}] inserted/modified {} records", vendor, result);
         }
         tx.commit()?;
 
