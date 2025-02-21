@@ -4,15 +4,9 @@ use confique::{Config, Error};
 use shellexpand::tilde;
 
 #[derive(Config, Debug)]
-pub struct FetchConf {
-    // Define fields for fetch configuration
-    // ...
-}
-
-#[derive(Config, Debug)]
-pub struct JsonConf {
-    /// Path to the JSON directory
-    #[config(env = "JMETA_JSON_PATH")]
+pub struct ExportConf {
+    /// Path to the export directory
+    #[config(env = "JMETA_EXPORT_PATH")]
     pub path: Option<String>,
 }
 
@@ -26,9 +20,7 @@ pub struct SqliteConf {
 #[derive(Config, Debug)]
 pub struct Conf {
     #[config(nested)]
-    pub fetch: FetchConf,
-    #[config(nested)]
-    pub json: JsonConf,
+    pub export: ExportConf,
     #[config(nested)]
     pub sqlite: SqliteConf,
 }

@@ -1,5 +1,4 @@
 use eyre::Result;
-use log::info;
 use rusqlite::params;
 
 use crate::{config::Conf, meta::JavaMetaData};
@@ -7,19 +6,9 @@ use crate::{config::Conf, meta::JavaMetaData};
 pub struct Sqlite {}
 
 impl Sqlite {
-    pub fn insert(vendor: &str, meta_data: &Vec<JavaMetaData>) -> Result<()> {
-        let conf = Conf::try_get()?;
-        if !conf.sqlite.path.is_some() {
-            return Ok(());
-        }
-        let database_url = conf.sqlite.path.unwrap();
-
-        info!(
-            "[{}] writing to SQLite [database_url=sqlite://{}]",
-            vendor, database_url
-        );
-
-        let mut conn = rusqlite::Connection::open(database_url)?;
+    pub fn insert(meta_data: &Vec<JavaMetaData>) -> Result<usize> {
+        let mut conn = get_connection()?;
+        let mut result = 0;
         let tx = conn.transaction()?;
         {
             let mut stmt = tx.prepare(
@@ -61,7 +50,6 @@ impl Sqlite {
             ;"
           )?;
 
-            let mut result = 0;
             for data in meta_data {
                 let features = match &data.features {
                     Some(values) if !values.is_empty() => Some(values.join(",")),
@@ -87,10 +75,101 @@ impl Sqlite {
                     data.version,
                 ])?;
             }
-            info!("[{}] inserted/modified {} records", vendor, result);
         }
         tx.commit()?;
 
-        Ok(())
+        Ok(result)
     }
+
+    pub fn export(release_type: &str, arch: &str, os: &str) -> Result<Vec<JavaMetaData>> {
+        let conn = get_connection()?;
+        let mut stmt = conn.prepare(
+            "SELECT
+                architecture,
+                features,
+                file_type,
+                filename,
+                image_type,
+                java_version,
+                jvm_impl,
+                md5,
+                md5_url,
+                os,
+                release_type,
+                sha1,
+                sha1_url,
+                sha256,
+                sha256_url,
+                sha512,
+                sha512_url,
+                size,
+                url,
+                vendor,
+                version
+            FROM
+                JAVA_META_DATA
+            WHERE
+                    file_type IN ('tar.gz','zip')
+                AND release_type = ?1
+                AND os = ?2
+                AND architecture = ?3
+            ;",
+        )?;
+
+        let mut data = Vec::new();
+        let mut rows = stmt.query(params![release_type, os, arch])?;
+        while let Some(row) = rows.next()? {
+            data.push(JavaMetaData {
+                architecture: row.get(0)?,
+                features: row
+                    .get::<_, Option<String>>(1)?
+                    .map(|f| f.split(',').map(String::from).collect()),
+                file_type: row.get(2)?,
+                filename: row.get(3)?,
+                image_type: row.get(4)?,
+                java_version: row.get(5)?,
+                jvm_impl: row.get(6)?,
+                md5: row.get(7)?,
+                md5_url: row.get(8)?,
+                os: row.get(9)?,
+                release_type: row.get(10)?,
+                sha1: row.get(11)?,
+                sha1_url: row.get(12)?,
+                sha256: row.get(13)?,
+                sha256_url: row.get(14)?,
+                sha512: row.get(15)?,
+                sha512_url: row.get(16)?,
+                size: row.get(17)?,
+                url: row.get(18)?,
+                vendor: row.get(19)?,
+                version: row.get(20)?,
+                ..Default::default()
+            });
+        }
+        Ok(data)
+    }
+
+    pub fn get_distinct(column: &str) -> Result<Vec<String>> {
+        let conn = get_connection()?;
+        let mut stmt = conn.prepare(&format!(
+            "SELECT DISTINCT {} FROM JAVA_META_DATA ORDER BY {} ASC;",
+            column, column
+        ))?;
+        let mut data = Vec::new();
+        let mut rows = stmt.query([])?;
+        while let Some(row) = rows.next()? {
+            data.push(row.get::<usize, String>(0)?);
+        }
+        Ok(data)
+    }
+}
+
+fn get_connection() -> Result<rusqlite::Connection> {
+    let conf = Conf::try_get()?;
+    if !conf.sqlite.path.is_some() {
+        return Err(eyre::eyre!("SQLite is not configured"));
+    }
+    let database_url = conf.sqlite.path.unwrap();
+    let conn = rusqlite::Connection::open(database_url)?;
+    Ok(conn)
 }

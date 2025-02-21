@@ -1,0 +1,85 @@
+use std::{fs::File, path::PathBuf};
+
+use eyre::Result;
+use log::info;
+use rayon::iter::{IntoParallelIterator, ParallelIterator};
+use serde_json::{Map, Value};
+
+use crate::{config::Conf, meta::JavaMetaData, sqlite::Sqlite};
+
+/// Export as release_type, os, architecture triple
+///
+/// Will export JSON files in form of <release_type>/<os>/<arch>.json to the path specified in the configuration file
+#[derive(Debug, clap::Args)]
+#[clap(verbatim_doc_comment)]
+pub struct Triple {
+    /// Release types e.g.: ea, ga
+    #[clap(short = 't', long, num_args = 0.., value_delimiter = ',', value_name = "TYPE")]
+    pub release_type: Option<Vec<String>>,
+    /// Operating systems e.g.: linux, macosx, windows
+    #[clap(short = 'o', long, num_args = 0.., value_delimiter = ',', value_name = "OS")]
+    pub os: Option<Vec<String>>,
+    /// Architectures e.g.: aarch64, arm32, x86_64
+    #[clap(short = 'a', long, num_args = 0.., value_delimiter = ',', value_name = "ARCH")]
+    pub arch: Option<Vec<String>>,
+    /// Properties e.g.: architecture, os, vendor, version
+    #[clap(short = 'p', long, num_args = 0.., value_delimiter = ',', value_name = "PROPERTY")]
+    pub properties: Option<Vec<String>>,
+    /// Pretty print JSON
+    #[clap(long, default_value = "false")]
+    pub pretty: bool,
+}
+
+impl Triple {
+    pub fn run(self) -> Result<()> {
+        let conf = Conf::try_get()?;
+        if conf.export.path.is_none() {
+            return Err(eyre::eyre!("export.path is not configured"));
+        }
+
+        let release_types_default = Sqlite::get_distinct("release_type")?;
+        let release_types = self
+            .release_type
+            .clone()
+            .unwrap_or_else(|| release_types_default);
+        let oses_default = Sqlite::get_distinct("os")?;
+        let oses = self.os.clone().unwrap_or_else(|| oses_default);
+        let arch_default = Sqlite::get_distinct("architecture")?;
+        let archs = self.arch.clone().unwrap_or_else(|| arch_default);
+
+        let export_path = conf.export.path.unwrap();
+
+        for release_type in &release_types {
+            for os in &oses {
+                for arch in &archs {
+                    let data = Sqlite::export(&release_type, &arch, &os)?;
+                    let size = data.len();
+
+                    let export_data = data
+                        .into_par_iter()
+                        .map(|item| JavaMetaData::map(&item, &self.properties))
+                        .collect::<Vec<Map<String, Value>>>();
+
+                    info!(
+                        "exporting {} records for {} {} {}",
+                        size, release_type, os, arch
+                    );
+                    let path = PathBuf::from(&export_path)
+                        .join(&release_type)
+                        .join(&os)
+                        .join(format!("{}.json", arch));
+                    if let Some(parent) = path.parent() {
+                        std::fs::create_dir_all(parent)?;
+                    }
+
+                    let file = File::create(path)?;
+                    match self.pretty {
+                        true => serde_json::to_writer_pretty(file, &export_data)?,
+                        false => serde_json::to_writer(file, &export_data)?,
+                    }
+                }
+            }
+        }
+        Ok(())
+    }
+}

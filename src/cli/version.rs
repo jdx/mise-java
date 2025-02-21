@@ -7,8 +7,9 @@ use crate::{
     env,
 };
 
+/// Show version information
 #[derive(Debug, clap::Args)]
-#[clap(about = "Show jmeta version", alias = "v")]
+#[clap(alias = "v")]
 pub struct Version {}
 
 pub static OS: Lazy<String> = Lazy::new(|| std::env::consts::OS.into());
@@ -51,9 +52,6 @@ pub fn print_version_if_requested(args: &[String]) -> std::io::Result<()> {
             std::process::exit(0);
         }
     }
-
-    // debug!("Version: {}", *VERSION);
-
     Ok(())
 }
 

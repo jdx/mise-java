@@ -4,16 +4,18 @@ use log::{error, info};
 use std::{collections::HashMap, sync::Arc};
 
 use crate::{
-    json::Json,
+    config::Conf,
     meta::vendor::{Vendor, VENDORS},
     sqlite::Sqlite,
 };
 
+/// Fetch metadata from vendors
+///
+/// Will crawl metadata from all vendors if none are specified
 #[derive(Debug, clap::Args)]
-#[clap(verbatim_doc_comment, after_long_help = AFTER_LONG_HELP)]
+#[clap(verbatim_doc_comment)]
 pub struct Fetch {
-    /// Vendor(s) to fetch
-    /// e.g.: openjdk, zulu
+    /// Vendors to fetch e.g.: openjdk, zulu
     #[clap(value_name = "VENDOR")]
     pub vendors: Vec<String>,
 }
@@ -26,6 +28,10 @@ impl Fetch {
             info!("fetching vendors: {:?}", self.vendors);
         }
 
+        let conf = Conf::try_get()?;
+        if conf.sqlite.path.is_none() {
+            return Err(eyre::eyre!("sqlite.path is not configured"));
+        }
         let start = std::time::Instant::now();
 
         let pool = rayon::ThreadPoolBuilder::default().build()?;
@@ -41,15 +47,11 @@ impl Fetch {
                         }
                     };
 
-                    match Json::save(&name, &meta_data) {
-                        Ok(_) => {}
-                        Err(err) => {
-                            error!("[{}] failed to write to JSON: {}", name, err);
+                    info!("[{name}] writing to SQLite");
+                    match Sqlite::insert(&meta_data) {
+                        Ok(result) => {
+                            info!("[{}] inserted/modified {} records", name, result)
                         }
-                    }
-
-                    match Sqlite::insert(&name, &meta_data) {
-                        Ok(_) => {}
                         Err(err) => {
                             error!("[{}] failed to write to SQLite: {}", name, err);
                         }
@@ -90,10 +92,3 @@ impl Fetch {
             .collect()
     }
 }
-
-static AFTER_LONG_HELP: &str = color_print::cstr!(
-    r#"<bold><underline>Examples:</underline></bold>
-
-$ <bold>jmeta fetch</bold>
-"#
-);

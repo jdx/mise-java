@@ -2,7 +2,7 @@
 name = "jmeta"
 version = "0.1.0"
 edition = "2021"
-description = "The Java Metadata Database"
+description = "A Java Metadata Tool"
 authors = ["Roland Schär (@roele)"]
 homepage = "https://"
 documentation = "https://"
@@ -17,7 +17,6 @@ include = [
   "/LICENSE",
   "/README.md",
 ]
-rust-version = "1.80.0"
 build = "build.rs"
 
 [[bin]]
