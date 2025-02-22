@@ -35,7 +35,12 @@ impl Sqlite {
               vendor = excluded.vendor,
               version = excluded.version
             WHERE
-                 excluded.java_version != JAVA_META_DATA.java_version
+                  excluded.architecture != JAVA_META_DATA.architecture
+              OR excluded.features != JAVA_META_DATA.features
+              OR excluded.file_type != JAVA_META_DATA.file_type
+              OR excluded.filename != JAVA_META_DATA.filename
+              OR excluded.image_type != JAVA_META_DATA.image_type
+              OR excluded.java_version != JAVA_META_DATA.java_version
               OR excluded.md5 != JAVA_META_DATA.md5
               OR excluded.md5_url != JAVA_META_DATA.md5_url
               OR excluded.release_type != JAVA_META_DATA.release_type
@@ -45,7 +50,9 @@ impl Sqlite {
               OR excluded.sha256_url != JAVA_META_DATA.sha256_url
               OR excluded.sha512 != JAVA_META_DATA.sha512
               OR excluded.sha512_url != JAVA_META_DATA.sha512_url
+              OR excluded.size != JAVA_META_DATA.size
               OR excluded.url != JAVA_META_DATA.url
+              OR excluded.vendor != JAVA_META_DATA.vendor
               OR excluded.version != JAVA_META_DATA.version
             ;"
           )?;

@@ -66,7 +66,7 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
             }
         };
         let filename = asset.name.clone();
-        let filename_meta = match asset.name.ends_with("rpm") {
+        let filename_meta = match asset.name.ends_with(".rpm") {
             true => meta_from_name_rpm(&filename)?,
             false => meta_from_name(&filename)?,
         };
@@ -101,12 +101,14 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
 }
 
 fn include(asset: &GitHubAsset) -> bool {
-    asset.content_type.starts_with("application") && !asset.name.contains("symbols")
+    asset.content_type.starts_with("application")
+        && !asset.name.contains("symbols")
+        && !asset.name.ends_with(".sha256.txt")
 }
 
 fn meta_from_name(name: &str) -> Result<FileNameMeta> {
     debug!("[sapmachine] parsing name: {}", name);
-    let capture = regex!(r"^sapmachine-(jdk|jre)-([0-9].+)_(aix|linux|macos|osx|windows)-(x64|aarch64|ppc64|ppc64le|x64)-?(.*)_bin\.(.+)$")
+    let capture = regex!(r"^sapmachine-(jdk|jre)-([0-9].+)_(aix|linux|macos|osx|windows)-(x64|aarch64|ppc64le|ppc64|x64)-?(.*)_bin\.(.+)$")
         .captures(name)
         .ok_or_else(|| eyre::eyre!("regular expression did not match name: {}", name))?;
 
@@ -115,7 +117,7 @@ fn meta_from_name(name: &str) -> Result<FileNameMeta> {
     let os = capture.get(3).unwrap().as_str().to_string();
     let arch = capture.get(4).unwrap().as_str().to_string();
     let features = capture.get(5).map_or("", |m| m.as_str()).to_string();
-    let ext = capture.get(5).unwrap().as_str().to_string();
+    let ext = capture.get(6).unwrap().as_str().to_string();
 
     Ok(FileNameMeta {
         arch,
