@@ -11,7 +11,6 @@ mod env;
 mod github;
 mod http;
 mod meta;
-mod runtime;
 mod sqlite;
 
 #[macro_use]

@@ -1,123 +1,77 @@
 #![allow(dead_code)]
-use std::path::Path;
 use std::time::Duration;
 
 use eyre::Result;
 use log::{debug, warn};
 use once_cell::sync::Lazy;
+use reqwest::blocking::{ClientBuilder, RequestBuilder, Response};
 use reqwest::header::HeaderMap;
-use reqwest::{ClientBuilder, IntoUrl, RequestBuilder, Response, Url};
-use tokio::io::AsyncWriteExt;
+use reqwest::{IntoUrl, Url};
 
 use crate::cli::version;
 use crate::env;
-use crate::runtime::RUNTIME;
 
 pub static HTTP: Lazy<Client> = Lazy::new(|| Client::new(Duration::from_secs(30)).unwrap());
 
 #[derive(Debug)]
 pub struct Client {
-    reqwest: reqwest::Client,
+    reqwest: reqwest::blocking::Client,
 }
 
 impl Client {
     fn new(timeout: Duration) -> Result<Self> {
         Ok(Self {
-            reqwest: Self::_new()
-                .read_timeout(timeout)
-                .connect_timeout(timeout)
-                .build()?,
+            reqwest: Self::_new().timeout(timeout).build()?,
         })
     }
 
     fn _new() -> ClientBuilder {
-        ClientBuilder::new()
+        reqwest::blocking::ClientBuilder::new()
             .user_agent(format!("{}/{}", &*env::BINARY_NAME, &*version::VERSION))
             .gzip(true)
             .zstd(true)
     }
 
-    pub async fn get_async<U: IntoUrl>(&self, url: U) -> Result<Response> {
+    pub fn get<U: IntoUrl>(&self, url: U) -> Result<Response> {
         let url = url.into_url()?;
         let mut req = self.reqwest.get(url.clone());
         req = with_github_auth(&url.clone(), req);
-        let resp = req.send().await?;
+        let resp = req.send()?;
         debug!("GET {url} {}", resp.status());
         display_github_rate_limit(&resp);
         resp.error_for_status_ref()?;
         Ok(resp)
     }
 
-    pub fn get<U: IntoUrl>(&self, url: U) -> Result<Response> {
-        RUNTIME.block_on(self.get_async(url))
-    }
-
-    pub async fn get_json_async<T, U: IntoUrl>(&self, url: U) -> Result<T>
+    pub fn get_json<T, U: IntoUrl>(&self, url: U) -> Result<T>
     where
         T: serde::de::DeserializeOwned,
     {
-        self.get_json_with_headers_async(url)
-            .await
-            .map(|(json, _)| json)
-    }
-
-    pub async fn get_json_with_headers_async<T, U: IntoUrl>(&self, url: U) -> Result<(T, HeaderMap)>
-    where
-        T: serde::de::DeserializeOwned,
-    {
-        let url = url.into_url()?;
-        let mut req = self.reqwest.get(url.clone());
-        req = with_github_auth(&url, req);
-        let resp = req.send().await?;
-        let headers = resp.headers().clone();
-        debug!("GET {url} {}", resp.status());
-        display_github_rate_limit(&resp);
-        resp.error_for_status_ref()?;
-        Ok::<(T, HeaderMap), eyre::Error>((resp.json().await?, headers))
-    }
-
-    pub fn get_json<T>(&self, url: &str) -> Result<T>
-    where
-        T: serde::de::DeserializeOwned,
-    {
-        RUNTIME.block_on(self.get_json_async(url))
+        self.get_json_with_headers(url).map(|(json, _)| json)
     }
 
     pub fn get_json_with_headers<T, U: IntoUrl>(&self, url: U) -> Result<(T, HeaderMap)>
     where
         T: serde::de::DeserializeOwned,
     {
-        RUNTIME.block_on(self.get_json_with_headers_async(url))
-    }
-
-    pub async fn get_text_async<U: IntoUrl>(&self, url: U) -> Result<String> {
         let url = url.into_url()?;
-        let req = self.reqwest.get(url.clone());
-        let resp = req.send().await?;
+        let mut req = self.reqwest.get(url.clone());
+        req = with_github_auth(&url, req);
+        let resp = req.send()?;
+        let headers = resp.headers().clone();
         debug!("GET {url} {}", resp.status());
+        display_github_rate_limit(&resp);
         resp.error_for_status_ref()?;
-        Ok(resp.text().await?)
+        Ok::<(T, HeaderMap), eyre::Error>((resp.json()?, headers))
     }
 
     pub fn get_text<U: IntoUrl>(&self, url: U) -> Result<String> {
-        RUNTIME.block_on(self.get_text_async(url))
-    }
-
-    pub async fn download_file_async<U: IntoUrl, T: AsRef<Path>>(
-        &self,
-        url: U,
-        path: T,
-    ) -> Result<()> {
-        let mut response = self.get_async(url).await?;
-        let mut file = tokio::fs::File::create(path).await?;
-        while let Some(chunk) = response.chunk().await? {
-            file.write_all(&chunk).await?;
-        }
-        Ok(())
-    }
-
-    pub fn download_file<T: AsRef<Path>, U: IntoUrl>(&self, url: U, path: T) -> Result<()> {
-        RUNTIME.block_on(self.download_file_async(url, path))
+        let url = url.into_url()?;
+        let req = self.reqwest.get(url.clone());
+        let resp = req.send()?;
+        debug!("GET {url} {}", resp.status());
+        resp.error_for_status_ref()?;
+        Ok(resp.text()?)
     }
 }
 

@@ -67,7 +67,7 @@ fn map_ce(asset: &GitHubAsset) -> Result<JavaMetaData> {
     //      only fetch if enabled or unknown (some vendors require 1000s of requests)
     //      fetch_checksum(url: &str) -> Result<(Option<String>, Option<String>)>
     let sha256_url = format!("{}.sha256", asset.browser_download_url);
-    let sha256sum = match HTTP.get_text(&sha256_url) {
+    let sha256sum = match HTTP.get_text(sha256_url) {
         Ok(sha256) => Some(sha256),
         Err(_) => {
             warn!("unable to find SHA256 for asset: {}", asset.name);

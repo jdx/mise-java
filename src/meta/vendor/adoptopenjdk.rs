@@ -24,7 +24,7 @@ impl Vendor for AdoptOpenJDK {
 
         let api_releases_url = "https://api.adoptium.net/v3/info/available_releases";
         debug!("[adoptopenjdk] fetching releases [{}]", api_releases_url);
-        let releases = HTTP.get_json::<AvailableReleases>(api_releases_url)?;
+        let releases = HTTP.get_json::<AvailableReleases, _>(api_releases_url)?;
 
         // get meta data for a specific release
         // https://api.adoptium.net/v3/assets/feature_releases/${release}/ga?page=${page}&page_size=20&project=jdk&sort_order=ASC&vendor=adoptium
@@ -45,7 +45,7 @@ impl Vendor for AdoptOpenJDK {
                         page = page, page_size = page_size, release = release,
                     };
                     debug!("[adoptopenjdk] fetching release [{}] page [{}]", release, page);
-                    match HTTP.get_json::<Vec<Release>>(api_release_url.as_str()) {
+                    match HTTP.get_json::<Vec<Release>, _>(api_release_url) {
                         Ok(resp) => {
                             resp.iter().for_each(|release| {
                               let release_data: Vec<JavaMetaData> = map_release(release)

@@ -22,7 +22,7 @@ impl Vendor for Temurin {
         // https://api.adoptium.net/v3/info/available_releases
         let api_releases_url = "https://api.adoptium.net/v3/info/available_releases";
         debug!("[temurin] fetching releases [{}]", api_releases_url);
-        let releases = HTTP.get_json::<AvailableReleases>(&api_releases_url)?;
+        let releases = HTTP.get_json::<AvailableReleases, _>(api_releases_url)?;
 
         // get meta data for a specific release
         // https://api.adoptium.net/v3/assets/feature_releases/${release}/ga?page=${page}&page_size=20&project=jdk&sort_order=ASC&vendor=adoptium
@@ -43,7 +43,7 @@ impl Vendor for Temurin {
                         page = page, page_size = page_size, release = release,
                     };
                     debug!("[temurin] fetching release [{}] page [{}]", release, page);
-                    match HTTP.get_json::<Vec<Release>>(api_url.as_str()) {
+                    match HTTP.get_json::<Vec<Release>, _>(api_url) {
                         Ok(resp) => {
                           resp.iter().for_each(|release| {
                                 let release_data: Vec<JavaMetaData> = map_release(release)
