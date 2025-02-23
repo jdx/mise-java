@@ -5,8 +5,8 @@ use std::{collections::HashMap, sync::Arc};
 
 use crate::{
     config::Conf,
+    db::{self},
     meta::vendor::{Vendor, VENDORS},
-    sqlite::Sqlite,
 };
 
 /// Fetch metadata from vendors
@@ -29,7 +29,7 @@ impl Fetch {
         }
 
         let conf = Conf::try_get()?;
-        if conf.sqlite.path.is_none() {
+        if conf.database.url.is_none() {
             return Err(eyre::eyre!("sqlite.path is not configured"));
         }
         let start = std::time::Instant::now();
@@ -38,6 +38,14 @@ impl Fetch {
         pool.scope(|s| {
             let run = |name: String, vendor: Arc<dyn Vendor>| {
                 s.spawn(move |_| {
+                    let db = match db::Database::get() {
+                        Ok(db) => db,
+                        Err(err) => {
+                            error!("[{}] failed to get database: {}", name, err);
+                            return;
+                        }
+                    };
+
                     info!("[{}] fetching meta data", name);
                     let meta_data = match vendor.fetch() {
                         Ok(data) => data,
@@ -48,7 +56,7 @@ impl Fetch {
                     };
 
                     info!("[{name}] writing to SQLite");
-                    match Sqlite::insert(&meta_data) {
+                    match db.insert(&meta_data) {
                         Ok(result) => {
                             info!("[{}] inserted/modified {} records", name, result)
                         }

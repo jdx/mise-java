@@ -5,7 +5,7 @@ use log::info;
 use rayon::iter::{IntoParallelIterator, ParallelIterator};
 use serde_json::{Map, Value};
 
-use crate::{config::Conf, meta::JavaMetaData, sqlite::Sqlite};
+use crate::{config::Conf, db::Database, meta::JavaMetaData};
 
 /// Export as release_type, os, architecture triple
 ///
@@ -36,15 +36,16 @@ impl Triple {
         if conf.export.path.is_none() {
             return Err(eyre::eyre!("export.path is not configured"));
         }
+        let db = Database::get()?;
 
-        let release_types_default = Sqlite::get_distinct("release_type")?;
+        let release_types_default = db.get_distinct("release_type")?;
         let release_types = self
             .release_type
             .clone()
             .unwrap_or_else(|| release_types_default);
-        let oses_default = Sqlite::get_distinct("os")?;
+        let oses_default = db.get_distinct("os")?;
         let oses = self.os.clone().unwrap_or_else(|| oses_default);
-        let arch_default = Sqlite::get_distinct("architecture")?;
+        let arch_default = db.get_distinct("architecture")?;
         let archs = self.arch.clone().unwrap_or_else(|| arch_default);
 
         let export_path = conf.export.path.unwrap();
@@ -52,7 +53,7 @@ impl Triple {
         for release_type in &release_types {
             for os in &oses {
                 for arch in &archs {
-                    let data = Sqlite::export(&release_type, &arch, &os)?;
+                    let data = db.export(&release_type, &arch, &os)?;
                     let size = data.len();
 
                     let export_data = data

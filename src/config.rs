@@ -11,10 +11,10 @@ pub struct ExportConf {
 }
 
 #[derive(Config, Debug)]
-pub struct SqliteConf {
-    /// Path to the SQLite database
-    #[config(env = "JMETA_SQLITE_PATH")]
-    pub path: Option<String>,
+pub struct DatabaseConf {
+    /// Database connection URL
+    #[config(env = "JMETA_DATABASE_URL")]
+    pub url: Option<String>,
 }
 
 #[derive(Config, Debug)]
@@ -22,7 +22,7 @@ pub struct Conf {
     #[config(nested)]
     pub export: ExportConf,
     #[config(nested)]
-    pub sqlite: SqliteConf,
+    pub database: DatabaseConf,
 }
 
 impl Conf {

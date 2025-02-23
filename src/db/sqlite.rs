@@ -3,10 +3,18 @@ use rusqlite::params;
 
 use crate::{config::Conf, meta::JavaMetaData};
 
+use super::Operations;
+
 pub struct Sqlite {}
 
 impl Sqlite {
-    pub fn insert(meta_data: &Vec<JavaMetaData>) -> Result<usize> {
+    pub fn new() -> Self {
+        Sqlite {}
+    }
+}
+
+impl Operations for Sqlite {
+    fn insert(&self, meta_data: &Vec<JavaMetaData>) -> Result<u64> {
         let mut conn = get_connection()?;
         let mut result = 0;
         let tx = conn.transaction()?;
@@ -80,7 +88,7 @@ impl Sqlite {
                     data.url,
                     data.vendor,
                     data.version,
-                ])?;
+                ])? as u64;
             }
         }
         tx.commit()?;
@@ -88,7 +96,7 @@ impl Sqlite {
         Ok(result)
     }
 
-    pub fn export(release_type: &str, arch: &str, os: &str) -> Result<Vec<JavaMetaData>> {
+    fn export(&self, release_type: &str, arch: &str, os: &str) -> Result<Vec<JavaMetaData>> {
         let conn = get_connection()?;
         let mut stmt = conn.prepare(
             "SELECT
@@ -156,7 +164,7 @@ impl Sqlite {
         Ok(data)
     }
 
-    pub fn get_distinct(column: &str) -> Result<Vec<String>> {
+    fn get_distinct(&self, column: &str) -> Result<Vec<String>> {
         let conn = get_connection()?;
         let mut stmt = conn.prepare(&format!(
             "SELECT DISTINCT {} FROM JAVA_META_DATA ORDER BY {} ASC;",
@@ -173,10 +181,16 @@ impl Sqlite {
 
 fn get_connection() -> Result<rusqlite::Connection> {
     let conf = Conf::try_get()?;
-    if !conf.sqlite.path.is_some() {
-        return Err(eyre::eyre!("SQLite is not configured"));
-    }
-    let database_url = conf.sqlite.path.unwrap();
-    let conn = rusqlite::Connection::open(database_url)?;
+    let path = match conf.database.url {
+        Some(ref url) => {
+            if url.starts_with("sqlite://") {
+                url.replace("sqlite://", "")
+            } else {
+                url.clone()
+            }
+        }
+        None => return Err(eyre::eyre!("database.url is not configured")),
+    };
+    let conn = rusqlite::Connection::open(path)?;
     Ok(conn)
 }

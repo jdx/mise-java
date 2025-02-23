@@ -7,11 +7,11 @@ use crate::cli::version::VERSION;
 pub mod build_time;
 mod cli;
 mod config;
+mod db;
 mod env;
 mod github;
 mod http;
 mod meta;
-mod sqlite;
 
 #[macro_use]
 mod output;
