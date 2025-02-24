@@ -13,9 +13,6 @@ mod github;
 mod http;
 mod meta;
 
-#[macro_use]
-mod output;
-
 fn main() -> eyre::Result<()> {
     env_logger::builder()
         .format_target(false)
