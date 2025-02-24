@@ -2,10 +2,7 @@ use eyre::Result;
 use once_cell::sync::Lazy;
 use versions::Versioning;
 
-use crate::{
-    build_time::{git_sha, BUILD_TIME},
-    env,
-};
+use crate::{build_time::BUILD_TIME, env};
 
 /// Show version information
 #[derive(Debug, clap::Args)]
@@ -28,11 +25,7 @@ pub static VERSION: Lazy<String> = Lazy::new(|| {
         v.push_str("-DEBUG");
     };
     let build_time = BUILD_TIME.format("%Y-%m-%d");
-    let extra = match git_sha() {
-        Some(sha) => format!("({} {})", sha, build_time),
-        _ => format!("({})", build_time),
-    };
-    format!("{v} {os}-{arch} {extra}", os = *OS, arch = *ARCH)
+    format!("{v} {os}-{arch} ({build_time})", os = *OS, arch = *ARCH)
 });
 
 pub static V: Lazy<Versioning> = Lazy::new(|| Versioning::new(env!("CARGO_PKG_VERSION")).unwrap());
