@@ -8,8 +8,22 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    ignore:
+      # 7.0.0, requires Rust 2024 which is not stabilized in 1.84.1
+      - dependency-name: "versions"
+        update-types: [ "version-update:semver-major" ]
+    groups:
+      all:
+        patterns: [ "*" ]
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
+    ignore:
+    # v2, does not exist
+    - dependency-name: "ccorsi/setup-sqlite"
+      update-types: [ "version-update:semver-major" ]
+    groups:
+      all:
+        patterns: [ "*" ]
