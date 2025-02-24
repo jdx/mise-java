@@ -24,7 +24,7 @@ jobs:
 
       - uses: Swatinem/rust-cache@v2
 
-      - uses: ccorsi/setup-sqlite@v1
+      - uses: ccorsi/setup-sqlite@v2
         with:
           sqlite-version: 3.43.2
 
