@@ -116,8 +116,8 @@ fn meta_from_name(name: &str) -> Result<FileNameMeta> {
     let arch = capture.get(4).unwrap().as_str().to_string();
     let version = format!(
         "{}{}",
-        capture.get(2).unwrap().as_str().to_string(),
-        capture.get(5).unwrap().as_str().to_string()
+        capture.get(2).unwrap().as_str(),
+        capture.get(5).unwrap().as_str()
     );
     let ext = capture.get(6).unwrap().as_str().to_string();
 

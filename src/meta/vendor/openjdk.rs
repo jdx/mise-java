@@ -82,7 +82,7 @@ fn map_release(a: &AnchorElement) -> Result<JavaMetaData> {
     };
 
     Ok(JavaMetaData {
-        architecture: normalize_architecture(&arch),
+        architecture: normalize_architecture(arch),
         features,
         filename: name.clone(),
         file_type: filename_meta.ext,

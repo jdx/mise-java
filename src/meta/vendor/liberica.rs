@@ -144,9 +144,7 @@ fn meta_from_name(name: &str) -> Result<FileNameMeta> {
 }
 
 fn get_release_type(version: &str, is_prerelease: bool) -> String {
-    if is_prerelease {
-        "ea".to_string()
-    } else if version.contains("ea") {
+    if is_prerelease || version.contains("ea") {
         "ea".to_string()
     } else {
         "ga".to_string()

@@ -10,7 +10,7 @@ mod postgres;
 mod sqlite;
 
 pub trait Operations: Send + Sync {
-    fn insert(&self, meta_data: &Vec<JavaMetaData>) -> Result<u64>;
+    fn insert(&self, meta_data: &[JavaMetaData]) -> Result<u64>;
     fn export(&self, release_type: &str, arch: &str, os: &str) -> Result<Vec<JavaMetaData>>;
     fn get_distinct(&self, column: &str) -> Result<Vec<String>>;
 }
@@ -26,16 +26,14 @@ impl Database {
         match conf.database.url.as_deref() {
             Some(url) => {
                 if url.starts_with("sqlite://") {
-                    return Ok(Arc::new(Sqlite::new()));
+                    Ok(Arc::new(Sqlite::new()))
                 } else if url.starts_with("postgres://") {
-                    return Ok(Arc::new(Postgres::new()));
+                    Ok(Arc::new(Postgres::new()))
                 } else {
-                    return Err(eyre::eyre!("unsupported database URL: {}", url));
+                    Err(eyre::eyre!("unsupported database URL: {}", url))
                 }
             }
-            None => {
-                return Err(eyre::eyre!("database.url is not configured"));
-            }
+            None => Err(eyre::eyre!("database.url is not configured")),
         }
     }
 }

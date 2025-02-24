@@ -13,7 +13,7 @@ impl Postgres {
 }
 
 impl Operations for Postgres {
-    fn insert(&self, meta_data: &Vec<JavaMetaData>) -> Result<u64> {
+    fn insert(&self, meta_data: &[JavaMetaData]) -> Result<u64> {
         let mut client = get_client()?;
         let mut result = 0;
         let mut tx = client.transaction()?;
@@ -160,7 +160,6 @@ impl Operations for Postgres {
                 url: row.get(18),
                 vendor: row.get(19),
                 version: row.get(20),
-                ..Default::default()
             });
         }
         Ok(data)
@@ -193,6 +192,6 @@ fn get_client() -> Result<postgres::Client> {
         }
         None => return Err(eyre::eyre!("database.url is not configured")),
     };
-    let conn = postgres::Client::connect(&database_url, NoTls)?;
+    let conn = postgres::Client::connect(database_url, NoTls)?;
     Ok(conn)
 }

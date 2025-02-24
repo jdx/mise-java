@@ -48,7 +48,7 @@ impl Vendor for Temurin {
                           resp.iter().for_each(|release| {
                                 let release_data: Vec<JavaMetaData> = map_release(release)
                                     .into_iter()
-                                    .filter(|m| !vec!["sbom"].contains(&m.image_type.as_str()))
+                                    .filter(|m| !["sbom"].contains(&m.image_type.as_str()))
                                     .collect::<Vec<JavaMetaData>>();
                                 data.extend(release_data)
                           });
@@ -76,8 +76,8 @@ fn map_release(release: &Release) -> Vec<JavaMetaData> {
     let mut meta_data = Vec::new();
     for binary in &release.binaries {
         let package = binary.package.clone();
-        let package_checksum = package.as_ref().map_or(None, |p| p.checksum.clone());
-        let package_checksum_link = package.as_ref().map_or(None, |p| p.checksum_link.clone());
+        let package_checksum = package.as_ref().and_then(|p| p.checksum.clone());
+        let package_checksum_link = package.as_ref().and_then(|p| p.checksum_link.clone());
         let package_link = package.as_ref().map(|p| p.link.clone());
         let package_name = package.as_ref().map(|p| p.name.clone());
         let package_extension = package_name.as_ref().map(|p| get_extension(p));

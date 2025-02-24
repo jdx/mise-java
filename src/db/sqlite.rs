@@ -14,7 +14,7 @@ impl Sqlite {
 }
 
 impl Operations for Sqlite {
-    fn insert(&self, meta_data: &Vec<JavaMetaData>) -> Result<u64> {
+    fn insert(&self, meta_data: &[JavaMetaData]) -> Result<u64> {
         let mut conn = get_connection()?;
         let mut result = 0;
         let tx = conn.transaction()?;
@@ -158,7 +158,6 @@ impl Operations for Sqlite {
                 url: row.get(18)?,
                 vendor: row.get(19)?,
                 version: row.get(20)?,
-                ..Default::default()
             });
         }
         Ok(data)

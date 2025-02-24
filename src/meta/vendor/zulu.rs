@@ -54,7 +54,7 @@ fn map_packages(packages: Vec<Package>) -> Result<Vec<JavaMetaData>> {
                 &package.arch
             }
         };
-        let architecture = normalize_architecture(&arch);
+        let architecture = normalize_architecture(arch);
         let release_type = &package.release_status;
         let features = normalize_features(&package);
         let os = normalize_os(&package.os);
@@ -102,20 +102,16 @@ fn arch_from_name(name: &str) -> Result<&str> {
 
 fn normalize_features(package: &Package) -> Option<Vec<String>> {
     let mut features = Vec::new();
-    match package.javafx_bundled {
-        Some(true) => features.push("javafx".to_string()),
-        _ => {}
+    if let Some(true) = package.javafx_bundled {
+        features.push("javafx".to_string());
     }
-    match package.crac_supported {
-        Some(true) => features.push("crac".to_string()),
-        _ => {}
+    if let Some(true) = package.crac_supported {
+        features.push("crac".to_string());
     }
-    match &package.lib_c_type {
-        Some(lib_c_type) => match lib_c_type.as_str() {
-            "musl" => features.push("musl".to_string()),
-            _ => {}
-        },
-        None => {}
+    if let Some(lib_c_type) = &package.lib_c_type {
+        if lib_c_type == "musl" {
+            features.push("musl".to_string());
+        }
     }
     match features.is_empty() {
         true => None,

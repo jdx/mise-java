@@ -39,21 +39,18 @@ impl Triple {
         let db = Database::get()?;
 
         let release_types_default = db.get_distinct("release_type")?;
-        let release_types = self
-            .release_type
-            .clone()
-            .unwrap_or_else(|| release_types_default);
+        let release_types = self.release_type.unwrap_or(release_types_default);
         let oses_default = db.get_distinct("os")?;
-        let oses = self.os.clone().unwrap_or_else(|| oses_default);
+        let oses = self.os.unwrap_or(oses_default);
         let arch_default = db.get_distinct("architecture")?;
-        let archs = self.arch.clone().unwrap_or_else(|| arch_default);
+        let archs = self.arch.unwrap_or(arch_default);
 
         let export_path = conf.export.path.unwrap();
 
         for release_type in &release_types {
             for os in &oses {
                 for arch in &archs {
-                    let data = db.export(&release_type, &arch, &os)?;
+                    let data = db.export(release_type, arch, os)?;
                     let size = data.len();
 
                     let export_data = data
@@ -66,8 +63,8 @@ impl Triple {
                         size, release_type, os, arch
                     );
                     let path = PathBuf::from(&export_path)
-                        .join(&release_type)
-                        .join(&os)
+                        .join(release_type)
+                        .join(os)
                         .join(format!("{}.json", arch));
                     if let Some(parent) = path.parent() {
                         std::fs::create_dir_all(parent)?;

@@ -100,7 +100,7 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
                 // Checksum
                 3 => {
                     let code_selector = Selector::parse("code").unwrap();
-                    let mut code_iter = fragment.select(&code_selector).into_iter();
+                    let mut code_iter = fragment.select(&code_selector);
                     if let Some(code) = code_iter.next() {
                         let md5 = code.text().collect::<String>();
                         metadata_entry.md5 = Some(md5);

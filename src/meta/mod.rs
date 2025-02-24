@@ -33,12 +33,12 @@ pub struct JavaMetaData {
 impl JavaMetaData {
     pub fn map(item: &JavaMetaData, properties: &Option<Vec<String>>) -> Map<String, Value> {
         let props: HashMap<String, Value> =
-            serde_json::from_value(serde_json::to_value(&item).unwrap()).unwrap();
+            serde_json::from_value(serde_json::to_value(item).unwrap()).unwrap();
         let mut map = Map::new();
         for prop in &props {
             match properties {
                 Some(properties) => {
-                    if properties.contains(&prop.0) {
+                    if properties.contains(prop.0) {
                         map.insert(prop.0.clone(), json!(prop.1.clone()));
                     }
                 }

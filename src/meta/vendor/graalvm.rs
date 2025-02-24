@@ -47,9 +47,9 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
     let assets = release.assets.iter().filter(|asset| include(asset));
     for asset in assets {
         let release = if asset.name.starts_with("graalvm-ce") {
-            map_ce(&asset)
+            map_ce(asset)
         } else if asset.name.starts_with("graalvm-community") {
-            map_community(&asset)
+            map_community(asset)
         } else {
             continue;
         };
