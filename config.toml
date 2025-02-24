@@ -1,7 +1,7 @@
 [database]
 # Database connection URL
-# url = "sqlite://data/meta.sqlite3"
-url = "postgres://postgres:postgres@localhost:5432/postgres"
+url = "sqlite://data/meta.sqlite3"
+# url = "postgres://postgres:postgres@localhost:5432/postgres"
 
 [export]
 # Directory to export JSON files to
