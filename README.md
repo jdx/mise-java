@@ -17,9 +17,9 @@ sqlite3 data/meta.sqlite3 < sql/schema.sql
 Assuming you have a PostgreSQL container `postgres` running with a user `postgres` and a database `postgres`.
 
 ```bash
-docker exec -it -u postgres postgres psql -d postgres -c "DROP DATABASE jmeta;"
-docker exec -it -u postgres postgres psql -d postgres -c "CREATE DATABASE jmeta;"
-docker exec -it -u postgres postgres psql -d jmeta < ./sql/schema.sql
+docker exec -i -u postgres postgres psql -d postgres -c "DROP DATABASE meta;"
+docker exec -i -u postgres postgres psql -d postgres -c "CREATE DATABASE meta;"
+docker exec -i -u postgres postgres psql -d meta < ./sql/schema.sql
 ```
 
 ## Run

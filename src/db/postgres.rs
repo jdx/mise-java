@@ -85,7 +85,7 @@ impl Operations for Postgres {
                         &data.sha1,
                         &data.sha256,
                         &data.sha512,
-                        &data.size.map(|s| s as i64),
+                        &data.size.map(|s| s as i32),
                         &data.url,
                         &data.vendor,
                         &data.version,

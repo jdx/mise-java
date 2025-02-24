@@ -55,7 +55,7 @@ impl Fetch {
                         }
                     };
 
-                    info!("[{name}] writing to SQLite");
+                    info!("[{name}] writing to database");
                     match db.insert(&meta_data) {
                         Ok(result) => {
                             info!("[{}] inserted/modified {} records", name, result)

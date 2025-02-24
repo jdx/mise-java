@@ -3,6 +3,24 @@ set -eo pipefail
 
 db='data/meta.sqlite3'
 
+function print_usage() {
+    echo "Usage: $0 [OPTIONS]"
+    echo ""
+    echo "Options:"
+    echo "  -h, --help            Show this help message and exit"
+    echo "  -db, --database-url   Specify the database URL (default: data/meta.sqlite3)"
+}
+
+# Parse command line arguments
+while [[ "$#" -gt 0 ]]; do
+    case $1 in
+        -h|--help) print_usage; exit 0 ;;
+        -db|--database-url) db="$2"; shift ;;
+        *) echo "Unknown parameter passed: $1"; print_usage; exit 1 ;;
+    esac
+    shift
+done
+
 release_type=("ea" "ga")
 os=("linux" "macosx" "windows")
 arch=("aarch64" "arm32" "x86_64")
