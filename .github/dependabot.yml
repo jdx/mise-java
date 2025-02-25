@@ -20,10 +20,6 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-    ignore:
-    # v2, does not exist
-    - dependency-name: "ccorsi/setup-sqlite"
-      update-types: [ "version-update:semver-major" ]
     groups:
       all:
         patterns: [ "*" ]

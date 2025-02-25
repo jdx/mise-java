@@ -1,9 +1,8 @@
 [database]
-# Use TLS for database connection. Is ignored for SQLite.
-tls = false
-# Database connection URL
-url = "sqlite://data/meta.sqlite3"
-# url = "postgres://postgres:postgres@localhost:5432/meta"
+# Maximum number of connections to the database. Default is 10.
+pool_size = 10
+# Database connection URL.
+url = "postgres://postgres:postgres@localhost:5432/meta"
 
 [export]
 # Directory to export JSON files to

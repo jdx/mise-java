@@ -4,14 +4,6 @@
 
 ### Create and initialize the database
 
-#### SQLite
-
-Assuming you have `sqlite3` installed.
-
-```bash
-sqlite3 data/meta.sqlite3 < sql/schema.sql
-```
-
 #### Docker PostgreSQL
 
 Assuming you have a PostgreSQL container `postgres` running with a user `postgres` and a database `postgres`.

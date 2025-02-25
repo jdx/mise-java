@@ -5,7 +5,11 @@ use log::info;
 use rayon::iter::{IntoParallelIterator, ParallelIterator};
 use serde_json::{Map, Value};
 
-use crate::{config::Conf, db::Database, meta::JavaMetaData};
+use crate::{
+    config::Conf,
+    db::{pool::get_pool, postgres::Postgres},
+    meta::JavaMetaData,
+};
 
 /// Export as release_type, os, architecture triple
 ///
@@ -36,7 +40,8 @@ impl Triple {
         if conf.export.path.is_none() {
             return Err(eyre::eyre!("export.path is not configured"));
         }
-        let db = Database::get()?;
+        let conn_pool = get_pool()?;
+        let db = Postgres::new(conn_pool)?;
 
         let release_types_default = db.get_distinct("release_type")?;
         let release_types = self.release_type.unwrap_or(release_types_default);

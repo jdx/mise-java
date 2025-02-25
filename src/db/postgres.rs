@@ -1,24 +1,22 @@
-use crate::{config::Conf, meta::JavaMetaData};
+use crate::meta::JavaMetaData;
 use eyre::Result;
-use openssl::ssl::{SslConnector, SslMethod};
-use postgres::NoTls;
 use postgres_openssl::MakeTlsConnector;
+use r2d2::Pool;
+use r2d2_postgres::PostgresConnectionManager;
 
-use super::Operations;
-
-pub struct Postgres {}
-
-impl Postgres {
-    pub fn new() -> Self {
-        Postgres {}
-    }
+pub struct Postgres {
+    pool: Pool<PostgresConnectionManager<MakeTlsConnector>>,
 }
 
-impl Operations for Postgres {
-    fn insert(&self, meta_data: &[JavaMetaData]) -> Result<u64> {
-        let mut client = get_client()?;
+impl Postgres {
+    pub fn new(pool: Pool<PostgresConnectionManager<MakeTlsConnector>>) -> Result<Self> {
+        Ok(Postgres { pool })
+    }
+
+    pub fn insert(&self, meta_data: &[JavaMetaData]) -> Result<u64> {
+        let mut conn = self.pool.get()?;
         let mut result = 0;
-        let mut tx = client.transaction()?;
+        let mut tx = conn.transaction()?;
         {
             let stmt = tx.prepare(
         "INSERT INTO JAVA_META_DATA
@@ -100,9 +98,9 @@ impl Operations for Postgres {
         Ok(result)
     }
 
-    fn export(&self, release_type: &str, arch: &str, os: &str) -> Result<Vec<JavaMetaData>> {
-        let mut client = get_client()?;
-        let stmt = client.prepare(
+    pub fn export(&self, release_type: &str, arch: &str, os: &str) -> Result<Vec<JavaMetaData>> {
+        let mut conn = self.pool.get()?;
+        let stmt = conn.prepare(
             "SELECT
                 architecture,
                 features,
@@ -136,7 +134,7 @@ impl Operations for Postgres {
         )?;
 
         let mut data = Vec::new();
-        let rows = client.query(&stmt, &[&release_type, &os, &arch])?;
+        let rows = conn.query(&stmt, &[&release_type, &os, &arch])?;
         for row in rows {
             data.push(JavaMetaData {
                 architecture: row.get(0),
@@ -167,41 +165,17 @@ impl Operations for Postgres {
         Ok(data)
     }
 
-    fn get_distinct(&self, column: &str) -> Result<Vec<String>> {
-        let mut client = get_client()?;
-        let stmt = client.prepare(&format!(
+    pub fn get_distinct(&self, column: &str) -> Result<Vec<String>> {
+        let mut conn = self.pool.get()?;
+        let stmt = conn.prepare(&format!(
             "SELECT DISTINCT {} FROM JAVA_META_DATA ORDER BY {} ASC;",
             column, column
         ))?;
         let mut data = Vec::new();
-        let rows = client.query(&stmt, &[])?;
+        let rows = conn.query(&stmt, &[])?;
         for row in rows {
             data.push(row.get::<usize, String>(0));
         }
         Ok(data)
-    }
-}
-
-fn get_client() -> Result<postgres::Client> {
-    let conf = Conf::try_get()?;
-    let database_url = match conf.database.url {
-        Some(ref url) => {
-            if url.starts_with("postgres://") || url.starts_with("postgresql://") {
-                url
-            } else {
-                return Err(eyre::eyre!("unsupported database URL: {}", url));
-            }
-        }
-        None => return Err(eyre::eyre!("database.url is not configured")),
-    };
-
-    if conf.database.tls.unwrap_or(false) {
-        let builder = SslConnector::builder(SslMethod::tls())?;
-        let connector = MakeTlsConnector::new(builder.build());
-        let conn = postgres::Client::connect(database_url, connector)?;
-        Ok(conn)
-    } else {
-        let conn = postgres::Client::connect(database_url, NoTls)?;
-        Ok(conn)
     }
 }

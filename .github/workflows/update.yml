@@ -11,8 +11,6 @@ permissions:
 
 env:
   CARGO_TERM_COLOR: always
-  IS_SQLITE: ${{ startsWith(secrets.JMETA_DATABASE_URL, 'sqlite://') }}
-  JMETA_DATABASE_TLS: true
   JMETA_DATABASE_URL: ${{ secrets.JMETA_DATABASE_URL }}
   RUST_BACKTRACE: 1
   RUST_LOG: jmeta=INFO
@@ -29,44 +27,6 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - uses: Swatinem/rust-cache@v2
-
-      - uses: ccorsi/setup-sqlite@v1
-        if: ${{ env.IS_SQLITE == 'true' }}
-        with:
-          sqlite-version: 3.43.2
-
-      - name: Get latest artifact run id
-        if: ${{ env.IS_SQLITE == 'true' }}
-        run: |
-            # ARTIFACT_RUN_ID=$(gh run list --json databaseId --workflow=update.yml --limit 1 | jq -r '.[0].databaseId')
-            ARTIFACT_RUN_ID=$(curl -s -H "Authorization: token ${{ secrets.GH_PAT }}" "https://api.github.com/repos/${{ github.repository }}/actions/artifacts?per_page=1" | jq '.artifacts[0].workflow_run.id')
-            if [ "$ARTIFACT_RUN_ID" == "null" ]; then
-                ARTIFACT_RUN_ID=""
-            fi
-            echo "ARTIFACT_RUN_ID=$ARTIFACT_RUN_ID" >> $GITHUB_ENV
-
-      - name: Download SQLite database
-        uses: actions/download-artifact@v4
-        if: ${{ env.ARTIFACT_RUN_ID != '' }}
-        with:
-            name: meta-db
-            path: ./data/
-            run-id: ${{ env.ARTIFACT_RUN_ID }}
-            # REQUIRED. See https://github.com/actions/download-artifact?tab=readme-ov-file#download-artifacts-from-other-workflow-runs-or-repositories
-            github-token: ${{ secrets.GH_PAT }}
-        continue-on-error: true
-
-      - name: Initialize SQLite database
-        if: ${{ env.ARTIFACT_RUN_ID == '' }}
-        run: |
-          echo "Database does not exist. Initializing..."
-          mkdir -p ./data
-          sqlite3 ./data/meta.sqlite3 < ./sql/schema.sql
-
-      - name: Verify downloaded artifact
-        run: |
-          echo "Checking if table exists..."
-          sqlite3 ./data/meta.sqlite3 "SELECT name FROM sqlite_master WHERE type='table' AND name='JAVA_META_DATA';"
 
       - name: Update Meta Data
         run: |
@@ -88,12 +48,3 @@ jobs:
           reviewers: ${{ vars.CREATE_PR_REVIEWERS || 'roele' }}
           branch: issues/update-metadata
           delete-branch: true
-
-      - name: Upload SQLite database
-        uses: actions/upload-artifact@v4
-        if: ${{ env.IS_SQLITE == 'true' }}
-        with:
-            # Name of the artifact to upload, make sure to match the name in the download step
-            name: meta-db
-            path: ./data/meta.sqlite3
-            if-no-files-found: error

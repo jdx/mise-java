@@ -4,8 +4,7 @@ use log::{error, info};
 use std::{collections::HashMap, sync::Arc};
 
 use crate::{
-    config::Conf,
-    db::{self},
+    db::{self, postgres::Postgres},
     meta::vendor::{Vendor, VENDORS},
 };
 
@@ -28,20 +27,17 @@ impl Fetch {
             info!("fetching vendors: {:?}", self.vendors);
         }
 
-        let conf = Conf::try_get()?;
-        if conf.database.url.is_none() {
-            return Err(eyre::eyre!("sqlite.path is not configured"));
-        }
         let start = std::time::Instant::now();
-
+        let conn_pool = db::pool::get_pool()?;
         let pool = rayon::ThreadPoolBuilder::default().build()?;
         pool.scope(|s| {
             let run = |name: String, vendor: Arc<dyn Vendor>| {
+                let conn_pool = conn_pool.clone();
                 s.spawn(move |_| {
-                    let db = match db::Database::get() {
+                    let db = match Postgres::new(conn_pool) {
                         Ok(db) => db,
                         Err(err) => {
-                            error!("[{}] failed to get database: {}", name, err);
+                            error!("[{}] failed to connect to database: {}", name, err);
                             return;
                         }
                     };
@@ -55,7 +51,7 @@ impl Fetch {
                         }
                     };
 
-                    info!("[{name}] writing to database");
+                    info!("[{}] writing to database", name);
                     match db.insert(&meta_data) {
                         Ok(result) => {
                             info!("[{}] inserted/modified {} records", name, result)
