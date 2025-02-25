@@ -1,11 +1,12 @@
 [tools]
-"cargo:cargo-deny" = "latest"
+"cargo:cargo-deny" = "0.17"
 
 
-[tasks.lint]
+
+[tasks.test]
 run = """
   cargo fmt --all -- --check
   cargo clippy --all-targets --all-features -- -D warnings
-  cargo test --all
   cargo deny check
+  cargo test --all
 """

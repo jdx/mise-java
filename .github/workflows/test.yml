@@ -39,11 +39,8 @@ jobs:
         with:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
           ref: ${{ github.head_ref }}
-      - uses: taiki-e/install-action@v2
-        with:
-          tool: cargo-deny
       - uses: Swatinem/rust-cache@v2
-      - run: cargo fmt --all -- --check
-      - run: cargo clippy --all-features -- -D warnings
-      - run: cargo test --all-features
-      - run: cargo deny check
+      - uses: jdx/mise-action@v2
+        with:
+          experimental: true
+      - run: mise run test
