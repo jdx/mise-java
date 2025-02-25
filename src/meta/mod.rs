@@ -1,7 +1,7 @@
-use std::collections::HashMap;
-
 use serde::{Deserialize, Serialize};
 use serde_json::{json, Map, Value};
+use std::hash::Hash;
+use std::{collections::HashMap, hash::Hasher};
 
 pub mod vendor;
 
@@ -29,6 +29,20 @@ pub struct JavaMetaData {
     pub vendor: String,
     pub version: String,
 }
+
+impl Hash for JavaMetaData {
+    fn hash<H: Hasher>(&self, state: &mut H) {
+        self.url.hash(state);
+    }
+}
+
+impl PartialEq for JavaMetaData {
+    fn eq(&self, other: &Self) -> bool {
+        self.url == other.url
+    }
+}
+
+impl Eq for JavaMetaData {}
 
 impl JavaMetaData {
     pub fn map(item: &JavaMetaData, properties: &Option<Vec<String>>) -> Map<String, Value> {

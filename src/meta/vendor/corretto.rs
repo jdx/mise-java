@@ -1,3 +1,5 @@
+use std::collections::HashSet;
+
 use crate::{
     github::{self, GitHubRelease},
     meta::JavaMetaData,
@@ -25,7 +27,7 @@ impl Vendor for Corretto {
         "corretto".to_string()
     }
 
-    fn fetch_metadata(&self, meta_data: &mut Vec<JavaMetaData>) -> Result<()> {
+    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> Result<()> {
         for version in &["8", "11", "jdk", "17", "18", "19", "20", "21", "22", "23"] {
             debug!("[corretto] fetching releases for version: {version}");
             let repo = format!("corretto/corretto-{}", version);

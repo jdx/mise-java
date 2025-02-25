@@ -1,3 +1,5 @@
+use std::collections::HashSet;
+
 use eyre::Result;
 use indoc::formatdoc;
 use itertools::Itertools;
@@ -17,7 +19,7 @@ impl Vendor for Zulu {
         "zulu".to_string()
     }
 
-    fn fetch_metadata(&self, meta_data: &mut Vec<JavaMetaData>) -> Result<()> {
+    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> Result<()> {
         let mut page = 1;
         let page_size = 1000;
         let mut all_packages: Vec<Package> = Vec::new();

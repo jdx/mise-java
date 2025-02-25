@@ -1,3 +1,5 @@
+use std::collections::HashSet;
+
 use super::{normalize_architecture, normalize_os, normalize_version, Vendor};
 use crate::{
     github::{self, GitHubAsset, GitHubRelease},
@@ -26,7 +28,7 @@ impl Vendor for GraalVM {
         "graalvm".to_string()
     }
 
-    fn fetch_metadata(&self, meta_data: &mut Vec<JavaMetaData>) -> Result<()> {
+    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> Result<()> {
         let releases = github::list_releases("graalvm/graalvm-ce-builds")?;
         let data = releases
             .into_par_iter()

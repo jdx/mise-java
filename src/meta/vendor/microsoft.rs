@@ -1,3 +1,5 @@
+use std::collections::HashSet;
+
 use crate::{http::HTTP, meta::JavaMetaData};
 use eyre::Result;
 use log::{debug, error};
@@ -25,7 +27,7 @@ impl Vendor for Microsoft {
         "microsoft".to_string()
     }
 
-    fn fetch_metadata(&self, meta_data: &mut Vec<JavaMetaData>) -> Result<()> {
+    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> Result<()> {
         let urls = vec![
             "https://docs.microsoft.com/en-us/java/openjdk/download",
             "https://learn.microsoft.com/en-us/java/openjdk/older-releases",

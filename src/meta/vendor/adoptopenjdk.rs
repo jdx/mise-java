@@ -1,3 +1,4 @@
+use std::collections::HashSet;
 use std::vec;
 
 use crate::{http::HTTP, meta::JavaMetaData};
@@ -18,7 +19,7 @@ impl Vendor for AdoptOpenJDK {
         "adoptopenjdk".to_string()
     }
 
-    fn fetch_metadata(&self, meta_data: &mut Vec<JavaMetaData>) -> Result<()> {
+    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> Result<()> {
         // get available releases
         // https://api.adoptium.net/v3/info/available_releases
 

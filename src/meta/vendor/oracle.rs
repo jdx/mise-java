@@ -1,3 +1,5 @@
+use std::collections::HashSet;
+
 use crate::{http::HTTP, meta::JavaMetaData};
 use eyre::Result;
 use log::{debug, error};
@@ -23,7 +25,7 @@ impl Vendor for Oracle {
         "oracle".to_string()
     }
 
-    fn fetch_metadata(&self, meta_data: &mut Vec<JavaMetaData>) -> Result<()> {
+    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> Result<()> {
         let anchors = (17..=23)
             .into_par_iter()
             .flat_map(|version| {

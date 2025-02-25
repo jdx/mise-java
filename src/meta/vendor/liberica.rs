@@ -1,4 +1,4 @@
-use std::collections::HashMap;
+use std::collections::{HashMap, HashSet};
 
 use crate::{
     github::{self, GitHubRelease},
@@ -30,7 +30,7 @@ impl Vendor for Liberica {
         "liberica".to_string()
     }
 
-    fn fetch_metadata(&self, meta_data: &mut Vec<crate::meta::JavaMetaData>) -> eyre::Result<()> {
+    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> eyre::Result<()> {
         let releases = github::list_releases("bell-sw/Liberica")?;
         let data = releases
             .into_par_iter()

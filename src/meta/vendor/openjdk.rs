@@ -1,3 +1,5 @@
+use std::collections::HashSet;
+
 use eyre::Result;
 use log::{debug, error};
 use rayon::iter::{IntoParallelIterator, ParallelIterator};
@@ -25,7 +27,7 @@ impl Vendor for OpenJDK {
         "openjdk".to_string()
     }
 
-    fn fetch_metadata(&self, meta_data: &mut Vec<crate::meta::JavaMetaData>) -> eyre::Result<()> {
+    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> eyre::Result<()> {
         let anchors: Vec<AnchorElement> = vec![
             "archive", "21", "22", "23", "24", "leyden", "loom", "valhalla",
         ]

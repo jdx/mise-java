@@ -1,3 +1,5 @@
+use std::collections::HashSet;
+
 use crate::{
     github::{self, GitHubRelease},
     http::HTTP,
@@ -28,7 +30,7 @@ impl Vendor for Jetbrains {
         "jetbrains".to_string()
     }
 
-    fn fetch_metadata(&self, meta_data: &mut Vec<crate::meta::JavaMetaData>) -> eyre::Result<()> {
+    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> eyre::Result<()> {
         let releases = github::list_releases("JetBrains/JetBrainsRuntime")?;
         let data = releases
             .into_par_iter()

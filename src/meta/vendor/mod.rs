@@ -1,4 +1,7 @@
-use std::sync::{Arc, LazyLock};
+use std::{
+    collections::HashSet,
+    sync::{Arc, LazyLock},
+};
 
 use comrak::{markdown_to_html, ComrakOptions};
 use eyre::Result;
@@ -46,8 +49,8 @@ pub trait Vendor: Send + Sync {
     fn get_name(&self) -> String;
 
     /// Fetches the metadata of all available Java versions for a vendor
-    fn fetch(&self) -> Result<Vec<JavaMetaData>> {
-        let mut meta_data = Vec::new();
+    fn fetch(&self) -> Result<HashSet<JavaMetaData>> {
+        let mut meta_data = HashSet::new();
         let start = std::time::Instant::now();
         self.fetch_metadata(&mut meta_data)?;
 
@@ -61,7 +64,7 @@ pub trait Vendor: Send + Sync {
     }
 
     /// Fetches the metadata of all available Java versions for a vendor
-    fn fetch_metadata(&self, meta_data: &mut Vec<JavaMetaData>) -> Result<()>;
+    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> Result<()>;
 }
 
 /// An anchor element with a name and href

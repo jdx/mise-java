@@ -1,3 +1,5 @@
+use std::collections::HashSet;
+
 use crate::meta::JavaMetaData;
 use eyre::Result;
 use postgres_openssl::MakeTlsConnector;
@@ -15,12 +17,12 @@ impl Postgres {
         Ok(Postgres { pool })
     }
 
-    pub fn insert(&self, meta_data: &[JavaMetaData]) -> Result<u64> {
+    pub fn insert(&self, meta_data: &HashSet<JavaMetaData>) -> Result<u64> {
         let mut conn = self.pool.get()?;
         let mut result = 0;
         let mut tx = conn.transaction()?;
 
-        for chunk in map_data(meta_data).chunks(BATCH_SIZE) {
+        for chunk in map_workaround(meta_data).chunks(BATCH_SIZE) {
             let mut query = String::from(
                 "INSERT INTO JAVA_META_DATA
                 (architecture, features, file_type, filename, image_type, java_version, jvm_impl, md5, md5_url, os, release_type, sha1, sha1_url, sha256, sha256_url, sha512, sha512_url, size, url, vendor, version)
@@ -83,7 +85,7 @@ impl Postgres {
                 vendor = excluded.vendor,
                 version = excluded.version
                 WHERE
-                excluded.architecture != JAVA_META_DATA.architecture
+                   excluded.architecture != JAVA_META_DATA.architecture
                 OR excluded.features != JAVA_META_DATA.features
                 OR excluded.file_type != JAVA_META_DATA.file_type
                 OR excluded.filename != JAVA_META_DATA.filename
@@ -99,9 +101,8 @@ impl Postgres {
                 OR excluded.sha512 != JAVA_META_DATA.sha512
                 OR excluded.sha512_url != JAVA_META_DATA.sha512_url
                 OR excluded.size != JAVA_META_DATA.size
-                OR excluded.url != JAVA_META_DATA.url
-                OR excluded.vendor != JAVA_META_DATA.vendor
-                OR excluded.version != JAVA_META_DATA.version;",
+                OR excluded.version != JAVA_META_DATA.version
+                ;",
             );
 
             result += tx.execute(&query, &params)?;
@@ -218,12 +219,12 @@ struct DbJavaMetaData {
     pub version: String,
 }
 
-// workaround for the `feature` field which needs to be joined
-// and therefore would not live long enough in context of a
-// batch insert
-fn map_data(meta_data: &[JavaMetaData]) -> Vec<DbJavaMetaData> {
+fn map_workaround(meta_data: &HashSet<JavaMetaData>) -> Vec<DbJavaMetaData> {
     meta_data
         .iter()
+        // workaround for the `feature` field which needs to be joined
+        // and therefore would not live long enough in context of a
+        // batch insert
         .map(|item| DbJavaMetaData {
             architecture: item.architecture.clone(),
             features: item.features.as_ref().map(|f| f.join(",")),

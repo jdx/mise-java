@@ -1,3 +1,5 @@
+use std::collections::HashSet;
+
 use eyre::Result;
 use indoc::formatdoc;
 use log::debug;
@@ -17,7 +19,7 @@ impl Vendor for Temurin {
         "temurin".to_string()
     }
 
-    fn fetch_metadata(&self, meta_data: &mut Vec<JavaMetaData>) -> Result<()> {
+    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> Result<()> {
         // get available releases
         // https://api.adoptium.net/v3/info/available_releases
         let api_releases_url = "https://api.adoptium.net/v3/info/available_releases";

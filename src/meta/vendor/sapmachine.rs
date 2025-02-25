@@ -1,3 +1,5 @@
+use std::collections::HashSet;
+
 use crate::{
     github::{self, GitHubAsset, GitHubRelease},
     http::HTTP,
@@ -27,7 +29,7 @@ impl Vendor for SAPMachine {
         "sapmachine".to_string()
     }
 
-    fn fetch_metadata(&self, meta_data: &mut Vec<crate::meta::JavaMetaData>) -> eyre::Result<()> {
+    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> eyre::Result<()> {
         let releases = github::list_releases("SAP/SapMachine")?;
         let data: Vec<JavaMetaData> = releases
             .into_par_iter()
