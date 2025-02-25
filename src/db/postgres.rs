@@ -20,9 +20,9 @@ impl Postgres {
         {
             let stmt = tx.prepare(
         "INSERT INTO JAVA_META_DATA
-              (architecture, features, file_type, filename, image_type, java_version, jvm_impl, md5, os, release_type, sha1, sha256, sha512, size, url, vendor, version)
+              (architecture, features, file_type, filename, image_type, java_version, jvm_impl, md5, md5_url, os, release_type, sha1, sha1_url, sha256, sha256_url, sha512, sha512_url, size, url, vendor, version)
             VALUES
-              ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17)
+              ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21)
             ON CONFLICT(url) DO UPDATE SET
               architecture = excluded.architecture,
               features = excluded.features,
@@ -32,12 +32,16 @@ impl Postgres {
               java_version = excluded.java_version,
               jvm_impl = excluded.jvm_impl,
               md5 = excluded.md5,
+              md5_url = excluded.md5_url,
               modified_at = CURRENT_TIMESTAMP,
               os = excluded.os,
               release_type = excluded.release_type,
               sha1 = excluded.sha1,
+              sha1_url = excluded.sha1_url,
               sha256 = excluded.sha256,
+              sha256_url = excluded.sha256_url,
               sha512 = excluded.sha512,
+              sha512_url = excluded.sha512_url,
               size = excluded.size,
               vendor = excluded.vendor,
               version = excluded.version
@@ -80,11 +84,15 @@ impl Postgres {
                         &data.java_version,
                         &data.jvm_impl,
                         &data.md5,
+                        &data.md5_url,
                         &data.os,
                         &data.release_type,
                         &data.sha1,
+                        &data.sha1_url,
                         &data.sha256,
+                        &data.sha256_url,
                         &data.sha512,
+                        &data.sha512_url,
                         &data.size.map(|s| s as i32),
                         &data.url,
                         &data.vendor,
