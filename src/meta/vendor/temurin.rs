@@ -93,7 +93,7 @@ fn map_release(release: &Release) -> Vec<JavaMetaData> {
             os: normalize_os(binary.os.as_str()),
             sha256: package_checksum,
             sha256_url: package_checksum_link,
-            size: Some(package.as_ref().map(|p| p.size).unwrap_or(0)),
+            size: Some(package.as_ref().map(|p| p.size as i32).unwrap_or(0)),
             release_type: release.release_type.clone().to_string(),
             url: package_link.unwrap_or_default().to_string(),
             vendor: "temurin".to_string(),

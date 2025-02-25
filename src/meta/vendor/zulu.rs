@@ -79,7 +79,7 @@ fn map_packages(packages: Vec<Package>) -> Result<Vec<JavaMetaData>> {
             os,
             release_type: release_type.to_string(),
             sha256: Some(package.sha256_hash),
-            size: Some(package.size),
+            size: Some(package.size as i32),
             url: package.download_url,
             vendor: "zulu".to_string(),
             version,

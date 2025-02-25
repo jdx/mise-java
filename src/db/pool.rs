@@ -20,9 +20,9 @@ pub fn get_pool() -> Result<Pool<PostgresConnectionManager<MakeTlsConnector>>> {
                     .build(manager)?;
                 Ok(pool)
             } else {
-                return Err(eyre::eyre!("unsupported database URL: {}", url));
+                Err(eyre::eyre!("unsupported database URL: {}", url))
             }
         }
-        None => return Err(eyre::eyre!("database.url is not configured")),
+        None => Err(eyre::eyre!("database.url is not configured")),
     }
 }
