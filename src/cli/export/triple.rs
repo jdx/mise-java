@@ -7,7 +7,7 @@ use serde_json::{Map, Value};
 
 use crate::{
     config::Conf,
-    db::{pool::get_pool, postgres::Postgres},
+    db::{meta_repository::MetaRepository, pool::ConnectionPool},
     meta::JavaMetaData,
 };
 
@@ -40,8 +40,8 @@ impl Triple {
         if conf.export.path.is_none() {
             return Err(eyre::eyre!("export.path is not configured"));
         }
-        let conn_pool = get_pool()?;
-        let db = Postgres::new(conn_pool)?;
+        let conn_pool = ConnectionPool::get_pool()?;
+        let db = MetaRepository::new(conn_pool)?;
 
         let release_types_default = db.get_distinct("release_type")?;
         let release_types = self.release_type.unwrap_or(release_types_default);

@@ -8,13 +8,13 @@ use r2d2_postgres::PostgresConnectionManager;
 
 const BATCH_SIZE: usize = 1000;
 
-pub struct Postgres {
+pub struct MetaRepository {
     pool: Pool<PostgresConnectionManager<MakeTlsConnector>>,
 }
 
-impl Postgres {
+impl MetaRepository {
     pub fn new(pool: Pool<PostgresConnectionManager<MakeTlsConnector>>) -> Result<Self> {
-        Ok(Postgres { pool })
+        Ok(MetaRepository { pool })
     }
 
     pub fn insert(&self, meta_data: &HashSet<JavaMetaData>) -> Result<u64> {

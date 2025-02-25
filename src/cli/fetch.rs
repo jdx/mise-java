@@ -4,7 +4,7 @@ use log::{error, info};
 use std::{collections::HashMap, sync::Arc};
 
 use crate::{
-    db::{self, postgres::Postgres},
+    db::{meta_repository::MetaRepository, pool::ConnectionPool},
     meta::vendor::{Vendor, VENDORS},
 };
 
@@ -28,13 +28,13 @@ impl Fetch {
         }
 
         let start = std::time::Instant::now();
-        let conn_pool = db::pool::get_pool()?;
+        let conn_pool = ConnectionPool::get_pool()?;
         let pool = rayon::ThreadPoolBuilder::default().build()?;
         pool.scope(|s| {
             let run = |name: String, vendor: Arc<dyn Vendor>| {
                 let conn_pool = conn_pool.clone();
                 s.spawn(move |_| {
-                    let db = match Postgres::new(conn_pool) {
+                    let db = match MetaRepository::new(conn_pool) {
                         Ok(db) => db,
                         Err(err) => {
                             error!("[{}] failed to connect to database: {}", name, err);

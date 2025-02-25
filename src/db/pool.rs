@@ -6,23 +6,27 @@ use r2d2_postgres::PostgresConnectionManager;
 
 use crate::config::Conf;
 
-pub fn get_pool() -> Result<Pool<PostgresConnectionManager<MakeTlsConnector>>> {
-    let conf: Conf = Conf::try_get()?;
+pub struct ConnectionPool {}
 
-    match conf.database.url {
-        Some(url) => {
-            if url.starts_with("postgres://") {
-                let connector =
-                    MakeTlsConnector::new(SslConnector::builder(SslMethod::tls())?.build());
-                let manager = PostgresConnectionManager::new(url.parse().unwrap(), connector);
-                let pool = Pool::builder()
-                    .max_size(conf.database.pool_size.unwrap_or(10))
-                    .build(manager)?;
-                Ok(pool)
-            } else {
-                Err(eyre::eyre!("unsupported database URL: {}", url))
+impl ConnectionPool {
+    pub fn get_pool() -> Result<Pool<PostgresConnectionManager<MakeTlsConnector>>> {
+        let conf: Conf = Conf::try_get()?;
+
+        match conf.database.url {
+            Some(url) => {
+                if url.starts_with("postgres://") {
+                    let connector =
+                        MakeTlsConnector::new(SslConnector::builder(SslMethod::tls())?.build());
+                    let manager = PostgresConnectionManager::new(url.parse().unwrap(), connector);
+                    let pool = Pool::builder()
+                        .max_size(conf.database.pool_size.unwrap_or(10))
+                        .build(manager)?;
+                    Ok(pool)
+                } else {
+                    Err(eyre::eyre!("unsupported database URL: {}", url))
+                }
             }
+            None => Err(eyre::eyre!("database.url is not configured")),
         }
-        None => Err(eyre::eyre!("database.url is not configured")),
     }
 }
