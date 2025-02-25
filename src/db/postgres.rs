@@ -1,6 +1,8 @@
 use crate::{config::Conf, meta::JavaMetaData};
 use eyre::Result;
+use openssl::ssl::{SslConnector, SslMethod};
 use postgres::NoTls;
+use postgres_openssl::MakeTlsConnector;
 
 use super::Operations;
 
@@ -192,6 +194,14 @@ fn get_client() -> Result<postgres::Client> {
         }
         None => return Err(eyre::eyre!("database.url is not configured")),
     };
-    let conn = postgres::Client::connect(database_url, NoTls)?;
-    Ok(conn)
+
+    if conf.database.tls.unwrap_or(false) {
+        let builder = SslConnector::builder(SslMethod::tls())?;
+        let connector = MakeTlsConnector::new(builder.build());
+        let conn = postgres::Client::connect(database_url, connector)?;
+        Ok(conn)
+    } else {
+        let conn = postgres::Client::connect(database_url, NoTls)?;
+        Ok(conn)
+    }
 }

@@ -61,7 +61,7 @@ impl Fetch {
                             info!("[{}] inserted/modified {} records", name, result)
                         }
                         Err(err) => {
-                            error!("[{}] failed to write to SQLite: {}", name, err);
+                            error!("[{}] failed to write to database: {}", name, err);
                         }
                     };
                 });

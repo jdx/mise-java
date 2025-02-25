@@ -12,6 +12,9 @@ pub struct ExportConf {
 
 #[derive(Config, Debug)]
 pub struct DatabaseConf {
+    /// Use TLS for the database connection
+    #[config(env = "JMETA_DATABASE_TLS")]
+    pub tls: Option<bool>,
     /// Database connection URL
     #[config(env = "JMETA_DATABASE_URL")]
     pub url: Option<String>,

@@ -1,4 +1,6 @@
 [database]
+# Use TLS for database connection. Is ignored for SQLite.
+tls = false
 # Database connection URL
 url = "sqlite://data/meta.sqlite3"
 # url = "postgres://postgres:postgres@localhost:5432/meta"

@@ -27,7 +27,7 @@ impl Database {
             Some(url) => {
                 if url.starts_with("sqlite://") {
                     Ok(Arc::new(Sqlite::new()))
-                } else if url.starts_with("postgres://") {
+                } else if url.starts_with("postgres://") || url.starts_with("postgresql://") {
                     Ok(Arc::new(Postgres::new()))
                 } else {
                     Err(eyre::eyre!("unsupported database URL: {}", url))
