@@ -34,7 +34,7 @@ jobs:
 
       - name: Export Meta Data
         run: |
-          cargo run -- export triple
+          cargo run -- export triple -t ea,ga -o linux,macosx,windows -a aarch64,arm32,i686,x86_64
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
