@@ -215,10 +215,10 @@ skip = [
 skip-tree = [
     #"ansi_term@0.11.0", # will be skipped along with _all_ of its direct and transitive dependencies
     #{ crate = "ansi_term@0.11.0", depth = 20 },
-    "itertools@0.13",
-    "comrak@0.35",
-    "postgres-openssl@0.5",
-    "xx@2"
+    "itertools",
+    "comrak",
+    "postgres-openssl",
+    "xx"
 ]
 
 # This section is considered when running `cargo deny check sources`.

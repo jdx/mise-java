@@ -13,6 +13,7 @@ use super::JavaMetaData;
 
 pub mod adoptopenjdk;
 pub mod corretto;
+pub mod dragonwell;
 pub mod graalvm;
 pub mod jetbrains;
 pub mod liberica;
@@ -28,6 +29,7 @@ pub static VENDORS: LazyLock<Vec<Arc<dyn Vendor>>> = LazyLock::new(|| {
     vec![
         Arc::new(adoptopenjdk::AdoptOpenJDK {}),
         Arc::new(corretto::Corretto {}),
+        Arc::new(dragonwell::Dragonwell {}),
         Arc::new(graalvm::GraalVM {}),
         Arc::new(jetbrains::Jetbrains {}),
         Arc::new(liberica::Liberica {}),
