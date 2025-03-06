@@ -17,6 +17,7 @@ pub mod dragonwell;
 pub mod graalvm;
 pub mod jetbrains;
 pub mod liberica;
+pub mod mandrel;
 pub mod microsoft;
 pub mod openjdk;
 pub mod oracle;
@@ -33,6 +34,7 @@ pub static VENDORS: LazyLock<Vec<Arc<dyn Vendor>>> = LazyLock::new(|| {
         Arc::new(graalvm::GraalVM {}),
         Arc::new(jetbrains::Jetbrains {}),
         Arc::new(liberica::Liberica {}),
+        Arc::new(mandrel::Mandrel {}),
         Arc::new(microsoft::Microsoft {}),
         Arc::new(openjdk::OpenJDK {}),
         Arc::new(oracle::Oracle {}),

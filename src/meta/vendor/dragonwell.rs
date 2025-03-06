@@ -1,3 +1,5 @@
+use std::collections::HashSet;
+
 use eyre::Result;
 use log::{debug, warn};
 use rayon::iter::{IntoParallelIterator, ParallelIterator};
@@ -29,10 +31,7 @@ impl Vendor for Dragonwell {
         "dragonwell".to_string()
     }
 
-    fn fetch_metadata(
-        &self,
-        meta_data: &mut std::collections::HashSet<crate::meta::JavaMetaData>,
-    ) -> eyre::Result<()> {
+    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> eyre::Result<()> {
         for version in &["8", "11", "17", "21"] {
             debug!("[dragonwell] fetching releases for version: {version}");
             let repo = format!("dragonwell-project/dragonwell{}", version);
