@@ -37,7 +37,7 @@ pub fn list_releases(repo: &str) -> Result<Vec<GitHubRelease>> {
         releases.extend(more);
         headers = h;
     }
-    releases.retain(|r| !r.draft && !r.prerelease);
+    releases.retain(|r| !r.draft);
 
     Ok(releases)
 }
