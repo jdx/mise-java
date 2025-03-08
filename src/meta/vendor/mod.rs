@@ -16,6 +16,7 @@ pub mod corretto;
 pub mod dragonwell;
 pub mod graalvm;
 pub mod jetbrains;
+pub mod kona;
 pub mod liberica;
 pub mod mandrel;
 pub mod microsoft;
@@ -33,6 +34,7 @@ pub static VENDORS: LazyLock<Vec<Arc<dyn Vendor>>> = LazyLock::new(|| {
         Arc::new(dragonwell::Dragonwell {}),
         Arc::new(graalvm::GraalVM {}),
         Arc::new(jetbrains::Jetbrains {}),
+        Arc::new(kona::Kona {}),
         Arc::new(liberica::Liberica {}),
         Arc::new(mandrel::Mandrel {}),
         Arc::new(microsoft::Microsoft {}),
@@ -132,7 +134,7 @@ fn normalize_architecture(architecture: &str) -> String {
 /// Normalizes the OS string to a common format
 pub fn normalize_os(os: &str) -> String {
     match os.to_lowercase().as_str() {
-        "linux" | "alpine" | "alpine-linux" | "linux-musl" => "linux".to_string(),
+        "linux" | "alpine" | "alpine-linux" | "linux-musl" | "linux_musl" => "linux".to_string(),
         "mac" | "macos" | "macosx" | "osx" | "darwin" => "macosx".to_string(),
         "win" | "windows" => "windows".to_string(),
         "solaris" => "solaris".to_string(),
