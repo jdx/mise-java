@@ -11,7 +11,7 @@ use rayon::iter::ParallelIterator;
 use scraper::{Html, Selector};
 use xx::regex;
 
-use super::{md_to_html, normalize_architecture, normalize_os, normalize_version, Vendor};
+use super::{Vendor, md_to_html, normalize_architecture, normalize_os, normalize_version};
 
 #[derive(Clone, Copy, Debug)]
 pub struct Corretto {}

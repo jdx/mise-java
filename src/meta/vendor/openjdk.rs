@@ -8,8 +8,8 @@ use xx::regex;
 use crate::{http::HTTP, meta::JavaMetaData};
 
 use super::{
-    anchors_from_html, normalize_architecture, normalize_os, normalize_version, AnchorElement,
-    Vendor,
+    AnchorElement, Vendor, anchors_from_html, normalize_architecture, normalize_os,
+    normalize_version,
 };
 
 #[derive(Clone, Copy, Debug)]

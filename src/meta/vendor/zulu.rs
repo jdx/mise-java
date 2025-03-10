@@ -9,7 +9,7 @@ use serde::{Deserialize, Serialize};
 use crate::{http::HTTP, meta::JavaMetaData};
 use xx::regex;
 
-use super::{normalize_architecture, normalize_os, normalize_version, Vendor};
+use super::{Vendor, normalize_architecture, normalize_os, normalize_version};
 
 #[derive(Clone, Copy, Debug)]
 pub struct Zulu {}

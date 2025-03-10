@@ -1,6 +1,6 @@
 use std::collections::HashSet;
 
-use super::{normalize_architecture, normalize_os, normalize_version, Vendor};
+use super::{Vendor, normalize_architecture, normalize_os, normalize_version};
 use crate::{
     github::{self, GitHubAsset, GitHubRelease},
     http::HTTP,

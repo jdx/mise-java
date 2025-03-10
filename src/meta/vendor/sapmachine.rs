@@ -11,7 +11,7 @@ use rayon::iter::IntoParallelIterator;
 use rayon::iter::ParallelIterator;
 use xx::regex;
 
-use super::{normalize_architecture, normalize_os, normalize_version, Vendor};
+use super::{Vendor, normalize_architecture, normalize_os, normalize_version};
 
 pub struct SAPMachine {}
 

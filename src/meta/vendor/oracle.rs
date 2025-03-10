@@ -7,8 +7,8 @@ use rayon::iter::{IntoParallelIterator, ParallelIterator};
 use xx::regex;
 
 use super::{
-    anchors_from_html, normalize_architecture, normalize_os, normalize_version, AnchorElement,
-    Vendor,
+    AnchorElement, Vendor, anchors_from_html, normalize_architecture, normalize_os,
+    normalize_version,
 };
 
 pub struct Oracle {}

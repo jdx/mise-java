@@ -9,7 +9,7 @@ use rayon::iter::IntoParallelIterator;
 use rayon::iter::ParallelIterator;
 use serde::{Deserialize, Serialize};
 
-use super::{get_extension, normalize_architecture, normalize_os, normalize_version, Vendor};
+use super::{Vendor, get_extension, normalize_architecture, normalize_os, normalize_version};
 
 #[derive(Clone, Copy, Debug)]
 pub struct AdoptOpenJDK {}

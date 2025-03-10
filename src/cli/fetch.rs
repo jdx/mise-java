@@ -5,7 +5,7 @@ use std::{collections::HashMap, sync::Arc};
 
 use crate::{
     db::{meta_repository::MetaRepository, pool::ConnectionPool},
-    meta::vendor::{Vendor, VENDORS},
+    meta::vendor::{VENDORS, Vendor},
 };
 
 /// Fetch metadata from vendors
