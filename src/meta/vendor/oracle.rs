@@ -6,10 +6,7 @@ use log::{debug, error};
 use rayon::iter::{IntoParallelIterator, ParallelIterator};
 use xx::regex;
 
-use super::{
-    AnchorElement, Vendor, anchors_from_html, normalize_architecture, normalize_os,
-    normalize_version,
-};
+use super::{AnchorElement, Vendor, anchors_from_html, normalize_architecture, normalize_os, normalize_version};
 
 pub struct Oracle {}
 
@@ -65,10 +62,7 @@ fn map_release(a: &AnchorElement) -> Result<JavaMetaData> {
     let filename_meta = meta_from_name(&name)?;
     let sha256_url = format!("{}.sha256", &a.href);
     let sha256 = match HTTP.get_text(&sha256_url) {
-        Ok(sha256) => sha256
-            .split_whitespace()
-            .next()
-            .map(|s| format!("sha256:{}", s)),
+        Ok(sha256) => sha256.split_whitespace().next().map(|s| format!("sha256:{}", s)),
         Err(e) => {
             error!("error fetching sha256sum for {name}: {e}");
             None
@@ -96,19 +90,15 @@ fn map_release(a: &AnchorElement) -> Result<JavaMetaData> {
 
 fn meta_from_name(name: &str) -> Result<FileNameMeta> {
     debug!("[oracle] parsing name: {}", name);
-    let capture = regex!(r"^jdk-([0-9+.]{2,})_(linux|macos|windows)-(x64|aarch64)_bin\.(dep|dmg|exe|msi|rpm|tar\.gz|zip)$")
-        .captures(name)
-        .ok_or_else(|| eyre::eyre!("regular expression did not match name: {}", name))?;
+    let capture =
+        regex!(r"^jdk-([0-9+.]{2,})_(linux|macos|windows)-(x64|aarch64)_bin\.(dep|dmg|exe|msi|rpm|tar\.gz|zip)$")
+            .captures(name)
+            .ok_or_else(|| eyre::eyre!("regular expression did not match name: {}", name))?;
 
     let version = capture.get(1).unwrap().as_str().to_string();
     let os = capture.get(2).unwrap().as_str().to_string();
     let arch = capture.get(3).unwrap().as_str().to_string();
     let ext = capture.get(4).unwrap().as_str().to_string();
 
-    Ok(FileNameMeta {
-        arch,
-        ext,
-        os,
-        version,
-    })
+    Ok(FileNameMeta { arch, ext, os, version })
 }

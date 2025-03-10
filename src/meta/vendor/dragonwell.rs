@@ -82,16 +82,9 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
             java_version: filename_meta.java_version.clone(),
             jvm_impl: "hotspot".to_string(),
             os: normalize_os(&filename_meta.os),
-            release_type: normalize_release_type(&filename_meta.release_type.map_or(
-                "ga".to_string(),
-                |s| {
-                    if s.contains("preview") {
-                        "ea".to_string()
-                    } else {
-                        s
-                    }
-                },
-            )),
+            release_type: normalize_release_type(&filename_meta.release_type.map_or("ga".to_string(), |s| {
+                if s.contains("preview") { "ea".to_string() } else { s }
+            })),
             url,
             vendor: "dragonwell".to_string(),
             version,

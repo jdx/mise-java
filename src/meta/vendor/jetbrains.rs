@@ -45,10 +45,8 @@ impl Vendor for Jetbrains {
                     }
                 };
                 let fragment = Html::parse_fragment(&html);
-                let a_selector = Selector::parse(
-                    "table a:is([href$='.pkg'], [href$='.tar.gz'], [href$='.zip'])",
-                )
-                .unwrap();
+                let a_selector =
+                    Selector::parse("table a:is([href$='.pkg'], [href$='.tar.gz'], [href$='.zip'])").unwrap();
 
                 for a in fragment.select(&a_selector) {
                     match map_release(&release, &a) {
@@ -67,10 +65,7 @@ impl Vendor for Jetbrains {
 }
 
 fn map_release(release: &GitHubRelease, a: &ElementRef<'_>) -> Result<JavaMetaData> {
-    let href = a
-        .value()
-        .attr("href")
-        .ok_or_else(|| eyre::eyre!("no href found"))?;
+    let href = a.value().attr("href").ok_or_else(|| eyre::eyre!("no href found"))?;
     let name = href
         .split("/")
         .last()
@@ -79,10 +74,7 @@ fn map_release(release: &GitHubRelease, a: &ElementRef<'_>) -> Result<JavaMetaDa
     let filename_meta = meta_from_name(&name)?;
     let sha512_url = format!("{}.checksum", &href);
     let sha512 = match HTTP.get_text(&sha512_url) {
-        Ok(sha512) => sha512
-            .split_whitespace()
-            .next()
-            .map(|s| format!("sha512:{}", s)),
+        Ok(sha512) => sha512.split_whitespace().next().map(|s| format!("sha512:{}", s)),
         Err(e) => {
             error!("error fetching sha512sum for {name}: {e}");
             None

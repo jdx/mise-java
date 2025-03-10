@@ -50,14 +50,10 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
     let assets = release.assets.iter().filter(|asset| include(asset));
     for asset in assets {
         let sha256_url = match &asset.name {
-            name if name.ends_with(".tar.gz") => format!(
-                "{}.sha256.txt",
-                asset.browser_download_url.replace(".tar.gz", "")
-            ),
-            name if name.ends_with(".zip") => format!(
-                "{}.sha256.txt",
-                asset.browser_download_url.replace(".zip", "")
-            ),
+            name if name.ends_with(".tar.gz") => {
+                format!("{}.sha256.txt", asset.browser_download_url.replace(".tar.gz", ""))
+            }
+            name if name.ends_with(".zip") => format!("{}.sha256.txt", asset.browser_download_url.replace(".zip", "")),
             _ => format!("{}.sha256.txt", asset.browser_download_url),
         };
         let sha256sum = match HTTP.get_text(&sha256_url) {

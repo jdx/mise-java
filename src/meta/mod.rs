@@ -50,8 +50,7 @@ impl Eq for JavaMetaData {}
 
 impl JavaMetaData {
     pub fn map(item: &JavaMetaData, properties: &Option<Vec<String>>) -> Map<String, Value> {
-        let props: HashMap<String, Value> =
-            serde_json::from_value(serde_json::to_value(item).unwrap()).unwrap();
+        let props: HashMap<String, Value> = serde_json::from_value(serde_json::to_value(item).unwrap()).unwrap();
         let mut map = Map::new();
         for prop in &props {
             match properties {
@@ -119,14 +118,8 @@ mod tests {
 
         assert_eq!(map.get("architecture").unwrap(), "x86_64");
         assert_eq!(map.get("checksum").unwrap(), "sha256:checksum");
-        assert_eq!(
-            map.get("checksum_url").unwrap(),
-            "http://example.com/checksum"
-        );
-        assert_eq!(
-            map.get("features").unwrap(),
-            &json!(vec!["feature1", "feature2"])
-        );
+        assert_eq!(map.get("checksum_url").unwrap(), "http://example.com/checksum");
+        assert_eq!(map.get("features").unwrap(), &json!(vec!["feature1", "feature2"]));
         assert_eq!(map.get("file_type").unwrap(), "tar.gz");
         assert_eq!(map.get("filename").unwrap(), "openjdk.tar.gz");
         assert_eq!(map.get("image_type").unwrap(), "jdk");

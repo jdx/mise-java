@@ -34,22 +34,26 @@ impl Vendor for Microsoft {
         ];
 
         // ElementRef is not Send, so we can't use rayon, so we have to turn it into a usable struct
-        let anchors: Vec<AnchorElement> = urls.into_iter().flat_map(|url| {
-            let releases_html = match HTTP.get_text(url) {
-                Ok(releases_html) => releases_html,
-                Err(e) => {
-                    error!("[microsoft] error fetching releases: {:?}", e);
-                    "".to_string()
-                }
-            };
-            anchors_from_html(&releases_html, "a:is([href$='.tar.gz'], [href$='.zip'], [href$='.msi'],[href$='.dmg'],[href$='.pkg'])")
-        }).collect();
+        let anchors: Vec<AnchorElement> = urls
+            .into_iter()
+            .flat_map(|url| {
+                let releases_html = match HTTP.get_text(url) {
+                    Ok(releases_html) => releases_html,
+                    Err(e) => {
+                        error!("[microsoft] error fetching releases: {:?}", e);
+                        "".to_string()
+                    }
+                };
+                anchors_from_html(
+                    &releases_html,
+                    "a:is([href$='.tar.gz'], [href$='.zip'], [href$='.msi'],[href$='.dmg'],[href$='.pkg'])",
+                )
+            })
+            .collect();
 
         let data = anchors
             .into_par_iter()
-            .filter(|anchor| {
-                !anchor.name.contains("-debugsymbols-") && !anchor.name.contains("-sources-")
-            })
+            .filter(|anchor| !anchor.name.contains("-debugsymbols-") && !anchor.name.contains("-sources-"))
             .flat_map(|anchor| match map_release(&anchor) {
                 Ok(release) => vec![release],
                 Err(e) => {
@@ -67,10 +71,7 @@ fn map_release(a: &AnchorElement) -> Result<JavaMetaData> {
     let filename_meta = meta_from_name(&a.name)?;
     let sha256_url = format!("{}.sha256sum.txt", &a.href);
     let sha256 = match HTTP.get_text(&sha256_url) {
-        Ok(sha) => sha
-            .split_whitespace()
-            .next()
-            .map(|s| format!("sha256:{}", s)),
+        Ok(sha) => sha.split_whitespace().next().map(|s| format!("sha256:{}", s)),
         Err(e) => {
             error!("error fetching sha256sum for {}: {}", a.name, e);
             None
@@ -102,21 +103,14 @@ fn map_release(a: &AnchorElement) -> Result<JavaMetaData> {
 
 fn meta_from_name(name: &str) -> Result<FileNameMeta> {
     debug!("[microsoft] parsing name: {}", name);
-    let capture = regex!(
-        r"^microsoft-jdk-([0-9+.]{3,})-?.*-(alpine|linux|macos|macOS|windows)-(x64|aarch64)\.(.*)$"
-    )
-    .captures(name)
-    .ok_or_else(|| eyre::eyre!("regular expression did not match name: {}", name))?;
+    let capture = regex!(r"^microsoft-jdk-([0-9+.]{3,})-?.*-(alpine|linux|macos|macOS|windows)-(x64|aarch64)\.(.*)$")
+        .captures(name)
+        .ok_or_else(|| eyre::eyre!("regular expression did not match name: {}", name))?;
 
     let version = capture.get(1).unwrap().as_str().to_string();
     let os = capture.get(2).unwrap().as_str().to_string();
     let arch = capture.get(3).unwrap().as_str().to_string();
     let ext = capture.get(4).unwrap().as_str().to_string();
 
-    Ok(FileNameMeta {
-        arch,
-        ext,
-        os,
-        version,
-    })
+    Ok(FileNameMeta { arch, ext, os, version })
 }

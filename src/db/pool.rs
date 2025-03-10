@@ -15,8 +15,7 @@ impl ConnectionPool {
         match conf.database.url {
             Some(url) => {
                 if url.starts_with("postgres://") {
-                    let connector =
-                        MakeTlsConnector::new(SslConnector::builder(SslMethod::tls())?.build());
+                    let connector = MakeTlsConnector::new(SslConnector::builder(SslMethod::tls())?.build());
                     let manager = PostgresConnectionManager::new(url.parse().unwrap(), connector);
                     let pool = Pool::builder()
                         .max_size(conf.database.pool_size.unwrap_or(10))

@@ -81,10 +81,7 @@ impl Fetch {
             }
         });
 
-        info!(
-            "fetched all vendors in {:.2} seconds",
-            start.elapsed().as_secs_f32()
-        );
+        info!("fetched all vendors in {:.2} seconds", start.elapsed().as_secs_f32());
         Ok(())
     }
 

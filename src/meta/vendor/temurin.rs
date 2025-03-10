@@ -28,7 +28,8 @@ impl Vendor for Temurin {
 
         // get meta data for a specific release
         // https://api.adoptium.net/v3/assets/feature_releases/${release}/ga?page=${page}&page_size=20&project=jdk&sort_order=ASC&vendor=adoptium
-        let data = releases.available_releases
+        let data = releases
+            .available_releases
             .into_par_iter()
             .flat_map(|release| {
                 let mut page = 0;
@@ -47,14 +48,14 @@ impl Vendor for Temurin {
                     debug!("[temurin] fetching release [{}] page [{}]", release, page);
                     match HTTP.get_json::<Vec<Release>, _>(api_url) {
                         Ok(resp) => {
-                          resp.iter().for_each(|release| {
+                            resp.iter().for_each(|release| {
                                 let release_data: Vec<JavaMetaData> = map_release(release)
                                     .into_iter()
                                     .filter(|m| !["sbom"].contains(&m.image_type.as_str()))
                                     .collect::<Vec<JavaMetaData>>();
                                 data.extend(release_data)
-                          });
-                          page += 1;
+                            });
+                            page += 1;
                         }
                         Err(_) => break,
                     }

@@ -63,10 +63,7 @@ impl Triple {
                         .map(|item| JavaMetaData::map(&item, &self.properties))
                         .collect::<Vec<Map<String, Value>>>();
 
-                    info!(
-                        "exporting {} records for {} {} {}",
-                        size, release_type, os, arch
-                    );
+                    info!("exporting {} records for {} {} {}", size, release_type, os, arch);
                     let path = PathBuf::from(&export_path)
                         .join(release_type)
                         .join(os)

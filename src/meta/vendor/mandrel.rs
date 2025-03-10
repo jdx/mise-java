@@ -90,8 +90,7 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
 }
 
 fn include(asset: &GitHubAsset) -> bool {
-    asset.name.starts_with("mandrel-")
-        && (asset.name.ends_with(".tar.gz") || asset.name.ends_with(".zip"))
+    asset.name.starts_with("mandrel-") && (asset.name.ends_with(".tar.gz") || asset.name.ends_with(".zip"))
 }
 
 fn normalize_release_type(version: &str) -> String {
@@ -104,11 +103,10 @@ fn normalize_release_type(version: &str) -> String {
 
 fn meta_from_name(name: &str) -> Result<FileNameMeta> {
     debug!("[mandrel] parsing name: {}", name);
-    let capture = regex!(
-        r"^mandrel-java([0-9]{1,2})-(linux|macos|windows)-(amd64|aarch64)-([0-9+.]{2,}.*)(\.tar\.gz|\.zip)$"
-    )
-    .captures(name)
-    .ok_or_else(|| eyre::eyre!("regular expression did not match name: {}", name))?;
+    let capture =
+        regex!(r"^mandrel-java([0-9]{1,2})-(linux|macos|windows)-(amd64|aarch64)-([0-9+.]{2,}.*)(\.tar\.gz|\.zip)$")
+            .captures(name)
+            .ok_or_else(|| eyre::eyre!("regular expression did not match name: {}", name))?;
 
     let java_version = capture.get(1).unwrap().as_str().to_string();
     let os = capture.get(2).unwrap().as_str().to_string();

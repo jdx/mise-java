@@ -7,10 +7,7 @@ use xx::regex;
 
 use crate::{http::HTTP, meta::JavaMetaData};
 
-use super::{
-    AnchorElement, Vendor, anchors_from_html, normalize_architecture, normalize_os,
-    normalize_version,
-};
+use super::{AnchorElement, Vendor, anchors_from_html, normalize_architecture, normalize_os, normalize_version};
 
 #[derive(Clone, Copy, Debug)]
 pub struct OpenJDK {}
@@ -28,22 +25,20 @@ impl Vendor for OpenJDK {
     }
 
     fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> eyre::Result<()> {
-        let anchors: Vec<AnchorElement> = vec![
-            "archive", "21", "22", "23", "24", "leyden", "loom", "valhalla",
-        ]
-        .into_par_iter()
-        .flat_map(|version| {
-            let url = format!("http://jdk.java.net/{version}/");
-            let releases_html = match HTTP.get_text(url) {
-                Ok(releases_html) => releases_html,
-                Err(e) => {
-                    error!("[openjdk] error fetching releases: {:?}", e);
-                    "".to_string()
-                }
-            };
-            anchors_from_html(&releases_html, "a:is([href$='.tar.gz'], [href$='.zip'])")
-        })
-        .collect();
+        let anchors: Vec<AnchorElement> = vec!["archive", "21", "22", "23", "24", "leyden", "loom", "valhalla"]
+            .into_par_iter()
+            .flat_map(|version| {
+                let url = format!("http://jdk.java.net/{version}/");
+                let releases_html = match HTTP.get_text(url) {
+                    Ok(releases_html) => releases_html,
+                    Err(e) => {
+                        error!("[openjdk] error fetching releases: {:?}", e);
+                        "".to_string()
+                    }
+                };
+                anchors_from_html(&releases_html, "a:is([href$='.tar.gz'], [href$='.zip'])")
+            })
+            .collect();
 
         let data = anchors
             .into_par_iter()
@@ -76,10 +71,7 @@ fn map_release(a: &AnchorElement) -> Result<JavaMetaData> {
     };
     let sha256_url = format!("{}.sha256", &a.href);
     let sha256 = match HTTP.get_text(&sha256_url) {
-        Ok(sha) => sha
-            .split_whitespace()
-            .next()
-            .map(|s| format!("sha256:{}", s)),
+        Ok(sha) => sha.split_whitespace().next().map(|s| format!("sha256:{}", s)),
         Err(e) => {
             error!("error fetching sha256sum for {}: {}", name, e);
             None
@@ -107,21 +99,17 @@ fn map_release(a: &AnchorElement) -> Result<JavaMetaData> {
 
 fn meta_from_name(name: &str) -> Result<FileNameMeta> {
     debug!("[oracle] parsing name: {}", name);
-    let capture = regex!(r"^openjdk-([0-9]{1,}[^_]*)_(linux|osx|macos|windows)-(aarch64|x64-musl|x64)_bin\.(tar\.gz|zip)$")
-        .captures(name)
-        .ok_or_else(|| eyre::eyre!("regular expression did not match name: {}", name))?;
+    let capture =
+        regex!(r"^openjdk-([0-9]{1,}[^_]*)_(linux|osx|macos|windows)-(aarch64|x64-musl|x64)_bin\.(tar\.gz|zip)$")
+            .captures(name)
+            .ok_or_else(|| eyre::eyre!("regular expression did not match name: {}", name))?;
 
     let version = capture.get(1).unwrap().as_str().to_string();
     let os = capture.get(2).unwrap().as_str().to_string();
     let arch = capture.get(3).unwrap().as_str().to_string();
     let ext = capture.get(4).unwrap().as_str().to_string();
 
-    Ok(FileNameMeta {
-        arch,
-        ext,
-        os,
-        version,
-    })
+    Ok(FileNameMeta { arch, ext, os, version })
 }
 
 fn normalize_release_type(version: &str) -> String {

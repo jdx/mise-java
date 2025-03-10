@@ -94,10 +94,7 @@ fn include(asset: &github::GitHubAsset) -> bool {
 }
 
 fn get_sha1sums(release: &GitHubRelease) -> Result<HashMap<String, String>> {
-    let sha1sum_asset = release
-        .assets
-        .iter()
-        .find(|asset| asset.name == "sha1sum.txt");
+    let sha1sum_asset = release.assets.iter().find(|asset| asset.name == "sha1sum.txt");
     let sha1sums = match sha1sum_asset {
         Some(asset) => HTTP
             .get_text(&asset.browser_download_url)?
@@ -108,10 +105,7 @@ fn get_sha1sums(release: &GitHubRelease) -> Result<HashMap<String, String>> {
             })
             .collect(),
         None => {
-            warn!(
-                "unable to find sha1sum.txt for release: {}",
-                release.tag_name
-            );
+            warn!("unable to find sha1sum.txt for release: {}", release.tag_name);
             HashMap::new()
         }
     };
@@ -191,11 +185,7 @@ mod tests {
         );
         assert_eq!(
             normalize_features("musl-lite-leyden"),
-            Some(vec![
-                "musl".to_string(),
-                "lite".to_string(),
-                "leyden".to_string()
-            ])
+            Some(vec!["musl".to_string(), "lite".to_string(), "leyden".to_string()])
         );
         assert_eq!(
             normalize_features("musl-crac"),

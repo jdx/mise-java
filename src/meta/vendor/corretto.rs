@@ -89,8 +89,7 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
                             if filename_meta.os == "alpine-linux" {
                                 metadata_entry.features = Some(vec!["musl".to_string()]);
                             }
-                            metadata_entry.architecture =
-                                normalize_architecture(&filename_meta.arch);
+                            metadata_entry.architecture = normalize_architecture(&filename_meta.arch);
                             metadata_entry.filename = name.clone();
                             metadata_entry.file_type = filename_meta.ext;
                             metadata_entry.java_version = normalize_version(&filename_meta.version);
@@ -142,10 +141,5 @@ fn meta_from_name(name: &str) -> Result<FileNameMeta> {
     };
     let version = capture.get(2).unwrap().as_str().to_string();
 
-    Ok(FileNameMeta {
-        arch,
-        os,
-        ext,
-        version,
-    })
+    Ok(FileNameMeta { arch, os, ext, version })
 }

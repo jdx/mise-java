@@ -61,14 +61,7 @@ fn map_packages(packages: Vec<Package>) -> Result<Vec<JavaMetaData>> {
         let features = normalize_features(&package);
         let os = normalize_os(&package.os);
         let java_version = package.java_version.iter().map(|n| n.to_string()).join(".");
-        let version = normalize_version(
-            package
-                .distro_version
-                .iter()
-                .map(|n| n.to_string())
-                .join(".")
-                .as_str(),
-        );
+        let version = normalize_version(package.distro_version.iter().map(|n| n.to_string()).join(".").as_str());
 
         let meta = JavaMetaData {
             architecture,
