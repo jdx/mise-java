@@ -11,7 +11,6 @@ use scraper::{Html, Selector};
 
 use super::JavaMetaData;
 
-pub mod adoptopenjdk;
 pub mod corretto;
 pub mod dragonwell;
 pub mod graalvm;
@@ -29,7 +28,6 @@ pub mod zulu;
 // TODO: implement all vendors
 pub static VENDORS: LazyLock<Vec<Arc<dyn Vendor>>> = LazyLock::new(|| {
     vec![
-        Arc::new(adoptopenjdk::AdoptOpenJDK {}),
         Arc::new(corretto::Corretto {}),
         Arc::new(dragonwell::Dragonwell {}),
         Arc::new(graalvm::GraalVM {}),

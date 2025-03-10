@@ -42,7 +42,7 @@ impl Vendor for Temurin {
                         &page_size={page_size}
                         &project=jdk
                         &sort_order=ASC
-                        &vendor=adoptium",
+                        &vendor=eclipse",
                         page = page, page_size = page_size, release = release,
                     };
                     debug!("[temurin] fetching release [{}] page [{}]", release, page);
