@@ -8,7 +8,7 @@ CREATE TABLE JAVA_META_DATA (
     checksum_url TEXT,
     created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
     features TEXT,
-    file_type TEXT,
+    file_type TEXT NOT NULL,
     "filename" TEXT,
     image_type TEXT NOT NULL,
     java_version TEXT,
@@ -20,7 +20,7 @@ CREATE TABLE JAVA_META_DATA (
     "url" TEXT NOT NULL,
     vendor TEXT NOT NULL,
     "version" TEXT NOT NULL,
-    PRIMARY KEY ("url")
+    PRIMARY KEY (vendor, version, os, architecture, image_type, file_type)
 );
 
 --

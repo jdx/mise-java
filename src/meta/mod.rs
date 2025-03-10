@@ -26,13 +26,23 @@ pub struct JavaMetaData {
 
 impl Hash for JavaMetaData {
     fn hash<H: Hasher>(&self, state: &mut H) {
-        self.url.hash(state);
+        self.vendor.hash(state);
+        self.version.hash(state);
+        self.os.hash(state);
+        self.architecture.hash(state);
+        self.image_type.hash(state);
+        self.file_type.hash(state);
     }
 }
 
 impl PartialEq for JavaMetaData {
     fn eq(&self, other: &Self) -> bool {
-        self.url == other.url
+        self.vendor == other.vendor
+            && self.version == other.version
+            && self.os == other.os
+            && self.architecture == other.architecture
+            && self.image_type == other.image_type
+            && self.file_type == other.file_type
     }
 }
 

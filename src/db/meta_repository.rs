@@ -71,7 +71,7 @@ impl MetaRepository {
             }
 
             query.push_str(
-                " ON CONFLICT(url) DO UPDATE SET
+                " ON CONFLICT(vendor, version, os, architecture, image_type, file_type) DO UPDATE SET
                 architecture = excluded.architecture,
                 checksum = excluded.checksum,
                 checksum_url = excluded.checksum_url,
@@ -85,6 +85,7 @@ impl MetaRepository {
                 os = excluded.os,
                 release_type = excluded.release_type,
                 size = excluded.size,
+                url = excluded.url,
                 vendor = excluded.vendor,
                 version = excluded.version
                 WHERE
@@ -96,8 +97,12 @@ impl MetaRepository {
                 OR excluded.filename != JAVA_META_DATA.filename
                 OR excluded.image_type != JAVA_META_DATA.image_type
                 OR excluded.java_version != JAVA_META_DATA.java_version
+                OR excluded.jvm_impl != JAVA_META_DATA.jvm_impl
+                OR excluded.os != JAVA_META_DATA.os
                 OR excluded.release_type != JAVA_META_DATA.release_type
                 OR excluded.size != JAVA_META_DATA.size
+                OR excluded.url != JAVA_META_DATA.url
+                OR excluded.vendor != JAVA_META_DATA.vendor
                 OR excluded.version != JAVA_META_DATA.version
                 ;",
             );
