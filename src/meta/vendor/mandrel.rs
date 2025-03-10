@@ -50,8 +50,8 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
     let assets = release.assets.iter().filter(|asset| include(asset));
     for asset in assets {
         let sha256_url = format!("{}.sha256", asset.browser_download_url);
-        let sha256sum = match HTTP.get_text(&sha256_url) {
-            Ok(sha256) => Some(sha256),
+        let sha256 = match HTTP.get_text(&sha256_url) {
+            Ok(sha256) => Some(format!("sha256:{}", sha256)),
             Err(_) => {
                 warn!("unable to find SHA256 for asset: {}", asset.name);
                 None
@@ -66,6 +66,8 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
         let url = asset.browser_download_url.clone();
         meta_data.push(JavaMetaData {
             architecture: normalize_architecture(&filename_meta.arch),
+            checksum: sha256.clone(),
+            checksum_url: Some(sha256_url.clone()),
             features: None,
             filename,
             file_type: ext.clone(),
@@ -74,8 +76,6 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
             jvm_impl: "graalvm".to_string(),
             os: normalize_os(&filename_meta.os),
             release_type: normalize_release_type(&filename_meta.version),
-            sha256: sha256sum,
-            sha256_url: Some(sha256_url),
             url,
             vendor: "mandrel".to_string(),
             version: format!(

@@ -55,7 +55,7 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
         let filename_meta = meta_from_name(&filename)?;
         let features = normalize_features(&filename_meta.feature);
         let sha1 = match sha1sums.get(&filename) {
-            Some(sha1) => Some(sha1.clone()),
+            Some(sha1) => Some(format!("sha1:{}", sha1.clone())),
             None => {
                 warn!("unable to find SHA1 for asset: {filename}");
                 None
@@ -64,6 +64,7 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
         let url = asset.browser_download_url.clone();
         meta_data.push(JavaMetaData {
             architecture: normalize_architecture(&filename_meta.arch),
+            checksum: sha1.clone(),
             features,
             filename,
             file_type: filename_meta.ext.clone(),
@@ -72,7 +73,6 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
             jvm_impl: "hotspot".to_string(),
             os: normalize_os(&filename_meta.os),
             release_type: get_release_type(&filename_meta.version, release.prerelease),
-            sha1,
             url,
             vendor: "liberica".to_string(),
             version: normalize_version(&filename_meta.version),

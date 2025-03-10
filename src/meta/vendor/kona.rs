@@ -53,8 +53,8 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
     let assets = release.assets.iter().filter(|asset| include(asset));
     for asset in assets {
         let md5_url = format!("{}.md5", asset.browser_download_url);
-        let md5sum = match HTTP.get_text(&md5_url) {
-            Ok(md5) => Some(md5.replace("\u{0}", "")),
+        let md5 = match HTTP.get_text(&md5_url) {
+            Ok(md5) => Some(format!("md5:{}", md5.replace("\u{0}", ""))),
             Err(_) => {
                 warn!("unable to find MD5 for asset: {}", asset.name);
                 None
@@ -80,14 +80,14 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
         let version = normalize_version(&filename_meta.version);
         meta_data.push(JavaMetaData {
             architecture: normalize_architecture(&filename_meta.arch),
+            checksum: md5.clone(),
+            checksum_url: Some(md5_url),
             features,
             filename,
             file_type: filename_meta.ext.clone(),
             image_type: "jdk".to_string(),
             java_version: version.clone(),
             jvm_impl: "hotspot".to_string(),
-            md5: md5sum.clone(),
-            md5_url: Some(md5_url),
             os: normalize_os(&filename_meta.os),
             release_type: "ga".to_string(),
             url,

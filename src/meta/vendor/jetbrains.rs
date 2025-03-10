@@ -79,7 +79,10 @@ fn map_release(release: &GitHubRelease, a: &ElementRef<'_>) -> Result<JavaMetaDa
     let filename_meta = meta_from_name(&name)?;
     let sha512_url = format!("{}.checksum", &href);
     let sha512 = match HTTP.get_text(&sha512_url) {
-        Ok(sha) => sha.split_whitespace().next().map(|s| s.to_string()),
+        Ok(sha512) => sha512
+            .split_whitespace()
+            .next()
+            .map(|s| format!("sha512:{}", s)),
         Err(e) => {
             error!("error fetching sha512sum for {name}: {e}");
             None
@@ -87,6 +90,8 @@ fn map_release(release: &GitHubRelease, a: &ElementRef<'_>) -> Result<JavaMetaDa
     };
     Ok(JavaMetaData {
         architecture: normalize_architecture(&filename_meta.arch),
+        checksum: sha512,
+        checksum_url: Some(sha512_url),
         features: normalize_features(&name),
         filename: name.to_string(),
         file_type: filename_meta.ext,
@@ -98,8 +103,6 @@ fn map_release(release: &GitHubRelease, a: &ElementRef<'_>) -> Result<JavaMetaDa
             true => "ea".to_string(),
             false => "ga".to_string(),
         },
-        sha512,
-        sha512_url: Some(sha512_url),
         url: href.to_string(),
         version: normalize_version(&filename_meta.version),
         vendor: "jetbrains".to_string(),

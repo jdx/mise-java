@@ -72,6 +72,7 @@ fn map_packages(packages: Vec<Package>) -> Result<Vec<JavaMetaData>> {
 
         let meta = JavaMetaData {
             architecture,
+            checksum: Some(format!("sha256:{}", package.sha256_hash)),
             file_type: package.archive_type,
             features,
             filename: package.name,
@@ -80,7 +81,6 @@ fn map_packages(packages: Vec<Package>) -> Result<Vec<JavaMetaData>> {
             jvm_impl: "hotspot".to_string(),
             os,
             release_type: release_type.to_string(),
-            sha256: Some(package.sha256_hash),
             size: Some(package.size as i32),
             url: package.download_url,
             vendor: "zulu".to_string(),

@@ -56,8 +56,8 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
     let assets = release.assets.iter().filter(|asset| include(asset));
     for asset in assets {
         let sha256_url = format!("{}.sha256.txt", asset.browser_download_url);
-        let sha256sum = match HTTP.get_text(&sha256_url) {
-            Ok(sha256) => Some(sha256),
+        let sha256 = match HTTP.get_text(&sha256_url) {
+            Ok(sha256) => Some(format!("sha256:{}", sha256)),
             Err(_) => {
                 warn!("unable to find SHA256 for asset: {}", asset.name);
                 None
@@ -69,6 +69,8 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
         let version = normalize_version(&filename_meta.version);
         meta_data.push(JavaMetaData {
             architecture: normalize_architecture(&filename_meta.arch),
+            checksum: sha256,
+            checksum_url: Some(sha256_url),
             features: if filename.contains("_alpine") {
                 Some(vec!["musl".to_string()])
             } else {
@@ -90,8 +92,6 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
                     }
                 },
             )),
-            sha256: sha256sum,
-            sha256_url: Some(sha256_url),
             url,
             vendor: "dragonwell".to_string(),
             version,

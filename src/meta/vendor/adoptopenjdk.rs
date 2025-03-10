@@ -88,6 +88,8 @@ fn map_release(release: &Release) -> Vec<JavaMetaData> {
 
         let java_meta_data = JavaMetaData {
             architecture: normalize_architecture(binary.architecture.as_str()),
+            checksum: package_checksum.and_then(|c| format!("sha256:{}", c).into()),
+            checksum_url: package_checksum_link.clone(),
             image_type: binary.image_type.clone(),
             features: normalize_features(binary.heap_size.clone().as_str()),
             file_type: package_extension.unwrap_or_default().to_string(),
@@ -95,14 +97,11 @@ fn map_release(release: &Release) -> Vec<JavaMetaData> {
             java_version: release.version_data.openjdk_version.clone().to_string(),
             jvm_impl: binary.jvm_impl.clone(),
             os: normalize_os(binary.os.as_str()),
-            sha256: package_checksum,
-            sha256_url: package_checksum_link,
             size: Some(package.as_ref().map(|p| p.size as i32).unwrap_or(0)),
             release_type: release.release_type.clone().to_string(),
             url: package_link.unwrap_or_default().to_string(),
             vendor: "adoptopenjdk".to_string(),
             version: normalize_version(release.version_data.semver.clone().as_str()),
-            ..Default::default()
         };
 
         meta_data.push(java_meta_data);

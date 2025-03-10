@@ -69,8 +69,8 @@ fn map_ce(asset: &GitHubAsset) -> Result<JavaMetaData> {
     //      only fetch if enabled or unknown (some vendors require 1000s of requests)
     //      fetch_checksum(url: &str) -> Result<(Option<String>, Option<String>)>
     let sha256_url = format!("{}.sha256", asset.browser_download_url);
-    let sha256sum = match HTTP.get_text(sha256_url) {
-        Ok(sha256) => Some(sha256),
+    let sha256 = match HTTP.get_text(&sha256_url) {
+        Ok(sha256) => Some(format!("sha256:{}", sha256)),
         Err(_) => {
             warn!("unable to find SHA256 for asset: {}", asset.name);
             None
@@ -82,6 +82,8 @@ fn map_ce(asset: &GitHubAsset) -> Result<JavaMetaData> {
     let version = normalize_version(&filename_meta.version);
     Ok(JavaMetaData {
         architecture: normalize_architecture(&filename_meta.arch),
+        checksum: sha256,
+        checksum_url: Some(sha256_url.clone()),
         filename,
         file_type: filename_meta.ext.clone(),
         image_type: "jdk".to_string(),
@@ -89,7 +91,6 @@ fn map_ce(asset: &GitHubAsset) -> Result<JavaMetaData> {
         jvm_impl: "graalvm".to_string(),
         os: normalize_os(&filename_meta.os),
         release_type: "ga".to_string(),
-        sha256: sha256sum,
         url,
         vendor: "graalvm".to_string(),
         version: format!("{}+java{}", version, filename_meta.java_version.clone()),
@@ -100,7 +101,7 @@ fn map_ce(asset: &GitHubAsset) -> Result<JavaMetaData> {
 fn map_community(asset: &GitHubAsset) -> Result<JavaMetaData> {
     let sha256_url = format!("{}.sha256", asset.browser_download_url);
     let sha256sum = match HTTP.get_text(&sha256_url) {
-        Ok(sha256) => Some(sha256),
+        Ok(sha256) => Some(format!("sha256:{}", sha256)),
         Err(_) => {
             warn!("unable to find SHA256 for asset: {}", asset.name);
             None
@@ -112,6 +113,8 @@ fn map_community(asset: &GitHubAsset) -> Result<JavaMetaData> {
     let version = normalize_version(&filename_meta.version);
     Ok(JavaMetaData {
         architecture: normalize_architecture(&filename_meta.arch),
+        checksum: sha256sum,
+        checksum_url: Some(sha256_url),
         filename,
         file_type: filename_meta.ext.clone(),
         image_type: "jdk".to_string(),
@@ -119,8 +122,6 @@ fn map_community(asset: &GitHubAsset) -> Result<JavaMetaData> {
         jvm_impl: "graalvm".to_string(),
         os: normalize_os(&filename_meta.os),
         release_type: "ga".to_string(),
-        sha256: sha256sum,
-        sha256_url: Some(sha256_url),
         url,
         vendor: "graalvm-community".to_string(),
         version,

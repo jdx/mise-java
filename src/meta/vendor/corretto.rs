@@ -105,11 +105,11 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
                     let mut code_iter = fragment.select(&code_selector);
                     if let Some(code) = code_iter.next() {
                         let md5 = code.text().collect::<String>();
-                        metadata_entry.md5 = Some(md5);
+                        metadata_entry.checksum = Some(format!("md5:{}", md5));
                     }
                     if let Some(code) = code_iter.next() {
                         let sha256 = code.text().collect::<String>();
-                        metadata_entry.sha256 = Some(sha256);
+                        metadata_entry.checksum = Some(format!("sha256:{}", sha256));
                     };
                 }
                 _ => (),

@@ -76,7 +76,10 @@ fn map_release(a: &AnchorElement) -> Result<JavaMetaData> {
     };
     let sha256_url = format!("{}.sha256", &a.href);
     let sha256 = match HTTP.get_text(&sha256_url) {
-        Ok(sha) => sha.split_whitespace().next().map(|s| s.to_string()),
+        Ok(sha) => sha
+            .split_whitespace()
+            .next()
+            .map(|s| format!("sha256:{}", s)),
         Err(e) => {
             error!("error fetching sha256sum for {}: {}", name, e);
             None
@@ -85,6 +88,8 @@ fn map_release(a: &AnchorElement) -> Result<JavaMetaData> {
 
     Ok(JavaMetaData {
         architecture: normalize_architecture(arch),
+        checksum: sha256.clone(),
+        checksum_url: Some(sha256_url),
         features,
         filename: name.clone(),
         file_type: filename_meta.ext,
@@ -93,8 +98,6 @@ fn map_release(a: &AnchorElement) -> Result<JavaMetaData> {
         jvm_impl: "hotspot".to_string(),
         os: normalize_os(&filename_meta.os),
         release_type: normalize_release_type(&filename_meta.version),
-        sha256,
-        sha256_url: Some(sha256_url),
         url: a.href.clone(),
         version: normalize_version(&filename_meta.version),
         vendor: "openjdk".to_string(),

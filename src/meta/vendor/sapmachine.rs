@@ -61,7 +61,10 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
             _ => format!("{}.sha256.txt", asset.browser_download_url),
         };
         let sha256sum = match HTTP.get_text(&sha256_url) {
-            Ok(sha256) => Some(sha256.split(" ").next().unwrap().to_string()),
+            Ok(sha256) => {
+                let checksum = sha256.split(" ").next().unwrap().to_string();
+                Some(format!("sha256:{}", checksum))
+            }
             Err(_) => {
                 warn!("unable to find SHA256 for asset: {}", asset.name);
                 None
@@ -80,6 +83,8 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
         let version = normalize_version(&filename_meta.version);
         meta_data.push(JavaMetaData {
             architecture: normalize_architecture(&filename_meta.arch),
+            checksum: sha256sum.clone(),
+            checksum_url: Some(sha256_url.clone()),
             features,
             filename,
             file_type: filename_meta.ext.clone(),
@@ -91,8 +96,6 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
                 true => "ea".to_string(),
                 false => "ga".to_string(),
             },
-            sha256: sha256sum,
-            sha256_url: Some(sha256_url),
             url,
             vendor: "sapmachine".to_string(),
             version: version.clone(),

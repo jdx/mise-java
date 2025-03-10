@@ -65,7 +65,10 @@ fn map_release(a: &AnchorElement) -> Result<JavaMetaData> {
     let filename_meta = meta_from_name(&name)?;
     let sha256_url = format!("{}.sha256", &a.href);
     let sha256 = match HTTP.get_text(&sha256_url) {
-        Ok(sha) => sha.split_whitespace().next().map(|s| s.to_string()),
+        Ok(sha256) => sha256
+            .split_whitespace()
+            .next()
+            .map(|s| format!("sha256:{}", s)),
         Err(e) => {
             error!("error fetching sha256sum for {name}: {e}");
             None
@@ -74,6 +77,8 @@ fn map_release(a: &AnchorElement) -> Result<JavaMetaData> {
 
     Ok(JavaMetaData {
         architecture: normalize_architecture(&filename_meta.arch),
+        checksum: sha256.clone(),
+        checksum_url: Some(sha256_url),
         features: None,
         filename: name.to_string(),
         file_type: filename_meta.ext,
@@ -82,8 +87,6 @@ fn map_release(a: &AnchorElement) -> Result<JavaMetaData> {
         jvm_impl: "hotspot".to_string(),
         os: normalize_os(&filename_meta.os),
         release_type: "ga".to_string(),
-        sha256,
-        sha256_url: Some(sha256_url),
         url: a.href.clone(),
         version: normalize_version(&filename_meta.version),
         vendor: "oracle".to_string(),
