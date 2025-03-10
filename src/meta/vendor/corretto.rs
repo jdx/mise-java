@@ -20,6 +20,7 @@ struct FileNameMeta {
     arch: String,
     os: String,
     ext: String,
+    version: String,
 }
 
 impl Vendor for Corretto {
@@ -62,11 +63,9 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
     let table_row_selector = Selector::parse("table tr").unwrap();
     for table_row in fragment.select(&table_row_selector).skip(1) {
         let mut metadata_entry = JavaMetaData {
-            java_version: normalize_version(version.as_str()),
             jvm_impl: "hotspot".to_string(),
             release_type: "ga".to_string(),
             vendor: "corretto".to_string(),
-            version: normalize_version(version.as_str()),
             ..Default::default()
         };
         let table_data_selector = Selector::parse("td").unwrap();
@@ -94,8 +93,10 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
                                 normalize_architecture(&filename_meta.arch);
                             metadata_entry.filename = name.clone();
                             metadata_entry.file_type = filename_meta.ext;
+                            metadata_entry.java_version = normalize_version(&filename_meta.version);
                             metadata_entry.os = normalize_os(&filename_meta.os);
                             metadata_entry.url = url.to_string();
+                            metadata_entry.version = normalize_version(&filename_meta.version);
                         }
                     }
                 }
@@ -139,6 +140,12 @@ fn meta_from_name(name: &str) -> Result<FileNameMeta> {
             }
         }
     };
+    let version = capture.get(2).unwrap().as_str().to_string();
 
-    Ok(FileNameMeta { arch, os, ext })
+    Ok(FileNameMeta {
+        arch,
+        os,
+        ext,
+        version,
+    })
 }
