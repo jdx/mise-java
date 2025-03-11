@@ -1,3 +1,5 @@
+use std::time::Duration;
+
 use eyre::Result;
 use openssl::ssl::{SslConnector, SslMethod};
 use postgres_openssl::MakeTlsConnector;
@@ -19,6 +21,7 @@ impl ConnectionPool {
                     let manager = PostgresConnectionManager::new(url.parse().unwrap(), connector);
                     let pool = Pool::builder()
                         .max_size(conf.database.pool_size.unwrap_or(10))
+                        .max_lifetime(Some(Duration::from_secs(60 * 60)))
                         .build(manager)?;
                     Ok(pool)
                 } else {
