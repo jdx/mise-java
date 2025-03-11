@@ -4,6 +4,10 @@ on:
   schedule:
     - cron: '0 22 * * *'
   workflow_dispatch:
+    inputs:
+      vendors:
+        description: 'Vendors to update (e.g. temurin zulu). No value means all vendors.'
+        default: ''
 
 permissions:
   contents: write
@@ -30,7 +34,7 @@ jobs:
 
       - name: Update Meta Data
         run: |
-          cargo run -- fetch
+          cargo run -- fetch ${{ github.event.inputs.vendors }}
 
       - name: Export Meta Data
         run: |
