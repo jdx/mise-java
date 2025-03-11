@@ -13,6 +13,7 @@ use crate::{
 
 use super::{Vendor, normalize_architecture, normalize_os, normalize_version};
 
+#[derive(Clone, Copy, Debug)]
 pub struct Mandrel {}
 
 struct FileNameMeta {

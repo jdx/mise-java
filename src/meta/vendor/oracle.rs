@@ -8,6 +8,7 @@ use xx::regex;
 
 use super::{AnchorElement, Vendor, anchors_from_html, normalize_architecture, normalize_os, normalize_version};
 
+#[derive(Clone, Copy, Debug)]
 pub struct Oracle {}
 
 struct FileNameMeta {
