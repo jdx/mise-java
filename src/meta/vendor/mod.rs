@@ -23,6 +23,7 @@ pub mod openjdk;
 pub mod oracle;
 pub mod sapmachine;
 pub mod temurin;
+pub mod trava;
 pub mod zulu;
 
 // TODO: implement all vendors
@@ -39,6 +40,7 @@ pub static VENDORS: LazyLock<Vec<Arc<dyn Vendor>>> = LazyLock::new(|| {
         Arc::new(openjdk::OpenJDK {}),
         Arc::new(oracle::Oracle {}),
         Arc::new(sapmachine::SAPMachine {}),
+        Arc::new(trava::Trava {}),
         Arc::new(temurin::Temurin {}),
         Arc::new(zulu::Zulu {}),
     ]
