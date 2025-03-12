@@ -1,6 +1,6 @@
 use super::{Vendor, normalize_architecture, normalize_os, normalize_version};
 use crate::{
-    github::{self, GitHubRelease},
+    github::{self, GitHubAsset, GitHubRelease},
     http::HTTP,
     meta::JavaMetaData,
 };
@@ -62,51 +62,20 @@ impl Vendor for Semeru {
 }
 
 fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
-    let mut meta_data = vec![];
-    let assets = release.assets.iter().filter(|asset| include(asset));
-    for asset in assets {
-        let sha256_url = format!("{}.sha256.txt", asset.browser_download_url);
-        let filename = asset.name.clone();
-        let filename_meta = meta_from_name(&filename)?;
-        let url = asset.browser_download_url.clone();
-        let version = version_from_tag(&release.tag_name)?;
-        meta_data.push(JavaMetaData {
-            architecture: normalize_architecture(&filename_meta.arch),
-            checksum_url: Some(sha256_url),
-            features: if asset.name.contains("-certified") {
-                Some(vec!["certified".to_string()])
-            } else {
-                None
-            },
-            filename,
-            file_type: filename_meta.ext.clone(),
-            image_type: filename_meta.image_type.clone(),
-            java_version: normalize_version(&version),
-            jvm_impl: "openj9".to_string(),
-            os: normalize_os(&filename_meta.os),
-            release_type: "ga".to_string(),
-            url,
-            vendor: "semeru".to_string(),
-            version: normalize_version(&version),
-            ..Default::default()
-        });
-    }
+    let assets = release
+        .assets
+        .iter()
+        .filter(|asset| include(asset))
+        .collect::<Vec<&github::GitHubAsset>>();
 
-    // fetch the sha256 checksums for all the assets
-    let meta_data = meta_data
+    let meta_data = assets
         .into_par_iter()
-        .filter(|meta| meta.checksum_url.is_some())
-        .map(|mut meta| {
-            let sha256_url = meta.checksum_url.as_ref().unwrap().clone();
-            let sha256 = match HTTP.get_text(sha256_url) {
-                Ok(sha256) => Some(format!("sha256:{}", sha256)),
-                Err(_) => {
-                    warn!("unable to find SHA256 for asset: {}", meta.filename);
-                    None
-                }
-            };
-            meta.checksum = sha256;
-            meta
+        .filter_map(|asset| match map_asset(release, asset) {
+            Ok(meta) => Some(meta),
+            Err(e) => {
+                warn!("[semeru] {}", e);
+                None
+            }
         })
         .collect::<Vec<JavaMetaData>>();
 
@@ -121,6 +90,42 @@ fn include(asset: &github::GitHubAsset) -> bool {
         && !asset.name.ends_with(".tap.zip")
         && !asset.name.contains("debugimage")
         && !asset.name.contains("testimage")
+}
+
+fn map_asset(release: &GitHubRelease, asset: &GitHubAsset) -> Result<JavaMetaData> {
+    let sha256_url = format!("{}.sha256.txt", asset.browser_download_url);
+    let sha256 = match HTTP.get_text(&sha256_url) {
+        Ok(sha256) => Some(format!("sha256:{}", sha256)),
+        Err(_) => {
+            warn!("unable to find SHA256 for asset: {}", asset.name);
+            None
+        }
+    };
+    let filename = asset.name.clone();
+    let filename_meta = meta_from_name(&filename)?;
+    let url = asset.browser_download_url.clone();
+    let version = version_from_tag(&release.tag_name)?;
+    Ok(JavaMetaData {
+        architecture: normalize_architecture(&filename_meta.arch),
+        checksum: sha256,
+        checksum_url: Some(sha256_url),
+        features: if asset.name.contains("-certified") {
+            Some(vec!["certified".to_string()])
+        } else {
+            None
+        },
+        filename,
+        file_type: filename_meta.ext.clone(),
+        image_type: filename_meta.image_type.clone(),
+        java_version: normalize_version(&version),
+        jvm_impl: "openj9".to_string(),
+        os: normalize_os(&filename_meta.os),
+        release_type: "ga".to_string(),
+        url,
+        vendor: "semeru".to_string(),
+        version: normalize_version(&version),
+        ..Default::default()
+    })
 }
 
 fn version_from_tag(tag: &str) -> Result<String> {

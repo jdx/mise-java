@@ -2,6 +2,7 @@ use std::collections::HashSet;
 
 use crate::{http::HTTP, meta::JavaMetaData};
 use eyre::Result;
+use log::warn;
 use log::{debug, error};
 
 use rayon::iter::IntoParallelIterator;
@@ -40,7 +41,7 @@ impl Vendor for Microsoft {
                 let releases_html = match HTTP.get_text(url) {
                     Ok(releases_html) => releases_html,
                     Err(e) => {
-                        error!("[microsoft] error fetching releases: {:?}", e);
+                        error!("[microsoft] error fetching releases: {}", e);
                         "".to_string()
                     }
                 };
@@ -57,7 +58,7 @@ impl Vendor for Microsoft {
             .flat_map(|anchor| match map_release(&anchor) {
                 Ok(release) => vec![release],
                 Err(e) => {
-                    error!("[microsoft] error parsing release: {:?}", e);
+                    warn!("[microsoft] {}", e);
                     vec![]
                 }
             })
@@ -73,7 +74,7 @@ fn map_release(a: &AnchorElement) -> Result<JavaMetaData> {
     let sha256 = match HTTP.get_text(&sha256_url) {
         Ok(sha) => sha.split_whitespace().next().map(|s| format!("sha256:{}", s)),
         Err(e) => {
-            error!("error fetching sha256sum for {}: {}", a.name, e);
+            warn!("[microsoft] unable to find SHA256 for {}: {}", a.name, e);
             None
         }
     };
@@ -105,7 +106,7 @@ fn meta_from_name(name: &str) -> Result<FileNameMeta> {
     debug!("[microsoft] parsing name: {}", name);
     let capture = regex!(r"^microsoft-jdk-([0-9+.]{3,})-?.*-(alpine|linux|macos|macOS|windows)-(x64|aarch64)\.(.*)$")
         .captures(name)
-        .ok_or_else(|| eyre::eyre!("regular expression did not match name: {}", name))?;
+        .ok_or_else(|| eyre::eyre!("regular expression did not match for {}", name))?;
 
     let version = capture.get(1).unwrap().as_str().to_string();
     let os = capture.get(2).unwrap().as_str().to_string();

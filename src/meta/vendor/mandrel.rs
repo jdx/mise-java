@@ -47,51 +47,67 @@ impl Vendor for Mandrel {
 }
 
 fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
-    let mut meta_data = vec![];
-    let assets = release.assets.iter().filter(|asset| include(asset));
-    for asset in assets {
-        let sha256_url = format!("{}.sha256", asset.browser_download_url);
-        let sha256 = match HTTP.get_text(&sha256_url) {
-            Ok(sha256) => Some(format!("sha256:{}", sha256)),
-            Err(_) => {
-                warn!("unable to find SHA256 for asset: {}", asset.name);
+    let assets = release
+        .assets
+        .iter()
+        .filter(|asset| include(asset))
+        .collect::<Vec<&GitHubAsset>>();
+
+    let meta_data = assets
+        .into_par_iter()
+        .filter_map(|asset| match map_asset(asset) {
+            Ok(meta) => Some(meta),
+            Err(e) => {
+                warn!("[mandrel] {}", e);
                 None
             }
-        };
-        let filename = asset.name.clone();
-        let ext = match filename {
-            _ if filename.ends_with(".zip") => "zip".to_string(),
-            _ => "tar.gz".to_string(),
-        };
-        let filename_meta = meta_from_name(&filename)?;
-        let url = asset.browser_download_url.clone();
-        meta_data.push(JavaMetaData {
-            architecture: normalize_architecture(&filename_meta.arch),
-            checksum: sha256.clone(),
-            checksum_url: Some(sha256_url.clone()),
-            features: None,
-            filename,
-            file_type: ext.clone(),
-            image_type: "jdk".to_string(),
-            java_version: normalize_version(&filename_meta.java_version),
-            jvm_impl: "graalvm".to_string(),
-            os: normalize_os(&filename_meta.os),
-            release_type: normalize_release_type(&filename_meta.version),
-            url,
-            vendor: "mandrel".to_string(),
-            version: format!(
-                "{}+java{}",
-                normalize_version(&filename_meta.version),
-                &filename_meta.java_version
-            ),
-            ..Default::default()
-        });
-    }
+        })
+        .collect();
+
     Ok(meta_data)
 }
 
 fn include(asset: &GitHubAsset) -> bool {
     asset.name.starts_with("mandrel-") && (asset.name.ends_with(".tar.gz") || asset.name.ends_with(".zip"))
+}
+
+fn map_asset(asset: &GitHubAsset) -> Result<JavaMetaData> {
+    let sha256_url = format!("{}.sha256", asset.browser_download_url);
+    let sha256 = match HTTP.get_text(&sha256_url) {
+        Ok(sha256) => Some(format!("sha256:{}", sha256)),
+        Err(_) => {
+            warn!("unable to find SHA256 for asset: {}", asset.name);
+            None
+        }
+    };
+    let filename = asset.name.clone();
+    let ext = match filename {
+        _ if filename.ends_with(".zip") => "zip".to_string(),
+        _ => "tar.gz".to_string(),
+    };
+    let filename_meta = meta_from_name(&filename)?;
+    let url = asset.browser_download_url.clone();
+    Ok(JavaMetaData {
+        architecture: normalize_architecture(&filename_meta.arch),
+        checksum: sha256.clone(),
+        checksum_url: Some(sha256_url.clone()),
+        features: None,
+        filename,
+        file_type: ext.clone(),
+        image_type: "jdk".to_string(),
+        java_version: normalize_version(&filename_meta.java_version),
+        jvm_impl: "graalvm".to_string(),
+        os: normalize_os(&filename_meta.os),
+        release_type: normalize_release_type(&filename_meta.version),
+        url,
+        vendor: "mandrel".to_string(),
+        version: format!(
+            "{}+java{}",
+            normalize_version(&filename_meta.version),
+            &filename_meta.java_version
+        ),
+        ..Default::default()
+    })
 }
 
 fn normalize_release_type(version: &str) -> String {

@@ -2,7 +2,7 @@ use std::collections::HashSet;
 
 use crate::{http::HTTP, meta::JavaMetaData};
 use eyre::Result;
-use log::{debug, error};
+use log::{debug, error, warn};
 use rayon::iter::{IntoParallelIterator, ParallelIterator};
 use xx::regex;
 
@@ -31,7 +31,7 @@ impl Vendor for Oracle {
                 let releases_html = match HTTP.get_text(&url) {
                     Ok(releases_html) => releases_html,
                     Err(e) => {
-                        error!("[oracle] error fetching releases: {:?}", e);
+                        error!("[oracle] error fetching releases: {}", e);
                         "".to_string()
                     }
                 };
@@ -43,7 +43,7 @@ impl Vendor for Oracle {
             .flat_map(|anchor| match map_release(&anchor) {
                 Ok(release) => vec![release],
                 Err(e) => {
-                    error!("[oracle] error parsing release: {:?}", e);
+                    warn!("[oracle] {}", e);
                     vec![]
                 }
             })
@@ -65,7 +65,7 @@ fn map_release(a: &AnchorElement) -> Result<JavaMetaData> {
     let sha256 = match HTTP.get_text(&sha256_url) {
         Ok(sha256) => sha256.split_whitespace().next().map(|s| format!("sha256:{}", s)),
         Err(e) => {
-            error!("error fetching sha256sum for {name}: {e}");
+            warn!("[oracle] unable to find SHA256 for {name}: {e}");
             None
         }
     };
@@ -94,7 +94,7 @@ fn meta_from_name(name: &str) -> Result<FileNameMeta> {
     let capture =
         regex!(r"^jdk-([0-9+.]{2,})_(linux|macos|windows)-(x64|aarch64)_bin\.(dep|dmg|exe|msi|rpm|tar\.gz|zip)$")
             .captures(name)
-            .ok_or_else(|| eyre::eyre!("regular expression did not match name: {}", name))?;
+            .ok_or_else(|| eyre::eyre!("regular expression did not match for {}", name))?;
 
     let version = capture.get(1).unwrap().as_str().to_string();
     let os = capture.get(2).unwrap().as_str().to_string();

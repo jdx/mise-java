@@ -16,6 +16,7 @@ use super::{Vendor, normalize_architecture, normalize_os, normalize_version};
 #[derive(Clone, Copy, Debug)]
 pub struct SAPMachine {}
 
+#[derive(Default)]
 struct FileNameMeta {
     arch: String,
     ext: String,
@@ -47,59 +48,90 @@ impl Vendor for SAPMachine {
 }
 
 fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
-    let mut meta_data = vec![];
-    let assets = release.assets.iter().filter(|asset| include(asset));
-    for asset in assets {
-        let sha256_url = match &asset.name {
-            name if name.ends_with(".tar.gz") => {
-                format!("{}.sha256.txt", asset.browser_download_url.replace(".tar.gz", ""))
-            }
-            name if name.ends_with(".zip") => format!("{}.sha256.txt", asset.browser_download_url.replace(".zip", "")),
-            _ => format!("{}.sha256.txt", asset.browser_download_url),
-        };
-        let sha256sum = match HTTP.get_text(&sha256_url) {
-            Ok(sha256) => {
-                let checksum = sha256.split(" ").next().unwrap().to_string();
-                Some(format!("sha256:{}", checksum))
-            }
-            Err(_) => {
-                warn!("unable to find SHA256 for asset: {}", asset.name);
+    let assets = release
+        .assets
+        .iter()
+        .filter(|asset| include(asset))
+        .collect::<Vec<&GitHubAsset>>();
+
+    let meta_data = assets
+        .into_par_iter()
+        .filter_map(|asset| match map_asset(release, asset) {
+            Ok(meta) => Some(meta),
+            Err(err) => {
+                warn!("[sapmachine] {}", err);
                 None
             }
-        };
-        let filename = asset.name.clone();
-        let filename_meta = match asset.name.ends_with(".rpm") {
-            true => meta_from_name_rpm(&filename)?,
-            false => meta_from_name(&filename)?,
-        };
-        let features = match filename_meta.features.is_empty() {
-            true => None,
-            false => Some(vec![filename_meta.features.clone()]),
-        };
-        let url = asset.browser_download_url.clone();
-        let version = normalize_version(&filename_meta.version);
-        meta_data.push(JavaMetaData {
-            architecture: normalize_architecture(&filename_meta.arch),
-            checksum: sha256sum.clone(),
-            checksum_url: Some(sha256_url.clone()),
-            features,
-            filename,
-            file_type: filename_meta.ext.clone(),
-            image_type: filename_meta.image_type.clone(),
-            java_version: version.clone(),
-            jvm_impl: "hotspot".to_string(),
-            os: normalize_os(&filename_meta.os),
-            release_type: match release.prerelease {
-                true => "ea".to_string(),
-                false => "ga".to_string(),
-            },
-            url,
-            vendor: "sapmachine".to_string(),
-            version: version.clone(),
-            ..Default::default()
         })
-    }
+        .collect::<Vec<_>>();
+
     Ok(meta_data)
+}
+
+fn map_asset(release: &GitHubRelease, asset: &GitHubAsset) -> Result<JavaMetaData> {
+    let sha256_url = get_sha256_url(asset);
+    let sha256 = match sha256_url {
+        Some(ref url) => {
+            let sha256 = HTTP.get_text(url.clone());
+            match sha256 {
+                Ok(sha256) => Some(format!("sha256:{}", sha256)),
+                Err(_) => {
+                    warn!("[sapmachine] unable to find SHA256 for asset: {}", asset.name);
+                    None
+                }
+            }
+        }
+        None => None,
+    };
+    let filename = asset.name.clone();
+    let filename_meta = match asset.name.ends_with(".rpm") {
+        true => meta_from_name_rpm(&filename)?,
+        false => meta_from_name(&filename)?,
+    };
+    let features = match filename_meta.features.is_empty() {
+        true => None,
+        false => Some(vec![filename_meta.features.clone()]),
+    };
+    let url = asset.browser_download_url.clone();
+    let version = normalize_version(&filename_meta.version);
+    Ok(JavaMetaData {
+        architecture: normalize_architecture(&filename_meta.arch),
+        checksum: sha256,
+        checksum_url: sha256_url,
+        features,
+        filename,
+        file_type: filename_meta.ext.clone(),
+        image_type: filename_meta.image_type.clone(),
+        java_version: version.clone(),
+        jvm_impl: "hotspot".to_string(),
+        os: normalize_os(&filename_meta.os),
+        release_type: match release.prerelease {
+            true => "ea".to_string(),
+            false => "ga".to_string(),
+        },
+        url,
+        vendor: "sapmachine".to_string(),
+        version: version.clone(),
+        ..Default::default()
+    })
+}
+
+fn get_sha256_url(asset: &GitHubAsset) -> Option<String> {
+    match &asset.name {
+        name if name.ends_with(".tar.gz") => Some(format!(
+            "{}.sha256.txt",
+            asset.browser_download_url.replace(".tar.gz", "")
+        )),
+        name if name.ends_with(".zip") => {
+            Some(format!("{}.sha256.txt", asset.browser_download_url.replace(".zip", "")))
+        }
+        // rpm packages do not come with sha256 checksums
+        name if name.ends_with(".rpm") => None,
+        // skip dmg/msi for now; the checksum is inconsistent
+        // either in .dmg.sha256.txt or sha256.dmg.txt or missing randomly
+        name if name.ends_with(".dmg") || name.ends_with(".msi") => None,
+        _ => Some(format!("{}.sha256.txt", asset.browser_download_url)),
+    }
 }
 
 fn include(asset: &GitHubAsset) -> bool {
@@ -112,7 +144,7 @@ fn meta_from_name(name: &str) -> Result<FileNameMeta> {
     debug!("[sapmachine] parsing name: {}", name);
     let capture = regex!(r"^sapmachine-(jdk|jre)-([0-9].+)_(aix|linux|macos|osx|windows)-(x64|aarch64|ppc64le|ppc64|x64)-?(.*)_bin\.(.+)$")
         .captures(name)
-        .ok_or_else(|| eyre::eyre!("regular expression did not match name: {}", name))?;
+        .ok_or_else(|| eyre::eyre!("regular expression did not match for {}", name))?;
 
     let image_type = capture.get(1).unwrap().as_str().to_string();
     let version = capture.get(2).unwrap().as_str().to_string();
@@ -135,7 +167,7 @@ fn meta_from_name_rpm(name: &str) -> Result<FileNameMeta> {
     debug!("[sapmachine] parsing name: {}", name);
     let capture = regex!(r"^sapmachine-(jdk|jre)-([0-9].+)\.(aarch64|ppc64le|x86_64)\.rpm$")
         .captures(name)
-        .ok_or_else(|| eyre::eyre!("regular expression did not match name: {}", name))?;
+        .ok_or_else(|| eyre::eyre!("regular expression did not match for {}", name))?;
 
     let image_type = capture.get(1).unwrap().as_str().to_string();
     let version = capture.get(2).unwrap().as_str().to_string();

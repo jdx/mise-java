@@ -27,7 +27,6 @@ pub mod temurin;
 pub mod trava;
 pub mod zulu;
 
-// TODO: implement all vendors
 pub static VENDORS: LazyLock<Vec<Arc<dyn Vendor>>> = LazyLock::new(|| {
     vec![
         Arc::new(corretto::Corretto {}),

@@ -1,7 +1,7 @@
 use std::collections::HashSet;
 
 use eyre::Result;
-use log::{debug, error};
+use log::{debug, error, warn};
 use rayon::iter::{IntoParallelIterator, ParallelIterator};
 use xx::regex;
 
@@ -32,7 +32,7 @@ impl Vendor for OpenJDK {
                 let releases_html = match HTTP.get_text(url) {
                     Ok(releases_html) => releases_html,
                     Err(e) => {
-                        error!("[openjdk] error fetching releases: {:?}", e);
+                        error!("[openjdk] error fetching releases: {}", e);
                         "".to_string()
                     }
                 };
@@ -45,7 +45,7 @@ impl Vendor for OpenJDK {
             .filter_map(|anchor| match map_release(&anchor) {
                 Ok(release) => Some(release),
                 Err(e) => {
-                    error!("[openjdk] error parsing release: {:?}", e);
+                    warn!("[openjdk] {}", e);
                     None
                 }
             })
@@ -73,7 +73,7 @@ fn map_release(a: &AnchorElement) -> Result<JavaMetaData> {
     let sha256 = match HTTP.get_text(&sha256_url) {
         Ok(sha) => sha.split_whitespace().next().map(|s| format!("sha256:{}", s)),
         Err(e) => {
-            error!("error fetching sha256sum for {}: {}", name, e);
+            warn!("[openjdk] unable to find SHA256 for {name}: {e}");
             None
         }
     };
@@ -102,7 +102,7 @@ fn meta_from_name(name: &str) -> Result<FileNameMeta> {
     let capture =
         regex!(r"^openjdk-([0-9]{1,}[^_]*)_(linux|osx|macos|windows)-(aarch64|x64-musl|x64)_bin\.(tar\.gz|zip)$")
             .captures(name)
-            .ok_or_else(|| eyre::eyre!("regular expression did not match name: {}", name))?;
+            .ok_or_else(|| eyre::eyre!("regular expression did not match for {}", name))?;
 
     let version = capture.get(1).unwrap().as_str().to_string();
     let os = capture.get(2).unwrap().as_str().to_string();

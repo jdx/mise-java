@@ -5,7 +5,7 @@ use crate::{
     meta::JavaMetaData,
 };
 use eyre::Result;
-use log::{debug, warn};
+use log::{debug, error, warn};
 use rayon::iter::IntoParallelIterator;
 use rayon::iter::ParallelIterator;
 use scraper::{Html, Selector};
@@ -85,17 +85,22 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
                     if let Some(a) = anchor {
                         let name = a.text().collect::<String>();
                         let url = a.value().attr("href").unwrap();
-                        if let Ok(filename_meta) = meta_from_name(name.clone().as_str()) {
-                            if filename_meta.os == "alpine-linux" {
-                                metadata_entry.features = Some(vec!["musl".to_string()]);
+                        match meta_from_name(name.clone().as_str()) {
+                            Ok(filename_meta) => {
+                                if filename_meta.os == "alpine-linux" {
+                                    metadata_entry.features = Some(vec!["musl".to_string()]);
+                                }
+                                metadata_entry.architecture = normalize_architecture(&filename_meta.arch);
+                                metadata_entry.filename = name.clone();
+                                metadata_entry.file_type = filename_meta.ext;
+                                metadata_entry.java_version = normalize_version(&filename_meta.version);
+                                metadata_entry.os = normalize_os(&filename_meta.os);
+                                metadata_entry.url = url.to_string();
+                                metadata_entry.version = normalize_version(&filename_meta.version);
                             }
-                            metadata_entry.architecture = normalize_architecture(&filename_meta.arch);
-                            metadata_entry.filename = name.clone();
-                            metadata_entry.file_type = filename_meta.ext;
-                            metadata_entry.java_version = normalize_version(&filename_meta.version);
-                            metadata_entry.os = normalize_os(&filename_meta.os);
-                            metadata_entry.url = url.to_string();
-                            metadata_entry.version = normalize_version(&filename_meta.version);
+                            Err(e) => {
+                                error!("[corretto] {}", e);
+                            }
                         }
                     }
                 }
@@ -125,7 +130,7 @@ fn meta_from_name(name: &str) -> Result<FileNameMeta> {
     debug!("[corretto] parsing name: {}", name);
     let capture = regex!(r".*?-corretto(-devel|-jdk)?[\-_]([\w\d._]+(-\d)?)-?(alpine-linux|linux|macosx|windows)?[._\-](amd64|arm64|armv7|aarch64|x64|i386|x86|x86_64)(-(jdk|jre|musl-headless))?\.(.*)")
         .captures(name)
-        .ok_or_else(|| eyre::eyre!("regular expression failed for name: {}", name))?;
+        .ok_or_else(|| eyre::eyre!("regular expression did not match for {}", name))?;
 
     let arch = capture.get(5).unwrap().as_str().to_string();
     let ext = capture.get(8).unwrap().as_str().to_string();

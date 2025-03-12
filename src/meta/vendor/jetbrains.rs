@@ -52,7 +52,7 @@ impl Vendor for Jetbrains {
                     match map_release(&release, &a) {
                         Ok(release) => data.push(release),
                         Err(e) => {
-                            error!("[jetbrains] error parsing release: {:?}", e);
+                            error!("[jetbrains] {}", e);
                         }
                     }
                 }
@@ -76,7 +76,7 @@ fn map_release(release: &GitHubRelease, a: &ElementRef<'_>) -> Result<JavaMetaDa
     let sha512 = match HTTP.get_text(&sha512_url) {
         Ok(sha512) => sha512.split_whitespace().next().map(|s| format!("sha512:{}", s)),
         Err(e) => {
-            error!("error fetching sha512sum for {name}: {e}");
+            warn!("[jetbrains] unable to find SHA512 for {name}: {e}");
             None
         }
     };
@@ -106,7 +106,7 @@ fn meta_from_name(name: &str) -> Result<FileNameMeta> {
     debug!("[jetbrains] parsing name: {}", name);
     let capture = regex!(r"^jbr(sdk)?(?:_\w+)?-([0-9][0-9\+._]{1,})-(linux-musl|linux|osx|macos|windows)-(aarch64|x64|x86)(?:-\w+)?-(b[0-9\+.]{1,})(?:_\w+)?\.(tar\.gz|zip|pkg)$")
         .captures(name)
-        .ok_or_else(|| eyre::eyre!("regular expression did not match name: {}", name))?;
+        .ok_or_else(|| eyre::eyre!("regular expression did not match for {}", name))?;
 
     let image_type = capture.get(1).map_or("jre", |m| m.as_str()).to_string();
     let os = capture.get(3).unwrap().as_str().to_string();

@@ -50,53 +50,23 @@ impl Vendor for Kona {
 }
 
 fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
-    let mut meta_data = vec![];
-    let assets = release.assets.iter().filter(|asset| include(asset));
-    for asset in assets {
-        let md5_url = format!("{}.md5", asset.browser_download_url);
-        let md5 = match HTTP.get_text(&md5_url) {
-            Ok(md5) => Some(format!("md5:{}", md5.replace("\u{0}", ""))),
-            Err(_) => {
-                warn!("unable to find MD5 for asset: {}", asset.name);
+    let assets = release
+        .assets
+        .iter()
+        .filter(|asset| include(asset))
+        .collect::<Vec<&GitHubAsset>>();
+
+    let meta_data = assets
+        .into_par_iter()
+        .filter_map(|asset| match map_asset(asset) {
+            Ok(meta) => Some(meta),
+            Err(e) => {
+                warn!("[kona] {}", e);
                 None
             }
-        };
-        let filename = asset.name.clone();
-        let filename_meta = meta_from_name(&filename)?;
-        let features = match filename_meta.features.trim().is_empty() {
-            true => None,
-            false => {
-                let mut feat: Vec<String> = filename_meta
-                    .features
-                    .split_whitespace()
-                    .map(|s| s.to_string())
-                    .collect();
-                if filename_meta.version.contains("musl") {
-                    feat.push("musl".to_string());
-                }
-                Some(feat)
-            }
-        };
-        let url = asset.browser_download_url.clone();
-        let version = normalize_version(&filename_meta.version);
-        meta_data.push(JavaMetaData {
-            architecture: normalize_architecture(&filename_meta.arch),
-            checksum: md5.clone(),
-            checksum_url: Some(md5_url),
-            features,
-            filename,
-            file_type: filename_meta.ext.clone(),
-            image_type: "jdk".to_string(),
-            java_version: version.clone(),
-            jvm_impl: "hotspot".to_string(),
-            os: normalize_os(&filename_meta.os),
-            release_type: "ga".to_string(),
-            url,
-            vendor: "kona".to_string(),
-            version,
-            ..Default::default()
-        });
-    }
+        })
+        .collect::<Vec<JavaMetaData>>();
+
     Ok(meta_data)
 }
 
@@ -106,6 +76,52 @@ fn include(asset: &GitHubAsset) -> bool {
         && !asset.name.contains("-internal")
         && !asset.name.contains("_jre_")
         && !asset.name.ends_with(".md5")
+}
+
+fn map_asset(asset: &GitHubAsset) -> Result<JavaMetaData> {
+    let md5_url = format!("{}.md5", asset.browser_download_url);
+    let md5 = match HTTP.get_text(&md5_url) {
+        Ok(md5) => Some(format!("md5:{}", md5.replace("\u{0}", ""))),
+        Err(_) => {
+            warn!("unable to find MD5 for asset: {}", asset.name);
+            None
+        }
+    };
+    let filename = asset.name.clone();
+    let filename_meta = meta_from_name(&filename)?;
+    let features = match filename_meta.features.trim().is_empty() {
+        true => None,
+        false => {
+            let mut feat: Vec<String> = filename_meta
+                .features
+                .split_whitespace()
+                .map(|s| s.to_string())
+                .collect();
+            if filename_meta.version.contains("musl") {
+                feat.push("musl".to_string());
+            }
+            Some(feat)
+        }
+    };
+    let url = asset.browser_download_url.clone();
+    let version = normalize_version(&filename_meta.version);
+    Ok(JavaMetaData {
+        architecture: normalize_architecture(&filename_meta.arch),
+        checksum: md5.clone(),
+        checksum_url: Some(md5_url),
+        features,
+        filename,
+        file_type: filename_meta.ext.clone(),
+        image_type: "jdk".to_string(),
+        java_version: version.clone(),
+        jvm_impl: "hotspot".to_string(),
+        os: normalize_os(&filename_meta.os),
+        release_type: "ga".to_string(),
+        url,
+        vendor: "kona".to_string(),
+        version,
+        ..Default::default()
+    })
 }
 
 fn meta_from_name(name: &str) -> Result<FileNameMeta> {

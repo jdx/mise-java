@@ -7,7 +7,7 @@ use crate::{
     meta::JavaMetaData,
 };
 use eyre::Result;
-use log::{debug, error, warn};
+use log::{debug, warn};
 use rayon::iter::IntoParallelIterator;
 use rayon::iter::ParallelIterator;
 use xx::regex;
@@ -34,7 +34,7 @@ impl Vendor for GraalVM {
             .into_par_iter()
             .flat_map(|release| {
                 map_release(&release).unwrap_or_else(|err| {
-                    warn!("[graalvm] error parsing release: {:?}", err);
+                    warn!("[graalvm] error parsing release: {}", err);
                     vec![]
                 })
             })
@@ -45,23 +45,34 @@ impl Vendor for GraalVM {
 }
 
 fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
-    let mut meta_data = vec![];
-    let assets = release.assets.iter().filter(|asset| include(asset));
-    for asset in assets {
-        let release = if asset.name.starts_with("graalvm-ce") {
-            map_ce(asset)
-        } else if asset.name.starts_with("graalvm-community") {
-            map_community(asset)
-        } else {
-            continue;
-        };
+    let assets = release
+        .assets
+        .iter()
+        .filter(|asset| include(asset))
+        .collect::<Vec<&GitHubAsset>>();
 
-        match release {
-            Ok(release) => meta_data.push(release),
-            Err(e) => error!("[graalvm] error parsing release: {:?}", e),
-        }
-    }
+    let meta_data = assets
+        .into_par_iter()
+        .filter_map(|asset| match map_asset(asset) {
+            Ok(meta) => Some(meta),
+            Err(e) => {
+                warn!("[graalvm] {}", e);
+                None
+            }
+        })
+        .collect::<Vec<JavaMetaData>>();
+
     Ok(meta_data)
+}
+
+fn map_asset(asset: &GitHubAsset) -> Result<JavaMetaData> {
+    if asset.name.starts_with("graalvm-ce") {
+        map_ce(asset)
+    } else if asset.name.starts_with("graalvm-community") {
+        map_community(asset)
+    } else {
+        Err(eyre::eyre!("unknown asset: {}", asset.name))
+    }
 }
 
 fn map_ce(asset: &GitHubAsset) -> Result<JavaMetaData> {

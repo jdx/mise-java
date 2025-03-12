@@ -52,45 +52,23 @@ impl Vendor for Dragonwell {
 }
 
 fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
-    let mut meta_data = vec![];
-    let assets = release.assets.iter().filter(|asset| include(asset));
-    for asset in assets {
-        let sha256_url = format!("{}.sha256.txt", asset.browser_download_url);
-        let sha256 = match HTTP.get_text(&sha256_url) {
-            Ok(sha256) => Some(format!("sha256:{}", sha256)),
-            Err(_) => {
-                warn!("unable to find SHA256 for asset: {}", asset.name);
+    let assets = release
+        .assets
+        .iter()
+        .filter(|asset| include(asset))
+        .collect::<Vec<&GitHubAsset>>();
+
+    let meta_data = assets
+        .into_par_iter()
+        .filter_map(|asset| match map_asset(asset) {
+            Ok(meta) => Some(meta),
+            Err(err) => {
+                warn!("[dragonwell] {}", err);
                 None
             }
-        };
-        let filename = asset.name.clone();
-        let filename_meta = meta_from_name(&filename)?;
-        let url = asset.browser_download_url.clone();
-        let version = normalize_version(&filename_meta.version);
-        meta_data.push(JavaMetaData {
-            architecture: normalize_architecture(&filename_meta.arch),
-            checksum: sha256,
-            checksum_url: Some(sha256_url),
-            features: if filename.contains("_alpine") {
-                Some(vec!["musl".to_string()])
-            } else {
-                None
-            },
-            filename,
-            file_type: filename_meta.ext.clone(),
-            image_type: "jdk".to_string(),
-            java_version: filename_meta.java_version.clone(),
-            jvm_impl: "hotspot".to_string(),
-            os: normalize_os(&filename_meta.os),
-            release_type: normalize_release_type(&filename_meta.release_type.map_or("ga".to_string(), |s| {
-                if s.contains("preview") { "ea".to_string() } else { s }
-            })),
-            url,
-            vendor: "dragonwell".to_string(),
-            version,
-            ..Default::default()
-        });
-    }
+        })
+        .collect::<Vec<_>>();
+
     Ok(meta_data)
 }
 
@@ -100,6 +78,44 @@ fn include(asset: &GitHubAsset) -> bool {
         && !asset.name.ends_with(".jar")
         && !asset.name.ends_with(".json")
         && !asset.name.ends_with(".sig")
+}
+
+fn map_asset(asset: &GitHubAsset) -> Result<JavaMetaData> {
+    let sha256_url = format!("{}.sha256.txt", asset.browser_download_url);
+    let sha256 = match HTTP.get_text(&sha256_url) {
+        Ok(sha256) => Some(format!("sha256:{}", sha256)),
+        Err(_) => {
+            warn!("unable to find SHA256 for asset: {}", asset.name);
+            None
+        }
+    };
+    let filename = asset.name.clone();
+    let filename_meta = meta_from_name(&filename)?;
+    let url = asset.browser_download_url.clone();
+    let version = normalize_version(&filename_meta.version);
+    Ok(JavaMetaData {
+        architecture: normalize_architecture(&filename_meta.arch),
+        checksum: sha256,
+        checksum_url: Some(sha256_url),
+        features: if filename.contains("_alpine") {
+            Some(vec!["musl".to_string()])
+        } else {
+            None
+        },
+        filename,
+        file_type: filename_meta.ext.clone(),
+        image_type: "jdk".to_string(),
+        java_version: filename_meta.java_version.clone(),
+        jvm_impl: "hotspot".to_string(),
+        os: normalize_os(&filename_meta.os),
+        release_type: normalize_release_type(&filename_meta.release_type.map_or("ga".to_string(), |s| {
+            if s.contains("preview") { "ea".to_string() } else { s }
+        })),
+        url,
+        vendor: "dragonwell".to_string(),
+        version,
+        ..Default::default()
+    })
 }
 
 fn normalize_release_type(release_type: &str) -> String {

@@ -1,7 +1,7 @@
 use std::collections::{HashMap, HashSet};
 
 use crate::{
-    github::{self, GitHubRelease},
+    github::{self, GitHubAsset, GitHubRelease},
     http::HTTP,
     meta::JavaMetaData,
 };
@@ -36,7 +36,7 @@ impl Vendor for Liberica {
             .into_par_iter()
             .flat_map(|release| {
                 map_release(&release).unwrap_or_else(|err| {
-                    warn!("[liberica] error parsing release: {:?}", err);
+                    warn!("[liberica] error parsing release: {}", err);
                     vec![]
                 })
             })
@@ -48,37 +48,23 @@ impl Vendor for Liberica {
 
 fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
     let sha1sums = get_sha1sums(release)?;
-    let mut meta_data = vec![];
-    let assets = release.assets.iter().filter(|asset| include(asset));
-    for asset in assets {
-        let filename = asset.name.clone();
-        let filename_meta = meta_from_name(&filename)?;
-        let features = normalize_features(&filename_meta.feature);
-        let sha1 = match sha1sums.get(&filename) {
-            Some(sha1) => Some(format!("sha1:{}", sha1.clone())),
-            None => {
-                warn!("unable to find SHA1 for asset: {filename}");
+    let assets = release
+        .assets
+        .iter()
+        .filter(|asset| include(asset))
+        .collect::<Vec<&github::GitHubAsset>>();
+
+    let meta_data = assets
+        .into_par_iter()
+        .filter_map(|asset| match map_asset(release, asset, &sha1sums) {
+            Ok(meta) => Some(meta),
+            Err(e) => {
+                warn!("[liberica] {}", e);
                 None
             }
-        };
-        let url = asset.browser_download_url.clone();
-        meta_data.push(JavaMetaData {
-            architecture: normalize_architecture(&filename_meta.arch),
-            checksum: sha1.clone(),
-            features,
-            filename,
-            file_type: filename_meta.ext.clone(),
-            image_type: filename_meta.image_type.clone(),
-            java_version: normalize_version(&filename_meta.version),
-            jvm_impl: "hotspot".to_string(),
-            os: normalize_os(&filename_meta.os),
-            release_type: get_release_type(&filename_meta.version, release.prerelease),
-            url,
-            vendor: "liberica".to_string(),
-            version: normalize_version(&filename_meta.version),
-            ..Default::default()
-        });
-    }
+        })
+        .collect::<Vec<_>>();
+
     Ok(meta_data)
 }
 
@@ -91,6 +77,36 @@ fn include(asset: &github::GitHubAsset) -> bool {
         || asset.name.ends_with("-src-crac.tar.gz")
         || asset.name.ends_with("-src-leyden.tar.gz")
         || asset.name.contains("-full-nosign"))
+}
+
+fn map_asset(release: &GitHubRelease, asset: &GitHubAsset, sha1sums: &HashMap<String, String>) -> Result<JavaMetaData> {
+    let filename = asset.name.clone();
+    let filename_meta = meta_from_name(&filename)?;
+    let features = normalize_features(&filename_meta.feature);
+    let sha1 = match sha1sums.get(&filename) {
+        Some(sha1) => Some(format!("sha1:{}", sha1.clone())),
+        None => {
+            warn!("unable to find SHA1 for asset: {filename}");
+            None
+        }
+    };
+    let url = asset.browser_download_url.clone();
+    Ok(JavaMetaData {
+        architecture: normalize_architecture(&filename_meta.arch),
+        checksum: sha1.clone(),
+        features,
+        filename,
+        file_type: filename_meta.ext.clone(),
+        image_type: filename_meta.image_type.clone(),
+        java_version: normalize_version(&filename_meta.version),
+        jvm_impl: "hotspot".to_string(),
+        os: normalize_os(&filename_meta.os),
+        release_type: get_release_type(&filename_meta.version, release.prerelease),
+        url,
+        vendor: "liberica".to_string(),
+        version: normalize_version(&filename_meta.version),
+        ..Default::default()
+    })
 }
 
 fn get_sha1sums(release: &GitHubRelease) -> Result<HashMap<String, String>> {

@@ -1,4 +1,5 @@
 use crate::github;
+use crate::github::GitHubAsset;
 use crate::github::GitHubRelease;
 
 use super::JavaMetaData;
@@ -49,34 +50,50 @@ impl Vendor for Trava {
 }
 
 fn map_release(version: &str, release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
-    let mut meta_data = vec![];
-    let assets = release.assets.iter().filter(|asset| include(asset));
-    for asset in assets {
-        let filename = asset.name.clone();
-        let filename_meta = meta_from_name(version, &filename)?;
-        let url = asset.browser_download_url.clone();
-        let version = version_from_tag(version, &release.tag_name)?;
-        meta_data.push(JavaMetaData {
-            architecture: normalize_architecture(&filename_meta.arch),
-            features: None,
-            filename,
-            file_type: filename_meta.ext.clone(),
-            image_type: "jdk".to_string(),
-            java_version: normalize_version(&version),
-            jvm_impl: "hotspot".to_string(),
-            os: normalize_os(&filename_meta.os),
-            release_type: "ga".to_string(),
-            url,
-            vendor: "trava".to_string(),
-            version: normalize_version(&version),
-            ..Default::default()
-        });
-    }
+    let assets = release
+        .assets
+        .iter()
+        .filter(|asset| include(asset))
+        .collect::<Vec<&github::GitHubAsset>>();
+
+    let meta_data = assets
+        .into_par_iter()
+        .filter_map(|asset| match map_asset(release, asset, version) {
+            Ok(meta) => Some(meta),
+            Err(e) => {
+                warn!("[trava] {}", e);
+                None
+            }
+        })
+        .collect::<Vec<JavaMetaData>>();
+
     Ok(meta_data)
 }
 
 fn include(asset: &github::GitHubAsset) -> bool {
     asset.content_type.starts_with("application") && !asset.name.contains("_source") && !asset.name.ends_with(".jar")
+}
+
+fn map_asset(release: &GitHubRelease, asset: &GitHubAsset, version: &str) -> Result<JavaMetaData> {
+    let filename = asset.name.clone();
+    let filename_meta = meta_from_name(version, &filename)?;
+    let url = asset.browser_download_url.clone();
+    let version = version_from_tag(version, &release.tag_name)?;
+    Ok(JavaMetaData {
+        architecture: normalize_architecture(&filename_meta.arch),
+        features: None,
+        filename,
+        file_type: filename_meta.ext.clone(),
+        image_type: "jdk".to_string(),
+        java_version: normalize_version(&version),
+        jvm_impl: "hotspot".to_string(),
+        os: normalize_os(&filename_meta.os),
+        release_type: "ga".to_string(),
+        url,
+        vendor: "trava".to_string(),
+        version: normalize_version(&version),
+        ..Default::default()
+    })
 }
 
 fn version_from_tag(version: &str, tag: &str) -> Result<String> {
