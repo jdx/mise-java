@@ -30,7 +30,7 @@ impl ConnectionPool {
                             connector.set_verify(openssl::ssl::SslVerifyMode::PEER);
                             // disable hostname verification
                             connector.set_verify_callback(openssl::ssl::SslVerifyMode::PEER, |_, _| true);
-                            connector.set_ca_file(&conf.database.ssl_ca.expect("database.ssl_ca is not configured"))?;
+                            connector.set_ca_file(conf.database.ssl_ca.expect("database.ssl_ca is not configured"))?;
                         }
                         // default to the verify-full
                         _ => {
@@ -39,12 +39,12 @@ impl ConnectionPool {
                             );
                             // disable hostname verification
                             connector.set_verify_callback(openssl::ssl::SslVerifyMode::PEER, |_, _| true);
-                            connector.set_ca_file(&conf.database.ssl_ca.expect("database.ssl_ca is not configured"))?;
+                            connector.set_ca_file(conf.database.ssl_ca.expect("database.ssl_ca is not configured"))?;
                             connector.set_certificate_chain_file(
-                                &conf.database.ssl_cert.expect("database.ssl_cert is not configured"),
+                                conf.database.ssl_cert.expect("database.ssl_cert is not configured"),
                             )?;
                             connector.set_private_key_file(
-                                &conf.database.ssl_key.expect("database.ssl_key is not configured"),
+                                conf.database.ssl_key.expect("database.ssl_key is not configured"),
                                 openssl::ssl::SslFiletype::PEM,
                             )?;
                         }

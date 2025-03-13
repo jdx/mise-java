@@ -80,12 +80,10 @@ fn include(asset: &GitHubAsset) -> bool {
 
 fn map_asset(asset: &GitHubAsset) -> Result<JavaMetaData> {
     let md5_url = format!("{}.md5", asset.browser_download_url);
-    let md5 = match HTTP.get_text(&md5_url) {
-        Ok(md5) => Some(format!("md5:{}", md5.replace("\u{0}", ""))),
-        Err(_) => {
-            warn!("unable to find MD5 for asset: {}", asset.name);
-            None
-        }
+    let md5 = match &asset.name {
+        //FIXME: TencentKona-17.0.4.b1_jdk_windows-x86_64_signed.zip is not a valid checksum
+        filename if filename.eq_ignore_ascii_case("TencentKona-17.0.4.b1_jdk_windows-x86_64_signed.zip") => None,
+        _ => get_md5(asset, &md5_url),
     };
     let filename = asset.name.clone();
     let filename_meta = meta_from_name(&filename)?;
@@ -107,7 +105,7 @@ fn map_asset(asset: &GitHubAsset) -> Result<JavaMetaData> {
     let version = normalize_version(&filename_meta.version);
     Ok(JavaMetaData {
         architecture: normalize_architecture(&filename_meta.arch),
-        checksum: md5.clone(),
+        checksum: md5,
         checksum_url: Some(md5_url),
         features,
         filename,
@@ -122,6 +120,25 @@ fn map_asset(asset: &GitHubAsset) -> Result<JavaMetaData> {
         version,
         ..Default::default()
     })
+}
+
+fn get_md5(asset: &GitHubAsset, md5_url: &str) -> Option<String> {
+    match HTTP.get_text(md5_url) {
+        Ok(body) => match body.to_lowercase().starts_with("md5") {
+            true => {
+                let chunks = body.split('=').map(|s| s.to_string()).collect::<Vec<_>>();
+                chunks.get(1).map(|md5| format!("md5:{}", md5.trim()))
+            }
+            false => {
+                let chunks = body.split_whitespace().map(|s| s.to_string()).collect::<Vec<_>>();
+                chunks.first().map(|md5| format!("md5:{}", md5.trim()))
+            }
+        },
+        Err(_) => {
+            warn!("unable to find MD5 for asset: {}", asset.name);
+            None
+        }
+    }
 }
 
 fn meta_from_name(name: &str) -> Result<FileNameMeta> {
