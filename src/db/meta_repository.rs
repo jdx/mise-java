@@ -25,7 +25,7 @@ impl MetaRepository {
 
         for chunk in map_workaround(meta_data).chunks(BATCH_SIZE) {
             let mut query = String::from(
-                "INSERT INTO JAVA_META_DATA
+                "INSERT INTO JVM
                 (architecture, checksum, checksum_url, features, file_type, filename, image_type, java_version, jvm_impl, os, release_type, size, url, vendor, version)
                 VALUES "
             );
@@ -89,21 +89,21 @@ impl MetaRepository {
                 vendor = excluded.vendor,
                 version = excluded.version
                 WHERE
-                   excluded.architecture != JAVA_META_DATA.architecture
-                OR excluded.checksum != JAVA_META_DATA.checksum
-                OR excluded.checksum_url != JAVA_META_DATA.checksum_url
-                OR excluded.features != JAVA_META_DATA.features
-                OR excluded.file_type != JAVA_META_DATA.file_type
-                OR excluded.filename != JAVA_META_DATA.filename
-                OR excluded.image_type != JAVA_META_DATA.image_type
-                OR excluded.java_version != JAVA_META_DATA.java_version
-                OR excluded.jvm_impl != JAVA_META_DATA.jvm_impl
-                OR excluded.os != JAVA_META_DATA.os
-                OR excluded.release_type != JAVA_META_DATA.release_type
-                OR excluded.size != JAVA_META_DATA.size
-                OR excluded.url != JAVA_META_DATA.url
-                OR excluded.vendor != JAVA_META_DATA.vendor
-                OR excluded.version != JAVA_META_DATA.version
+                   excluded.architecture != JVM.architecture
+                OR excluded.checksum != JVM.checksum
+                OR excluded.checksum_url != JVM.checksum_url
+                OR excluded.features != JVM.features
+                OR excluded.file_type != JVM.file_type
+                OR excluded.filename != JVM.filename
+                OR excluded.image_type != JVM.image_type
+                OR excluded.java_version != JVM.java_version
+                OR excluded.jvm_impl != JVM.jvm_impl
+                OR excluded.os != JVM.os
+                OR excluded.release_type != JVM.release_type
+                OR excluded.size != JVM.size
+                OR excluded.url != JVM.url
+                OR excluded.vendor != JVM.vendor
+                OR excluded.version != JVM.version
                 ;",
             );
 
@@ -134,7 +134,7 @@ impl MetaRepository {
                 vendor,
                 version
             FROM
-                JAVA_META_DATA
+                JVM
             WHERE
                     file_type IN ('tar.gz','zip')
                 AND release_type = $1
@@ -171,10 +171,7 @@ impl MetaRepository {
 
     pub fn get_distinct(&self, column: &str) -> Result<Vec<String>> {
         let mut conn = self.pool.get()?;
-        let stmt = conn.prepare(&format!(
-            "SELECT DISTINCT {} FROM JAVA_META_DATA ORDER BY {} ASC;",
-            column, column
-        ))?;
+        let stmt = conn.prepare(&format!("SELECT DISTINCT {} FROM JVM ORDER BY {} ASC;", column, column))?;
         let mut data = Vec::new();
         let rows = conn.query(&stmt, &[])?;
         for row in rows {

@@ -1,15 +1,13 @@
 [package]
-name = "jmeta"
-version = "0.1.0"
+name = "roast"
+version = "1.0.0"
 edition = "2024"
-description = "A Java Metadata Tool"
+description = "A JVM Data Crawler"
 authors = ["Roland Schär (@roele)"]
-homepage = "https://"
-documentation = "https://"
-repository = "https://github.com/roele/jmeta"
+repository = "https://github.com/roele/roast"
 readme = "README.md"
 license = "MIT"
-keywords = ["java", "metadata", "database", "cli"]
+keywords = ["java", "jvm", "crawler", "database", "cli"]
 categories = ["command-line-utilities"]
 include = [
   "src/**/*.rs",
@@ -20,7 +18,7 @@ include = [
 build = "build.rs"
 
 [[bin]]
-name = "jmeta"
+name = "roast"
 path = "src/main.rs"
 
 [dependencies]

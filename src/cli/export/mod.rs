@@ -15,7 +15,7 @@ impl Commands {
     }
 }
 
-/// Export metadata in various formats
+/// Export JVM data
 #[derive(Debug, clap::Args)]
 pub struct Export {
     #[clap(subcommand)]

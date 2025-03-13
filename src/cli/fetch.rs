@@ -8,9 +8,9 @@ use crate::{
     meta::vendor::{VENDORS, Vendor},
 };
 
-/// Fetch metadata from vendors
+/// Fetch data from JVM vendors
 ///
-/// Will crawl metadata from all vendors if none are specified
+/// Will crawl data from all vendors if none are specified
 #[derive(Debug, clap::Args)]
 #[clap(verbatim_doc_comment)]
 pub struct Fetch {

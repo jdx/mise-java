@@ -7,7 +7,7 @@ if ! docker info > /dev/null 2>&1; then
     exit 1
 fi
 
-db='postgresql://postgres:postgres@localhost:5432/meta'
+db='postgresql://postgres:postgres@localhost:5432/roast'
 container='postgres'
 user='postgres'
 
@@ -16,7 +16,7 @@ function print_usage() {
     echo ""
     echo "Options:"
     echo "  -h, --help            Show this help message and exit"
-    echo "  -db, --database-url   Specify the database URL (default: postgresql://postgres:postgres@localhost:5432/meta)"
+    echo "  -db, --database-url   Specify the database URL (default: postgresql://postgres:postgres@localhost:5432/roast)"
     echo "  -c, --container       Specify the Docker container name (default: postgres)"
     echo "  -u, --user            Specify the user for the export (default: postgres)"
 }
@@ -60,7 +60,7 @@ echo "SELECT
         vendor,
         version
     FROM
-        JAVA_META_DATA
+        JVM
     WHERE
             file_type IN ('tar.gz','zip')
         AND release_type = '$1'

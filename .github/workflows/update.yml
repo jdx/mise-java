@@ -1,4 +1,4 @@
-name: "Update Meta Data"
+name: "Update Data"
 
 on:
   schedule:
@@ -15,9 +15,9 @@ permissions:
 
 env:
   CARGO_TERM_COLOR: always
-  JMETA_DATABASE_URL: ${{ secrets.JMETA_DATABASE_URL }}
+  ROAST_DATABASE_URL: ${{ secrets.ROAST_DATABASE_URL }}
   RUST_BACKTRACE: 1
-  RUST_LOG: jmeta=INFO
+  RUST_LOG: roast=INFO
   GH_TOKEN: ${{ secrets.GH_PAT }}
 
 jobs:
@@ -32,11 +32,11 @@ jobs:
 
       - uses: Swatinem/rust-cache@v2
 
-      - name: Update Meta Data
+      - name: Update Data
         run: |
           cargo run -- fetch ${{ github.event.inputs.vendors }}
 
-      - name: Export Meta Data
+      - name: Export Data
         run: |
           cargo run -- export triple --pretty -t ea,ga -o linux,macosx,windows -a aarch64,arm32,i686,x86_64
 
@@ -44,11 +44,11 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: Update metadata
-          title: Update metadata
+          commit-message: Update data
+          title: Update data
           base: main
           labels: automated-pr
           assignees: ${{ vars.CREATE_PR_ASSIGNEES || 'roele' }}
           reviewers: ${{ vars.CREATE_PR_REVIEWERS || 'roele' }}
-          branch: issues/update-metadata
+          branch: issues/update-data
           delete-branch: true

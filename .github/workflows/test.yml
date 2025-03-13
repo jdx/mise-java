@@ -28,7 +28,7 @@ jobs:
       - uses: Swatinem/rust-cache@v2
       - run: |
           cargo build --all-features
-          $PWD/target/debug/jmeta -v
+          $PWD/target/debug/roast -v
 
   unit:
     runs-on: ubuntu-latest

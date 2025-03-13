@@ -1385,42 +1385,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "jmeta"
-version = "0.1.0"
-dependencies = [
- "build-time",
- "built",
- "chrono",
- "clap",
- "color-eyre",
- "color-print",
- "comrak",
- "confique",
- "crossbeam-channel",
- "env_logger",
- "eyre",
- "indoc",
- "itertools 0.14.0",
- "log",
- "once_cell",
- "openssl",
- "postgres",
- "postgres-openssl",
- "r2d2",
- "r2d2_postgres",
- "rayon",
- "regex",
- "reqwest",
- "scraper",
- "serde",
- "serde_json",
- "shellexpand",
- "tokio",
- "versions",
- "xx",
-]
-
-[[package]]
 name = "jobserver"
 version = "0.1.32"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2204,6 +2168,42 @@ dependencies = [
  "libc",
  "untrusted",
  "windows-sys 0.52.0",
+]
+
+[[package]]
+name = "roast"
+version = "1.0.0"
+dependencies = [
+ "build-time",
+ "built",
+ "chrono",
+ "clap",
+ "color-eyre",
+ "color-print",
+ "comrak",
+ "confique",
+ "crossbeam-channel",
+ "env_logger",
+ "eyre",
+ "indoc",
+ "itertools 0.14.0",
+ "log",
+ "once_cell",
+ "openssl",
+ "postgres",
+ "postgres-openssl",
+ "r2d2",
+ "r2d2_postgres",
+ "rayon",
+ "regex",
+ "reqwest",
+ "scraper",
+ "serde",
+ "serde_json",
+ "shellexpand",
+ "tokio",
+ "versions",
+ "xx",
 ]
 
 [[package]]

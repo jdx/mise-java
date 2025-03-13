@@ -38,7 +38,7 @@ impl Version {
 }
 
 pub fn print_version_if_requested(args: &[String]) -> std::io::Result<()> {
-    if args.len() == 2 && *env::BINARY_NAME == "jmeta" {
+    if args.len() == 2 && *env::BINARY_NAME == "roast" {
         let cmd = &args[1].to_lowercase();
         if cmd == "version" || cmd == "-v" || cmd == "--version" {
             show_version()?;

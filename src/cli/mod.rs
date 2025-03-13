@@ -28,7 +28,7 @@ impl Commands {
 impl Cli {
     pub fn command() -> clap::Command {
         Commands::augment_subcommands(
-            clap::Command::new("jmeta")
+            clap::Command::new("roast")
                 .version(version::VERSION.to_string())
                 .about(env!("CARGO_PKG_DESCRIPTION"))
                 .author("Roland Schär <@roele>")
@@ -60,7 +60,7 @@ impl Cli {
 }
 
 const LONG_ABOUT: &str = indoc! {"
-jmeta is a tool for managing Java metadata. https://github.com/roele/jmeta
+roast a JVM Crawler. https://github.com/roele/roast
 
-A tool to manage metadata about the various Java distributions.
+A tool to crawl JVM data for the various JVM vendors.
 "};

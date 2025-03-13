@@ -11,9 +11,10 @@ use crate::{
     meta::JavaMetaData,
 };
 
-/// Export as release_type, os, architecture triple
+/// Export as a triple {release_type}/{os}/{architecture}
 ///
 /// Will export JSON files in form of <release_type>/<os>/<arch>.json to the path specified in the configuration file
+/// or ROAST_EXPORT_PATH environment variable
 #[derive(Debug, clap::Args)]
 #[clap(verbatim_doc_comment)]
 pub struct Triple {
