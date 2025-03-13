@@ -135,7 +135,7 @@ fn get_md5(asset: &GitHubAsset, md5_url: &str) -> Option<String> {
             }
         },
         Err(_) => {
-            warn!("unable to find MD5 for asset: {}", asset.name);
+            warn!("[kona] unable to find MD5 for asset: {}", asset.name);
             None
         }
     }

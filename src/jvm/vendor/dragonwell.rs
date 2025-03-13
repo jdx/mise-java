@@ -85,7 +85,7 @@ fn map_asset(asset: &GitHubAsset) -> Result<JvmData> {
     let sha256 = match HTTP.get_text(&sha256_url) {
         Ok(sha256) => Some(format!("sha256:{}", sha256)),
         Err(_) => {
-            warn!("unable to find SHA256 for asset: {}", asset.name);
+            warn!("[dragonwell] unable to find SHA256 for asset: {}", asset.name);
             None
         }
     };
