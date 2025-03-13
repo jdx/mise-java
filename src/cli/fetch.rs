@@ -4,7 +4,7 @@ use log::{error, info};
 use std::{collections::HashMap, sync::Arc};
 
 use crate::{
-    db::{meta_repository::MetaRepository, pool::ConnectionPool},
+    db::{jvm_repository::JvmRepository, pool::ConnectionPool},
     jvm::vendor::{VENDORS, Vendor},
 };
 
@@ -34,7 +34,7 @@ impl Fetch {
             let run = |name: String, vendor: Arc<dyn Vendor>| {
                 let conn_pool = conn_pool.clone();
                 s.spawn(move |_| {
-                    let db = match MetaRepository::new(conn_pool) {
+                    let db = match JvmRepository::new(conn_pool) {
                         Ok(db) => db,
                         Err(err) => {
                             error!("[{}] failed to connect to database: {}", name, err);

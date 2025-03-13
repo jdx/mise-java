@@ -1,2 +1,2 @@
-pub mod meta_repository;
+pub mod jvm_repository;
 pub mod pool;
