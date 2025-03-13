@@ -3,6 +3,14 @@
 pool_size = 10
 # Database connection URL.
 url = "postgres://postgres:postgres@localhost:5432/meta"
+# SSL mode for the database connection. One of allow, prefer, require, verify-ca, verify-full. Default is "prefer".
+ssl_mode = "prefer"
+# Path to the root certificate file for the database connection
+#ssl_ca = "./local/config/jmeta/server-ca.pem"
+# Path to the certificate file for the database connection
+#ssl_cert = "./local/config/jmeta/client-cert.pem"
+# Path to the private key file for the database connection
+#ssl_key = "./local/config/jmeta/client-key.pem"
 
 [export]
 # Directory to export JSON files to

@@ -19,6 +19,18 @@ pub struct DatabaseConf {
     /// Database connection URL
     #[config(env = "JMETA_DATABASE_URL")]
     pub url: Option<String>,
+    /// SSL mode. Default: prefer
+    #[config(env = "JMETA_DATABASE_SSL_MODE")]
+    pub ssl_mode: Option<String>,
+    /// SSL Root CA certificate
+    #[config(env = "JMETA_DATABASE_SSL_CA")]
+    pub ssl_ca: Option<String>,
+    /// SSL CA certificate
+    #[config(env = "JMETA_DATABASE_SSL_CERT")]
+    pub ssl_cert: Option<String>,
+    /// SSL Key
+    #[config(env = "JMETA_DATABASE_SSL_KEY")]
+    pub ssl_key: Option<String>,
 }
 
 #[derive(Config, Debug)]
