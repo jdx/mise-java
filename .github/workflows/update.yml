@@ -31,6 +31,8 @@ jobs:
           ref: ${{ github.head_ref }}
 
       - uses: Swatinem/rust-cache@v2
+        with:
+          shared-key: "roast"
 
       - name: Update Data
         run: |
