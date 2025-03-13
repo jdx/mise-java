@@ -8,7 +8,7 @@ use serde_json::{Map, Value};
 use crate::{
     config::Conf,
     db::{meta_repository::MetaRepository, pool::ConnectionPool},
-    meta::JavaMetaData,
+    jvm::JvmData,
 };
 
 /// Export as a triple {release_type}/{os}/{architecture}
@@ -61,7 +61,7 @@ impl Triple {
 
                     let export_data = data
                         .into_par_iter()
-                        .map(|item| JavaMetaData::map(&item, &self.properties))
+                        .map(|item| JvmData::map(&item, &self.properties))
                         .collect::<Vec<Map<String, Value>>>();
 
                     info!("exporting {} records for {} {} {}", size, release_type, os, arch);

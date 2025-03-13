@@ -2,7 +2,7 @@ use super::{Vendor, normalize_architecture, normalize_os, normalize_version};
 use crate::{
     github::{self, GitHubAsset, GitHubRelease},
     http::HTTP,
-    meta::JavaMetaData,
+    jvm::JvmData,
 };
 use eyre::Result;
 use log::{debug, warn};
@@ -25,7 +25,7 @@ impl Vendor for Semeru {
         "semeru".to_string()
     }
 
-    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> Result<()> {
+    fn fetch_data(&self, meta_data: &mut HashSet<JvmData>) -> Result<()> {
         for version in &[
             "8",
             "11",
@@ -54,14 +54,14 @@ impl Vendor for Semeru {
                         vec![]
                     })
                 })
-                .collect::<Vec<JavaMetaData>>();
+                .collect::<Vec<JvmData>>();
             meta_data.extend(data);
         }
         Ok(())
     }
 }
 
-fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
+fn map_release(release: &GitHubRelease) -> Result<Vec<JvmData>> {
     let assets = release
         .assets
         .iter()
@@ -77,7 +77,7 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
                 None
             }
         })
-        .collect::<Vec<JavaMetaData>>();
+        .collect::<Vec<JvmData>>();
 
     Ok(meta_data)
 }
@@ -92,7 +92,7 @@ fn include(asset: &github::GitHubAsset) -> bool {
         && !asset.name.contains("testimage")
 }
 
-fn map_asset(release: &GitHubRelease, asset: &GitHubAsset) -> Result<JavaMetaData> {
+fn map_asset(release: &GitHubRelease, asset: &GitHubAsset) -> Result<JvmData> {
     let sha256_url = format!("{}.sha256.txt", asset.browser_download_url);
     let sha256 = match HTTP.get_text(&sha256_url) {
         Ok(sha256) => Some(format!("sha256:{}", sha256)),
@@ -105,7 +105,7 @@ fn map_asset(release: &GitHubRelease, asset: &GitHubAsset) -> Result<JavaMetaDat
     let filename_meta = meta_from_name(&filename)?;
     let url = asset.browser_download_url.clone();
     let version = version_from_tag(&release.tag_name)?;
-    Ok(JavaMetaData {
+    Ok(JvmData {
         architecture: normalize_architecture(&filename_meta.arch),
         checksum: sha256,
         checksum_url: Some(sha256_url),

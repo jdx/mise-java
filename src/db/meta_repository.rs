@@ -1,6 +1,6 @@
 use std::collections::HashSet;
 
-use crate::meta::JavaMetaData;
+use crate::jvm::JvmData;
 use eyre::Result;
 use postgres_openssl::MakeTlsConnector;
 use r2d2::Pool;
@@ -17,7 +17,7 @@ impl MetaRepository {
         Ok(MetaRepository { pool })
     }
 
-    pub fn insert(&self, meta_data: &HashSet<JavaMetaData>) -> Result<u64> {
+    pub fn insert(&self, meta_data: &HashSet<JvmData>) -> Result<u64> {
         let mut conn = self.pool.get()?;
         let mut result = 0;
         let mut tx = conn.transaction()?;
@@ -114,7 +114,7 @@ impl MetaRepository {
         Ok(result)
     }
 
-    pub fn export(&self, release_type: &str, arch: &str, os: &str) -> Result<Vec<JavaMetaData>> {
+    pub fn export(&self, release_type: &str, arch: &str, os: &str) -> Result<Vec<JvmData>> {
         let mut conn = self.pool.get()?;
         let stmt = conn.prepare(
             "SELECT
@@ -146,7 +146,7 @@ impl MetaRepository {
         let mut data = Vec::new();
         let rows = conn.query(&stmt, &[&release_type, &os, &arch])?;
         for row in rows {
-            data.push(JavaMetaData {
+            data.push(JvmData {
                 architecture: row.get("architecture"),
                 checksum: row.get("checksum"),
                 checksum_url: row.get("checksum_url"),
@@ -182,7 +182,7 @@ impl MetaRepository {
 }
 
 #[derive(Clone, Default, Debug)]
-struct DbJavaMetaData {
+struct DbJvmData {
     pub architecture: String,
     pub checksum: Option<String>,
     pub checksum_url: Option<String>,
@@ -200,13 +200,13 @@ struct DbJavaMetaData {
     pub version: String,
 }
 
-fn map_workaround(meta_data: &HashSet<JavaMetaData>) -> Vec<DbJavaMetaData> {
+fn map_workaround(meta_data: &HashSet<JvmData>) -> Vec<DbJvmData> {
     meta_data
         .iter()
         // workaround for the `feature` field which needs to be joined
         // and therefore would not live long enough in context of a
         // batch insert
-        .map(|item| DbJavaMetaData {
+        .map(|item| DbJvmData {
             architecture: item.architecture.clone(),
             checksum: item.checksum.clone(),
             checksum_url: item.checksum_url.clone(),
@@ -223,5 +223,5 @@ fn map_workaround(meta_data: &HashSet<JavaMetaData>) -> Vec<DbJavaMetaData> {
             vendor: item.vendor.clone(),
             version: item.version.clone(),
         })
-        .collect::<Vec<DbJavaMetaData>>()
+        .collect::<Vec<DbJvmData>>()
 }

@@ -2,7 +2,7 @@ use crate::github;
 use crate::github::GitHubAsset;
 use crate::github::GitHubRelease;
 
-use super::JavaMetaData;
+use super::JvmData;
 use super::Vendor;
 use super::normalize_architecture;
 use super::normalize_os;
@@ -29,7 +29,7 @@ impl Vendor for Trava {
         "trava".to_string()
     }
 
-    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> Result<()> {
+    fn fetch_data(&self, meta_data: &mut HashSet<JvmData>) -> Result<()> {
         for version in &["8", "11"] {
             debug!("[trava] fetching releases for version: {version}");
             let repo = format!("TravaOpenJDK/trava-jdk-{version}-dcevm");
@@ -42,14 +42,14 @@ impl Vendor for Trava {
                         vec![]
                     })
                 })
-                .collect::<Vec<JavaMetaData>>();
+                .collect::<Vec<JvmData>>();
             meta_data.extend(data);
         }
         Ok(())
     }
 }
 
-fn map_release(version: &str, release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
+fn map_release(version: &str, release: &GitHubRelease) -> Result<Vec<JvmData>> {
     let assets = release
         .assets
         .iter()
@@ -65,7 +65,7 @@ fn map_release(version: &str, release: &GitHubRelease) -> Result<Vec<JavaMetaDat
                 None
             }
         })
-        .collect::<Vec<JavaMetaData>>();
+        .collect::<Vec<JvmData>>();
 
     Ok(meta_data)
 }
@@ -74,12 +74,12 @@ fn include(asset: &github::GitHubAsset) -> bool {
     asset.content_type.starts_with("application") && !asset.name.contains("_source") && !asset.name.ends_with(".jar")
 }
 
-fn map_asset(release: &GitHubRelease, asset: &GitHubAsset, version: &str) -> Result<JavaMetaData> {
+fn map_asset(release: &GitHubRelease, asset: &GitHubAsset, version: &str) -> Result<JvmData> {
     let filename = asset.name.clone();
     let filename_meta = meta_from_name(version, &filename)?;
     let url = asset.browser_download_url.clone();
     let version = version_from_tag(version, &release.tag_name)?;
-    Ok(JavaMetaData {
+    Ok(JvmData {
         architecture: normalize_architecture(&filename_meta.arch),
         features: None,
         filename,

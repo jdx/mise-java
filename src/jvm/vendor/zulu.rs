@@ -6,7 +6,7 @@ use itertools::Itertools;
 use log::{debug, warn};
 use serde::{Deserialize, Serialize};
 
-use crate::{http::HTTP, meta::JavaMetaData};
+use crate::{http::HTTP, jvm::JvmData};
 use xx::regex;
 
 use super::{Vendor, normalize_architecture, normalize_os, normalize_version};
@@ -19,7 +19,7 @@ impl Vendor for Zulu {
         "zulu".to_string()
     }
 
-    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> Result<()> {
+    fn fetch_data(&self, meta_data: &mut HashSet<JvmData>) -> Result<()> {
         let mut page = 1;
         let page_size = 1000;
         let mut all_packages: Vec<Package> = Vec::new();
@@ -46,8 +46,8 @@ impl Vendor for Zulu {
     }
 }
 
-fn map_packages(packages: Vec<Package>) -> Result<Vec<JavaMetaData>> {
-    let mut meta_data: Vec<JavaMetaData> = Vec::new();
+fn map_packages(packages: Vec<Package>) -> Result<Vec<JvmData>> {
+    let mut meta_data: Vec<JvmData> = Vec::new();
     for package in packages {
         let arch = match arch_from_name(&package.name) {
             Ok(arch) => arch,
@@ -63,7 +63,7 @@ fn map_packages(packages: Vec<Package>) -> Result<Vec<JavaMetaData>> {
         let java_version = package.java_version.iter().map(|n| n.to_string()).join(".");
         let version = normalize_version(package.distro_version.iter().map(|n| n.to_string()).join(".").as_str());
 
-        let meta = JavaMetaData {
+        let meta = JvmData {
             architecture,
             checksum: Some(format!("sha256:{}", package.sha256_hash)),
             file_type: package.archive_type,

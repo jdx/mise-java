@@ -5,7 +5,7 @@ use std::{collections::HashMap, sync::Arc};
 
 use crate::{
     db::{meta_repository::MetaRepository, pool::ConnectionPool},
-    meta::vendor::{VENDORS, Vendor},
+    jvm::vendor::{VENDORS, Vendor},
 };
 
 /// Fetch data from JVM vendors

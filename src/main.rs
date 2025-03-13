@@ -11,7 +11,7 @@ mod db;
 mod env;
 mod github;
 mod http;
-mod meta;
+mod jvm;
 
 fn main() -> eyre::Result<()> {
     env_logger::builder()

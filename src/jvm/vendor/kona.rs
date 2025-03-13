@@ -8,7 +8,7 @@ use rayon::iter::{IntoParallelIterator, ParallelIterator};
 use crate::{
     github::{self, GitHubAsset, GitHubRelease},
     http::HTTP,
-    meta::JavaMetaData,
+    jvm::JvmData,
 };
 
 use super::{Vendor, normalize_architecture, normalize_os, normalize_version};
@@ -29,7 +29,7 @@ impl Vendor for Kona {
         "kona".to_string()
     }
 
-    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> eyre::Result<()> {
+    fn fetch_data(&self, meta_data: &mut HashSet<JvmData>) -> eyre::Result<()> {
         for version in &["8", "11", "17", "21"] {
             debug!("[kona] fetching releases for version: {version}");
             let repo = format!("Tencent/TencentKona-{version}");
@@ -42,14 +42,14 @@ impl Vendor for Kona {
                         vec![]
                     })
                 })
-                .collect::<Vec<JavaMetaData>>();
+                .collect::<Vec<JvmData>>();
             meta_data.extend(data);
         }
         Ok(())
     }
 }
 
-fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
+fn map_release(release: &GitHubRelease) -> Result<Vec<JvmData>> {
     let assets = release
         .assets
         .iter()
@@ -65,7 +65,7 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
                 None
             }
         })
-        .collect::<Vec<JavaMetaData>>();
+        .collect::<Vec<JvmData>>();
 
     Ok(meta_data)
 }
@@ -78,7 +78,7 @@ fn include(asset: &GitHubAsset) -> bool {
         && !asset.name.ends_with(".md5")
 }
 
-fn map_asset(asset: &GitHubAsset) -> Result<JavaMetaData> {
+fn map_asset(asset: &GitHubAsset) -> Result<JvmData> {
     let md5_url = format!("{}.md5", asset.browser_download_url);
     let md5 = match &asset.name {
         //FIXME: TencentKona-17.0.4.b1_jdk_windows-x86_64_signed.zip is not a valid checksum
@@ -103,7 +103,7 @@ fn map_asset(asset: &GitHubAsset) -> Result<JavaMetaData> {
     };
     let url = asset.browser_download_url.clone();
     let version = normalize_version(&filename_meta.version);
-    Ok(JavaMetaData {
+    Ok(JvmData {
         architecture: normalize_architecture(&filename_meta.arch),
         checksum: md5,
         checksum_url: Some(md5_url),

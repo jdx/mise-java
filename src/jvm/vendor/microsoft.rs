@@ -1,6 +1,6 @@
 use std::collections::HashSet;
 
-use crate::{http::HTTP, meta::JavaMetaData};
+use crate::{http::HTTP, jvm::JvmData};
 use eyre::Result;
 use log::warn;
 use log::{debug, error};
@@ -28,7 +28,7 @@ impl Vendor for Microsoft {
         "microsoft".to_string()
     }
 
-    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> Result<()> {
+    fn fetch_data(&self, meta_data: &mut HashSet<JvmData>) -> Result<()> {
         let urls = vec![
             "https://docs.microsoft.com/en-us/java/openjdk/download",
             "https://learn.microsoft.com/en-us/java/openjdk/older-releases",
@@ -62,13 +62,13 @@ impl Vendor for Microsoft {
                     vec![]
                 }
             })
-            .collect::<Vec<JavaMetaData>>();
+            .collect::<Vec<JvmData>>();
         meta_data.extend(data);
         Ok(())
     }
 }
 
-fn map_release(a: &AnchorElement) -> Result<JavaMetaData> {
+fn map_release(a: &AnchorElement) -> Result<JvmData> {
     let filename_meta = meta_from_name(&a.name)?;
     let sha256_url = format!("{}.sha256sum.txt", &a.href);
     let sha256 = match HTTP.get_text(&sha256_url) {
@@ -79,7 +79,7 @@ fn map_release(a: &AnchorElement) -> Result<JavaMetaData> {
         }
     };
 
-    Ok(JavaMetaData {
+    Ok(JvmData {
         architecture: normalize_architecture(&filename_meta.arch),
         checksum: sha256.clone(),
         checksum_url: Some(sha256_url),

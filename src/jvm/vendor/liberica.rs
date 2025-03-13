@@ -3,7 +3,7 @@ use std::collections::{HashMap, HashSet};
 use crate::{
     github::{self, GitHubAsset, GitHubRelease},
     http::HTTP,
-    meta::JavaMetaData,
+    jvm::JvmData,
 };
 use eyre::Result;
 use log::{debug, warn};
@@ -30,7 +30,7 @@ impl Vendor for Liberica {
         "liberica".to_string()
     }
 
-    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> eyre::Result<()> {
+    fn fetch_data(&self, meta_data: &mut HashSet<JvmData>) -> eyre::Result<()> {
         let releases = github::list_releases("bell-sw/Liberica")?;
         let data = releases
             .into_par_iter()
@@ -40,13 +40,13 @@ impl Vendor for Liberica {
                     vec![]
                 })
             })
-            .collect::<Vec<JavaMetaData>>();
+            .collect::<Vec<JvmData>>();
         meta_data.extend(data);
         Ok(())
     }
 }
 
-fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
+fn map_release(release: &GitHubRelease) -> Result<Vec<JvmData>> {
     let sha1sums = get_sha1sums(release)?;
     let assets = release
         .assets
@@ -79,7 +79,7 @@ fn include(asset: &github::GitHubAsset) -> bool {
         || asset.name.contains("-full-nosign"))
 }
 
-fn map_asset(release: &GitHubRelease, asset: &GitHubAsset, sha1sums: &HashMap<String, String>) -> Result<JavaMetaData> {
+fn map_asset(release: &GitHubRelease, asset: &GitHubAsset, sha1sums: &HashMap<String, String>) -> Result<JvmData> {
     let filename = asset.name.clone();
     let filename_meta = meta_from_name(&filename)?;
     let features = normalize_features(&filename_meta.feature);
@@ -91,7 +91,7 @@ fn map_asset(release: &GitHubRelease, asset: &GitHubAsset, sha1sums: &HashMap<St
         }
     };
     let url = asset.browser_download_url.clone();
-    Ok(JavaMetaData {
+    Ok(JvmData {
         architecture: normalize_architecture(&filename_meta.arch),
         checksum: sha1.clone(),
         features,

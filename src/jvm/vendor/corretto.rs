@@ -2,7 +2,7 @@ use std::collections::HashSet;
 
 use crate::{
     github::{self, GitHubRelease},
-    meta::JavaMetaData,
+    jvm::JvmData,
 };
 use eyre::Result;
 use log::{debug, error, warn};
@@ -28,7 +28,7 @@ impl Vendor for Corretto {
         "corretto".to_string()
     }
 
-    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> Result<()> {
+    fn fetch_data(&self, jvm_data: &mut HashSet<JvmData>) -> Result<()> {
         for version in &["8", "11", "jdk", "17", "18", "19", "20", "21", "22", "23"] {
             debug!("[corretto] fetching releases for version: {version}");
             let repo = format!("corretto/corretto-{}", version);
@@ -41,14 +41,14 @@ impl Vendor for Corretto {
                         vec![]
                     })
                 })
-                .collect::<Vec<JavaMetaData>>();
-            meta_data.extend(data);
+                .collect::<Vec<JvmData>>();
+            jvm_data.extend(data);
         }
         Ok(())
     }
 }
 
-fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
+fn map_release(release: &GitHubRelease) -> Result<Vec<JvmData>> {
     let mut meta_data = Vec::new();
     let version = release.tag_name.clone();
     let html = match release.body {
@@ -62,7 +62,7 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
     let fragment = Html::parse_fragment(&html);
     let table_row_selector = Selector::parse("table tr").unwrap();
     for table_row in fragment.select(&table_row_selector).skip(1) {
-        let mut metadata_entry = JavaMetaData {
+        let mut jvm_data = JvmData {
             jvm_impl: "hotspot".to_string(),
             release_type: "ga".to_string(),
             vendor: "corretto".to_string(),
@@ -76,7 +76,7 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
             match index {
                 // Type
                 1 => {
-                    metadata_entry.image_type = text.to_lowercase();
+                    jvm_data.image_type = text.to_lowercase();
                 }
                 // Download Link
                 2 => {
@@ -88,15 +88,15 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
                         match meta_from_name(name.clone().as_str()) {
                             Ok(filename_meta) => {
                                 if filename_meta.os == "alpine-linux" {
-                                    metadata_entry.features = Some(vec!["musl".to_string()]);
+                                    jvm_data.features = Some(vec!["musl".to_string()]);
                                 }
-                                metadata_entry.architecture = normalize_architecture(&filename_meta.arch);
-                                metadata_entry.filename = name.clone();
-                                metadata_entry.file_type = filename_meta.ext;
-                                metadata_entry.java_version = normalize_version(&filename_meta.version);
-                                metadata_entry.os = normalize_os(&filename_meta.os);
-                                metadata_entry.url = url.to_string();
-                                metadata_entry.version = normalize_version(&filename_meta.version);
+                                jvm_data.architecture = normalize_architecture(&filename_meta.arch);
+                                jvm_data.filename = name.clone();
+                                jvm_data.file_type = filename_meta.ext;
+                                jvm_data.java_version = normalize_version(&filename_meta.version);
+                                jvm_data.os = normalize_os(&filename_meta.os);
+                                jvm_data.url = url.to_string();
+                                jvm_data.version = normalize_version(&filename_meta.version);
                             }
                             Err(e) => {
                                 error!("[corretto] {}", e);
@@ -110,17 +110,17 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
                     let mut code_iter = fragment.select(&code_selector);
                     if let Some(code) = code_iter.next() {
                         let md5 = code.text().collect::<String>();
-                        metadata_entry.checksum = Some(format!("md5:{}", md5));
+                        jvm_data.checksum = Some(format!("md5:{}", md5));
                     }
                     if let Some(code) = code_iter.next() {
                         let sha256 = code.text().collect::<String>();
-                        metadata_entry.checksum = Some(format!("sha256:{}", sha256));
+                        jvm_data.checksum = Some(format!("sha256:{}", sha256));
                     };
                 }
                 _ => (),
             }
         }
-        meta_data.push(metadata_entry);
+        meta_data.push(jvm_data);
     }
 
     Ok(meta_data)

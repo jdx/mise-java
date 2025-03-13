@@ -3,7 +3,7 @@ use std::collections::HashSet;
 use crate::{
     github::{self, GitHubAsset, GitHubRelease},
     http::HTTP,
-    meta::JavaMetaData,
+    jvm::JvmData,
 };
 use eyre::Result;
 use log::{debug, warn};
@@ -31,9 +31,9 @@ impl Vendor for SAPMachine {
         "sapmachine".to_string()
     }
 
-    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> eyre::Result<()> {
+    fn fetch_data(&self, meta_data: &mut HashSet<JvmData>) -> eyre::Result<()> {
         let releases = github::list_releases("SAP/SapMachine")?;
-        let data: Vec<JavaMetaData> = releases
+        let data: Vec<JvmData> = releases
             .into_par_iter()
             .flat_map(|release| {
                 map_release(&release).unwrap_or_else(|err| {
@@ -47,7 +47,7 @@ impl Vendor for SAPMachine {
     }
 }
 
-fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
+fn map_release(release: &GitHubRelease) -> Result<Vec<JvmData>> {
     let assets = release
         .assets
         .iter()
@@ -68,7 +68,7 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
     Ok(meta_data)
 }
 
-fn map_asset(release: &GitHubRelease, asset: &GitHubAsset) -> Result<JavaMetaData> {
+fn map_asset(release: &GitHubRelease, asset: &GitHubAsset) -> Result<JvmData> {
     let sha256_url = get_sha256_url(asset);
     let sha256 = match sha256_url {
         Some(ref url) => {
@@ -94,7 +94,7 @@ fn map_asset(release: &GitHubRelease, asset: &GitHubAsset) -> Result<JavaMetaDat
     };
     let url = asset.browser_download_url.clone();
     let version = normalize_version(&filename_meta.version);
-    Ok(JavaMetaData {
+    Ok(JvmData {
         architecture: normalize_architecture(&filename_meta.arch),
         checksum: sha256,
         checksum_url: sha256_url,

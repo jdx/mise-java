@@ -3,7 +3,7 @@ use std::collections::HashSet;
 use crate::{
     github::{self, GitHubRelease},
     http::HTTP,
-    meta::JavaMetaData,
+    jvm::JvmData,
 };
 use eyre::Result;
 use log::{debug, error, warn};
@@ -30,7 +30,7 @@ impl Vendor for Jetbrains {
         "jetbrains".to_string()
     }
 
-    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> eyre::Result<()> {
+    fn fetch_data(&self, meta_data: &mut HashSet<JvmData>) -> eyre::Result<()> {
         let releases = github::list_releases("JetBrains/JetBrainsRuntime")?;
         let data = releases
             .into_par_iter()
@@ -58,13 +58,13 @@ impl Vendor for Jetbrains {
                 }
                 data
             })
-            .collect::<Vec<JavaMetaData>>();
+            .collect::<Vec<JvmData>>();
         meta_data.extend(data);
         Ok(())
     }
 }
 
-fn map_release(release: &GitHubRelease, a: &ElementRef<'_>) -> Result<JavaMetaData> {
+fn map_release(release: &GitHubRelease, a: &ElementRef<'_>) -> Result<JvmData> {
     let href = a.value().attr("href").ok_or_else(|| eyre::eyre!("no href found"))?;
     let name = href
         .split("/")
@@ -80,7 +80,7 @@ fn map_release(release: &GitHubRelease, a: &ElementRef<'_>) -> Result<JavaMetaDa
             None
         }
     };
-    Ok(JavaMetaData {
+    Ok(JvmData {
         architecture: normalize_architecture(&filename_meta.arch),
         checksum: sha512,
         checksum_url: Some(sha512_url),

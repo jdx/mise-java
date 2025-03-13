@@ -9,7 +9,7 @@ use indoc::formatdoc;
 use log::info;
 use scraper::{Html, Selector};
 
-use super::JavaMetaData;
+use super::JvmData;
 
 pub mod corretto;
 pub mod dragonwell;
@@ -49,29 +49,29 @@ pub static VENDORS: LazyLock<Vec<Arc<dyn Vendor>>> = LazyLock::new(|| {
 
 /// Represents a vendor of Java distributions
 ///
-/// A vendor is responsible for fetching the metadata of all available Java versions
+/// A vendor is responsible for fetching the data of all available Java versions
 ///
 pub trait Vendor: Send + Sync {
     /// Returns the name of the vendor
     fn get_name(&self) -> String;
 
-    /// Fetches the metadata of all available Java versions for a vendor
-    fn fetch(&self) -> Result<HashSet<JavaMetaData>> {
-        let mut meta_data = HashSet::new();
+    /// Fetches the data of all available Java versions for a vendor
+    fn fetch(&self) -> Result<HashSet<JvmData>> {
+        let mut jvm_data = HashSet::new();
         let start = std::time::Instant::now();
-        self.fetch_metadata(&mut meta_data)?;
+        self.fetch_data(&mut jvm_data)?;
 
         info!(
             "[{}] fetched {} entries in {:.2} seconds",
             self.get_name(),
-            meta_data.len(),
+            jvm_data.len(),
             start.elapsed().as_secs_f32()
         );
-        Ok(meta_data)
+        Ok(jvm_data)
     }
 
-    /// Fetches the metadata of all available Java versions for a vendor
-    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> Result<()>;
+    /// Fetches the data of all available Java versions for a vendor
+    fn fetch_data(&self, jvm_data: &mut HashSet<JvmData>) -> Result<()>;
 }
 
 /// An anchor element with a name and href

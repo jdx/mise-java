@@ -8,7 +8,7 @@ use xx::regex;
 use crate::{
     github::{self, GitHubAsset, GitHubRelease},
     http::HTTP,
-    meta::JavaMetaData,
+    jvm::JvmData,
 };
 
 use super::{Vendor, normalize_architecture, normalize_os, normalize_version};
@@ -28,7 +28,7 @@ impl Vendor for Mandrel {
         "mandrel".to_string()
     }
 
-    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> eyre::Result<()> {
+    fn fetch_data(&self, meta_data: &mut HashSet<JvmData>) -> eyre::Result<()> {
         debug!("[mandrel] fetching releases");
         let releases = github::list_releases("graalvm/mandrel")?;
         let data = releases
@@ -39,14 +39,14 @@ impl Vendor for Mandrel {
                     vec![]
                 })
             })
-            .collect::<Vec<JavaMetaData>>();
+            .collect::<Vec<JvmData>>();
         meta_data.extend(data);
 
         Ok(())
     }
 }
 
-fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
+fn map_release(release: &GitHubRelease) -> Result<Vec<JvmData>> {
     let assets = release
         .assets
         .iter()
@@ -71,7 +71,7 @@ fn include(asset: &GitHubAsset) -> bool {
     asset.name.starts_with("mandrel-") && (asset.name.ends_with(".tar.gz") || asset.name.ends_with(".zip"))
 }
 
-fn map_asset(asset: &GitHubAsset) -> Result<JavaMetaData> {
+fn map_asset(asset: &GitHubAsset) -> Result<JvmData> {
     let sha256_url = format!("{}.sha256", asset.browser_download_url);
     let sha256 = match HTTP.get_text(&sha256_url) {
         Ok(sha256) => Some(format!("sha256:{}", sha256)),
@@ -87,7 +87,7 @@ fn map_asset(asset: &GitHubAsset) -> Result<JavaMetaData> {
     };
     let filename_meta = meta_from_name(&filename)?;
     let url = asset.browser_download_url.clone();
-    Ok(JavaMetaData {
+    Ok(JvmData {
         architecture: normalize_architecture(&filename_meta.arch),
         checksum: sha256.clone(),
         checksum_url: Some(sha256_url.clone()),

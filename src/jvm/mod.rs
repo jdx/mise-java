@@ -6,7 +6,7 @@ use std::{collections::HashMap, hash::Hasher};
 pub mod vendor;
 
 #[derive(Clone, Default, Debug, Serialize, Deserialize)]
-pub struct JavaMetaData {
+pub struct JvmData {
     pub architecture: String,
     pub checksum: Option<String>,
     pub checksum_url: Option<String>,
@@ -24,7 +24,7 @@ pub struct JavaMetaData {
     pub version: String,
 }
 
-impl Hash for JavaMetaData {
+impl Hash for JvmData {
     fn hash<H: Hasher>(&self, state: &mut H) {
         self.vendor.hash(state);
         self.version.hash(state);
@@ -35,7 +35,7 @@ impl Hash for JavaMetaData {
     }
 }
 
-impl PartialEq for JavaMetaData {
+impl PartialEq for JvmData {
     fn eq(&self, other: &Self) -> bool {
         self.vendor == other.vendor
             && self.version == other.version
@@ -46,10 +46,10 @@ impl PartialEq for JavaMetaData {
     }
 }
 
-impl Eq for JavaMetaData {}
+impl Eq for JvmData {}
 
-impl JavaMetaData {
-    pub fn map(item: &JavaMetaData, properties: &Option<Vec<String>>) -> Map<String, Value> {
+impl JvmData {
+    pub fn map(item: &JvmData, properties: &Option<Vec<String>>) -> Map<String, Value> {
         let props: HashMap<String, Value> = serde_json::from_value(serde_json::to_value(item).unwrap()).unwrap();
         let mut map = Map::new();
         for prop in &props {
@@ -72,8 +72,8 @@ impl JavaMetaData {
 mod tests {
     use super::*;
 
-    fn get_metadata() -> JavaMetaData {
-        JavaMetaData {
+    fn get_jvmdata() -> JvmData {
+        JvmData {
             architecture: "x86_64".to_string(),
             checksum: Some("sha256:checksum".to_string()),
             checksum_url: Some("http://example.com/checksum".to_string()),
@@ -94,7 +94,7 @@ mod tests {
 
     #[test]
     fn test_map_with_all_properties() {
-        let metadata = get_metadata();
+        let jvm_data = get_jvmdata();
 
         let properties = Some(vec![
             "architecture".to_string(),
@@ -114,7 +114,7 @@ mod tests {
             "version".to_string(),
         ]);
 
-        let map = JavaMetaData::map(&metadata, &properties);
+        let map = JvmData::map(&jvm_data, &properties);
 
         assert_eq!(map.get("architecture").unwrap(), "x86_64");
         assert_eq!(map.get("checksum").unwrap(), "sha256:checksum");
@@ -135,7 +135,7 @@ mod tests {
 
     #[test]
     fn test_map_with_some_properties() {
-        let metadata = get_metadata();
+        let jvm_data = get_jvmdata();
         let properties = Some(vec![
             "architecture".to_string(),
             "file_type".to_string(),
@@ -144,7 +144,7 @@ mod tests {
             "version".to_string(),
         ]);
 
-        let map = JavaMetaData::map(&metadata, &properties);
+        let map = JvmData::map(&jvm_data, &properties);
 
         assert_eq!(map.get("architecture").unwrap(), "x86_64");
         assert_eq!(map.get("file_type").unwrap(), "tar.gz");

@@ -7,7 +7,7 @@ use rayon::iter::IntoParallelIterator;
 use rayon::iter::ParallelIterator;
 use serde::{Deserialize, Serialize};
 
-use crate::{http::HTTP, meta::JavaMetaData};
+use crate::{http::HTTP, jvm::JvmData};
 
 use super::{Vendor, get_extension, normalize_architecture, normalize_os, normalize_version};
 
@@ -19,7 +19,7 @@ impl Vendor for Temurin {
         "temurin".to_string()
     }
 
-    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> Result<()> {
+    fn fetch_data(&self, meta_data: &mut HashSet<JvmData>) -> Result<()> {
         // get available releases
         // https://api.adoptium.net/v3/info/available_releases
         let api_releases_url = "https://api.adoptium.net/v3/info/available_releases";
@@ -49,10 +49,10 @@ impl Vendor for Temurin {
                     match HTTP.get_json::<Vec<Release>, _>(api_url) {
                         Ok(resp) => {
                             resp.iter().for_each(|release| {
-                                let release_data: Vec<JavaMetaData> = map_release(release)
+                                let release_data: Vec<JvmData> = map_release(release)
                                     .into_iter()
                                     .filter(|m| !["sbom"].contains(&m.image_type.as_str()))
-                                    .collect::<Vec<JavaMetaData>>();
+                                    .collect::<Vec<JvmData>>();
                                 data.extend(release_data)
                             });
                             page += 1;
@@ -62,7 +62,7 @@ impl Vendor for Temurin {
                 }
                 data
             })
-            .collect::<Vec<JavaMetaData>>();
+            .collect::<Vec<JvmData>>();
         meta_data.extend(data);
         Ok(())
     }
@@ -75,7 +75,7 @@ fn normalize_features(features: &str) -> Option<Vec<String>> {
     }
 }
 
-fn map_release(release: &Release) -> Vec<JavaMetaData> {
+fn map_release(release: &Release) -> Vec<JvmData> {
     let mut meta_data = Vec::new();
     for binary in &release.binaries {
         let package = binary.package.clone();
@@ -85,7 +85,7 @@ fn map_release(release: &Release) -> Vec<JavaMetaData> {
         let package_name = package.as_ref().map(|p| p.name.clone());
         let package_extension = package_name.as_ref().map(|p| get_extension(p));
 
-        let java_meta_data = JavaMetaData {
+        let java_meta_data = JvmData {
             architecture: normalize_architecture(binary.architecture.as_str()),
             checksum: package_checksum.and_then(|c| format!("sha256:{}", c).into()),
             checksum_url: package_checksum_link,

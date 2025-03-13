@@ -8,7 +8,7 @@ use xx::regex;
 use crate::{
     github::{self, GitHubAsset, GitHubRelease},
     http::HTTP,
-    meta::JavaMetaData,
+    jvm::JvmData,
 };
 
 use super::{Vendor, normalize_architecture, normalize_os, normalize_version};
@@ -31,7 +31,7 @@ impl Vendor for Dragonwell {
         "dragonwell".to_string()
     }
 
-    fn fetch_metadata(&self, meta_data: &mut HashSet<JavaMetaData>) -> eyre::Result<()> {
+    fn fetch_data(&self, meta_data: &mut HashSet<JvmData>) -> eyre::Result<()> {
         for version in &["8", "11", "17", "21"] {
             debug!("[dragonwell] fetching releases for version: {version}");
             let repo = format!("dragonwell-project/dragonwell{}", version);
@@ -44,14 +44,14 @@ impl Vendor for Dragonwell {
                         vec![]
                     })
                 })
-                .collect::<Vec<JavaMetaData>>();
+                .collect::<Vec<JvmData>>();
             meta_data.extend(data);
         }
         Ok(())
     }
 }
 
-fn map_release(release: &GitHubRelease) -> Result<Vec<JavaMetaData>> {
+fn map_release(release: &GitHubRelease) -> Result<Vec<JvmData>> {
     let assets = release
         .assets
         .iter()
@@ -80,7 +80,7 @@ fn include(asset: &GitHubAsset) -> bool {
         && !asset.name.ends_with(".sig")
 }
 
-fn map_asset(asset: &GitHubAsset) -> Result<JavaMetaData> {
+fn map_asset(asset: &GitHubAsset) -> Result<JvmData> {
     let sha256_url = format!("{}.sha256.txt", asset.browser_download_url);
     let sha256 = match HTTP.get_text(&sha256_url) {
         Ok(sha256) => Some(format!("sha256:{}", sha256)),
@@ -93,7 +93,7 @@ fn map_asset(asset: &GitHubAsset) -> Result<JavaMetaData> {
     let filename_meta = meta_from_name(&filename)?;
     let url = asset.browser_download_url.clone();
     let version = normalize_version(&filename_meta.version);
-    Ok(JavaMetaData {
+    Ok(JvmData {
         architecture: normalize_architecture(&filename_meta.arch),
         checksum: sha256,
         checksum_url: Some(sha256_url),
