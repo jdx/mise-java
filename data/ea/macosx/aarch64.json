@@ -4412,6 +4412,23 @@
   },
   {
     "architecture": "aarch64",
+    "checksum": "sha256:7bbec765ff93f6393b7f79228521b70f31c240d812325e8fc9850d8b866ca0c1",
+    "checksum_url": "https://download.java.net/java/early_access/loom/1/openjdk-25-loom+1-11_macos-aarch64_bin.tar.gz.sha256",
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "openjdk-25-loom+1-11_macos-aarch64_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-loom+1-11",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ea",
+    "size": null,
+    "url": "https://download.java.net/java/early_access/loom/1/openjdk-25-loom+1-11_macos-aarch64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "25.0.0-loom+1-11"
+  },
+  {
+    "architecture": "aarch64",
     "checksum": "sha256:b8e371faf44a47683077a321e25ff1282b9b77c75d7dffed992453f38d6a5e22  sapmachine-jdk-21-ea.32_macos-aarch64_bin.tar.gz\n",
     "checksum_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21%2B32/sapmachine-jdk-21-ea.32_macos-aarch64_bin.sha256.txt",
     "features": null,
