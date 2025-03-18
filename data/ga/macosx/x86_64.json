@@ -38294,6 +38294,25 @@
   },
   {
     "architecture": "x86_64",
+    "checksum": "sha256:94c75b3e451d5f235cc9ef2e3311888594c4aeb4c8d0fd129ea312fbcf918ea8",
+    "checksum_url": null,
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu24.28.85-ca-fx-jdk24.0.0-macosx_x64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": 319337000,
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.28.85-ca-fx-jdk24.0.0-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "24.28.85.0"
+  },
+  {
+    "architecture": "x86_64",
     "checksum": "sha256:1277fc5eab9aec8a36222fbc2595de5319a0b64749ceec3572c4e4cd4c94a1bf",
     "checksum_url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8.1%2B1/OpenJDK17U-debugimage_x64_mac_hotspot_17.0.8.1_1.tar.gz.sha256.txt",
     "features": null,
@@ -38600,6 +38619,25 @@
   },
   {
     "architecture": "x86_64",
+    "checksum": "sha256:9052a5919c1331e98817475456f2719b8ecf4a37fd50b3744bf43ca760446db1",
+    "checksum_url": null,
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu24.28.85-ca-fx-jre24.0.0-macosx_x64.tar.gz",
+    "image_type": "jre",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": 98147700,
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.28.85-ca-fx-jre24.0.0-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "24.28.85.0"
+  },
+  {
+    "architecture": "x86_64",
     "checksum": "sha256:b8fd5441fb33c22bec0cacd0405853b1c8e138fe7d7bd7eb741993365f681074",
     "checksum_url": "https://github.com/adoptium/temurin18-binaries/releases/download/jdk-18.0.2%2B9/OpenJDK18U-debugimage_x64_mac_hotspot_18.0.2_9.tar.gz.sha256.txt",
     "features": null,
@@ -38665,6 +38703,23 @@
     "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-debugimage_x64_mac_hotspot_11.0.20_8.tar.gz",
     "vendor": "temurin",
     "version": "11.0.20+8"
+  },
+  {
+    "architecture": "x86_64",
+    "checksum": "sha256:12f03d80c08780f291b05af71fea60643fd2b4a89d65c094313c3cda5a8758c5",
+    "checksum_url": null,
+    "features": null,
+    "file_type": "zip",
+    "filename": "zulu24.28.83-ca-jre24.0.0-macosx_x64.zip",
+    "image_type": "jre",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": 57329300,
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.28.83-ca-jre24.0.0-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "24.28.83.0"
   },
   {
     "architecture": "x86_64",
@@ -39705,6 +39760,23 @@
   },
   {
     "architecture": "x86_64",
+    "checksum": "sha256:59675954827905c4fd5f8f8c7b6ff008e06509f2314b7b3317a6a50c3223a9ee",
+    "checksum_url": null,
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "zulu24.28.83-ca-jre24.0.0-macosx_x64.tar.gz",
+    "image_type": "jre",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": 57102500,
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.28.83-ca-jre24.0.0-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "24.28.83.0"
+  },
+  {
+    "architecture": "x86_64",
     "checksum": "sha256:72932251a462866aa99b5d56a03376337546e766fa6b00fd5ecd5d74705c451b",
     "checksum_url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-testimage_x64_mac_hotspot_11.0.26_4.tar.gz.sha256.txt",
     "features": null,
@@ -39838,6 +39910,25 @@
     "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.16%2B8/OpenJDK11U-debugimage_x64_mac_hotspot_11.0.16_8.tar.gz",
     "vendor": "temurin",
     "version": "11.0.16+8"
+  },
+  {
+    "architecture": "x86_64",
+    "checksum": "sha256:3d1a1dffd07bf848a88eb01373a578481a9490037f08d45671e7741144630909",
+    "checksum_url": null,
+    "features": [
+      "crac"
+    ],
+    "file_type": "zip",
+    "filename": "zulu24.28.87-ca-crac-jdk24.0.0-macosx_x64.zip",
+    "image_type": "jdk",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": 229562000,
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.28.87-ca-crac-jdk24.0.0-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "24.28.87.0"
   },
   {
     "architecture": "x86_64",
@@ -40178,6 +40269,25 @@
     "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-jre_x64_mac_hotspot_11.0.24_8.tar.gz",
     "vendor": "temurin",
     "version": "11.0.24+8"
+  },
+  {
+    "architecture": "x86_64",
+    "checksum": "sha256:78ce8090e50125007bf911291dd8d9f7bd2d446b963c42f7da774c5c750ee8b0",
+    "checksum_url": null,
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "filename": "zulu24.28.85-ca-fx-jre24.0.0-macosx_x64.zip",
+    "image_type": "jre",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": 98477000,
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.28.85-ca-fx-jre24.0.0-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "24.28.85.0"
   },
   {
     "architecture": "x86_64",
@@ -41915,6 +42025,25 @@
   },
   {
     "architecture": "x86_64",
+    "checksum": "sha256:707e75c404b422666f821bf492358c835cf15f9f65029fc7b8b3a60cbdc75c8a",
+    "checksum_url": null,
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "filename": "zulu24.28.85-ca-fx-jdk24.0.0-macosx_x64.zip",
+    "image_type": "jdk",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": 323336000,
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.28.85-ca-fx-jdk24.0.0-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "24.28.85.0"
+  },
+  {
+    "architecture": "x86_64",
     "checksum": "sha256:72e6a7a1aa3337799e5be448accb3ec8ea35b3a781712f3d5f17bff63586b032  sapmachine-jre-11.0.15.0.1_osx-x64_bin.tar.gz\n",
     "checksum_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.15.0.1/sapmachine-jre-11.0.15.0.1_osx-x64_bin.sha256.txt",
     "features": null,
@@ -41966,6 +42095,25 @@
   },
   {
     "architecture": "x86_64",
+    "checksum": "sha256:c504284e5014578384cddc37688112e9383eaf7c2192e7bfd5831338e0f7b241",
+    "checksum_url": null,
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu24.28.87-ca-crac-jdk24.0.0-macosx_x64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": 226025000,
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.28.87-ca-crac-jdk24.0.0-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "24.28.87.0"
+  },
+  {
+    "architecture": "x86_64",
     "checksum": "sha256:0fd703bbb510d75b5a120ad359e05a5c4c7b495c20b30b457b197329629f6757  sapmachine-jdk-11.0.13_osx-x64_bin.tar.gz\n",
     "checksum_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.13/sapmachine-jdk-11.0.13_osx-x64_bin.sha256.txt",
     "features": null,
@@ -42014,6 +42162,23 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-22.0.1/sapmachine-jre-22.0.1_macos-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "22.0.1"
+  },
+  {
+    "architecture": "x86_64",
+    "checksum": "sha256:7bb289b49f7e98515274a0a3ebcb617d35e0b961f9cd769249bf698735dffe54",
+    "checksum_url": null,
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "zulu24.28.83-ca-jdk24.0.0-macosx_x64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": 225379000,
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.28.83-ca-jdk24.0.0-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "24.28.83.0"
   },
   {
     "architecture": "x86_64",
@@ -42150,6 +42315,23 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13.0.2/sapmachine-jre-13.0.2_osx-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "13.0.2"
+  },
+  {
+    "architecture": "x86_64",
+    "checksum": "sha256:56292113dfbbf6b4768ba813204add7e237eda75084e294ab729b640e8488274",
+    "checksum_url": null,
+    "features": null,
+    "file_type": "zip",
+    "filename": "zulu24.28.83-ca-jdk24.0.0-macosx_x64.zip",
+    "image_type": "jdk",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": 228899000,
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.28.83-ca-jdk24.0.0-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "24.28.83.0"
   },
   {
     "architecture": "x86_64",
@@ -44751,5 +44933,22 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.1%2B13-0/sapmachine-jre-11.0.1.13_osx-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "11.0.1.13"
+  },
+  {
+    "architecture": "x86_64",
+    "checksum": "sha256:9a125e5228c63675c178e774ec3b09a8ec905561711c48ad3aaf71b406a8828c",
+    "checksum_url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-24.0.0/graalvm-community-jdk-24.0.0_macos-x64_bin.tar.gz.sha256",
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "graalvm-community-jdk-24.0.0_macos-x64_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "24.0.0",
+    "jvm_impl": "graalvm",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-24.0.0/graalvm-community-jdk-24.0.0_macos-x64_bin.tar.gz",
+    "vendor": "graalvm-community",
+    "version": "24.0.0"
   }
 ]
