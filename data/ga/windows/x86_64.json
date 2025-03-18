@@ -32765,6 +32765,23 @@
   },
   {
     "architecture": "x86_64",
+    "checksum": "sha256:433caa6f195fe8b43de7004875e2bc6aacf0191cf6c8e4e000ec247785987496",
+    "checksum_url": null,
+    "features": null,
+    "file_type": "zip",
+    "filename": "zulu24.28.83-ca-jre24.0.0-win_x64.zip",
+    "image_type": "jre",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "windows",
+    "release_type": "ga",
+    "size": 57556700,
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.28.83-ca-jre24.0.0-win_x64.zip",
+    "vendor": "zulu",
+    "version": "24.28.83.0"
+  },
+  {
+    "architecture": "x86_64",
     "checksum": "sha256:4cf9d3c7ed8ec72a8adcca290d90fdd775100a38670410e674b05233a0c8288e",
     "checksum_url": "https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22.0.1%2B8/OpenJDK22U-jdk_x64_windows_hotspot_22.0.1_8.zip.sha256.txt",
     "features": null,
@@ -33646,6 +33663,23 @@
     "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jre_x64_windows_hotspot_11.0.23_9.zip",
     "vendor": "temurin",
     "version": "11.0.23+9"
+  },
+  {
+    "architecture": "x86_64",
+    "checksum": "sha256:35f9a76f68009a829681e7e5f34d565634cdc7169a4fe4e66f04b327cb9c71ff",
+    "checksum_url": null,
+    "features": null,
+    "file_type": "zip",
+    "filename": "zulu24.28.83-ca-jdk24.0.0-win_x64.zip",
+    "image_type": "jdk",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "windows",
+    "release_type": "ga",
+    "size": 228434000,
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.28.83-ca-jdk24.0.0-win_x64.zip",
+    "vendor": "zulu",
+    "version": "24.28.83.0"
   },
   {
     "architecture": "x86_64",
@@ -34601,6 +34635,25 @@
   },
   {
     "architecture": "x86_64",
+    "checksum": "sha256:91fef9ecad97d58ff6c923d205fcd32b28afe7ec16784d02bbd7255c44f6953c",
+    "checksum_url": null,
+    "features": [
+      "crac"
+    ],
+    "file_type": "zip",
+    "filename": "zulu24.28.87-ca-crac-jdk24.0.0-win_x64.zip",
+    "image_type": "jdk",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "windows",
+    "release_type": "ga",
+    "size": 228998000,
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.28.87-ca-crac-jdk24.0.0-win_x64.zip",
+    "vendor": "zulu",
+    "version": "24.28.87.0"
+  },
+  {
+    "architecture": "x86_64",
     "checksum": "sha256:595e361d1bbb627fe4a496e3c26c2a1562d118776310cfeb9ae8845e2906d9ab",
     "checksum_url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.3%2B7/OpenJDK17U-jdk_x64_windows_hotspot_17.0.3_7.zip.sha256.txt",
     "features": null,
@@ -35485,6 +35538,25 @@
   },
   {
     "architecture": "x86_64",
+    "checksum": "sha256:9b82500b1bc2224072dd93e0437d0dff59c8de19e65976cd13c9acddb5f33c5d",
+    "checksum_url": null,
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "filename": "zulu24.28.85-ca-fx-jdk24.0.0-win_x64.zip",
+    "image_type": "jdk",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "windows",
+    "release_type": "ga",
+    "size": 318791000,
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.28.85-ca-fx-jdk24.0.0-win_x64.zip",
+    "vendor": "zulu",
+    "version": "24.28.85.0"
+  },
+  {
+    "architecture": "x86_64",
     "checksum": "sha256:859ac1f20fa31d9fc91d6568b787635d030fa49d156dedb42b0f4be5297e6e62 *sapmachine-jdk-11.0.15.0.1_windows-x64_bin.zip\n",
     "checksum_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.15.0.1/sapmachine-jdk-11.0.15.0.1_windows-x64_bin.sha256.txt",
     "features": null,
@@ -35703,6 +35775,25 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13/sapmachine-jdk-13_windows-x64_bin.zip",
     "vendor": "sapmachine",
     "version": "13.0.0"
+  },
+  {
+    "architecture": "x86_64",
+    "checksum": "sha256:7d8e34a40398a665d8a3501479fe17407387d58b61da39121b4a0b0efe032a42",
+    "checksum_url": null,
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "filename": "zulu24.28.85-ca-fx-jre24.0.0-win_x64.zip",
+    "image_type": "jre",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "windows",
+    "release_type": "ga",
+    "size": 96743000,
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.28.85-ca-fx-jre24.0.0-win_x64.zip",
+    "vendor": "zulu",
+    "version": "24.28.85.0"
   },
   {
     "architecture": "x86_64",
@@ -38389,6 +38480,23 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.1/sapmachine-jdk-17.0.1_windows-x64_bin.zip",
     "vendor": "sapmachine",
     "version": "17.0.1"
+  },
+  {
+    "architecture": "x86_64",
+    "checksum": "sha256:70175301aa551ffd55b31d4da7a604f6a09921f0b5e1af8fcbc7a66c204f87d6",
+    "checksum_url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-24.0.0/graalvm-community-jdk-24.0.0_windows-x64_bin.zip.sha256",
+    "features": null,
+    "file_type": "zip",
+    "filename": "graalvm-community-jdk-24.0.0_windows-x64_bin.zip",
+    "image_type": "jdk",
+    "java_version": "24.0.0",
+    "jvm_impl": "graalvm",
+    "os": "windows",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-24.0.0/graalvm-community-jdk-24.0.0_windows-x64_bin.zip",
+    "vendor": "graalvm-community",
+    "version": "24.0.0"
   },
   {
     "architecture": "x86_64",

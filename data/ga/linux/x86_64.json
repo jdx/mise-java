@@ -35908,6 +35908,23 @@
   },
   {
     "architecture": "x86_64",
+    "checksum": "sha256:29fea017c03c645221ba31208e510d7ae48f5735ba4169d565c46cb77e7f66f2",
+    "checksum_url": null,
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "zulu24.28.83-ca-jdk24.0.0-linux_x64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "linux",
+    "release_type": "ga",
+    "size": 230173000,
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.28.83-ca-jdk24.0.0-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "24.28.83.0"
+  },
+  {
+    "architecture": "x86_64",
     "checksum": "sha256:802d61045021eebf796b732be82659b2d498a50e9dad7f2b4802e3a085617768",
     "checksum_url": "https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-static-libs-glibc_x64_linux_hotspot_20.0.2_9.tar.gz.sha256.txt",
     "features": null,
@@ -37200,6 +37217,23 @@
   },
   {
     "architecture": "x86_64",
+    "checksum": "sha256:1057fcfe36960194386bb21a45cd4ca956f7b5842e5e5a6a50b8425f3d500f37",
+    "checksum_url": null,
+    "features": null,
+    "file_type": "zip",
+    "filename": "zulu24.28.83-ca-jdk24.0.0-linux_x64.zip",
+    "image_type": "jdk",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "linux",
+    "release_type": "ga",
+    "size": 233796000,
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.28.83-ca-jdk24.0.0-linux_x64.zip",
+    "vendor": "zulu",
+    "version": "24.28.83.0"
+  },
+  {
+    "architecture": "x86_64",
     "checksum": "sha256:6f1335d9a7855159f982dac557420397be9aa85f3f7bc84e111d25871c02c0c7",
     "checksum_url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-jdk_x64_linux_hotspot_17_35.tar.gz.sha256.txt",
     "features": null,
@@ -37316,6 +37350,25 @@
     "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-testimage_x64_linux_hotspot_17.0.11_9.tar.gz",
     "vendor": "temurin",
     "version": "17.0.11+9"
+  },
+  {
+    "architecture": "x86_64",
+    "checksum": "sha256:cbc8e2139c840a1f7aa4761914cd10fc94e255c9b96b43ce3582432d8c9d093d",
+    "checksum_url": null,
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu24.28.85-ca-fx-jdk24.0.0-linux_x64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "linux",
+    "release_type": "ga",
+    "size": 339032000,
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.28.85-ca-fx-jdk24.0.0-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "24.28.85.0"
   },
   {
     "architecture": "x86_64",
@@ -40706,6 +40759,23 @@
   },
   {
     "architecture": "x86_64",
+    "checksum": "sha256:dd2be857826d2f82061a39704a0f443711a2aea97714f843a3d783e94c74a0be",
+    "checksum_url": null,
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "zulu24.28.83-ca-jre24.0.0-linux_x64.tar.gz",
+    "image_type": "jre",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "linux",
+    "release_type": "ga",
+    "size": 60094700,
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.28.83-ca-jre24.0.0-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "24.28.83.0"
+  },
+  {
+    "architecture": "x86_64",
     "checksum": "sha256:885ff6ff1517d4d0048f92b138b880dfa47af340be79b578757fba94509e6e22  sapmachine-jre-17.0.10_linux-x64-musl_bin.tar.gz\n",
     "checksum_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.10/sapmachine-jre-17.0.10_linux-x64-musl_bin.sha256.txt",
     "features": [
@@ -40796,6 +40866,61 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17/sapmachine-jre-17_linux-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "17.0.0"
+  },
+  {
+    "architecture": "x86_64",
+    "checksum": "sha256:7815e90b4f805e8d4f8d712e6740f844b56f9d4a469cb4baf81ff3fcf02dbfee",
+    "checksum_url": null,
+    "features": null,
+    "file_type": "zip",
+    "filename": "zulu24.28.83-ca-jre24.0.0-linux_x64.zip",
+    "image_type": "jre",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "linux",
+    "release_type": "ga",
+    "size": 60212900,
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.28.83-ca-jre24.0.0-linux_x64.zip",
+    "vendor": "zulu",
+    "version": "24.28.83.0"
+  },
+  {
+    "architecture": "x86_64",
+    "checksum": "sha256:74fd6b44281319ca228a194122acf0ed1d7cc6f3b64d6293ba9ee69795174913",
+    "checksum_url": null,
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu24.28.85-ca-fx-jre24.0.0-linux_x64.tar.gz",
+    "image_type": "jre",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "linux",
+    "release_type": "ga",
+    "size": 108713000,
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.28.85-ca-fx-jre24.0.0-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "24.28.85.0"
+  },
+  {
+    "architecture": "x86_64",
+    "checksum": "sha256:0a6e419527754a4509ab2f907055e6c87a40f3ed3816b1a417ffc80ec2da302a",
+    "checksum_url": null,
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu24.28.87-ca-crac-jdk24.0.0-linux_x64.tar.gz",
+    "image_type": "jdk",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "linux",
+    "release_type": "ga",
+    "size": 236147000,
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.28.87-ca-crac-jdk24.0.0-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "24.28.87.0"
   },
   {
     "architecture": "x86_64",
@@ -41256,6 +41381,25 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.2/sapmachine-jre-21.0.2_linux-x64-musl_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "21.0.2"
+  },
+  {
+    "architecture": "x86_64",
+    "checksum": "sha256:dbaf3964d43bdf281e065730bb424033fa342b7e30f10d540333fdae5e6bdef3",
+    "checksum_url": null,
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "filename": "zulu24.28.87-ca-crac-jre24.0.0-linux_x64.tar.gz",
+    "image_type": "jre",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "linux",
+    "release_type": "ga",
+    "size": 63090000,
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.28.87-ca-crac-jre24.0.0-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "24.28.87.0"
   },
   {
     "architecture": "x86_64",
@@ -44145,5 +44289,22 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.21/sapmachine-jdk-11.0.21_linux-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "11.0.21"
+  },
+  {
+    "architecture": "x86_64",
+    "checksum": "sha256:6476257f3e8e652860c9dfcfea213961ec88a74d7025299d3e95b9441ee5213a",
+    "checksum_url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-24.0.0/graalvm-community-jdk-24.0.0_linux-x64_bin.tar.gz.sha256",
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "graalvm-community-jdk-24.0.0_linux-x64_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "24.0.0",
+    "jvm_impl": "graalvm",
+    "os": "linux",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-24.0.0/graalvm-community-jdk-24.0.0_linux-x64_bin.tar.gz",
+    "vendor": "graalvm-community",
+    "version": "24.0.0"
   }
 ]
