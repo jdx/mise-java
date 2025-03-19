@@ -44950,5 +44950,39 @@
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-24.0.0/graalvm-community-jdk-24.0.0_macos-x64_bin.tar.gz",
     "vendor": "graalvm-community",
     "version": "24.0.0"
+  },
+  {
+    "architecture": "x86_64",
+    "checksum": "sha256:c08f9fbe18ded438cd56bc3b51c705999759221899acc83d4bd2cdeea0e4989f sapmachine-jdk-24_macos-x64_bin.tar.gz\n",
+    "checksum_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-24/sapmachine-jdk-24_macos-x64_bin.sha256.txt",
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-24_macos-x64_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-24/sapmachine-jdk-24_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "24.0.0"
+  },
+  {
+    "architecture": "x86_64",
+    "checksum": "sha256:8e10b69078bee1171ddb959a668bbd52487886d5ea4b5646e9c4fdff03e6015d sapmachine-jre-24_macos-x64_bin.tar.gz\n",
+    "checksum_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-24/sapmachine-jre-24_macos-x64_bin.sha256.txt",
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jre-24_macos-x64_bin.tar.gz",
+    "image_type": "jre",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-24/sapmachine-jre-24_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "24.0.0"
   }
 ]
