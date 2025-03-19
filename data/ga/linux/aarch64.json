@@ -33286,5 +33286,39 @@
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-24.0.0/graalvm-community-jdk-24.0.0_linux-aarch64_bin.tar.gz",
     "vendor": "graalvm-community",
     "version": "24.0.0"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha256:2fba750a5afdb192c816fa5def46502b3d8df972c3759cc573cbb855e46173bf sapmachine-jdk-24_linux-aarch64_bin.tar.gz\n",
+    "checksum_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-24/sapmachine-jdk-24_linux-aarch64_bin.sha256.txt",
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-24_linux-aarch64_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "linux",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-24/sapmachine-jdk-24_linux-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "24.0.0"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha256:6f671c1978a7ab79d88496c56a280f7222f565db527b7de6f4ca89d89438371a sapmachine-jre-24_linux-aarch64_bin.tar.gz\n",
+    "checksum_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-24/sapmachine-jre-24_linux-aarch64_bin.sha256.txt",
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jre-24_linux-aarch64_bin.tar.gz",
+    "image_type": "jre",
+    "java_version": "24.0.0",
+    "jvm_impl": "hotspot",
+    "os": "linux",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-24/sapmachine-jre-24_linux-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "24.0.0"
   }
 ]
