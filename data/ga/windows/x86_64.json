@@ -15879,23 +15879,6 @@
   },
   {
     "architecture": "x86_64",
-    "checksum": "sha256:9cc96d1000854947b3efe1b6d075836e3191c9009462aea13200e26ba45403e8  target/windows/x64/dragonwell/OpenJDK21U-jdk_x64_windows_dragonwell_2025-02-25-03-06.zip\n",
-    "checksum_url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-standard-21.0.6.0.6%2B7_jdk-21.0.6-ga/Alibaba_Dragonwell_Standard_21.0.6.0.6.7_x64_windows.zip.sha256.txt",
-    "features": null,
-    "file_type": "zip",
-    "filename": "Alibaba_Dragonwell_Standard_21.0.6.0.6.7_x64_windows.zip",
-    "image_type": "jdk",
-    "java_version": "21.0.6.0.6.7",
-    "jvm_impl": "hotspot",
-    "os": "windows",
-    "release_type": "ga",
-    "size": null,
-    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-standard-21.0.6.0.6%2B7_jdk-21.0.6-ga/Alibaba_Dragonwell_Standard_21.0.6.0.6.7_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "21.0.6.0.6.7"
-  },
-  {
-    "architecture": "x86_64",
     "checksum": "sha256:b77de54be5ef1595fc568f6f18fbd4b61d64d99a0c9c5ef78a84018b4f82032b  target/windows/x64/dragonwell/OpenJDK21U-jdk_x64_windows_dragonwell_2024-02-20-06-57.zip\n",
     "checksum_url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-standard-21.0.2.0.2%2B13_jdk-21.0.2-ga/Alibaba_Dragonwell_Standard_21.0.2.0.2.13_x64_windows.zip.sha256.txt",
     "features": null,
@@ -29297,6 +29280,27 @@
   },
   {
     "architecture": "x86_64",
+    "checksum": "sha1:d0e57d645ed3b9810537e85c2d71ab537e2f9e26",
+    "checksum_url": null,
+    "features": [
+      "libericafx",
+      "minimal-vm",
+      "javafx"
+    ],
+    "file_type": "zip",
+    "filename": "bellsoft-jdk24+37-windows-amd64-full.zip",
+    "image_type": "jdk",
+    "java_version": "24.0.0+37",
+    "jvm_impl": "hotspot",
+    "os": "windows",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://github.com/bell-sw/Liberica/releases/download/24%2B37/bellsoft-jdk24%2B37-windows-amd64-full.zip",
+    "vendor": "liberica",
+    "version": "24.0.0+37"
+  },
+  {
+    "architecture": "x86_64",
     "checksum": "sha256:feba0580d91ddbba9cb7fdac614bc8800d8fa1a3035c9ee3ce9dc8de2ee5aa62  ibm-semeru-open-jdk_x64_windows_11.0.16.1_1_openj9-0.33.1.zip\n",
     "checksum_url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.16.1%2B1_openj9-0.33.1/ibm-semeru-open-jdk_x64_windows_11.0.16.1_1_openj9-0.33.1.zip.sha256.txt",
     "features": null,
@@ -29583,6 +29587,27 @@
     "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u345-b01_openj9-0.33.0/ibm-semeru-open-jre_x64_windows_8u345b01_openj9-0.33.0.zip",
     "vendor": "semeru",
     "version": "8u345-b01_openj9-0.33.0"
+  },
+  {
+    "architecture": "x86_64",
+    "checksum": "sha1:e4c06ec53ab0107cc7f104dcffd5be38ff6eea01",
+    "checksum_url": null,
+    "features": [
+      "libericafx",
+      "minimal-vm",
+      "javafx"
+    ],
+    "file_type": "zip",
+    "filename": "bellsoft-jre24+37-windows-amd64-full.zip",
+    "image_type": "jre",
+    "java_version": "24.0.0+37",
+    "jvm_impl": "hotspot",
+    "os": "windows",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://github.com/bell-sw/Liberica/releases/download/24%2B37/bellsoft-jre24%2B37-windows-amd64-full.zip",
+    "vendor": "liberica",
+    "version": "24.0.0+37"
   },
   {
     "architecture": "x86_64",
@@ -38582,5 +38607,22 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-24/sapmachine-jre-24_windows-x64_bin.zip",
     "vendor": "sapmachine",
     "version": "24.0.0"
+  },
+  {
+    "architecture": "x86_64",
+    "checksum": "sha256:71199f301e5f1e63ad3901f8bc9f83be7ef815cb02285725feecf78195bc89ce  target/windows/x64/dragonwell/OpenJDK21U-jdk_x64_windows_dragonwell_2025-03-20-01-50.zip\n",
+    "checksum_url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.6.0.6%2B7_jdk-21.0.6-ga/Alibaba_Dragonwell_Extended_21.0.6.0.6.7_x64_windows.zip.sha256.txt",
+    "features": null,
+    "file_type": "zip",
+    "filename": "Alibaba_Dragonwell_Extended_21.0.6.0.6.7_x64_windows.zip",
+    "image_type": "jdk",
+    "java_version": "21.0.6.0.6.7",
+    "jvm_impl": "hotspot",
+    "os": "windows",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.6.0.6%2B7_jdk-21.0.6-ga/Alibaba_Dragonwell_Extended_21.0.6.0.6.7_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "21.0.6.0.6.7"
   }
 ]

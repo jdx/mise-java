@@ -26548,6 +26548,27 @@
   },
   {
     "architecture": "aarch64",
+    "checksum": "sha1:0411873b237306a89b3534fc209fa85356b931bd",
+    "checksum_url": null,
+    "features": [
+      "libericafx",
+      "minimal-vm",
+      "javafx"
+    ],
+    "file_type": "zip",
+    "filename": "bellsoft-jre24+37-macos-aarch64-full.zip",
+    "image_type": "jre",
+    "java_version": "24.0.0+37",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://github.com/bell-sw/Liberica/releases/download/24%2B37/bellsoft-jre24%2B37-macos-aarch64-full.zip",
+    "vendor": "liberica",
+    "version": "24.0.0+37"
+  },
+  {
+    "architecture": "aarch64",
     "checksum": "sha256:a18df33b31b0598ea44b01fede6c81f2d25523473fa1b2d1c5489993cb3ef745  ibm-semeru-open-jre_aarch64_mac_18.0.1.1_2_openj9-0.32.0.tar.gz\n",
     "checksum_url": "https://github.com/ibmruntimes/semeru18-binaries/releases/download/jdk-18.0.1.1%2B2_openj9-0.32.0/ibm-semeru-open-jre_aarch64_mac_18.0.1.1_2_openj9-0.32.0.tar.gz.sha256.txt",
     "features": null,
@@ -26732,6 +26753,27 @@
     "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.9%2B9_openj9-0.41.0/ibm-semeru-open-jdk_aarch64_mac_17.0.9_9_openj9-0.41.0.tar.gz",
     "vendor": "semeru",
     "version": "17.0.9+9_openj9-0.41.0"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha1:9dd8b3861891b9af5f14427a8d44d41642d82473",
+    "checksum_url": null,
+    "features": [
+      "libericafx",
+      "minimal-vm",
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "filename": "bellsoft-jdk24+37-macos-aarch64-full.tar.gz",
+    "image_type": "jdk",
+    "java_version": "24.0.0+37",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://github.com/bell-sw/Liberica/releases/download/24%2B37/bellsoft-jdk24%2B37-macos-aarch64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "24.0.0+37"
   },
   {
     "architecture": "aarch64",
@@ -27466,6 +27508,27 @@
   },
   {
     "architecture": "aarch64",
+    "checksum": "sha1:ccdabb03fd62a58045c707ca3853ad0b900f933f",
+    "checksum_url": null,
+    "features": [
+      "libericafx",
+      "minimal-vm",
+      "javafx"
+    ],
+    "file_type": "zip",
+    "filename": "bellsoft-jdk24+37-macos-aarch64-full.zip",
+    "image_type": "jdk",
+    "java_version": "24.0.0+37",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://github.com/bell-sw/Liberica/releases/download/24%2B37/bellsoft-jdk24%2B37-macos-aarch64-full.zip",
+    "vendor": "liberica",
+    "version": "24.0.0+37"
+  },
+  {
+    "architecture": "aarch64",
     "checksum": "sha256:b11a3ddabb7a2c213e4499be3b4cb34f1985ae6048a808c8b5605b37fe609fa4",
     "checksum_url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-debugimage_aarch64_mac_hotspot_21.0.2_13.tar.gz.sha256.txt",
     "features": null,
@@ -27667,6 +27730,27 @@
     "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-static-libs_aarch64_mac_hotspot_21.0.5_11.tar.gz",
     "vendor": "temurin",
     "version": "21.0.5+11.0.LTS"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha1:346630f0f4b4dee0930cbc99a5baf54e72c41586",
+    "checksum_url": null,
+    "features": [
+      "libericafx",
+      "minimal-vm",
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "filename": "bellsoft-jre24+37-macos-aarch64-full.tar.gz",
+    "image_type": "jre",
+    "java_version": "24.0.0+37",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://github.com/bell-sw/Liberica/releases/download/24%2B37/bellsoft-jre24%2B37-macos-aarch64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "24.0.0+37"
   },
   {
     "architecture": "aarch64",
@@ -33476,5 +33560,90 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-24/sapmachine-jre-24_macos-aarch64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "24.0.0"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha256:355126c76ef4b851a8a3714b6cb198327ca08c6ba5f5fe6c850891df0a64d0c5",
+    "checksum_url": "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-testimage_aarch64_mac_hotspot_24_36.tar.gz.sha256.txt",
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "OpenJDK24U-testimage_aarch64_mac_hotspot_24_36.tar.gz",
+    "image_type": "testimage",
+    "java_version": "24+36",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": 97273986,
+    "url": "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-testimage_aarch64_mac_hotspot_24_36.tar.gz",
+    "vendor": "temurin",
+    "version": "24.0.0+36"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha256:fa9783caf9298b7e927b4589435257cf9a2cf12e1eb915992911b988f3d310bc",
+    "checksum_url": "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jre_aarch64_mac_hotspot_24_36.tar.gz.sha256.txt",
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "OpenJDK24U-jre_aarch64_mac_hotspot_24_36.tar.gz",
+    "image_type": "jre",
+    "java_version": "24+36",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": 55640983,
+    "url": "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jre_aarch64_mac_hotspot_24_36.tar.gz",
+    "vendor": "temurin",
+    "version": "24.0.0+36"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha256:3870b3f99c9964e6b1922ba9c92baf688043114b35db53329ad14ccfd9fe007d",
+    "checksum_url": "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-debugimage_aarch64_mac_hotspot_24_36.tar.gz.sha256.txt",
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "OpenJDK24U-debugimage_aarch64_mac_hotspot_24_36.tar.gz",
+    "image_type": "debugimage",
+    "java_version": "24+36",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": 51030130,
+    "url": "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-debugimage_aarch64_mac_hotspot_24_36.tar.gz",
+    "vendor": "temurin",
+    "version": "24.0.0+36"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha256:8e343d2aaa1d00fdee351d392a4a3f537d81fa4a36f5fdf05e2e2c26d5c50af9",
+    "checksum_url": "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_aarch64_mac_hotspot_24_36.tar.gz.sha256.txt",
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "OpenJDK24U-jdk_aarch64_mac_hotspot_24_36.tar.gz",
+    "image_type": "jdk",
+    "java_version": "24+36",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": 135758891,
+    "url": "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-jdk_aarch64_mac_hotspot_24_36.tar.gz",
+    "vendor": "temurin",
+    "version": "24.0.0+36"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha256:323573694b1211cd691524f3095c2f8b131281b6a4fd7b48bc9b649dfa869fee",
+    "checksum_url": "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-static-libs_aarch64_mac_hotspot_24_36.tar.gz.sha256.txt",
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "OpenJDK24U-static-libs_aarch64_mac_hotspot_24_36.tar.gz",
+    "image_type": "staticlibs",
+    "java_version": "24+36",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": 3658687,
+    "url": "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-static-libs_aarch64_mac_hotspot_24_36.tar.gz",
+    "vendor": "temurin",
+    "version": "24.0.0+36"
   }
 ]
