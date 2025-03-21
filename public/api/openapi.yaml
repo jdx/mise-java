@@ -47,7 +47,16 @@ components:
       enum: 
         - "aarch64"
         - "arm32"
+        - "arm32-vfp-hflt"
         - "i686"
+        - "ppc32"
+        - "ppc32hf"
+        - "ppc32spe"
+        - "ppc64"
+        - "s390"
+        - "s390x"
+        - "sparc"
+        - "riscv64"
         - "x86_64"
     image_types:
       type: "string"
@@ -66,8 +75,10 @@ components:
       type: "string"
       description: "Operating system of the JVM"
       enum: 
+        - "aix"
         - "linux"
         - "macosx"
+        - "solaris"
         - "windows"
     release_types:
       type: "string"

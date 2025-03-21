@@ -119,12 +119,14 @@ pub fn anchors_from_html(html: &str, selector: &str) -> Vec<AnchorElement> {
 /// Normalizes the architecture string to a common format
 fn normalize_architecture(architecture: &str) -> String {
     match architecture {
-        "amd64" | "x64" | "x86_64" | "x86-64" => "x86_64".to_string(),
+        "amd64" | "x64" | "x86_64" | "x86-64" | "x86lx64" => "x86_64".to_string(),
         "x32" | "x86" | "x86_32" | "x86-32" | "i386" | "i586" | "i686" => "i686".to_string(),
         "aarch64" | "arm64" => "aarch64".to_string(),
         "arm32" | "armv7" | "arm" | "aarch32sf" => "arm32".to_string(),
         "arm32-vfp-hflt" | "aarch32hf" => "arm32-vfp-hflt".to_string(),
         "ppc" => "ppc32".to_string(),
+        "ppc32hf" => "ppc32hf".to_string(),
+        "ppc32spe" => "ppc32spe".to_string(),
         "ppc64" => "ppc64".to_string(),
         "ppc64le" => "ppc64le".to_string(),
         "s390" => "s390".to_string(),
@@ -205,6 +207,9 @@ mod tests {
         assert_eq!(normalize_architecture("aarch32sf"), "arm32");
         assert_eq!(normalize_architecture("arm32-vfp-hflt"), "arm32-vfp-hflt");
         assert_eq!(normalize_architecture("aarch32hf"), "arm32-vfp-hflt");
+        assert_eq!(normalize_architecture("ppc"), "ppc32");
+        assert_eq!(normalize_architecture("ppc32hf"), "ppc32hf");
+        assert_eq!(normalize_architecture("ppc32spe"), "ppc32spe");
         assert_eq!(normalize_architecture("ppc64"), "ppc64");
         assert_eq!(normalize_architecture("ppc64le"), "ppc64le");
         assert_eq!(normalize_architecture("s390"), "s390");
