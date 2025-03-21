@@ -3,7 +3,8 @@
 ![Test](https://github.com/roele/roast/workflows/Build%20and%20Test/badge.svg)
 ![Update JVM Data](https://github.com/roele/roast/workflows/Update%20Data/badge.svg)
 
-Roast is a data crawler that collects and stores information about JVM distributions from various vendors.
+Roast is a data crawler that collects and stores information about JVM distributions from various vendors. The project
+is heavily based on the [Java Metadata](https://github.com/joschi/java-metadata) project.
 
 Supported distributions:
 
@@ -25,7 +26,23 @@ Supported distributions:
 
 ## Schema
 
-See [OpenAPI Specification](public/api/) for the schema of the JVM data.
+| Field name     | Description                           |
+| -------------- | ------------------------------------- |
+| `architecture` | Supported machine architecture        |
+| `checksum`     | Checksum of the artifact              |
+| `checksum_url` | Checksum URI of the artifact          |
+| `features`     | Features of the distribution          |
+| `file_type`    | File extension of the artifact        |
+| `filename`     | Filename of the artifact              |
+| `release_type` | `ga` (stable) or `ea` (early access)  |
+| `image_type`   | JRE (`jre`) or JDK (`jdk`)            |
+| `jvm_impl`     | JVM implementation                    |
+| `java_version` | Java version the artifact is based on |
+| `os`           | Supported operating system            |
+| `size`         | Size of the artifact in bytes         |
+| `url`          | Full source URL of the artifact       |
+| `vendor`       | JVM vendor name                       |
+| `version`      | Version of the JVM distribution       |
 
 ## Build & Run
 
