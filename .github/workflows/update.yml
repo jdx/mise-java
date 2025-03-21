@@ -15,6 +15,7 @@ permissions:
 
 env:
   CARGO_TERM_COLOR: always
+  RAYON_NUM_THREADS: ${{ vars.RAYON_NUM_THREADS }}
   ROAST_DATABASE_URL: ${{ secrets.ROAST_DATABASE_URL }}
   RUST_BACKTRACE: 1
   RUST_LOG: roast=INFO
