@@ -1,0 +1,151 @@
+openapi: "3.1.1"
+info:
+  version: "1.0.0"
+  title: "JVM Data API"
+  description: "JVM Data of various JVM distributions"
+servers:
+  - url: "https://roast.github.io/"
+paths:
+  /jvm/{release_type}/{operating_system}/{architecture}.json:
+    get:
+      operationId: "findByReleaseTypeOsArch"
+      description: ""
+      parameters:
+        - in: "path"
+          name: "architecture"
+          required: true
+          schema:
+            $ref: '#/components/schemas/architectures'
+        - in: "path"
+          name: "operating_system"
+          required: true
+          schema:
+            $ref: '#/components/schemas/operating_systems'
+        - in: "path"
+          name: "release_type"
+          required: true
+          schema:
+            $ref: '#/components/schemas/release_types'
+      responses:
+        200:
+          description: "JVM data for the specified release type, operating system, and architecture"
+          content:
+            "application/json":
+              schema:
+                $ref: '#/components/schemas/response'
+        404:
+          description: "Not found"
+          content:
+            "text/html":
+              schema:
+                type: "string"
+components:
+  schemas:
+    architectures:
+      type: "string"
+      description: "Architecture of the JVM"
+      enum: 
+        - "aarch64"
+        - "arm32"
+        - "i686"
+        - "x86_64"
+    image_types:
+      type: "string"
+      description: "Image type of the JVM"
+      enum: 
+        - "jdk"
+        - "jre"
+    jvm_impls:
+      type: "string"
+      description: "Implementation of the JVM"
+      enum: 
+        - "graalvm"
+        - "hotspot"
+        - "openj9"
+    operating_systems:
+      type: "string"
+      description: "Operating system of the JVM"
+      enum: 
+        - "linux"
+        - "macosx"
+        - "windows"
+    release_types:
+      type: "string"
+      description: "Release type of the JVM"
+      enum: 
+        - "ea"
+        - "ga"
+    vendors:
+      type: "string"
+      description: "Vendor of the JVM"
+      enum: 
+        - "corretto"
+        - "dragonwell"
+        - "graalvm"
+        - "jetbrains"
+        - "kona"
+        - "liberica"
+        - "mandrel"
+        - "microsoft"
+        - "openjdk"
+        - "oracle"
+        - "sapmachine"
+        - "semeru"
+        - "temurin"
+        - "trava"
+        - "zulu"
+    jvm_data:
+      type: "object"
+      additionalProperties: false
+      required:
+        - architecture
+        - file_type
+        - filename
+        - image_type
+        - java_version
+        - jvm_impl
+        - os
+        - release_type
+        - url
+        - vendor
+        - version
+      properties:
+        architecture:
+          type: "string"
+        checksum:
+          type: "string"
+          pattern: '^(md5:[a-fA-F0-9]{32}|sha1:[a-fA-F0-9]{40}|sha256:[a-fA-F0-9]{64}|sha512:[a-fA-F0-9]{128})$'
+        checksum_url:
+          type: "string"
+          format: uri
+        features:
+          type: "array"
+          items:
+            type: "string"
+        file_type:
+          type: "string"
+        filename:
+          type: "string"
+        image_type:
+          $ref: '#/components/schemas/image_types'
+        java_version:
+          type: "string"
+        jvm_impl:
+          $ref: '#/components/schemas/jvm_impls'
+        os:
+          $ref: '#/components/schemas/operating_systems'
+        release_type:
+          $ref: '#/components/schemas/release_types'
+        size:
+          type: "number"
+        url:
+          type: "string"
+          format: uri
+        vendor:
+          $ref: '#/components/schemas/vendors'
+        version:
+          type: "string"
+    response:
+      type: array
+      items:
+        $ref: '#/components/schemas/jvm_data'
