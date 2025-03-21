@@ -35284,6 +35284,23 @@
   },
   {
     "architecture": "x86_64",
+    "checksum": "sha256:d13e89237022af1d90c1a0818d1495893b685195c80eb32c69f60037663b6550",
+    "checksum_url": "https://download.java.net/java/early_access/jdk25/15/GPL/openjdk-25-ea+15_macos-x64_bin.tar.gz.sha256",
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "openjdk-25-ea+15_macos-x64_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-ea+15",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ea",
+    "size": null,
+    "url": "https://download.java.net/java/early_access/jdk25/15/GPL/openjdk-25-ea+15_macos-x64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "25.0.0-ea+15"
+  },
+  {
+    "architecture": "x86_64",
     "checksum": "sha256:8259c4f809ee060d65aacb9249169bf843c0c7681a27a1c3bd1b45fb923ae43f  sapmachine-jdk-17.0.7-ea.2_macos-x64_bin.tar.gz\n",
     "checksum_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.7%2B2/sapmachine-jdk-17.0.7-ea.2_macos-x64_bin.sha256.txt",
     "features": null,
@@ -36896,5 +36913,39 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-13%2B6/sapmachine-jdk-13-ea.6_osx-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "13.0.0-ea.6"
+  },
+  {
+    "architecture": "x86_64",
+    "checksum": "sha256:e8b8e90fdd667760cab4fab60e59d5cf1c619708f8c36128133af4b1d9272254 sapmachine-jdk-25-ea.14_macos-x64_bin.tar.gz\n",
+    "checksum_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B14/sapmachine-jdk-25-ea.14_macos-x64_bin.sha256.txt",
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-25-ea.14_macos-x64_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-ea.14",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ea",
+    "size": null,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B14/sapmachine-jdk-25-ea.14_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.0-ea.14"
+  },
+  {
+    "architecture": "x86_64",
+    "checksum": "sha256:0de96d45c551e35d0d3e17374c8de2d95ec51e652a704aba55290e5ab771c934 sapmachine-jre-25-ea.14_macos-x64_bin.tar.gz\n",
+    "checksum_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B14/sapmachine-jre-25-ea.14_macos-x64_bin.sha256.txt",
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jre-25-ea.14_macos-x64_bin.tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.0-ea.14",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ea",
+    "size": null,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B14/sapmachine-jre-25-ea.14_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.0-ea.14"
   }
 ]
