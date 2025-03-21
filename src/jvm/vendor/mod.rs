@@ -122,6 +122,7 @@ fn normalize_architecture(architecture: &str) -> String {
         "aarch64" | "arm64" => "aarch64".to_string(),
         "arm32" | "armv7" | "arm" | "aarch32sf" => "arm32".to_string(),
         "arm32-vfp-hflt" | "aarch32hf" => "arm32-vfp-hflt".to_string(),
+        "ppc" => "ppc32".to_string(),
         "ppc64" => "ppc64".to_string(),
         "ppc64le" => "ppc64le".to_string(),
         "s390" => "s390".to_string(),
