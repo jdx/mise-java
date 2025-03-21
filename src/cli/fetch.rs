@@ -43,7 +43,7 @@ impl Fetch {
                     };
 
                     info!("[{}] fetching meta data", name);
-                    let meta_data = match vendor.fetch() {
+                    let jvm_data = match vendor.fetch() {
                         Ok(data) => data,
                         Err(err) => {
                             error!("[{}] failed to fetch meta data: {}", name, err);
@@ -52,7 +52,7 @@ impl Fetch {
                     };
 
                     info!("[{}] writing to database", name);
-                    match db.insert(&meta_data) {
+                    match db.insert(&jvm_data) {
                         Ok(result) => {
                             info!("[{}] inserted/modified {} records", name, result)
                         }

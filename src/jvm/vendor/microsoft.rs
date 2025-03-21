@@ -28,7 +28,7 @@ impl Vendor for Microsoft {
         "microsoft".to_string()
     }
 
-    fn fetch_data(&self, meta_data: &mut HashSet<JvmData>) -> Result<()> {
+    fn fetch_data(&self, jvm_data: &mut HashSet<JvmData>) -> Result<()> {
         let urls = vec![
             "https://docs.microsoft.com/en-us/java/openjdk/download",
             "https://learn.microsoft.com/en-us/java/openjdk/older-releases",
@@ -63,7 +63,7 @@ impl Vendor for Microsoft {
                 }
             })
             .collect::<Vec<JvmData>>();
-        meta_data.extend(data);
+        jvm_data.extend(data);
         Ok(())
     }
 }

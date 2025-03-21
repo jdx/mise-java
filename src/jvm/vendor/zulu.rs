@@ -19,7 +19,7 @@ impl Vendor for Zulu {
         "zulu".to_string()
     }
 
-    fn fetch_data(&self, meta_data: &mut HashSet<JvmData>) -> Result<()> {
+    fn fetch_data(&self, jvm_data: &mut HashSet<JvmData>) -> Result<()> {
         let mut page = 1;
         let page_size = 1000;
         let mut all_packages: Vec<Package> = Vec::new();
@@ -41,13 +41,13 @@ impl Vendor for Zulu {
                 Err(_) => break,
             }
         }
-        meta_data.extend(map_packages(all_packages)?);
+        jvm_data.extend(map_packages(all_packages)?);
         Ok(())
     }
 }
 
 fn map_packages(packages: Vec<Package>) -> Result<Vec<JvmData>> {
-    let mut meta_data: Vec<JvmData> = Vec::new();
+    let mut jvm_data: Vec<JvmData> = Vec::new();
     for package in packages {
         let arch = match arch_from_name(&package.name) {
             Ok(arch) => arch,
@@ -80,9 +80,9 @@ fn map_packages(packages: Vec<Package>) -> Result<Vec<JvmData>> {
             version,
             ..Default::default()
         };
-        meta_data.push(meta);
+        jvm_data.push(meta);
     }
-    Ok(meta_data)
+    Ok(jvm_data)
 }
 
 fn arch_from_name(name: &str) -> Result<&str> {

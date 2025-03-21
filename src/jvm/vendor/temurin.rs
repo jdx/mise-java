@@ -19,7 +19,7 @@ impl Vendor for Temurin {
         "temurin".to_string()
     }
 
-    fn fetch_data(&self, meta_data: &mut HashSet<JvmData>) -> Result<()> {
+    fn fetch_data(&self, jvm_data: &mut HashSet<JvmData>) -> Result<()> {
         // get available releases
         // https://api.adoptium.net/v3/info/available_releases
         let api_releases_url = "https://api.adoptium.net/v3/info/available_releases";
@@ -63,7 +63,7 @@ impl Vendor for Temurin {
                 data
             })
             .collect::<Vec<JvmData>>();
-        meta_data.extend(data);
+        jvm_data.extend(data);
         Ok(())
     }
 }
@@ -76,7 +76,7 @@ fn normalize_features(features: &str) -> Option<Vec<String>> {
 }
 
 fn map_release(release: &Release) -> Vec<JvmData> {
-    let mut meta_data = Vec::new();
+    let mut jvm_data = Vec::new();
     for binary in &release.binaries {
         let package = binary.package.clone();
         let package_checksum = package.as_ref().and_then(|p| p.checksum.clone());
@@ -85,7 +85,7 @@ fn map_release(release: &Release) -> Vec<JvmData> {
         let package_name = package.as_ref().map(|p| p.name.clone());
         let package_extension = package_name.as_ref().map(|p| get_extension(p));
 
-        let java_meta_data = JvmData {
+        let java_jvm_data = JvmData {
             architecture: normalize_architecture(binary.architecture.as_str()),
             checksum: package_checksum.and_then(|c| format!("sha256:{}", c).into()),
             checksum_url: package_checksum_link,
@@ -102,9 +102,9 @@ fn map_release(release: &Release) -> Vec<JvmData> {
             vendor: "temurin".to_string(),
             version: normalize_version(release.version_data.semver.clone().as_str()),
         };
-        meta_data.push(java_meta_data);
+        jvm_data.push(java_jvm_data);
     }
-    meta_data
+    jvm_data
 }
 
 #[derive(Clone, Debug, Deserialize, Serialize)]

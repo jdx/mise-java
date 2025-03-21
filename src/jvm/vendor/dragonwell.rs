@@ -31,7 +31,7 @@ impl Vendor for Dragonwell {
         "dragonwell".to_string()
     }
 
-    fn fetch_data(&self, meta_data: &mut HashSet<JvmData>) -> eyre::Result<()> {
+    fn fetch_data(&self, jvm_data: &mut HashSet<JvmData>) -> eyre::Result<()> {
         for version in &["8", "11", "17", "21"] {
             debug!("[dragonwell] fetching releases for version: {version}");
             let repo = format!("dragonwell-project/dragonwell{}", version);
@@ -45,7 +45,7 @@ impl Vendor for Dragonwell {
                     })
                 })
                 .collect::<Vec<JvmData>>();
-            meta_data.extend(data);
+            jvm_data.extend(data);
         }
         Ok(())
     }
@@ -58,7 +58,7 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JvmData>> {
         .filter(|asset| include(asset))
         .collect::<Vec<&GitHubAsset>>();
 
-    let meta_data = assets
+    let jvm_data = assets
         .into_par_iter()
         .filter_map(|asset| match map_asset(asset) {
             Ok(meta) => Some(meta),
@@ -69,7 +69,7 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JvmData>> {
         })
         .collect::<Vec<_>>();
 
-    Ok(meta_data)
+    Ok(jvm_data)
 }
 
 fn include(asset: &GitHubAsset) -> bool {

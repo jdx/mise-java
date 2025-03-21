@@ -23,7 +23,7 @@ impl Vendor for Oracle {
         "oracle".to_string()
     }
 
-    fn fetch_data(&self, meta_data: &mut HashSet<JvmData>) -> Result<()> {
+    fn fetch_data(&self, jvm_data: &mut HashSet<JvmData>) -> Result<()> {
         let anchors = (17..=24)
             .into_par_iter()
             .flat_map(|version| {
@@ -48,7 +48,7 @@ impl Vendor for Oracle {
                 }
             })
             .collect::<Vec<_>>();
-        meta_data.extend(data);
+        jvm_data.extend(data);
         Ok(())
     }
 }

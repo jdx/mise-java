@@ -49,20 +49,20 @@ impl Vendor for Corretto {
 }
 
 fn map_release(release: &GitHubRelease) -> Result<Vec<JvmData>> {
-    let mut meta_data = Vec::new();
+    let mut jvm_data = Vec::new();
     let version = release.tag_name.clone();
     let html = match release.body {
         Some(ref body) => md_to_html(body.as_str()),
         None => {
             warn!("[corretto] no body found for release: {version}");
-            return Ok(meta_data);
+            return Ok(jvm_data);
         }
     };
 
     let fragment = Html::parse_fragment(&html);
     let table_row_selector = Selector::parse("table tr").unwrap();
     for table_row in fragment.select(&table_row_selector).skip(1) {
-        let mut jvm_data = JvmData {
+        let mut jvm = JvmData {
             jvm_impl: "hotspot".to_string(),
             release_type: "ga".to_string(),
             vendor: "corretto".to_string(),
@@ -76,7 +76,7 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JvmData>> {
             match index {
                 // Type
                 1 => {
-                    jvm_data.image_type = text.to_lowercase();
+                    jvm.image_type = text.to_lowercase();
                 }
                 // Download Link
                 2 => {
@@ -88,15 +88,15 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JvmData>> {
                         match meta_from_name(name.clone().as_str()) {
                             Ok(filename_meta) => {
                                 if filename_meta.os == "alpine-linux" {
-                                    jvm_data.features = Some(vec!["musl".to_string()]);
+                                    jvm.features = Some(vec!["musl".to_string()]);
                                 }
-                                jvm_data.architecture = normalize_architecture(&filename_meta.arch);
-                                jvm_data.filename = name.clone();
-                                jvm_data.file_type = filename_meta.ext;
-                                jvm_data.java_version = normalize_version(&filename_meta.version);
-                                jvm_data.os = normalize_os(&filename_meta.os);
-                                jvm_data.url = url.to_string();
-                                jvm_data.version = normalize_version(&filename_meta.version);
+                                jvm.architecture = normalize_architecture(&filename_meta.arch);
+                                jvm.filename = name.clone();
+                                jvm.file_type = filename_meta.ext;
+                                jvm.java_version = normalize_version(&filename_meta.version);
+                                jvm.os = normalize_os(&filename_meta.os);
+                                jvm.url = url.to_string();
+                                jvm.version = normalize_version(&filename_meta.version);
                             }
                             Err(e) => {
                                 error!("[corretto] {}", e);
@@ -110,20 +110,20 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JvmData>> {
                     let mut code_iter = fragment.select(&code_selector);
                     if let Some(code) = code_iter.next() {
                         let md5 = code.text().collect::<String>();
-                        jvm_data.checksum = Some(format!("md5:{}", md5));
+                        jvm.checksum = Some(format!("md5:{}", md5));
                     }
                     if let Some(code) = code_iter.next() {
                         let sha256 = code.text().collect::<String>();
-                        jvm_data.checksum = Some(format!("sha256:{}", sha256));
+                        jvm.checksum = Some(format!("sha256:{}", sha256));
                     };
                 }
                 _ => (),
             }
         }
-        meta_data.push(jvm_data);
+        jvm_data.push(jvm);
     }
 
-    Ok(meta_data)
+    Ok(jvm_data)
 }
 
 fn meta_from_name(name: &str) -> Result<FileNameMeta> {

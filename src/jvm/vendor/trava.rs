@@ -29,7 +29,7 @@ impl Vendor for Trava {
         "trava".to_string()
     }
 
-    fn fetch_data(&self, meta_data: &mut HashSet<JvmData>) -> Result<()> {
+    fn fetch_data(&self, jvm_data: &mut HashSet<JvmData>) -> Result<()> {
         for version in &["8", "11"] {
             debug!("[trava] fetching releases for version: {version}");
             let repo = format!("TravaOpenJDK/trava-jdk-{version}-dcevm");
@@ -43,7 +43,7 @@ impl Vendor for Trava {
                     })
                 })
                 .collect::<Vec<JvmData>>();
-            meta_data.extend(data);
+            jvm_data.extend(data);
         }
         Ok(())
     }
@@ -56,7 +56,7 @@ fn map_release(version: &str, release: &GitHubRelease) -> Result<Vec<JvmData>> {
         .filter(|asset| include(asset))
         .collect::<Vec<&github::GitHubAsset>>();
 
-    let meta_data = assets
+    let jvm_data = assets
         .into_par_iter()
         .filter_map(|asset| match map_asset(release, asset, version) {
             Ok(meta) => Some(meta),
@@ -67,7 +67,7 @@ fn map_release(version: &str, release: &GitHubRelease) -> Result<Vec<JvmData>> {
         })
         .collect::<Vec<JvmData>>();
 
-    Ok(meta_data)
+    Ok(jvm_data)
 }
 
 fn include(asset: &github::GitHubAsset) -> bool {

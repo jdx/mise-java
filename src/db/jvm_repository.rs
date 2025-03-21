@@ -17,13 +17,13 @@ impl JvmRepository {
         Ok(JvmRepository { pool })
     }
 
-    pub fn insert(&self, meta_data: &HashSet<JvmData>) -> Result<u64> {
+    pub fn insert(&self, jvm_data: &HashSet<JvmData>) -> Result<u64> {
         let mut conn = self.pool.get()?;
         let mut result = 0;
         let mut tx = conn.transaction()?;
         let columns = 15;
 
-        for chunk in map_workaround(meta_data).chunks(BATCH_SIZE) {
+        for chunk in map_workaround(jvm_data).chunks(BATCH_SIZE) {
             let mut query = String::from(
                 "INSERT INTO JVM
                 (architecture, checksum, checksum_url, features, file_type, filename, image_type, java_version, jvm_impl, os, release_type, size, url, vendor, version)
@@ -200,8 +200,8 @@ struct DbJvmData {
     pub version: String,
 }
 
-fn map_workaround(meta_data: &HashSet<JvmData>) -> Vec<DbJvmData> {
-    meta_data
+fn map_workaround(jvm_data: &HashSet<JvmData>) -> Vec<DbJvmData> {
+    jvm_data
         .iter()
         // workaround for the `feature` field which needs to be joined
         // and therefore would not live long enough in context of a

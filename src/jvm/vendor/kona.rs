@@ -29,7 +29,7 @@ impl Vendor for Kona {
         "kona".to_string()
     }
 
-    fn fetch_data(&self, meta_data: &mut HashSet<JvmData>) -> eyre::Result<()> {
+    fn fetch_data(&self, jvm_data: &mut HashSet<JvmData>) -> eyre::Result<()> {
         for version in &["8", "11", "17", "21"] {
             debug!("[kona] fetching releases for version: {version}");
             let repo = format!("Tencent/TencentKona-{version}");
@@ -43,7 +43,7 @@ impl Vendor for Kona {
                     })
                 })
                 .collect::<Vec<JvmData>>();
-            meta_data.extend(data);
+            jvm_data.extend(data);
         }
         Ok(())
     }
@@ -56,7 +56,7 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JvmData>> {
         .filter(|asset| include(asset))
         .collect::<Vec<&GitHubAsset>>();
 
-    let meta_data = assets
+    let jvm_data = assets
         .into_par_iter()
         .filter_map(|asset| match map_asset(asset) {
             Ok(meta) => Some(meta),
@@ -67,7 +67,7 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JvmData>> {
         })
         .collect::<Vec<JvmData>>();
 
-    Ok(meta_data)
+    Ok(jvm_data)
 }
 
 fn include(asset: &GitHubAsset) -> bool {

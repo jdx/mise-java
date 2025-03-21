@@ -25,7 +25,7 @@ impl Vendor for Semeru {
         "semeru".to_string()
     }
 
-    fn fetch_data(&self, meta_data: &mut HashSet<JvmData>) -> Result<()> {
+    fn fetch_data(&self, jvm_data: &mut HashSet<JvmData>) -> Result<()> {
         for version in &[
             "8",
             "11",
@@ -55,7 +55,7 @@ impl Vendor for Semeru {
                     })
                 })
                 .collect::<Vec<JvmData>>();
-            meta_data.extend(data);
+            jvm_data.extend(data);
         }
         Ok(())
     }
@@ -68,7 +68,7 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JvmData>> {
         .filter(|asset| include(asset))
         .collect::<Vec<&github::GitHubAsset>>();
 
-    let meta_data = assets
+    let jvm_data = assets
         .into_par_iter()
         .filter_map(|asset| match map_asset(release, asset) {
             Ok(meta) => Some(meta),
@@ -79,7 +79,7 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JvmData>> {
         })
         .collect::<Vec<JvmData>>();
 
-    Ok(meta_data)
+    Ok(jvm_data)
 }
 
 fn include(asset: &github::GitHubAsset) -> bool {

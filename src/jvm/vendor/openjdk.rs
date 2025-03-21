@@ -24,7 +24,7 @@ impl Vendor for OpenJDK {
         "openjdk".to_string()
     }
 
-    fn fetch_data(&self, meta_data: &mut HashSet<JvmData>) -> eyre::Result<()> {
+    fn fetch_data(&self, jvm_data: &mut HashSet<JvmData>) -> eyre::Result<()> {
         let anchors: Vec<AnchorElement> = vec!["archive", "21", "22", "23", "24", "25", "leyden", "loom", "valhalla"]
             .into_par_iter()
             .flat_map(|version| {
@@ -50,7 +50,7 @@ impl Vendor for OpenJDK {
                 }
             })
             .collect::<Vec<JvmData>>();
-        meta_data.extend(data);
+        jvm_data.extend(data);
         Ok(())
     }
 }

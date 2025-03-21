@@ -30,7 +30,7 @@ impl Vendor for Jetbrains {
         "jetbrains".to_string()
     }
 
-    fn fetch_data(&self, meta_data: &mut HashSet<JvmData>) -> eyre::Result<()> {
+    fn fetch_data(&self, jvm_data: &mut HashSet<JvmData>) -> eyre::Result<()> {
         let releases = github::list_releases("JetBrains/JetBrainsRuntime")?;
         let data = releases
             .into_par_iter()
@@ -59,7 +59,7 @@ impl Vendor for Jetbrains {
                 data
             })
             .collect::<Vec<JvmData>>();
-        meta_data.extend(data);
+        jvm_data.extend(data);
         Ok(())
     }
 }
