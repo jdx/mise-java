@@ -25,7 +25,7 @@ impl Vendor for OpenJDK {
     }
 
     fn fetch_data(&self, meta_data: &mut HashSet<JvmData>) -> eyre::Result<()> {
-        let anchors: Vec<AnchorElement> = vec!["archive", "21", "22", "23", "24", "leyden", "loom", "valhalla"]
+        let anchors: Vec<AnchorElement> = vec!["archive", "21", "22", "23", "24", "25", "leyden", "loom", "valhalla"]
             .into_par_iter()
             .flat_map(|version| {
                 let url = format!("http://jdk.java.net/{version}/");

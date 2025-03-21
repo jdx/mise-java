@@ -29,7 +29,7 @@ impl Vendor for Corretto {
     }
 
     fn fetch_data(&self, jvm_data: &mut HashSet<JvmData>) -> Result<()> {
-        for version in &["8", "11", "jdk", "17", "18", "19", "20", "21", "22", "23"] {
+        for version in &["8", "11", "jdk", "17", "18", "19", "20", "21", "22", "23", "24"] {
             debug!("[corretto] fetching releases for version: {version}");
             let repo = format!("corretto/corretto-{}", version);
             let releases = github::list_releases(repo.as_str())?;

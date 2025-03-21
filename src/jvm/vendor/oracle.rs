@@ -24,7 +24,7 @@ impl Vendor for Oracle {
     }
 
     fn fetch_data(&self, meta_data: &mut HashSet<JvmData>) -> Result<()> {
-        let anchors = (17..=23)
+        let anchors = (17..=24)
             .into_par_iter()
             .flat_map(|version| {
                 let url = format!("https://www.oracle.com/java/technologies/javase/jdk{version}-archive-downloads.html");
