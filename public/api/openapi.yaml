@@ -4,7 +4,7 @@ info:
   title: "JVM Data API"
   description: "JVM Data of various JVM distributions"
 servers:
-  - url: "https://roast.github.io/"
+  - url: "https://roele.github.io/roast/"
 paths:
   /jvm/{release_type}/{operating_system}/{architecture}.json:
     get:
