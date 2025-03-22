@@ -71,16 +71,19 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JvmData>> {
 fn map_asset(release: &GitHubRelease, asset: &GitHubAsset) -> Result<JvmData> {
     let sha256_url = get_sha256_url(asset);
     let sha256 = match sha256_url {
-        Some(ref url) => {
-            let sha256 = HTTP.get_text(url.clone());
-            match sha256 {
-                Ok(sha256) => Some(format!("sha256:{}", sha256)),
-                Err(_) => {
-                    warn!("[sapmachine] unable to find SHA256 for asset: {}", asset.name);
+        Some(ref url) => match HTTP.get_text(url.clone()) {
+            Ok(sha256) => match sha256.split_whitespace().next() {
+                Some(sha256) => Some(format!("sha256:{}", sha256.trim())),
+                None => {
+                    warn!("[sapmachine] unable to find SHA256 for {}", asset.name);
                     None
                 }
+            },
+            Err(_) => {
+                warn!("[sapmachine] unable to find SHA256 for {}", asset.name);
+                None
             }
-        }
+        },
         None => None,
     };
     let filename = asset.name.clone();

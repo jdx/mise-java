@@ -95,9 +95,15 @@ fn include(asset: &github::GitHubAsset) -> bool {
 fn map_asset(release: &GitHubRelease, asset: &GitHubAsset) -> Result<JvmData> {
     let sha256_url = format!("{}.sha256.txt", asset.browser_download_url);
     let sha256 = match HTTP.get_text(&sha256_url) {
-        Ok(sha256) => Some(format!("sha256:{}", sha256)),
+        Ok(sha256) => match sha256.split_whitespace().next() {
+            Some(sha256) => Some(format!("sha256:{}", sha256.trim())),
+            None => {
+                warn!("[semeru] unable to parse SHA256 for {}", asset.name);
+                None
+            }
+        },
         Err(_) => {
-            warn!("[semeru] unable to find SHA256 for asset: {}", asset.name);
+            warn!("[semeru] unable to find SHA256 for {}", asset.name);
             None
         }
     };

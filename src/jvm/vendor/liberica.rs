@@ -86,7 +86,7 @@ fn map_asset(release: &GitHubRelease, asset: &GitHubAsset, sha1sums: &HashMap<St
     let sha1 = match sha1sums.get(&filename) {
         Some(sha1) => Some(format!("sha1:{}", sha1.clone())),
         None => {
-            warn!("[liberica] unable to find SHA1 for asset: {filename}");
+            warn!("[liberica] unable to find SHA1 for {filename}");
             None
         }
     };

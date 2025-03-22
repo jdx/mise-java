@@ -83,9 +83,15 @@ fn include(asset: &GitHubAsset) -> bool {
 fn map_asset(asset: &GitHubAsset) -> Result<JvmData> {
     let sha256_url = format!("{}.sha256.txt", asset.browser_download_url);
     let sha256 = match HTTP.get_text(&sha256_url) {
-        Ok(sha256) => Some(format!("sha256:{}", sha256)),
+        Ok(sha256) => match sha256.split_whitespace().next() {
+            Some(sha256) => Some(format!("sha256:{}", sha256)),
+            None => {
+                warn!("[dragonwell] unable to parse SHA256 for {}", asset.name);
+                None
+            }
+        },
         Err(_) => {
-            warn!("[dragonwell] unable to find SHA256 for asset: {}", asset.name);
+            warn!("[dragonwell] unable to find SHA256 for {}", asset.name);
             None
         }
     };
@@ -108,9 +114,7 @@ fn map_asset(asset: &GitHubAsset) -> Result<JvmData> {
         java_version: filename_meta.java_version.clone(),
         jvm_impl: "hotspot".to_string(),
         os: normalize_os(&filename_meta.os),
-        release_type: normalize_release_type(&filename_meta.release_type.map_or("ga".to_string(), |s| {
-            if s.contains("preview") { "ea".to_string() } else { s }
-        })),
+        release_type: normalize_release_type(&filename_meta.release_type.map_or("ga".to_string(), |s| s)),
         url,
         vendor: "dragonwell".to_string(),
         version,
@@ -122,6 +126,7 @@ fn normalize_release_type(release_type: &str) -> String {
     match release_type {
         _ if release_type.eq_ignore_ascii_case("ea")
             || release_type.contains("Experimental")
+            || release_type.contains("preview")
             || release_type == "FP1" =>
         {
             "ea".to_string()
@@ -151,7 +156,7 @@ fn meta_from_name(name: &str) -> Result<FileNameMeta> {
         release_type: None,
       })
     } else if name.starts_with("Alibaba_Dragonwell") {
-      let caps = regex!(r"^Alibaba_Dragonwell_([0-9\+.]{1,}[^_]*)(?:_alpine)?[_-](?:(GA|Experimental|GA_Experimental|FP1)_)?(Linux|linux|Windows|windows)_(aarch64|x64)\.(.*)$")
+      let caps = regex!(r"^Alibaba_Dragonwell_([0-9\+.]{1,}[^_-]*)(?:_alpine)?[_-](?:(GA|Experimental|GA_Experimental|FP1)_)?(Linux|linux|Windows|windows)_(aarch64|x64)\.(.*)$")
         .captures(name)
         .ok_or_else(|| eyre::eyre!("regular expression failed for name: {}", name))?;
       Ok(FileNameMeta {

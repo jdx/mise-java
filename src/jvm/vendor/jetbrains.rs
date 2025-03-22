@@ -74,9 +74,18 @@ fn map_release(release: &GitHubRelease, a: &ElementRef<'_>) -> Result<JvmData> {
     let filename_meta = meta_from_name(&name)?;
     let sha512_url = format!("{}.checksum", &href);
     let sha512 = match HTTP.get_text(&sha512_url) {
-        Ok(sha512) => sha512.split_whitespace().next().map(|s| format!("sha512:{}", s)),
-        Err(e) => {
-            warn!("[jetbrains] unable to find SHA512 for {name}: {e}");
+        Ok(sha512) => match sha512.split_whitespace().next() {
+            Some(s) => match s.len() {
+                64 => Some(format!("sha256:{s}")),
+                _ => Some(format!("sha512:{s}")),
+            },
+            None => {
+                warn!("[jetbrains] unable to parse SHA512 for {name}");
+                None
+            }
+        },
+        Err(_) => {
+            warn!("[jetbrains] unable to find SHA256/SHA512 for {name}");
             None
         }
     };

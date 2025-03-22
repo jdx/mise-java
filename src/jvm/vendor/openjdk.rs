@@ -72,8 +72,8 @@ fn map_release(a: &AnchorElement) -> Result<JvmData> {
     let sha256_url = format!("{}.sha256", &a.href);
     let sha256 = match HTTP.get_text(&sha256_url) {
         Ok(sha) => sha.split_whitespace().next().map(|s| format!("sha256:{}", s)),
-        Err(e) => {
-            warn!("[openjdk] unable to find SHA256 for {name}: {e}");
+        Err(_) => {
+            warn!("[openjdk] unable to find SHA256 for {name}");
             None
         }
     };

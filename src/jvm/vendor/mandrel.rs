@@ -74,9 +74,15 @@ fn include(asset: &GitHubAsset) -> bool {
 fn map_asset(asset: &GitHubAsset) -> Result<JvmData> {
     let sha256_url = format!("{}.sha256", asset.browser_download_url);
     let sha256 = match HTTP.get_text(&sha256_url) {
-        Ok(sha256) => Some(format!("sha256:{}", sha256)),
+        Ok(sha256) => match sha256.split_whitespace().next() {
+            Some(sha256) => Some(format!("sha256:{}", sha256.trim())),
+            None => {
+                warn!("[mandrel] unable to parse SHA256 for {}", asset.name);
+                None
+            }
+        },
         Err(_) => {
-            warn!("[mandrel] unable to find SHA256 for asset: {}", asset.name);
+            warn!("[mandrel] unable to find SHA256 for {}", asset.name);
             None
         }
     };

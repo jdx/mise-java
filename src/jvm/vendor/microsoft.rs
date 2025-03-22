@@ -73,8 +73,8 @@ fn map_release(a: &AnchorElement) -> Result<JvmData> {
     let sha256_url = format!("{}.sha256sum.txt", &a.href);
     let sha256 = match HTTP.get_text(&sha256_url) {
         Ok(sha) => sha.split_whitespace().next().map(|s| format!("sha256:{}", s)),
-        Err(e) => {
-            warn!("[microsoft] unable to find SHA256 for {}: {}", a.name, e);
+        Err(_) => {
+            warn!("[microsoft] unable to find SHA256 for {}", a.name);
             None
         }
     };

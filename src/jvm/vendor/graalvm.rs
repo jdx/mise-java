@@ -81,9 +81,9 @@ fn map_ce(asset: &GitHubAsset) -> Result<JvmData> {
     //      fetch_checksum(url: &str) -> Result<(Option<String>, Option<String>)>
     let sha256_url = format!("{}.sha256", asset.browser_download_url);
     let sha256 = match HTTP.get_text(&sha256_url) {
-        Ok(sha256) => Some(format!("sha256:{}", sha256)),
+        Ok(sha256) => Some(format!("sha256:{}", sha256.trim())),
         Err(_) => {
-            warn!("[graalvm] unable to find SHA256 for asset: {}", asset.name);
+            warn!("[graalvm] unable to find SHA256 for {}", asset.name);
             None
         }
     };
