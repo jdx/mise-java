@@ -1,7 +1,8 @@
 [tools]
 "cargo:cargo-deny" = "0.17"
 
-
+[env]
+_.file = ".env.local"
 
 [tasks.test]
 run = """
@@ -9,4 +10,14 @@ run = """
   cargo clippy --all-targets --all-features -- -D warnings
   cargo deny check
   cargo test --all
+"""
+
+[tasks."run:fetch"]
+run = """
+cargo run -- fetch
+"""
+
+[tasks."run:export:triple"]
+run = """
+cargo run -- export triple
 """
