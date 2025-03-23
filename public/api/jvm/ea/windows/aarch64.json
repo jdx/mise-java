@@ -361,23 +361,6 @@
   },
   {
     "architecture": "aarch64",
-    "checksum": "sha512:ea7cbf03e692aa779ab66c2d46935a139b7154451088b56f07fe8e23988b0327",
-    "checksum_url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.6-windows-aarch64-b802.1.tar.gz.checksum",
-    "features": null,
-    "file_type": "tar.gz",
-    "filename": "jbrsdk-17.0.6-windows-aarch64-b802.1.tar.gz",
-    "image_type": "sdk",
-    "java_version": "17.0.6b802.1",
-    "jvm_impl": "hotspot",
-    "os": "windows",
-    "release_type": "ea",
-    "size": null,
-    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.6-windows-aarch64-b802.1.tar.gz",
-    "vendor": "jetbrains",
-    "version": "17.0.6b802.1"
-  },
-  {
-    "architecture": "aarch64",
     "checksum": "sha512:a47b5c34ef11a8f6e507b1f0cc4e0c6b139815f560335deae408d96ddb32930c0c709a939e148a630478df79d102ee84ef93fd52718e8a093f9e390a58028754",
     "checksum_url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17.0.6-windows-aarch64-b829.4.tar.gz.checksum",
     "features": null,
@@ -392,23 +375,6 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17.0.6-windows-aarch64-b829.4.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.6b829.4"
-  },
-  {
-    "architecture": "aarch64",
-    "checksum": "sha512:ca5d53ca9e300591a0e290f5979a52d658eb04a55f8e0fe0e24d9631f06022bc",
-    "checksum_url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17.0.6-windows-aarch64-b802.1.tar.gz.checksum",
-    "features": null,
-    "file_type": "tar.gz",
-    "filename": "jbr-17.0.6-windows-aarch64-b802.1.tar.gz",
-    "image_type": "jre",
-    "java_version": "17.0.6b802.1",
-    "jvm_impl": "hotspot",
-    "os": "windows",
-    "release_type": "ea",
-    "size": null,
-    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17.0.6-windows-aarch64-b802.1.tar.gz",
-    "vendor": "jetbrains",
-    "version": "17.0.6b802.1"
   },
   {
     "architecture": "aarch64",
@@ -464,5 +430,39 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.8.1-windows-aarch64-b1063.1.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.8.1b1063.1"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha256:ca5d53ca9e300591a0e290f5979a52d658eb04a55f8e0fe0e24d9631f06022bc",
+    "checksum_url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17.0.6-windows-aarch64-b802.1.tar.gz.checksum",
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "jbr-17.0.6-windows-aarch64-b802.1.tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.6b802.1",
+    "jvm_impl": "hotspot",
+    "os": "windows",
+    "release_type": "ea",
+    "size": null,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17.0.6-windows-aarch64-b802.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.6b802.1"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha256:ea7cbf03e692aa779ab66c2d46935a139b7154451088b56f07fe8e23988b0327",
+    "checksum_url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.6-windows-aarch64-b802.1.tar.gz.checksum",
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "jbrsdk-17.0.6-windows-aarch64-b802.1.tar.gz",
+    "image_type": "sdk",
+    "java_version": "17.0.6b802.1",
+    "jvm_impl": "hotspot",
+    "os": "windows",
+    "release_type": "ea",
+    "size": null,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.6-windows-aarch64-b802.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.6b802.1"
   }
 ]
