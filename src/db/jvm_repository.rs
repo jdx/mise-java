@@ -114,7 +114,7 @@ impl JvmRepository {
         Ok(result)
     }
 
-    pub fn export(&self, release_type: &str, arch: &str, os: &str) -> Result<Vec<JvmData>> {
+    pub fn export_triple(&self, release_type: &str, arch: &str, os: &str) -> Result<Vec<JvmData>> {
         let mut conn = self.pool.get()?;
         let stmt = conn.prepare(
             "SELECT
@@ -140,6 +140,9 @@ impl JvmRepository {
                 AND release_type = $1
                 AND os = $2
                 AND architecture = $3
+            ORDER BY
+                vendor,
+                version
             ;",
         )?;
 

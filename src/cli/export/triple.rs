@@ -56,7 +56,7 @@ impl Triple {
         for release_type in &release_types {
             for os in &oses {
                 for arch in &archs {
-                    let data = db.export(release_type, arch, os)?;
+                    let data = db.export_triple(release_type, arch, os)?;
                     let size = data.len();
 
                     let export_data = data
