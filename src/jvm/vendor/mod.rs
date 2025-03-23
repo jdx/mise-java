@@ -8,6 +8,7 @@ use eyre::Result;
 use indoc::formatdoc;
 use log::info;
 use scraper::{Html, Selector};
+use xx::regex;
 
 use super::JvmData;
 
@@ -149,16 +150,25 @@ pub fn normalize_os(os: &str) -> String {
     }
 }
 
+/// Normalizes a  version string to a semver compatible format
+/// Examples:
+/// ```plaintext
+/// 18-beta -> 18.0.0-beta
+/// 18_0_0+build -> 18.0.0+build
+/// ```
+pub fn normalize_version(version: &str) -> String {
+    let version = normalize_major(version);
+    normalize_underline(&version)
+}
+
 /// Normalizes a major only version string to a semver compatible format
 /// Examples:
 /// ```plaintext
 /// 18 -> 18.0.0
 /// 18-beta -> 18.0.0-beta
-/// 18+build -> 18.0.0+build
 /// ```
-pub fn normalize_version(version: &str) -> String {
-    let re = regex::Regex::new(r"^([0-9]+)([-+].+)?$").unwrap();
-    if let Some(caps) = re.captures(version) {
+fn normalize_major(version: &str) -> String {
+    if let Some(caps) = regex!(r"^([0-9]+)([-+].+)?$").captures(version) {
         let major = caps.get(1).map_or("", |m| m.as_str());
         let suffix = caps.get(2).map_or("", |m| m.as_str());
         if suffix.is_empty() {
@@ -166,6 +176,22 @@ pub fn normalize_version(version: &str) -> String {
         } else {
             format!("{}.0.0{}", major, suffix)
         }
+    } else {
+        version.to_string()
+    }
+}
+
+/// Normalizes a version string containing _ instead of .
+/// Examples:
+/// ```plaintext
+/// 18_0_0 -> 18.0.0
+/// 18_0_0+build -> 18.0.0+build
+/// ```
+fn normalize_underline(version: &str) -> String {
+    if let Some(caps) = regex!(r"^(([0-9]+_?)+)([-+].+)?$").captures(version) {
+        let version_part = caps.get(1).map_or("", |m| m.as_str()).replace('_', ".");
+        let suffix = caps.get(3).map_or("", |m| m.as_str());
+        format!("{}{}", version_part, suffix)
     } else {
         version.to_string()
     }
@@ -247,6 +273,7 @@ mod tests {
         assert_eq!(normalize_version("1.2+build"), "1.2+build");
         assert_eq!(normalize_version("1.2.3-beta"), "1.2.3-beta");
         assert_eq!(normalize_version("1.2.3+build"), "1.2.3+build");
+        assert_eq!(normalize_version("1_2_3-build"), "1.2.3-build");
         assert_eq!(normalize_version("invalid"), "invalid");
     }
 }

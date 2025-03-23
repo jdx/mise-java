@@ -117,11 +117,17 @@ fn meta_from_name(name: &str) -> Result<FileNameMeta> {
         .captures(name)
         .ok_or_else(|| eyre::eyre!("regular expression did not match for {}", name))?;
 
-    let image_type = capture.get(1).map_or("jre", |m| m.as_str()).to_string();
+    let image_type = capture
+        .get(1)
+        .map_or("jre", |m| match m.as_str() {
+            "sdk" => "jdk",
+            _ => "jre",
+        })
+        .to_string();
     let os = capture.get(3).unwrap().as_str().to_string();
     let arch = capture.get(4).unwrap().as_str().to_string();
     let version = format!(
-        "{}{}",
+        "{}-{}",
         capture.get(2).unwrap().as_str(),
         capture.get(5).unwrap().as_str()
     );
