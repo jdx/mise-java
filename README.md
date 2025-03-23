@@ -56,27 +56,52 @@ Assuming you have a PostgreSQL container `postgres` running with a user `postgre
 ```bash
 docker exec -i -u postgres postgres psql -d postgres -c "DROP DATABASE roast;"
 docker exec -i -u postgres postgres psql -d postgres -c "CREATE DATABASE roast;"
+docker exec -i -u postgres postgres psql -d roast -c "CREATE USER roast WITH PASSWORD 'roast';"
 docker exec -i -u postgres postgres psql -d roast < ./sql/schema.sql
 ```
 
 ## Run
 
-### Fetch JVM data from all vendors
+### Environment variables
+
+Roast uses a configuration file `config.toml` to configure the database connection and other settings.
+You can use the following environment variables to override the default configuration in `config.toml`.
+
+| Variable name              | Description                                  |
+| -------------------------- | -------------------------------------------- |
+| `ROAST_DATABASE_POOL_SIZE` | Number of threads to use for fetching data   |
+| `ROAST_DATABASE_URL`       | PostgreSQL connection string                 |
+| `ROAST_DATABASE_SSL_MODE`  | SSL mode for PostgreSQL connection           |
+| `ROAST_DATABASE_SSL_CA`    | CA certificate for PostgreSQL connection     |
+| `ROAST_DATABASE_SSL_CERT`  | Client certificate for PostgreSQL connection |
+| `ROAST_DATABASE_SSL_KEY`   | Client key for PostgreSQL connection         |
+
+Additionally, you can set the following environment variables to configure the logging and threading.
+
+| Variable name       | Description                                                           |
+| ------------------- | --------------------------------------------------------------------- |
+| `RAYON_NUM_THREADS` | Number of threads to use by the Rayon module                          |
+| `RUST_LOG`          | Log configuration (see https://docs.rs/env_logger/latest/env_logger/) |
+
+### Fetch data from all vendors
 
 ```bash
-env RUST_LOG=roast=INFO \
+env \
+RAYON_NUM_THREADS=50 \
+RUST_LOG=roast=INFO \
 cargo run -- fetch 2>&1 | tee -a error.log
 ```
 
-### Export JVM data as release_type/os/arch triplet
+### Export data as release_type/os/arch triplet
 
 ```bash
-env RUST_LOG=roast=INFO \
+env \
+RAYON_NUM_THREADS=50 \
+RUST_LOG=roast=INFO \
 cargo run -- export triplet 2>&1 | tee -a error.log
 ```
 
 ## Disclaimer
 
 This project is in no way affiliated with any of the companies or projects offering and distributing the actual JREs and JDKs.
-
 All respective copyrights and trademarks are theirs.
