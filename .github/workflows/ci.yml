@@ -1,0 +1,37 @@
+name: "CI"
+
+on:
+  pull_request:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+env:
+  CARGO_TERM_COLOR: always
+  MISE_EXPERIMENTAL: true
+  RUST_BACKTRACE: 1
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  ci:
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          #- macos-latest
+          - ubuntu-latest
+          #- windows-latest
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          repository: ${{ github.event.pull_request.head.repo.full_name }}
+          ref: ${{ github.head_ref }}
+      - uses: Swatinem/rust-cache@v2
+      - uses: jdx/mise-action@v2
+      - run: mise run ci
