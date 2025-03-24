@@ -4,12 +4,31 @@
 [env]
 _.file = ".env.local"
 
-[tasks.test]
+[tasks.build]
+run = """
+cargo build --all-features
+"""
+
+[tasks.ci]
+depends = ["lint", "test", "check"]
+
+[tasks.lint]
+depends = ["build"]
 run = """
   cargo fmt --all -- --check
   cargo clippy --all-targets --all-features -- -D warnings
-  cargo deny check
+"""
+
+[tasks.test]
+depends = ["build"]
+run = """
   cargo test --all
+"""
+
+[tasks.check]
+depends = ["build"]
+run = """
+  cargo deny check
 """
 
 [tasks."run:fetch"]
