@@ -15,20 +15,20 @@ depends = ["lint", "test", "check"]
 [tasks.lint]
 depends = ["build"]
 run = """
-  cargo fmt --all -- --check
-  cargo clippy --all-targets --all-features -- -D warnings
+cargo fmt --all -- --check
+cargo clippy --all-targets --all-features -- -D warnings
 """
 
 [tasks.test]
 depends = ["build"]
 run = """
-  cargo test --all
+cargo test --all
 """
 
 [tasks.check]
 depends = ["build"]
 run = """
-  cargo deny check
+cargo deny check
 """
 
 [tasks."run:fetch"]
@@ -39,4 +39,19 @@ cargo run -- fetch
 [tasks."run:export:triple"]
 run = """
 cargo run -- export triple
+"""
+
+[tasks."db:dump"]
+run = """
+if ! command -v pg_dump &> /dev/null; then
+  echo "pg_dump not found, please install it (brew install libpq)"
+  exit 1
+fi
+
+pg_dump \
+--host=$ROAST_DB_HOST \
+--port=$ROAST_DB_PORT \
+--username=$ROAST_DB_USR \
+--dbname=$ROAST_DB_NAME \
+--format=plain | gzip > backup/"$(date -u +"%Y-%m-%dT%H.%M.%SZ")-roast.sql.gz"
 """
