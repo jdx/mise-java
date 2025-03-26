@@ -142,7 +142,9 @@ impl JvmRepository {
                 AND architecture = $3
             ORDER BY
                 vendor,
-                version
+                version,
+                created_at
+            DESC
             ;",
         )?;
 
