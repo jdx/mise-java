@@ -8,7 +8,6 @@ on:
 
 env:
   CARGO_TERM_COLOR: always
-  MISE_EXPERIMENTAL: true
   RUST_BACKTRACE: 1
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -34,4 +33,7 @@ jobs:
           ref: ${{ github.head_ref }}
       - uses: Swatinem/rust-cache@v2
       - uses: jdx/mise-action@v2
+        with:
+          version: 2025.3.7
+          experimental: true
       - run: mise run ci
