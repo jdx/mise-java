@@ -1,6 +1,6 @@
 # Roast a JVM Data Crawler
 
-![Test](https://github.com/roele/roast/workflows/Build%20and%20Test/badge.svg)
+![CI](https://github.com/roele/roast/workflows/CI/badge.svg)
 ![Update JVM Data](https://github.com/roele/roast/workflows/Update%20Data/badge.svg)
 
 Roast is a data crawler that collects and stores information about JVM distributions from various vendors. The project
