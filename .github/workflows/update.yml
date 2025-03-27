@@ -41,7 +41,7 @@ jobs:
 
       - name: Export Data
         run: |
-          cargo run -- export triple --pretty -t ea,ga -o linux,macosx,windows -a aarch64,arm32,i686,x86_64
+          cargo run -- export release-type --pretty -o linux,macosx,windows -a aarch64,arm32,i686,x86_64
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7

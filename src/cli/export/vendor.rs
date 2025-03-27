@@ -11,16 +11,16 @@ use crate::{
     jvm::JvmData,
 };
 
-/// Export as a triple {release_type}/{os}/{architecture}
+/// Export by {vendor}/{os}/{architecture}
 ///
-/// Will export JSON files in form of <release_type>/<os>/<arch>.json to the path specified in the configuration file
+/// Will export JSON files in form of {vendor}/{os}/{arch}.json to the path specified in the configuration file
 /// or ROAST_EXPORT_PATH environment variable
 #[derive(Debug, clap::Args)]
 #[clap(verbatim_doc_comment)]
-pub struct Triple {
-    /// Release types e.g.: ea, ga
-    #[clap(short = 't', long, num_args = 0.., value_delimiter = ',', value_name = "TYPE")]
-    pub release_type: Option<Vec<String>>,
+pub struct Vendor {
+    /// Vendors e.g.: corretto, oracle, zulu
+    #[clap(short = 'v', long, num_args = 0.., value_delimiter = ',', value_name = "VENDOR")]
+    pub vendors: Option<Vec<String>>,
     /// Operating systems e.g.: linux, macosx, windows
     #[clap(short = 'o', long, num_args = 0.., value_delimiter = ',', value_name = "OS")]
     pub os: Option<Vec<String>>,
@@ -35,7 +35,7 @@ pub struct Triple {
     pub pretty: bool,
 }
 
-impl Triple {
+impl Vendor {
     pub fn run(self) -> Result<()> {
         let conf = Conf::try_get()?;
         if conf.export.path.is_none() {
@@ -44,8 +44,8 @@ impl Triple {
         let conn_pool = ConnectionPool::get_pool()?;
         let db = JvmRepository::new(conn_pool)?;
 
-        let release_types_default = db.get_distinct("release_type")?;
-        let release_types = self.release_type.unwrap_or(release_types_default);
+        let vendors_default = db.get_distinct("vendor")?;
+        let vendors = self.vendors.unwrap_or(vendors_default);
         let oses_default = db.get_distinct("os")?;
         let oses = self.os.unwrap_or(oses_default);
         let arch_default = db.get_distinct("architecture")?;
@@ -53,10 +53,10 @@ impl Triple {
 
         let export_path = conf.export.path.unwrap();
 
-        for release_type in &release_types {
+        for vendor in &vendors {
             for os in &oses {
                 for arch in &archs {
-                    let data = db.export_triple(release_type, arch, os)?;
+                    let data = db.export_vendor(vendor, os, arch)?;
                     let size = data.len();
 
                     let export_data = data
@@ -64,9 +64,9 @@ impl Triple {
                         .map(|item| JvmData::map(&item, &self.properties))
                         .collect::<Vec<Map<String, Value>>>();
 
-                    info!("exporting {} records for {} {} {}", size, release_type, os, arch);
+                    info!("exporting {} records for {} {} {}", size, vendor, os, arch);
                     let path = PathBuf::from(&export_path)
-                        .join(release_type)
+                        .join(vendor)
                         .join(os)
                         .join(format!("{}.json", arch));
                     if let Some(parent) = path.parent() {

@@ -2,6 +2,7 @@ use std::collections::HashSet;
 
 use crate::jvm::JvmData;
 use eyre::Result;
+use indoc::indoc;
 use postgres_openssl::MakeTlsConnector;
 use r2d2::Pool;
 use r2d2_postgres::PostgresConnectionManager;
@@ -114,42 +115,83 @@ impl JvmRepository {
         Ok(result)
     }
 
-    pub fn export_triple(&self, release_type: &str, arch: &str, os: &str) -> Result<Vec<JvmData>> {
-        let mut conn = self.pool.get()?;
-        let stmt = conn.prepare(
-            "SELECT
-                architecture,
-                checksum,
-                checksum_url,
-                features,
-                file_type,
-                filename,
-                image_type,
-                java_version,
-                jvm_impl,
-                os,
-                release_type,
-                size,
-                url,
-                vendor,
-                version
-            FROM
-                JVM
-            WHERE
-                    file_type IN ('tar.gz','zip')
-                AND release_type = $1
-                AND os = $2
-                AND architecture = $3
-            ORDER BY
-                vendor,
-                version,
-                created_at
-            DESC
-            ;",
-        )?;
+    pub fn export_release_type(&self, release_type: &str, arch: &str, os: &str) -> Result<Vec<JvmData>> {
+        let stmt = indoc! {
+          "SELECT
+              architecture,
+              checksum,
+              checksum_url,
+              features,
+              file_type,
+              filename,
+              image_type,
+              java_version,
+              jvm_impl,
+              os,
+              release_type,
+              size,
+              url,
+              vendor,
+              version
+          FROM
+              JVM
+          WHERE
+              release_type = $1
+              AND os = $2
+              AND architecture = $3
+              AND file_type IN ('tar.gz','zip')
+          ORDER BY
+              vendor,
+              version,
+              created_at
+          DESC
+          ;",
+        };
 
+        self.export(stmt, &[&release_type, &os, &arch])
+    }
+
+    pub fn export_vendor(&self, vendor: &str, os: &str, arch: &str) -> Result<Vec<JvmData>> {
+        let stmt = indoc::indoc! {
+          "SELECT
+              architecture,
+              checksum,
+              checksum_url,
+              features,
+              file_type,
+              filename,
+              image_type,
+              java_version,
+              jvm_impl,
+              os,
+              release_type,
+              size,
+              url,
+              vendor,
+              version
+          FROM
+              JVM
+          WHERE
+              vendor = $1
+              AND os = $2
+              AND architecture = $3
+              AND file_type IN ('tar.gz','zip')
+          ORDER BY
+              vendor,
+              version,
+              created_at
+          DESC
+          ;"
+        };
+
+        self.export(stmt, &[&vendor, &os, &arch])
+    }
+
+    fn export(&self, query: &str, params: &[&(dyn postgres::types::ToSql + Sync)]) -> Result<Vec<JvmData>> {
+        let mut conn = self.pool.get()?;
+        let stmt = conn.prepare(query)?;
         let mut data = Vec::new();
-        let rows = conn.query(&stmt, &[&release_type, &os, &arch])?;
+        let rows = conn.query(&stmt, params)?;
         for row in rows {
             data.push(JvmData {
                 architecture: row.get("architecture"),

@@ -36,9 +36,14 @@ run = """
 cargo run -- fetch
 """
 
-[tasks."run:export:triple"]
+[tasks."run:export:release-type"]
 run = """
-cargo run -- export triple
+cargo run -- export release-type --pretty -o linux,macosx,windows -a aarch64,arm32,i686,x86_64
+"""
+
+[tasks."run:export:vendor"]
+run = """
+cargo run -- export vendor --pretty -o linux,macosx,windows -a aarch64,arm32,i686,x86_64
 """
 
 [tasks."db:dump"]

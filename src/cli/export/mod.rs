@@ -1,16 +1,19 @@
 use clap::Subcommand;
 
-mod triple;
+mod release_type;
+mod vendor;
 
 #[derive(Debug, Subcommand)]
 enum Commands {
-    Triple(triple::Triple),
+    ReleaseType(release_type::ReleaseType),
+    Vendor(vendor::Vendor),
 }
 
 impl Commands {
     pub fn run(self) -> eyre::Result<()> {
         match self {
-            Self::Triple(cmd) => cmd.run(),
+            Self::ReleaseType(cmd) => cmd.run(),
+            Self::Vendor(cmd) => cmd.run(),
         }
     }
 }

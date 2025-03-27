@@ -75,6 +75,7 @@ You can use the following environment variables to override the default configur
 | `ROAST_DATABASE_SSL_CA`    | CA certificate for PostgreSQL connection     |
 | `ROAST_DATABASE_SSL_CERT`  | Client certificate for PostgreSQL connection |
 | `ROAST_DATABASE_SSL_KEY`   | Client key for PostgreSQL connection         |
+| `ROAST_EXPORT_PATH`        | Export path for the data                     |
 
 Additionally, you can set the following environment variables to configure the logging and threading.
 
@@ -92,13 +93,24 @@ RUST_LOG=roast=INFO \
 cargo run -- fetch 2>&1 | tee -a error.log
 ```
 
-### Export data as release_type/os/arch triplet
+### Export data by release_type
 
 ```bash
 env \
 RAYON_NUM_THREADS=50 \
 RUST_LOG=roast=INFO \
-cargo run -- export triplet 2>&1 | tee -a error.log
+ROAST_EXPORT_PATH=data/releasetype/ \
+cargo run -- export release-type 2>&1 | tee -a error.log
+```
+
+### Export data by vendor
+
+```bash
+env \
+RAYON_NUM_THREADS=50 \
+RUST_LOG=roast=INFO \
+ROAST_EXPORT_PATH=data/vendor/ \
+cargo run -- export vendor 2>&1 | tee -a error.log
 ```
 
 ## Disclaimer
