@@ -139,7 +139,6 @@ impl JvmRepository {
               release_type = $1
               AND os = $2
               AND architecture = $3
-              AND file_type IN ('tar.gz','zip')
           ORDER BY
               vendor,
               version,
@@ -175,7 +174,6 @@ impl JvmRepository {
               vendor = $1
               AND os = $2
               AND architecture = $3
-              AND file_type IN ('tar.gz','zip')
           ORDER BY
               vendor,
               version,
