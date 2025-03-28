@@ -1,9 +1,9 @@
 #![allow(dead_code)]
+use std::sync::LazyLock;
 use std::time::Duration;
 
 use eyre::Result;
 use log::{debug, warn};
-use once_cell::sync::Lazy;
 use reqwest::blocking::{ClientBuilder, RequestBuilder, Response};
 use reqwest::header::HeaderMap;
 use reqwest::{IntoUrl, Url};
@@ -11,7 +11,7 @@ use reqwest::{IntoUrl, Url};
 use crate::cli::version;
 use crate::env;
 
-pub static HTTP: Lazy<Client> = Lazy::new(|| Client::new(Duration::from_secs(30)).unwrap());
+pub static HTTP: LazyLock<Client> = LazyLock::new(|| Client::new(Duration::from_secs(30)).unwrap());
 
 #[derive(Debug)]
 pub struct Client {

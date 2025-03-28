@@ -1,5 +1,6 @@
+use std::sync::LazyLock;
+
 use eyre::Result;
-use once_cell::sync::Lazy;
 use versions::Versioning;
 
 use crate::{build_time::BUILD_TIME, env};
@@ -9,8 +10,8 @@ use crate::{build_time::BUILD_TIME, env};
 #[clap(alias = "v")]
 pub struct Version {}
 
-pub static OS: Lazy<String> = Lazy::new(|| std::env::consts::OS.into());
-pub static ARCH: Lazy<String> = Lazy::new(|| {
+pub static OS: LazyLock<String> = LazyLock::new(|| std::env::consts::OS.into());
+pub static ARCH: LazyLock<String> = LazyLock::new(|| {
     match std::env::consts::ARCH {
         "x86_64" => "x64",
         "aarch64" => "arm64",
@@ -19,7 +20,7 @@ pub static ARCH: Lazy<String> = Lazy::new(|| {
     .to_string()
 });
 
-pub static VERSION: Lazy<String> = Lazy::new(|| {
+pub static VERSION: LazyLock<String> = LazyLock::new(|| {
     let mut v = V.to_string();
     if cfg!(debug_assertions) {
         v.push_str("-DEBUG");
@@ -28,7 +29,7 @@ pub static VERSION: Lazy<String> = Lazy::new(|| {
     format!("{v} {os}-{arch} ({build_time})", os = *OS, arch = *ARCH)
 });
 
-pub static V: Lazy<Versioning> = Lazy::new(|| Versioning::new(env!("CARGO_PKG_VERSION")).unwrap());
+pub static V: LazyLock<Versioning> = LazyLock::new(|| Versioning::new(env!("CARGO_PKG_VERSION")).unwrap());
 
 impl Version {
     pub fn run(self) -> Result<()> {
