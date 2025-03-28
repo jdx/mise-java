@@ -184,7 +184,10 @@ fn normalize_features(input: &str) -> Option<Vec<String>> {
     }
     match features.is_empty() {
         true => None,
-        false => Some(features),
+        false => {
+            features.sort();
+            Some(features)
+        }
     }
 }
 
@@ -196,20 +199,20 @@ mod tests {
     fn test_normalize_features() {
         for (actual, expected) in [
             ("fx", Some(vec!["javafx".to_string()])),
-            ("musl-leyden", Some(vec!["musl".to_string(), "leyden".to_string()])),
+            ("musl-leyden", Some(vec!["leyden".to_string(), "musl".to_string()])),
             (
                 "musl-lite-leyden",
-                Some(vec!["musl".to_string(), "lite".to_string(), "leyden".to_string()]),
+                Some(vec!["leyden".to_string(), "lite".to_string(), "musl".to_string()]),
             ),
-            ("musl-crac", Some(vec!["musl".to_string(), "crac".to_string()])),
-            ("musl-lite", Some(vec!["musl".to_string(), "lite".to_string()])),
+            ("musl-crac", Some(vec!["crac".to_string(), "musl".to_string()])),
+            ("musl-lite", Some(vec!["lite".to_string(), "musl".to_string()])),
             ("musl", Some(vec!["musl".to_string()])),
             (
                 "full",
                 Some(vec![
+                    "javafx".to_string(),
                     "libericafx".to_string(),
                     "minimal-vm".to_string(),
-                    "javafx".to_string(),
                 ]),
             ),
         ] {
