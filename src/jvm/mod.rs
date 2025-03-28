@@ -24,25 +24,17 @@ pub struct JvmData {
     pub version: String,
 }
 
+// ensure this matches the UNIQUE constraint in the database
 impl Hash for JvmData {
     fn hash<H: Hasher>(&self, state: &mut H) {
-        self.vendor.hash(state);
-        self.version.hash(state);
-        self.os.hash(state);
-        self.architecture.hash(state);
-        self.image_type.hash(state);
-        self.file_type.hash(state);
+        self.url.hash(state);
     }
 }
 
+// ensure this matches the UNIQUE constraint in the database
 impl PartialEq for JvmData {
     fn eq(&self, other: &Self) -> bool {
-        self.vendor == other.vendor
-            && self.version == other.version
-            && self.os == other.os
-            && self.architecture == other.architecture
-            && self.image_type == other.image_type
-            && self.file_type == other.file_type
+        self.url == other.url
     }
 }
 

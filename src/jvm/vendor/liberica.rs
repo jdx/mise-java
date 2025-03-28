@@ -69,14 +69,14 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JvmData>> {
 }
 
 fn include(asset: &github::GitHubAsset) -> bool {
-    !(asset.name.ends_with(".bom")
-        || asset.name.ends_with(".json")
-        || asset.name.ends_with(".txt")
-        || asset.name.ends_with("-src.tar.gz")
-        || asset.name.ends_with("-src-full.tar.gz")
-        || asset.name.ends_with("-src-crac.tar.gz")
-        || asset.name.ends_with("-src-leyden.tar.gz")
-        || asset.name.contains("-full-nosign"))
+    !asset.name.ends_with(".bom")
+        && !asset.name.ends_with(".json")
+        && !asset.name.ends_with(".txt")
+        && !asset.name.ends_with("-src.tar.gz")
+        && !asset.name.ends_with("-src-full.tar.gz")
+        && !asset.name.ends_with("-src-crac.tar.gz")
+        && !asset.name.ends_with("-src-leyden.tar.gz")
+        && !asset.name.contains("-full-nosign")
 }
 
 fn map_asset(release: &GitHubRelease, asset: &GitHubAsset, sha1sums: &HashMap<String, String>) -> Result<JvmData> {
@@ -194,31 +194,26 @@ mod tests {
 
     #[test]
     fn test_normalize_features() {
-        assert_eq!(normalize_features("fx"), Some(vec!["javafx".to_string()]));
-        assert_eq!(
-            normalize_features("musl-leyden"),
-            Some(vec!["musl".to_string(), "leyden".to_string()])
-        );
-        assert_eq!(
-            normalize_features("musl-lite-leyden"),
-            Some(vec!["musl".to_string(), "lite".to_string(), "leyden".to_string()])
-        );
-        assert_eq!(
-            normalize_features("musl-crac"),
-            Some(vec!["musl".to_string(), "crac".to_string()])
-        );
-        assert_eq!(
-            normalize_features("musl-lite"),
-            Some(vec!["musl".to_string(), "lite".to_string()])
-        );
-        assert_eq!(normalize_features("musl"), Some(vec!["musl".to_string()]));
-        assert_eq!(
-            normalize_features("full"),
-            Some(vec![
-                "libericafx".to_string(),
-                "minimal-vm".to_string(),
-                "javafx".to_string()
-            ])
-        );
+        for (actual, expected) in [
+            ("fx", Some(vec!["javafx".to_string()])),
+            ("musl-leyden", Some(vec!["musl".to_string(), "leyden".to_string()])),
+            (
+                "musl-lite-leyden",
+                Some(vec!["musl".to_string(), "lite".to_string(), "leyden".to_string()]),
+            ),
+            ("musl-crac", Some(vec!["musl".to_string(), "crac".to_string()])),
+            ("musl-lite", Some(vec!["musl".to_string(), "lite".to_string()])),
+            ("musl", Some(vec!["musl".to_string()])),
+            (
+                "full",
+                Some(vec![
+                    "libericafx".to_string(),
+                    "minimal-vm".to_string(),
+                    "javafx".to_string(),
+                ]),
+            ),
+        ] {
+            assert_eq!(normalize_features(actual), expected);
+        }
     }
 }

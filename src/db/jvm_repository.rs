@@ -72,7 +72,7 @@ impl JvmRepository {
             }
 
             query.push_str(
-                " ON CONFLICT(vendor, version, os, architecture, image_type, file_type) DO UPDATE SET
+                " ON CONFLICT(url) DO UPDATE SET
                 architecture = excluded.architecture,
                 checksum = excluded.checksum,
                 checksum_url = excluded.checksum_url,
@@ -139,11 +139,6 @@ impl JvmRepository {
               release_type = $1
               AND os = $2
               AND architecture = $3
-          ORDER BY
-              vendor,
-              version,
-              created_at
-          DESC
           ;",
         };
 
@@ -174,11 +169,6 @@ impl JvmRepository {
               vendor = $1
               AND os = $2
               AND architecture = $3
-          ORDER BY
-              vendor,
-              version,
-              created_at
-          DESC
           ;"
         };
 

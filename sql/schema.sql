@@ -20,7 +20,8 @@ CREATE TABLE JVM (
     "url" TEXT NOT NULL,
     vendor TEXT NOT NULL,
     "version" TEXT NOT NULL,
-    PRIMARY KEY (vendor, version, os, architecture, image_type, file_type)
+    /* should match the Hash/PartialEq implementation of JvmData (src/jvm/mod.rs) */
+    PRIMARY KEY(url)
 );
 
 --
