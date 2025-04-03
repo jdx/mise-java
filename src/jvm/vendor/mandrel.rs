@@ -16,6 +16,7 @@ use super::{Vendor, normalize_architecture, normalize_os, normalize_version};
 #[derive(Clone, Copy, Debug)]
 pub struct Mandrel {}
 
+#[derive(Debug, PartialEq)]
 struct FileNameMeta {
     arch: String,
     java_version: String,
@@ -142,4 +143,44 @@ fn meta_from_name(name: &str) -> Result<FileNameMeta> {
         os,
         version,
     })
+}
+
+#[cfg(test)]
+mod test {
+    use super::*;
+
+    #[test]
+    fn test_meta_from_name() {
+        for (actual, expected) in [
+            (
+                "mandrel-java21-linux-aarch64-23.1.5.0-Final.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    java_version: "21".to_string(),
+                    os: "linux".to_string(),
+                    version: "23.1.5.0-Final".to_string(),
+                },
+            ),
+            (
+                "mandrel-java22-macos-aarch64-24.0.2.0-Final.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    java_version: "22".to_string(),
+                    os: "macos".to_string(),
+                    version: "24.0.2.0-Final".to_string(),
+                },
+            ),
+            (
+                "mandrel-java17-windows-amd64-23.0.6.0-Final.zip",
+                FileNameMeta {
+                    arch: "amd64".to_string(),
+                    java_version: "17".to_string(),
+                    os: "windows".to_string(),
+                    version: "23.0.6.0-Final".to_string(),
+                },
+            ),
+        ] {
+            assert_eq!(meta_from_name(actual).unwrap(), expected);
+        }
+    }
 }

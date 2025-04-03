@@ -15,6 +15,7 @@ use xx::regex;
 #[derive(Clone, Copy, Debug)]
 pub struct GraalVM {}
 
+#[derive(Debug, PartialEq)]
 struct FileNameMeta {
     arch: String,
     ext: String,
@@ -76,9 +77,6 @@ fn map_asset(asset: &GitHubAsset) -> Result<JvmData> {
 }
 
 fn map_ce(asset: &GitHubAsset) -> Result<JvmData> {
-    // TODO centralize and handle fetch error with None url return value
-    //      only fetch if enabled or unknown (some vendors require 1000s of requests)
-    //      fetch_checksum(url: &str) -> Result<(Option<String>, Option<String>)>
     let sha256_url = format!("{}.sha256", asset.browser_download_url);
     let sha256 = match HTTP.get_text(&sha256_url) {
         Ok(sha256) => Some(format!("sha256:{}", sha256.trim())),
@@ -184,4 +182,65 @@ fn meta_from_name_community(name: &str) -> Result<FileNameMeta> {
         os,
         version: java_version.clone(),
     })
+}
+
+#[cfg(test)]
+mod test {
+    use super::*;
+
+    #[test]
+    fn test_meta_from_name_ce() {
+        for (actual, expected) in [
+            (
+                "graalvm-ce-java8-windows-amd64-19.3.4.zip",
+                FileNameMeta {
+                    arch: "amd64".to_string(),
+                    ext: "zip".to_string(),
+                    java_version: "8".to_string(),
+                    os: "windows".to_string(),
+                    version: "19.3.4".to_string(),
+                },
+            ),
+            (
+                "graalvm-ce-java11-darwin-aarch64-22.3.0.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    java_version: "11".to_string(),
+                    os: "darwin".to_string(),
+                    version: "22.3.0".to_string(),
+                },
+            ),
+        ] {
+            assert_eq!(meta_from_name_ce(actual).unwrap(), expected);
+        }
+    }
+
+    #[test]
+    fn test_meta_from_name_community() {
+        for (actual, expected) in [
+            (
+                "graalvm-community-jdk-17.0.8_linux-aarch64_bin.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    java_version: "17.0.8".to_string(),
+                    os: "linux".to_string(),
+                    version: "17.0.8".to_string(),
+                },
+            ),
+            (
+                "graalvm-community-jdk-23.0.2_windows-x64_bin.zip",
+                FileNameMeta {
+                    arch: "x64".to_string(),
+                    ext: "zip".to_string(),
+                    java_version: "23.0.2".to_string(),
+                    os: "windows".to_string(),
+                    version: "23.0.2".to_string(),
+                },
+            ),
+        ] {
+            assert_eq!(meta_from_name_community(actual).unwrap(), expected);
+        }
+    }
 }

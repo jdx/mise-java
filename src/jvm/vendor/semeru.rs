@@ -13,6 +13,7 @@ use xx::regex;
 #[derive(Clone, Copy, Debug)]
 pub struct Semeru {}
 
+#[derive(Debug, PartialEq)]
 struct FileNameMeta {
     arch: String,
     image_type: String,
@@ -186,4 +187,70 @@ fn meta_from_name_rpm(name: &str) -> Result<FileNameMeta> {
         os,
         ext,
     })
+}
+
+#[cfg(test)]
+mod test {
+    use super::*;
+
+    #[test]
+    fn test_meta_from_name() {
+        for (actual, expected) in [
+            (
+                "ibm-semeru-certified-jdk_aarch64_linux_11.0.20.0.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    image_type: "jdk".to_string(),
+                    os: "linux".to_string(),
+                },
+            ),
+            (
+                "ibm-semeru-open-jdk_aarch64_mac_17.0.11_9_openj9-0.44.0.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    image_type: "jdk".to_string(),
+                    os: "mac".to_string(),
+                },
+            ),
+            (
+                "ibm-semeru-open-jdk_x64_windows_11.0.22_7_openj9-0.43.0.zip",
+                FileNameMeta {
+                    arch: "x64".to_string(),
+                    ext: "zip".to_string(),
+                    image_type: "jdk".to_string(),
+                    os: "windows".to_string(),
+                },
+            ),
+        ] {
+            assert_eq!(meta_from_name(actual).unwrap(), expected);
+        }
+    }
+
+    #[test]
+    fn test_meta_from_name_rpm() {
+        for (actual, expected) in [
+            (
+                "ibm-semeru-open-17-jdk-17.0.13.11_0.48.0-1.aarch64.rpm",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "rpm".to_string(),
+                    image_type: "jdk".to_string(),
+                    os: "linux".to_string(),
+                },
+            ),
+            (
+                "ibm-semeru-certified-11-jdk-11.0.25.0-1.x86_64.rpm",
+                FileNameMeta {
+                    arch: "x86_64".to_string(),
+                    ext: "rpm".to_string(),
+                    image_type: "jdk".to_string(),
+                    os: "linux".to_string(),
+                },
+            ),
+        ] {
+            assert_eq!(meta_from_name(actual).unwrap(), expected);
+        }
+    }
 }

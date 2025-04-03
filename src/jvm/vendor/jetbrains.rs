@@ -17,6 +17,7 @@ use super::{Vendor, md_to_html, normalize_architecture, normalize_os, normalize_
 #[derive(Clone, Copy, Debug)]
 pub struct Jetbrains {}
 
+#[derive(Debug, PartialEq)]
 struct FileNameMeta {
     arch: String,
     ext: String,
@@ -167,5 +168,62 @@ fn normalize_features(name: &str) -> Option<Vec<String>> {
     match features.is_empty() {
         true => None,
         false => Some(features),
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_normalize_features() {
+        for (actual, expected) in [
+            ("_diz", Some(vec!["debug".to_string()])),
+            ("_fd", Some(vec!["jcef".to_string(), "fastdebug".to_string()])),
+            ("_ft", Some(vec!["freetype".to_string()])),
+            ("_musl", Some(vec!["musl".to_string()])),
+            ("_jcef", Some(vec!["jcef".to_string()])),
+            ("-fastdebug", Some(vec!["fastdebug".to_string()])),
+        ] {
+            assert_eq!(normalize_features(actual), expected);
+        }
+    }
+
+    #[test]
+    fn test_meta_from_name() {
+        for (actual, expected) in [
+            (
+                "jbr_fd-17.0.4.1-linux-aarch64-b629.2.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    image_type: "jre".to_string(),
+                    os: "linux".to_string(),
+                    version: "17.0.4.1-b629.2".to_string(),
+                },
+            ),
+            (
+                "jbrsdk-21.0.5-osx-aarch64-b792.48_diz.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    image_type: "jdk".to_string(),
+                    os: "osx".to_string(),
+                    version: "21.0.5-b792.48".to_string(),
+                },
+            ),
+            (
+                "jbrsdk-21.0.6-windows-x64-b895.97.zip",
+                FileNameMeta {
+                    arch: "x64".to_string(),
+                    ext: "zip".to_string(),
+                    image_type: "jdk".to_string(),
+                    os: "windows".to_string(),
+                    version: "21.0.6-b895.97".to_string(),
+                },
+            ),
+        ] {
+            assert_eq!(meta_from_name(actual).unwrap(), expected);
+        }
     }
 }

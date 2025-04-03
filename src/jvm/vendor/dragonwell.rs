@@ -16,7 +16,7 @@ use super::{Vendor, normalize_architecture, normalize_os, normalize_version};
 #[derive(Clone, Copy, Debug)]
 pub struct Dragonwell {}
 
-#[derive(Default)]
+#[derive(Debug, Default, PartialEq)]
 struct FileNameMeta {
     arch: String,
     ext: String,
@@ -124,7 +124,7 @@ fn map_asset(asset: &GitHubAsset) -> Result<JvmData> {
 
 fn normalize_release_type(release_type: &str) -> String {
     match release_type {
-        _ if release_type.eq_ignore_ascii_case("ea")
+        _ if release_type.contains("ea")
             || release_type.contains("Experimental")
             || release_type.contains("preview")
             || release_type == "FP1" =>
@@ -176,8 +176,88 @@ fn meta_from_name(name: &str) -> Result<FileNameMeta> {
             os: caps.get(2).unwrap().as_str().to_string(),
             version: caps.get(3).unwrap().as_str().to_string(),
             java_version: caps.get(4).unwrap().as_str().to_string(),
-            release_type: Some(caps.get(5).unwrap().as_str().to_string()),
+            release_type: match caps.get(5) {
+              Some(m) => match m {
+                m if m.is_empty() => None,
+                _ => Some(m.as_str().to_string()),
+              }
+              None => None
+            },
             ext: caps.get(6).unwrap().as_str().to_string(),
         })
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_normalize_release_types() {
+        for (actual, expected) in [
+            ("ea", "ea"),
+            ("ga", "ga"),
+            ("GA", "ga"),
+            ("preview", "ea"),
+            ("Experimental", "ea"),
+            ("GA_Experimental", "ea"),
+            ("FP1", "ea"),
+            ("jdk-17+35", "ga"),
+            ("jdk-17+35-ea", "ea"),
+        ] {
+            assert_eq!(normalize_release_type(actual), expected);
+        }
+    }
+
+    #[test]
+    fn test_meta_from_name() {
+        for (actual, expected) in [
+            (
+                "Alibaba_Dragonwell_Standard_11.0.18.14.9_aarch64_linux.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    java_version: "11.0.18.14.9".to_string(),
+                    os: "linux".to_string(),
+                    release_type: None,
+                    version: "11.0.18.14.9".to_string(),
+                },
+            ),
+            (
+                "Alibaba_Dragonwell_Standard_21.0.6.0.6.7_x64_alpine-linux.tar.gz",
+                FileNameMeta {
+                    arch: "x64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    java_version: "21.0.6.0.6.7".to_string(),
+                    os: "linux".to_string(),
+                    release_type: None,
+                    version: "21.0.6.0.6.7".to_string(),
+                },
+            ),
+            (
+                "Alibaba_Dragonwell_8.5.5-FP1_Linux_aarch64.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    java_version: "8.5.5".to_string(),
+                    os: "Linux".to_string(),
+                    release_type: Some("FP1".to_string()),
+                    version: "8.5.5".to_string(),
+                },
+            ),
+            (
+                "OpenJDK11U-jdk_aarch64_linux_dragonwell_dragonwell-11.0.9.4_11.0.9_0.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    java_version: "11.0.9_0".to_string(),
+                    os: "linux".to_string(),
+                    release_type: None,
+                    version: "11.0.9.4".to_string(),
+                },
+            ),
+        ] {
+            assert_eq!(meta_from_name(actual).unwrap(), expected);
+        }
     }
 }

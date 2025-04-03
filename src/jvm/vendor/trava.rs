@@ -18,6 +18,7 @@ use xx::regex;
 #[derive(Clone, Copy, Debug)]
 pub struct Trava {}
 
+#[derive(Debug)]
 struct FileNameMeta {
     arch: String,
     os: String,
@@ -153,4 +154,50 @@ fn meta_from_name_11(name: &str) -> Result<FileNameMeta> {
     let ext = capture.get(3).unwrap().as_str().to_string();
 
     Ok(FileNameMeta { arch, os, ext })
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_version_from_tag() {
+        for (version, actual, expected) in [
+            ("8", "dcevm8u302b1", "8.0.302+1"),
+            ("11", "dcevm-11.0.11+1", "11.0.11+1"),
+        ] {
+            assert_eq!(version_from_tag(version, actual).unwrap(), expected,);
+        }
+
+        for (version, actual) in [("8", "test8u302b1"), ("11", "test-11.0.11+1-foo")] {
+            let result = version_from_tag(version, actual);
+            assert!(result.is_err());
+        }
+    }
+
+    #[test]
+    fn test_meta_from_name() {
+        for (version, actual, expected) in [
+            ("8", "java8-openjdk-dcevm-linux.tar.gz", ("x86_64", "linux", "tar.gz")),
+            (
+                "11",
+                "java11-openjdk-dcevm-linux-amd64.tar.gz",
+                ("amd64", "linux", "tar.gz"),
+            ),
+            ("11", "Openjdk11u-dcevm-linux-x64.tar.gz", ("x64", "linux", "tar.gz")),
+        ] {
+            let meta = meta_from_name(version, actual).unwrap();
+            assert_eq!(meta.arch, expected.0);
+            assert_eq!(meta.os, expected.1);
+            assert_eq!(meta.ext, expected.2);
+        }
+
+        for (version, actual) in [
+            ("8", "java7-openjdk-dcevm-linux.tar.gz"),
+            ("11", "java11-openjdk-dcevm-linux-x86_64.tar.gz"),
+        ] {
+            let result = meta_from_name(version, actual);
+            assert!(result.is_err());
+        }
+    }
 }

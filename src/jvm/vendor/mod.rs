@@ -85,7 +85,7 @@ pub struct AnchorElement {
 
 /// Returns the file extension of a package which is either `apk`, `deb`, `dmg`, `msi`, `pkg`, `rpm`, `tar.gz` or `zip`
 fn get_extension(package_name: &str) -> String {
-    let re = regex::Regex::new(r"^.*\.(apk|dep|dmg|msi|pkg|rpm|tar\.gz|zip)$").unwrap();
+    let re = regex::Regex::new(r"^.*\.(apk|deb|dmg|msi|pkg|rpm|tar\.gz|zip)$").unwrap();
     re.replace(package_name, "$1").to_string()
 }
 
@@ -115,6 +115,41 @@ pub fn anchors_from_html(html: &str, selector: &str) -> Vec<AnchorElement> {
             AnchorElement { name, href }
         })
         .collect::<Vec<AnchorElement>>()
+}
+
+#[test]
+fn test_anchors_from_html() {
+    let html = r#"
+  <html>
+    <body>
+      <a href="https://example.com">Example</a>
+      <a href="https://rust-lang.org">Rust</a>
+      <a>Missing Href</a>
+    </body>
+  </html>
+  "#;
+    let selector = "a";
+    let anchors = anchors_from_html(html, selector);
+
+    assert_eq!(anchors.len(), 3);
+    for (actual_name, actual_href, expected_name, expected_href) in [
+        (
+            anchors[0].name.as_str(),
+            anchors[0].href.as_str(),
+            "Example",
+            "https://example.com",
+        ),
+        (
+            anchors[1].name.as_str(),
+            anchors[1].href.as_str(),
+            "Rust",
+            "https://rust-lang.org",
+        ),
+        (anchors[2].name.as_str(), anchors[2].href.as_str(), "Missing Href", ""),
+    ] {
+        assert_eq!(actual_name, expected_name);
+        assert_eq!(actual_href, expected_href);
+    }
 }
 
 /// Normalizes the architecture string to a common format
@@ -199,10 +234,61 @@ fn normalize_underline(version: &str) -> String {
 
 #[cfg(test)]
 mod tests {
+    use indoc::indoc;
+
     use super::*;
 
     #[test]
+    fn test_md_to_html() {
+        let markdown = indoc! {"
+        # Title
+
+        This is a **bold** text.
+      "};
+        let expected_html = indoc! {"
+        <h1>Title</h1>
+        <p>This is a <strong>bold</strong> text.</p>
+      "};
+        assert_eq!(md_to_html(markdown), expected_html);
+
+        let markdown_with_table = indoc! {"
+        | Header1 | Header2 |
+        |---------|---------|
+        | Value1  | Value2  |
+      "};
+        let expected_html_with_table = indoc! {"
+        <table>
+        <thead>
+        <tr>
+        <th>Header1</th>
+        <th>Header2</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>Value1</td>
+        <td>Value2</td>
+        </tr>
+        </tbody>
+        </table>
+      "};
+        assert_eq!(md_to_html(markdown_with_table), expected_html_with_table);
+    }
+
+    #[test]
     fn test_get_extension() {
+        for (actual, expected) in [
+            ("jdk-8u292-linux-x64.apk", "apk"),
+            ("jdk-8u292-linux-x64.deb", "deb"),
+            ("jdk-8u292-macosx-x64.dmg", "dmg"),
+            ("jdk-8u292-windows-x64.msi", "msi"),
+            ("jdk-8u292-linux-x64.pkg", "pkg"),
+            ("jdk-8u292-linux-x64.rpm", "rpm"),
+            ("jdk-8u292-linux-x64.tar.gz", "tar.gz"),
+            ("jdk-8u292-windows-x64.zip", "zip"),
+        ] {
+            assert_eq!(get_extension(actual), expected);
+        }
         assert_eq!(get_extension("jdk-8u292-linux-x64.apk"), "apk");
         assert_eq!(get_extension("jdk-8u292-macosx-x64.dmg"), "dmg");
         assert_eq!(get_extension("jdk-8u292-windows-x64.msi"), "msi");
@@ -214,66 +300,79 @@ mod tests {
 
     #[test]
     fn test_normalize_architecture() {
-        assert_eq!(normalize_architecture("amd64"), "x86_64");
-        assert_eq!(normalize_architecture("x64"), "x86_64");
-        assert_eq!(normalize_architecture("x86_64"), "x86_64");
-        assert_eq!(normalize_architecture("x86-64"), "x86_64");
-        assert_eq!(normalize_architecture("x32"), "i686");
-        assert_eq!(normalize_architecture("x86"), "i686");
-        assert_eq!(normalize_architecture("x86_32"), "i686");
-        assert_eq!(normalize_architecture("x86-32"), "i686");
-        assert_eq!(normalize_architecture("i386"), "i686");
-        assert_eq!(normalize_architecture("i586"), "i686");
-        assert_eq!(normalize_architecture("i686"), "i686");
-        assert_eq!(normalize_architecture("aarch64"), "aarch64");
-        assert_eq!(normalize_architecture("arm64"), "aarch64");
-        assert_eq!(normalize_architecture("arm"), "arm32");
-        assert_eq!(normalize_architecture("arm32"), "arm32");
-        assert_eq!(normalize_architecture("armv7"), "arm32");
-        assert_eq!(normalize_architecture("aarch32sf"), "arm32");
-        assert_eq!(normalize_architecture("arm32-vfp-hflt"), "arm32-vfp-hflt");
-        assert_eq!(normalize_architecture("aarch32hf"), "arm32-vfp-hflt");
-        assert_eq!(normalize_architecture("ppc"), "ppc32");
-        assert_eq!(normalize_architecture("ppc32hf"), "ppc32hf");
-        assert_eq!(normalize_architecture("ppc32spe"), "ppc32spe");
-        assert_eq!(normalize_architecture("ppc64"), "ppc64");
-        assert_eq!(normalize_architecture("ppc64le"), "ppc64le");
-        assert_eq!(normalize_architecture("s390"), "s390");
-        assert_eq!(normalize_architecture("s390x"), "s390x");
-        assert_eq!(normalize_architecture("sparcv9"), "sparc");
-        assert_eq!(normalize_architecture("riscv64"), "riscv64");
-        assert_eq!(normalize_architecture("unknown"), "unknown-arch-unknown");
+        for (actual, expected) in [
+            ("amd64", "x86_64"),
+            ("x64", "x86_64"),
+            ("x86_64", "x86_64"),
+            ("x86-64", "x86_64"),
+            ("x32", "i686"),
+            ("x86", "i686"),
+            ("x86_32", "i686"),
+            ("x86-32", "i686"),
+            ("i386", "i686"),
+            ("i586", "i686"),
+            ("i686", "i686"),
+            ("aarch64", "aarch64"),
+            ("arm64", "aarch64"),
+            ("arm", "arm32"),
+            ("arm32", "arm32"),
+            ("armv7", "arm32"),
+            ("aarch32sf", "arm32"),
+            ("arm32-vfp-hflt", "arm32-vfp-hflt"),
+            ("aarch32hf", "arm32-vfp-hflt"),
+            ("ppc", "ppc32"),
+            ("ppc32hf", "ppc32hf"),
+            ("ppc32spe", "ppc32spe"),
+            ("ppc64", "ppc64"),
+            ("ppc64le", "ppc64le"),
+            ("s390", "s390"),
+            ("s390x", "s390x"),
+            ("sparcv9", "sparc"),
+            ("riscv64", "riscv64"),
+        ] {
+            assert_eq!(normalize_architecture(actual), expected);
+        }
     }
 
     #[test]
     fn test_normalize_os() {
-        assert_eq!(normalize_os("linux"), "linux");
-        assert_eq!(normalize_os("alpine"), "linux");
-        assert_eq!(normalize_os("alpine-linux"), "linux");
-        assert_eq!(normalize_os("mac"), "macosx");
-        assert_eq!(normalize_os("macos"), "macosx");
-        assert_eq!(normalize_os("macosx"), "macosx");
-        assert_eq!(normalize_os("osx"), "macosx");
-        assert_eq!(normalize_os("darwin"), "macosx");
-        assert_eq!(normalize_os("win"), "windows");
-        assert_eq!(normalize_os("windows"), "windows");
-        assert_eq!(normalize_os("solaris"), "solaris");
-        assert_eq!(normalize_os("aix"), "aix");
-        assert_eq!(normalize_os("unknown"), "unknown-os-unknown");
+        for (actual, expected) in [
+            ("linux", "linux"),
+            ("alpine", "linux"),
+            ("alpine-linux", "linux"),
+            ("linux-musl", "linux"),
+            ("linux_musl", "linux"),
+            ("mac", "macosx"),
+            ("macos", "macosx"),
+            ("macosx", "macosx"),
+            ("osx", "macosx"),
+            ("darwin", "macosx"),
+            ("win", "windows"),
+            ("windows", "windows"),
+            ("solaris", "solaris"),
+            ("aix", "aix"),
+            ("unknown", "unknown-os-unknown"),
+        ] {
+            assert_eq!(normalize_os(actual), expected);
+        }
     }
 
     #[test]
     fn test_normalize_version() {
-        assert_eq!(normalize_version("1"), "1.0.0");
-        assert_eq!(normalize_version("1-beta"), "1.0.0-beta");
-        assert_eq!(normalize_version("1+build"), "1.0.0+build");
-        assert_eq!(normalize_version("1.2"), "1.2");
-        assert_eq!(normalize_version("1.2.3"), "1.2.3");
-        assert_eq!(normalize_version("1.2-beta"), "1.2-beta");
-        assert_eq!(normalize_version("1.2+build"), "1.2+build");
-        assert_eq!(normalize_version("1.2.3-beta"), "1.2.3-beta");
-        assert_eq!(normalize_version("1.2.3+build"), "1.2.3+build");
-        assert_eq!(normalize_version("1_2_3-build"), "1.2.3-build");
-        assert_eq!(normalize_version("invalid"), "invalid");
+        for (actual, expected) in [
+            ("1", "1.0.0"),
+            ("1-beta", "1.0.0-beta"),
+            ("1+build", "1.0.0+build"),
+            ("1.2", "1.2"),
+            ("1.2.3", "1.2.3"),
+            ("1.2-beta", "1.2-beta"),
+            ("1.2+build", "1.2+build"),
+            ("1.2.3-beta", "1.2.3-beta"),
+            ("1.2.3+build", "1.2.3+build"),
+            ("1_2_3-build", "1.2.3-build"),
+            ("invalid", "invalid"),
+        ] {
+            assert_eq!(normalize_version(actual), expected);
+        }
     }
 }

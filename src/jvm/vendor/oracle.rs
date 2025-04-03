@@ -11,6 +11,7 @@ use super::{AnchorElement, Vendor, anchors_from_html, normalize_architecture, no
 #[derive(Clone, Copy, Debug)]
 pub struct Oracle {}
 
+#[derive(Debug, PartialEq)]
 struct FileNameMeta {
     arch: String,
     ext: String,
@@ -111,4 +112,44 @@ fn build_urls() -> Vec<String> {
         ));
     }
     urls
+}
+
+#[cfg(test)]
+mod test {
+    use super::*;
+
+    #[test]
+    fn test_meta_from_name() {
+        for (actual, expected) in [
+            (
+                "jdk-17.0.7_linux-aarch64_bin.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    os: "linux".to_string(),
+                    version: "17.0.7".to_string(),
+                },
+            ),
+            (
+                "jdk-21_macos-aarch64_bin.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    os: "macos".to_string(),
+                    version: "21".to_string(),
+                },
+            ),
+            (
+                "jdk-23_windows-x64_bin.zip",
+                FileNameMeta {
+                    arch: "x64".to_string(),
+                    ext: "zip".to_string(),
+                    os: "windows".to_string(),
+                    version: "23".to_string(),
+                },
+            ),
+        ] {
+            assert_eq!(meta_from_name(actual).unwrap(), expected);
+        }
+    }
 }

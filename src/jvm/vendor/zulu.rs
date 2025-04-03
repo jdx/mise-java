@@ -114,7 +114,7 @@ fn normalize_features(package: &Package) -> Option<Vec<String>> {
     }
 }
 
-#[derive(Debug, Deserialize, Serialize)]
+#[derive(Debug, Default, Deserialize, Serialize)]
 struct Package {
     arch: String,
     archive_type: String,
@@ -132,4 +132,69 @@ struct Package {
     release_status: String,
     sha256_hash: String,
     size: u64,
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_arch_from_name() {
+        for (actual, expected) in [
+            ("zulu11.1.8-ca-jdk11.0.0-linux_aarch64.tar.gz", "aarch64"),
+            ("zulu10.1.11-ca-jdk10.0.0-linux_i686.zip", "i686"),
+            ("zulu10.1.11-ca-jdk10.0.0-macosx_x64.zip", "x64"),
+            ("zulu11.39.15-ca-fx-jdk11.0.7-win_x64.zip", "x64"),
+        ] {
+            let arch = arch_from_name(actual);
+            assert!(arch.is_ok());
+            assert_eq!(arch_from_name(actual).unwrap(), expected);
+        }
+
+        for actual in [
+            "zulu1.8.0_66-8.11.0.1-macosx.tar.gz",
+            "zre1.7.0_65-7.6.0.2-headless-x86lx32.zip",
+        ] {
+            let arch = arch_from_name(actual);
+            assert!(arch.is_err())
+        }
+    }
+
+    #[test]
+    fn test_normalize_features() {
+        for (actual, expected) in [
+            (
+                Package {
+                    javafx_bundled: Some(true),
+                    ..Default::default()
+                },
+                Some(vec!["javafx".to_string()]),
+            ),
+            (
+                Package {
+                    crac_supported: Some(true),
+                    ..Default::default()
+                },
+                Some(vec!["crac".to_string()]),
+            ),
+            (
+                Package {
+                    lib_c_type: Some("musl".to_string()),
+                    ..Default::default()
+                },
+                Some(vec!["musl".to_string()]),
+            ),
+            (
+                Package {
+                    javafx_bundled: Some(true),
+                    crac_supported: Some(true),
+                    lib_c_type: Some("musl".to_string()),
+                    ..Default::default()
+                },
+                Some(vec!["javafx".to_string(), "crac".to_string(), "musl".to_string()]),
+            ),
+        ] {
+            assert_eq!(normalize_features(&actual), expected);
+        }
+    }
 }

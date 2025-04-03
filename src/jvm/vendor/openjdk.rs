@@ -12,6 +12,7 @@ use super::{AnchorElement, Vendor, anchors_from_html, normalize_architecture, no
 #[derive(Clone, Copy, Debug)]
 pub struct OpenJDK {}
 
+#[derive(Debug, PartialEq)]
 struct FileNameMeta {
     arch: String,
     ext: String,
@@ -121,5 +122,60 @@ fn normalize_release_type(version: &str) -> String {
         "ea".to_string()
     } else {
         "ga".to_string()
+    }
+}
+
+#[cfg(test)]
+mod test {
+    use crate::jvm::vendor::openjdk::{meta_from_name, normalize_release_type};
+
+    use super::FileNameMeta;
+
+    #[test]
+    fn test_normalize_release_type() {
+        for (actual, expected) in [
+            ("23-valhalla+1-90", "ea"),
+            ("25-loom+1-11", "ea"),
+            ("25-ea+16", "ea"),
+            ("20", "ga"),
+            ("23.0.2", "ga"),
+        ] {
+            assert_eq!(normalize_release_type(actual), expected);
+        }
+    }
+
+    #[test]
+    fn test_meta_from_name() {
+        for (actual, expected) in [
+            (
+                "openjdk-18.0.1.1_linux-aarch64_bin.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    os: "linux".to_string(),
+                    version: "18.0.1.1".to_string(),
+                },
+            ),
+            (
+                "openjdk-24_macos-aarch64_bin.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    os: "macos".to_string(),
+                    version: "24".to_string(),
+                },
+            ),
+            (
+                "openjdk-11.0.1_windows-x64_bin.zip",
+                FileNameMeta {
+                    arch: "x64".to_string(),
+                    ext: "zip".to_string(),
+                    os: "windows".to_string(),
+                    version: "11.0.1".to_string(),
+                },
+            ),
+        ] {
+            assert_eq!(meta_from_name(actual).unwrap(), expected);
+        }
     }
 }

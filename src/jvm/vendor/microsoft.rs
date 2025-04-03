@@ -16,6 +16,7 @@ use super::{Vendor, normalize_architecture, normalize_os, normalize_version};
 #[derive(Clone, Copy, Debug)]
 pub struct Microsoft {}
 
+#[derive(Debug, PartialEq)]
 struct FileNameMeta {
     arch: String,
     ext: String,
@@ -114,4 +115,44 @@ fn meta_from_name(name: &str) -> Result<FileNameMeta> {
     let ext = capture.get(4).unwrap().as_str().to_string();
 
     Ok(FileNameMeta { arch, ext, os, version })
+}
+
+#[cfg(test)]
+mod test {
+    use super::*;
+
+    #[test]
+    fn test_meta_from_name() {
+        for (actual, expected) in [
+            (
+                "microsoft-jdk-17.0.9-linux-aarch64.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    os: "linux".to_string(),
+                    version: "17.0.9".to_string(),
+                },
+            ),
+            (
+                "microsoft-jdk-11.0.14.9.1-ea-macOS-aarch64.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    os: "macOS".to_string(),
+                    version: "11.0.14.9.1".to_string(),
+                },
+            ),
+            (
+                "microsoft-jdk-21.0.6-windows-x64.zip",
+                FileNameMeta {
+                    arch: "x64".to_string(),
+                    ext: "zip".to_string(),
+                    os: "windows".to_string(),
+                    version: "21.0.6".to_string(),
+                },
+            ),
+        ] {
+            assert_eq!(meta_from_name(actual).unwrap(), expected);
+        }
+    }
 }

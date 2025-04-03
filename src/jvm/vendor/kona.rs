@@ -16,6 +16,7 @@ use super::{Vendor, normalize_architecture, normalize_os, normalize_version};
 #[derive(Clone, Copy, Debug)]
 pub struct Kona {}
 
+#[derive(Debug, PartialEq)]
 struct FileNameMeta {
     arch: String,
     ext: String,
@@ -87,7 +88,7 @@ fn map_asset(asset: &GitHubAsset) -> Result<JvmData> {
     };
     let filename = asset.name.clone();
     let filename_meta = meta_from_name(&filename)?;
-    let features = match filename_meta.features.trim().is_empty() {
+    let features = match filename_meta.features.is_empty() {
         true => None,
         false => {
             let mut feat: Vec<String> = filename_meta
@@ -157,8 +158,51 @@ fn meta_from_name(name: &str) -> Result<FileNameMeta> {
     Ok(FileNameMeta {
         arch,
         ext,
-        features: format!("{} {}", features_1, features_2),
+        features: format!("{} {}", features_1, features_2).trim().to_string(),
         os,
         version,
     })
+}
+
+#[cfg(test)]
+mod test {
+    use super::*;
+
+    #[test]
+    fn test_meta_from_name() {
+        for (actual, expected) in [
+            (
+                "TencentKona-21.0.6.b1-jdk_linux-aarch64.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    features: "".to_string(),
+                    os: "linux".to_string(),
+                    version: "21.0.6.b1".to_string(),
+                },
+            ),
+            (
+                "TencentKona-17.0.11.b1_jdk_macosx-aarch64_notarized.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    features: "notarized".to_string(),
+                    os: "macosx".to_string(),
+                    version: "17.0.11.b1".to_string(),
+                },
+            ),
+            (
+                "TencentKona-21.0.5.b1_jdk_windows-x86_64_signed.zip",
+                FileNameMeta {
+                    arch: "x86_64".to_string(),
+                    ext: "zip".to_string(),
+                    features: "signed".to_string(),
+                    os: "windows".to_string(),
+                    version: "21.0.5.b1".to_string(),
+                },
+            ),
+        ] {
+            assert_eq!(meta_from_name(actual).unwrap(), expected);
+        }
+    }
 }

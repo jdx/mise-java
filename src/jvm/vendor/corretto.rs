@@ -16,6 +16,7 @@ use super::{Vendor, md_to_html, normalize_architecture, normalize_os, normalize_
 #[derive(Clone, Copy, Debug)]
 pub struct Corretto {}
 
+#[derive(Debug, Default, PartialEq)]
 struct FileNameMeta {
     arch: String,
     os: String,
@@ -147,10 +148,10 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_archive_formats() {
+    fn test_meta_from_name_archives() {
         for (actual, expected) in [
             (
-                meta_from_name("amazon-corretto-11.0.18.10.1-linux-x64.tar.gz").unwrap(),
+                "amazon-corretto-11.0.18.10.1-linux-x64.tar.gz",
                 FileNameMeta {
                     arch: "x64".to_string(),
                     os: "linux".to_string(),
@@ -159,7 +160,7 @@ mod tests {
                 },
             ),
             (
-                meta_from_name("amazon-corretto-11.0.19.7.1-alpine-linux-x64.tar.gz").unwrap(),
+                "amazon-corretto-11.0.19.7.1-alpine-linux-x64.tar.gz",
                 FileNameMeta {
                     arch: "x64".to_string(),
                     os: "alpine-linux".to_string(),
@@ -168,7 +169,7 @@ mod tests {
                 },
             ),
             (
-                meta_from_name("amazon-corretto-8.382.05.1-windows-x64-jdk.zip").unwrap(),
+                "amazon-corretto-8.382.05.1-windows-x64-jdk.zip",
                 FileNameMeta {
                     arch: "x64".to_string(),
                     os: "windows".to_string(),
@@ -177,7 +178,7 @@ mod tests {
                 },
             ),
             (
-                meta_from_name("amazon-corretto-17.0.7.7.1-macosx-aarch64.tar.gz").unwrap(),
+                "amazon-corretto-17.0.7.7.1-macosx-aarch64.tar.gz",
                 FileNameMeta {
                     arch: "aarch64".to_string(),
                     os: "macosx".to_string(),
@@ -186,7 +187,7 @@ mod tests {
                 },
             ),
             (
-                meta_from_name("amazon-corretto-11.0.19.7.1-linux-x64-musl-headless.tar.gz").unwrap(),
+                "amazon-corretto-11.0.19.7.1-linux-x64-musl-headless.tar.gz",
                 FileNameMeta {
                     arch: "x64".to_string(),
                     os: "linux".to_string(),
@@ -195,7 +196,7 @@ mod tests {
                 },
             ),
             (
-                meta_from_name("amazon-corretto-21.0.1.9.1-linux-arm64.tar.gz").unwrap(),
+                "amazon-corretto-21.0.1.9.1-linux-arm64.tar.gz",
                 FileNameMeta {
                     arch: "arm64".to_string(),
                     os: "linux".to_string(),
@@ -204,15 +205,12 @@ mod tests {
                 },
             ),
         ] {
-            assert_eq!(actual.arch, expected.arch);
-            assert_eq!(actual.os, expected.os);
-            assert_eq!(actual.ext, expected.ext);
-            assert_eq!(actual.version, expected.version);
+            assert_eq!(meta_from_name(actual).unwrap(), expected);
         }
     }
 
     #[test]
-    fn test_package_formats() {
+    fn test_meta_from_name_packages() {
         for (actual, expected) in [
             (
                 meta_from_name("java-11-amazon-corretto-devel-11.0.18.10.1-1.x86_64.rpm").unwrap(),

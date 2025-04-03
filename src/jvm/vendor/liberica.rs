@@ -16,6 +16,7 @@ use super::{Vendor, normalize_architecture, normalize_os, normalize_version};
 #[derive(Clone, Copy, Debug)]
 pub struct Liberica {}
 
+#[derive(Debug, PartialEq)]
 struct FileNameMeta {
     arch: String,
     ext: String,
@@ -217,6 +218,47 @@ mod tests {
             ),
         ] {
             assert_eq!(normalize_features(actual), expected);
+        }
+    }
+
+    #[test]
+    fn test_meta_from_name() {
+        for (actual, expected) in [
+            (
+                "bellsoft-jdk11.0.11+9-linux-aarch64-musl-lite.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    feature: "musl-lite".to_string(),
+                    image_type: "jdk".to_string(),
+                    os: "linux".to_string(),
+                    version: "11.0.11+9".to_string(),
+                },
+            ),
+            (
+                "bellsoft-jre22.0.1+10-macos-aarch64.dmg",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "dmg".to_string(),
+                    feature: "".to_string(),
+                    image_type: "jre".to_string(),
+                    os: "macos".to_string(),
+                    version: "22.0.1+10".to_string(),
+                },
+            ),
+            (
+                "bellsoft-jre11.0.25+11-windows-amd64-full.zip",
+                FileNameMeta {
+                    arch: "amd64".to_string(),
+                    ext: "zip".to_string(),
+                    feature: "full".to_string(),
+                    image_type: "jre".to_string(),
+                    os: "windows".to_string(),
+                    version: "11.0.25+11".to_string(),
+                },
+            ),
+        ] {
+            assert_eq!(meta_from_name(actual).unwrap(), expected);
         }
     }
 }

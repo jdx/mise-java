@@ -16,7 +16,7 @@ use super::{Vendor, normalize_architecture, normalize_os, normalize_version};
 #[derive(Clone, Copy, Debug)]
 pub struct SAPMachine {}
 
-#[derive(Default)]
+#[derive(Debug, Default, PartialEq)]
 struct FileNameMeta {
     arch: String,
     ext: String,
@@ -87,10 +87,7 @@ fn map_asset(release: &GitHubRelease, asset: &GitHubAsset) -> Result<JvmData> {
         None => None,
     };
     let filename = asset.name.clone();
-    let filename_meta = match asset.name.ends_with(".rpm") {
-        true => meta_from_name_rpm(&filename)?,
-        false => meta_from_name(&filename)?,
-    };
+    let filename_meta = meta_from_name(&filename)?;
     let features = match filename_meta.features.is_empty() {
         true => None,
         false => Some(vec![filename_meta.features.clone()]),
@@ -145,6 +142,13 @@ fn include(asset: &GitHubAsset) -> bool {
 
 fn meta_from_name(name: &str) -> Result<FileNameMeta> {
     debug!("[sapmachine] parsing name: {}", name);
+    match name {
+        name if name.ends_with(".rpm") => meta_from_name_rpm(name),
+        _ => meta_from_name_other(name),
+    }
+}
+
+fn meta_from_name_other(name: &str) -> Result<FileNameMeta> {
     let capture = regex!(r"^sapmachine-(jdk|jre)-([0-9].+)_(aix|linux|macos|osx|windows)-(x64|aarch64|ppc64le|ppc64|x64)-?(.*)_bin\.(.+)$")
         .captures(name)
         .ok_or_else(|| eyre::eyre!("regular expression did not match for {}", name))?;
@@ -167,7 +171,6 @@ fn meta_from_name(name: &str) -> Result<FileNameMeta> {
 }
 
 fn meta_from_name_rpm(name: &str) -> Result<FileNameMeta> {
-    debug!("[sapmachine] parsing name: {}", name);
     let capture = regex!(r"^sapmachine-(jdk|jre)-([0-9].+)\.(aarch64|ppc64le|x86_64)\.rpm$")
         .captures(name)
         .ok_or_else(|| eyre::eyre!("regular expression did not match for {}", name))?;
@@ -187,4 +190,80 @@ fn meta_from_name_rpm(name: &str) -> Result<FileNameMeta> {
         os,
         version,
     })
+}
+
+#[cfg(test)]
+mod test {
+    use super::*;
+
+    #[test]
+    fn test_meta_from_name() {
+        for (actual, expected) in [
+            (
+                "sapmachine-jdk-23_linux-aarch64_bin.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    features: "".to_string(),
+                    image_type: "jdk".to_string(),
+                    os: "linux".to_string(),
+                    version: "23".to_string(),
+                },
+            ),
+            (
+                "sapmachine-jre-18.0.1.1_macos-aarch64_bin.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    features: "".to_string(),
+                    image_type: "jre".to_string(),
+                    os: "macos".to_string(),
+                    version: "18.0.1.1".to_string(),
+                },
+            ),
+            (
+                "sapmachine-jdk-21.0.4_windows-x64_bin.zip",
+                FileNameMeta {
+                    arch: "x64".to_string(),
+                    ext: "zip".to_string(),
+                    features: "".to_string(),
+                    image_type: "jdk".to_string(),
+                    os: "windows".to_string(),
+                    version: "21.0.4".to_string(),
+                },
+            ),
+        ] {
+            assert_eq!(meta_from_name(actual).unwrap(), expected);
+        }
+    }
+
+    #[test]
+    fn test_meta_from_name_rpm() {
+        for (actual, expected) in [
+            (
+                "sapmachine-jdk-17.0.14-1.aarch64.rpm",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "rpm".to_string(),
+                    features: "".to_string(),
+                    image_type: "jdk".to_string(),
+                    os: "linux".to_string(),
+                    version: "17.0.14-1".to_string(),
+                },
+            ),
+            (
+                "sapmachine-jdk-23-1.x86_64.rpm",
+                FileNameMeta {
+                    arch: "x86_64".to_string(),
+                    ext: "rpm".to_string(),
+                    features: "".to_string(),
+                    image_type: "jdk".to_string(),
+                    os: "linux".to_string(),
+                    version: "23-1".to_string(),
+                },
+            ),
+        ] {
+            assert_eq!(meta_from_name_rpm(actual).unwrap(), expected);
+        }
+    }
 }
