@@ -91,7 +91,7 @@ fn map_release(a: &AnchorElement) -> Result<JvmData> {
 fn meta_from_name(name: &str) -> Result<FileNameMeta> {
     debug!("[oracle-graalvm] parsing name: {}", name);
     let capture = regex!(
-        r"^graalvm-jdk-([0-9+.]{2,})_(linux|macos|windows)-(x64|aarch64)_bin\.(tar\.gz|zip|msi|dmg|exe|deb|rpm)$"
+        r"^(?:graalvm-)?jdk-([0-9+.]{2,})_(linux|macos|windows)-(x64|aarch64)_bin\.(tar\.gz|zip|msi|dmg|exe|deb|rpm)$"
     )
     .captures(name)
     .ok_or_else(|| eyre::eyre!("regular expression did not match for {}", name))?;

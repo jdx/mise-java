@@ -3,7 +3,7 @@ use std::collections::HashSet;
 use eyre::Result;
 use indoc::formatdoc;
 use itertools::Itertools;
-use log::{debug, warn};
+use log::debug;
 use serde::{Deserialize, Serialize};
 
 use crate::{http::HTTP, jvm::JvmData};
@@ -52,7 +52,7 @@ fn map_packages(packages: Vec<Package>) -> Result<Vec<JvmData>> {
         let arch = match arch_from_name(&package.name) {
             Ok(arch) => arch,
             Err(_) => {
-                warn!("[zulu] failed to parse architecture for: {}", &package.name);
+                debug!("[zulu] failed to parse architecture for: {}", &package.name);
                 &package.arch
             }
         };
@@ -87,7 +87,7 @@ fn map_packages(packages: Vec<Package>) -> Result<Vec<JvmData>> {
 
 fn arch_from_name(name: &str) -> Result<&str> {
     debug!("[zulu] parsing name: {}", name);
-    let capture = regex!(r"^.*[._-](aarch32hf|aarch32sf|aarch64|amd64|arm64|musl_aarch64|i386|i686|musl_x64|ppc32hf|ppc32spe|ppc64|sparcv9|x64|x86_64|x86lx64)\..*$")
+    let capture = regex!(r"^.*[._-](aarch32hf|aarch32sf|aarch64|amd64|arm64|musl_aarch64|i386|i686|musl_x64|ppc32hf|ppc32spe|ppc64|sparcv9|x64|x86_64|x86lx32|x86lx64)\..*$")
         .captures(name)
         .ok_or_else(|| eyre::eyre!("regular expression failed for name: {}", name))?;
 
@@ -145,16 +145,14 @@ mod tests {
             ("zulu10.1.11-ca-jdk10.0.0-linux_i686.zip", "i686"),
             ("zulu10.1.11-ca-jdk10.0.0-macosx_x64.zip", "x64"),
             ("zulu11.39.15-ca-fx-jdk11.0.7-win_x64.zip", "x64"),
+            ("zre1.7.0_65-7.6.0.2-headless-x86lx32.zip", "x86lx32"),
         ] {
             let arch = arch_from_name(actual);
             assert!(arch.is_ok());
             assert_eq!(arch_from_name(actual).unwrap(), expected);
         }
 
-        for actual in [
-            "zulu1.8.0_66-8.11.0.1-macosx.tar.gz",
-            "zre1.7.0_65-7.6.0.2-headless-x86lx32.zip",
-        ] {
+        for actual in ["zulu1.8.0_66-8.11.0.1-macosx.tar.gz", "zulu1.7.0_79-7.9.0.2-win64.msi"] {
             let arch = arch_from_name(actual);
             assert!(arch.is_err())
         }

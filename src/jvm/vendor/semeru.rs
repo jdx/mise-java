@@ -136,7 +136,7 @@ fn map_asset(release: &GitHubRelease, asset: &GitHubAsset) -> Result<JvmData> {
 }
 
 fn version_from_tag(tag: &str) -> Result<String> {
-    let capture = regex!(r"^jdk-?(.*)_openj9-(.*)$")
+    let capture = regex!(r"^(?:jdk-?)?(.*)[_-]openj9-(.*)$")
         .captures(tag)
         .ok_or_else(|| eyre::eyre!("regular expression failed for tag: {}", tag))?;
     let version = capture.get(1).unwrap().as_str().to_string();

@@ -40,6 +40,7 @@ impl Vendor for Oracle {
             .collect::<Vec<_>>();
         let data = anchors
             .into_par_iter()
+            .filter(|a| !a.href.contains("graalvm-"))
             .flat_map(|anchor| match map_release(&anchor) {
                 Ok(release) => vec![release],
                 Err(e) => {
