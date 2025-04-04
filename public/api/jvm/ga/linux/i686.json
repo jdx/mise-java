@@ -13526,23 +13526,6 @@
   },
   {
     "architecture": "i686",
-    "checksum": "sha256:ef395417113a7c2c000339609afbb29837ee26e50fde5ee109f2069e2faa6115",
-    "checksum_url": null,
-    "features": null,
-    "file_type": "zip",
-    "filename": "zre1.7.0_65-7.6.0.2-headless-x86lx32.zip",
-    "image_type": "jre",
-    "java_version": "7.0.65",
-    "jvm_impl": "hotspot",
-    "os": "linux",
-    "release_type": "ga",
-    "size": 34709400,
-    "url": "https://cdn.azul.com/zulu/bin/zre1.7.0_65-7.6.0.2-headless-x86lx32.zip",
-    "vendor": "zulu",
-    "version": "7.6.0.2"
-  },
-  {
-    "architecture": "i686",
     "checksum": "sha256:9a755765d58e4d8ab14cf080a206815c7070cc719086f1fe41a22cdbf1374b05",
     "checksum_url": null,
     "features": null,
@@ -44946,5 +44929,58 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.10-linux-x86-b1207.12.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.10-b1207.12"
+  },
+  {
+    "architecture": "i686",
+    "checksum": "sha512:116b3bb7fba3dd8c40968866082b301d0a2455c95ecd8d8a6f7868d95920bab9987f4cff05a9a8e2105bb93fd2f92179ae3c5281a543f0dbd52cef234572e096",
+    "checksum_url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-linux-x86-b895.109.tar.gz.checksum",
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "jbrsdk-21.0.6-linux-x86-b895.109.tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.6-b895.109",
+    "jvm_impl": "hotspot",
+    "os": "linux",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-linux-x86-b895.109.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b895.109"
+  },
+  {
+    "architecture": "i686",
+    "checksum": "sha512:2731d88fb196d3376e5b463b21833c9e1d87fe2ae485c31d5e14f88676b0278edb501912d56c89e9716efad3ae4858d0e9106c905e28848d6accff2388724149",
+    "checksum_url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.6-linux-x86-b895.109.tar.gz.checksum",
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "jbr-21.0.6-linux-x86-b895.109.tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.6-b895.109",
+    "jvm_impl": "hotspot",
+    "os": "linux",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.6-linux-x86-b895.109.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b895.109"
+  },
+  {
+    "architecture": "i686",
+    "checksum": "sha512:70570c18f0bc6ab42842725198fbfd219fda40a7f2c3e06d33d4ea0d877f3b8b212e5b78c3aa2ff37b207ad7cd680f4fd4dc3de1ece9d1cbfc2180246fe8ca4f",
+    "checksum_url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-linux-x86-b895.109_diz.tar.gz.checksum",
+    "features": [
+      "debug"
+    ],
+    "file_type": "tar.gz",
+    "filename": "jbrsdk-21.0.6-linux-x86-b895.109_diz.tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.6-b895.109",
+    "jvm_impl": "hotspot",
+    "os": "linux",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-linux-x86-b895.109_diz.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b895.109"
   }
 ]
