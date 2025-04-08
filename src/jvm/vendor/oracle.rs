@@ -152,5 +152,20 @@ mod test {
         ] {
             assert_eq!(meta_from_name(actual).unwrap(), expected);
         }
+
+        for invalid_name in [
+            "graalvm-jdk-21_linux-aarch64_bin.tar.gz", // Unexpected graalvm prefix
+            "jdk-21.0.4_linux_bin.tar.gz",             // Missing architecture
+            "jdk-21.0.4_linux-aarch64.tar.gz",         // Missing '_bin' in name
+            "jdk-21.0.4_linux-aarch64_bin.unknown",    // Unsupported extension
+            "jdk-21.0.4_unknown-aarch64_bin.tar.gz",   // Unsupported OS
+            "jdk-21.0.4_linux-unknown_bin.tar.gz",     // Unsupported architecture
+        ] {
+            assert!(
+                meta_from_name(invalid_name).is_err(),
+                "Expected an error for invalid file name: {}",
+                invalid_name
+            );
+        }
     }
 }

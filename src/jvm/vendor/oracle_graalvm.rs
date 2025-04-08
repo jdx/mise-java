@@ -39,6 +39,7 @@ impl Vendor for OracleGraalVM {
       .collect::<Vec<_>>();
         let data = anchors
             .into_par_iter()
+            .filter(|a| a.href.contains("graalvm-"))
             .flat_map(|anchor| match map_release(&anchor) {
                 Ok(release) => vec![release],
                 Err(e) => {
@@ -91,7 +92,7 @@ fn map_release(a: &AnchorElement) -> Result<JvmData> {
 fn meta_from_name(name: &str) -> Result<FileNameMeta> {
     debug!("[oracle-graalvm] parsing name: {}", name);
     let capture = regex!(
-        r"^(?:graalvm-)?jdk-([0-9+.]{2,})_(linux|macos|windows)-(x64|aarch64)_bin\.(tar\.gz|zip|msi|dmg|exe|deb|rpm)$"
+        r"^graalvm-jdk-([0-9+.]{2,})_(linux|macos|windows)-(x64|aarch64)_bin\.(tar\.gz|zip|msi|dmg|exe|deb|rpm)$"
     )
     .captures(name)
     .ok_or_else(|| eyre::eyre!("regular expression did not match for {}", name))?;
@@ -150,6 +151,21 @@ mod test {
             ),
         ] {
             assert_eq!(meta_from_name(actual).unwrap(), expected);
+        }
+
+        for invalid_name in [
+            "jdk-21_linux-aarch64_bin.tar.gz",               // Missing graalvm prefix
+            "graalvm-jdk-21.0.4_linux_bin.tar.gz",           // Missing architecture
+            "graalvm-jdk-21.0.4_linux-aarch64.tar.gz",       // Missing '_bin' in name
+            "graalvm-jdk-21.0.4_linux-aarch64_bin.unknown",  // Unsupported extension
+            "graalvm-jdk-21.0.4_unknown-aarch64_bin.tar.gz", // Unsupported OS
+            "graalvm-jdk-21.0.4_linux-unknown_bin.tar.gz",   // Unsupported architecture
+        ] {
+            assert!(
+                meta_from_name(invalid_name).is_err(),
+                "Expected an error for invalid file name: {}",
+                invalid_name
+            );
         }
     }
 }
