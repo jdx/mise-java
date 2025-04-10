@@ -62137,6 +62137,23 @@
   },
   {
     "architecture": "aarch64",
+    "checksum": "sha256:ca48fd25426061754f4c54eef98edd0e1ac4fe57ef17358afdb935ef6e6f6c46",
+    "checksum_url": "https://download.oracle.com/java/21/archive/jdk-21.0.3_macos-aarch64_bin.tar.gz.sha256",
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "jdk-21.0.3_macos-aarch64_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.3",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://download.oracle.com/java/21/archive/jdk-21.0.3_macos-aarch64_bin.tar.gz",
+    "vendor": "oracle",
+    "version": "21.0.3"
+  },
+  {
+    "architecture": "aarch64",
     "checksum": "sha256:9075930a2fdc48c960b9dbac68418ecce9107696736c8eaf34720db3fa69ab4c",
     "checksum_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21/sapmachine-jdk-21_macos-aarch64_bin.sha256.txt",
     "features": null,
@@ -64497,23 +64514,6 @@
     "url": "https://download.oracle.com/java/17/archive/jdk-17.0.7_macos-aarch64_bin.dmg",
     "vendor": "oracle",
     "version": "17.0.7"
-  },
-  {
-    "architecture": "aarch64",
-    "checksum": "sha256:ca48fd25426061754f4c54eef98edd0e1ac4fe57ef17358afdb935ef6e6f6c46",
-    "checksum_url": "https://download.oracle.com/java/21/archive/jdk-21.0.3_macos-aarch64_bin.tar.gz.sha256",
-    "features": null,
-    "file_type": "tar.gz",
-    "filename": "jdk-21.0.3_macos-aarch64_bin.tar.gz",
-    "image_type": "jdk",
-    "java_version": "21.0.3",
-    "jvm_impl": "hotspot",
-    "os": "macosx",
-    "release_type": "ga",
-    "size": null,
-    "url": "https://download.oracle.com/java/21/archive/jdk-21.0.3_macos-aarch64_bin.tar.gz",
-    "vendor": "oracle",
-    "version": "21.0.3"
   },
   {
     "architecture": "aarch64",
@@ -68034,6 +68034,25 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.10-osx-aarch64-b1171.14_diz.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.10-b1171.14"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha256:575850a93d92199ad58e175d45f1adad3e1c879254f480e91eabb09d957182d4",
+    "checksum_url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.4.1-osx-aarch64-b597.1_diz.tar.gz.checksum",
+    "features": [
+      "debug"
+    ],
+    "file_type": "tar.gz",
+    "filename": "jbrsdk-17.0.4.1-osx-aarch64-b597.1_diz.tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.4.1-b597.1",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.4.1-osx-aarch64-b597.1_diz.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.4.1-b597.1"
   },
   {
     "architecture": "aarch64",
@@ -82790,25 +82809,6 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.4-osx-aarch64-fastdebug-b620.4_diz.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.4-b620.4"
-  },
-  {
-    "architecture": "aarch64",
-    "checksum": "sha256:575850a93d92199ad58e175d45f1adad3e1c879254f480e91eabb09d957182d4",
-    "checksum_url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.4.1-osx-aarch64-b597.1_diz.tar.gz.checksum",
-    "features": [
-      "debug"
-    ],
-    "file_type": "tar.gz",
-    "filename": "jbrsdk-17.0.4.1-osx-aarch64-b597.1_diz.tar.gz",
-    "image_type": "jdk",
-    "java_version": "17.0.4.1-b597.1",
-    "jvm_impl": "hotspot",
-    "os": "macosx",
-    "release_type": "ga",
-    "size": null,
-    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.4.1-osx-aarch64-b597.1_diz.tar.gz",
-    "vendor": "jetbrains",
-    "version": "17.0.4.1-b597.1"
   },
   {
     "architecture": "aarch64",
@@ -104631,5 +104631,247 @@
     "url": "https://download.oracle.com/java/21/latest/jdk-21_macos-aarch64_bin.dmg",
     "vendor": "oracle",
     "version": "21.0.0"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha512:9149e68ae4b87c84e45426dd798461b05b00a0ac463d0a87abfa3d51d1c0dad7270f840fe7a0b7e60253095fabf64bb2ada7fab01978c64aaaf6238c9e792a95",
+    "checksum_url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.6-osx-aarch64-b631.42.tar.gz.checksum",
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "jbr-21.0.6-osx-aarch64-b631.42.tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.6-b631.42",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.6-osx-aarch64-b631.42.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b631.42"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha512:718a8e3f6f815f97fa3c09802d5ca36a41c12ab58b72399e72500108296137b878f68063c91d2f17f229e118ebacdea2f07b368d8533fbf77bbceeccdb10db72",
+    "checksum_url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-osx-aarch64-b631.42.pkg.checksum",
+    "features": null,
+    "file_type": "pkg",
+    "filename": "jbrsdk-21.0.6-osx-aarch64-b631.42.pkg",
+    "image_type": "jdk",
+    "java_version": "21.0.6-b631.42",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-osx-aarch64-b631.42.pkg",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b631.42"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha512:66cb70d7188002f556e117613b8cc62ef29314a34d4c76e5f32c6203445488f624dee3c2730edd6d84df7226f33a90d71e414dbbc14c00e37565d0ed52d15437",
+    "checksum_url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-osx-aarch64-b631.42_diz.tar.gz.checksum",
+    "features": [
+      "debug"
+    ],
+    "file_type": "tar.gz",
+    "filename": "jbrsdk-21.0.6-osx-aarch64-b631.42_diz.tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.6-b631.42",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-osx-aarch64-b631.42_diz.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b631.42"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha512:168d5a51da37a6bade2d5438242017a6ba9c933f7bb4b6d5d7e83fb038ef8438f65d31b91c085c98ae2ecab6ceaf3c8aee5a0cce6cf0bb0cb11f5394d93c4393",
+    "checksum_url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.6-osx-aarch64-b631.42.pkg.checksum",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "pkg",
+    "filename": "jbrsdk_jcef-21.0.6-osx-aarch64-b631.42.pkg",
+    "image_type": "jdk",
+    "java_version": "21.0.6-b631.42",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.6-osx-aarch64-b631.42.pkg",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b631.42"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha512:1fbff0b358350117fd1d8a043634317388c218200a82ef303d9e885a1663c0bc0c3d69dda769657e1a273ec203b9c217f736b6a3fb68c8903a777a57bd701cf0",
+    "checksum_url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.6-osx-aarch64-b631.42.tar.gz.checksum",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "filename": "jbrsdk_jcef-21.0.6-osx-aarch64-b631.42.tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.6-b631.42",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.6-osx-aarch64-b631.42.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b631.42"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha512:e334612f3760fd86836ab37edf094007f5813f16c08549b1b20b3937a8a313cc537a8f3e1d593c5d4ccd2c066d5857855f218ea19ac30e113858f134778050ac",
+    "checksum_url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-osx-aarch64-fastdebug-b631.42_diz.tar.gz.checksum",
+    "features": [
+      "debug",
+      "fastdebug"
+    ],
+    "file_type": "tar.gz",
+    "filename": "jbrsdk-21.0.6-osx-aarch64-fastdebug-b631.42_diz.tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.6-b631.42",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-osx-aarch64-fastdebug-b631.42_diz.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b631.42"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha512:27b3a82ccaec036caaeda5de35769f7ad69602538b815443a4900064e73544230f9ec684dc041f2cabf77820a3795d4a2cb01469ae1e45975bd9236a0f5484a2",
+    "checksum_url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-osx-aarch64-fastdebug-b631.42.tar.gz.checksum",
+    "features": [
+      "fastdebug"
+    ],
+    "file_type": "tar.gz",
+    "filename": "jbrsdk-21.0.6-osx-aarch64-fastdebug-b631.42.tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.6-b631.42",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-osx-aarch64-fastdebug-b631.42.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b631.42"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha512:aedc268c56ee7390082d0d1accfcb788174d3c08aef001e970f039fb2335241ea9043d1519ae2109e24b1e89af818688faec395c03cd978961edf2169c6f85bd",
+    "checksum_url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.6-osx-aarch64-b631.42.tar.gz.checksum",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "filename": "jbr_jcef-21.0.6-osx-aarch64-b631.42.tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.6-b631.42",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.6-osx-aarch64-b631.42.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b631.42"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha512:4f99a6352f513473de0ddb0e2ca12baece039c55d11d1ba1f6d161b52fb8dacebd2152b52c897ebac9d21438d2b6bcbc9b6e916344ab7f3022b062d9d3b7938e",
+    "checksum_url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.6-osx-aarch64-b631.42.pkg.checksum",
+    "features": null,
+    "file_type": "pkg",
+    "filename": "jbr-21.0.6-osx-aarch64-b631.42.pkg",
+    "image_type": "jre",
+    "java_version": "21.0.6-b631.42",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.6-osx-aarch64-b631.42.pkg",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b631.42"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha512:d5b9c22c997ae8bfe3aaab774cecff0159913825cdb827235df09dced41e2112af1c78894612d1ac7db1ac3631072ed5566d272c04361974634230fd15ad6445",
+    "checksum_url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.6-osx-aarch64-b631.42.pkg.checksum",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "pkg",
+    "filename": "jbr_jcef-21.0.6-osx-aarch64-b631.42.pkg",
+    "image_type": "jre",
+    "java_version": "21.0.6-b631.42",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.6-osx-aarch64-b631.42.pkg",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b631.42"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha512:957e2001bbc64d601738db95d5bf7d316529abc13102f5316bd2b8ecc21f321346e96950f37baba7867819e49547891cd3afd04d38e2568f2d41463fb036fccd",
+    "checksum_url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.6-osx-aarch64-b631.42_diz.tar.gz.checksum",
+    "features": [
+      "debug",
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "filename": "jbrsdk_jcef-21.0.6-osx-aarch64-b631.42_diz.tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.6-b631.42",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.6-osx-aarch64-b631.42_diz.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b631.42"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha512:6402f8727570e4766cd2a3182818903a048f5c0050ad946cd9e4dec05fa07bda43f37cb329001cae22dea67904486b459193c29be35278db6c5f10bf4842d585",
+    "checksum_url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_fd-21.0.6-osx-aarch64-b631.42.tar.gz.checksum",
+    "features": [
+      "jcef",
+      "fastdebug"
+    ],
+    "file_type": "tar.gz",
+    "filename": "jbr_fd-21.0.6-osx-aarch64-b631.42.tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.6-b631.42",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_fd-21.0.6-osx-aarch64-b631.42.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b631.42"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha512:da249ffc5ee08faa9d82e1c966b9c6945422588bfb5157666fe35cf15cda2f6d030f257a70be7a80aac7eb8df4ee1e495ca21c5d7e6df4f22474b2d0fa77ab3f",
+    "checksum_url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-osx-aarch64-b631.42.tar.gz.checksum",
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "jbrsdk-21.0.6-osx-aarch64-b631.42.tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.6-b631.42",
+    "jvm_impl": "hotspot",
+    "os": "macosx",
+    "release_type": "ga",
+    "size": null,
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-osx-aarch64-b631.42.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b631.42"
   }
 ]
