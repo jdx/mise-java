@@ -5,49 +5,49 @@
 _.file = ".env.local"
 
 [tasks.build]
-run = """
+run = '''
 cargo build --all-features
-"""
+'''
 
 [tasks.ci]
 depends = ["lint", "test", "check"]
 
 [tasks.lint]
 depends = ["build"]
-run = """
+run = '''
 cargo fmt --all -- --check
 cargo clippy --all-targets --all-features -- -D warnings
-"""
+'''
 
 [tasks.test]
 depends = ["build"]
-run = """
+run = '''
 cargo test --all
-"""
+'''
 
 [tasks.check]
 depends = ["build"]
-run = """
+run = '''
 cargo deny check
-"""
+'''
 
 [tasks."run:fetch"]
-run = """
+run = '''
 cargo run -- fetch
-"""
+'''
 
 [tasks."run:export:release-type"]
-run = """
+run = '''
 cargo run -- export release-type --pretty -o linux,macosx,windows -a aarch64,arm32,i686,x86_64
-"""
+'''
 
 [tasks."run:export:vendor"]
-run = """
+run = '''
 cargo run -- export vendor --pretty -o linux,macosx,windows -a aarch64,arm32,i686,x86_64
-"""
+'''
 
 [tasks."db:dump"]
-run = """
+run = '''
 if ! command -v pg_dump &> /dev/null; then
   echo "pg_dump not found, please install it (brew install libpq)"
   exit 1
@@ -59,4 +59,21 @@ pg_dump \
 --username=$ROAST_DB_USR \
 --dbname=$ROAST_DB_NAME \
 --format=plain | gzip > backup/"$(date -u +"%Y-%m-%dT%H.%M.%SZ")-roast.sql.gz"
-"""
+'''
+
+[tasks."db:restore"]
+usage = '''
+arg <file> "Backup .sql.gz file to restore"
+complete "file" run="ls backup/*.sql.gz | sort -r"
+'''
+run = '''
+if ! command -v psql &> /dev/null; then
+  echo "psql not found, please install it (brew install libpq)"
+  exit 1
+fi
+
+gunzip -c {{arg(name="file")}} | \
+psql postgresql://$ROAST_DB_HOST:$ROAST_DB_PORT/$ROAST_DB_NAME \
+--username=$ROAST_DB_USR \
+--password
+'''
