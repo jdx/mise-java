@@ -28122,5 +28122,39 @@
     "url": "https://download.java.net/java/early_access/jdk25/18/GPL/openjdk-25-ea+18_linux-aarch64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "25.0.0-ea+18"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha256:e510902cd024daf53d26dd0604347a34cea53ba67f7edd2260562d0dc4b86d72",
+    "checksum_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B17/sapmachine-jre-25-ea.17_linux-aarch64_bin.sha256.txt",
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jre-25-ea.17_linux-aarch64_bin.tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.0-ea.17",
+    "jvm_impl": "hotspot",
+    "os": "linux",
+    "release_type": "ea",
+    "size": null,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B17/sapmachine-jre-25-ea.17_linux-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.0-ea.17"
+  },
+  {
+    "architecture": "aarch64",
+    "checksum": "sha256:d67c4510667e4e66d71033d604c743c2aefd09b18c078a7c8f87ef517cd3dacc",
+    "checksum_url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B17/sapmachine-jdk-25-ea.17_linux-aarch64_bin.sha256.txt",
+    "features": null,
+    "file_type": "tar.gz",
+    "filename": "sapmachine-jdk-25-ea.17_linux-aarch64_bin.tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-ea.17",
+    "jvm_impl": "hotspot",
+    "os": "linux",
+    "release_type": "ea",
+    "size": null,
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B17/sapmachine-jdk-25-ea.17_linux-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.0-ea.17"
   }
 ]
