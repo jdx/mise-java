@@ -63,7 +63,11 @@ fn map_release(release: &GitHubRelease) -> Result<Vec<JvmData>> {
     for table_row in fragment.select(&table_row_selector).skip(1) {
         let mut jvm = JvmData {
             jvm_impl: "hotspot".to_string(),
-            release_type: "ga".to_string(),
+            release_type: if release.prerelease {
+                "ea".to_string()
+            } else {
+                "ga".to_string()
+            },
             vendor: "corretto".to_string(),
             ..Default::default()
         };
