@@ -8,42 +8,26 @@ is heavily based on the [Java Metadata](https://github.com/joschi/java-metadata)
 
 Supported distributions:
 
-* [Corretto](https://aws.amazon.com/corretto/)
-* [Dragonwell](https://cn.aliyun.com/product/dragonwell)
+* [Alibaba Dragonwell](https://cn.aliyun.com/product/dragonwell)
+* [Amazon Corretto](https://aws.amazon.com/corretto/)
+* [Azul Zulu](https://www.azul.com/downloads/)
+* [Bellsoft Liberica](https://bell-sw.com/pages/downloads)
 * [Eclipse Temurin](https://adoptium.net/)
 * [GraalVM Community Edition](https://www.graalvm.org/)
-* [JetBrains Runtime](https://github.com/JetBrains/JetBrainsRuntime/)
 * [IBM Semeru](https://developer.ibm.com/languages/java/semeru-runtimes/)
-* [Liberica](https://bell-sw.com/pages/downloads)
+* [JetBrains Runtime](https://github.com/JetBrains/JetBrainsRuntime/)
 * [Mandrel](https://github.com/graalvm/mandrel)
 * [Microsoft OpenJDK](https://www.microsoft.com/openjdk)
 * [OpenJDK](https://jdk.java.net/)
 * [Oracle JDK](https://www.oracle.com/java/)
 * [Oracle GraalVM](https://www.graalvm.org/)
-* [SapMachine](https://sap.github.io/SapMachine/)
+* [SAP SapMachine](https://sap.github.io/SapMachine/)
 * [Tencent Kona JDK](https://www.tencentcloud.com/document/product/845/48051)
 * [Trava OpenJDK](https://github.com/TravaOpenJDK/)
-* [Zulu Community](https://www.azul.com/downloads/)
 
 ## Schema
 
-| Field name     | Description                           |
-| -------------- | ------------------------------------- |
-| `architecture` | Supported machine architecture        |
-| `checksum`     | Checksum of the artifact              |
-| `checksum_url` | Checksum URI of the artifact          |
-| `features`     | Features of the distribution          |
-| `file_type`    | File extension of the artifact        |
-| `filename`     | Filename of the artifact              |
-| `release_type` | `ga` (stable) or `ea` (early access)  |
-| `image_type`   | JRE (`jre`) or JDK (`jdk`)            |
-| `jvm_impl`     | JVM implementation                    |
-| `java_version` | Java version the artifact is based on |
-| `os`           | Supported operating system            |
-| `size`         | Size of the artifact in bytes         |
-| `url`          | Full source URL of the artifact       |
-| `vendor`       | JVM vendor name                       |
-| `version`      | Version of the JVM distribution       |
+The API schema can be found in [./public/api](./public/api/index.html).
 
 ## Build & Run
 
