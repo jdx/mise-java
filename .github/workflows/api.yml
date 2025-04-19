@@ -1,0 +1,37 @@
+name: API
+
+on:
+  pull_request:
+    paths:
+      - "public/**"
+    branches:
+      - main
+    types:
+      - closed
+  workflow_dispatch:
+
+concurrency:
+  group: docs-${{ github.head_ref }}
+  cancel-in-progress: true
+
+env:
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  DRY_RUN: ${{ github.event_name != 'push' || github.ref != 'refs/heads/main' }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+permissions:
+  contents: read
+
+jobs:
+  docs:
+    if: ${{ (github.event_name == 'workflow_dispatch') || (github.event.pull_request.merged == true && contains(github.event.head_commit.message, 'Update data')) }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: jdx/mise-action@v2
+        with:
+          experimental: true
+      - run: mise run api:publish

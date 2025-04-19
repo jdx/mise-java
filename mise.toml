@@ -31,6 +31,15 @@ run = '''
 cargo deny check
 '''
 
+[tasks."api:publish"]
+run = '''
+AWS_BUCKET_NAME=roast.roele.dev
+
+aws --version
+aws s3 rm --recursive s3://${AWS_BUCKET_NAME}/
+aws s3 cp --recursive --exclude "*.DS_Store" ./public/api s3://${AWS_BUCKET_NAME}/
+'''
+
 [tasks."run:fetch"]
 run = '''
 cargo run -- fetch
