@@ -47,16 +47,16 @@ components:
       enum: 
         - "aarch64"
         - "arm32"
-        - "arm32-vfp-hflt"
+        #- "arm32-vfp-hflt"
         - "i686"
-        - "ppc32"
-        - "ppc32hf"
-        - "ppc32spe"
-        - "ppc64"
-        - "s390"
-        - "s390x"
-        - "sparc"
-        - "riscv64"
+        #- "ppc32"
+        #- "ppc32hf"
+        #- "ppc32spe"
+        #- "ppc64"
+        #- "s390"
+        #- "s390x"
+        #- "sparc"
+        #- "riscv64"
         - "x86_64"
     image_types:
       type: "string"
@@ -75,10 +75,10 @@ components:
       type: "string"
       description: "Operating system of the JVM"
       enum: 
-        - "aix"
+        #- "aix"
         - "linux"
         - "macosx"
-        - "solaris"
+        #- "solaris"
         - "windows"
     release_types:
       type: "string"
@@ -123,24 +123,30 @@ components:
         - version
       properties:
         architecture:
-          type: "string"
+          $ref: '#/components/schemas/architectures'
         checksum:
+          description: "Checksum of the artefact"
           type: "string"
           pattern: '^(md5:[a-fA-F0-9]{32}|sha1:[a-fA-F0-9]{40}|sha256:[a-fA-F0-9]{64}|sha512:[a-fA-F0-9]{128})$'
         checksum_url:
+          description: "URL to download the checksum"
           type: "string"
           format: uri
         features:
+          description: "Features of the artefact (e.g. javafx, musl, etc.)"
           type: "array"
           items:
             type: "string"
         file_type:
+          description: "File type of artefact (e.g. tar.gz, zip, pgk, etc.)"
           type: "string"
         filename:
+          description: "Filename of the artefact"
           type: "string"
         image_type:
           $ref: '#/components/schemas/image_types'
         java_version:
+          description: "Java version of the JVM"
           type: "string"
         jvm_impl:
           $ref: '#/components/schemas/jvm_impls'
@@ -149,13 +155,16 @@ components:
         release_type:
           $ref: '#/components/schemas/release_types'
         size:
+          description: "Size of the artefact in bytes"
           type: "number"
         url:
+          description: "URL to download the artefact"
           type: "string"
           format: uri
         vendor:
           $ref: '#/components/schemas/vendors'
         version:
+          description: "Version of the JVM"
           type: "string"
     response:
       type: array
