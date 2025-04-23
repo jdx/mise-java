@@ -28,8 +28,11 @@ pub struct Vendor {
     #[clap(short = 'a', long, num_args = 0.., value_delimiter = ',', value_name = "ARCH")]
     pub arch: Option<Vec<String>>,
     /// Properties e.g.: architecture, os, vendor, version
-    #[clap(short = 'p', long, num_args = 0.., value_delimiter = ',', value_name = "PROPERTY")]
-    pub properties: Option<Vec<String>>,
+    #[clap(short = 'i', long, num_args = 0.., value_delimiter = ',', value_name = "PROPERTY")]
+    pub include: Option<Vec<String>>,
+    /// Properties e.g.: architecture, os, vendor, version
+    #[clap(short = 'e', long, num_args = 0.., value_delimiter = ',', value_name = "PROPERTY")]
+    pub exclude: Option<Vec<String>>,
     /// Pretty print JSON
     #[clap(long, default_value = "false")]
     pub pretty: bool,
@@ -50,6 +53,8 @@ impl Vendor {
         let oses = self.os.unwrap_or(oses_default);
         let arch_default = db.get_distinct("architecture")?;
         let archs = self.arch.unwrap_or(arch_default);
+        let include = self.include.unwrap_or_default();
+        let exclude = self.exclude.unwrap_or_default();
 
         let export_path = conf.export.path.unwrap();
 
@@ -61,7 +66,7 @@ impl Vendor {
 
                     let export_data = data
                         .into_par_iter()
-                        .map(|item| JvmData::map(&item, &self.properties))
+                        .map(|item| JvmData::map(&item, &include, &exclude))
                         .collect::<Vec<Map<String, Value>>>();
 
                     info!("exporting {} records for {} {} {}", size, vendor, os, arch);

@@ -41,19 +41,12 @@ impl PartialEq for JvmData {
 impl Eq for JvmData {}
 
 impl JvmData {
-    pub fn map(item: &JvmData, properties: &Option<Vec<String>>) -> Map<String, Value> {
+    pub fn map(item: &JvmData, include: &[String], exclude: &[String]) -> Map<String, Value> {
         let props: HashMap<String, Value> = serde_json::from_value(serde_json::to_value(item).unwrap()).unwrap();
         let mut map = Map::new();
         for prop in &props {
-            match properties {
-                Some(properties) => {
-                    if properties.contains(prop.0) {
-                        map.insert(prop.0.clone(), json!(prop.1.clone()));
-                    }
-                }
-                None => {
-                    map.insert(prop.0.clone(), json!(prop.1.clone()));
-                }
+            if (include.is_empty() || include.contains(prop.0)) && !exclude.contains(prop.0) {
+                map.insert(prop.0.clone(), json!(prop.1.clone()));
             }
         }
         map
@@ -88,7 +81,7 @@ mod tests {
     fn test_map_with_all_properties() {
         let jvm_data = get_jvmdata();
 
-        let properties = Some(vec![
+        let include = vec![
             "architecture".to_string(),
             "checksum".to_string(),
             "checksum_url".to_string(),
@@ -104,9 +97,9 @@ mod tests {
             "url".to_string(),
             "vendor".to_string(),
             "version".to_string(),
-        ]);
+        ];
 
-        let map = JvmData::map(&jvm_data, &properties);
+        let map = JvmData::map(&jvm_data, &include, &[]);
 
         assert_eq!(map.get("architecture").unwrap(), "x86_64");
         assert_eq!(map.get("checksum").unwrap(), "sha256:checksum");
@@ -126,17 +119,17 @@ mod tests {
     }
 
     #[test]
-    fn test_map_with_some_properties() {
+    fn test_map_with_include() {
         let jvm_data = get_jvmdata();
-        let properties = Some(vec![
+        let include = vec![
             "architecture".to_string(),
             "file_type".to_string(),
             "os".to_string(),
             "url".to_string(),
             "version".to_string(),
-        ]);
+        ];
 
-        let map = JvmData::map(&jvm_data, &properties);
+        let map = JvmData::map(&jvm_data, &include, &[]);
 
         assert_eq!(map.get("architecture").unwrap(), "x86_64");
         assert_eq!(map.get("file_type").unwrap(), "tar.gz");
@@ -158,6 +151,30 @@ mod tests {
         assert!(map.get("size").is_none());
         assert_eq!(map.get("url").unwrap(), "http://example.com/download");
         assert!(map.get("vendor").is_none());
+        assert_eq!(map.get("version").unwrap(), "11.0.2");
+    }
+
+    #[test]
+    fn test_map_with_exclude() {
+        let jvm_data = get_jvmdata();
+        let exclude = vec!["architecture".to_string(), "os".to_string(), "size".to_string()];
+
+        let map = JvmData::map(&jvm_data, &[], &exclude);
+
+        assert!(map.get("architecture").is_none());
+        assert_eq!(map.get("checksum").unwrap(), "sha256:checksum");
+        assert_eq!(map.get("checksum_url").unwrap(), "http://example.com/checksum");
+        assert_eq!(map.get("features").unwrap(), &json!(vec!["feature1", "feature2"]));
+        assert_eq!(map.get("file_type").unwrap(), "tar.gz");
+        assert_eq!(map.get("filename").unwrap(), "openjdk.tar.gz");
+        assert_eq!(map.get("image_type").unwrap(), "jdk");
+        assert_eq!(map.get("java_version").unwrap(), "11");
+        assert_eq!(map.get("jvm_impl").unwrap(), "hotspot");
+        assert!(map.get("os").is_none());
+        assert_eq!(map.get("release_type").unwrap(), "ga");
+        assert!(map.get("size").is_none());
+        assert_eq!(map.get("url").unwrap(), "http://example.com/download");
+        assert_eq!(map.get("vendor").unwrap(), "AdoptOpenJDK");
         assert_eq!(map.get("version").unwrap(), "11.0.2");
     }
 }
