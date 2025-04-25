@@ -17581,5 +17581,55 @@
     "url": "https://aka.ms/download-jdk/microsoft-jdk-17.0.15-windows-aarch64.msi",
     "vendor": "microsoft",
     "version": "17.0.15"
+  },
+  {
+    "checksum": "sha256:f0f11dd4c9941c37b29da34448d252c0b0c9cc89d927beccf14b38bf3a84f0b7",
+    "features": null,
+    "file_type": "zip",
+    "image_type": "debugimage",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-debugimage_aarch64_windows_hotspot_21.0.7_6.zip",
+    "vendor": "temurin",
+    "version": "21.0.7+6.0.LTS"
+  },
+  {
+    "checksum": "sha256:0e2d89e3d66739ffff74f7ed9582ebe3f7748898a0eaec96164e4ec5e8236b28",
+    "features": null,
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_aarch64_windows_hotspot_21.0.7_6.zip",
+    "vendor": "temurin",
+    "version": "21.0.7+6.0.LTS"
+  },
+  {
+    "checksum": "sha256:7a7b9c2c12070e1d825e7aa078a85e049b98bb6910c08dc30a2e8d9270780879",
+    "features": null,
+    "file_type": "zip",
+    "image_type": "testimage",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-testimage_aarch64_windows_hotspot_21.0.7_6.zip",
+    "vendor": "temurin",
+    "version": "21.0.7+6.0.LTS"
+  },
+  {
+    "checksum": "sha256:d216e1a03adbf5f77e9768bf311af92dcea317dcb03e07483cbad741ff407374",
+    "features": null,
+    "file_type": "zip",
+    "image_type": "staticlibs",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-static-libs_aarch64_windows_hotspot_21.0.7_6.zip",
+    "vendor": "temurin",
+    "version": "21.0.7+6.0.LTS"
+  },
+  {
+    "checksum": "sha256:4006aeb28561b5bd30cf1e75eb14bf1c68d689054f24cce2a8048369a67cc4dc",
+    "features": null,
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jdk_aarch64_windows_hotspot_21.0.7_6.zip",
+    "vendor": "temurin",
+    "version": "21.0.7+6.0.LTS"
   }
 ]
