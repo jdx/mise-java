@@ -4,7 +4,7 @@ info:
   title: "JVM Data API"
   description: "JVM Data of various JVM distributions"
 servers:
-  - url: "https://roele.dev/roast/"
+  - url: "https://roast.roele.dev/"
   #- url: "https://d2177wdtr9qui6.cloudfront.net/"
 paths:
   /jvm/{release_type}/{operating_system}/{architecture}.json:

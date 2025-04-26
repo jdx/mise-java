@@ -27,7 +27,7 @@ Supported distributions:
 
 ## Schema
 
-The API schema can be found in [./public/api](./public/api/index.html).
+The API schema can be found at [roast.roele.dev](https://roast.roele.dev).
 
 ## Build & Run
 
