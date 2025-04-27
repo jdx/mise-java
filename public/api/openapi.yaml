@@ -111,14 +111,11 @@ components:
       type: "object"
       additionalProperties: false
       required:
-        - architecture
+        - checksum
+        - features
         - file_type
-        - filename
         - image_type
-        - java_version
         - jvm_impl
-        - os
-        - release_type
         - url
         - vendor
         - version
