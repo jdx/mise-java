@@ -56485,5 +56485,25 @@
     "url": "https://aka.ms/download-jdk/microsoft-jdk-17.0.15-windows-x64.msi",
     "vendor": "microsoft",
     "version": "17.0.15"
+  },
+  {
+    "checksum": "sha256:47A65E8D8B108DBDB00CE3F6ABE2DD764E2046567077F718E0A0023469965970",
+    "features": null,
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-24.2.1.0-Final/mandrel-java24-windows-amd64-24.2.1.0-Final.zip",
+    "vendor": "mandrel",
+    "version": "24.2.1.0-Final+java24"
+  },
+  {
+    "checksum": "sha256:6FB5EA367D76C46994CD0B850862DD226211D8364D1DBF4619A6EC5D66D15496",
+    "features": null,
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-23.1.7.0-Final/mandrel-java21-windows-amd64-23.1.7.0-Final.zip",
+    "vendor": "mandrel",
+    "version": "23.1.7.0-Final+java21"
   }
 ]

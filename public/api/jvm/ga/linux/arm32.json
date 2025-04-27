@@ -3508,5 +3508,35 @@
     "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.27%2B6/OpenJDK11U-jdk_arm_linux_hotspot_11.0.27_6.tar.gz",
     "vendor": "temurin",
     "version": "11.0.27+6"
+  },
+  {
+    "checksum": "sha256:6c0f29b6011d0baa46f90a572691b77ea93a45b4e5037141777a236956945c50",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u452-b09/OpenJDK8U-jre_arm_linux_hotspot_8u452b09.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.452+9"
+  },
+  {
+    "checksum": "sha256:48b02d70602dd754847ced30c19dbbc95f87a5291cb39ffd8b7778d6f642b647",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "debugimage",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u452-b09/OpenJDK8U-debugimage_arm_linux_hotspot_8u452b09.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.452+9"
+  },
+  {
+    "checksum": "sha256:a467f86d0dc4c9077edeac5eeae0622a556399180628eee6969c745afb1deaf0",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u452-b09/OpenJDK8U-jdk_arm_linux_hotspot_8u452b09.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.452+9"
   }
 ]
