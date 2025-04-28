@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+
 use clap::Subcommand;
 
 mod release_type;
@@ -29,4 +31,18 @@ impl Export {
     pub fn run(self) -> eyre::Result<()> {
         self.command.run()
     }
+}
+
+fn get_filter_map(filters: Vec<String>) -> HashMap<String, Vec<String>> {
+    let mut map: HashMap<String, Vec<String>> = HashMap::new();
+    for filter in filters {
+        let parts: Vec<&str> = filter.split('=').collect();
+        if parts.len() != 2 {
+            continue;
+        }
+        let key = parts[0].to_string();
+        let value = parts[1].split(",").map(|s| s.to_string()).collect::<Vec<_>>();
+        map.entry(key).or_default().extend(value);
+    }
+    map
 }

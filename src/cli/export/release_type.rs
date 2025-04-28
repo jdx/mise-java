@@ -11,12 +11,23 @@ use crate::{
     jvm::JvmData,
 };
 
+use super::get_filter_map;
+
 /// Export by {release_type}/{os}/{architecture}
 ///
 /// Will export JSON files in form of {release_type}/{os}/{arch}.json to the path specified in the configuration file
 /// or ROAST_EXPORT_PATH environment variable
 #[derive(Debug, clap::Args)]
 #[clap(verbatim_doc_comment)]
+/// Filters to apply to the data e.g.: `file_type=tar.gz,zip&features=musl,javafx,lite`
+///
+/// The filter behavior supports both AND and OR operations:
+/// - **OR**: Multiple values for a single filter key are separated by `,`. For example,
+///   `file_type=tar.gz,zip` matches entries where the `file_type` is either `tar.gz` or `zip`.
+/// - **AND**: Multiple filters are separated by `&`. For example,
+///   `file_type=tar.gz,zip&features=musl,javafx` matches entries where the `file_type` is
+///   either `tar.gz` or `zip` **and** the `features` include either `musl` or `javafx`.
+
 pub struct ReleaseType {
     /// Release types e.g.: ea, ga
     #[clap(short = 't', long, num_args = 0.., value_delimiter = ',', value_name = "TYPE")]
@@ -33,6 +44,14 @@ pub struct ReleaseType {
     /// Properties to exclude e.g.: architecture, os, size
     #[clap(short = 'e', long, num_args = 0.., value_delimiter = ',', value_name = "PROPERTY")]
     pub exclude: Option<Vec<String>>,
+    /// Filters to apply to the data e.g.: file_type=tar.gz,zip&features=musl,javafx,lite
+    ///
+    /// Multiple values are separated with ','. For example file_type=tar.gz,zip, matches entries where the
+    /// `file_type` is either `tar.gz` or `zip`.
+    /// Multiple filters are separated with '&'. For example file_type=tar.gz&features=musl, matches entries where
+    /// the `file_type` is `tar.gz` and the `features` include `musl`.
+    #[clap(short = 'f', long, num_args = 0.., value_delimiter = '&', value_name = "FILTER")]
+    pub filters: Option<Vec<String>>,
     /// Pretty print JSON
     #[clap(long, default_value = "false")]
     pub pretty: bool,
@@ -49,12 +68,17 @@ impl ReleaseType {
 
         let release_types_default = db.get_distinct("release_type")?;
         let release_types = self.release_type.unwrap_or(release_types_default);
+
         let oses_default = db.get_distinct("os")?;
         let oses = self.os.unwrap_or(oses_default);
+
         let arch_default = db.get_distinct("architecture")?;
         let archs = self.arch.unwrap_or(arch_default);
+
         let include = self.include.unwrap_or_default();
         let exclude = self.exclude.unwrap_or_default();
+
+        let filters = get_filter_map(self.filters.unwrap_or_default());
 
         let export_path = conf.export.path.unwrap();
 
@@ -62,14 +86,15 @@ impl ReleaseType {
             for os in &oses {
                 for arch in &archs {
                     let data = db.export_release_type(release_type, arch, os)?;
-                    let size = data.len();
 
                     let export_data = data
                         .into_par_iter()
+                        .filter(|item| JvmData::filter(item, &filters))
                         .map(|item| JvmData::map(&item, &include, &exclude))
                         .collect::<Vec<Map<String, Value>>>();
+                    let size = export_data.len();
 
-                    info!("exporting {} records for {} {} {}", size, release_type, os, arch);
+                    info!("exporting {} records to {}/{}/{}.json", size, release_type, os, arch);
                     let path = PathBuf::from(&export_path)
                         .join(release_type)
                         .join(os)

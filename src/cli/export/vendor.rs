@@ -11,6 +11,8 @@ use crate::{
     jvm::JvmData,
 };
 
+use super::get_filter_map;
+
 /// Export by {vendor}/{os}/{architecture}
 ///
 /// Will export JSON files in form of {vendor}/{os}/{arch}.json to the path specified in the configuration file
@@ -33,6 +35,9 @@ pub struct Vendor {
     /// Properties e.g.: architecture, os, vendor, version
     #[clap(short = 'e', long, num_args = 0.., value_delimiter = ',', value_name = "PROPERTY")]
     pub exclude: Option<Vec<String>>,
+    /// Filters to apply to the data e.g.: file_type=tar.gz,zip&features=musl,javafx,lite
+    #[clap(short = 'f', long, num_args = 0.., value_delimiter = '&', value_name = "FILTER")]
+    pub filters: Option<Vec<String>>,
     /// Pretty print JSON
     #[clap(long, default_value = "false")]
     pub pretty: bool,
@@ -49,12 +54,17 @@ impl Vendor {
 
         let vendors_default = db.get_distinct("vendor")?;
         let vendors = self.vendors.unwrap_or(vendors_default);
+
         let oses_default = db.get_distinct("os")?;
         let oses = self.os.unwrap_or(oses_default);
+
         let arch_default = db.get_distinct("architecture")?;
         let archs = self.arch.unwrap_or(arch_default);
+
         let include = self.include.unwrap_or_default();
         let exclude = self.exclude.unwrap_or_default();
+
+        let filters = get_filter_map(self.filters.unwrap_or_default());
 
         let export_path = conf.export.path.unwrap();
 
@@ -62,14 +72,15 @@ impl Vendor {
             for os in &oses {
                 for arch in &archs {
                     let data = db.export_vendor(vendor, os, arch)?;
-                    let size = data.len();
 
                     let export_data = data
                         .into_par_iter()
+                        .filter(|item| JvmData::filter(item, &filters))
                         .map(|item| JvmData::map(&item, &include, &exclude))
                         .collect::<Vec<Map<String, Value>>>();
+                    let size = export_data.len();
 
-                    info!("exporting {} records for {} {} {}", size, vendor, os, arch);
+                    info!("exporting {} records for {}/{}/{}", size, vendor, os, arch);
                     let path = PathBuf::from(&export_path)
                         .join(vendor)
                         .join(os)

@@ -1,7 +1,7 @@
 use serde::{Deserialize, Serialize};
 use serde_json::{Map, Value, json};
-use std::hash::Hash;
-use std::{collections::HashMap, hash::Hasher};
+use std::collections::HashMap;
+use std::hash::{Hash, Hasher};
 
 pub mod vendor;
 
@@ -41,6 +41,18 @@ impl PartialEq for JvmData {
 impl Eq for JvmData {}
 
 impl JvmData {
+    pub fn filter(item: &JvmData, filters: &HashMap<String, Vec<String>>) -> bool {
+        if filters.is_empty() {
+            return true;
+        }
+        for (prop, values) in filters {
+            if !JvmData::matches(item, prop, values) {
+                return false;
+            }
+        }
+        true
+    }
+
     pub fn map(item: &JvmData, include: &[String], exclude: &[String]) -> Map<String, Value> {
         let props: HashMap<String, Value> = serde_json::from_value(serde_json::to_value(item).unwrap()).unwrap();
         let mut map = Map::new();
@@ -50,6 +62,31 @@ impl JvmData {
             }
         }
         map
+    }
+
+    fn matches(item: &JvmData, key: &str, values: &Vec<String>) -> bool {
+        let props: HashMap<String, Value> = serde_json::from_value(serde_json::to_value(item).unwrap()).unwrap();
+        if let Some(v) = props.get(key) {
+            match v {
+                Value::String(s) => values.contains(s),
+                Value::Number(n) => n.as_i64().is_some_and(|i| values.contains(&i.to_string())),
+                Value::Bool(b) => values.contains(&b.to_string()),
+                Value::Array(arr) => {
+                    for v in values {
+                        if arr
+                            .iter()
+                            .any(|item| if let Value::String(s) = item { s == v } else { false })
+                        {
+                            return true;
+                        }
+                    }
+                    false
+                }
+                _ => true,
+            }
+        } else {
+            true
+        }
     }
 }
 
@@ -75,6 +112,35 @@ mod tests {
             vendor: "AdoptOpenJDK".to_string(),
             version: "11.0.2".to_string(),
         }
+    }
+
+    #[test]
+    fn test_filter() {
+        let jvm_data = get_jvmdata();
+
+        assert!(JvmData::filter(
+            &jvm_data,
+            &HashMap::from([("os".to_string(), vec!["linux".to_string()])])
+        ));
+        assert!(JvmData::filter(
+            &jvm_data,
+            &HashMap::from([
+                ("os".to_string(), vec!["linux".to_string()]),
+                ("architecture".to_string(), vec!["x86_64".to_string()])
+            ])
+        ));
+        assert!(!JvmData::filter(
+            &jvm_data,
+            &HashMap::from([("architecture".to_string(), vec!["aarch64".to_string()])])
+        ));
+        assert!(JvmData::filter(
+            &jvm_data,
+            &HashMap::from([("features".to_string(), vec!["feature1".to_string()])])
+        ));
+        assert!(!JvmData::filter(
+            &jvm_data,
+            &HashMap::from([("features".to_string(), vec!["feature3".to_string()])])
+        ));
     }
 
     #[test]
