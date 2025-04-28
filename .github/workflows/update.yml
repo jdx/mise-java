@@ -31,7 +31,7 @@ jobs:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
           ref: ${{ github.head_ref }}
 
-      - uses: Swatinem/rust-cache@v2
+      - uses: Swatinem/rust-cache@9d47c6ad4b02e050fd481d890b2ea34778fd09d6 # v2
         with:
           shared-key: "roast"
 
@@ -44,7 +44,7 @@ jobs:
           cargo run -- export release-type --pretty -o linux,macosx,windows -a aarch64,arm32,i686,x86_64 -e architecture,checksum_url,filename,java_version,os,release_type,size
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: Update data
