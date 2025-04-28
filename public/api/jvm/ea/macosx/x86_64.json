@@ -600,6 +600,16 @@
     "version": "18.0.23.0"
   },
   {
+    "checksum": null,
+    "features": null,
+    "file_type": "dmg",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B19/sapmachine-jre-25-ea.19_macos-x64_bin.dmg",
+    "vendor": "sapmachine",
+    "version": "25.0.0-ea.19"
+  },
+  {
     "checksum": "sha256:7b9d4a7ef93283e69d3c044c3c697c51145d76eac614ca07a977a192f888cb52",
     "features": null,
     "file_type": "zip",
@@ -39090,5 +39100,35 @@
     "url": "https://download.java.net/java/early_access/jdk25/20/GPL/openjdk-25-ea+20_macos-x64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "25.0.0-ea+20"
+  },
+  {
+    "checksum": null,
+    "features": null,
+    "file_type": "dmg",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B19/sapmachine-jdk-25-ea.19_macos-x64_bin.dmg",
+    "vendor": "sapmachine",
+    "version": "25.0.0-ea.19"
+  },
+  {
+    "checksum": "sha256:943474f3d18d8075bf5c96d1746d890eda5a30704ed64d56505e237b82be695a",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B19/sapmachine-jre-25-ea.19_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.0-ea.19"
+  },
+  {
+    "checksum": "sha256:dc04db4a9eccc65dd25e1acbfe810cea1c9f7bc76659b7ce8e29c1adba4cf29e",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B19/sapmachine-jdk-25-ea.19_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.0-ea.19"
   }
 ]

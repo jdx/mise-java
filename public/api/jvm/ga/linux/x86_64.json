@@ -101661,5 +101661,25 @@
     "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u452-b09/OpenJDK8U-debugimage_x64_alpine-linux_hotspot_8u452b09.tar.gz",
     "vendor": "temurin",
     "version": "8.0.452+9"
+  },
+  {
+    "checksum": "sha256:a9fac281199d89da8c296cf8426a6d87a07aa9c6ca474bb6f34ab9ba88ae0d55",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-23.1.7.0-Final/mandrel-java21-linux-amd64-23.1.7.0-Final.tar.gz",
+    "vendor": "mandrel",
+    "version": "23.1.7.0-Final+java21"
+  },
+  {
+    "checksum": "sha256:fe60d0227695509879e6115afb9cd130775d9d712b382e3fb1f6dfad91687049",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-24.2.1.0-Final/mandrel-java24-linux-amd64-24.2.1.0-Final.tar.gz",
+    "vendor": "mandrel",
+    "version": "24.2.1.0-Final+java24"
   }
 ]
