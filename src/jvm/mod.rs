@@ -64,23 +64,26 @@ impl JvmData {
         map
     }
 
-    fn matches(item: &JvmData, key: &str, values: &Vec<String>) -> bool {
+    fn matches(item: &JvmData, key: &str, values: &[String]) -> bool {
         let props: HashMap<String, Value> = serde_json::from_value(serde_json::to_value(item).unwrap()).unwrap();
+        let eq = values
+            .iter()
+            .filter_map(|v| if !v.starts_with("!") { Some(v.to_string()) } else { None })
+            .collect::<Vec<String>>();
+        let neq = values
+            .iter()
+            .filter_map(|v| v.strip_prefix("!").map(|v| v.to_string()))
+            .collect::<Vec<String>>();
         if let Some(v) = props.get(key) {
             match v {
-                Value::String(s) => values.contains(s),
-                Value::Number(n) => n.as_i64().is_some_and(|i| values.contains(&i.to_string())),
-                Value::Bool(b) => values.contains(&b.to_string()),
+                Value::String(s) => eq.contains(s) && !neq.contains(s),
+                Value::Number(n) => n
+                    .as_i64()
+                    .is_some_and(|i| eq.contains(&i.to_string()) && !neq.contains(&i.to_string())),
+                Value::Bool(b) => eq.contains(&b.to_string()) && !neq.contains(&b.to_string()),
                 Value::Array(arr) => {
-                    for v in values {
-                        if arr
-                            .iter()
-                            .any(|item| if let Value::String(s) = item { s == v } else { false })
-                        {
-                            return true;
-                        }
-                    }
-                    false
+                    eq.iter().any(|v| arr.contains(&Value::String(v.to_string())))
+                        && !neq.iter().any(|v| arr.contains(&Value::String(v.to_string())))
                 }
                 _ => true,
             }
@@ -122,6 +125,10 @@ mod tests {
             &jvm_data,
             &HashMap::from([("os".to_string(), vec!["linux".to_string()])])
         ));
+        assert!(!JvmData::filter(
+            &jvm_data,
+            &HashMap::from([("os".to_string(), vec!["!linux".to_string()])])
+        ));
         assert!(JvmData::filter(
             &jvm_data,
             &HashMap::from([
@@ -141,6 +148,20 @@ mod tests {
         assert!(!JvmData::filter(
             &jvm_data,
             &HashMap::from([("features".to_string(), vec!["feature3".to_string()])])
+        ));
+        assert!(JvmData::filter(
+            &jvm_data,
+            &HashMap::from([(
+                "features".to_string(),
+                vec!["feature1".to_string(), "!feature3".to_string()]
+            )])
+        ));
+        assert!(!JvmData::filter(
+            &jvm_data,
+            &HashMap::from([(
+                "features".to_string(),
+                vec!["feature1".to_string(), "!feature2".to_string()]
+            )])
         ));
 
         let mut jvm_data_nofeature = jvm_data.clone();
