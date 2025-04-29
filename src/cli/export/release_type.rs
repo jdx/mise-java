@@ -35,12 +35,12 @@ pub struct ReleaseType {
     /// Properties to exclude e.g.: architecture, os, size
     #[clap(short = 'e', long, num_args = 0.., value_delimiter = ',', value_name = "PROPERTY")]
     pub exclude: Option<Vec<String>>,
-    /// Filters to apply to the data e.g.: file_type=tar.gz,zip&features=musl,javafx,lite
+    /// Filters to apply to the data e.g.: file_type=tar.gz,zip&features=musl,javafx,!lite
     ///
-    /// Multiple values are separated with ','. For example file_type=tar.gz,zip, matches entries where the
-    /// `file_type` is either `tar.gz` or `zip`.
-    /// Multiple filters are separated with '&'. For example file_type=tar.gz&features=musl, matches entries where
-    /// the `file_type` is `tar.gz` and the `features` include `musl`.
+    /// Filters are separated with '&' and values are separated with ','. The filter will match if
+    /// any of the values match unless the filter is negated with '!'. For example features=musl,javafx,!lite
+    /// matches entries where the array `features` include musl or javafx but not lite. This is mostly useful for
+    /// arrays that can contain multiple values.
     #[clap(short = 'f', long, num_args = 0.., value_delimiter = '&', value_name = "FILTER")]
     pub filters: Option<Vec<String>>,
     /// Pretty print JSON
