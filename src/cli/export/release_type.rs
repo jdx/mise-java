@@ -19,15 +19,6 @@ use super::get_filter_map;
 /// or ROAST_EXPORT_PATH environment variable
 #[derive(Debug, clap::Args)]
 #[clap(verbatim_doc_comment)]
-/// Filters to apply to the data e.g.: `file_type=tar.gz,zip&features=musl,javafx,lite`
-///
-/// The filter behavior supports both AND and OR operations:
-/// - **OR**: Multiple values for a single filter key are separated by `,`. For example,
-///   `file_type=tar.gz,zip` matches entries where the `file_type` is either `tar.gz` or `zip`.
-/// - **AND**: Multiple filters are separated by `&`. For example,
-///   `file_type=tar.gz,zip&features=musl,javafx` matches entries where the `file_type` is
-///   either `tar.gz` or `zip` **and** the `features` include either `musl` or `javafx`.
-
 pub struct ReleaseType {
     /// Release types e.g.: ea, ga
     #[clap(short = 't', long, num_args = 0.., value_delimiter = ',', value_name = "TYPE")]
