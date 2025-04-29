@@ -133,6 +133,7 @@ mod tests {
             &jvm_data,
             &HashMap::from([("architecture".to_string(), vec!["aarch64".to_string()])])
         ));
+
         assert!(JvmData::filter(
             &jvm_data,
             &HashMap::from([("features".to_string(), vec!["feature1".to_string()])])
@@ -140,6 +141,13 @@ mod tests {
         assert!(!JvmData::filter(
             &jvm_data,
             &HashMap::from([("features".to_string(), vec!["feature3".to_string()])])
+        ));
+
+        let mut jvm_data_nofeature = jvm_data.clone();
+        jvm_data_nofeature.features = None;
+        assert!(JvmData::filter(
+            &jvm_data_nofeature,
+            &HashMap::from([("features".to_string(), vec!["feature1".to_string()])])
         ));
     }
 
