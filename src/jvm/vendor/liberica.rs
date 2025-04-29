@@ -116,9 +116,14 @@ fn get_sha1sums(release: &GitHubRelease) -> Result<HashMap<String, String>> {
         Some(asset) => HTTP
             .get_text(&asset.browser_download_url)?
             .lines()
-            .map(|line| {
+            .filter_map(|line| {
                 let parts: Vec<&str> = line.split_whitespace().collect();
-                (parts[1].to_string(), parts[0].to_string())
+                if parts.len() >= 2 {
+                    Some((parts[1].to_string(), parts[0].to_string()))
+                } else {
+                    warn!("[liberica] malformed SHA1 line: {}", line);
+                    None
+                }
             })
             .collect(),
         None => {
