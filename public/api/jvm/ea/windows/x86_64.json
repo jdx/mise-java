@@ -2480,32 +2480,6 @@
     "version": "19.0.19.0"
   },
   {
-    "checksum": null,
-    "features": [
-      "leyden",
-      "lite"
-    ],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/bell-sw/Liberica/releases/download/24%2B2-ea-leyden/bellsoft-jdk24%2B2-ea-windows-amd64-lite-leyden.zip",
-    "vendor": "liberica",
-    "version": "24.0.0+2-ea"
-  },
-  {
-    "checksum": null,
-    "features": [
-      "leyden",
-      "lite"
-    ],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/bell-sw/Liberica/releases/download/23%2B25-ea-leyden/bellsoft-jdk23%2B25-ea-windows-amd64-lite-leyden.zip",
-    "vendor": "liberica",
-    "version": "23.0.0+25-ea"
-  },
-  {
     "checksum": "sha256:042cc8e12447e54b1ccb17add502756a8bb525896dfcf3d0cc359a2709e6fcce",
     "features": null,
     "file_type": "zip",
@@ -18236,16 +18210,6 @@
     "version": "16.0.0-ea.27"
   },
   {
-    "checksum": "sha256:8c50976987a1b6a08f794a5ba6ab8436ff58f9d115b03ec5eb05b208ddfa295c",
-    "features": null,
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-18%2B15/sapmachine-jdk-18-ea.15_windows-x64_bin.zip",
-    "vendor": "sapmachine",
-    "version": "18.0.0-ea.15"
-  },
-  {
     "checksum": "sha256:228c42f8f6b5524521ebd4ddf9d5c7b7cd1b20554ddeb3c98090b330f4f5fcf2",
     "features": null,
     "file_type": "zip",
@@ -19854,5 +19818,15 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-22%2B35/sapmachine-jre-22-ea.35_windows-x64_bin.zip",
     "vendor": "sapmachine",
     "version": "22.0.0-ea.35"
+  },
+  {
+    "checksum": "sha256:<?xml",
+    "features": null,
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-18%2B15/sapmachine-jdk-18-ea.15_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "18.0.0-ea.15"
   }
 ]
