@@ -4952,6 +4952,30 @@
   {
     "checksum": null,
     "features": [
+      "leyden"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/23%2B25-ea-leyden/bellsoft-jdk23%2B25-ea-macos-amd64-leyden.zip",
+    "vendor": "liberica",
+    "version": "23.0.0+25-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/24%2B2-ea-leyden/bellsoft-jre24%2B2-ea-macos-amd64-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "24.0.0+2-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
       "leyden",
       "lite"
     ],
@@ -4965,6 +4989,42 @@
   {
     "checksum": null,
     "features": [
+      "leyden"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/23%2B25-ea-leyden/bellsoft-jre23%2B25-ea-macos-amd64-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "23.0.0+25-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/24%2B2-ea-leyden/bellsoft-jdk24%2B2-ea-macos-amd64-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "24.0.0+2-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/24%2B2-ea-leyden/bellsoft-jre24%2B2-ea-macos-amd64-leyden.zip",
+    "vendor": "liberica",
+    "version": "24.0.0+2-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
       "leyden",
       "lite"
     ],
@@ -4972,6 +5032,18 @@
     "image_type": "jdk",
     "jvm_impl": "hotspot",
     "url": "https://github.com/bell-sw/Liberica/releases/download/23%2B25-ea-leyden/bellsoft-jdk23%2B25-ea-macos-amd64-lite-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "23.0.0+25-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/23%2B25-ea-leyden/bellsoft-jdk23%2B25-ea-macos-amd64-leyden.tar.gz",
     "vendor": "liberica",
     "version": "23.0.0+25-ea"
   },
@@ -4991,6 +5063,18 @@
   {
     "checksum": null,
     "features": [
+      "leyden"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/24%2B2-ea-leyden/bellsoft-jdk24%2B2-ea-macos-amd64-leyden.zip",
+    "vendor": "liberica",
+    "version": "24.0.0+2-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
       "leyden",
       "lite"
     ],
@@ -5000,6 +5084,18 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/24%2B2-ea-leyden/bellsoft-jdk24%2B2-ea-macos-amd64-lite-leyden.tar.gz",
     "vendor": "liberica",
     "version": "24.0.0+2-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/23%2B25-ea-leyden/bellsoft-jre23%2B25-ea-macos-amd64-leyden.zip",
+    "vendor": "liberica",
+    "version": "23.0.0+25-ea"
   },
   {
     "checksum": "sha256:3c5c0624d42de11b5a11c83f381f745c66fa6303de2ec01a0d1ce5643fac4299",
@@ -6360,16 +6456,6 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.14%2B3/sapmachine-jre-11.0.14-ea.3_osx-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "11.0.14-ea.3"
-  },
-  {
-    "checksum": "sha256:e2fc248795bc50b47ed4681e9bd76d591c6a1421015bfb0054f575358ec40f79",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "jre",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.23%2B4/sapmachine-jre-11.0.23-ea.4_macos-x64_bin.tar.gz",
-    "vendor": "sapmachine",
-    "version": "11.0.23-ea.4"
   },
   {
     "checksum": "sha256:e0303219e8edeae811fe2e9e7e18937294593207116dcdde0e27a100a5e57970",
@@ -11652,16 +11738,6 @@
     "version": "21.0.4-ea.6"
   },
   {
-    "checksum": "sha256:b7277301090a40939cb9014c69d4149b3bcb176918de623c1c377b0710461cb6",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "jre",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.16%2B6/sapmachine-jre-11.0.16-ea.6_macos-x64_bin.tar.gz",
-    "vendor": "sapmachine",
-    "version": "11.0.16-ea.6"
-  },
-  {
     "checksum": "sha256:880e7bcce1a4824df7eb730d77bc122d94fee4216ba2eb33c474bac338e21ce7",
     "features": null,
     "file_type": "tar.gz",
@@ -13732,16 +13808,6 @@
     "version": "20.0.0-ea.32"
   },
   {
-    "checksum": "sha256:9573131061fc12ffd1e3c99b350a3214d24903dcee53fd50f614fbc10d0923a3",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.5%2B8/sapmachine-jdk-21.0.5-ea.8_macos-x64_bin.tar.gz",
-    "vendor": "sapmachine",
-    "version": "21.0.5-ea.8"
-  },
-  {
     "checksum": "sha256:2fa62df41304d1bc97a8fe3cadafabe6236a5f7a73ffa264e844f48f8207d41f",
     "features": null,
     "file_type": "tar.gz",
@@ -13850,16 +13916,6 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.16%2B5/sapmachine-jre-11.0.16-ea.5_macos-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "11.0.16-ea.5"
-  },
-  {
-    "checksum": "sha256:281f9660df219c84bd2203210fdd7235e41e3864beef61d71c2da3135623d402",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-19%2B2/sapmachine-jdk-19-ea.2_macos-x64_bin.tar.gz",
-    "vendor": "sapmachine",
-    "version": "19.0.0-ea.2"
   },
   {
     "checksum": "sha256:f341a69373739d06977d54ff9946cbc861025010ebab34555260208201f093a2",
@@ -15850,16 +15906,6 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.5%2B7/sapmachine-jdk-17.0.5-ea.7_macos-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "17.0.5-ea.7"
-  },
-  {
-    "checksum": "sha256:a633af5249216a90e742cec2edf7b61fa6127c622716b554639905efef0c4ebe",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-20%2B16/sapmachine-jdk-20-ea.16_macos-x64_bin.tar.gz",
-    "vendor": "sapmachine",
-    "version": "20.0.0-ea.16"
   },
   {
     "checksum": "sha256:37ec1c9b8426d059d0b1cc02b5f16d4b4fcf82411afdbf8f4b8a5ee6c86e6979",
@@ -22002,17 +22048,7 @@
     "version": "15.0.0-ea.7"
   },
   {
-    "checksum": "sha256:<?xml",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17%2B33/sapmachine-jdk-17-ea.33_macos-x64_bin.tar.gz",
-    "vendor": "sapmachine",
-    "version": "17.0.0-ea.33"
-  },
-  {
-    "checksum": "sha256:<?xml",
+    "checksum": "sha256:24cf3a3b890b169342bb9c7f7bf61e942d446eb0d39680531eee299ad2560fd2",
     "features": null,
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -22032,16 +22068,6 @@
     "version": "16.0.0-ea.13"
   },
   {
-    "checksum": "sha256:<?xml",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "jre",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.9%2B7/sapmachine-jre-11.0.9-ea.7_osx-x64_bin.tar.gz",
-    "vendor": "sapmachine",
-    "version": "11.0.9-ea.7"
-  },
-  {
     "checksum": "sha256:106446f65f7280d6d236111441995cfc6f2ba1902bdc22819cd279cdaa5736d6",
     "features": null,
     "file_type": "tar.gz",
@@ -22052,7 +22078,7 @@
     "version": "14.0.0-ea.18"
   },
   {
-    "checksum": "sha256:<?xml",
+    "checksum": "sha256:7ec6fd18b0140a4a57660ad888dcf90cd466b2df5f0c53826dc2c30d01cecf3c",
     "features": null,
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -22062,7 +22088,27 @@
     "version": "11.0.15-ea.4"
   },
   {
-    "checksum": "sha256:<?xml",
+    "checksum": "sha256:b7277301090a40939cb9014c69d4149b3bcb176918de623c1c377b0710461cb6",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.16%2B6/sapmachine-jre-11.0.16-ea.6_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "11.0.16-ea.6"
+  },
+  {
+    "checksum": "sha256:bc46ee7a55de03a15813d118b894e43b267c88eb7fb20104f3e5751e017e78c5",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.9%2B7/sapmachine-jre-11.0.9-ea.7_osx-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "11.0.9-ea.7"
+  },
+  {
+    "checksum": "sha256:be86d18789465373a7d52eee2004eb2ddb864e007e6809870a2a92cac74696e3",
     "features": null,
     "file_type": "tar.gz",
     "image_type": "jre",
@@ -22070,5 +22116,55 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17%2B3/sapmachine-jre-17-ea.3_osx-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "17.0.0-ea.3"
+  },
+  {
+    "checksum": "sha256:bd0e3f3c055612c2162e062659a6e66f6c34c4e9fd10cbf757b27fd546f89fcb",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17%2B33/sapmachine-jdk-17-ea.33_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.0-ea.33"
+  },
+  {
+    "checksum": "sha256:281f9660df219c84bd2203210fdd7235e41e3864beef61d71c2da3135623d402",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-19%2B2/sapmachine-jdk-19-ea.2_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "19.0.0-ea.2"
+  },
+  {
+    "checksum": "sha256:9573131061fc12ffd1e3c99b350a3214d24903dcee53fd50f614fbc10d0923a3",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.5%2B8/sapmachine-jdk-21.0.5-ea.8_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.5-ea.8"
+  },
+  {
+    "checksum": "sha256:e2fc248795bc50b47ed4681e9bd76d591c6a1421015bfb0054f575358ec40f79",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.23%2B4/sapmachine-jre-11.0.23-ea.4_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "11.0.23-ea.4"
+  },
+  {
+    "checksum": "sha256:a633af5249216a90e742cec2edf7b61fa6127c622716b554639905efef0c4ebe",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-20%2B16/sapmachine-jdk-20-ea.16_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "20.0.0-ea.16"
   }
 ]
