@@ -73,6 +73,10 @@ fn map_asset(release: &GitHubRelease, asset: &GitHubAsset) -> Result<JvmData> {
     let sha256 = match sha256_url {
         Some(ref url) => match HTTP.get_text(url.clone()) {
             Ok(sha256) => match sha256.split_whitespace().next() {
+                Some(sha256) if sha256.starts_with("<") => {
+                    warn!("[sapmachine] unable to find SHA256 for {}", asset.name);
+                    None
+                }
                 Some(sha256) => Some(format!("sha256:{}", sha256.trim())),
                 None => {
                     warn!("[sapmachine] unable to find SHA256 for {}", asset.name);
