@@ -2192,6 +2192,42 @@
   {
     "checksum": null,
     "features": [
+      "leyden"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/23%2B25-ea-leyden/bellsoft-jre23%2B25-ea-macos-aarch64-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "23.0.0+25-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/24%2B2-ea-leyden/bellsoft-jre24%2B2-ea-macos-aarch64-leyden.zip",
+    "vendor": "liberica",
+    "version": "24.0.0+2-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/24%2B2-ea-leyden/bellsoft-jdk24%2B2-ea-macos-aarch64-leyden.zip",
+    "vendor": "liberica",
+    "version": "24.0.0+2-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
       "leyden",
       "lite"
     ],
@@ -2231,6 +2267,18 @@
   {
     "checksum": null,
     "features": [
+      "leyden"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/24%2B2-ea-leyden/bellsoft-jre24%2B2-ea-macos-aarch64-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "24.0.0+2-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
       "leyden",
       "lite"
     ],
@@ -2240,6 +2288,54 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/24%2B2-ea-leyden/bellsoft-jdk24%2B2-ea-macos-aarch64-lite-leyden.tar.gz",
     "vendor": "liberica",
     "version": "24.0.0+2-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/23%2B25-ea-leyden/bellsoft-jdk23%2B25-ea-macos-aarch64-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "23.0.0+25-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/23%2B25-ea-leyden/bellsoft-jre23%2B25-ea-macos-aarch64-leyden.zip",
+    "vendor": "liberica",
+    "version": "23.0.0+25-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/24%2B2-ea-leyden/bellsoft-jdk24%2B2-ea-macos-aarch64-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "24.0.0+2-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/23%2B25-ea-leyden/bellsoft-jdk23%2B25-ea-macos-aarch64-leyden.zip",
+    "vendor": "liberica",
+    "version": "23.0.0+25-ea"
   },
   {
     "checksum": "sha256:d4b4087a702cfa1f69d052f0a099eb945f1cfcc55da3d6889d9fa84179fdf97d",
@@ -9642,16 +9738,6 @@
     "version": "17.0.12-ea.2"
   },
   {
-    "checksum": "sha256:5e0c924b72da2174cf190e5330ed69d54fd2fc837aac01dc4c3a1aa11bacdf64",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.4%2B2/sapmachine-jdk-17.0.4-ea.2_macos-aarch64_bin.tar.gz",
-    "vendor": "sapmachine",
-    "version": "17.0.4-ea.2"
-  },
-  {
     "checksum": "sha256:7d2724261fb85a3f1d17fd470f284cc2ba3aa5698e1026c6890c60679ecfe7c4",
     "features": null,
     "file_type": "tar.gz",
@@ -13090,5 +13176,15 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-23%2B30/sapmachine-jdk-23-ea.30_macos-aarch64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "23.0.0-ea.30"
+  },
+  {
+    "checksum": "sha256:5e0c924b72da2174cf190e5330ed69d54fd2fc837aac01dc4c3a1aa11bacdf64",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.4%2B2/sapmachine-jdk-17.0.4-ea.2_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.4-ea.2"
   }
 ]
