@@ -33932,5 +33932,55 @@
     "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u422-b05_openj9-0.46.0/ibm-semeru-open-jdk_aarch64_linux_8u422b05_openj9-0.46.0.tar.gz",
     "vendor": "semeru",
     "version": "8u422-b05_openj9-0.46.0"
+  },
+  {
+    "checksum": "sha1:982f4af58cedcbc9ad7916cdc875df0deb9f3d1a",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.7%2B12/bellsoft-jdk21.0.7%2B12-linux-aarch64-crac.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.7+12"
+  },
+  {
+    "checksum": "sha1:547ad1cb65f6420eea21a8cac0aaa2842e7e6966",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.15%2B13/bellsoft-jdk17.0.15%2B13-linux-aarch64-musl-crac.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.15+13"
+  },
+  {
+    "checksum": "sha1:2911ca7ba8e37f45127fb0cec94baf74c77e769b",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.15%2B13/bellsoft-jdk17.0.15%2B13-linux-aarch64-crac.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.15+13"
+  },
+  {
+    "checksum": "sha1:5769b4001a3b6bc2fa1037b0f4be5e75733d037b",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.7%2B12/bellsoft-jdk21.0.7%2B12-linux-aarch64-musl-crac.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.7+12"
   }
 ]
