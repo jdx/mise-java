@@ -51595,6 +51595,44 @@
     "version": "17.0.15.b1"
   },
   {
+    "checksum": "sha1:fa68f02e4d6ae10d781999ae9d70437c2a398915",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.15%2B13/bellsoft-jdk17.0.15%2B13-linux-x64-musl-crac.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.15+13"
+  },
+  {
+    "checksum": "sha1:407d8e5b798a7b86f7e9fd0fa12352c94a41b64f",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.7%2B12/bellsoft-jdk21.0.7%2B12-linux-amd64-crac.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.7+12"
+  },
+  {
+    "checksum": "sha1:96c99218a563f819d07cfe2ad053e86592098845",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.7%2B12/bellsoft-jdk21.0.7%2B12-linux-x64-musl-crac.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.7+12"
+  },
+  {
     "checksum": "md5:f8cd43af8cbfb5f899b6a6eef5d8af42",
     "features": null,
     "file_type": "tar.gz",
@@ -51633,5 +51671,17 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.1%2B13-0/sapmachine-jre-11.0.1.13_linux-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "11.0.1.13"
+  },
+  {
+    "checksum": "sha1:082f9199c93554826839e8a919ec854064692e64",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.15%2B13/bellsoft-jdk17.0.15%2B13-linux-amd64-crac.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.15+13"
   }
 ]
