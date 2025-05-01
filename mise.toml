@@ -34,8 +34,9 @@ cargo deny check
 [tasks."api:publish"]
 run = '''
 aws --version
-aws s3 rm --recursive s3://${AWS_S3_BUCKET}/
-aws s3 cp --recursive --exclude "*.DS_Store" ./public/api s3://${AWS_S3_BUCKET}/
+aws s3 sync ./public/api s3://${AWS_S3_BUCKET}/ \
+  --exclude "*.DS_Store" \
+  --delete
 '''
 
 [tasks."run:fetch"]
