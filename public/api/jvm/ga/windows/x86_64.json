@@ -31615,5 +31615,41 @@
     "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-23.0.1.2-Final/mandrel-java20-windows-amd64-23.0.1.2-Final.zip",
     "vendor": "mandrel",
     "version": "23.0.1.2-Final+java20"
+  },
+  {
+    "checksum": "sha256:c92f23cd6b033479ab9246d6f4fa3b2d1580470232853e6780a56a86de2f1e94",
+    "features": [
+      "crac"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.30.15-ca-crac-jdk24.0.1-win_x64.zip",
+    "vendor": "zulu",
+    "version": "24.30.15.0"
+  },
+  {
+    "checksum": "sha256:36c68ae233ae2c4c0882f301aa5796bf1c80f7f71cac1e7694a16532d1b95834",
+    "features": [
+      "crac"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.58.25-ca-crac-jdk17.0.15-win_x64.zip",
+    "vendor": "zulu",
+    "version": "17.58.25.0"
+  },
+  {
+    "checksum": "sha256:f6d2639296f13c3f45a94a79d5d3e22db8b1a59d55e6f25d49c59a48fa105984",
+    "features": [
+      "crac"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.42.21-ca-crac-jdk21.0.7-win_x64.zip",
+    "vendor": "zulu",
+    "version": "21.42.21.0"
   }
 ]
