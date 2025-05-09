@@ -19,7 +19,8 @@ env:
   ROAST_DATABASE_URL: ${{ secrets.ROAST_DATABASE_URL }}
   RUST_BACKTRACE: 1
   RUST_LOG: roast=INFO
-  GH_TOKEN: ${{ secrets.GH_PAT }}
+  GITHUB_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+  GH_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN}}
 
 jobs:
   update:
