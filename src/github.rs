@@ -1,3 +1,4 @@
+use log::error;
 use reqwest::header::HeaderMap;
 use serde::{Deserialize, Serialize};
 use xx::regex;
@@ -33,7 +34,14 @@ pub fn list_releases(repo: &str) -> Result<Vec<GitHubRelease>> {
     let (mut releases, mut headers) = HTTP.get_json_with_headers::<Vec<GitHubRelease>, _>(url)?;
 
     while let Some(next) = next_page(&headers) {
-        let (more, h) = HTTP.get_json_with_headers::<Vec<GitHubRelease>, _>(&next)?;
+        let (more, h) = match HTTP.get_json_with_headers::<Vec<GitHubRelease>, _>(&next) {
+            Ok(result) => result,
+            Err(err) => {
+                // GitHub API returns 422 if more than 1000 releases are requested
+                error!("failed to fetch release page: {}", err);
+                break;
+            }
+        };
         releases.extend(more);
         headers = h;
     }
