@@ -34173,5 +34173,69 @@
     "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.27%2B6_openj9-0.51.0/ibm-semeru-open-jre_aarch64_linux_11.0.27_6_openj9-0.51.0.tar.gz",
     "vendor": "semeru",
     "version": "11.0.27+6_openj9-0.51.0"
+  },
+  {
+    "checksum": "sha512:2e81404c430248822d659fbee0df55c8003c8c84e6e33fc616483b4aa489632ff8fb1eb39886123a1b3629d6b226e64259f2de70f72d4a0fdd5489ac54380efa",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_lb-21.0.7-linux-aarch64-b982.16.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.7-b982.16"
+  },
+  {
+    "checksum": "sha512:1ded69b3a1eb2857386071319877381dd52c2f73689e12c78168df48d213f3c74c8648367323471ad038f581ffaab2ca91976e97504ad431e39369a50ee6369d",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_lb-21.0.7-linux-aarch64-b982.16.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.7-b982.16"
+  },
+  {
+    "checksum": "sha512:ff5c784d6d2ca08c1a630b583664a04067d3518a7ffec2f9a8aa94dc6d97a0abf9d7e5248050e1556c04fba9cceb6680c632426255a60ad33b77e33ee3ecdcbe",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.7-linux-aarch64-b982.16.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.7-b982.16"
+  },
+  {
+    "checksum": "sha512:aabad8721275815504efe6bc0565ecea861a83e816878491c2c1f794791d68e4f985f70ffc7abeada25ce825651f77cb7277a105bbd4e812dcd8d2a4c5bddb30",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.7-linux-musl-aarch64-b982.16.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.7-b982.16"
+  },
+  {
+    "checksum": "sha512:73caf5c4f60adc0293bee5c7293f3483468f3550fc119a971591589a05d785da00890d1292e24e053197e693d492afd5605f8341da39d6ff363029f9e7c6a042",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.7-linux-aarch64-b982.16.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.7-b982.16"
+  },
+  {
+    "checksum": "sha512:9f9b7878549a806ed7b43e4a8430ea0e15750c6234ed855e1d464769c2b1e1b8dcd7937493fbd87899eb6d649a5ceb3a39ca91750c5b348ff8d18aa141249f41",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.7-linux-musl-aarch64-b982.16.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.7-b982.16"
   }
 ]
