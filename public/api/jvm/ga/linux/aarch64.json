@@ -21943,6 +21943,18 @@
     "version": "17.0.9-b1087.11"
   },
   {
+    "checksum": "sha512:3ea521bf3dbd9dcd3c31afd93f47e74da5511cbf370ae2e7fe95c52819c4638d7770e7bb36f5bf86c1a88953988467670bf0b38ce9a0d9f0f28639dbcedcb7b8",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.4-linux-aarch64-b509.26.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.4-b509.26"
+  },
+  {
     "checksum": "sha512:71ead86f064a9b41bf15e5f07075482d029a5ee9d8b35f5efe2cd6a04a8505d9f4c469e8e31925c181c4b7c208f8ecffc35d1a23c23fcfac6099eeae61c2e083",
     "features": null,
     "file_type": "tar.gz",
@@ -21985,6 +21997,30 @@
     "version": "21.0.6-b895.97"
   },
   {
+    "checksum": "sha512:e580c7d18d28a6e374a966046ad9f6dbac63bea7e3f1112b77983180bf01191625b81f9aef80d29ba4f24446a3ad8c58a6243ee39edfacfce9564083f65d63f5",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.11-linux-aarch64-b1207.24.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.11-b1207.24"
+  },
+  {
+    "checksum": "sha512:b9aea487df8def6c8464c64c7109e236420df591795ce3f0f412446ce147995f710e0ded0d2253b2d1af506219b7df31f93cff1e71e688a8778554d5be3da69d",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.10-linux-aarch64-b1186.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b1186.1"
+  },
+  {
     "checksum": "sha512:e139cb9079d4f42c2e8692ada001b1c115e6271d0a6525c790e0cf47984570ccd53398d6f66b7236a5879213434b3253a9e8cbcf0de49773dfc3dbdfce486e67",
     "features": null,
     "file_type": "tar.gz",
@@ -21993,6 +22029,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_vk-21.0.6-linux-aarch64-b825.77.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.6-b825.77"
+  },
+  {
+    "checksum": "sha256:fc9d501199460e4f4ba563a6e8e55a1316c158b92ec355f98c56f703f2927b3b",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.5-linux-aarch64-b653.14.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.5-b653.14"
   },
   {
     "checksum": "sha512:83ea1d3ca3ac07d9586793d74278f5644d27c13c6cbf28974b9b127e5e0980d00ad5f6cb637f49a4f3862735bcb6a3f77c9b3dc6d25b2a486f212c1eb814f73b",
@@ -22007,6 +22055,30 @@
     "version": "17.0.9-b1166.2"
   },
   {
+    "checksum": "sha512:be8b052464f22468fed9219b418c3bc1f068cc236a9790177295c677cf6e1c3f95fd676703a5d6c3068acb3fc3c89a54df1d77dd55ff77bea90a70f36924d9d5",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.6-linux-aarch64-b825.77.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b825.77"
+  },
+  {
+    "checksum": "sha512:500d0a94cdf2ea2ed4a4469ecc6ca1897ee8549eb4375a02ba299f39eb8e8f1db893d192ff38c2fb08b98d5d6e76991e8dc47d2512eefccbab0db856681b1115",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.6-linux-aarch64-b872.85.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b872.85"
+  },
+  {
     "checksum": "sha256:8914bb21f7de9f2128236facdd9203009e8b24195e19e79c51948ed3551c0138",
     "features": null,
     "file_type": "tar.gz",
@@ -22015,6 +22087,42 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-11_0_12-linux-aarch64-b1715.4.tar.gz",
     "vendor": "jetbrains",
     "version": "11.0.12-b1715.4"
+  },
+  {
+    "checksum": "sha256:7f26ee532e3030a1df512e614223bf5257868fbc441c145dc1fff0c8f8fa6c20",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.3-linux-aarch64-b469.37.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.3-b469.37"
+  },
+  {
+    "checksum": "sha512:cb7e3b454bd35a34e6b0182b9064dd489954df6da97ba1ee43599bbae588fe6d0c12424f478f5750b0bd0a261aa3b7d2f90f89298dd93e8101ce88899e9ba019",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.2-linux-aarch64-b375.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.2-b375.1"
+  },
+  {
+    "checksum": "sha256:84c7d15744534ecd6032efdeafa30d78beacc1e9b0bc8d294b735b78083e1f40",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.5-linux-aarch64-b762.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.5-b762.1"
   },
   {
     "checksum": "sha512:53fb3c38d8f92bd29751c761db4019255ccff52cb1d78729ee8fbdef2f265bd6806affb6aeec71a8ef77ef7ca0ffff830c4a202462c3355b6ab454643a1d8529",
@@ -22027,6 +22135,30 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17.0.10-linux-musl-aarch64-b1207.12.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.10-b1207.12"
+  },
+  {
+    "checksum": "sha256:fe92d580773c93e4bf5c100e16fbd6ecb055cf080384dee44a3e7d6fd57b44e1",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.5-linux-aarch64-b653.25.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.5-b653.25"
+  },
+  {
+    "checksum": "sha512:6016e33b8fccd568156d98343aec135b511d8d5e2dba5a18acfa712eadd4ef735d9062d5c063e25c4b3947dd4be428f57c48bf4235343165bf28d27991aa84dd",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.11-linux-aarch64-b1207.23.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.11-b1207.23"
   },
   {
     "checksum": "sha512:82de8813f3ae8aca44bf1c871c5155709a59b9ca767ef162b836b6bdc4c5f7f107b7c85ad351791f69b8d172a085753308bf1988a69f94724f3a9b54cadc8588",
@@ -22105,6 +22237,18 @@
     "version": "17.0.5-b653.25"
   },
   {
+    "checksum": "sha512:d437cfb818c3a72e8898efd8f39cdc293e8923a0c31a881126974869e52af03e0e93ab2d689124a5cff6cd427824b6b3b4803a8fca7a625dbe23f31990a25ed9",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.7-linux-aarch64-b1000.5.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.7-b1000.5"
+  },
+  {
     "checksum": "sha256:32170457856f5ae1e603569fc5120618627fb4c9fcf603e85772ad7ebfcd8f3a",
     "features": null,
     "file_type": "tar.gz",
@@ -22145,6 +22289,18 @@
     "version": "17.0.10-b1000.48"
   },
   {
+    "checksum": "sha512:74b05373a0221c69cf3530a56a8e60721b3dfe3922e5b1bbdbc44745f061deba46c7cd2b9a1bef24db6d78b0d975bb8d2d516a678b639c480b3bf15145d4ea11",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.7-linux-aarch64-b1000.6.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.7-b1000.6"
+  },
+  {
     "checksum": "sha512:a7213e0233328bcfa15bccce55f4857a247a60dc4aa3f6b3982f47b35a12d475824e7dcc265afbca90c2d343de5ca9d7da862ff2cb03e18e39fc33948c86f110",
     "features": null,
     "file_type": "tar.gz",
@@ -22163,6 +22319,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17_0_2-linux-aarch64-b315.1.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.2-b315.1"
+  },
+  {
+    "checksum": "sha256:67a2992d69f47aef197b93656b83932aef80c96364438dce558bdf081c4a8c1a",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.3-linux-aarch64-b469.30.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.3-b469.30"
   },
   {
     "checksum": "sha512:191b1c1d1d3a794c1b8434f1848add206a54ecf7a3d0f021b0a8f6b489eef0d0605125912517f769e71aa1503cf7503be8ec8f8a98240d2d18996a5a21788a52",
@@ -22193,6 +22361,42 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.10-linux-aarch64-b1207.6.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.10-b1207.6"
+  },
+  {
+    "checksum": "sha256:83e4b91523fa6a1d896551e3984b4d6e5995b76e460e07df8305018711b6ca56",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.4.1-linux-aarch64-b646.8.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.4.1-b646.8"
+  },
+  {
+    "checksum": "sha512:1d8aa9594b80039b5c7aab31cb079e746c70f473bcbecf626378cd6897628e263161fbc2757f1b7300d1c7819e55d1b94e0a5d74ce1cce88c66201dcad18562b",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.14-linux-aarch64-b1367.22.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.14-b1367.22"
+  },
+  {
+    "checksum": "sha256:482bafbcef71054e4df7385c7c3e142e966f9cdf4263bf4765b7d4438e185308",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.5-linux-aarch64-b469.71.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.5-b469.71"
   },
   {
     "checksum": "sha512:2f716e4cd68d493a316f233916f71103a0a1ca2ba26a0e4814736fb83ecf38e96d7331a987a249b8861fd3083f91243b6d0c0455f241d033188d519e5202b441",
@@ -22247,6 +22451,18 @@
     "version": "17.0.10-b1000.48"
   },
   {
+    "checksum": "sha512:b4287cf41e795b21b8113a0676faf8c992fbc849700ebb7a4c23eeabd434a4ce3a523d392e61c8be00d21a5c4948c0b80af4d46f504a2642f4cfbd5f788a6b25",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.10-linux-aarch64-b829.27.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b829.27"
+  },
+  {
     "checksum": "sha512:6680a9e6a730be13fd5a31a62fb64903c3f3e10063e1a5eb0ff6782a848f4e776a6a64d286cfaa2333d01d28a074aed0b4727abeda46525a864b1b89c3aece3b",
     "features": [
       "musl"
@@ -22269,6 +22485,18 @@
     "version": "17.0.5-b653.6"
   },
   {
+    "checksum": "sha512:71448f30a0f67b33acca9125a621601b7a80adf226791fc443ce18193824add5059d03ccb36527c48d19df5ff1b15a577916e8bf88216a63e160ae002c99ef0e",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.6-linux-aarch64-b802.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.6-b802.4"
+  },
+  {
     "checksum": "sha512:24145ab7a8226d791a85d17c4fd038be4fefcf61fec6397f7c7f2baeea63895ef41607099e80e4b773a6a64ce7d434b8883bf458e1cdd0486af5855cabd3322c",
     "features": null,
     "file_type": "tar.gz",
@@ -22287,6 +22515,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.6-linux-aarch64-b469.82.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.6-b469.82"
+  },
+  {
+    "checksum": "sha512:c949493b52354b920bf8878981f5a15972c8a3da4480ae5bc784ffd14b0163966fd6983787fa0b9e88c21ba56456702465940e701675ec5e78107a9ef150d1e4",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.6-linux-aarch64-b802.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.6-b802.4"
   },
   {
     "checksum": "sha512:051d122063ae2edd89686e8bd2cc3f450933d9c2be0c34d6e7266371cc47d8593fbad1c9756ef8bf2d5bcea769974697e0a98e30fb10ed256745e1c24da35886",
@@ -22341,6 +22581,66 @@
     "version": "17.0.10-b1171.14"
   },
   {
+    "checksum": "sha512:dc8f558f1c540c7ffcbe554cdac41bd9ed5187ca904c4bd96ea52da83ce9e874c20df6f1d8447c635dc03395895ef62fa5a1c8cdc0dccdd574a0aa8e0234b0c9",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.3-linux-aarch64-b446.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.3-b446.1"
+  },
+  {
+    "checksum": "sha512:54e6f8796431b652e91dc8a7a01a624926ce5dea6dbe7f35ec2805989d285d6bbe8fa380b3e1aec4be0dfdb389103f52f82ce2bc6a83b3b5a2ec1f2bdd65ef87",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.12-linux-aarch64-b1087.25.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.12-b1087.25"
+  },
+  {
+    "checksum": "sha512:a400188932065ecf90eb0c8a34119447f7a8c5aad1dce3537a8e04ed58e3d0ac39015fb6b5f2f7fc81d2a0979e5f5fd6af6c2a56df4e7d64394eedff09f92d90",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.11-linux-aarch64-b1207.23.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.11-b1207.23"
+  },
+  {
+    "checksum": "sha512:0dfdff2cd53a97e8733bd0c854a991480a0059a0a0ef29e56c24885f468356fa485606fa6fa04d1d52ba6269c57a9d231508e524db6f70a9a5d4993afd3a3762",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.5-linux-aarch64-b631.28.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.5-b631.28"
+  },
+  {
+    "checksum": "sha512:eec92d898ae98667b156eb07913c9185840745b3c897927c0765985556a694672a0af7b765006e5d4634ceb5497e47ccda8282e916244101af7a1664fb5ba073",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.8-linux-aarch64-b1000.22.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.8-b1000.22"
+  },
+  {
     "checksum": "sha512:cd015881d8e56de2fa71cd4b3386b35d95616c030c539a2a8d2981e97dad42dca94601224edeb8deeea709f3aeafe16b21912e6b60da2ae55708f83f82da2f91",
     "features": [
       "musl"
@@ -22351,6 +22651,30 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17.0.9-linux-musl-aarch64-b1087.7.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.9-b1087.7"
+  },
+  {
+    "checksum": "sha512:de5c465092c183afc459a1fe00519c5492c87d7051b4159ef6870610d4fae4983bd9c24004b1d29d7bf4cacd8d642c1e5b44138a4ca1b11535cb9efb61b4f1c5",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.10-linux-aarch64-b1171.14.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b1171.14"
+  },
+  {
+    "checksum": "sha512:7247918a79d001f2155e4f0f5db44d9102a3f1e5522801844aa141d2ad315d5b40b0b7f5366de65d104e11e411359d6b990814f3dc41a3bc367ab2e0fa3e34c1",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.8.1-linux-aarch64-b1072.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.8.1-b1072.1"
   },
   {
     "checksum": "sha512:9462aa3c35fce2533c821871f05968379d8da74dc819840ec86c5a35420d3f8f3eb8575e14779a17a658d65a32353685d818e6dc20f39d5c7aa77c3569c9ea18",
@@ -22391,6 +22715,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17.0.5-linux-aarch64-b469.71.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.5-b469.71"
+  },
+  {
+    "checksum": "sha512:98eb370b65e7006dd3e66094a3c5d30e15928a606d5e9d4f4aec67204565ecac2adebd92e348af7187f259ff5f8954d5201403e979284ca307e9224b8cfcbe7f",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.3-linux-aarch64-b509.11.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.3-b509.11"
   },
   {
     "checksum": "sha512:cc4c8cd03fa9d13a1acc56fb8e14964687161ed52220d43e19f34873b015f6981c81a4954916911e0706f52f88f6b1a13d3c776c4a68d8565f34e2676c8ed438",
@@ -22503,6 +22839,18 @@
     "version": "17.0.9-b1162.7"
   },
   {
+    "checksum": "sha256:5edfcb98342d112cbaa3800f9c298d772a1fc746e1218a9e9a33dac5206ad504",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.5-linux-aarch64-b759.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.5-b759.1"
+  },
+  {
     "checksum": "sha256:b06dd5f601ea8e9f1246f37897ab0539211b2eb79f9adc6a934aa563707b262e",
     "features": null,
     "file_type": "tar.gz",
@@ -22553,6 +22901,18 @@
     "version": "11.0.16-b2043.64"
   },
   {
+    "checksum": "sha512:e6c702e0b6661c7ada4f17174e1709a387e95581d947abf15b06e7552e94616217918ebbde338d249c2c74c41a59ef4ce1d6efff83b6b289c2e77e84ff08339f",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.7-linux-aarch64-b953.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.7-b953.1"
+  },
+  {
     "checksum": "sha512:550025a53655cb8a42896369b3c7a34c4a04295bc2ef6f3f1426a80747b30587aaa483d9d6240c6c0e742ba5cfc8548d59bbf1662e3458752251b94db38d4484",
     "features": [
       "musl"
@@ -22563,6 +22923,30 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.3-linux-musl-aarch64-b499.2.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.3-b499.2"
+  },
+  {
+    "checksum": "sha512:05c287ece950969bc89b5473fa9c2138423d252a721103c376f1271e7324af96ab20aa1b04b096a8d2122dff804999e23de7213ae9dea6a5ba0f748a473e01af",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.7-linux-aarch64-b1000.5.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.7-b1000.5"
+  },
+  {
+    "checksum": "sha512:b5437b8731a2bb5a7f34190507aad4ac6b83a70a85ae3fc9089259a1cf0882b9d994b05ca9fc1180e457d94e121297fcbc69cecf2faeeaac63c2cf26c2874b76",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.10-linux-aarch64-b829.26.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b829.26"
   },
   {
     "checksum": "sha512:83250a956cb13eb1ea9f000a277b9412d00fffa3db6dae43c80227d300a7d81f91cf835599ddc5e4620019acb7ca772fe1b509db3c00986792ba52bc295e8fda",
@@ -22631,6 +23015,30 @@
     "version": "17.0.5-b653.14"
   },
   {
+    "checksum": "sha256:3a06ccb3ececf389b99a56fcf815cfd2fe44a73e1b18993fefe8d517f61fbf4b",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.4.1-linux-aarch64-b646.8.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.4.1-b646.8"
+  },
+  {
+    "checksum": "sha256:0cd771c2b1ee8856da97c53af9ff4728cb77b875ebb0ff4443444d23a7c43b1b",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.6-linux-aarch64-b785.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.6-b785.1"
+  },
+  {
     "checksum": "sha256:a9fcb9166ee95c4fe8017f8a8306ab1e5cac69587d0ef9762fd2ddd4d8b5a555",
     "features": null,
     "file_type": "tar.gz",
@@ -22641,6 +23049,54 @@
     "version": "17.0.0-b87.7"
   },
   {
+    "checksum": "sha512:621769184a27dea8dbfcd1a73bc0954ae201edc39c55094a6f242da6899eeb31f329afc38bec487d46dd740b8946cec89db4e02c114b5a4c2a55a4615d031bd3",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.6-linux-aarch64-b653.32.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.6-b653.32"
+  },
+  {
+    "checksum": "sha256:5b083f87600801e292e60ca32e87c87f2f49b46d976b261ad1018896917a036b",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.3-linux-aarch64-b469.16.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.3-b469.16"
+  },
+  {
+    "checksum": "sha512:58059858306fee77d718db8238d360f3476decc21fff90493e54aa66bc84a3f002d35f0c06e4c8d498953b4016a7c0f00565cad7849ceb723025a3ab8f225cea",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.6-linux-aarch64-b653.34.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.6-b653.34"
+  },
+  {
+    "checksum": "sha512:69bf067b76260ecf3bc2456e25b1400241dcf063ec3b1bcf4fb7536ab385198cd89cc20b7cca30b2c900a2eeeed93eb30893d3ef965039470b5c5f6056d09e9a",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.5-linux-aarch64-b631.8.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.5-b631.8"
+  },
+  {
     "checksum": "sha512:6878a683e0988da20973198412c302c4cb96946ee5f444d58103e3f2a37ed9d27890fde4bca3128ed34102d801747603951f5d1280bc92f88cc6523790f0dc67",
     "features": null,
     "file_type": "tar.gz",
@@ -22649,6 +23105,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17.0.8.1-linux-aarch64-b1000.32.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.8.1-b1000.32"
+  },
+  {
+    "checksum": "sha512:731047c8a56badcfccc96f45b1a8055623f9fef88203af381a34a30d3f08b9b3ffce173632b923415c2c3712e5129cfb03a3c16567b61d8c03cfaa908fe4948a",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.10-linux-aarch64-b1207.14.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b1207.14"
   },
   {
     "checksum": "sha256:e1987e8521e371dbb5b0665f02b3e3dda4d8876a55a593a513069a13e4d6c17e",
@@ -22693,6 +23161,30 @@
     "version": "17.0.8.1-b1059.3"
   },
   {
+    "checksum": "sha256:533c1f3e4262245bed2ef533c532b22d6bda1b6e6068e2b08c3946c83e1974dc",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.3-linux-aarch64-b469.32.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.3-b469.32"
+  },
+  {
+    "checksum": "sha512:fd64eaf3588e962cb7ac622f219db43aafc7b322ce4a6ef8fbb5f9b37b6c22ddd481076d68b2254eb873f39a4d57a0370d113e37db9d3512ba5bb67e857988ca",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.11-linux-aarch64-b1207.20.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.11-b1207.20"
+  },
+  {
     "checksum": "sha512:50ecf04aebea86ed4a482ecc7a54eedca3556958aff4dac652251c77454a105347710fa1687d60ff085a7ebd42d17cce3a66b91cc37e2f7bd86e1c6abbc25925",
     "features": null,
     "file_type": "tar.gz",
@@ -22725,6 +23217,18 @@
     "version": "17.0.11-b1207.30"
   },
   {
+    "checksum": "sha512:b69165a36b4a4e60140ee2ce517791ed7fc36b09b05136520eee7b2f6894f3a3f7023cab464d8ec6cdbc5f126781e7c31997c716450edf9e5417c35916c96108",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.6-linux-aarch64-b631.39.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b631.39"
+  },
+  {
     "checksum": "sha512:bd31957f9fe275123c05833bd188247019e55c026d92786969565116f6a26d3db9e7b2062461a690d8aed0e1c9be7685083d200db9ce820779275b4518257ab0",
     "features": [
       "musl"
@@ -22737,6 +23241,18 @@
     "version": "17.0.12-b1207.37"
   },
   {
+    "checksum": "sha512:260b9026e9d456d01f492b0fa44c54cfe62b1fb3448a539a0fad9d9a07273badec10d2551af5007c3532e72fb1775e3a73cee87bf29dae5dec39d070c69d4feb",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.3-linux-aarch64-b453.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.3-b453.2"
+  },
+  {
     "checksum": "sha512:f569c2334421e0cbe236b13dd01ea087cd9d842a8e8053358450463ad1cfcb50a7d351452ee421d75cf330f5aca4e474351b468b3265c17b0a16aa76e0512f95",
     "features": null,
     "file_type": "tar.gz",
@@ -22745,6 +23261,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17.0.7-linux-aarch64-b953.1.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.7-b953.1"
+  },
+  {
+    "checksum": "sha256:3c9e70e7e0d8b42dbff8a9a614e4f86fa865a27f95f5a62da978835eac5c7b03",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.5-linux-aarch64-b653.14.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.5-b653.14"
   },
   {
     "checksum": "sha256:884c4fe359f1aa092e340272221bf540841b31dfd8479516070b667f3e51591e",
@@ -22757,6 +23285,18 @@
     "version": "11.0.11-b1522.3"
   },
   {
+    "checksum": "sha256:3683c2fbebe8ba2fbde7b7957bdb1b7583159659cb00db14c2ae0223ec666b5a",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.3-linux-aarch64-b469.16.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.3-b469.16"
+  },
+  {
     "checksum": "sha512:4141bea7a14873557c2b7aecdffa11c42f89546bbe22fa5bb23e7c8eb9a43e7a4b0cae6570baddb64d48706cd33284d09ce1114f4f7f8b631baab9681c832344",
     "features": null,
     "file_type": "tar.gz",
@@ -22765,6 +23305,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.5-linux-aarch64-b762.40.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.5-b762.40"
+  },
+  {
+    "checksum": "sha512:0a4d5c01e3fee496685c4aa8ff338ee0b52b59da219ff703240c3b18a6ac786d281849955e28936b58658694a1ffa19cf481feda085f815d665c22ef0ef8aede",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.9-linux-aarch64-b1162.7.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.9-b1162.7"
   },
   {
     "checksum": "sha256:fa293048bd8179c63fd76ac52e221a43812ea19c7293035b094fd7b3c1f29e26",
@@ -22809,6 +23361,18 @@
     "version": "17.0.9-b1166.2"
   },
   {
+    "checksum": "sha512:d932d19e15c5547bafa8606995fe4013231d763579bb5607bfa377542f895e1ffc6ef3480839a9582cbc132ec6b2e353587d9ab2c496451f76d6f6d1a52d79e3",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.10-linux-aarch64-b1207.6.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b1207.6"
+  },
+  {
     "checksum": "sha512:8b22d74d78965b30ffa1f37f99978a02e813ae52d73759ef94b0bdbf9de5306ac98d47f041df89530c9557e37c10839138921fa1a9b3a7fbd9fb3471a6abf203",
     "features": null,
     "file_type": "tar.gz",
@@ -22819,6 +23383,18 @@
     "version": "17.0.11-b1312.2"
   },
   {
+    "checksum": "sha512:1550a60b654bfa933b194f2904f7346e6b874a10cb86539420788461c9d2da67adef0c3658c02bf0097449e493f19379b73658c319bca78d0a1d3b6572af024f",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.10-linux-aarch64-b829.26.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b829.26"
+  },
+  {
     "checksum": "sha512:f3d6a8a606e21ff70b6636dc529a5a5041dbdbfbd920af781ea6db4500d2d1ce0a0f099a299a1798ec2ffbb3837a674d97db65040e75e27355e4321d2f5017de",
     "features": null,
     "file_type": "tar.gz",
@@ -22827,6 +23403,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_vk-21.0.6-linux-aarch64-b895.97.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.6-b895.97"
+  },
+  {
+    "checksum": "sha256:090ba9f791adb35aea33a89268499c7f116e829247e91e63360f3b6469e5b1a7",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.6-linux-aarch64-b779.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.6-b779.1"
   },
   {
     "checksum": "sha512:25bf0c98ae34ff5ff3f4fa49c6d4fa3f62a9979164d2a27bc94b01362c630a14ad7fb4d7119bddc190d7d53b3d9270b6046d5ee2e2e0ca9c5acea0da7b0d7865",
@@ -22999,6 +23587,18 @@
     "version": "17.0.10-b1207.14"
   },
   {
+    "checksum": "sha512:30819eb5f4037cab99de08b2c243b62092e5c57e43b51f0dcf17a6ba01ef66acc3dc957019916df53b90aef8689fb433d4d72597c84508f6c7b9ca3a449575f2",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.10-linux-aarch64-b1207.6.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b1207.6"
+  },
+  {
     "checksum": "sha512:76cdc32665fb669cc9a26c8eda56d1747d38f6572deb2b21ef3cd972e0486075a4fef0f2bd923be614697889e213eeff5095d95bce65bc0027ac94bc2166246a",
     "features": null,
     "file_type": "tar.gz",
@@ -23009,6 +23609,18 @@
     "version": "17.0.6-b829.5"
   },
   {
+    "checksum": "sha512:aa9747586964c5527740cf5adb8c5f5e38d6b728547bcfeecabcc76bd1093685381bc607255b5f33a039a63138d07d6e571f580a7da60df0d9cd8732901d1cb5",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.9-linux-aarch64-b1087.7.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.9-b1087.7"
+  },
+  {
     "checksum": "sha512:87b450422d16241e9521a1c721141b996891c3426d1f09312827d0760fefca8aa5af149bf80d5ccacbe9d334aaa73018717d0e785fea1b03dfae634291532139",
     "features": null,
     "file_type": "tar.gz",
@@ -23017,6 +23629,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.2-linux-aarch64-b341.4.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.2-b341.4"
+  },
+  {
+    "checksum": "sha512:666184390116c68c16fc386d3dfcff2aea5a2926e839f8f06b0a0bf30105587d923192c4e3f1eabde2813f4c293441b8b0f12e1ae78d15ec9000455f12008ddc",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.12-linux-aarch64-b1087.25.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.12-b1087.25"
   },
   {
     "checksum": "sha512:71c4a05f766abc003251a49e8e0e9753adf2b5006818d6710325cea092c7418bb491300a49b630587094ab858c04dc5b7854abda638be63dbc5e4352e23e5ef5",
@@ -23047,6 +23671,42 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-11_0_13-linux-aarch64-b1751.21.tar.gz",
     "vendor": "jetbrains",
     "version": "11.0.13-b1751.21"
+  },
+  {
+    "checksum": "sha512:9794972a92effff14c8856d9cca6bc8667a8e6a418e5c12d4fe693643f99e63b610c52ec57526596b2b697fbdcdd746c3b85973ead72334b81685f94d80036b1",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.9-linux-aarch64-b1166.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.9-b1166.2"
+  },
+  {
+    "checksum": "sha512:52251787c3295088b4a83eaa562e5b1e3df5ef3379c81e89f202750c6fd4bacfece274fb006e51c7e4f045bd62aec34bb949323af86f2b4fb29d6d9562e6fe2c",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.3-linux-aarch64-b509.15.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.3-b509.15"
+  },
+  {
+    "checksum": "sha512:58c6c62f4504b060138a8ad5caf6e06fb03ac2978043a8b2de012a0479b3692a4063abbc4e280742bea3954a4d34f53713edbf5b763d628281f23fa1233582a3",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.3-linux-aarch64-b509.15.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.3-b509.15"
   },
   {
     "checksum": "sha512:93b371acc5c1a4389abeaedccf14a6d7bd0e3d1853a80952ae0699df631c3a7bf5fe088bfe8a6665c01fa309b2b3b5fa404a33be6181da2f403fda96fce77a5c",
@@ -23093,6 +23753,30 @@
     "version": "17.0.4-b469.53"
   },
   {
+    "checksum": "sha512:981bb9d2270704b92e26a6162328eb3e8e14c19d4d3d9cdc1239e56cc7f911a0b2b7645890b41aff607f396dacdc5438bfd01b13d19cdc855e5cae75b666e9b7",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.4-linux-aarch64-b613.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.4-b613.2"
+  },
+  {
+    "checksum": "sha512:aad3b13a44d1b197401090a843a5634b3417124ff71c2da72c00587ac96b342af05880b1171d712058659f7159dc513bbd221e1806763a76e009430b09880665",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.4-linux-aarch64-b607.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.4-b607.1"
+  },
+  {
     "checksum": "sha256:87bc60af78bd53d707c371e482eac480cd07b44d436857554ec71ececc54b13d",
     "features": null,
     "file_type": "tar.gz",
@@ -23111,6 +23795,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.10-linux-aarch64-b1207.12.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.10-b1207.12"
+  },
+  {
+    "checksum": "sha512:dfce91e1487136a5a8cd16f7d7cdfe686572a960c56df0cca593c67387454a0ede826ed741cd34d82e4274a61738fab91e331690182e3ea93f58473aa54f47a1",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.4-linux-aarch64-b598.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.4-b598.4"
   },
   {
     "checksum": "sha512:2ae859e561747c2a8c5f7a11b4cd0a839b6aa300712daef38260672b266b0dd5430fd3e2f7cfb960774b1aa76afcc0219a72046ea67478d08808a364b088db5e",
@@ -23133,6 +23829,18 @@
     "version": "17.0.4-b469.53"
   },
   {
+    "checksum": "sha512:e15bc384313fbedeccb4f86f0404f5809f3d64ba8013eec1b5e5ff18286f1724b20d39b347b6b232ad1b6a3c2613bfb27fd550079a9e430bcaf3dfad03aa9375",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.9-linux-aarch64-b1087.11.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.9-b1087.11"
+  },
+  {
     "checksum": "sha256:660625449fd14cecafb0241d10d428d68ba0aa76941ffa29ae3e127b94226212",
     "features": null,
     "file_type": "tar.gz",
@@ -23143,6 +23851,18 @@
     "version": "11.0.11-b1504.8"
   },
   {
+    "checksum": "sha512:4d87301a52debabdf300a3d111f0d63434ca9670e6ce255c1b03dcad7c5ddb337cbc84855832c4ed996aa16597b92197928cad6318391640db89752a519fef8f",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.8-linux-aarch64-b1000.8.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.8-b1000.8"
+  },
+  {
     "checksum": "sha512:d984cbd14ea41de3fe80b443e661b13e0a7235529cd5cd05ccfbbc4598defa8eee4b694cfa0137a7a0391b19672fdc775665f7bf5d8cd246b952f8db54c417f8",
     "features": null,
     "file_type": "tar.gz",
@@ -23151,6 +23871,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_vk-21.0.5-linux-aarch64-b792.48.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.5-b792.48"
+  },
+  {
+    "checksum": "sha512:71dec66ee5afbb69a5baaf0da0cc197e94e5f336ce9ce734aa77bad9eb96c7ce8856658c0565f77e1e17635098e47e888735ff9615102c53bfdd1443d857bf39",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.6-linux-aarch64-b653.34.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.6-b653.34"
   },
   {
     "checksum": "sha256:88f710fcc8e2e7494686c3858ed8d12bf870179e7e1f2b0b1d7644b9c8e52ced",
@@ -23183,6 +23915,18 @@
     "version": "11.0.11-b1504.16"
   },
   {
+    "checksum": "sha512:842c703287473630d9636678e58d9be68345e5568217bf0b6267ab0e92f2d075b016857c18ab87028dccf95703a3d5c97bc86d975b8003e1e1751a9342ec0461",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.3-linux-aarch64-b509.11.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.3-b509.11"
+  },
+  {
     "checksum": "sha512:d13b938ce5ce776ea9636f4afa9becc659ca3ce18c17c176300c55c0575e16770e86cbe9b7a7f9e901688cbce40ac25b53ce0150cd6b59e0e7ff0cc83d8056f5",
     "features": [
       "musl"
@@ -23205,6 +23949,18 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.15%2B10/bellsoft-jdk17.0.15%2B10-linux-aarch64-lite.tar.gz",
     "vendor": "liberica",
     "version": "17.0.15+10"
+  },
+  {
+    "checksum": "sha512:6559e66cf6532f7a13cc3ddcb2fab12009491b80740820c5c7a929f0a0c5278c20740daf475cfc58e9b0ecc2c85ff2448b918b92be1259698703b118a6a9a327",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.10-linux-aarch64-b1087.17.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b1087.17"
   },
   {
     "checksum": "sha512:c0925bfddca3bcd8e0c601a5cac8e46fc6dacc69b7af2e366accd2e27710be6120e415eebab2fb89584f16b4627628169f738fad23bab766ac02df82277813e2",
@@ -23263,6 +24019,18 @@
     "version": "17.0.6-b779.1"
   },
   {
+    "checksum": "sha512:f5d0bb3b4f627406d1dcacc0a42ecc166f1bd31676dfa068ecd90b3da4384be99a5bf447ba35092f7c4edbc17475e69924ad23d82856582c1519a34a2dbde59a",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.3-linux-aarch64-b509.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.3-b509.4"
+  },
+  {
     "checksum": "sha512:944a355aadb00e03826fb57e2c7f579c9fee252831da2be2d5f73255d66af6e011c972588eb73244213660df72bac6ebc17a9a0cd2df0e9b5f4e32abef804ee8",
     "features": null,
     "file_type": "tar.gz",
@@ -23273,6 +24041,18 @@
     "version": "21.0.5-b792.48"
   },
   {
+    "checksum": "sha256:c5df2e3ebc360637bbcfc88223a8439a827ff311b090c1b051d3eac64e2876bb",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.5-linux-aarch64-b653.6.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.5-b653.6"
+  },
+  {
     "checksum": "sha512:5ee9c7e5fb67c433d0949e26bf81fcf4333f2580995f74ef22b09e4894d8cbbbb4a925dbb0076b8b4bd0891ddc1db617fb60559037c212935acc67da3636c472",
     "features": null,
     "file_type": "tar.gz",
@@ -23281,6 +24061,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.3-linux-aarch64-b509.4.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.3-b509.4"
+  },
+  {
+    "checksum": "sha256:7ef30de488619b11bd7e67927fd1535695e6b8fd654d84b8b84ae57b522e844d",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.4.1-linux-aarch64-b653.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.4.1-b653.1"
   },
   {
     "checksum": "sha512:07ef5b84253be0d684b9f030f1401103848df8193f4ec1f840c2ee263e87eeaf792da20cdc227f7bbfa64a3287b396268339c94d42322004174e151fa8eed233",
@@ -23325,6 +24117,54 @@
     "version": "17.0.4.1-b629.2"
   },
   {
+    "checksum": "sha512:9fc2e1c96d944647571285723cdb5c505bb15c8749bab33a6b345914761e069960def45bc73fdf209cfed0716eb55345477c16bfe0a1ece2297d26f6170ba8fc",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.7-linux-aarch64-b985.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.7-b985.2"
+  },
+  {
+    "checksum": "sha256:8579577ec7beb5a9eb962a97086f29fca89ced1790b4c4cb94ed8779422206e4",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.4-linux-aarch64-b469.53.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.4-b469.53"
+  },
+  {
+    "checksum": "sha256:ada3e39ab9c6ca942bb4e63d2c912b96b5ddb9976badcc94380566fc378401c1",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.5-linux-aarch64-b469.71.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.5-b469.71"
+  },
+  {
+    "checksum": "sha512:e1a6f7d1412de25eb6ab091a48a19d981d4eecc32cad504346da4a5b9064a8248e5ebfa93b3e1205a4e5f520a7717914ac3c66eae8e71a5a57a6d2f49c142642",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.9-linux-aarch64-b1000.46.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.9-b1000.46"
+  },
+  {
     "checksum": "sha512:9f47fb10d4c5c6f96dda6d6369850ad490e7c2fe65a9def6b968b703ba88fa6d9376c6468f8e8858e1584ee793b51d9b5d92eb066254daf0ff1bfb3a1cd683c5",
     "features": null,
     "file_type": "tar.gz",
@@ -23357,6 +24197,18 @@
     "version": "21.0.5-b792.48"
   },
   {
+    "checksum": "sha512:d133cec2df4e072d1954f9eefa7313f1cadd69b71b266b882e4c2313a28b029615beb879107d408e5025d7a55fef290cac7b27288fcb6fd4541f634225a1ed97",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21-linux-aarch64-b212.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.0-b212.1"
+  },
+  {
     "checksum": "sha512:200939443b6235fe84624d2601b93466d5cf8b780a64e2aacfcdbb88b2a0249548f0b81501652d2c63bf46a0098dd4174a646924a76d22cb8c27a2cbb81317aa",
     "features": null,
     "file_type": "tar.gz",
@@ -23375,6 +24227,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17_0_2-linux-aarch64-b315.1.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.2-b315.1"
+  },
+  {
+    "checksum": "sha512:76a839a4d42ea6b3e5271900706e75dfc1246a635ea648dfd5a378555df82e2270c679e81b9fef9e8c09a360628add428b532225e038667725ae9e65b7cc085c",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.9-linux-aarch64-b1000.47.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.9-b1000.47"
   },
   {
     "checksum": "sha512:17adbf5e3e2ed1b407ca29a0c4764350f6984836922af7b396e15923ece102003bba6e3fa8d19e5386c1bcb6e95a4b10bb8a6162c5835dd18485f662761fe8c8",
@@ -23399,6 +24263,18 @@
     "version": "17.0.7-b1000.5"
   },
   {
+    "checksum": "sha512:8dad2f616749cae2ae5381fafa527c3c1c22db27c5e5715eb0967b4d7c5776139c640f9ee23b0971bd41603e378223fc8585255f69f68a88341e7edaffab4e40",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.8.1-linux-aarch64-b1080.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.8.1-b1080.1"
+  },
+  {
     "checksum": "sha512:ab6be26c573ea89489846290ca614d43ee41907daf20f01fda799f1bb210f11298bc1687ef6b47709d94c2ca07afd51add3495e047cb28b294f6f52340811af8",
     "features": null,
     "file_type": "tar.gz",
@@ -23421,6 +24297,18 @@
     "version": "17.0.10-b1087.17"
   },
   {
+    "checksum": "sha512:15cc5bc8ecb2ff8a76a91e98f67f481bfd41d7c67422b08da14ccdc1f4f7baa4858238d631aac2f3cda2a0afafeb709b3dfff64d47f5fa0b9fb4352bf07cee8a",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.3-linux-aarch64-b499.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.3-b499.2"
+  },
+  {
     "checksum": "sha512:210ef0a4ee2fc96fb9f820e34dc917904b43514295213466d5eead463907c431a36e1d7f5fc523939d1c161a491c58a589d17afae102a70b2328564b79ff1240",
     "features": null,
     "file_type": "tar.gz",
@@ -23429,6 +24317,30 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17.0.8.1-linux-aarch64-b1072.1.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.8.1-b1072.1"
+  },
+  {
+    "checksum": "sha512:7314c3fd7f4ba4eaf5b88f59dc0357e5afd096f8bc3d9110bdf6cb36c29c841013bdea02852f8637f05a681a10108bf196a211d55f11d363225bd83377f353a3",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.2-linux-aarch64-b346.3.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.2-b346.3"
+  },
+  {
+    "checksum": "sha512:a9f4f9d35e3b41cf71ae532080c6979cc6205126baf9eaa566dccdd13903d0d6ea7e69e9112bb907499b61a5f3b19f5bd912f10a45a1ba4dfddb2296b3e3b808",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.7-linux-aarch64-b964.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.7-b964.1"
   },
   {
     "checksum": "sha512:0ba404b3f6fbfc3fe344e2b099e4f20da6bcf406bf4f7ef8b8b7871302ae9fbf6c4f7ad50110b8bc0ab07c5e3615efdca88d63547d313040de9c8c06ce94abab",
@@ -23461,6 +24373,18 @@
     "version": "17.0.10-b1087.17"
   },
   {
+    "checksum": "sha512:83a25571314625c5b21357ccdfede5a938bcc884e2e8079170884c4efac01d8e9fdb4c4d693afa582876f0ed226e87aabc100d33d956696ab0b9dd827b93312c",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.2-linux-aarch64-b341.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.2-b341.4"
+  },
+  {
     "checksum": "sha512:3c3201fc9691d035cb3d58e56627496267d10b8e8d1deabc395e72bb3e7add1f68b6f8a5b42f9403104c25db8441724d08992b32ae3504aa5a0834ff05a73acc",
     "features": null,
     "file_type": "tar.gz",
@@ -23469,6 +24393,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.4-linux-aarch64-b598.4.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.4-b598.4"
+  },
+  {
+    "checksum": "sha256:67272f55ba99d7376b965c7a2ba081e0e25448e2e54e00651871f720a4163872",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.5-linux-aarch64-b469.67.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.5-b469.67"
   },
   {
     "checksum": "sha256:79a3f0ca488c80f291fe933869106dfbf22b82611e09faa20f228f459e3f29ed",
@@ -23515,6 +24451,18 @@
     "version": "11.0.11-b1504.13"
   },
   {
+    "checksum": "sha512:7947db2b27b20a5223d01aa94a88c20bd14939e1d0bf865cbd3bc73b5b4596effea95a2ab05390963faced59347d8fd5d93ea5de1a0c29b4f9afad91d9a41fd8",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21-linux-aarch64-b212.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.0-b212.1"
+  },
+  {
     "checksum": "sha512:22876e9cb0f9d8d7fc687548efaa2f82251bd299d5e64d9ca9aef215ad3845cb4895b3551b4a827233bd40ed6464e1c2c3d91b1ba1cdcbd4259f25a52804943c",
     "features": [
       "musl"
@@ -23527,6 +24475,54 @@
     "version": "21.0.5-b792.48"
   },
   {
+    "checksum": "sha256:9e86281250976a471c79ea20cf610ef17a035efb9463e26b16bd5d2bce671a4d",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.5-linux-aarch64-b469.67.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.5-b469.67"
+  },
+  {
+    "checksum": "sha512:9420232167e730f025cc40b3e2cf0f9bd4499e17737592661dbd8e57dfc2f31db12b95c73b5566ae2add5050a4912498bc37200900f255ec6b7511e6e3c322c6",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.8.1-linux-aarch64-b1059.3.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.8.1-b1059.3"
+  },
+  {
+    "checksum": "sha512:19bb18b4d24eb8e09e55b27cde1e7d39a2941ea3cffd369eb48e9d567d978875c3850cc5edd936434e4e1403294fa56866ab236a9b098aa1947637307196a614",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.3-linux-aarch64-b458.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.3-b458.1"
+  },
+  {
+    "checksum": "sha256:c0b89a6612bdf42ed51c295d3a55c56766f3f309b2accde79b5d7509ffd4fe85",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.3-linux-aarch64-b469.12.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.3-b469.12"
+  },
+  {
     "checksum": "sha256:54da7a627752aae51ff5ad303086817958aa9d8063d26b9a56965c7f85a99ca5",
     "features": null,
     "file_type": "tar.gz",
@@ -23535,6 +24531,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-11_0_13-linux-aarch64-b1890.3.tar.gz",
     "vendor": "jetbrains",
     "version": "11.0.13-b1890.3"
+  },
+  {
+    "checksum": "sha512:4148ca73855c95968f245ca7d81778c95a4ab8f998a009cc75f6515ccea32c64a2136527ea4044960d33788a7f2601691e88c302ca556c67396a2d154f3b7ef0",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.8.1-linux-aarch64-b1059.3.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.8.1-b1059.3"
   },
   {
     "checksum": "sha512:d552df715b373d52a0f53e9d021095ce2a5327ab23b746db75e5353be13d2191e3537b0d67c16cc4b384af61c4b5f0a7fa44f6208b209e6b14e5a9b2ce62a345",
@@ -23567,6 +24575,18 @@
     "version": "11.0.13-b1751.21"
   },
   {
+    "checksum": "sha512:446b746b81a3b077a7cb520f563575735a162173ffa7be5258b3403d686d989394cbd5de5de82af37efd352bc90ca90aef92e3a7969e0ec7d9a2544d0f43f8a1",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.6-linux-aarch64-b895.105.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b895.105"
+  },
+  {
     "checksum": "sha256:8e1079d3a61e43a9e7d9e8a93b8dfaac143228e289475734737b3a7426f0b80b",
     "features": null,
     "file_type": "tar.gz",
@@ -23587,6 +24607,18 @@
     "version": "17.0.12-b1087.25"
   },
   {
+    "checksum": "sha512:fca94350eac7c21fc6ca91f1d31832249b8e8ecf441c71efebd921876a7186bf9ab5e9849b9c06c2bcb335054e3c7ee01ca22caec655c76f1a2513a8b3ba8bcf",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.3-linux-aarch64-b509.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.3-b509.4"
+  },
+  {
     "checksum": "sha256:cdcb1ee9d188d854c433b45970e1a72b68c9d6e90524fd6e7557db4e64ee0387",
     "features": null,
     "file_type": "tar.gz",
@@ -23595,6 +24627,54 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-11_0_13-linux-aarch64-b1751.19.tar.gz",
     "vendor": "jetbrains",
     "version": "11.0.13-b1751.19"
+  },
+  {
+    "checksum": "sha512:604a094b0b1526a617b56c6564affe71ca4b4c5b18630b3f614171fd8842051574fe23b3dd40248e6c371e7586a4ba77f392726fc90fea96a9b652b40504d586",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.6-linux-aarch64-b829.9.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.6-b829.9"
+  },
+  {
+    "checksum": "sha512:7e686b3ae26ce65c274152910fe4ed963e886173a35283ae2f9af210656d52b882a283e3c77bf8b06425b8093800d298f424752ac72195c1e9178cab034e29ed",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.6-linux-aarch64-b895.91.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b895.91"
+  },
+  {
+    "checksum": "sha256:5bbcd7c0fd793ad9d2d2c34946e4deb5ae91ed1a34c7db8fa0503393a2d03e4a",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.4-linux-aarch64-b469.53.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.4-b469.53"
+  },
+  {
+    "checksum": "sha256:f2fcb6538f6f0d77b24572b4ab1cd6030154e61f3346e8d390993c52468f9938",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.6-linux-aarch64-b779.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.6-b779.1"
   },
   {
     "checksum": "sha256:64f0604f83d8067a475a4d4c8b62c70eea6388e8432ea4cf8ab8c4e96dc7f6c6",
@@ -23709,6 +24789,42 @@
     "version": "21.0.4-b613.2"
   },
   {
+    "checksum": "sha512:6cb7102964e4dd4f980dde0f93b8c667857ba84efa5fe98ecbc62837db6022fef2ba39822f69e2d4e538db60069bcb6320c535c25f2b87a974bfdfdc96bb60f8",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.12-linux-aarch64-b1207.37.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.12-b1207.37"
+  },
+  {
+    "checksum": "sha512:29d9adeacec1aba007139923e07e87b69b31bf5b031ce489d8b473f0fd04a356499edc714efb6800f8fa83c2f1073e1836ea56f4fc93f677528ac158efde3243",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.10-linux-aarch64-b1087.21.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b1087.21"
+  },
+  {
+    "checksum": "sha512:21f6b0aaac27e4b5ebaf4c63cb16050ab2644e3c0af3eba47ca578738c22efb2789e775ddb7d537fd7da895ce07f78ae069a0f318154d259d8a676f4b2d7b5f7",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.7-linux-aarch64-b1000.6.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.7-b1000.6"
+  },
+  {
     "checksum": "sha512:5aa90c5f92a3b3643ddce1c5f1f0b3e7858bcea67135d3c4aa966a649d7c9e07d61199dfd3a5e8e76f91b6b7a4949341a23723d308d7e9b5b998aebb4275bbaf",
     "features": null,
     "file_type": "tar.gz",
@@ -23717,6 +24833,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.5-linux-aarch64-b631.16.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.5-b631.16"
+  },
+  {
+    "checksum": "sha512:fd27386c84a0b57c1e38c47c5877cca700af51a4ddf8ccdf1f31c353acdcb0663c9ff52d739077eea053421b30260ce5ca34902ced260a4bbef31b68c822ec49",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.7-linux-aarch64-b966.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.7-b966.2"
   },
   {
     "checksum": "sha512:47e0809d7be8e49b5bd20e87db9b23b969fae57f54807d797921cfbaafd670cc6a9b28b4d8b71e0e1185c497f5b814f29a0e2463c5cc6e893bc1af98561f50e0",
@@ -23787,6 +24915,54 @@
     "version": "17.0.11-b1207.23"
   },
   {
+    "checksum": "sha512:5c84e71a46e213b9b72f626dd4e61df79bde6912e56eee32b9b720532255ed3acd6c6882aedc4769d306800fbacf394597940a7093007a67a7dd64d28f3b863f",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.10-linux-aarch64-b1000.48.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b1000.48"
+  },
+  {
+    "checksum": "sha512:75eca30f72438d490a90cd6149f1f7cab9ee5d74adfcc44d857e9896fc1396f293816f401d2bfb4980a7a0a54c5fe8b99857da4bbe69fda39298004ce8436ab3",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.2-linux-aarch64-b375.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.2-b375.1"
+  },
+  {
+    "checksum": "sha512:51bb9202e5bd167cbca3d71b7ec04638142e884e975eb6f112b28d7a0618aabecd0391beca4409c30c8575be084e0b6574a2a1925727255f2780e6d3bedd644e",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.5-linux-aarch64-b509.30.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.5-b509.30"
+  },
+  {
+    "checksum": "sha512:08bed2b62eaadac90f12fcb1fadae815315c9d90e70bb4da44f46289234dcc666353af9c53e78bbe49fcf1bb0f57e2b93e853a9ca3ec9428492c5a9ee537cbd4",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.7-linux-aarch64-b1000.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.7-b1000.2"
+  },
+  {
     "checksum": "sha512:79df4f7087d045e92ecc04d11b001ebbcff3703c8d90760fdc2e1b5d38e8757c3c24b2963eb864f227902b6d23f98bcec604e0e78b4c3f70e96d1ce65d8130b6",
     "features": null,
     "file_type": "tar.gz",
@@ -23815,6 +24991,30 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-11_0_12-linux-aarch64-b1751.11.tar.gz",
     "vendor": "jetbrains",
     "version": "11.0.12-b1751.11"
+  },
+  {
+    "checksum": "sha512:5471a87d2d343d5b52db27e8ab1b3e783bc0df5e34024a4926ddb3be9a713967b11aec9ac9392258cc48701e01a2a7e64a9b7aa8899204768ec2062d1cd3058f",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.3-linux-aarch64-b453.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.3-b453.2"
+  },
+  {
+    "checksum": "sha512:28abab9e3fda630935d1946480bf7ad877ac8418e80c4ac39fa71e6b6aade19c721b7f831bf731b773e5ccf2689597e9b2d632309034494a2cdb8b758515585b",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.3-linux-aarch64-b458.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.3-b458.1"
   },
   {
     "checksum": "sha256:0377e7f5cf8b5bb0f53e8731dd00991a624a407667d725b5b83365ab2b1224ca",
@@ -23847,6 +25047,18 @@
     "version": "21.0.4-b631.2"
   },
   {
+    "checksum": "sha512:a2796314ade337a329fff5b9e210dfc3d6a0a35e36f80216d9a7932a0e61269e6de26a40ab066ff3ee9aa3a7ddda3434a4cab5aae979150acd4b5183a952c731",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.10-linux-aarch64-b1186.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b1186.1"
+  },
+  {
     "checksum": "sha256:21d6edb308d14ea95acb9f128e9da526443089b24e43272407d6dfab287ca0d2",
     "features": null,
     "file_type": "tar.gz",
@@ -23867,6 +25079,30 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.9-linux-musl-aarch64-b1162.7.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.9-b1162.7"
+  },
+  {
+    "checksum": "sha512:e46e980fe731fe2c443cda1b8fa642930d1c30742cb6c40e28a62e26dd0f6e677469215c36019042bbf517853e9949e55fa0586db17e5539c90f263dbabcbda9",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.5-linux-aarch64-b792.48.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.5-b792.48"
+  },
+  {
+    "checksum": "sha512:da4d9d3a9c225c1cbcebc1fcdefe6ef9ecf7e040fd320172da6c781009fac1d75c73b985832ca211f451bbb00c03f0b0554a409ccc0076e01ecc42757e12ca8c",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.5-linux-aarch64-b792.48.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.5-b792.48"
   },
   {
     "checksum": "sha512:936668fd2c7375fa7e728dcf7988eb36f4ea886b95782cd84cb129585c7bec5de5e94072b0c24817b1ec1873b058b6d30c09edf7d1789e031121a7737b687c4f",
@@ -23891,6 +25127,18 @@
     "version": "21.0.3-b458.1"
   },
   {
+    "checksum": "sha256:285e3a3d0eec19b81dab33101821ccf0e683343252a12caeb75d3c8e94fdf50f",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.3-linux-aarch64-b469.37.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.3-b469.37"
+  },
+  {
     "checksum": "sha256:dddd0c056068296b273ebc32be38907f4dec74f7f3f1fa37ca17daf319e772f8",
     "features": null,
     "file_type": "tar.gz",
@@ -23899,6 +25147,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-11_0_14-linux-aarch64-b1993.2.tar.gz",
     "vendor": "jetbrains",
     "version": "11.0.14-b1993.2"
+  },
+  {
+    "checksum": "sha256:155bb828fd623089cd443e889c50b0f5848bef1ac798498ec92c15a0ca319597",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.3-linux-aarch64-b469.3.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.3-b469.3"
   },
   {
     "checksum": "sha512:adb188e1de904705bfef385143bd41ec0cd159183b20f6a30b95207636dbf1366f07d89ce66ea76199f67b2f16735b1f7f1e741ddbc09a6ce2eda181fc92730d",
@@ -23919,6 +25179,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17-linux-aarch64-b87.7.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.0-b87.7"
+  },
+  {
+    "checksum": "sha256:a779d80493bed8e230a2e8111da1ff536fcc2319563c869bac6342218a4d53fd",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.5-linux-aarch64-b653.25.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.5-b653.25"
   },
   {
     "checksum": "sha512:50f36e2a6487abb944e5db1e3cc889370dd94973a0448757c3105e2a941433489bb2af802cb1de43734d3bb101bbd7a90f7fb1ac09aeb08ffb7df7cf654372d1",
@@ -23977,6 +25249,18 @@
     "version": "24.30.13.0"
   },
   {
+    "checksum": "sha512:597f3ff91c0c897f9c654ba4195599b0a688046f4118090bd57f1b4eb47cba1b271de92cf165fd6a10645f6a482cd751bfa2cb51630cf9b70a469ac31ea4a291",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.8.1-linux-aarch64-b1080.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.8.1-b1080.1"
+  },
+  {
     "checksum": "sha256:e4d619e8b367f6a5671805b90220694fc9c077b8e27b6544ba3286ae956d8133",
     "features": null,
     "file_type": "tar.gz",
@@ -23985,6 +25269,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-11_0_12-linux-aarch64-b1665.1.tar.gz",
     "vendor": "jetbrains",
     "version": "11.0.12-b1665.1"
+  },
+  {
+    "checksum": "sha512:320ed63d0344e62e127df2c4fe74015f4756d46fc52af7fde440880c5005561441e625fb7a0e2605dd55c970b842848a611ddd0944209823cf0c0baf632b9039",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.10-linux-aarch64-b1000.50.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b1000.50"
   },
   {
     "checksum": "sha256:63625d8672de99070a8423a10abeef6190669bbab49c931c2229a057c9482075",
@@ -24085,6 +25381,18 @@
     "version": "17.0.3-b469.30"
   },
   {
+    "checksum": "sha512:05a577b47c6bb3d6436ed19a3c22b343f3f5231b9d8a74b3a88a61cfc7f1f4913603e84d3de3c5d09610e7753b42da9ee010dc4d1bbfe1cc46460c0928b7a416",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.5-linux-aarch64-b762.40.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.5-b762.40"
+  },
+  {
     "checksum": "sha1:122f6d8e2b00f96732eecbc8928547a6e1f32050",
     "features": [
       "musl"
@@ -24167,6 +25475,18 @@
     "version": "21.0.3-b446.1"
   },
   {
+    "checksum": "sha512:46c7547b020da3c03dfb907c64fc1ad21ce4de09892bc394bf82c6c45b2fd64bea7a26911193ed54e4705a14613aacc84ba4486a19f556c37366276ee8d85a20",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.10-linux-aarch64-b1087.23.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b1087.23"
+  },
+  {
     "checksum": "sha256:f0c0ca07e2ac05061860f3f3d6ac076c3f240745108af61583b9376101e19a45",
     "features": null,
     "file_type": "tar.gz",
@@ -24187,6 +25507,18 @@
     "version": "17.0.3-b469.19"
   },
   {
+    "checksum": "sha512:278ee0efbf011d7eee606f294d8a597afc736c1cf4ed0d4215a0a085214eaaa17038163698af0c727ce14c48183501a57e3651d5767054a714ca3ce566e89607",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.6-linux-aarch64-b469.82.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.6-b469.82"
+  },
+  {
     "checksum": "sha512:6586dedcc673ba2aef498710634c4c7155abaf577115a8b0f698053ea0b52de003617a945a6a72ac1d21601101bf55c9f90d634c469cb70cb8268d16efe51075",
     "features": null,
     "file_type": "tar.gz",
@@ -24197,6 +25529,18 @@
     "version": "17.0.6-b829.9"
   },
   {
+    "checksum": "sha512:8437652c55f04b4caa1c57528d32a8724a300cb47d0dafdb914c04341e5e79481bfcdd8dc62d3c603fa4daa8c27baf4eb24d61c0bdc33ef6475a5432e5ecbbb5",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.5-linux-aarch64-b509.30.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.5-b509.30"
+  },
+  {
     "checksum": "sha256:174ea4fcf116acf19d8945ae04be90da132ad7f7eb0fdd0065dcdd81bbcc3e68",
     "features": null,
     "file_type": "tar.gz",
@@ -24205,6 +25549,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.3-linux-aarch64-b469.32.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.3-b469.32"
+  },
+  {
+    "checksum": "sha512:388e86f09430528f327aaa0113dc6e5d29952e98d572ac2f1a8e0e3ed00fcfff3cbf205d37cec26bc6519c9ff593a300dca873e69091392bbc88b01219a22d42",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.4-linux-aarch64-b613.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.4-b613.2"
   },
   {
     "checksum": "sha512:f0e7bce7e3fc2ca83a96241e091ad0195f6fe146d9c456f580be96850e16004aeacb203c8960f46bdd4b002dcdfd12665d651c79b6bc50af8b543b144f427056",
@@ -24279,6 +25635,18 @@
     "version": "21.0.6-b895.97"
   },
   {
+    "checksum": "sha256:47ee14540b42721db75d91722ed5ef273176eb9338ac40b7d88cc595a14b7691",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.3-linux-aarch64-b469.12.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.3-b469.12"
+  },
+  {
     "checksum": "sha512:1e6f627d543500dd75344ca8e60d5eb86632b9e9ff98cbdbfea6d29a4b526286f4e2e8831acd249fed899fe73d95884d16814f34a2f180ae88043b36c8a17e1c",
     "features": null,
     "file_type": "tar.gz",
@@ -24333,6 +25701,18 @@
     "version": "11.0.12-b1729.1"
   },
   {
+    "checksum": "sha512:914c46ba4add6bf68ce3461afc85cec1221a8108bb5e9ef91dadd47000c688ba0f287e26c22c856a314d5663140eb8b49da7c5e1611822fa3e45d017cc3c24e3",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.10-linux-aarch64-b829.27.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b829.27"
+  },
+  {
     "checksum": "sha512:0ae7b72da2c4229eb8bdd47467ab6dbdc60297b41796603814d0b49925f41cbac58957eab51001b655c4d4b78f319cddc574da38515d85ac987f7e56b9950b8d",
     "features": null,
     "file_type": "tar.gz",
@@ -24341,6 +25721,30 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.6-linux-aarch64-b802.4.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.6-b802.4"
+  },
+  {
+    "checksum": "sha256:cd9f59c5c7c5be0378149cbed0d9d2bd39c2fa32a2ff576c64021d0b5b5ccb72",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.4.1-linux-aarch64-b617.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.4.1-b617.2"
+  },
+  {
+    "checksum": "sha512:95b7cc34455650b5fdc398354d39e10453c1bccc68c3928e91054dbe2282a894db065293bf2c2078c6e0571a881ae618f4cc931a5f3421c57952033c8e2712cb",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.4-linux-aarch64-b509.17.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.4-b509.17"
   },
   {
     "checksum": "sha512:4442eed360e62262b0d175c0fe5bb440dc781e9e4c81478b19048f8a679e9c9ac7af541639100aa3413b1c2a1b85a437ce9c71303d51583c5452f36739eded65",
@@ -24353,6 +25757,18 @@
     "version": "21.0.6-b872.85"
   },
   {
+    "checksum": "sha512:433cfba6aa3fca43453a65a87d342487207bbc29089ea7a8ad13e8a8d2f6417a01eecc0b7d4f7887bc82e41797b8719dfecb7d9aa8fef446efd7b2259a888f6f",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.5-linux-aarch64-b631.28.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.5-b631.28"
+  },
+  {
     "checksum": "sha512:7a1385d477f57e3a53801f248d231cf613e12814f66f7b0a08e2e065a5e1ea880e92b7a613ac78d30bbf9ed8eb60513bf37bfe24aeb59dce1db952d38e11ce6b",
     "features": [
       "musl"
@@ -24363,6 +25779,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.10-linux-musl-aarch64-b1207.1.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.10-b1207.1"
+  },
+  {
+    "checksum": "sha512:0b7f5ec889cafe0555e303e7e1eb786845ce4e12aa85ca4ffbbcfaf0b4b33cbffbf5a461b76a8b2ccb4e3d8f9e036b5ebe6170c0fbfb2635fb969717d32ab2c7",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.7-linux-aarch64-b964.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.7-b964.1"
   },
   {
     "checksum": "sha512:c0d54d4df6466b0d6f70a79d60c4f23be3001caeef72d716091f062ad87ee9ef6b59c89b9356a09691dde0290dd6ebb0d2c0a4fa6cb2d2c9f559ae13ab4c89d0",
@@ -24397,6 +25825,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.5-linux-musl-aarch64-b509.30.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.5-b509.30"
+  },
+  {
+    "checksum": "sha512:b689df07828d24f6c7e5f39f075e003ea64948b642ccfe1db5c57260c171db4c51d348fefa07234e7d90c9eb21a6f4e6fee5dbd0d34fecc8992517652e6f4e81",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.8.1-linux-aarch64-b1072.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.8.1-b1072.1"
   },
   {
     "checksum": "sha512:886a69770f7bf33e6d2d7c6b65166510dc178ec843df27619151d0e379d98f98f019a3ac39afeafd77e0a2bb48f2c5ab1df7484f2560da2000b6b7c382281e73",
@@ -24455,6 +25895,18 @@
     "version": "11.0.12-b1504.28"
   },
   {
+    "checksum": "sha512:8be45432ef4229fa51cd180934431d05ce9662b8c1db53267f42eac12ac3e569972b0912f2753da864283dad116767bc20953f1bcbcc500ddcbcfd1735f63ccd",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.6-linux-aarch64-b829.9.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.6-b829.9"
+  },
+  {
     "checksum": "sha256:06132535c03a396e32cee9b15fa2c52b6b46b4cd243918151bd33e48d52b6a62",
     "features": null,
     "file_type": "tar.gz",
@@ -24463,6 +25915,54 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.3-linux-aarch64-b469.37.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.3-b469.37"
+  },
+  {
+    "checksum": "sha256:adb8d577441808b1aa51d0d09d239ae02940e7f9595efd178afd5aea5d9d87e4",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.4.1-linux-aarch64-b469.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.4.1-b469.62"
+  },
+  {
+    "checksum": "sha256:e33f64de87c30f0e019d70d02b5940cf2592d08c6000f1fa11cb5622f034eafd",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.3-linux-aarch64-b423.10.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.3-b423.10"
+  },
+  {
+    "checksum": "sha512:412222c5fc27be9c22a03bc58916597585b0d6045d306ebe58057f9509c3b2795c262ca218922eb59928dfc2f47ee69b0ab64d79e624356092be395a28dfd3fc",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.3-linux-aarch64-b446.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.3-b446.1"
+  },
+  {
+    "checksum": "sha512:444945cd25238542de6f281d4a73364eb46cedb146567c980a2586988385b5e86dd5766ecfc01dad0529491d51773c252baf96302238df68af5e1b7457c0ce86",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.7-linux-aarch64-b829.16.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.7-b829.16"
   },
   {
     "checksum": "sha256:bfc5e37a092a0fbf874f271704dbe3b690c57ecfe934212d36ce99948a177c01",
@@ -24485,6 +25985,30 @@
     "version": "17.0.10-b1207.14"
   },
   {
+    "checksum": "sha512:4e04569516273dcec9c2e49487a427c6cea986932988daae45f573b1b140d7e0c787216369469fc50563e156e0a004185d7ab5054e57268817b3067a16cd2a86",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.10-linux-aarch64-b1087.23.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b1087.23"
+  },
+  {
+    "checksum": "sha512:f4351ac78ece9d9e863b63da70a565b8d989f599c0a3ea271c8ab83902d6d2af3a3020b6869cef3bad5a5d6eebf2b29cbdf6d9a1583e39d5379af8c06766adc4",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.9-linux-aarch64-b1087.9.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.9-b1087.9"
+  },
+  {
     "checksum": "sha256:d1dd82718f8d2461b9af3f0ed5391cd170a719527dcb3b6c05f74c1140cd9c1f",
     "features": null,
     "file_type": "tar.gz",
@@ -24493,6 +26017,30 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17_0_1-linux-aarch64-b164.4.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.1-b164.4"
+  },
+  {
+    "checksum": "sha512:9c2a817ca741fbeb7b42bfda96f9e7d9596bdbd40a6bc1365729d6ae1b1f698805c89285ddf4c92adade16f197c765f40f6133c70b8d7b07efbfca5f4ade2530",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.11-linux-aarch64-b1207.30.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.11-b1207.30"
+  },
+  {
+    "checksum": "sha512:fb3a19aa753d39193c194e8701b11dbcdb871d52ef1e3e9d0b03c9b20eb0cb37a62b1f1a4a74ba9473ee5172a08f0b06d2fa57f61eb37014b0c592baf13a9c54",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.10-linux-aarch64-b1207.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b1207.1"
   },
   {
     "checksum": "sha512:7e3843c2537541aef51e8b3377200e1e7a4b59d4192cfdc44fa7f56cbea35ac923b5b7a0b328797719a7bb5d5e0cd00f2ba999de84582e0bdb125cf1c64e3ae5",
@@ -24507,6 +26055,30 @@
     "version": "17.0.10-b1207.14"
   },
   {
+    "checksum": "sha512:4fbb61ae3c9e6a52c3612a6cbd48cff0d63dc54eb9647910f481e5ab6915c58d5e684c4a70e1082be0be11905705fb15fbe010ae80fef12f526796d09873d3dd",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.11-linux-aarch64-b1312.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.11-b1312.2"
+  },
+  {
+    "checksum": "sha512:0e119b9680a7cb4b3230369857b854e38dfbe1917e06db45e8a348f48d3751f9e15df925417c7eb77bac2f08dea63628a35f1754b287b01ae3fa5949befd4939",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.7-linux-aarch64-b966.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.7-b966.2"
+  },
+  {
     "checksum": "sha256:a9615275183931d91756d13f055929e28996d2a4f7a85805bd4cce59100ce851",
     "features": null,
     "file_type": "tar.gz",
@@ -24515,6 +26087,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17.0.3-linux-aarch64-b469.12.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.3-b469.12"
+  },
+  {
+    "checksum": "sha512:1fd564127b9f7e1e52ca95426bef67a7b0a514f33b391a8e1c9bcf8671a3e3e4b7647595497fd5b8827d2295dae355d042a41b7e4170acbc0fe8044056b11034",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.10-linux-aarch64-b1000.50.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b1000.50"
   },
   {
     "checksum": "sha512:28acfdb07ff7716ee0c7215b99c664b7a9425aec24e6e2316bee1adb71bb72548a9361072f592d235fd4828faa93adf75b990acc6eaecd30cb5e512b8e345a81",
@@ -24547,6 +26131,30 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17.0.4.1-linux-aarch64-b646.8.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.4.1-b646.8"
+  },
+  {
+    "checksum": "sha512:2497c5adc192c7ec42effcd093920039e1fc89d81525c84e63fff54525b9d1ddf55ae1e931240fe17f5ba7a6d390137caba9fdecd158ac56b8f1499837345cef",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.11-linux-aarch64-b1312.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.11-b1312.2"
+  },
+  {
+    "checksum": "sha512:4188393c56d35f5881fa896fa06259029e033debf1425d18b0c76a7b3e10d286c0dcf6b8f996855bb7d74999a77a5cdeaa235f96fe64239fb6420e878638222e",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.4-linux-aarch64-b620.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.4-b620.4"
   },
   {
     "checksum": "sha512:5c19c5d01c9a8915cc7a5effbd5db180fdc5fb3db53c50048239ec3f63e3f2bc27c421fa9e0a182f2f56bde9652397c95b09e87555bdabdb8608e34a707312a6",
@@ -24599,6 +26207,18 @@
     "version": "17.0.5-b759.1"
   },
   {
+    "checksum": "sha512:49185b74373f1977af4d88f210fc31a6476322a0ee675b43b63d9faca3470759d9033293c4978bb5372d272258f7e311c09deb8c388bd3d508e009bc2ebcc25d",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.10-linux-aarch64-b1207.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b1207.1"
+  },
+  {
     "checksum": "sha1:5f9fcb4c42e2861638d94c06e9f59d1291471947",
     "features": [
       "javafx",
@@ -24611,6 +26231,18 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.7%2B9/bellsoft-jdk21.0.7%2B9-linux-aarch64-full.tar.gz",
     "vendor": "liberica",
     "version": "21.0.7+9"
+  },
+  {
+    "checksum": "sha512:a6ff866bdfcb54c84c3e4776ed975dcf40df43fbdd3ef7298db44e6f195793485c89f6f22426febf28414c78e96a7c1684f96fd20e9abe465927f24f138f6af5",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.7-linux-aarch64-b985.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.7-b985.2"
   },
   {
     "checksum": "sha512:02104d9982d92db98bbbf9602aff3c4f045944a3395927233eb0595af79fba8ef9b97286390ded29cf5cb39f808a4c7196791705028a9f26d54e54a0d8d671fd",
@@ -24697,6 +26329,18 @@
     "version": "21.0.5-b792.48"
   },
   {
+    "checksum": "sha512:6d4cb98bd53294f26c2a36b2b0d58d68781d5f28d40bd1b29847c66ff350a88a05d1207033dcac458f966e05d17d26441af56c9cb81939695ebfd4936eb73095",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.6-linux-aarch64-b872.80.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b872.80"
+  },
+  {
     "checksum": "sha512:43eec9559d781fa1509d0ab4e0c6c4c34632c6fb8c8f3d61a73df0b1b2e068dbefc68e28640d9c9a8037ea087bd5d2404b718112ff669db09480440b156639ec",
     "features": [
       "musl"
@@ -24707,6 +26351,42 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.11-linux-musl-aarch64-b1207.23.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.11-b1207.23"
+  },
+  {
+    "checksum": "sha512:658fbf073102bb6829a366c7aaf4aa99b43a0de96dab4f7d41367ac2808a1210ca36ac0798ba7f811469f3aba946a041fb857b8eb1001bd1a944fec0caf16b33",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.11-linux-aarch64-b1207.24.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.11-b1207.24"
+  },
+  {
+    "checksum": "sha512:e629c12871bb8de6d5906c267b38c2b5309dd76940b1d9eae86dbe3f9803abf500e79473587fcb0c73b4b1d1ecff1e9a1d8e0b85c4d19f7427679b615b23faf1",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.3-linux-aarch64-b480.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.3-b480.1"
+  },
+  {
+    "checksum": "sha512:44951f6ec101c904110653ed6e05cce4a732df6b3e4b7a1c10557f18f1cfd9e95c0290211c8767f4817eb4cc3e69ff91a9dc3d6e41aafd6e8c21bf6cd4eee602",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.5-linux-aarch64-b750.29.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.5-b750.29"
   },
   {
     "checksum": "sha512:76102cdd1810f0d47c56b91b9d0f124c47fbd817e3077ed7b2c0916cb7b3344e63e30934bb46699fa3020b2b8f356277c294455e43a99327ca8404736a183ca2",
@@ -24751,6 +26431,30 @@
     "version": "17.0.6-b785.1"
   },
   {
+    "checksum": "sha256:3f7197a34b3bb00b2227f52b823ecfe92ad25da720131f3796a6ab9a2793540d",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.3-linux-aarch64-b469.32.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.3-b469.32"
+  },
+  {
+    "checksum": "sha256:8dc7ac90101289be475f057fcba20c245972c2c4f944aff44d873f42e56efec5",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.5-linux-aarch64-b759.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.5-b759.1"
+  },
+  {
     "checksum": "sha512:7385db3928c5231c7d248dadde81308bee5f444a4e2f2c2e463bc949ad8204bbebafe68b62eacfe6909ea3aa29845b30b638d77dbe8aa97bea62c21a21b55d59",
     "features": [
       "musl"
@@ -24761,6 +26465,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.6-linux-musl-aarch64-b825.77.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.6-b825.77"
+  },
+  {
+    "checksum": "sha256:2f35ba99889bffcb95d54434a645c9c9aa538c15b97ec86314ea46e3d8cc51fe",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.4.1-linux-aarch64-b653.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.4.1-b653.1"
   },
   {
     "checksum": "sha512:86e2bd339f90ec93c493ea4578e0aa3e2dec3d002937aa6a1f8240fef8f07053eb696b2ca4b4948c45092424c550a118d7408a131d13c2e130eaa8fc8a5c93f6",
@@ -24793,6 +26509,18 @@
     "version": "11.0.13-b1751.25"
   },
   {
+    "checksum": "sha512:f2c3ac52369ae00173bdabb9476c22324bd6a54469549ec416a44efc8eeac705b8385f74bc773b46886957c35dc4a7e2f7998625b01b6be2846ae395680d035a",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.6-linux-aarch64-b829.5.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.6-b829.5"
+  },
+  {
     "checksum": "sha512:a02b361755fdf18ab065e28edc5f1ac02ac3552a419ddd032bd00f2371dc6637d5539a29791bd574a48097650cec06dca39280c7e7d8e6347405e30c293c3f73",
     "features": [
       "musl"
@@ -24803,6 +26531,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.3-linux-musl-aarch64-b458.1.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.3-b458.1"
+  },
+  {
+    "checksum": "sha512:982a4c61f5192abefe03197a0988533db6ecb6049c03139c90cf0d7f1b60bd5912000ad49d3c7c6e19343c76ba5d7e3d72cfd5e74ac3d95983f50819e0ffafab",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.9-linux-aarch64-b1087.3.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.9-b1087.3"
   },
   {
     "checksum": "sha256:4dbbac611b3c0eec9c9717c3c03cbae09e443522269bd844cecac73f69b0e758",
@@ -24847,6 +26587,18 @@
     "version": "21.0.0-b212.1"
   },
   {
+    "checksum": "sha512:578afa80038a9a993eb4c026376d3df4e41f751aec71049277223db1c085e34169b5ac992b132ffe0023851912e4a609072f21c43135b6d0aad08c60da9b6278",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.3-linux-aarch64-b499.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.3-b499.2"
+  },
+  {
     "checksum": "sha512:b93060da31cde6c574ec26a814ec53384fc0adb922e86c86a2d8ee2537ad92da25d5efb0ed1e390c270b9531bf7adac02d7765adde16d14fda59f4f8ed9ebff7",
     "features": null,
     "file_type": "tar.gz",
@@ -24865,6 +26617,30 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17.0.4.1-linux-aarch64-b653.1.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.4.1-b653.1"
+  },
+  {
+    "checksum": "sha256:c61c8a8f953c180fb1411412332e648641b8ae846513702480b665abf15b81db",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.3-linux-aarch64-b463.3.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.3-b463.3"
+  },
+  {
+    "checksum": "sha512:655a7903805a1ae025aab6cf1be72234ad23112e11f200146832fe5978eed89fef577bce1f284f52c2be1f536f1dbf38559f80bda5d7879ec68945f54d63418a",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.9-linux-aarch64-b1087.11.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.9-b1087.11"
   },
   {
     "checksum": "sha512:997adb3ae1fa344cadf37f32bde159884ec144f5be950fb29004a7c3529504d162d631a0728f9ca50a4f9d0c8fb7713af16a3b8b35fa5613bc1c03a952f824d6",
@@ -24931,6 +26707,18 @@
     "version": "17.0.5-b762.1"
   },
   {
+    "checksum": "sha512:98c99a7c2ee45dfca218a8997175b8d05729c9afd67aa169eef5bdc576e2cc4d9b3f5c390e20392b837f8dc4181af5099903c2156456455de6f162faddfb0aa4",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.3-linux-aarch64-b465.3.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.3-b465.3"
+  },
+  {
     "checksum": "sha512:128ac2d9b71d019e09907519a060c81eacf84a388b9506d51643140fa63a97eabf852c5b4b810c69f76e89ee6a44a69e7607ff5f00881fadd184e492bde9d4e5",
     "features": null,
     "file_type": "tar.gz",
@@ -24965,6 +26753,30 @@
     "version": "21.0.4-b598.4"
   },
   {
+    "checksum": "sha512:ac0010007d53f33b4c05b8131469275630aeee6e98871c65d8d69217b9df7ed1377a1ae7cfbdca875cf2c36e38a3a4f434e0865f0b93a6520a7d789ee98bcbeb",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.11-linux-aarch64-b1207.20.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.11-b1207.20"
+  },
+  {
+    "checksum": "sha256:0f8943c33949eb299f6b788439d6070bfc3247732b28467ff754816c79ec2f9e",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.3-linux-aarch64-b469.19.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.3-b469.19"
+  },
+  {
     "checksum": "sha256:63355498752ea57daca0f5aee73b8624d594fd0393daa4955f8cb5c1d77fa27e",
     "features": null,
     "file_type": "tar.gz",
@@ -24985,6 +26797,18 @@
     "version": "21.0.6-b631.39"
   },
   {
+    "checksum": "sha512:d35efc1fb510be2d77516e3a97fd9cfa1ba892d6ee5ca690bfc06edbaec4bb410230c919ca209c71c8312a66e0fa687d757da2a2e66f2d3a920d71bb955556da",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.10-linux-aarch64-b1207.12.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b1207.12"
+  },
+  {
     "checksum": "sha256:085fd5d85cfc1172c05b4833215a1e8f998c49c796c865f1363edcf625240a0a",
     "features": null,
     "file_type": "tar.gz",
@@ -24993,6 +26817,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17-linux-aarch64-b135.1.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.0-b135.1"
+  },
+  {
+    "checksum": "sha512:9455bf59346d608f223de59b1c937c51c2135f9aa2926241f97f4f9ca11c2bec75c8a209616a8588866f8181ee655fc0360cb25c1f28aabcbe76e9cda12c1dab",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.8.1-linux-aarch64-b1000.32.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.8.1-b1000.32"
   },
   {
     "checksum": "sha512:f1b00ff8376ebb6018ea598f166eebbd8e76ae0ebd134017cd218b8d504a24a3081c05d468976fc27777473dad21698030ea1bed938c11171e78a90acc494e00",
@@ -25033,6 +26869,30 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.8-linux-aarch64-b1000.8.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.8-b1000.8"
+  },
+  {
+    "checksum": "sha256:008f1dd41fe0dff8437479f7258ef7ec8e845afbd8500d6b3106e463d3ff41e2",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.4.1-linux-aarch64-b629.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.4.1-b629.2"
+  },
+  {
+    "checksum": "sha512:f377cf05a80657157627c056b7141042c3e2955e71f17f6e09ceb4369942a6a40a289e6a40ef825fbbf2a352c7667acd73b0f497812bc66f9a24959e919cb24b",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.3-linux-aarch64-b480.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.3-b480.1"
   },
   {
     "checksum": "sha512:427ab1c78fc1e8590f508928fa17e0c2353f8187a4286bd7621abfaa7608494e5cac180925dc8d2c73f5e8e66d0deb707c679cec1d977b741d303e0e38fcd303",
@@ -25111,6 +26971,18 @@
     "version": "11.0.14-b2043.2"
   },
   {
+    "checksum": "sha512:d56cdf07f83fca048b70c6b84987beee78a156867b3b35488517965e3113d711e3695ddedeeeae8e90b9555cd0bda27c7e1b353a97b4005bbe43d9fe341a02f0",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.6-linux-aarch64-b895.105.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b895.105"
+  },
+  {
     "checksum": "sha256:21e6df42679276622ab194599d7c04293d3ee5b6d448dfc691c2322050ef4d94",
     "features": null,
     "file_type": "tar.gz",
@@ -25153,6 +27025,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.2-linux-musl-aarch64-b341.4.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.2-b341.4"
+  },
+  {
+    "checksum": "sha512:ab3f987445438805ed3df0acdc206c7d6b6e218c0ded8d760f335e47e490826be00da3008b7f0a87cd77e2da8e9a28d01ddb6f0ce3a0ef010002e1147257a74b",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.4-linux-aarch64-b607.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.4-b607.1"
   },
   {
     "checksum": "sha256:486e9d769f4d7aadc9dab94fcaa020134349a3870cc887d4e843b03527d899be",
@@ -25209,6 +27093,18 @@
     "version": "21.0.6-b825.77"
   },
   {
+    "checksum": "sha512:0a34abdd58786b14e4dc2ad56c87a58920337ca8909f5612b45b0cddd7868158beed63a44e8dee6d1ea0eac65ead56e7e788e0d39ba7599749588328feea5995",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.6-linux-aarch64-b895.97.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b895.97"
+  },
+  {
     "checksum": "sha512:0e98017dd5b0cbf9201a1931e4431055c5ac3b74433dcc3f5e64b5a134ff249e3461ac892e2e891ad7397daaeaf8a0f34f30366db28776a279095b036430be0d",
     "features": null,
     "file_type": "tar.gz",
@@ -25239,6 +27135,18 @@
     "version": "21.0.6-b895.97"
   },
   {
+    "checksum": "sha256:ff36b250e2970c8fc8f4582ed8b28c1aedcb2ca8c791fc1f0e8bcf99db59ca35",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.4.1-linux-aarch64-b597.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.4.1-b597.1"
+  },
+  {
     "checksum": "sha512:ed1254f8910f61939df34756e35c15c8a7bb6e6037af2cc13cabe3092c5b1e413a08042c13f14e4fd70c8328f54143d4b0b31190ee60f06132097564cffbc75b",
     "features": [
       "musl"
@@ -25251,6 +27159,30 @@
     "version": "21.0.5-b762.40"
   },
   {
+    "checksum": "sha512:19f55e47594857d198cf4a2ef828d397ec7cb06b32f13963f4a9067259d28b327f8c1fa5f8e2d99d10c2dc410f00314a2d9baad618715efa510d7c45546b93e0",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.10-linux-aarch64-b1087.21.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b1087.21"
+  },
+  {
+    "checksum": "sha512:ad63eea2e58b3e5df0dc23368725e484d06d4667f165173a1e06610cdaab6e76e8b030a2dd879e87ddd64cee3d6c2209da4febe6287c2ee1e30e22806ec2596e",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.9-linux-aarch64-b1166.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.9-b1166.2"
+  },
+  {
     "checksum": "sha512:3856e76ca37996f3a1fe75e30ce757444653a04b722cebd211d66ce3eb60bfd414dd3f419df6c1b8fdd46232c449dc51369fe3d0410ba0d2346b6952d1496f20",
     "features": [
       "musl"
@@ -25261,6 +27193,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.2-linux-musl-aarch64-b375.1.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.2-b375.1"
+  },
+  {
+    "checksum": "sha256:b23a5bcfc9d6987b9e3e0fb118b15a9b0e9961f939ca372d7835466cbde08658",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.5-linux-aarch64-b762.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.5-b762.1"
   },
   {
     "checksum": "sha512:a0b4205e4fb463a2ccceaf073538235eb06ff1218354784c04867d8ea628b7ceab01c9516f08627c48f58b6b26250b704b6e5b3d8d88b9f7ee58acbea196d033",
@@ -25313,6 +27257,18 @@
     "version": "17.0.2-b396.4"
   },
   {
+    "checksum": "sha256:328d32cfc987501ca07ad259f47256080eef67bb1cf933e7e5828da909cf7041",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.5-linux-aarch64-b653.23.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.5-b653.23"
+  },
+  {
     "checksum": "sha256:b8423bd95694b2394bd426a6f399f4b38ebd71ae68feea57b01f417fb45d6178",
     "features": null,
     "file_type": "tar.gz",
@@ -25341,6 +27297,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17.0.6-linux-aarch64-b779.1.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.6-b779.1"
+  },
+  {
+    "checksum": "sha256:8e7412c8c409e03fda678bbf51c71759d7463292e08d543cc7baf880e5ba4a46",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.3-linux-aarch64-b469.19.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.3-b469.19"
   },
   {
     "checksum": "sha512:5095d382a1f1fa5cb3b173dced2977b09c71ab03b4a02672830426cbaa84a165dbad3da5a5186b317f283373ac995c2ed9219f0b06702728baae335442f26acc",
@@ -25403,6 +27371,30 @@
     "version": "17.0.4.1-b597.1"
   },
   {
+    "checksum": "sha512:522dbdbe6005efbbc0a27e767933b15a1c38cbc361de1feebf41a2fb49805d1e8929e0e8cb7456ea134a356110647e882b9d86e778e407f04173f8faa9c9c65a",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.8-linux-aarch64-b1000.22.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.8-b1000.22"
+  },
+  {
+    "checksum": "sha512:3fecfdf93dca7fc5fbd4288dbca9410b06b063ff588211486376c89650d234932744e81bcf3dfd80636a4ccaec2b606af95394a52a38a31e1ab9936e0e330bf8",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.7-linux-aarch64-b979.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.7-b979.4"
+  },
+  {
     "checksum": "sha256:50703130a0a78b86dabb1a13ba39bc9dd4316bdb330aef18aa02bd1c9ab07fd8",
     "features": null,
     "file_type": "tar.gz",
@@ -25425,6 +27417,18 @@
     "version": "17.0.9-b1087.11"
   },
   {
+    "checksum": "sha512:a76f5905f1a4fe6b851d605e6e9cc369adea50fc763692b54845b8d5ba9f80b3561d5323a47af594e7b55b7be058dc465d7cb6b01bcb770e1319cc9d2fbddba6",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.5-linux-aarch64-b631.8.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.5-b631.8"
+  },
+  {
     "checksum": "sha256:4a513887e88230e615738f5f0df415e24ada4cdcab00c48b62120169a3b45142",
     "features": null,
     "file_type": "tar.gz",
@@ -25435,6 +27439,18 @@
     "version": "11.0.12-b1504.40"
   },
   {
+    "checksum": "sha256:230c2d3b407515e1203b19f21a1360a97b54682ddf32f56eac0aa6f7b52c0133",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.3-linux-aarch64-b463.3.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.3-b463.3"
+  },
+  {
     "checksum": "sha512:ba2e0c1dab75ce4f2729d83ebcf314f18b58f9495846d2f00ed1f4e7bb4e83daf4368acd6e57e7e65fefbf8aae78b14e148024572cb94192c4564d6e5180a2fa",
     "features": null,
     "file_type": "tar.gz",
@@ -25443,6 +27459,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.11-linux-aarch64-b1312.2.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.11-b1312.2"
+  },
+  {
+    "checksum": "sha512:35438ce28628ae3614bb5f97441182e70bb54e4c6a99dceb342539a58dd4b96fb6e16b59388ae8158104edf737ccf647d14079d5f4b3dff8514aa0c5e7ed3db0",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.6-linux-aarch64-b872.80.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b872.80"
   },
   {
     "checksum": "sha512:680fcfd3733306e3dbdef3b41b95c55920d8c4ff97f286686a246bca1d6b2e3a7762ac0c07bb39807bda4d4ae042ba4e6bc59a5ba78b92951b3b55d00b7768bf",
@@ -25463,6 +27491,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17.0.9-linux-aarch64-b1166.2.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.9-b1166.2"
+  },
+  {
+    "checksum": "sha256:8a5d7e68eed55bfa35067a986c532e916dd70e7e3b62def89d2150bbf64d17e3",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.3-linux-aarch64-b469.30.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.3-b469.30"
   },
   {
     "checksum": "sha512:c1a37b6413a609ce3d228c1a5eaf56e35727bf5c802c0fd7fec287ea0c2318a9964383946279c8af1ddeb170939560683921fe43b61740ab8a452304034460df",
@@ -25539,6 +27579,18 @@
     "version": "17.0.1-b164.8"
   },
   {
+    "checksum": "sha256:d0a86afa3f0b9331b76ffb9f07d81df3f7de406d03d6ab4e43465955d8edd9ba",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.4.1-linux-aarch64-b597.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.4.1-b597.1"
+  },
+  {
     "checksum": "sha512:025b3d250a163469c64d770b6e96f7ce996286bec57259c291c68d1e59a5fa5e0746f4331d870276e1727806aebb0c648fa002649ce90f487fe91a13674bfcc2",
     "features": [
       "musl"
@@ -25585,6 +27637,18 @@
     "version": "17.0.10-b1087.23"
   },
   {
+    "checksum": "sha512:67858c7870ae12a3d0d31430ad419d640f6c8ae118aae8f82e63c5dadcd05663a95cebb5361dfd7f173df0e16957225bb47c5096786353bc34b3187f3b0c0bd0",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.6-linux-aarch64-b825.77.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b825.77"
+  },
+  {
     "checksum": "sha512:c2f5dad707100fbe6e61783ede0d1a897d98056f4e9a213b4ad6b7a7cb029831f996afdbcdfe2416f2a03b8bdd1e709adac32d06c4896df4f1c17bf7e1e4442f",
     "features": [
       "musl"
@@ -25627,6 +27691,30 @@
     "version": "17.0.4.1-b617.2"
   },
   {
+    "checksum": "sha512:4b6beb2028edae5a03c38f0f4ec0a2260ae6f235300bd94e50e085ae0c7d277a8de2a4711ad2ca3b7cbd976adfa78c539ded824a44c4e2844f8f1a743ae490aa",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.4-linux-aarch64-b631.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.4-b631.2"
+  },
+  {
+    "checksum": "sha512:06b0a5ff5dc59e30af6d5af3f32d2dd5bfbe3e7543fc49a65104591d4924e18fda279267aea9b83b8fb40f84f6e81b85de7ee93a848ed1ec18973fa50181d26a",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.9-linux-aarch64-b1000.46.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.9-b1000.46"
+  },
+  {
     "checksum": "sha512:f8c289b98cdee7d63f2b043737e71e4d5d5ea1febfdee3304efc3ca27fcf0f8f3a5eb5e8253b9b5ce55f9c8d3000de57a2efd0df2748fd66b287d40008a5de8a",
     "features": null,
     "file_type": "tar.gz",
@@ -25635,6 +27723,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.4-linux-aarch64-b509.17.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.4-b509.17"
+  },
+  {
+    "checksum": "sha256:48d888e6b6be95395764406bd2f6f32fe43f719089f75f8c9be48faededfdaf5",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.3-linux-aarch64-b498.3.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.3-b498.3"
   },
   {
     "checksum": "sha256:16b009b43c306f04641be6e10a67832a724c2c24e024c7f1504208a175659aca",
@@ -25737,6 +27837,30 @@
     "version": "21.0.6-b631.39"
   },
   {
+    "checksum": "sha512:4dd4c9b380dbbb92a18609d4f24060dfd6f649ffc1d9946a9dcf26ba6ecdba0d33859c643b58d78eed678e4a1d64d72f6a2cfbf385a8cbb4a0b4a2fb0017f870",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.6-linux-aarch64-b829.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.6-b829.1"
+  },
+  {
+    "checksum": "sha256:8a2aca9838693f63d998c22d6076714de4da1c1c5bc7cfd83711ba4082788fe2",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.4.1-linux-aarch64-b629.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.4.1-b629.2"
+  },
+  {
     "checksum": "sha512:aeb501c25a22bf4bfafc59106a16b0f5b876859759edf7a91850e6bb2630f56b0377936df9a7117bee26d0549d77ba2a6ad6f940e98fe562c56c6f0ac4023454",
     "features": null,
     "file_type": "tar.gz",
@@ -25793,6 +27917,30 @@
     "version": "17.0.10-b1207.6"
   },
   {
+    "checksum": "sha512:cf11ca10b5ce8f1f3d5cd4217ca3fb9cabe90285837e0c823da9d4714b513ec8727afc15e9317feca73dd6a94f4c4d19b95ebba7e0317eedf606c8fc3d980535",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.5-linux-aarch64-b750.29.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.5-b750.29"
+  },
+  {
+    "checksum": "sha512:58e6cca7524cb3e4728a882f375e305a3fa5ec0dc267864706109f1580a4848726d3856abee8d061a9d6257dfa72531098a939461ff85ca58cec9727dfa24a2b",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.6-linux-aarch64-b829.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.6-b829.1"
+  },
+  {
     "checksum": "sha256:87cc3109c6ebdd2f7fbea8c9b15b8e76acf54ced9b5548ef86a17c7b1b01f440",
     "features": null,
     "file_type": "tar.gz",
@@ -25801,6 +27949,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-11_0_13-linux-aarch64-b1890.3.tar.gz",
     "vendor": "jetbrains",
     "version": "11.0.13-b1890.3"
+  },
+  {
+    "checksum": "sha512:701827ea5e147755274d4e9ba35f80ff71cf91f6640304a0635f14e91fd22a831fbe0a6436e0aa4c47a478c270e3e43a5056e1593374555bfa84f8ad3cb38cf5",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.4-linux-aarch64-b631.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.4-b631.2"
   },
   {
     "checksum": "sha256:309c4dddc698a742c7fcda814239f83b55e38a546adce7a09f464affc2cf3b59",
@@ -25863,6 +28023,18 @@
     "version": "17.0.3-b469.16"
   },
   {
+    "checksum": "sha512:52c758e170ab9d4ce047af9566ca659db5d7fbcbebf2262d87744ac44cca801f869e6a8905413093bec49b6debe7b8b715776d176f578ff969fc403025baf8a5",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.7-linux-aarch64-b979.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.7-b979.4"
+  },
+  {
     "checksum": "sha512:1227d4a191efe435e6046a1dd6e2529eb5f0f7f382cdf19bef8d5e818289890800b030e4015e51fd2928a0accaeddf3e3bdaa6568f59b97c1e318d01c69a03b3",
     "features": [
       "musl"
@@ -25873,6 +28045,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.10-linux-musl-aarch64-b1207.6.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.10-b1207.6"
+  },
+  {
+    "checksum": "sha512:24fa02fa6ea4ad516bf98fbe43ba432530b24c1bb573d73318cd7baa78257d85f48517d860fe535dc047fa2abfc9b7436499387771229d8dd635485fa68d3d88",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.8-linux-aarch64-b1000.8.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.8-b1000.8"
   },
   {
     "checksum": "sha256:737242bdd6795a14897ff97bb0bb8d99e7a1a5878a6d2f942712147b20312320",
@@ -25905,6 +28089,18 @@
     "version": "11.0.12-b1751.11"
   },
   {
+    "checksum": "sha512:979da8c3e2d325f5db4d9bac5499c8c44f042c09c873c4ae87ac3c0f7b52905e27a93c7cc9a9f877839153a516a943fd641001b964c9d9689ad35c93d23181da",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.9-linux-aarch64-b1000.47.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.9-b1000.47"
+  },
+  {
     "checksum": "sha256:563ebfeef43a7f788eb660a5154f5aaba9437f2499f03cd7f7881f058046c0fe",
     "features": null,
     "file_type": "tar.gz",
@@ -25923,6 +28119,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-11_0_12-linux-aarch64-b1504.27.tar.gz",
     "vendor": "jetbrains",
     "version": "11.0.12-b1504.27"
+  },
+  {
+    "checksum": "sha512:e079fd35a725b18d45ec5623274f3cf8e45ce0064b8452a5cf5075caac0eaf245aa12699e2d0d8f94b1d11f0a43eca646beb28f0df5a9dece84906aab56cfbfd",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.10-linux-aarch64-b1171.14.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b1171.14"
   },
   {
     "checksum": "sha256:1ba6833091f22b997e27f51d5ee50cc43b0fc514aeae928c3e1990814c906b8f",
@@ -25945,6 +28153,30 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.2-linux-musl-aarch64-b346.3.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.2-b346.3"
+  },
+  {
+    "checksum": "sha512:023a5c8d9412cf867f7b37e0e746a47678af91a711620dd9569b81a07c5b8484603641e1582d0966bb5d4d6d8202b4ca780c2dde3ea3460b722fc372b1f6a00f",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.5-linux-aarch64-b631.16.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.5-b631.16"
+  },
+  {
+    "checksum": "sha512:0f43021b372bf1bc43e15c91e9f128f5ca18bbad0d3ae6d220775d6157393a7609195abd27f97c4be2834aaee810ccfe4c5970402a7ea1af373d54a769ae5ff2",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.11-linux-aarch64-b1207.30.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.11-b1207.30"
   },
   {
     "checksum": "sha512:1b023615106320def74325729ea9603cf618299b96d53a2f24ae40fe4bcbc1e880dd573167d81d612b1247aeac5d3fc7f1135c55d6394645f4d8b2f38741a411",
@@ -25981,6 +28213,18 @@
     "version": "17.58.21.0"
   },
   {
+    "checksum": "sha512:f0cb64b4d7ff499e875b615f28d6bf22a8ce965d75d704798a4ec061e28f8f5a0b7b4857fd5a8d739535d1e6d7c97c3325fec390ec81b39991ca692c6558e9db",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.10-linux-aarch64-b1087.17.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b1087.17"
+  },
+  {
     "checksum": "sha256:a71f8c854aaf63827ee20294a2c534135b45f6151e6465d9a704f4206fe70068",
     "features": null,
     "file_type": "tar.gz",
@@ -25991,6 +28235,18 @@
     "version": "11.0.11-b1536.2"
   },
   {
+    "checksum": "sha512:4af8f5514f53bbdec5c94bc3cab5e9dee32d1295336289b2c55b2081ef2ae88362ca45defbeb7ca113976e00fd68cf7f27167939ebea979f7987c00113d21479",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.12-linux-aarch64-b1000.54.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.12-b1000.54"
+  },
+  {
     "checksum": "sha512:987ffe512f9c997b3d6ac02dfdef65d4b0e7da5354d018e7f4d518fdce952fcd5eab7908d2a5a99bcf86d761d89920b66a667cc3de1a50ddc2fdf08cfb3005c8",
     "features": null,
     "file_type": "tar.gz",
@@ -25999,6 +28255,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17.0.6-linux-aarch64-b829.1.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.6-b829.1"
+  },
+  {
+    "checksum": "sha256:cd0a5d05da5b76a372666eb17479ebb5b55c040de02d73b60cfd79cd0e69d265",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.5-linux-aarch64-b653.6.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.5-b653.6"
   },
   {
     "checksum": "sha512:15fb312e9eb38082d84d2e8eb9bd8d2015aa9cf56de0d45397133932765d16fa7ba0a115e1a241ebdc1508a52e332f197cfcfd8c92fbdb5e9b33da36bf3d6d85",
@@ -26013,6 +28281,30 @@
     "version": "17.0.9-b1087.9"
   },
   {
+    "checksum": "sha512:bada931402a0771e9d772cdfe58574349f3914e5cbf257e27bd8092e9af10994ff826291abcb5410d980bfe6db270071ed54ed75a14c6e050e049bb0eb879abe",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.4-linux-aarch64-b620.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.4-b620.4"
+  },
+  {
+    "checksum": "sha256:aeef1791e6e7cc5adde6ba785af9853b0e4f309f2068dfce246adecb25e0dc35",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.4.1-linux-aarch64-b617.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.4.1-b617.2"
+  },
+  {
     "checksum": "sha512:5112d6d1227e975790aa9236a3c1cd7a886d45560cfe8fc8e3d875cf03bd3fec531052d883761afcbb71bcef458faf7b6dde68fd05a16ed9c6bcfa774d294b77",
     "features": null,
     "file_type": "tar.gz",
@@ -26021,6 +28313,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.9-linux-aarch64-b1000.46.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.9-b1000.46"
+  },
+  {
+    "checksum": "sha512:cd0e9f63f85b38b7730009714bb561a9214208d1fdd477c5029a54dc298c530a1f849c720e46b2dcb1cd5baf0c3b303d0a49d82055925c99c357a4a0abf4de0c",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.7-linux-aarch64-b953.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.7-b953.1"
   },
   {
     "checksum": "sha512:1138e55f2931528be1c4c75b92629e3e8ff66d9ab7a01b622656ab06a826e633a93260f10b87c763f33c7f7aafada1670afcd6aad3d79491a14a1596b2e49670",
@@ -26369,6 +28673,42 @@
     "version": "21.0.3-b480.1"
   },
   {
+    "checksum": "sha256:616270898571ef7dc7f17a9af8124028826f89fdcf997a11330ff9ae81ee8582",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.3-linux-aarch64-b498.3.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.3-b498.3"
+  },
+  {
+    "checksum": "sha512:5ed80b7cab9f657e4c23d09b1baa8083259499dff0386672c0574ea81e7dab6d7edc8279bd4dfd27e97b70af7ab514bd36365fe27a8f7c082270daa36c4422a8",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.5-linux-aarch64-b631.16.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.5-b631.16"
+  },
+  {
+    "checksum": "sha512:cac52139258146213efab5bdff2c0669462716738805147115cd47eb7dc3de466aaf812816ca3276422f9a2976d4b9fe2926488c52db42537cf353b0ea9e2789",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.4-linux-aarch64-b509.17.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.4-b509.17"
+  },
+  {
     "checksum": "sha512:e7d037a82cd3a059674f40b1e819d47f6e04d6c373b3c6f99e02c7616d18c2f44732db1556474928707887bce7d0228c34a44b7b32e609b1cce4045da6dcfb37",
     "features": [
       "musl"
@@ -26379,6 +28719,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.5-linux-musl-aarch64-b631.28.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.5-b631.28"
+  },
+  {
+    "checksum": "sha512:e85b86de493312ecc771097a2995797dcac8c2a950836d62d29589ed03d86ed29d78231de770fd9089b9f1bf50bf3ae47a7a1595e1b85cb52f89850c8c7aa476",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.8.1-linux-aarch64-b1000.32.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.8.1-b1000.32"
   },
   {
     "checksum": "sha512:e76ff49fde03fca93c63b89dbb3ca14252f303203efcf986b795cb1e4cc0606c0b481fbefb67a66beb20519e7520212d769c45504e5ba603007d0350f95e3f4e",
@@ -26459,6 +28811,18 @@
     "url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.10/TencentKona-17.0.10.b1-jdk_linux-aarch64.tar.gz",
     "vendor": "kona",
     "version": "17.0.10.b1"
+  },
+  {
+    "checksum": "sha512:28a379bee2a1b232b6d24963f527af5e4a3c3af7078e9f19cf0e07f6b451a0b5e259ce82994f9e75e8496f1d4dcd41a6a27c8a8f870d757959f7801bec6a0040",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.9-linux-aarch64-b1162.7.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.9-b1162.7"
   },
   {
     "checksum": "md5:a7f889d95cb1df33f6869d3da8de7069",
@@ -26653,6 +29017,18 @@
     "version": "17.0.3.b1"
   },
   {
+    "checksum": "sha512:14db5966b5a11ae4857891a6ee4a14080d58c1ba4a93d322a86cba69f436484a0ea745de5ed4a04d99eae710f3b5aa506accc5d14442a838e0ccd76272ce981e",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.10-linux-aarch64-b1207.14.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b1207.14"
+  },
+  {
     "checksum": "md5:1f5b1f9296168013a8dd1a465e50ac54",
     "features": null,
     "file_type": "tar.gz",
@@ -26741,6 +29117,18 @@
     "url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.19-GA/TencentKona8.0.19.b1_jdk_linux-musl-aarch64_8u422.tar.gz",
     "vendor": "kona",
     "version": "8.0.19.b1"
+  },
+  {
+    "checksum": "sha512:654412c27ecfcb947e7f62deaa6f02aed2b7c66a1170b872aa34d6dae316940900953a125b1ade5d437b2c675d4b95f115fb0769a27b6b39092a165bcc03f4d4",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.6-linux-aarch64-b895.97.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b895.97"
   },
   {
     "checksum": "sha512:e5c73dd48b4e4f536a3c42ff15c540ea39d909c9263b8a196fcd0c80b38c4e67b35cfe3dbdc892497f705be940b42bc499d924496b0e81e9c925cb57033daba4",
@@ -27115,6 +29503,18 @@
     "version": "17.0.5-b653.6"
   },
   {
+    "checksum": "sha512:03e8ba8cc6b8ca28b9f651917e829dcd3c65117a9484fe9a23e30bb675dffe1bd256260cc04cf83771f1603ccd4749a371ea7de7828501d72de877b0fe83b7ec",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.5-linux-aarch64-b762.40.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.5-b762.40"
+  },
+  {
     "checksum": "sha256:a9d0886c3cac64e3f6af852b9607270ee65ad69664fe38b0ff9ce2d76f37be41",
     "features": null,
     "file_type": "tar.gz",
@@ -27155,6 +29555,18 @@
     "version": "17.0.9-b1000.46"
   },
   {
+    "checksum": "sha512:3b281c7ca27d598112d64c65216897d20ef6325d49aec749fc6027e997991bed135117521d146d912ef6a02ec8ba7d9f18da084c62e3e798ad80c016ea5933c5",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.6-linux-aarch64-b631.39.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b631.39"
+  },
+  {
     "checksum": "sha512:15af7b1b41670c89279f94920e2727ea916359f38c2d2fef2342e81482323d57f43f74fb934be3dad246cc89028b205e3e4c6be4490f3730932a766aa968c84c",
     "features": [
       "musl"
@@ -27175,6 +29587,42 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.3-linux-aarch64-b423.10.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.3-b423.10"
+  },
+  {
+    "checksum": "sha512:e90c5c9fc87f026d4789e3092c4acb8608b2db0a1fa62720da7afd9f8bfd455c3121d3e576c2354aaaccffb78fe4d779b527de2a76565edd9d9d6af0e04da2cb",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.6-linux-aarch64-b829.5.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.6-b829.5"
+  },
+  {
+    "checksum": "sha256:dda8dcc8f02a3113380246022fd4840eea8f17a569f7e07c4231a85f1566e91a",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.3-linux-aarch64-b423.10.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.3-b423.10"
+  },
+  {
+    "checksum": "sha512:e984a0ae2a83f5932735c13849b5b9885ed5a2a769041bb30fbd62b029f08fc7098e5e0755a5fadf83a1194095847b646b42abe32f3d7e777a9be83cdb8b9cf0",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.6-linux-aarch64-b469.82.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.6-b469.82"
   },
   {
     "checksum": "sha512:441a6643c488b4abe97b335f4465b1d2084ea4b48efca5f12e4ff6bc436035350df5a3d16b5d9114df234f480f515f5bfd00d9918509bb6fd24255f60177038f",
@@ -27269,6 +29717,30 @@
     "version": "21.0.3-b458.1"
   },
   {
+    "checksum": "sha512:ffc4557f481bf64721e24127b1554a8fc3849f9a6b189a6120c59542cca806f19b40ec7fbb7017cc8546483cc7ee35215aa4b280b5cad72052a43acecaf9c3f5",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.3-linux-aarch64-b465.3.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.3-b465.3"
+  },
+  {
+    "checksum": "sha256:09a0858c26888ea4ab3855aeb38ee3834c7667237cc61c15e3c388c90261dc8b",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.3-linux-aarch64-b469.3.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.3-b469.3"
+  },
+  {
     "checksum": "sha512:89dc6d90ba6f3a2bcad08ed3c6b9a9e898018d87c74754b8d5dbf513c78f4450b8744ea7c97cec79bbc484d9d489edc4c3a3f14e30f6d340fe0dda60253836c2",
     "features": null,
     "file_type": "tar.gz",
@@ -27319,6 +29791,18 @@
     "version": "8.0.442+6"
   },
   {
+    "checksum": "sha512:c0fcc1fc0201880b361de08134e8eba9ac067453ef5506fc732c5f7a18e9e5a876378d26e9463e21752a26aa185c2e6a0ce4136ed7ebf3f8522b91ccebe3e22a",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.7-linux-aarch64-b1000.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.7-b1000.2"
+  },
+  {
     "checksum": "sha256:e11e00438c2f6f79f86ff1ca2b015913b0e16bd9491953a082d5c786402cb50a",
     "features": null,
     "file_type": "tar.gz",
@@ -27327,6 +29811,18 @@
     "url": "https://github.com/adoptium/temurin18-binaries/releases/download/jdk-18.0.2.1%2B1/OpenJDK18U-jre_aarch64_linux_hotspot_18.0.2.1_1.tar.gz",
     "vendor": "temurin",
     "version": "18.0.2+101"
+  },
+  {
+    "checksum": "sha256:358418f73bf8e8aeed56f66cdecc37a18c953bb7fcba80d2e2f342fe8ea1c046",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.5-linux-aarch64-b653.23.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.5-b653.23"
   },
   {
     "checksum": "sha256:270f6842d3137c527781de96660477088fcb6e5d445282e8b5f199e386bb2262",
@@ -27409,6 +29905,18 @@
     "version": "11.0.11-b1504.12"
   },
   {
+    "checksum": "sha512:cc150d66d338363f7d09248ba922b35e3adf4679004ea83e76883a5720860f2d895bd4c6e00f9162ac8880303cafd3cecb65f35a1e495114dfa7618a5e994091",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.12-linux-aarch64-b1207.37.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.12-b1207.37"
+  },
+  {
     "checksum": "sha256:6cac56dde6793d887deea101cfff283dc5f285e1118c21cbd1c4cb69f1072e55",
     "features": null,
     "file_type": "tar.gz",
@@ -27437,6 +29945,18 @@
     "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u332-b09/OpenJDK8U-jre_aarch64_linux_hotspot_8u332b09.tar.gz",
     "vendor": "temurin",
     "version": "8.0.332+9"
+  },
+  {
+    "checksum": "sha512:6f43ecf50f1282a3c81031e816a61896fe341f621817a44e3f4db9fe01a78b88f9a4154cfb2007b8c13e41a42c2ee8df86bda1cdc1bb49984a8ccbe6790c9e72",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.7-linux-aarch64-b829.16.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.7-b829.16"
   },
   {
     "checksum": "sha256:c1965fb24dded7d7944e2da36cd902adf3b7b1d327aaa21ea507cff00a5a0090",
@@ -27765,6 +30285,18 @@
     "version": "17.0.14+7"
   },
   {
+    "checksum": "sha512:2b7ab56d77db610a8f6089391a1a11c6740b7e16039c76191f9be6dc14f46e0eae133221fe64efb1d749d59df0f5c96a0abc86a65f022d0c1c7ce443efc3db60",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.14-linux-aarch64-b1367.22.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.14-b1367.22"
+  },
+  {
     "checksum": "sha256:9290a8beefd7a94f0eb030f62d402411a852100482b9c5b63714bacc57002c2a",
     "features": null,
     "file_type": "tar.gz",
@@ -27803,6 +30335,18 @@
     "url": "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23%2B37/OpenJDK23U-jdk_aarch64_alpine-linux_hotspot_23_37.tar.gz",
     "vendor": "temurin",
     "version": "23.0.0+37"
+  },
+  {
+    "checksum": "sha512:e3c750c5af28246faad0344fec8a4fea78a718e1fcf29f3d62df42fd1891aabcb9865aaa9ac001a9164923ff04607d91c577e5ceeafee7dd661120e227dfb83f",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.2-linux-aarch64-b346.3.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.2-b346.3"
   },
   {
     "checksum": "sha256:bb345cabf3e305ff3ce390918d5f69e5cfbced3d9844e0b0531c2690f9ed06ef",
@@ -27867,6 +30411,18 @@
     "version": "21.0.6-b872.85"
   },
   {
+    "checksum": "sha512:c015c78a4ea3f6eb5647a8da2c9e757b2fd91ccc6aa98ee8b7ecd5bdc0cfaabff89ca2f6959203830e784f2703791c47459a7b1ac29db02eb4c785f6ab0b1aae",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.10-linux-aarch64-b1000.48.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b1000.48"
+  },
+  {
     "checksum": "sha256:64c78854184c92a4da5cda571c8e357043bfaf03a03434eef58550cc3410d8a4",
     "features": null,
     "file_type": "tar.gz",
@@ -27895,6 +30451,18 @@
     "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-testimage_aarch64_linux_hotspot_21.0.6_7.tar.gz",
     "vendor": "temurin",
     "version": "21.0.6+7.0.LTS"
+  },
+  {
+    "checksum": "sha512:486d16b85ddad982f9ae4f1e4f0bfbce787a8e532d6b1225b39c3b2d09c9a0bca09a1696626dc992c72bcaca88a98b8ff9e429be9e7ddd30b5802e1a167d1969",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.9-linux-aarch64-b1087.3.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.9-b1087.3"
   },
   {
     "checksum": "sha256:9ed40b0268b78e3bd27c270a18b606b1bc25b940016556eed7f826564b41d053",
@@ -27935,6 +30503,18 @@
     "url": "https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-jdk_aarch64_linux_hotspot_20.0.2_9.tar.gz",
     "vendor": "temurin",
     "version": "20.0.2+9"
+  },
+  {
+    "checksum": "sha256:48b90d424f99ccef66a4065c8c0bd7f16ef39c3af1f8af27cc4f4a386805b712",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.4.1-linux-aarch64-b469.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.4.1-b469.62"
   },
   {
     "checksum": "sha1:95c90600c13357f9be1eada7f4b2334c88d7eaa9",
@@ -28519,6 +31099,30 @@
     "version": "8.0.422+5"
   },
   {
+    "checksum": "sha512:d31b9730e75574cc724f52f3dd767461dbf26464fc58558b32991efd4f2c9a6abec170924c8a3652bf70a8d08b9d24f7362ee131f1f17a260bcbd3c01bec8c78",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.4-linux-aarch64-b598.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.4-b598.4"
+  },
+  {
+    "checksum": "sha256:4d1ff7101bcd2e94ff2d3fb104d6f7a0cbb93bde018f9f9eaef3a40d15dce7ed",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.6-linux-aarch64-b785.1.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.6-b785.1"
+  },
+  {
     "checksum": "sha512:2a2afc3a5b5a24d46e4a8e15a274ff933208b93af2f815a44854a8144e78189b7df502b0ec21248da8250cbb343b40aafbc68f567d63bd73e7708ff14a6c5ae8",
     "features": null,
     "file_type": "tar.gz",
@@ -28559,6 +31163,18 @@
     "version": "21.0.6-b895.105"
   },
   {
+    "checksum": "sha512:fa5dc3d0506d216228a43275e7e90a6948196038703ef0f727c19e403a46882e20b7b1cce5514a9c74bf2492ea79aad6a377738410b8456176b9e8926046a384",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.6-linux-aarch64-b653.32.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.6-b653.32"
+  },
+  {
     "checksum": "sha512:bd2763b994899fd15357c744955db4f43b7b686e21a15110198577ce293a3c3eae611382c08ca1a5728862661515639857d320f35ca2b6ce2866b491864abf01",
     "features": null,
     "file_type": "tar.gz",
@@ -28579,6 +31195,18 @@
     "version": "11.0.13-b1751.16"
   },
   {
+    "checksum": "sha512:360077d838dc822bbaf5fadcd469d3468fc0d88932466581e2193adc869682b6241513859c0b65d7083a43b9b18229c797a580e68b3916a52f0d2c06c7e40183",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.9-linux-aarch64-b1087.7.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.9-b1087.7"
+  },
+  {
     "checksum": "sha512:f26241842af770c730c41ace95ef1cd5681437b9cb46975ac1751a319268b7b900f9e04ce837f15854e7a05c20c10acf6f5f767850ab25023920d93634ef5dbb",
     "features": null,
     "file_type": "tar.gz",
@@ -28587,6 +31215,42 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.5-linux-aarch64-b750.29.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.5-b750.29"
+  },
+  {
+    "checksum": "sha512:95d8fad0310c6d7ea213d98861963ff05c7357b7e314b1e0a52620f768afbb262d57cafb68e439195711054123855603d9d160d7050209138ce5130aa549575f",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.10-linux-aarch64-b1207.12.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.10-b1207.12"
+  },
+  {
+    "checksum": "sha512:dc2cfe91fd0e21e82ff776b232b36f68bfafaeca0dc95dcdef08de6d3e0ff230c8b8743e1d00def4d7ff07a5fbb690a66125e43dc02447085c62a04b00f74a20",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.6-linux-aarch64-b895.91.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b895.91"
+  },
+  {
+    "checksum": "sha512:bcb96aecf0e255d60e274beedbd31130db02a1067c090832367c567fe1ecdf1e5da50455508fda903754929dfab16226233a917bfa78dff2b86ac71489bfc46d",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.2-linux-aarch64-b341.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.2-b341.4"
   },
   {
     "checksum": "sha512:9793be133d5f445a57c1b9945b78ceeb1340635d052451591cc49d7b67764abfdc0c422e07d154b22c0c7528375467f9dd9ec77dadcf9b110a6ab470ab47269c",
@@ -28601,6 +31265,18 @@
     "version": "21.0.4-b620.4"
   },
   {
+    "checksum": "sha512:05f69532d5ff9af8458a4aa65bdee83eb4c48f8d99b65c7fae54c7b7ac876277ac99dfdecbf7b3bf35c4625f7580fc50ecb4fca29ff2433b5f05b861a133c178",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.4-linux-aarch64-b509.26.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.4-b509.26"
+  },
+  {
     "checksum": "sha512:51c98f76ccd58dc0351427a56a87443c2659d733b5bcd1b0590033947d94c9d88294b238129c19859b73632d7c319699164e5a3a17ce954955ef6098f0d90648",
     "features": null,
     "file_type": "tar.gz",
@@ -28611,6 +31287,18 @@
     "version": "21.0.3-b465.3"
   },
   {
+    "checksum": "sha512:e3168f59d0529e3e1c3b8265c25e401b97ba1ff89003ecadaae1a12bac9ea4ef3242500a4e8b1e193762732eeae46b322f74f0fc4aeffbaa55d394b8bb4f6cb9",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.6-linux-aarch64-b872.85.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b872.85"
+  },
+  {
     "checksum": "sha512:91844b92f8b692478500f9f9455ab7c0261238c05acfc839741afecfd71ab413f8bab2c498d24f2fc32a1106b3411d1dd9ea25782787361c329a00d7d0b2f06a",
     "features": null,
     "file_type": "tar.gz",
@@ -28619,6 +31307,30 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17.0.9-linux-aarch64-b1000.47.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.9-b1000.47"
+  },
+  {
+    "checksum": "sha512:18b84350a42b82c1e9ea3d886f93451edfd5144b851550baa0999fc2cb8c23be45e1538d7b1532903b6fbd8050b24c331dafca261f9dd045ea7187a199cb60ce",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.12-linux-aarch64-b1000.54.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.12-b1000.54"
+  },
+  {
+    "checksum": "sha512:f51764c1b0953e5e8286d6998bc447459c8b59fd7dab0ff6e04846a83545b88d663c3ce0d1752b45bf3912e873d4286fdaa2f8cabf464f758311aa80f33acd23",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.9-linux-aarch64-b1087.9.tar.gz",
+    "vendor": "jetbrains",
+    "version": "17.0.9-b1087.9"
   },
   {
     "checksum": "sha256:9423adc804ebc36f98e8fdb5ffead088eb3fac088402a622de23144b3a47edc0",
@@ -32375,6 +35087,18 @@
     "version": "21.0.6-b895.109"
   },
   {
+    "checksum": "sha512:323f3f9488052dde0d33e01e2add4a080d623f52e0417d1a64ef9ff0c5259bb3ad1e6423e71fece06e3ba139be196bb4d5e6a7c9a05f07f4e23224b92283dfa9",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.6-linux-aarch64-b895.109.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b895.109"
+  },
+  {
     "checksum": "sha512:e267b918dc455a51e7554501dae2ebb37399b68ff96b2499b15a572e0994c58a251bb64f4a7c722635bb31ddf0dad915a55ba1edafb7feacc2c27d35bb9a9511",
     "features": null,
     "file_type": "tar.gz",
@@ -32391,6 +35115,18 @@
     "image_type": "jdk",
     "jvm_impl": "hotspot",
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_vk-21.0.6-linux-aarch64-b895.109.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b895.109"
+  },
+  {
+    "checksum": "sha512:5a3bb8947a8369da8de45d21c22097d469451b6e29ab70a06f6ed535dd8d11c69b5d18ea69170498356d6236b3dd440516bc12f8f8fa5e5c1b07b975f2e7ff76",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.6-linux-aarch64-b895.109.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.6-b895.109"
   },
@@ -32527,6 +35263,18 @@
     "version": "23.0.0"
   },
   {
+    "checksum": "sha512:2b1b5ef80ffb18186c5203d1abcdb6d70461194b8610409f926e64a6d0efb61263046b1cc8c924b01e1d36983ed79ed7fd0cdc85e9d2e2fce0fdcb8c09599b40",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.6-linux-aarch64-b631.42.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b631.42"
+  },
+  {
     "checksum": "sha512:ff82be7b23ed38d9e9734c7b453fdab28b16591e82e3f614d55efee16d04898681fdb4767079cc1fea3f43f3750924b0a14bed57258f61b96986f64962f4a0de",
     "features": [
       "musl"
@@ -32557,6 +35305,18 @@
     "image_type": "jdk",
     "jvm_impl": "hotspot",
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.6-linux-musl-aarch64-b631.42.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.6-b631.42"
+  },
+  {
+    "checksum": "sha512:e8d13977362dbe9777aa99cc7aec7014324aa5e8453e853a73fe972f6272e0ff287a56b65a74a93c15efdcc851199f6a2edd342fcbeae2fd7ae5b07aef322ef3",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.6-linux-aarch64-b631.42.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.6-b631.42"
   },
@@ -34187,12 +36947,36 @@
     "version": "21.0.7-b968.13"
   },
   {
+    "checksum": "sha512:8005aadfe153ef4ff320ac5ef6db1c4c3f04104ba5e3965d50c032cbffcf5e2d6b4df9f9b0dada3be80e45a4960a25e1501e78d7ea953cc168b05c6f6d47bd16",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.7-linux-aarch64-b968.13.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.7-b968.13"
+  },
+  {
     "checksum": "sha512:4dbffce75cf1b1716c79dcac45d6b02d9b18995cf1f31402a0046a5d000ee811a9cbd119918e39e3f95d8661762ed621181e275e43952154e84340f87788b2d0",
     "features": null,
     "file_type": "tar.gz",
     "image_type": "jdk",
     "jvm_impl": "hotspot",
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.7-linux-aarch64-b968.13.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.7-b968.13"
+  },
+  {
+    "checksum": "sha512:b14473a92ced3abab6665ac6d4da8f767c73826b6127a3d38b22de34314cabfb5ae5a60e40e5214500e2e72a92a753f55b4dea68383998af27b71fff5cdf7f28",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.7-linux-aarch64-b968.13.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.7-b968.13"
   },
@@ -34237,5 +37021,73 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_lb-21.0.7-linux-aarch64-b968.13.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.7-b968.13"
+  },
+  {
+    "checksum": "sha512:27fa9fba6d764faef71fe6a1cccd9ac0e291e8fc244f958b3342f7844d9d95dd71f05706d4eb9cce6c152d37876bad11cb61360923eff185e6ed80a0b58a9ed6",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.7-linux-aarch64-b509.40.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.7-b509.40"
+  },
+  {
+    "checksum": "sha512:eab5c737e4729d49038fa660e5336cb68408bc1b5b948436cd37ca344d6debb66165d0dde7eb3d79b5368099ef0b54cbb603fe76227980bc41c97e3b7f812a42",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.7-linux-aarch64-b509.40.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.7-b509.40"
+  },
+  {
+    "checksum": "sha512:1689e3c7a01971c18e2c5cca7d2e54853a8b06b72034445d3cf06b26cec9b56de2e372356f15a957a54cb09f7e495c88e97d76d80cdb5ed0412f6f022b80b0a9",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.7-linux-aarch64-b509.40.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.7-b509.40"
+  },
+  {
+    "checksum": "sha512:be1becc365acebe19b1799b618f3a1ac42a71d8e798238673f5ae2e71fe652c81859dd6452bc2b57263ae932e81ba13e70cefcd1d3e2693068ca63d94e40dc02",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.7-linux-musl-aarch64-b509.40.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.7-b509.40"
+  },
+  {
+    "checksum": "sha512:372ce693c57996a9bfe0ccd1a2b00db2f4be786f8ae018900244b92a8e6be6828f02c256fdf466873212e671be56cefd377dc9c7b9bc03261466a2c7f48ff095",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.7-linux-aarch64-b509.40.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.7-b509.40"
+  },
+  {
+    "checksum": "sha512:a7e58d50088332d495044f03fa369799e7f1fe9a734d56cd893cb6f6d6f33755e6723193304341acb9b30d73b41d1efe95aeadec314b90885a00d752123ca841",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.7-linux-musl-aarch64-b509.40.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.7-b509.40"
   }
 ]
