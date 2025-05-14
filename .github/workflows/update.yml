@@ -47,7 +47,7 @@ jobs:
           -o 'linux,macosx,windows' \
           -a 'aarch64,arm32,i686,x86_64' \
           -e 'architecture,checksum_url,filename,java_version,os,release_type,size' \
-          -f 'file_type=tar.gz,zip&features=!certified,!debug,!fastdebug,!freetype,!jcef'
+          -f 'file_type=tar.gz,zip&features=!certified,!debug,!fastdebug,!freetype'
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7
