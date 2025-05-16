@@ -20,6 +20,9 @@ env:
   AWS_REGION: ${{ vars.AWS_REGION }}
   AWS_S3_BUCKET: ${{ vars.AWS_S3_BUCKET }}
   AWS_ENDPOINT_URL: ${{ vars.AWS_ENDPOINT_URL }}
+  CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+  CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+  CLOUDFLARE_HOST: ${{ vars.CLOUDFLARE_HOST }}
   DRY_RUN: ${{ github.event_name != 'push' || github.ref != 'refs/heads/main' }}
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
