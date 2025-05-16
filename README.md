@@ -1,7 +1,7 @@
 # Roast a JVM Data Crawler
 
-![CI](https://github.com/roele/roast/workflows/CI/badge.svg)
-![Update JVM Data](https://github.com/roele/roast/workflows/Update%20Data/badge.svg)
+![CI](https://github.com/jdx/mise-java/workflows/CI/badge.svg)
+![Update JVM Data](https://github.com/jdx/mise-java/workflows/Update%20Data/badge.svg)
 
 Roast is a data crawler that collects and stores information about JVM distributions from various vendors. The project
 is heavily based on the [Java Metadata](https://github.com/joschi/java-metadata) project.
@@ -27,7 +27,7 @@ Supported distributions:
 
 ## Schema
 
-The API schema can be found at [roast.roele.dev](https://roast.roele.dev).
+The API schema can be found at [mise-java.jdx.dev](https://mise-java.jdx.dev).
 
 ## Build & Run
 

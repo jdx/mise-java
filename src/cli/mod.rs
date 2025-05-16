@@ -60,7 +60,7 @@ impl Cli {
 }
 
 const LONG_ABOUT: &str = indoc! {"
-roast a JVM Crawler. https://github.com/roele/roast
+roast a JVM Crawler. https://github.com/jdx/mise-java
 
 A tool to crawl JVM data for the various JVM vendors.
 "};
