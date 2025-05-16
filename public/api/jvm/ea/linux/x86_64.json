@@ -33960,5 +33960,93 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_lb-21.0.7-linux-x64-b982.16.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.7-b982.16"
+  },
+  {
+    "checksum": "sha256:610bb0ca3f1d1df55048fe1eb6f845c645347b10a2f933e2ed9310be77ff87c0",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.8%2B2/sapmachine-jdk-21.0.8-ea.2_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.8-ea.2"
+  },
+  {
+    "checksum": "sha256:a475d927f2c6cb1bc2f738c190c3350ca77aa69713797ae25e0e7e35598aa629",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.8%2B2/sapmachine-jre-21.0.8-ea.2_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.8-ea.2"
+  },
+  {
+    "checksum": "sha256:e30b95a61f660df5a809bc2e8425aba895e43a31c712db879531c017e781b587",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.16%2B2/sapmachine-jre-17.0.16-ea.2_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.16-ea.2"
+  },
+  {
+    "checksum": "sha256:1f4ed095ce728f619cff9d805768286efbffed052915ab92861562dd5ac302a3",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.16%2B2/sapmachine-jdk-17.0.16-ea.2_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.16-ea.2"
+  },
+  {
+    "checksum": "sha256:cdd6ca8a90d6ec8bd688278b71b6e9718d3e14cb43d7423085dae5696b52c98f",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.16%2B2/sapmachine-jdk-17.0.16-ea.2_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.16-ea.2"
+  },
+  {
+    "checksum": "sha256:011586cec742f464f1d1936908c7dbc0d1ab065b8962c08db3816bb12eaf4aed",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.8%2B2/sapmachine-jre-21.0.8-ea.2_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.8-ea.2"
+  },
+  {
+    "checksum": "sha256:4126170547915ac5c334f5df3ccfe11537f7276212d06a1925e85fde461007fc",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.8%2B2/sapmachine-jdk-21.0.8-ea.2_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.8-ea.2"
+  },
+  {
+    "checksum": "sha256:9b6780467061d958258fb9f146a1a30cbaa037ab61a91ac18b43641fae85cc70",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.16%2B2/sapmachine-jre-17.0.16-ea.2_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.16-ea.2"
   }
 ]
