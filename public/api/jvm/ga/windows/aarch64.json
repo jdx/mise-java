@@ -9470,16 +9470,6 @@
     "version": "17.0.8-b1000.22"
   },
   {
-    "checksum": "sha256:73c027432f5e0586489c26e1cb65cbb0ca878bb3510e90b92aada608c97bd5aa",
-    "features": null,
-    "file_type": "zip",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23.0.1%2B11/OpenJDK23U-testimage_aarch64_windows_hotspot_23.0.1_11.zip",
-    "vendor": "temurin",
-    "version": "23.0.1+11"
-  },
-  {
     "checksum": "sha1:8a131f66495d68cf0992d9f470056ef7ef6e97ec",
     "features": [
       "javafx",
@@ -9492,16 +9482,6 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.15%2B10/bellsoft-jre17.0.15%2B10-windows-aarch64-full.zip",
     "vendor": "liberica",
     "version": "17.0.15+10"
-  },
-  {
-    "checksum": "sha256:a3a144ea28992556355ecc6f89b524325475d01fe8f55d9779200dd0549e46d2",
-    "features": null,
-    "file_type": "zip",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23.0.2%2B7/OpenJDK23U-static-libs_aarch64_windows_hotspot_23.0.2_7.zip",
-    "vendor": "temurin",
-    "version": "23.0.2+7"
   },
   {
     "checksum": "sha256:2f689ae673479c87f07daf6b7729de022a5fc415d3304ed4d25031eac0b9ce42",
@@ -9598,26 +9578,6 @@
     "version": "21.0.6+7.0.LTS"
   },
   {
-    "checksum": "sha256:8480b65adb4ebb1c52afa7f52217397dc63ee4305e11e17a5b0653a8e3f9f680",
-    "features": null,
-    "file_type": "zip",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23.0.2%2B7/OpenJDK23U-testimage_aarch64_windows_hotspot_23.0.2_7.zip",
-    "vendor": "temurin",
-    "version": "23.0.2+7"
-  },
-  {
-    "checksum": "sha256:073c9bc23fcd8346b7dab6e5973b32bec7ce75e6ba4d81c9454de14a52c23368",
-    "features": null,
-    "file_type": "zip",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-static-libs_aarch64_windows_hotspot_21.0.6_7.zip",
-    "vendor": "temurin",
-    "version": "21.0.6+7.0.LTS"
-  },
-  {
     "checksum": "sha256:9a3e639cb3945d800d81a31eb782b046430db94fa4db79b4625f7ff25557267e",
     "features": null,
     "file_type": "zip",
@@ -9628,16 +9588,6 @@
     "version": "23.0.1+11"
   },
   {
-    "checksum": "sha256:6f3f8a208450143a3b16af03fbb153f21ca1e5bf41fd79db8d0d5c5abecc5b91",
-    "features": null,
-    "file_type": "zip",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-testimage_aarch64_windows_hotspot_21.0.5_11.zip",
-    "vendor": "temurin",
-    "version": "21.0.5+11.0.LTS"
-  },
-  {
     "checksum": "sha256:00ea8896d42ac26cb6887eef08cd6e3b2a54f30e9e87b0fc965e66813567ac87",
     "features": null,
     "file_type": "zip",
@@ -9646,36 +9596,6 @@
     "url": "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23.0.1%2B11/OpenJDK23U-jdk_aarch64_windows_hotspot_23.0.1_11.zip",
     "vendor": "temurin",
     "version": "23.0.1+11"
-  },
-  {
-    "checksum": "sha256:6bcc53587b1b61c142e57802e643e95dab85d80b5c15937b437a04c875b02444",
-    "features": null,
-    "file_type": "zip",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23.0.2%2B7/OpenJDK23U-debugimage_aarch64_windows_hotspot_23.0.2_7.zip",
-    "vendor": "temurin",
-    "version": "23.0.2+7"
-  },
-  {
-    "checksum": "sha256:165a4581d5f88769ebe50c0df74b9c71aee9d6c0ac41346b2b8c24fb6b24a09b",
-    "features": null,
-    "file_type": "zip",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23.0.1%2B11/OpenJDK23U-debugimage_aarch64_windows_hotspot_23.0.1_11.zip",
-    "vendor": "temurin",
-    "version": "23.0.1+11"
-  },
-  {
-    "checksum": "sha256:cec945ad4603bb1e53ef768c41eee786d3b0f1c3e29e4e88f36f2644323eb1dd",
-    "features": null,
-    "file_type": "zip",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-debugimage_aarch64_windows_hotspot_21.0.5_11.zip",
-    "vendor": "temurin",
-    "version": "21.0.5+11.0.LTS"
   },
   {
     "checksum": "sha256:d3f4584e6bbbed5dc657fd0d95a3856a3d8c7acc42c3d7469136b3fb8bd89534",
@@ -9696,26 +9616,6 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.7%2B9/bellsoft-jdk21.0.7%2B9-windows-aarch64.zip",
     "vendor": "liberica",
     "version": "21.0.7+9"
-  },
-  {
-    "checksum": "sha256:7e277712cd73e5ea6a0f4aa8b5105beffe63de3b36d621a7588127714565f2ea",
-    "features": null,
-    "file_type": "zip",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23.0.1%2B11/OpenJDK23U-static-libs_aarch64_windows_hotspot_23.0.1_11.zip",
-    "vendor": "temurin",
-    "version": "23.0.1+11"
-  },
-  {
-    "checksum": "sha256:5d4d6d628ca3226b1aa67bb8fa3a3087cff0cad09465c2cb09ca6797dde152cc",
-    "features": null,
-    "file_type": "zip",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-static-libs_aarch64_windows_hotspot_21.0.5_11.zip",
-    "vendor": "temurin",
-    "version": "21.0.5+11.0.LTS"
   },
   {
     "checksum": "sha256:7752a7446429a73ce4c48e273d8a4a268b6f288d36863cddc8b3cbf3de703d1a",
@@ -9746,26 +9646,6 @@
     "url": "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23.0.2%2B7/OpenJDK23U-jdk_aarch64_windows_hotspot_23.0.2_7.zip",
     "vendor": "temurin",
     "version": "23.0.2+7"
-  },
-  {
-    "checksum": "sha256:6400dd56e914f3c0c166d03c2fd4ab6c01f7be998e6571f9cf48d0349c0951b9",
-    "features": null,
-    "file_type": "zip",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-testimage_aarch64_windows_hotspot_21.0.6_7.zip",
-    "vendor": "temurin",
-    "version": "21.0.6+7.0.LTS"
-  },
-  {
-    "checksum": "sha256:72095db15fe0d0981a19457fadca995f3ef30321ef80ad41a94ea0c602292ece",
-    "features": null,
-    "file_type": "zip",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-debugimage_aarch64_windows_hotspot_21.0.6_7.zip",
-    "vendor": "temurin",
-    "version": "21.0.6+7.0.LTS"
   },
   {
     "checksum": "sha1:67eb08f44847174b492477df9c58c693a3a88ed8",
@@ -10078,42 +9958,12 @@
     "version": "17.0.15"
   },
   {
-    "checksum": "sha256:f0f11dd4c9941c37b29da34448d252c0b0c9cc89d927beccf14b38bf3a84f0b7",
-    "features": null,
-    "file_type": "zip",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-debugimage_aarch64_windows_hotspot_21.0.7_6.zip",
-    "vendor": "temurin",
-    "version": "21.0.7+6.0.LTS"
-  },
-  {
     "checksum": "sha256:0e2d89e3d66739ffff74f7ed9582ebe3f7748898a0eaec96164e4ec5e8236b28",
     "features": null,
     "file_type": "zip",
     "image_type": "jre",
     "jvm_impl": "hotspot",
     "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-jre_aarch64_windows_hotspot_21.0.7_6.zip",
-    "vendor": "temurin",
-    "version": "21.0.7+6.0.LTS"
-  },
-  {
-    "checksum": "sha256:7a7b9c2c12070e1d825e7aa078a85e049b98bb6910c08dc30a2e8d9270780879",
-    "features": null,
-    "file_type": "zip",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-testimage_aarch64_windows_hotspot_21.0.7_6.zip",
-    "vendor": "temurin",
-    "version": "21.0.7+6.0.LTS"
-  },
-  {
-    "checksum": "sha256:d216e1a03adbf5f77e9768bf311af92dcea317dcb03e07483cbad741ff407374",
-    "features": null,
-    "file_type": "zip",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-static-libs_aarch64_windows_hotspot_21.0.7_6.zip",
     "vendor": "temurin",
     "version": "21.0.7+6.0.LTS"
   },
