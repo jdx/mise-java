@@ -2338,6 +2338,18 @@
     "version": "23.0.0+25-ea"
   },
   {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jre25%2B21-ea-macos-aarch64-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
+  },
+  {
     "checksum": "sha256:d4b4087a702cfa1f69d052f0a099eb945f1cfcc55da3d6889d9fa84179fdf97d",
     "features": null,
     "file_type": "tar.gz",
@@ -5406,6 +5418,19 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-20%2B21/sapmachine-jre-20-ea.21_macos-aarch64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "20.0.0-ea.21"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden",
+      "lite"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jdk25%2B21-ea-macos-aarch64-lite-leyden.zip",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
   },
   {
     "checksum": "sha256:2001bdc53324f816452fc84c1f3074b7f5a9ac2424c8d7dd691bcee71cbedb67",
@@ -13600,6 +13625,18 @@
     "version": "25.0.0-ea.20"
   },
   {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jdk25%2B21-ea-macos-aarch64-leyden.zip",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
+  },
+  {
     "checksum": "sha512:012ff9ef684e589b603ef02093065e3a5c28e7804d0ccc9485fb427ea79e08091b629e05eeb55b66f1cd35296e2aaa6f64d969e1175ade7c5de08083c6ca37f0",
     "features": [
       "jcef"
@@ -13752,5 +13789,42 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B22/sapmachine-jdk-25-ea.22_macos-aarch64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "25.0.0-ea.22"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden",
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jdk25%2B21-ea-macos-aarch64-lite-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jdk25%2B21-ea-macos-aarch64-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jre25%2B21-ea-macos-aarch64-leyden.zip",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
   }
 ]

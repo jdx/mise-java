@@ -22500,6 +22500,30 @@
     "version": "25.0.0-ea+23"
   },
   {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jre25%2B21-ea-macos-amd64-leyden.zip",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jre25%2B21-ea-macos-amd64-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
+  },
+  {
     "checksum": "sha256:d855426c209b02ebc33f1ac4e235c62858e887df29dd53d0aca5884e0745b6e1",
     "features": null,
     "file_type": "tar.gz",
@@ -22588,6 +22612,31 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B21/sapmachine-jdk-25-ea.21_macos-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "25.0.0-ea.21"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jdk25%2B21-ea-macos-amd64-leyden.zip",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden",
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jdk25%2B21-ea-macos-amd64-lite-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
   },
   {
     "checksum": "sha512:93c1aa6ba830fe96dec398b339aad47c21a57b2692f9ccda0261d93d07ae621b9d7d7a5b397588aa420d6c0b46c5f4ec2989b2c68ae763217de05a6b8bfc3b92",
@@ -22732,5 +22781,30 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B22/sapmachine-jdk-25-ea.22_macos-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "25.0.0-ea.22"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden",
+      "lite"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jdk25%2B21-ea-macos-amd64-lite-leyden.zip",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jdk25%2B21-ea-macos-amd64-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
   }
 ]
