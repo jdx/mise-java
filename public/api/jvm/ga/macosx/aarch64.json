@@ -31222,26 +31222,6 @@
     "version": "11.0.13-b1890.3"
   },
   {
-    "checksum": "sha256:abf8916b4f323b7e46fa859f2c186883589e0c74b0dfa24440cf7eb0deed6047",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4%2B8/OpenJDK17U-debugimage_aarch64_mac_hotspot_17.0.4_8.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.4+8"
-  },
-  {
-    "checksum": "sha256:2a9336ca8a4d6512ca1ca4f94175a34a2a68096c154cbaac2a5352c9b371c74e",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-static-libs_aarch64_mac_hotspot_11.0.26_4.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.26+4"
-  },
-  {
     "checksum": "sha512:76b8fcc327506c72116b57eb124e37af0b2b9f6b00eb2e39e12d07e9ddb13e9bcc88bd6eb3b0e21f1b586148b3e14ecd5bd2d2acc78d051903a253a3e178ec1b",
     "features": [
       "jcef"
@@ -31276,16 +31256,6 @@
     "version": "17.0.8+7"
   },
   {
-    "checksum": "sha256:c263249d41b9111ec6d6ef124ad7358925b38db9c8b219bc56fd9d5073f3872d",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin18-binaries/releases/download/jdk-18%2B36/OpenJDK18U-debugimage_aarch64_mac_hotspot_18_36.tar.gz",
-    "vendor": "temurin",
-    "version": "18.0.0+36"
-  },
-  {
     "checksum": "sha512:0c5e7b179bd8d04b28ea4c9e461660f584edd2f69997eeaee11156aa01e7ff2697b27fc6e01165259e38f132f4099f821ff39696ad6242c3ee684074d4df633d",
     "features": null,
     "file_type": "tar.gz",
@@ -31304,16 +31274,6 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.11-osx-aarch64-b1207.23.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.11-b1207.23"
-  },
-  {
-    "checksum": "sha256:2649a5af0a61e76f51dac55d70ac5c0641f13bdd2ae4ed2c17ce9cfd90df12e5",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-testimage_aarch64_mac_hotspot_17.0.10_7.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.10+7"
   },
   {
     "checksum": "sha256:5c5e9ac08de335d7ed2d6518d3a9cad900874d1e1d572a4046ac64071e239cc7",
@@ -31368,16 +31328,6 @@
     "version": "22.0.2+9"
   },
   {
-    "checksum": "sha256:8e5fbea27c8785396c34787f71e79b44be2ff791dd51311941dfc610bd0f08a6",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-debugimage_aarch64_mac_hotspot_11.0.15_10.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.15+10"
-  },
-  {
     "checksum": "sha512:3c711b1f32853aa5e5f69f1405eb0b849dec23cdb515cb4e4ca6daf547a5cb5fd4d448553079f0d7ec13fdd4879aca40a272b0b0fae180181fd68a221cf353b5",
     "features": [
       "jcef"
@@ -31388,36 +31338,6 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.7-osx-aarch64-b979.4.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.7-b979.4"
-  },
-  {
-    "checksum": "sha256:6e5ea5ee24cd701c1f4de4c52b329379e429c7558428726f1460ab9c0e6b2234",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22.0.2%2B9/OpenJDK22U-testimage_aarch64_mac_hotspot_22.0.2_9.tar.gz",
-    "vendor": "temurin",
-    "version": "22.0.2+9"
-  },
-  {
-    "checksum": "sha256:b420c7ff38bec13fbbf72e4b34398944d7567724dd9c8353bed9508b1e33045b",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8%2B7/OpenJDK17U-debugimage_aarch64_mac_hotspot_17.0.8_7.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.8+7"
-  },
-  {
-    "checksum": "sha256:dc586f95fe9f8d99cf6edf2711a955dcbe63c67d8ce8483c183ed9e3162f01cb",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-static-libs_aarch64_mac_hotspot_20.0.2_9.tar.gz",
-    "vendor": "temurin",
-    "version": "20.0.2+9"
   },
   {
     "checksum": "sha256:abf9365c07797133874e18bc5da86a42833ceee71986addb59877f5efd23739c",
@@ -31462,16 +31382,6 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.5-osx-aarch64-b631.16.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.5-b631.16"
-  },
-  {
-    "checksum": "sha256:c1cf3195f10f8f430011e610e76ee2bc40bd33d2d726579cb109f063076fe837",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4.1%2B1/OpenJDK17U-static-libs_aarch64_mac_hotspot_17.0.4.1_1.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.4+101"
   },
   {
     "checksum": "sha512:059950390b51e4fbc0a8d464837c823473aac0ea91199944d8028acc95404e9a23f599d62358b50368b6b1095fd3ced0f1749edfdec26bbd492ca3175304d527",
@@ -31524,26 +31434,6 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-17.0.10-osx-aarch64-b829.26.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.10-b829.26"
-  },
-  {
-    "checksum": "sha256:321a25fdaf76d923740804aec57fb119839b29eb1936d43c120ed4850a41a6a2",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin18-binaries/releases/download/jdk-18.0.1%2B10/OpenJDK18U-debugimage_aarch64_mac_hotspot_18.0.1_10.tar.gz",
-    "vendor": "temurin",
-    "version": "18.0.1+10"
-  },
-  {
-    "checksum": "sha256:3dda950e9d59c380611248c1f5863dd64346a01706d41818b5c8d620c45aa5c0",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22%2B36/OpenJDK22U-testimage_aarch64_mac_hotspot_22_36.tar.gz",
-    "vendor": "temurin",
-    "version": "22.0.0+36"
   },
   {
     "checksum": "sha256:95bcc8052340394b87644d71a60fb26f31857f4090a7dfee57113e9e0f2dfacb",
@@ -31632,16 +31522,6 @@
     "version": "11.0.18+10"
   },
   {
-    "checksum": "sha256:a0db7d376bf50e978529a7a25bba1bfac18b04ac6899813c94e6beabe76571b5",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22.0.1%2B8/OpenJDK22U-debugimage_aarch64_mac_hotspot_22.0.1_8.tar.gz",
-    "vendor": "temurin",
-    "version": "22.0.1+8"
-  },
-  {
     "checksum": "sha256:1d6aeb55b47341e8ec33cc1644d58b88dfdcce17aa003a858baa7460550e6ff9",
     "features": null,
     "file_type": "tar.gz",
@@ -31694,36 +31574,6 @@
     "version": "17.0.0-b87.7"
   },
   {
-    "checksum": "sha256:be1cb007f153ab16924ef509bdc19a093de7061a43f2d192c88d2a8d606f6151",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.2%2B7/OpenJDK19U-debugimage_aarch64_mac_hotspot_19.0.2_7.tar.gz",
-    "vendor": "temurin",
-    "version": "19.0.2+7"
-  },
-  {
-    "checksum": "sha256:012698df3a941a36e92bc3a097be5d559a19d66cd27da70bdf888a0bb6562eba",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-debugimage_aarch64_mac_hotspot_11.0.22_7.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.22+7"
-  },
-  {
-    "checksum": "sha256:11d8170648db60783a92ae702a8a028b99e27f0c0d8af1bf2885ab200aa7e20b",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.13%2B11/OpenJDK17U-debugimage_aarch64_mac_hotspot_17.0.13_11.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.13+11"
-  },
-  {
     "checksum": "sha256:157518e999d712b541b883c6c167f8faabbef1d590da9fe7233541b4adb21ea4",
     "features": null,
     "file_type": "tar.gz",
@@ -31754,16 +31604,6 @@
     "version": "11.0.17+8"
   },
   {
-    "checksum": "sha256:36c70d5316c9ddc17f8809b7ed00a249b7d0c3919dd80857448a822bd757838d",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.21%2B9/OpenJDK11U-static-libs_aarch64_mac_hotspot_11.0.21_9.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.21+9"
-  },
-  {
     "checksum": "sha1:993a867a4df3790a82e437b441e2e2bdd4cffed4",
     "features": [
       "javafx",
@@ -31776,16 +31616,6 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/24.0.1%2B11/bellsoft-jre24.0.1%2B11-macos-aarch64-full.tar.gz",
     "vendor": "liberica",
     "version": "24.0.1+11"
-  },
-  {
-    "checksum": "sha256:ba5f85ff961ecc2423ec97ba2a994f830b04e33b23248807819ead3046f3990b",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20%2B36/OpenJDK20U-static-libs_aarch64_mac_hotspot_20_36.tar.gz",
-    "vendor": "temurin",
-    "version": "20.0.0+36"
   },
   {
     "checksum": "sha256:868f3655cc12279300355272b4e779513caa50536439c62b736dbc425b79b693",
@@ -31808,36 +31638,6 @@
     "version": "22.0.0+36"
   },
   {
-    "checksum": "sha256:04259db23cd416b7ebb837cc602b2f96e89ca2cfda24fb3b4300d7e57ba4062b",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-debugimage_aarch64_mac_hotspot_17.0.11_9.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.11+9"
-  },
-  {
-    "checksum": "sha256:56fad77f915a03bd43ed34499b342cdbf28de7fecef8f5f22131fe4ecd2a225c",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8%2B7/OpenJDK17U-static-libs_aarch64_mac_hotspot_17.0.8_7.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.8+7"
-  },
-  {
-    "checksum": "sha256:3ce74b98ee7878824a04a683238a14f362d9060b5077ec185a09c1539c7e5257",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19%2B36/OpenJDK19U-static-libs_aarch64_mac_hotspot_19_36.tar.gz",
-    "vendor": "temurin",
-    "version": "19.0.0+36"
-  },
-  {
     "checksum": "sha256:bcac3231195a95cac397a35410bfa3f0945ec03e5194e7b0c1d0e785a48f8b76",
     "features": null,
     "file_type": "tar.gz",
@@ -31846,26 +31646,6 @@
     "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.21%2B9/OpenJDK11U-jre_aarch64_mac_hotspot_11.0.21_9.tar.gz",
     "vendor": "temurin",
     "version": "11.0.21+9"
-  },
-  {
-    "checksum": "sha256:bc2363d44df846302c7dafb077a118d5650578464875ea93246b647184ed7d9c",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-testimage_aarch64_mac_hotspot_17.0.1_12.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.1+12"
-  },
-  {
-    "checksum": "sha256:d76b4f1229070cc83aba2d375ec86d8c7ed562e05eb39131d55bb1ba0709fd17",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7.1/OpenJDK11U-debugimage_aarch64_mac_hotspot_11.0.22_7.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.22+7.1"
   },
   {
     "checksum": "sha256:8ab27c4038dce4be7b0f73d3e4c6c9271f8f11e7e5d9c0a0bf37505986420ccf",
@@ -31908,16 +31688,6 @@
     "version": "11.0.20+8"
   },
   {
-    "checksum": "sha256:a31c3722da903822c9796945e8ef5ad0901d6a9878d6bb4c299ab011567180ca",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-static-libs_aarch64_mac_hotspot_17.0.1_12.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.1+12"
-  },
-  {
     "checksum": "sha256:4243345d963f8247e430590c6f857b9e020d9ff0ec8f20a8b7e0cd4fff2cbd78",
     "features": null,
     "file_type": "tar.gz",
@@ -31928,16 +31698,6 @@
     "version": "11.0.22+7"
   },
   {
-    "checksum": "sha256:af610df4db8c000a376bc142aa52df4fc7d2080c82b66344f59633b56df52557",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-debugimage_aarch64_mac_hotspot_17.0.10_7.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.10+7"
-  },
-  {
     "checksum": "sha256:a6ec3b94f61695e8f445ee508411c56a2ce0cabc16ea4c4296ff062d13559d92",
     "features": null,
     "file_type": "tar.gz",
@@ -31946,16 +31706,6 @@
     "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-jdk_aarch64_mac_hotspot_17.0.10_7.tar.gz",
     "vendor": "temurin",
     "version": "17.0.10+7"
-  },
-  {
-    "checksum": "sha256:39061a3c73076deb2571228db9600e415d0ff593af3efd46e98abcc31fe16646",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.2%2B8/OpenJDK17U-static-libs_aarch64_mac_hotspot_17.0.2_8.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.2+8"
   },
   {
     "checksum": "sha256:910bb88543211c63298e5b49f7144ac4463f1d903926e94a89bfbf10163bbba1",
@@ -32008,56 +31758,6 @@
     "version": "11.0.19+7"
   },
   {
-    "checksum": "sha256:b2cf2ba655eddcd1d00d1acbea037a78fa330c22fe363c5b20cefe1e542bea90",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.6%2B10/OpenJDK17U-testimage_aarch64_mac_hotspot_17.0.6_10.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.6+10"
-  },
-  {
-    "checksum": "sha256:9522049a39b01018052a6d0c8c86a8fdc0a22360ed8090909ba5503d167a637c",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23%2B37/OpenJDK23U-debugimage_aarch64_mac_hotspot_23_37.tar.gz",
-    "vendor": "temurin",
-    "version": "23.0.0+37"
-  },
-  {
-    "checksum": "sha256:b11a3ddabb7a2c213e4499be3b4cb34f1985ae6048a808c8b5605b37fe609fa4",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-debugimage_aarch64_mac_hotspot_21.0.2_13.tar.gz",
-    "vendor": "temurin",
-    "version": "21.0.2+13.0.LTS"
-  },
-  {
-    "checksum": "sha256:b3089cb5167f45d6fdd926b05c8431103ddf8da27d1ae5c933ea24debdc555f1",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.16.1%2B1/OpenJDK11U-static-libs_aarch64_mac_hotspot_11.0.16.1_1.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.16+101"
-  },
-  {
-    "checksum": "sha256:2113c208f64c09e42a27b1a9dfa4365786865f9f5f7270eb905ebdba660d66d8",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin18-binaries/releases/download/jdk-18.0.2%2B9/OpenJDK18U-static-libs_aarch64_mac_hotspot_18.0.2_9.tar.gz",
-    "vendor": "temurin",
-    "version": "18.0.2+9"
-  },
-  {
     "checksum": "sha256:49122443bdeab2c9f468bd400f58f85a9ea462846faa79084fd6fd786d9b492d",
     "features": null,
     "file_type": "tar.gz",
@@ -32066,36 +31766,6 @@
     "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-jdk_aarch64_mac_hotspot_11.0.23_9.tar.gz",
     "vendor": "temurin",
     "version": "11.0.23+9"
-  },
-  {
-    "checksum": "sha256:017b99130fd79f8fd1aa59dd193e27df4f0e65625c852122a2a1d038a5007579",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.17%2B8/OpenJDK11U-static-libs_aarch64_mac_hotspot_11.0.17_8.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.17+8"
-  },
-  {
-    "checksum": "sha256:93c9d27940c1d0f9670fd8c79b6e75e2c60c126cbefbad4e24ddbcdd385626c7",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21%2B35/OpenJDK21U-testimage_aarch64_mac_hotspot_21_35.tar.gz",
-    "vendor": "temurin",
-    "version": "21.0.0+35.0.LTS"
-  },
-  {
-    "checksum": "sha256:c40c27ec1d7d5754768eb25954841903863f8125cfbf71766d566e56087900b9",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin18-binaries/releases/download/jdk-18.0.2.1%2B1/OpenJDK18U-debugimage_aarch64_mac_hotspot_18.0.2.1_1.tar.gz",
-    "vendor": "temurin",
-    "version": "18.0.2+101"
   },
   {
     "checksum": "sha1:744f6ef5c65982dab284741b0f84a0855090fc55",
@@ -32118,26 +31788,6 @@
     "version": "18.0.1+10"
   },
   {
-    "checksum": "sha256:5f096db8db7291f61b5655beda230db2bd72dd2474d8df4027fd0dc6f3740e87",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.13%2B11/OpenJDK17U-testimage_aarch64_mac_hotspot_17.0.13_11.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.13+11"
-  },
-  {
-    "checksum": "sha256:1543379f15c9b636e2be67d364fc77124aaea5445b3d9f9f9d8f80b0d745b22f",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4%2B8/OpenJDK17U-static-libs_aarch64_mac_hotspot_17.0.4_8.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.4+8"
-  },
-  {
     "checksum": "sha256:89831d03b7cd9922bd178f1a9c8544a36c54d52295366db4e6628454b01acaef",
     "features": null,
     "file_type": "tar.gz",
@@ -32146,16 +31796,6 @@
     "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.9%2B9/OpenJDK17U-jre_aarch64_mac_hotspot_17.0.9_9.tar.gz",
     "vendor": "temurin",
     "version": "17.0.9+9"
-  },
-  {
-    "checksum": "sha256:6d0c9b406762297bc9284ab970692dd2bbd387706249457339ad45e248bda5fb",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.5%2B8/OpenJDK17U-static-libs_aarch64_mac_hotspot_17.0.5_8.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.5+8"
   },
   {
     "checksum": "sha512:27aa4ccb730693ff3b08e00f67f8ea353da3137463ea89e1cce2db5ae3d4de291e30124eda24c89a3521a720295dd469e4f2323f59781eb1e56173f3be3854eb",
@@ -32168,66 +31808,6 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.10-osx-aarch64-b1087.23.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.10-b1087.23"
-  },
-  {
-    "checksum": "sha256:d90f2e776f885f3b10bf8d9aef0a5ca02162a95287f3b04f9b7a5a45b54692e4",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-static-libs_aarch64_mac_hotspot_17.0.14_7.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.14+7"
-  },
-  {
-    "checksum": "sha256:1c57b8362b454c439cc88ebe34646970bfc794d610045ecf965c480c66274fc3",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-debugimage_aarch64_mac_hotspot_11.0.25_9.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.25+9"
-  },
-  {
-    "checksum": "sha256:012f41b100d6ee3d224aab7933554755c5afd5a647619385db2d2479020965b9",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin18-binaries/releases/download/jdk-18.0.1%2B10/OpenJDK18U-static-libs_aarch64_mac_hotspot_18.0.1_10.tar.gz",
-    "vendor": "temurin",
-    "version": "18.0.1+10"
-  },
-  {
-    "checksum": "sha256:fda9b063e7bc0894ebdb3bb321329f6e3ab2a22e21ed92794466d5df7869a538",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.18%2B10/OpenJDK11U-static-libs_aarch64_mac_hotspot_11.0.18_10.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.18+10"
-  },
-  {
-    "checksum": "sha256:4de5b13d5b7a9557f776b440e01c6f05e3465859ddab766308f03138fb1a75c2",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8.1%2B1/OpenJDK17U-debugimage_aarch64_mac_hotspot_17.0.8.1_1.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.8+101"
-  },
-  {
-    "checksum": "sha256:bb36e30270773e96f29876028b8c7080e8d37746305b18ae1f37a8c72a12d6ad",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.9%2B9/OpenJDK17U-static-libs_aarch64_mac_hotspot_17.0.9_9.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.9+9"
   },
   {
     "checksum": "sha256:68ccb36c9f1c8ea31e6830a158cc960b014f4ab3c2b8450800dbde028042b672",
@@ -32434,26 +32014,6 @@
     "version": "17.0.10-b1087.21"
   },
   {
-    "checksum": "sha256:b2d041d12e26c44df014a1d85c63e6f995d408c862c4511a3520895e004407dd",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-debugimage_aarch64_mac_hotspot_11.0.19_7.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.19+7"
-  },
-  {
-    "checksum": "sha256:de3955173ee9d180998f6c41fd7d7508fc911ef6798c885e238dcf0bf6f0ec46",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin18-binaries/releases/download/jdk-18%2B36/OpenJDK18U-static-libs_aarch64_mac_hotspot_18_36.tar.gz",
-    "vendor": "temurin",
-    "version": "18.0.0+36"
-  },
-  {
     "checksum": "sha256:3a976943a9e6a635e68e2b06bd093fc096aad9f5894acda673d3bea0cb3a6f38",
     "features": null,
     "file_type": "tar.gz",
@@ -32464,36 +32024,6 @@
     "version": "17.0.4+101"
   },
   {
-    "checksum": "sha256:ac056fd4937293da8db50f50b704f82bcd806ff7b43595c12fcc3bf2119d647d",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-debugimage_aarch64_mac_hotspot_17_35.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.0+35"
-  },
-  {
-    "checksum": "sha256:9b56a591ec775ba61d125cd2dd02a3dc5f1a38a23b5da4a2ed1ce1cb32a6a0e5",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.9%2B9/OpenJDK17U-debugimage_aarch64_mac_hotspot_17.0.9_9.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.9+9"
-  },
-  {
-    "checksum": "sha256:91944fe67d6efa6de91ac8b02f15911c0a58d2f70da60544b401bae551c4cdf7",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-debugimage_aarch64_mac_hotspot_17.0.14_7.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.14+7"
-  },
-  {
     "checksum": "sha256:9b792bbd408676483caaeb619439190abf1552fe11ab05b19c80d408e5f49c25",
     "features": null,
     "file_type": "tar.gz",
@@ -32502,16 +32032,6 @@
     "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_aarch64_mac_hotspot_21.0.6_7.tar.gz",
     "vendor": "temurin",
     "version": "21.0.6+7.0.LTS"
-  },
-  {
-    "checksum": "sha256:315c61a4ebe79eb7416ac728b403b397e0cd8cc49ef9bcfeecbae99768ff893f",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23.0.1%2B11/OpenJDK23U-debugimage_aarch64_mac_hotspot_23.0.1_11.tar.gz",
-    "vendor": "temurin",
-    "version": "23.0.1+11"
   },
   {
     "checksum": "sha256:e4904557f6e02f62b830644dc257c0910525f03df77bcffaaf92fa02a057230c",
@@ -32544,26 +32064,6 @@
     "version": "22.0.0+36"
   },
   {
-    "checksum": "sha256:75ddb9277f0ccd3acd4794d1c43b3678c277776cce7da4b80482b3d48c4046d1",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-testimage_aarch64_mac_hotspot_11.0.26_4.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.26+4"
-  },
-  {
-    "checksum": "sha256:7f1d551da60562ad5a6a00c0b7e0b3f781cff43997f29c1ef070e6ede78dea3e",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.1%2B10/OpenJDK19U-debugimage_aarch64_mac_hotspot_19.0.1_10.tar.gz",
-    "vendor": "temurin",
-    "version": "19.0.1+10"
-  },
-  {
     "checksum": "sha256:c84f38a7d87d50649ffc1f625facb4398fa54885371336a2cbf6ae2b435cbd10",
     "features": null,
     "file_type": "tar.gz",
@@ -32582,66 +32082,6 @@
     "url": "https://github.com/adoptium/temurin18-binaries/releases/download/jdk-18%2B36/OpenJDK18U-jdk_aarch64_mac_hotspot_18_36.tar.gz",
     "vendor": "temurin",
     "version": "18.0.0+36"
-  },
-  {
-    "checksum": "sha256:1a63e2bb33a4d61620fd66a1090456f572af11599e5d21d81e84c7a78538d5fb",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22%2B36/OpenJDK22U-static-libs_aarch64_mac_hotspot_22_36.tar.gz",
-    "vendor": "temurin",
-    "version": "22.0.0+36"
-  },
-  {
-    "checksum": "sha256:c71c6ff18c29e55dea0987693e7392513ab00c01bca02953013b3fcc0d4b7534",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-debugimage_aarch64_mac_hotspot_21.0.5_11.tar.gz",
-    "vendor": "temurin",
-    "version": "21.0.5+11.0.LTS"
-  },
-  {
-    "checksum": "sha256:e0f04b8121d6ecb23b48b5391de450f2a41ed9ebae0696273653c0db722e9608",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22.0.2%2B9/OpenJDK22U-debugimage_aarch64_mac_hotspot_22.0.2_9.tar.gz",
-    "vendor": "temurin",
-    "version": "22.0.2+9"
-  },
-  {
-    "checksum": "sha256:684fcd53c46c39654805c8833eb6bee6a0847e09cafc360848377bcbf18ee4ce",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.1%2B9/OpenJDK20U-debugimage_aarch64_mac_hotspot_20.0.1_9.tar.gz",
-    "vendor": "temurin",
-    "version": "20.0.1+9"
-  },
-  {
-    "checksum": "sha256:2da23a90ce12f928ba7f0007e7f936d3422d4de673595320fae1cd3d7804d9c2",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7.1/OpenJDK11U-static-libs_aarch64_mac_hotspot_11.0.22_7.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.22+7.1"
-  },
-  {
-    "checksum": "sha256:d2f201b3e5c6fdc2d5f339acd4a4441d95e65d36af8e688cc5e30e39aea90a4c",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-debugimage_aarch64_mac_hotspot_11.0.24_8.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.24+8"
   },
   {
     "checksum": "sha256:81d7cd6de1986e9afdac128e26386291eaf5d15e0521a10ec4021e2798fb6847",
@@ -32664,16 +32104,6 @@
     "version": "20.0.0+36"
   },
   {
-    "checksum": "sha256:1775145706a73363b6113d16dba46b583f38a056871f90c7a95fb110e8169c0f",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22.0.1%2B8/OpenJDK22U-static-libs_aarch64_mac_hotspot_22.0.1_8.tar.gz",
-    "vendor": "temurin",
-    "version": "22.0.1+8"
-  },
-  {
     "checksum": "sha256:b6be6a9568be83695ec6b7cb977f4902f7be47d74494c290bc2a5c3c951e254f",
     "features": null,
     "file_type": "tar.gz",
@@ -32694,36 +32124,6 @@
     "version": "11.0.23+9"
   },
   {
-    "checksum": "sha256:e17152e7d92b6fa308e5625a7e299a6e9997542dd5485865bc974ad3ba9384b0",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8.1%2B1/OpenJDK17U-static-libs_aarch64_mac_hotspot_17.0.8.1_1.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.8+101"
-  },
-  {
-    "checksum": "sha256:c358b2089e84019c4a601fbd3e2db4bfb74dfabbea2177646554658a6398f79a",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-debugimage_aarch64_mac_hotspot_11.0.26_4.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.26+4"
-  },
-  {
-    "checksum": "sha256:ae239fcde54dc61c18cba6b3f9f425849bc950664fc90f55bad961162a31d92d",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.21%2B9/OpenJDK11U-debugimage_aarch64_mac_hotspot_11.0.21_9.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.21+9"
-  },
-  {
     "checksum": "sha256:73a8a0270534db7b4760399f41c573fd1cff5f86f4e68b08988afee0df814889",
     "features": null,
     "file_type": "tar.gz",
@@ -32732,46 +32132,6 @@
     "url": "https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22.0.1%2B8/OpenJDK22U-jre_aarch64_mac_hotspot_22.0.1_8.tar.gz",
     "vendor": "temurin",
     "version": "22.0.1+8"
-  },
-  {
-    "checksum": "sha256:a485e68fd66c7ef29cc37f4ad1387b5332459cad20e2d80c662f0429b34c88c3",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-testimage_aarch64_mac_hotspot_11.0.20_8.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.20+8"
-  },
-  {
-    "checksum": "sha256:24b9d62aa87400135c433d72459aba7765f194ae5ab3941fea758303d84b2ba4",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-static-libs_aarch64_mac_hotspot_11.0.15_10.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.15+10"
-  },
-  {
-    "checksum": "sha256:31fbc94088a8f47c38f34b9deebb3322e4a806bb09dd7fb8d156a65f335c6307",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin18-binaries/releases/download/jdk-18.0.2%2B9/OpenJDK18U-debugimage_aarch64_mac_hotspot_18.0.2_9.tar.gz",
-    "vendor": "temurin",
-    "version": "18.0.2+9"
-  },
-  {
-    "checksum": "sha256:6001faf9c0e9b098ed9872b32039fba2f5cd846cf0471c44ea7db3cae694093d",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.2%2B7/OpenJDK19U-testimage_aarch64_mac_hotspot_19.0.2_7.tar.gz",
-    "vendor": "temurin",
-    "version": "19.0.2+7"
   },
   {
     "checksum": "sha256:c970e5917964da1b50c0029ba88a6fbe962783def4de6a8a2835af6a6859002c",
@@ -32814,56 +32174,6 @@
     "version": "11.0.20+101"
   },
   {
-    "checksum": "sha256:e8220dea2d439410ebf07b4e91688c6abad3b87e7117b293105d518caee3880a",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23%2B37/OpenJDK23U-testimage_aarch64_mac_hotspot_23_37.tar.gz",
-    "vendor": "temurin",
-    "version": "23.0.0+37"
-  },
-  {
-    "checksum": "sha256:3ebc8b13ae48476ed7bacd210fd71634c3f97371ea15ddb3e873a97f82129ca7",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20.1%2B1/OpenJDK11U-static-libs_aarch64_mac_hotspot_11.0.20.1_1.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.20+101"
-  },
-  {
-    "checksum": "sha256:7e1003858e1e37ca2b3e7e1890e9b985993185bb60cf6036192cd56a9a2a5b80",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.2%2B7/OpenJDK19U-static-libs_aarch64_mac_hotspot_19.0.2_7.tar.gz",
-    "vendor": "temurin",
-    "version": "19.0.2+7"
-  },
-  {
-    "checksum": "sha256:3870b3f99c9964e6b1922ba9c92baf688043114b35db53329ad14ccfd9fe007d",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-debugimage_aarch64_mac_hotspot_24_36.tar.gz",
-    "vendor": "temurin",
-    "version": "24.0.0+36"
-  },
-  {
-    "checksum": "sha256:6ee0635e23232cc237ef43e93bc1675221e41c74f54cd6f8e48b669868011adb",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.3%2B7/OpenJDK17U-debugimage_aarch64_mac_hotspot_17.0.3_7.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.3+7"
-  },
-  {
     "checksum": "sha256:30b71a4a963688fbe3baee7dab133b62fa6e85753e238ff5313b1b7d10f878d9",
     "features": null,
     "file_type": "tar.gz",
@@ -32894,16 +32204,6 @@
     "version": "11.0.22+7"
   },
   {
-    "checksum": "sha256:124d32fe0bd42216b64b873066c08c40cb5a00b6eb1d51d9213168bf04b4573f",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7.1/OpenJDK11U-testimage_aarch64_mac_hotspot_11.0.22_7.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.22+7.1"
-  },
-  {
     "checksum": "sha256:2c96b006080906951fb0ddae8e23ca3ef2bd327b77cac84b4302b8d84c7014f5",
     "features": null,
     "file_type": "tar.gz",
@@ -32912,126 +32212,6 @@
     "url": "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23%2B37/OpenJDK23U-jre_aarch64_mac_hotspot_23_37.tar.gz",
     "vendor": "temurin",
     "version": "23.0.0+37"
-  },
-  {
-    "checksum": "sha256:366c82042d9b572e290cd25608ffe0971a92ab32d56e6de10da19ca22358cbd7",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-static-libs_aarch64_mac_hotspot_17.0.11_9.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.11+9"
-  },
-  {
-    "checksum": "sha256:2aa2a7a5645583f5b46bd4279ad07778c1db7a4b88d9211c567b89aabc64ca39",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8%2B7/OpenJDK17U-testimage_aarch64_mac_hotspot_17.0.8_7.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.8+7"
-  },
-  {
-    "checksum": "sha256:16f17c56a413fee749a603dcb3fd3c0c7747aa58884b44f181d4a63221787299",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.19%2B7/OpenJDK11U-static-libs_aarch64_mac_hotspot_11.0.19_7.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.19+7"
-  },
-  {
-    "checksum": "sha256:8ae47f84ab5b3f90b0ce35bd9327d9d539fc39dd92552653ab151ef6645f79ac",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.16%2B8/OpenJDK11U-debugimage_aarch64_mac_hotspot_11.0.16_8.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.16+8"
-  },
-  {
-    "checksum": "sha256:acb587da71d7162c6eb239a549fecefa3786b52b618603159bf78af02462620b",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.6%2B10/OpenJDK17U-static-libs_aarch64_mac_hotspot_17.0.6_10.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.6+10"
-  },
-  {
-    "checksum": "sha256:846ef5a7a4306db82777a339d67ee60358704129e192d85769f6b9027e0e5915",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-testimage_aarch64_mac_hotspot_21.0.2_13.tar.gz",
-    "vendor": "temurin",
-    "version": "21.0.2+13.0.LTS"
-  },
-  {
-    "checksum": "sha256:e35aeb362d6d8acd9807dc0dd51ab536b863de3be1c17c4a8c1c445fd87d67a7",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-static-libs_aarch64_mac_hotspot_11.0.24_8.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.24+8"
-  },
-  {
-    "checksum": "sha256:3b0ebc60ad89828c37b9522593b519f7adb532e8ad12d61608ca58dadfa4b004",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%2B12/OpenJDK21U-debugimage_aarch64_mac_hotspot_21.0.1_12.tar.gz",
-    "vendor": "temurin",
-    "version": "21.0.1+12.0.LTS"
-  },
-  {
-    "checksum": "sha256:7e70e15080df12dd7cfccc3f34b7dec2504da7e06aaa48b0a86762a025fe5978",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-static-libs_aarch64_mac_hotspot_11.0.25_9.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.25+9"
-  },
-  {
-    "checksum": "sha256:40295f90d4dfa627027b7e97870ba2950ea6ffa983776a0855bcd2be1196a775",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23.0.2%2B7/OpenJDK23U-static-libs_aarch64_mac_hotspot_23.0.2_7.tar.gz",
-    "vendor": "temurin",
-    "version": "23.0.2+7"
-  },
-  {
-    "checksum": "sha256:6b51bbf289a67bd8415f9bdfe66dbf595bd59aa1ecd14eb8604a60e2a1e6b050",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-debugimage_aarch64_mac_hotspot_11.0.23_9.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.23+9"
-  },
-  {
-    "checksum": "sha256:9eaab880b1ac09697debd1e757898366f2934edad74963b90605fdeecc331ced",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23.0.1%2B11/OpenJDK23U-static-libs_aarch64_mac_hotspot_23.0.1_11.tar.gz",
-    "vendor": "temurin",
-    "version": "23.0.1+11"
   },
   {
     "checksum": "sha1:2ce5ba0163365f194baa6b8b52e9d38ac3caf43a",
@@ -33046,16 +32226,6 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.7%2B9/bellsoft-jdk21.0.7%2B9-macos-aarch64-full.zip",
     "vendor": "liberica",
     "version": "21.0.7+9"
-  },
-  {
-    "checksum": "sha256:a7d1568cd295b9d1832776b4de0d4992e96cd16088b12df1c2163510c1d31d3e",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.7%2B7/OpenJDK17U-static-libs_aarch64_mac_hotspot_17.0.7_7.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.7+7"
   },
   {
     "checksum": "sha256:d8b2f77f755d06e81a540834c5be22ed86f3c8a51a20396606c074303f8f9e2d",
@@ -33088,16 +32258,6 @@
     "version": "11.0.24+8"
   },
   {
-    "checksum": "sha256:4b5e52b664be6e41a0f2da26072e104b0567f545448ac796dab61ad5696d95ff",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-debugimage_aarch64_mac_hotspot_21.0.6_7.tar.gz",
-    "vendor": "temurin",
-    "version": "21.0.6+7.0.LTS"
-  },
-  {
     "checksum": "sha256:c419330cc8d6b9974d3bf1937f8f0e747c34c469afd5c546831d35aa19e03d49",
     "features": null,
     "file_type": "tar.gz",
@@ -33106,26 +32266,6 @@
     "url": "https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.2%2B7/OpenJDK19U-jdk_aarch64_mac_hotspot_19.0.2_7.tar.gz",
     "vendor": "temurin",
     "version": "19.0.2+7"
-  },
-  {
-    "checksum": "sha256:83474d9bf388e3e0134c52f94de573cee09d3fa509f50b10e2a57458ed82637e",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.18%2B10/OpenJDK11U-debugimage_aarch64_mac_hotspot_11.0.18_10.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.18+10"
-  },
-  {
-    "checksum": "sha256:b901091fdc93f00f5adb77dfd070b501afdbdc482b4cd8b860cb71a2bea3786a",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-testimage_aarch64_mac_hotspot_21.0.4_7.tar.gz",
-    "vendor": "temurin",
-    "version": "21.0.4+7.0.LTS"
   },
   {
     "checksum": "sha256:5c1cb2cbd2ef3f2b529e2733d0ab55381e10c4c3607f4d62f2bf12f0942198bf",
@@ -33138,16 +32278,6 @@
     "version": "17.0.12+7"
   },
   {
-    "checksum": "sha256:a9669901e677171aafbc8924559929ece06e50de498f028b948260975232dc55",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-static-libs_aarch64_mac_hotspot_21.0.2_13.tar.gz",
-    "vendor": "temurin",
-    "version": "21.0.2+13.0.LTS"
-  },
-  {
     "checksum": "sha256:8df56361b834c4681ef304ae9dc8406ce3d79c8572d2d6c2fefcbea55be7d86b",
     "features": null,
     "file_type": "tar.gz",
@@ -33156,66 +32286,6 @@
     "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-jre_aarch64_mac_hotspot_21.0.3_9.tar.gz",
     "vendor": "temurin",
     "version": "21.0.3+9.0.LTS"
-  },
-  {
-    "checksum": "sha256:303c5d79a564aa8391620008afac150861311f07a3c168897196ca17055dc669",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22.0.2%2B9/OpenJDK22U-static-libs_aarch64_mac_hotspot_22.0.2_9.tar.gz",
-    "vendor": "temurin",
-    "version": "22.0.2+9"
-  },
-  {
-    "checksum": "sha256:3980daab3be349fd8613061f7479279f5468c971ec027e2954f6f42a4749730b",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-testimage_aarch64_mac_hotspot_21.0.6_7.tar.gz",
-    "vendor": "temurin",
-    "version": "21.0.6+7.0.LTS"
-  },
-  {
-    "checksum": "sha256:3c2d5e98da47a54d23d8f1fc05d23ceb83c947af99ece30c15a955bf6ade8b3e",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.8.1%2B1/OpenJDK17U-testimage_aarch64_mac_hotspot_17.0.8.1_1.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.8+101"
-  },
-  {
-    "checksum": "sha256:3dfb9c8798941275dd33a507d6c678017720d5cd4b8902f2823907866944f0d6",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-testimage_aarch64_mac_hotspot_20.0.2_9.tar.gz",
-    "vendor": "temurin",
-    "version": "20.0.2+9"
-  },
-  {
-    "checksum": "sha256:1e4b87b7de817fbcfa3b9e4c8534076beb00adb41db3aaffc97e87c46c3b3ea2",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-testimage_aarch64_mac_hotspot_21.0.5_11.tar.gz",
-    "vendor": "temurin",
-    "version": "21.0.5+11.0.LTS"
-  },
-  {
-    "checksum": "sha256:67496d25211ede32ad809b70083423b5e630edd8e0e3fc0613e2ba6b7d9f05ca",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22%2B36/OpenJDK22U-debugimage_aarch64_mac_hotspot_22_36.tar.gz",
-    "vendor": "temurin",
-    "version": "22.0.0+36"
   },
   {
     "checksum": "sha256:ea341e15094e8e892a2d9ff1d4960d1fd05937385278912618905d4b9e7c88e8",
@@ -33228,16 +32298,6 @@
     "version": "11.0.26+4"
   },
   {
-    "checksum": "sha256:1472c54ab9dfba433e458f0a262d7bc0c043c36b8a805871dac993577b5c90b0",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-debugimage_aarch64_mac_hotspot_17.0.12_7.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.12+7"
-  },
-  {
     "checksum": "sha256:ddf491d3d316ac350ee66fc8811bef60fc425d4ec76d626a0a30e3c4183c618a",
     "features": null,
     "file_type": "tar.gz",
@@ -33248,52 +32308,12 @@
     "version": "17.0.10+7"
   },
   {
-    "checksum": "sha256:418df6df5f84ec40ea590b63bd98aed65ca76b9fd53ed315acfe46fdff7bc575",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-testimage_aarch64_mac_hotspot_11.0.22_7.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.22+7"
-  },
-  {
-    "checksum": "sha256:538ed9761a3a5fe376c4e2fe3416d9d78f08d106b2b1a90b4d3c40daa3222fd1",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19%2B36/OpenJDK19U-debugimage_aarch64_mac_hotspot_19_36.tar.gz",
-    "vendor": "temurin",
-    "version": "19.0.0+36"
-  },
-  {
     "checksum": "sha256:12249a1c5386957c93fc372260c483ae921b1ec6248a5136725eabd0abc07f93",
     "features": null,
     "file_type": "tar.gz",
     "image_type": "jre",
     "jvm_impl": "hotspot",
     "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-jre_aarch64_mac_hotspot_21.0.5_11.tar.gz",
-    "vendor": "temurin",
-    "version": "21.0.5+11.0.LTS"
-  },
-  {
-    "checksum": "sha256:f6ad49266e208866bbe16b251cb1961b62ba729b9eac174794d3a24703e797df",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-static-libs_aarch64_mac_hotspot_21.0.4_7.tar.gz",
-    "vendor": "temurin",
-    "version": "21.0.4+7.0.LTS"
-  },
-  {
-    "checksum": "sha256:665c643bab7ae6feb1456e516d6c5be52bc31736b42cbbd7b3f594636d958e85",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.5%2B11/OpenJDK21U-static-libs_aarch64_mac_hotspot_21.0.5_11.tar.gz",
     "vendor": "temurin",
     "version": "21.0.5+11.0.LTS"
   },
@@ -33328,46 +32348,6 @@
     "version": "21.0.5+11.0.LTS"
   },
   {
-    "checksum": "sha256:4e25b38a6df220c5686685e3b5f85c972f0d7324052667b26329f4a25806e6d4",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-testimage_aarch64_mac_hotspot_21.0.3_9.tar.gz",
-    "vendor": "temurin",
-    "version": "21.0.3+9.0.LTS"
-  },
-  {
-    "checksum": "sha256:c2c4d2bcf5f94285e24b471ea3072303c4a7087aa7698736f094b320b7e4ffb5",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21%2B35/OpenJDK21U-static-libs_aarch64_mac_hotspot_21_35.tar.gz",
-    "vendor": "temurin",
-    "version": "21.0.0+35.0.LTS"
-  },
-  {
-    "checksum": "sha256:c6d96aac41d9aca165d2779c42af10759be377b70c057a108f5c0cce0a0be088",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-static-libs_aarch64_mac_hotspot_11.0.20_8.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.20+8"
-  },
-  {
-    "checksum": "sha256:3766573d69b49c821321a6ebce458e6fc70733605adad5fa6fa350bdff55fecb",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%2B12/OpenJDK21U-static-libs_aarch64_mac_hotspot_21.0.1_12.tar.gz",
-    "vendor": "temurin",
-    "version": "21.0.1+12.0.LTS"
-  },
-  {
     "checksum": "sha256:d1b72dcf7a5d18b9b394acb7a64667eb089a82c8112214fb5d1e5a24a4b09202",
     "features": null,
     "file_type": "tar.gz",
@@ -33378,26 +32358,6 @@
     "version": "22.0.2+9"
   },
   {
-    "checksum": "sha256:cbce4ab041a7cd7448e11105aa7b1eb0e88cf9855cf8979f6942376939cd9847",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.13%2B11/OpenJDK17U-static-libs_aarch64_mac_hotspot_17.0.13_11.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.13+11"
-  },
-  {
-    "checksum": "sha256:79119f054b49aa9a123dbd455226069b43b968ed838b079dee744dff8f447404",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23%2B37/OpenJDK23U-static-libs_aarch64_mac_hotspot_23_37.tar.gz",
-    "vendor": "temurin",
-    "version": "23.0.0+37"
-  },
-  {
     "checksum": "sha256:81b475ab029ab224b2c711ccdfa9c25e0300539faad342a4ceefd33772fb38b4",
     "features": null,
     "file_type": "tar.gz",
@@ -33406,16 +32366,6 @@
     "url": "https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-jre_aarch64_mac_hotspot_20.0.2_9.tar.gz",
     "vendor": "temurin",
     "version": "20.0.2+9"
-  },
-  {
-    "checksum": "sha256:26725caeda441a133753c6ad7dc01db88253879c15b53c190479629f2e7d1054",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.17%2B8/OpenJDK11U-debugimage_aarch64_mac_hotspot_11.0.17_8.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.17+8"
   },
   {
     "checksum": "sha256:749993e751f085c7ae713140066a90800075e4aeedfac50a5ed0c5457131c5a0",
@@ -33440,16 +32390,6 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.7%2B9/bellsoft-jdk21.0.7%2B9-macos-aarch64-full.tar.gz",
     "vendor": "liberica",
     "version": "21.0.7+9"
-  },
-  {
-    "checksum": "sha256:7107f5dce59a6701ed8fc09054e7483cea13a657155c8d0e6f9fdde0aba2ebdd",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7/OpenJDK11U-static-libs_aarch64_mac_hotspot_11.0.22_7.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.22+7"
   },
   {
     "checksum": "sha256:8e343d2aaa1d00fdee351d392a4a3f537d81fa4a36f5fdf05e2e2c26d5c50af9",
@@ -33502,56 +32442,6 @@
     "version": "11.0.15+10"
   },
   {
-    "checksum": "sha256:9df512da4092f58bf0686868ad81b166a94b850e371dd5515979e3ebfeeaf7f3",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-testimage_aarch64_mac_hotspot_17.0.12_7.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.12+7"
-  },
-  {
-    "checksum": "sha256:7a061ae077c66548f7b19bd0e4da1755d7efee82701f00923a7e6787058c8e17",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21%2B35/OpenJDK21U-debugimage_aarch64_mac_hotspot_21_35.tar.gz",
-    "vendor": "temurin",
-    "version": "21.0.0+35.0.LTS"
-  },
-  {
-    "checksum": "sha256:533859f27d25d1c49d988681fd0781ce2297ba692eb5f8b44ac7289ee3cc866a",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.9%2B9/OpenJDK17U-testimage_aarch64_mac_hotspot_17.0.9_9.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.9+9"
-  },
-  {
-    "checksum": "sha256:6758f0e8122e885a33c71ff095c64d38a2db62a496f007d7f9d00b2b22babacf",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin18-binaries/releases/download/jdk-18.0.2.1%2B1/OpenJDK18U-static-libs_aarch64_mac_hotspot_18.0.2.1_1.tar.gz",
-    "vendor": "temurin",
-    "version": "18.0.2+101"
-  },
-  {
-    "checksum": "sha256:4a2e1cef3325e8acd957423bef3c175a00fc06b6652673585ff99cc933691236",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-testimage_aarch64_mac_hotspot_11.0.23_9.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.23+9"
-  },
-  {
     "checksum": "sha256:d98b7f5ee6cb4a1c49288bd932008e3e37f9bb5d9a0eb9396ea236786e6ab570",
     "features": null,
     "file_type": "tar.gz",
@@ -33572,26 +32462,6 @@
     "version": "11.0.15+10"
   },
   {
-    "checksum": "sha256:e0a376cfb31b97acf41a1945eb8c7f2be883161b263fac28dbb84e737d9cfd68",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.1%2B12/OpenJDK21U-testimage_aarch64_mac_hotspot_21.0.1_12.tar.gz",
-    "vendor": "temurin",
-    "version": "21.0.1+12.0.LTS"
-  },
-  {
-    "checksum": "sha256:5b8302247d55cf7cb40bded5c25a7d216b24a3acef49f16a91b6098330aeb9b2",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.16%2B8/OpenJDK11U-static-libs_aarch64_mac_hotspot_11.0.16_8.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.16+8"
-  },
-  {
     "checksum": "sha256:57d9e0f0e8639f9f2fb1837518fd83043f23953ff69a677f885aa060994d0c19",
     "features": null,
     "file_type": "tar.gz",
@@ -33600,36 +32470,6 @@
     "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.2%2B13/OpenJDK21U-jdk_aarch64_mac_hotspot_21.0.2_13.tar.gz",
     "vendor": "temurin",
     "version": "21.0.2+13.0.LTS"
-  },
-  {
-    "checksum": "sha256:323573694b1211cd691524f3095c2f8b131281b6a4fd7b48bc9b649dfa869fee",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-static-libs_aarch64_mac_hotspot_24_36.tar.gz",
-    "vendor": "temurin",
-    "version": "24.0.0+36"
-  },
-  {
-    "checksum": "sha256:d4c1d6530254b23ed495a721e84c45a97ecd71bd7cf8fbdffb9a957582dcd872",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-static-libs_aarch64_mac_hotspot_17.0.12_7.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.12+7"
-  },
-  {
-    "checksum": "sha256:9d95bf2b1b1e416099ecbddbf3861c3f02dbc2dc04186669456979007b74c165",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-debugimage_aarch64_mac_hotspot_11.0.20_8.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.20+8"
   },
   {
     "checksum": "sha256:c5704de3e0b6fb977db97b9b50d68dd65630e330375fd721ce9621dc407a4fb2",
@@ -33652,16 +32492,6 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/24.0.1%2B11/bellsoft-jdk24.0.1%2B11-macos-aarch64-lite.zip",
     "vendor": "liberica",
     "version": "24.0.1+11"
-  },
-  {
-    "checksum": "sha256:bfa7ae1287e043fd83154111acfd485745dc0591cbbf8e00e5e3d6a81ead7d7b",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.4.1%2B1/OpenJDK17U-debugimage_aarch64_mac_hotspot_17.0.4.1_1.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.4+101"
   },
   {
     "checksum": "sha256:ee8be9190324285ebc7e9bd47b948eec349221845fa48f1e673e5a1489708750",
@@ -33694,26 +32524,6 @@
     "version": "18.0.2+101"
   },
   {
-    "checksum": "sha256:18257159b1b233f0865dc99fe01489ebdb9b9c3e792d0c2089fd26d0e300d1bb",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin19-binaries/releases/download/jdk-19.0.1%2B10/OpenJDK19U-static-libs_aarch64_mac_hotspot_19.0.1_10.tar.gz",
-    "vendor": "temurin",
-    "version": "19.0.1+10"
-  },
-  {
-    "checksum": "sha256:4e8682a1128292697421e73ab56311ddcdf47c65485e3a16bd0261d05fb6324a",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17%2B35/OpenJDK17-testimage_aarch64_mac_hotspot_17_35.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.0+35"
-  },
-  {
     "checksum": "sha256:46bccb356dba38bf463ea2cc5a8d27ed4e5a51680a7a932f78d5e0c4f8af7c54",
     "features": null,
     "file_type": "tar.gz",
@@ -33722,16 +32532,6 @@
     "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20%2B8/OpenJDK11U-jdk_aarch64_mac_hotspot_11.0.20_8.tar.gz",
     "vendor": "temurin",
     "version": "11.0.20+8"
-  },
-  {
-    "checksum": "sha256:218829b0dc3c1ddb77d2cff1ea72ffb611525f9a03c942d4f92a52197522f882",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20%2B36/OpenJDK20U-debugimage_aarch64_mac_hotspot_20_36.tar.gz",
-    "vendor": "temurin",
-    "version": "20.0.0+36"
   },
   {
     "checksum": "sha256:107d1b16cda1da20d2f7aa45b1bfb8574bbfca2e15bb0ff720ce2678473b00d5",
@@ -33774,46 +32574,6 @@
     "version": "21.0.1+12.0.LTS"
   },
   {
-    "checksum": "sha256:3149227e6f8252dbac6b944903bbc91b7e1d8f369bddfde1328a84b761cba061",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.23%2B9/OpenJDK11U-static-libs_aarch64_mac_hotspot_11.0.23_9.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.23+9"
-  },
-  {
-    "checksum": "sha256:a845bf811682e85639fbf2204cf0c4cf167aefb7c44f78a6d677886d7439a604",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-testimage_aarch64_mac_hotspot_11.0.25_9.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.25+9"
-  },
-  {
-    "checksum": "sha256:a05c5430d24bab7a623926f9dd605cdfb846cc8697769be48ec7ef4c852ac6d5",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.24%2B8/OpenJDK11U-testimage_aarch64_mac_hotspot_11.0.24_8.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.24+8"
-  },
-  {
-    "checksum": "sha256:aaded91e884c6ed143b6efa452a9dbe4083aa5e028e1ebf7178d27ac1f60f881",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-debugimage_aarch64_mac_hotspot_21.0.3_9.tar.gz",
-    "vendor": "temurin",
-    "version": "21.0.3+9.0.LTS"
-  },
-  {
     "checksum": "sha256:fa9783caf9298b7e927b4589435257cf9a2cf12e1eb915992911b988f3d310bc",
     "features": null,
     "file_type": "tar.gz",
@@ -33834,26 +32594,6 @@
     "version": "17.0.8+101"
   },
   {
-    "checksum": "sha256:8408219b19801c91c1d1f18a432ea205bb035bcb48ecbc0d16b8654a86c4217c",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.18%2B10/OpenJDK11U-testimage_aarch64_mac_hotspot_11.0.18_10.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.18+10"
-  },
-  {
-    "checksum": "sha256:584f9f794898e79696ea45168fab259b82f6ce2389f84fb718fb61e3742126cd",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.16.1%2B1/OpenJDK11U-debugimage_aarch64_mac_hotspot_11.0.16.1_1.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.16+101"
-  },
-  {
     "checksum": "sha256:2a5cbc2888f8e382c7d0a5bf2c6d2c3bad120ceff51b00d3a62805dae4473c02",
     "features": null,
     "file_type": "tar.gz",
@@ -33872,16 +32612,6 @@
     "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.22%2B7.1/OpenJDK11U-jdk_aarch64_mac_hotspot_11.0.22_7.tar.gz",
     "vendor": "temurin",
     "version": "11.0.22+7.1"
-  },
-  {
-    "checksum": "sha256:42688587ff6cf9c6d378acff485da08a9f70afeac9ed690255e1ef7fe0adaa50",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20.1%2B1/OpenJDK11U-debugimage_aarch64_mac_hotspot_11.0.20.1_1.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.20+101"
   },
   {
     "checksum": "sha256:f2f23d6629060eb1692c714bfda27dd5f100cc560578c7cdd9df920a8ac1d453",
@@ -33914,26 +32644,6 @@
     "version": "17.0.3+7"
   },
   {
-    "checksum": "sha256:92ec4536f515c5d5d7db7a84597bc5f2c795cf0cee60064bfa5680c3bbb7d0a6",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.3%2B7/OpenJDK17U-static-libs_aarch64_mac_hotspot_17.0.3_7.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.3+7"
-  },
-  {
-    "checksum": "sha256:ca114171f1afac5c37446f8723c9ec08516df019fe0636cc16d22b5da716564a",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-testimage_aarch64_mac_hotspot_17.0.14_7.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.14+7"
-  },
-  {
     "checksum": "sha256:c5ec423f52d8f3aa632941f29fd289f2e31dce5fe6f3abed9b72bd374f54cd41",
     "features": null,
     "file_type": "tar.gz",
@@ -33964,16 +32674,6 @@
     "version": "11.0.16+101"
   },
   {
-    "checksum": "sha256:8bc0016628c2e93f1ecac9c0c4e909a18c29750b2d5915ebfeac33c819728020",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23.0.2%2B7/OpenJDK23U-debugimage_aarch64_mac_hotspot_23.0.2_7.tar.gz",
-    "vendor": "temurin",
-    "version": "23.0.2+7"
-  },
-  {
     "checksum": "sha256:09a162c58dd801f7cfacd87e99703ed11fb439adc71cfa14ceb2d3194eaca01c",
     "features": null,
     "file_type": "tar.gz",
@@ -33982,16 +32682,6 @@
     "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-jdk_aarch64_mac_hotspot_17.0.11_9.tar.gz",
     "vendor": "temurin",
     "version": "17.0.11+9"
-  },
-  {
-    "checksum": "sha256:794e00a4a73540b0502655d7498a4f0ecb5d27d86670e93e5adf5b9af247a31a",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23.0.2%2B7/OpenJDK23U-testimage_aarch64_mac_hotspot_23.0.2_7.tar.gz",
-    "vendor": "temurin",
-    "version": "23.0.2+7"
   },
   {
     "checksum": "sha256:57cdb9f131dc08794dc346c5da2c186c9c4dde15b3b08dfd0ce3f3ce93d8a7c5",
@@ -34068,26 +32758,6 @@
     "version": "18.0.1+10"
   },
   {
-    "checksum": "sha256:4bf7f607422aeaa1104b753ad998fd66c7c8082d8d96d576800a8d37af240e3a",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.7%2B7/OpenJDK17U-debugimage_aarch64_mac_hotspot_17.0.7_7.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.7+7"
-  },
-  {
-    "checksum": "sha256:38bafb2884531e3a8f8ab55b8470ed7937d8c52639e3a201c7d396f748c0fff8",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.5%2B8/OpenJDK17U-debugimage_aarch64_mac_hotspot_17.0.5_8.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.5+8"
-  },
-  {
     "checksum": "sha256:dcf69a21601d9b1b25454bbad4f0f32784bb42cdbe4063492e15a851b74cb61e",
     "features": null,
     "file_type": "tar.gz",
@@ -34096,46 +32766,6 @@
     "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-jdk_aarch64_mac_hotspot_21.0.4_7.tar.gz",
     "vendor": "temurin",
     "version": "21.0.4+7.0.LTS"
-  },
-  {
-    "checksum": "sha256:e215644051d42f448b9ca6488916f681159d21cb4ae086ce2a0c24958e090920",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.1%2B9/OpenJDK20U-static-libs_aarch64_mac_hotspot_20.0.1_9.tar.gz",
-    "vendor": "temurin",
-    "version": "20.0.1+9"
-  },
-  {
-    "checksum": "sha256:e428fe6f82f53d1a58f7cfb4a2bcdd4d35723de678d67ca94c41a13d9afec5e0",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-static-libs_aarch64_mac_hotspot_21.0.6_7.tar.gz",
-    "vendor": "temurin",
-    "version": "21.0.6+7.0.LTS"
-  },
-  {
-    "checksum": "sha256:8f36f6ef068ed02d0ae6f5021d9832cb9be0eb5c25728ae352910c28f72d7935",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20%2B36/OpenJDK20U-testimage_aarch64_mac_hotspot_20_36.tar.gz",
-    "vendor": "temurin",
-    "version": "20.0.0+36"
-  },
-  {
-    "checksum": "sha256:ea5cce108fddfc3c5a92d7b018cbef8c743b2f359facdd316597501bf855af84",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.3%2B9/OpenJDK21U-static-libs_aarch64_mac_hotspot_21.0.3_9.tar.gz",
-    "vendor": "temurin",
-    "version": "21.0.3+9.0.LTS"
   },
   {
     "checksum": "sha256:9e69810a50c8183e01429243d0bb112e381a122c6e7be936b7c13c3cfe7b29a0",
@@ -34148,16 +32778,6 @@
     "version": "23.0.1+11"
   },
   {
-    "checksum": "sha256:355126c76ef4b851a8a3714b6cb198327ca08c6ba5f5fe6c850891df0a64d0c5",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24%2B36/OpenJDK24U-testimage_aarch64_mac_hotspot_24_36.tar.gz",
-    "vendor": "temurin",
-    "version": "24.0.0+36"
-  },
-  {
     "checksum": "sha256:9fb89125d5807f42cec588824fde487be42273a89c55ccfc5f44efda64e03e2c",
     "features": null,
     "file_type": "tar.gz",
@@ -34166,26 +32786,6 @@
     "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_aarch64_mac_hotspot_17.0.14_7.tar.gz",
     "vendor": "temurin",
     "version": "17.0.14+7"
-  },
-  {
-    "checksum": "sha256:8a53530c7641f6b0c79e208b4867687bc78c599f516c2d97179db56e1e7fc48e",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23.0.1%2B11/OpenJDK23U-testimage_aarch64_mac_hotspot_23.0.1_11.tar.gz",
-    "vendor": "temurin",
-    "version": "23.0.1+11"
-  },
-  {
-    "checksum": "sha256:6347a24d37a1c438d03affbb3bae27ac31ffcb082318882e24ec8ba6afbe217b",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.20.1%2B1/OpenJDK11U-testimage_aarch64_mac_hotspot_11.0.20.1_1.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.20+101"
   },
   {
     "checksum": "sha256:e29029d35608f4e415e49c7990ebe0f42d0ecb7dc2d4d444e41adf3e3287f922",
@@ -34198,16 +32798,6 @@
     "version": "23.0.1+11"
   },
   {
-    "checksum": "sha256:c68c92dcb53df6945605f2496dba27ba32f6771da7496f2fe326dc8752d644c5",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.6%2B10/OpenJDK17U-debugimage_aarch64_mac_hotspot_17.0.6_10.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.6+10"
-  },
-  {
     "checksum": "sha256:56b86d4f5745ba44894310c3417755e4b4aaa62d4a17a5cb4dab6200c14c56fe",
     "features": null,
     "file_type": "tar.gz",
@@ -34216,16 +32806,6 @@
     "url": "https://github.com/adoptium/temurin23-binaries/releases/download/jdk-23.0.2%2B7/OpenJDK23U-jre_aarch64_mac_hotspot_23.0.2_7.tar.gz",
     "vendor": "temurin",
     "version": "23.0.2+7"
-  },
-  {
-    "checksum": "sha256:46b964871bbb75f06b7066c83ab18c83e711aa0bdbd1c66f885b89d01ca3ac5b",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin20-binaries/releases/download/jdk-20.0.2%2B9/OpenJDK20U-debugimage_aarch64_mac_hotspot_20.0.2_9.tar.gz",
-    "vendor": "temurin",
-    "version": "20.0.2+9"
   },
   {
     "checksum": "sha1:e4a15d713cf0f33132074267cb6725ae9a1f3cc0",
@@ -34246,36 +32826,6 @@
     "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jdk_aarch64_mac_hotspot_21.0.6_7.tar.gz",
     "vendor": "temurin",
     "version": "21.0.6+7.0.LTS"
-  },
-  {
-    "checksum": "sha256:b93a10815f75eba037aee05c30a73dda663842491e17f2da5a234b0b51029a83",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.10%2B7/OpenJDK17U-static-libs_aarch64_mac_hotspot_17.0.10_7.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.10+7"
-  },
-  {
-    "checksum": "sha256:580954daa61ad373926aba14f4bfabee870dc6b11073f7d056a0b3a5ee6a5b3f",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.4%2B7/OpenJDK21U-debugimage_aarch64_mac_hotspot_21.0.4_7.tar.gz",
-    "vendor": "temurin",
-    "version": "21.0.4+7.0.LTS"
-  },
-  {
-    "checksum": "sha256:2ad9f4790c2091b0621cc8928fa6b2002e9742c9a2a8901652cfb4b25c8ab4d9",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin22-binaries/releases/download/jdk-22.0.1%2B8/OpenJDK22U-testimage_aarch64_mac_hotspot_22.0.1_8.tar.gz",
-    "vendor": "temurin",
-    "version": "22.0.1+8"
   },
   {
     "checksum": "sha256:823777266415347983bbd87ccd8136537242ff27e62f307b7e8521494c665f0d",
@@ -34308,36 +32858,6 @@
     "version": "20.0.0+36"
   },
   {
-    "checksum": "sha256:2d7edb75520f825c661e4f12922ad201492640e7af3bde8f57093e2ea678e3d4",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.2%2B8/OpenJDK17U-debugimage_aarch64_mac_hotspot_17.0.2_8.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.2+8"
-  },
-  {
-    "checksum": "sha256:637d521ae50b33440bf05d9eb2833b6d11a04929964f1d90b17d2dc1dd85b579",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-debugimage_aarch64_mac_hotspot_17.0.1_12.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.1+12"
-  },
-  {
-    "checksum": "sha256:381ac168a3ed50dcc62fef84d0d70f5cfbb8108968d49ee2b0bd8316380fa6f5",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.11%2B9/OpenJDK17U-testimage_aarch64_mac_hotspot_17.0.11_9.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.11+9"
-  },
-  {
     "checksum": "sha256:02073590da24421e119ddebe6b061bf132fa68694c60706f092d32d963822554",
     "features": null,
     "file_type": "tar.gz",
@@ -34346,16 +32866,6 @@
     "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.1%2B12/OpenJDK17U-jdk_aarch64_mac_hotspot_17.0.1_12.tar.gz",
     "vendor": "temurin",
     "version": "17.0.1+12"
-  },
-  {
-    "checksum": "sha256:b967ad948b239372e153301f1245a1987b7135279da09981690cdf8532b81e4b",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.21%2B9/OpenJDK11U-testimage_aarch64_mac_hotspot_11.0.21_9.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.21+9"
   },
   {
     "checksum": "sha1:99387b71fa0640a4cbcb47e385adee4ace89a738",
@@ -35292,56 +33802,6 @@
     "version": "17.0.15+10"
   },
   {
-    "checksum": "sha256:9900aec36271018b13d70210ac321bdaca0b991dda1047c0678c1d6aefc2dca5",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.15%2B6/OpenJDK17U-testimage_aarch64_mac_hotspot_17.0.15_6.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.15+6"
-  },
-  {
-    "checksum": "sha256:0cdab2fd4b6e08ac047e4a0232320e71e9e620249040cee6e58bb83cfd6efa52",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-static-libs_aarch64_mac_hotspot_21.0.7_6.tar.gz",
-    "vendor": "temurin",
-    "version": "21.0.7+6.0.LTS"
-  },
-  {
-    "checksum": "sha256:35bc6b4a8f3d61212449a4d95902b3086e6cf5a7d0b0214fb6d18f793735f379",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-testimage_aarch64_mac_hotspot_21.0.7_6.tar.gz",
-    "vendor": "temurin",
-    "version": "21.0.7+6.0.LTS"
-  },
-  {
-    "checksum": "sha256:4149a31aea60269ad781d4da7ce0436309ec31947fae1a1c59980fbcd0a15682",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.7%2B6/OpenJDK21U-debugimage_aarch64_mac_hotspot_21.0.7_6.tar.gz",
-    "vendor": "temurin",
-    "version": "21.0.7+6.0.LTS"
-  },
-  {
-    "checksum": "sha256:bdbef66bd6ffff6832afd2d3236f4c7cf50b2c85264d1b65e9d684563ea0fc8c",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.15%2B6/OpenJDK17U-static-libs_aarch64_mac_hotspot_17.0.15_6.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.15+6"
-  },
-  {
     "checksum": "sha256:1a2fa2bb9ea059cf2c1ab3e296a98e006fb6fdad2bd19ce52df48794eaa1836a",
     "features": null,
     "file_type": "tar.gz",
@@ -35358,16 +33818,6 @@
     "image_type": "jre",
     "jvm_impl": "hotspot",
     "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.15%2B6/OpenJDK17U-jre_aarch64_mac_hotspot_17.0.15_6.tar.gz",
-    "vendor": "temurin",
-    "version": "17.0.15+6"
-  },
-  {
-    "checksum": "sha256:e73d18826d79a67713aad59cdb91577fb0601b4f33c7b50dbad72a31669de3a5",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.15%2B6/OpenJDK17U-debugimage_aarch64_mac_hotspot_17.0.15_6.tar.gz",
     "vendor": "temurin",
     "version": "17.0.15+6"
   },
@@ -35392,16 +33842,6 @@
     "version": "21.0.7+6.0.LTS"
   },
   {
-    "checksum": "sha256:f318d8c339cdb56ec6ce91a25a354a6fff489731910771170f1562d4ab5f80eb",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-testimage_aarch64_mac_hotspot_24.0.1_9.tar.gz",
-    "vendor": "temurin",
-    "version": "24.0.1+9"
-  },
-  {
     "checksum": "sha256:e3b1fe4cd3da335d07d62f335ae958f5a43c594be1ba333a06a03a49d2212cd4",
     "features": null,
     "file_type": "tar.gz",
@@ -35418,26 +33858,6 @@
     "image_type": "jre",
     "jvm_impl": "hotspot",
     "url": "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-jre_aarch64_mac_hotspot_24.0.1_9.tar.gz",
-    "vendor": "temurin",
-    "version": "24.0.1+9"
-  },
-  {
-    "checksum": "sha256:b9b91721e287f710711d3b283554df0680c93d9faa8aed0f8011c9d1c9c723ba",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-static-libs_aarch64_mac_hotspot_24.0.1_9.tar.gz",
-    "vendor": "temurin",
-    "version": "24.0.1+9"
-  },
-  {
-    "checksum": "sha256:fbefb3cd4fd91963bb53236f155f56451731d40f20bd8e4d11890488b57e89ab",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.1%2B9/OpenJDK24U-debugimage_aarch64_mac_hotspot_24.0.1_9.tar.gz",
     "vendor": "temurin",
     "version": "24.0.1+9"
   },
@@ -35572,36 +33992,6 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu17.58.21-ca-fx-jre17.0.15-macosx_aarch64.zip",
     "vendor": "zulu",
     "version": "17.58.21.0"
-  },
-  {
-    "checksum": "sha256:07380e03ad3ab910c8af0f40fd49b88af29248b5005bcd33e0ce92ded56f56bf",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "staticlibs",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.27%2B6/OpenJDK11U-static-libs_aarch64_mac_hotspot_11.0.27_6.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.27+6"
-  },
-  {
-    "checksum": "sha256:3bf33272a84064905709cd86fc204f70971b53f4201b3da69f9e20cb79280622",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "testimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.27%2B6/OpenJDK11U-testimage_aarch64_mac_hotspot_11.0.27_6.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.27+6"
-  },
-  {
-    "checksum": "sha256:f11d51f480707c40ba8edc17aeff6bfd2c78719a6df85e2716b883b641788f90",
-    "features": null,
-    "file_type": "tar.gz",
-    "image_type": "debugimage",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.27%2B6/OpenJDK11U-debugimage_aarch64_mac_hotspot_11.0.27_6.tar.gz",
-    "vendor": "temurin",
-    "version": "11.0.27+6"
   },
   {
     "checksum": "sha256:780ae402dcd93fea0fee10d02dcd0a0b72cb7298f2ef4dddbad4d54c31a40a4d",
