@@ -644,5 +644,42 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.7-windows-aarch64-b982.16.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.7-b982.16"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jre25%2B21-ea-windows-aarch64-leyden.zip",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden",
+      "lite"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jdk25%2B21-ea-windows-aarch64-lite-leyden.zip",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jdk25%2B21-ea-windows-aarch64-leyden.zip",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
   }
 ]

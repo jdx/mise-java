@@ -6378,6 +6378,18 @@
     "version": "11.0.11-eabeta.4"
   },
   {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jdk25%2B21-ea-linux-aarch64-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
+  },
+  {
     "checksum": "sha256:2ae42565f874fb478f46367aeb60b5fc0880d8fbad89f1b3475aaf04389884bb",
     "features": null,
     "file_type": "tar.gz",
@@ -15950,6 +15962,19 @@
     "version": "25.0.0-ea.21"
   },
   {
+    "checksum": null,
+    "features": [
+      "leyden",
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jdk25%2B21-ea-linux-aarch64-lite-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
+  },
+  {
     "checksum": "sha512:ff5c784d6d2ca08c1a630b583664a04067d3518a7ffec2f9a8aa94dc6d97a0abf9d7e5248050e1556c04fba9cceb6680c632426255a60ad33b77e33ee3ecdcbe",
     "features": null,
     "file_type": "tar.gz",
@@ -16146,5 +16171,57 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B22/sapmachine-jdk-25-ea.22_linux-aarch64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "25.0.0-ea.22"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jre25%2B21-ea-linux-aarch64-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden",
+      "lite",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jdk25%2B21-ea-linux-aarch64-musl-lite-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jre25%2B21-ea-linux-aarch64-musl-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jdk25%2B21-ea-linux-aarch64-musl-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
   }
 ]

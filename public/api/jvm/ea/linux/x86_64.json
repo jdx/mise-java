@@ -5618,6 +5618,18 @@
     "version": "23.0.0+25-ea"
   },
   {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jdk25%2B21-ea-linux-amd64-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
+  },
+  {
     "checksum": "sha256:245ab7fe21688b5db11659722850eab8ba3a2e2603322cd91c6c920f3235af9c",
     "features": [
       "musl"
@@ -33668,6 +33680,19 @@
     "version": "25.0.0-ea+21"
   },
   {
+    "checksum": null,
+    "features": [
+      "leyden",
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jdk25%2B21-ea-linux-amd64-lite-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
+  },
+  {
     "checksum": "sha256:ce6d616a09c8fb4391dbe165428d33b1751a228581faf829ac0610db8120ddbf",
     "features": null,
     "file_type": "tar.gz",
@@ -33892,6 +33917,58 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_lb-21.0.7-linux-x64-b982.16.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.7-b982.16"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jdk25%2B21-ea-linux-x64-musl-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden",
+      "lite",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jdk25%2B21-ea-linux-x64-musl-lite-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jre25%2B21-ea-linux-x64-musl-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "leyden"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B21-ea-leyden/bellsoft-jre25%2B21-ea-linux-amd64-leyden.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.0+21-ea"
   },
   {
     "checksum": "sha512:6b185d728a7cc2bf7fffc156d0bb0ed3810425adea3da90807ec2fcdbdc17820734e38e4211e13b5b157867d8586103596ec70a815abff0d309a8173951c88f4",
