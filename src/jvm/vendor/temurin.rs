@@ -68,11 +68,15 @@ impl Vendor for Temurin {
     }
 }
 
-fn normalize_features(features: &str) -> Option<Vec<String>> {
-    match features {
-        "large" => Some(vec!["large_heap".to_string()]),
-        _ => None,
+fn normalize_features(binary: Binary) -> Option<Vec<String>> {
+    let mut features = Vec::new();
+    if binary.heap_size == "large" {
+        features.push("large_heap".to_string());
     }
+    if binary.os == "alpine-linux" || binary.c_lib.as_deref() == Some("musl") {
+        features.push("musl".to_string());
+    }
+    if features.is_empty() { None } else { Some(features) }
 }
 
 fn map_release(release: &Release) -> Vec<JvmData> {
@@ -90,7 +94,7 @@ fn map_release(release: &Release) -> Vec<JvmData> {
             checksum: package_checksum.and_then(|c| format!("sha256:{}", c).into()),
             checksum_url: package_checksum_link,
             image_type: binary.image_type.clone(),
-            features: normalize_features(binary.heap_size.clone().as_str()),
+            features: normalize_features(binary.clone()),
             file_type: package_extension.unwrap_or_default().to_string(),
             filename: package_name.unwrap_or_default().to_string(),
             java_version: release.version_data.openjdk_version.clone().to_string(),
@@ -136,6 +140,7 @@ struct VersionData {
 #[derive(Clone, Debug, Deserialize, Serialize)]
 struct Binary {
     architecture: String,
+    c_lib: Option<String>,
     heap_size: String,
     image_type: String,
     installer: Option<Installer>,
@@ -160,4 +165,41 @@ struct Package {
     link: String,
     name: String,
     size: u64,
+}
+
+#[cfg(test)]
+mod tests {
+    use crate::jvm::vendor::temurin::{Binary, normalize_features};
+
+    #[test]
+    fn test_normalize_features() {
+        for (values, expected) in [
+            (
+                (None, "large".to_string(), "linux".to_string()),
+                Some(vec!["large_heap".to_string()]),
+            ),
+            ((None, "normal".to_string(), "linux".to_string()), None),
+            (
+                (None, "normal".to_string(), "alpine-linux".to_string()),
+                Some(vec!["musl".to_string()]),
+            ),
+            (
+                (Some("musl".to_string()), "normal".to_string(), "linux".to_string()),
+                Some(vec!["musl".to_string()]),
+            ),
+        ] {
+            let binary = Binary {
+                architecture: "x64".to_string(),
+                c_lib: values.0,
+                heap_size: values.1,
+                image_type: "jdk".to_string(),
+                installer: None,
+                jvm_impl: "temurin".to_string(),
+                os: values.2,
+                package: None,
+            };
+            let actual = normalize_features(binary.clone());
+            assert_eq!(expected, actual);
+        }
+    }
 }
