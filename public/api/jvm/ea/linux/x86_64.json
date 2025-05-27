@@ -34333,6 +34333,16 @@
     "version": "25.0.0-ea.23"
   },
   {
+    "checksum": "sha256:b86e75eeece468e8ab3e9e9eacb9097b7e195d2dd22c0454721464ce1c5dc56d",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.0.37-beta-jdk25.0.0-beta.23-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.0.37.0"
+  },
+  {
     "checksum": "sha256:e47e49dfbb2ad32aa825a587f7aa6829a8ba6fac2b7f60d4cf5f38d8c5241c3e",
     "features": null,
     "file_type": "tar.gz",
@@ -34341,5 +34351,39 @@
     "url": "https://download.java.net/java/early_access/jdk25/24/GPL/openjdk-25-ea+24_linux-x64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "25.0.0-ea+24"
+  },
+  {
+    "checksum": "sha256:a358cde1eb7f6dad5e2b72c818ec48d2da8a0ce8ec4054e816332446e3d2407e",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.0.35-beta-jdk25.0.0-beta.22-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.0.35.0"
+  },
+  {
+    "checksum": "sha256:b8f5c45be766e22913fe663c61dfb66e8c436105cefda329abf32e31f34d7f89",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.0.37-beta-jdk25.0.0-beta.23-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.0.37.0"
+  },
+  {
+    "checksum": "sha256:09a370087ddb97c9846514f2a6f515aaef7f2e6c81bdca96b2822103a9ae0964",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.0.35-beta-jdk25.0.0-beta.22-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.0.35.0"
   }
 ]
