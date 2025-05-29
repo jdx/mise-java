@@ -51649,5 +51649,27 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_lb-21.0.7-linux-x64-b1020.35.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.7-b1020.35"
+  },
+  {
+    "checksum": "sha256:da1487b2517159d5e54d4fdeebd890a1cb2926a9ba01af9d9e34645bc65456ef",
+    "features": null,
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.7.0.7%2B6_jdk-21.0.7-ga/Alibaba_Dragonwell_Extended_21.0.7.0.7.6_x64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "21.0.7.0.7.6"
+  },
+  {
+    "checksum": "sha256:c12b3e0b5e5301fe82526dffd991fc4962efd97f47597b15d3ac5418a8c0fafc",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.7.0.7%2B6_jdk-21.0.7-ga/Alibaba_Dragonwell_Extended_21.0.7.0.7.6_x64_alpine-linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "21.0.7.0.7.6"
   }
 ]
