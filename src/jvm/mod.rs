@@ -10,6 +10,7 @@ pub struct JvmData {
     pub architecture: String,
     pub checksum: Option<String>,
     pub checksum_url: Option<String>,
+    #[serde(serialize_with = "empty_vec_if_none")]
     pub features: Option<Vec<String>>,
     pub file_type: String,
     pub filename: String,
@@ -22,6 +23,16 @@ pub struct JvmData {
     pub url: String,
     pub vendor: String,
     pub version: String,
+}
+
+fn empty_vec_if_none<S>(x: &Option<Vec<String>>, s: S) -> Result<S::Ok, S::Error>
+where
+    S: serde::Serializer,
+{
+    match x {
+        Some(v) => s.serialize_some(v),
+        None => s.serialize_some(&Vec::<String>::new()),
+    }
 }
 
 // ensure this matches the UNIQUE constraint in the database
