@@ -26,20 +26,22 @@ impl Vendor for OpenJDK {
     }
 
     fn fetch_data(&self, jvm_data: &mut HashSet<JvmData>) -> eyre::Result<()> {
-        let anchors: Vec<AnchorElement> = vec!["archive", "21", "22", "23", "24", "25", "leyden", "loom", "valhalla"]
-            .into_par_iter()
-            .flat_map(|version| {
-                let url = format!("http://jdk.java.net/{version}/");
-                let releases_html = match HTTP.get_text(url) {
-                    Ok(releases_html) => releases_html,
-                    Err(e) => {
-                        error!("[openjdk] error fetching releases: {}", e);
-                        "".to_string()
-                    }
-                };
-                anchors_from_html(&releases_html, "a:is([href$='.tar.gz'], [href$='.zip'])")
-            })
-            .collect();
+        let anchors: Vec<AnchorElement> = vec![
+            "archive", "21", "22", "23", "24", "25", "26", "leyden", "loom", "valhalla",
+        ]
+        .into_par_iter()
+        .flat_map(|version| {
+            let url = format!("http://jdk.java.net/{version}/");
+            let releases_html = match HTTP.get_text(url) {
+                Ok(releases_html) => releases_html,
+                Err(e) => {
+                    error!("[openjdk] error fetching releases: {}", e);
+                    "".to_string()
+                }
+            };
+            anchors_from_html(&releases_html, "a:is([href$='.tar.gz'], [href$='.zip'])")
+        })
+        .collect();
 
         let data = anchors
             .into_par_iter()
