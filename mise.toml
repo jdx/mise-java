@@ -44,17 +44,27 @@ curl -X POST "https://api.cloudflare.com/client/v4/zones/${CLOUDFLARE_ZONE_ID}/p
   --data "{\"hosts\":[\"${CLOUDFLARE_HOST}\"]}"
 '''
 
-[tasks."run:fetch"]
+[tasks."fetch"]
 run = '''
 cargo run -- fetch
 '''
 
-[tasks."run:export:release-type"]
+[tasks."export:release-type"]
 run = '''
 cargo run -- export release-type --pretty -o linux,macosx,windows -a aarch64,arm32,i686,x86_64
 '''
 
-[tasks."run:export:vendor"]
+[tasks."export:mise"]
+run = '''
+cargo run -- export release-type \
+          --pretty \
+          -o 'linux,macosx,windows' \
+          -a 'aarch64,arm32,i686,x86_64' \
+          -e 'architecture,checksum_url,filename,java_version,os,release_type,size' \
+          -f 'file_type=tar.gz,zip&image_type=jre,jdk&features=!certified,!debug,!fastdebug,!freetype'
+'''
+
+[tasks."export:vendor"]
 run = '''
 cargo run -- export vendor --pretty -o linux,macosx,windows -a aarch64,arm32,i686,x86_64
 '''
