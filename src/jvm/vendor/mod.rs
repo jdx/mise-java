@@ -23,6 +23,7 @@ pub mod microsoft;
 pub mod openjdk;
 pub mod oracle;
 pub mod oracle_graalvm;
+pub mod redhat;
 pub mod sapmachine;
 pub mod semeru;
 pub mod temurin;
@@ -42,6 +43,7 @@ pub static VENDORS: LazyLock<Vec<Arc<dyn Vendor>>> = LazyLock::new(|| {
         Arc::new(openjdk::OpenJDK {}),
         Arc::new(oracle::Oracle {}),
         Arc::new(oracle_graalvm::OracleGraalVM {}),
+        Arc::new(redhat::RedHat {}),
         Arc::new(sapmachine::SAPMachine {}),
         Arc::new(semeru::Semeru {}),
         Arc::new(trava::Trava {}),
@@ -83,9 +85,10 @@ pub struct AnchorElement {
     href: String,
 }
 
-/// Returns the file extension of a package which is either `apk`, `deb`, `dmg`, `msi`, `pkg`, `rpm`, `tar.gz` or `zip`
+/// Returns the file extension of a package which is either `apk`, `deb`, `dmg`, `msi`, `pkg`, `rpm`,
+/// `tar.gz`, `tar.xz` or `zip`
 fn get_extension(package_name: &str) -> String {
-    let re = regex::Regex::new(r"^.*\.(apk|deb|dmg|msi|pkg|rpm|tar\.gz|zip)$").unwrap();
+    let re = regex::Regex::new(r"^.*\.(apk|deb|dmg|msi|pkg|rpm|tar\.gz|tar\.xz|zip)$").unwrap();
     re.replace(package_name, "$1").to_string()
 }
 

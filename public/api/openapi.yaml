@@ -90,7 +90,7 @@ components:
     vendors:
       type: "string"
       description: "Vendor of the JVM"
-      enum: 
+      enum:
         - "corretto"
         - "dragonwell"
         - "graalvm"
@@ -102,6 +102,7 @@ components:
         - "openjdk"
         - "oracle"
         - "oracle-graalvm"
+        - "redhat"
         - "sapmachine"
         - "semeru"
         - "temurin"

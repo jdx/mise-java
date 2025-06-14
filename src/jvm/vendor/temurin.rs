@@ -57,7 +57,10 @@ impl Vendor for Temurin {
                             });
                             page += 1;
                         }
-                        Err(_) => break,
+                        Err(e) => {
+                            debug!("[temurin] error fetching page for release [{}] {}", release, e);
+                            break;
+                        }
                     }
                 }
                 data
