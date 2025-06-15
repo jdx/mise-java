@@ -17040,16 +17040,6 @@
     "version": "11.0.25+9_openj9-0.48.0"
   },
   {
-    "checksum": "sha256:1ad91cf0d406e1168caa4f3eef746d0856aa00517582d565ef73e9c5487820b8",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jre",
-    "jvm_impl": "openj9",
-    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u352-b08_openj9-0.35.0/ibm-semeru-open-jre_x64_windows_8u352b08_openj9-0.35.0.zip",
-    "vendor": "semeru",
-    "version": "8u352-b08_openj9-0.35.0"
-  },
-  {
     "checksum": "sha256:67c664565585318df9b33530a881b174316cb5a56230dafe65214f4b35d96be5",
     "features": [],
     "file_type": "zip",
@@ -17178,16 +17168,6 @@
     "url": "https://github.com/ibmruntimes/semeru20-binaries/releases/download/jdk-20.0.2%2B9_openj9-0.40.0/ibm-semeru-open-jre_x64_windows_20.0.2_9_openj9-0.40.0.zip",
     "vendor": "semeru",
     "version": "20.0.2+9_openj9-0.40.0"
-  },
-  {
-    "checksum": "sha256:8f154d532b79ddab2b18b774a9c7a09d49a635f389b69806bd8db01dd16f4965",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "openj9",
-    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u352-b08_openj9-0.35.0/ibm-semeru-open-jdk_x64_windows_8u352b08_openj9-0.35.0.zip",
-    "vendor": "semeru",
-    "version": "8u352-b08_openj9-0.35.0"
   },
   {
     "checksum": "sha256:8def7ae7b35996ba94b3cd9a660513a6b4be95eab35d51131e804a90625eec5b",
@@ -31515,16 +31495,6 @@
     "version": "11.0.25.21.9"
   },
   {
-    "checksum": "sha256:f8a329d60eeab1d962fba8c2c144febbdd7c3f95621dc8d89854f621b06f0b7b",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.23.22_jdk8u432-ga/Alibaba_Dragonwell_Extended_8.23.22_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "8.23.22"
-  },
-  {
     "checksum": "sha256:c52fff27609f7165a03b4f34c26e41b591b7fbfc3b061b5073a0e6c0df592661",
     "features": [],
     "file_type": "zip",
@@ -31533,16 +31503,6 @@
     "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-standard-8.18.19_jdk8u402-ga/Alibaba_Dragonwell_Standard_8.18.19_x64_windows.zip",
     "vendor": "dragonwell",
     "version": "8.18.19"
-  },
-  {
-    "checksum": "sha256:42f92a5ea4affdfa797f1efabe087929cacb958c2b339c3c3aa44f17406cc054",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.16.17_jdk8u382-ga/Alibaba_Dragonwell_Extended_8.16.17_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "8.16.17"
   },
   {
     "checksum": "sha256:57c384cc9fadc31601284110dbaaa880cafe8ab829ddb1a6d33a5c9e022511d6",
@@ -31565,16 +31525,6 @@
     "version": "21.0.6.0.6.7"
   },
   {
-    "checksum": "sha256:198fcfde686de580dcf2607e3a97e1b241b1a3a12c07e6a2abc62f9560c31d05",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.17.13_jdk-11.0.17-ga/Alibaba_Dragonwell_Extended_11.0.17.13.8_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "11.0.17.13.8"
-  },
-  {
     "checksum": "sha256:023bcc6e1141360c3464495385d3c2c434e4c76c284570d18a22b0d16e7f4a2d",
     "features": [],
     "file_type": "zip",
@@ -31583,26 +31533,6 @@
     "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-standard-8.20.21_jdk8u422-ga/Alibaba_Dragonwell_Standard_8.20.21_x64_windows.zip",
     "vendor": "dragonwell",
     "version": "8.20.21"
-  },
-  {
-    "checksum": "sha256:909c2b83ff4d719f3890838dd216f9685793af8939dc8befa0ef8489eff4c5d6",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.20.17_jdk-11.0.20-ga/Alibaba_Dragonwell_Extended_11.0.20.17.8_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "11.0.20.17.8"
-  },
-  {
-    "checksum": "sha256:babc13071a6aad2c9ba16e31f0e4c2fef54f9984e71e5f348ab8b7023dfc6cba",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.19.15_jdk-11.0.19-ga/Alibaba_Dragonwell_Extended_11.0.19.15.7_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "11.0.19.15.7"
   },
   {
     "checksum": null,
@@ -31635,26 +31565,6 @@
     "version": "8.9.10"
   },
   {
-    "checksum": "sha256:6b1c6165d5cb807579af7f90f05669edff34499c91d624941921a83f3f52ec62",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.13.14_jdk8u352-ga/Alibaba_Dragonwell_Extended_8.13.14_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "8.13.14"
-  },
-  {
-    "checksum": "sha256:904bacf97af8039ba16d9cf982fd1fca7b28e8c455816edc7692bf20fbf9589b",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.26.23_jdk-11.0.26-ga/Alibaba_Dragonwell_Extended_11.0.26.23.4_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "11.0.26.23.4"
-  },
-  {
     "checksum": "sha256:e9ddd27b24040d63c0663a11c8f7f100c8d2cca7461d4a19c36e12129f0ae8de",
     "features": [],
     "file_type": "zip",
@@ -31663,26 +31573,6 @@
     "url": "https://github.com/dragonwell-project/dragonwell17/releases/download/dragonwell-17.0.3.0.3%2B7_jdk-17.0.3-ga/Alibaba_Dragonwell_17.0.3.0.3%2B7_x64_windows.zip",
     "vendor": "dragonwell",
     "version": "17.0.3.0.3+7"
-  },
-  {
-    "checksum": "sha256:f6ad9666d1ed8daadb611abf8a879b0d3c6b546482771ca9b975a4bce8bb76cd",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.25.22_jdk-11.0.25-ga/Alibaba_Dragonwell_Extended_11.0.25.22.9_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "11.0.25.22.9"
-  },
-  {
-    "checksum": "sha256:597dbcf764dc011cc93f3c0e4bc7cd4482f0ecdfe578757aff837eb77d5b9963",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.4.0.4%2B7_jdk-21.0.4-ga/Alibaba_Dragonwell_Extended_21.0.4.0.4.7_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "21.0.4.0.4.7"
   },
   {
     "checksum": "sha256:2e2b7d66a02c3d9a9aff1a7b413a98e8291c08533825d407bcfc4e360b89b018",
@@ -31715,16 +31605,6 @@
     "version": "8.17.18"
   },
   {
-    "checksum": "sha256:a5fe3c95e95f6b0414035d3cb1cbbbc87edaed1608642628b294c86538e24672",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.24.21_jdk-11.0.24-ga/Alibaba_Dragonwell_Extended_11.0.24.21.8_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "11.0.24.21.8"
-  },
-  {
     "checksum": "sha256:8e7c59d45b7c04d4e5e1f9265558e09ec3ef93a1ffebda6de9b8c5eb0b8894ed",
     "features": [],
     "file_type": "zip",
@@ -31733,16 +31613,6 @@
     "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-standard-11.0.21.17_jdk-11.0.21-ga/Alibaba_Dragonwell_Standard_11.0.21.17.9_x64_windows.zip",
     "vendor": "dragonwell",
     "version": "11.0.21.17.9"
-  },
-  {
-    "checksum": "sha256:12e883366db943ee6aff593e2761115167cfc1550bd401d32b1eaafaf5dca540",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.20.21_jdk8u422-ga/Alibaba_Dragonwell_Extended_8.20.21_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "8.20.21"
   },
   {
     "checksum": "sha256:40f66998c0d6830a45065764e5228427e3b5c71a89337352b8385f34aa845e74",
@@ -31793,16 +31663,6 @@
     "url": "https://github.com/dragonwell-project/dragonwell17/releases/download/dragonwell-standard-17.0.13.0.14%2B9_jdk-17.0.13-ga/Alibaba_Dragonwell_Standard_17.0.13.0.14.9_x64_windows.zip",
     "vendor": "dragonwell",
     "version": "17.0.13.0.14.9"
-  },
-  {
-    "checksum": "sha256:3db624c7b835a7f4509e3937ea625dfdbca84aa4f84b73088a8eba5ceabe3adc",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.12.13_jdk8u345-ga/Alibaba_Dragonwell_Extended_8.12.13_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "8.12.13"
   },
   {
     "checksum": null,
@@ -31935,36 +31795,6 @@
     "version": "11.0.26.22.4"
   },
   {
-    "checksum": "sha256:dc886c10f31cd891a5187d00aee642eb10c03e084d1f33eafeaeb1d7ecb0893d",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.21.18_jdk-11.0.21-ga/Alibaba_Dragonwell_Extended_11.0.21.18.9_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "11.0.21.18.9"
-  },
-  {
-    "checksum": "sha256:991ebc47c80b0a44375b8847b4fabf06c3f8c237a2045c76be4ff393f142535b",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.17.18_jdk8u392-ga/Alibaba_Dragonwell_Extended_8.17.18_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "8.17.18"
-  },
-  {
-    "checksum": "sha256:b775f7a75b9b0d902941bfb3778262c2044b9c6ae18c19c142374879fda38f97",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.15.16_jdk8u372-ga/Alibaba_Dragonwell_Extended_8.15.16_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "8.15.16"
-  },
-  {
     "checksum": "sha256:b6d188ae4102c84bf9e071edb5f0c66e5505422e05a6c74f1a2882ed5813fc2b",
     "features": [],
     "file_type": "zip",
@@ -31973,26 +31803,6 @@
     "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-8.8.8_jdk8u302-ga/Alibaba_Dragonwell_8.8.8_x64_windows.zip",
     "vendor": "dragonwell",
     "version": "8.8.8"
-  },
-  {
-    "checksum": "sha256:aba12a2a94cf073bfff0499717cdda331270e5dd3118d999b27d69bf4dbd2d68",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.24.23_jdk8u442-ga/Alibaba_Dragonwell_Extended_8.24.23_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "8.24.23"
-  },
-  {
-    "checksum": "sha256:7d2f29c0691e1e72907b855bf5fb89bc5bf8b44a7fa632446537a71bbdf28f53",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.16.12_jdk-11.0.16-ga/Alibaba_Dragonwell_Extended_11.0.16.12.8_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "11.0.16.12.8"
   },
   {
     "checksum": "sha256:e7236e529e82798366fa5330e50e523063643f3ae174cdc5554a5432a2f4075f",
@@ -32033,16 +31843,6 @@
     "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-standard-11.0.22.18_jdk-11.0.22-ga/Alibaba_Dragonwell_Standard_11.0.22.18.7_x64_windows.zip",
     "vendor": "dragonwell",
     "version": "11.0.22.18.7"
-  },
-  {
-    "checksum": "sha256:ba8dba2b7f2279f87220f396afcce49cb26482705deb5144c6e22a90ba443f9d",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.23.20_jdk-11.0.23-ga/Alibaba_Dragonwell_Extended_11.0.23.20.9_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "11.0.23.20.9"
   },
   {
     "checksum": "sha256:bb3df4354040ecac7783e839cb69636f1e6f4433f8aa248e63abe6f76f71c7bf",
@@ -32135,16 +31935,6 @@
     "version": "21.0.1.0.1.12"
   },
   {
-    "checksum": "sha256:c8f860749e5e96b8ef89bfb17efdd0e3ceb2e48716257c4d345387974100c33d",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.14.15_jdk8u362-ga/Alibaba_Dragonwell_Extended_8.14.15_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "8.14.15"
-  },
-  {
     "checksum": "sha256:e97a88d72d6abd712f57f1cf8a215e064f91373389c0c072b824024d48481143",
     "features": [],
     "file_type": "zip",
@@ -32175,26 +31965,6 @@
     "version": "11.0.19.15.7"
   },
   {
-    "checksum": "sha256:7db195737cd190823b40e8573141266bdf601c199a30dd5a27545679be9ca510",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.22.19_jdk-11.0.22-ga/Alibaba_Dragonwell_Extended_11.0.22.19.7_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "11.0.22.19.7"
-  },
-  {
-    "checksum": "sha256:71199f301e5f1e63ad3901f8bc9f83be7ef815cb02285725feecf78195bc89ce",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.6.0.6%2B7_jdk-21.0.6-ga/Alibaba_Dragonwell_Extended_21.0.6.0.6.7_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "21.0.6.0.6.7"
-  },
-  {
     "checksum": "sha256:41207bb05da8fa447e7b0d669b0918f3b9d702a8ef84f01cca256e58cef8a44c",
     "features": [],
     "file_type": "zip",
@@ -32205,26 +31975,6 @@
     "version": "8.13.14"
   },
   {
-    "checksum": "sha256:6768383eed34332a67b1c796d1b0e8a57b95e8a234586c9a88d9466c54150162",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.19.20_jdk8u412-ga/Alibaba_Dragonwell_Extended_8.19.20_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "8.19.20"
-  },
-  {
-    "checksum": "sha256:f05242884e2038c9539c8ab0abf02848ef275ae08c7eebb78c213ebf65721458",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.18.14_jdk-11.0.18-ga/Alibaba_Dragonwell_Extended_11.0.18.14.9_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "11.0.18.14.9"
-  },
-  {
     "checksum": "sha256:9d1b0c8d68e990bec8f9d094af79d3327f47797a38ecd3f71c1cb0f13a0de66d",
     "features": [],
     "file_type": "zip",
@@ -32233,26 +31983,6 @@
     "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-8.7.7_jdk8u292-ga/Alibaba_Dragonwell_8.7.7_x64_windows.zip",
     "vendor": "dragonwell",
     "version": "8.7.7"
-  },
-  {
-    "checksum": "sha256:2b404da8c7f20ccf449645d11b8b465eec79a857a1306ab840523d0c37412f76",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.5.0.5%2B9_jdk-21.0.5-ga/Alibaba_Dragonwell_Extended_21.0.5.0.5.9_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "21.0.5.0.5.9"
-  },
-  {
-    "checksum": "sha256:004721e1f93561daf6576198eb5a9d7f7e83ad3497ed8abd933350610fe6591f",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.18.19_jdk8u402-ga/Alibaba_Dragonwell_Extended_8.18.19_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "8.18.19"
   },
   {
     "checksum": "sha256:1f42872d32b5447c9ed8db7cc2b4140d192838aef0e038d7a6d979c293d246e8",
@@ -32303,16 +32033,6 @@
     "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-standard-21.0.3.0.3%2B9_jdk-21.0.3-ga/Alibaba_Dragonwell_Standard_21.0.3.0.3.9_x64_windows.zip",
     "vendor": "dragonwell",
     "version": "21.0.3.0.3.9"
-  },
-  {
-    "checksum": "sha256:33f7b5d83b417acf88c70125a3a12042521dae3e910a1b0f5773fa4c20b5df62",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.20.16_jdk-11.0.20-ga/Alibaba_Dragonwell_Extended_11.0.20.16.8_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "11.0.20.16.8"
   },
   {
     "checksum": "sha256:22e523e1be2dafc6e1dc47835800a629991beed45805c1b82fb37524fc6069d1",
@@ -32423,16 +32143,6 @@
     "version": "8u352-b08_openj9-0.35.0"
   },
   {
-    "checksum": "sha256:45bc3d4f88b6a1da7a6a4f1a162155fa7413df56e87bcb33bf0a92241eb00c0f",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "openj9",
-    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/8u345-b01_openj9-0.33.0/ibm-semeru-open-jdk_x64_windows_8u345b01_openj9-0.33.0.zip",
-    "vendor": "semeru",
-    "version": "8u345-b01_openj9-0.33.0"
-  },
-  {
     "checksum": "sha256:1ad91cf0d406e1168caa4f3eef746d0856aa00517582d565ef73e9c5487820b8",
     "features": [],
     "file_type": "zip",
@@ -32441,16 +32151,6 @@
     "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u352-b08-openj9-0.35.0/ibm-semeru-open-jre_x64_windows_8u352b08_openj9-0.35.0.zip",
     "vendor": "semeru",
     "version": "8u352-b08_openj9-0.35.0"
-  },
-  {
-    "checksum": "sha256:c4469532296913528b814ccb370087be4aeeb18caac72062c619b267eb82a219",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jre",
-    "jvm_impl": "openj9",
-    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/8u345-b01_openj9-0.33.0/ibm-semeru-open-jre_x64_windows_8u345b01_openj9-0.33.0.zip",
-    "vendor": "semeru",
-    "version": "8u345-b01_openj9-0.33.0"
   },
   {
     "checksum": "sha1:32161f41b0a7855f8dfea8069f4876887b243b67",
@@ -33839,16 +33539,6 @@
     "version": "21.0.7-b1020.35"
   },
   {
-    "checksum": "sha256:3c04a75b35ff585b9084228876055ebc799c667d07922766dec9811c4c7c97ba",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.7.0.7%2B6_jdk-21.0.7-ga/Alibaba_Dragonwell_Extended_21.0.7.0.7.6_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "21.0.7.0.7.6"
-  },
-  {
     "checksum": "sha256:1891959109547b8d3f6c8adb66e0672c715f1b17e84b80a9579c42462d4c20fa",
     "features": [],
     "file_type": "zip",
@@ -33887,26 +33577,6 @@
     "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-standard-8.25.24_jdk8u452-ga/Alibaba_Dragonwell_Standard_8.25.24_x64_windows.zip",
     "vendor": "dragonwell",
     "version": "8.25.24"
-  },
-  {
-    "checksum": "sha256:863647769e0acc6d20e50e66b87a980d28684ae7f861767be7d7341265e1524f",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.25.24_jdk8u452-ga/Alibaba_Dragonwell_Extended_8.25.24_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "8.25.24"
-  },
-  {
-    "checksum": "sha256:3face0116e5ce894179de83f461c8a1227d438d8a543b454406a38faff1f1863",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.27.24_jdk-11.0.27-ga/Alibaba_Dragonwell_Extended_11.0.27.24.6_x64_windows.zip",
-    "vendor": "dragonwell",
-    "version": "11.0.27.24.6"
   },
   {
     "checksum": "sha512:d3edebf65abcedfc6e35fabdad98b8187167434e15e451b5fa869028207d3d1e39a89078c3b7a1b01edd3f3dd0a8b72166f2a1f7e64373a2c33b1feeb41d9252",
@@ -34055,5 +33725,393 @@
     "url": "https://developers.redhat.com/content-gateway/file/pub/openjdk/adoptium/April_2025/java-17-openjdk-17.0.15.0.6-1.win.jre.x86_64.zip",
     "vendor": "redhat",
     "version": "17.0.15+6_1"
+  },
+  {
+    "checksum": "sha256:f8a329d60eeab1d962fba8c2c144febbdd7c3f95621dc8d89854f621b06f0b7b",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.23.22_jdk8u432-ga/Alibaba_Dragonwell_Extended_8.23.22_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "8.23.22"
+  },
+  {
+    "checksum": "sha256:42f92a5ea4affdfa797f1efabe087929cacb958c2b339c3c3aa44f17406cc054",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.16.17_jdk8u382-ga/Alibaba_Dragonwell_Extended_8.16.17_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "8.16.17"
+  },
+  {
+    "checksum": "sha256:198fcfde686de580dcf2607e3a97e1b241b1a3a12c07e6a2abc62f9560c31d05",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.17.13_jdk-11.0.17-ga/Alibaba_Dragonwell_Extended_11.0.17.13.8_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "11.0.17.13.8"
+  },
+  {
+    "checksum": "sha256:909c2b83ff4d719f3890838dd216f9685793af8939dc8befa0ef8489eff4c5d6",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.20.17_jdk-11.0.20-ga/Alibaba_Dragonwell_Extended_11.0.20.17.8_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "11.0.20.17.8"
+  },
+  {
+    "checksum": "sha256:babc13071a6aad2c9ba16e31f0e4c2fef54f9984e71e5f348ab8b7023dfc6cba",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.19.15_jdk-11.0.19-ga/Alibaba_Dragonwell_Extended_11.0.19.15.7_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "11.0.19.15.7"
+  },
+  {
+    "checksum": "sha256:6b1c6165d5cb807579af7f90f05669edff34499c91d624941921a83f3f52ec62",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.13.14_jdk8u352-ga/Alibaba_Dragonwell_Extended_8.13.14_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "8.13.14"
+  },
+  {
+    "checksum": "sha256:904bacf97af8039ba16d9cf982fd1fca7b28e8c455816edc7692bf20fbf9589b",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.26.23_jdk-11.0.26-ga/Alibaba_Dragonwell_Extended_11.0.26.23.4_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "11.0.26.23.4"
+  },
+  {
+    "checksum": "sha256:f6ad9666d1ed8daadb611abf8a879b0d3c6b546482771ca9b975a4bce8bb76cd",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.25.22_jdk-11.0.25-ga/Alibaba_Dragonwell_Extended_11.0.25.22.9_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "11.0.25.22.9"
+  },
+  {
+    "checksum": "sha256:597dbcf764dc011cc93f3c0e4bc7cd4482f0ecdfe578757aff837eb77d5b9963",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.4.0.4%2B7_jdk-21.0.4-ga/Alibaba_Dragonwell_Extended_21.0.4.0.4.7_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "21.0.4.0.4.7"
+  },
+  {
+    "checksum": "sha256:a5fe3c95e95f6b0414035d3cb1cbbbc87edaed1608642628b294c86538e24672",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.24.21_jdk-11.0.24-ga/Alibaba_Dragonwell_Extended_11.0.24.21.8_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "11.0.24.21.8"
+  },
+  {
+    "checksum": "sha256:12e883366db943ee6aff593e2761115167cfc1550bd401d32b1eaafaf5dca540",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.20.21_jdk8u422-ga/Alibaba_Dragonwell_Extended_8.20.21_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "8.20.21"
+  },
+  {
+    "checksum": "sha256:3db624c7b835a7f4509e3937ea625dfdbca84aa4f84b73088a8eba5ceabe3adc",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.12.13_jdk8u345-ga/Alibaba_Dragonwell_Extended_8.12.13_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "8.12.13"
+  },
+  {
+    "checksum": "sha256:dc886c10f31cd891a5187d00aee642eb10c03e084d1f33eafeaeb1d7ecb0893d",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.21.18_jdk-11.0.21-ga/Alibaba_Dragonwell_Extended_11.0.21.18.9_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "11.0.21.18.9"
+  },
+  {
+    "checksum": "sha256:991ebc47c80b0a44375b8847b4fabf06c3f8c237a2045c76be4ff393f142535b",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.17.18_jdk8u392-ga/Alibaba_Dragonwell_Extended_8.17.18_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "8.17.18"
+  },
+  {
+    "checksum": "sha256:b775f7a75b9b0d902941bfb3778262c2044b9c6ae18c19c142374879fda38f97",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.15.16_jdk8u372-ga/Alibaba_Dragonwell_Extended_8.15.16_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "8.15.16"
+  },
+  {
+    "checksum": "sha256:aba12a2a94cf073bfff0499717cdda331270e5dd3118d999b27d69bf4dbd2d68",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.24.23_jdk8u442-ga/Alibaba_Dragonwell_Extended_8.24.23_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "8.24.23"
+  },
+  {
+    "checksum": "sha256:7d2f29c0691e1e72907b855bf5fb89bc5bf8b44a7fa632446537a71bbdf28f53",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.16.12_jdk-11.0.16-ga/Alibaba_Dragonwell_Extended_11.0.16.12.8_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "11.0.16.12.8"
+  },
+  {
+    "checksum": "sha256:ba8dba2b7f2279f87220f396afcce49cb26482705deb5144c6e22a90ba443f9d",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.23.20_jdk-11.0.23-ga/Alibaba_Dragonwell_Extended_11.0.23.20.9_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "11.0.23.20.9"
+  },
+  {
+    "checksum": "sha256:c8f860749e5e96b8ef89bfb17efdd0e3ceb2e48716257c4d345387974100c33d",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.14.15_jdk8u362-ga/Alibaba_Dragonwell_Extended_8.14.15_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "8.14.15"
+  },
+  {
+    "checksum": "sha256:7db195737cd190823b40e8573141266bdf601c199a30dd5a27545679be9ca510",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.22.19_jdk-11.0.22-ga/Alibaba_Dragonwell_Extended_11.0.22.19.7_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "11.0.22.19.7"
+  },
+  {
+    "checksum": "sha256:71199f301e5f1e63ad3901f8bc9f83be7ef815cb02285725feecf78195bc89ce",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.6.0.6%2B7_jdk-21.0.6-ga/Alibaba_Dragonwell_Extended_21.0.6.0.6.7_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "21.0.6.0.6.7"
+  },
+  {
+    "checksum": "sha256:6768383eed34332a67b1c796d1b0e8a57b95e8a234586c9a88d9466c54150162",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.19.20_jdk8u412-ga/Alibaba_Dragonwell_Extended_8.19.20_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "8.19.20"
+  },
+  {
+    "checksum": "sha256:f05242884e2038c9539c8ab0abf02848ef275ae08c7eebb78c213ebf65721458",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.18.14_jdk-11.0.18-ga/Alibaba_Dragonwell_Extended_11.0.18.14.9_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "11.0.18.14.9"
+  },
+  {
+    "checksum": "sha256:2b404da8c7f20ccf449645d11b8b465eec79a857a1306ab840523d0c37412f76",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.5.0.5%2B9_jdk-21.0.5-ga/Alibaba_Dragonwell_Extended_21.0.5.0.5.9_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "21.0.5.0.5.9"
+  },
+  {
+    "checksum": "sha256:004721e1f93561daf6576198eb5a9d7f7e83ad3497ed8abd933350610fe6591f",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.18.19_jdk8u402-ga/Alibaba_Dragonwell_Extended_8.18.19_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "8.18.19"
+  },
+  {
+    "checksum": "sha256:33f7b5d83b417acf88c70125a3a12042521dae3e910a1b0f5773fa4c20b5df62",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.20.16_jdk-11.0.20-ga/Alibaba_Dragonwell_Extended_11.0.20.16.8_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "11.0.20.16.8"
+  },
+  {
+    "checksum": "sha256:3c04a75b35ff585b9084228876055ebc799c667d07922766dec9811c4c7c97ba",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.7.0.7%2B6_jdk-21.0.7-ga/Alibaba_Dragonwell_Extended_21.0.7.0.7.6_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "21.0.7.0.7.6"
+  },
+  {
+    "checksum": "sha256:863647769e0acc6d20e50e66b87a980d28684ae7f861767be7d7341265e1524f",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.25.24_jdk8u452-ga/Alibaba_Dragonwell_Extended_8.25.24_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "8.25.24"
+  },
+  {
+    "checksum": "sha256:3face0116e5ce894179de83f461c8a1227d438d8a543b454406a38faff1f1863",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.27.24_jdk-11.0.27-ga/Alibaba_Dragonwell_Extended_11.0.27.24.6_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "11.0.27.24.6"
+  },
+  {
+    "checksum": "sha256:1ad91cf0d406e1168caa4f3eef746d0856aa00517582d565ef73e9c5487820b8",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u352-b08_openj9-0.35.0/ibm-semeru-open-jre_x64_windows_8u352b08_openj9-0.35.0.zip",
+    "vendor": "semeru",
+    "version": "8u352-b08_openj9-0.35.0"
+  },
+  {
+    "checksum": "sha256:8f154d532b79ddab2b18b774a9c7a09d49a635f389b69806bd8db01dd16f4965",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u352-b08_openj9-0.35.0/ibm-semeru-open-jdk_x64_windows_8u352b08_openj9-0.35.0.zip",
+    "vendor": "semeru",
+    "version": "8u352-b08_openj9-0.35.0"
+  },
+  {
+    "checksum": "sha256:c4469532296913528b814ccb370087be4aeeb18caac72062c619b267eb82a219",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/8u345-b01_openj9-0.33.0/ibm-semeru-open-jre_x64_windows_8u345b01_openj9-0.33.0.zip",
+    "vendor": "semeru",
+    "version": "8u345-b01_openj9-0.33.0"
+  },
+  {
+    "checksum": "sha256:45bc3d4f88b6a1da7a6a4f1a162155fa7413df56e87bcb33bf0a92241eb00c0f",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/8u345-b01_openj9-0.33.0/ibm-semeru-open-jdk_x64_windows_8u345b01_openj9-0.33.0.zip",
+    "vendor": "semeru",
+    "version": "8u345-b01_openj9-0.33.0"
   }
 ]
