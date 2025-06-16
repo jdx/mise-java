@@ -41299,26 +41299,6 @@
     "version": "23.0.2"
   },
   {
-    "checksum": "sha256:35852ef7040be5e73d4b8f23481c4f70e4dcb088d302e28f6a88e6a4d47de2b9",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://download.oracle.com/graalvm/24/latest/graalvm-jdk-24_macos-x64_bin.tar.gz",
-    "vendor": "oracle-graalvm",
-    "version": "24.0.0"
-  },
-  {
-    "checksum": "sha256:24094515078a83158bc7b76f73497d52127fdfe32a96665803a52285edd2c08c",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://download.oracle.com/graalvm/21/latest/graalvm-jdk-21_macos-x64_bin.tar.gz",
-    "vendor": "oracle-graalvm",
-    "version": "21.0.0"
-  },
-  {
     "checksum": "sha256:a4e5ce59a63e8325c3eba2d2a7091fd99927b08e04eb8a90f35e0b358bc9dee7",
     "features": [],
     "file_type": "tar.gz",
@@ -41409,16 +41389,6 @@
     "version": "23.0.2"
   },
   {
-    "checksum": "sha256:cf77c1d143c94b8e0594822da608594c15f88749db808eaa36ebd6bd8b71a835",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://download.oracle.com/java/24/latest/jdk-24_macos-x64_bin.tar.gz",
-    "vendor": "oracle",
-    "version": "24.0.0"
-  },
-  {
     "checksum": "sha256:2b06509c933817a6194b3f36f39148f576d76721b0767eb63b825ce2f673d719",
     "features": [],
     "file_type": "tar.gz",
@@ -41427,16 +41397,6 @@
     "url": "https://download.oracle.com/java/21/archive/jdk-21.0.6_macos-x64_bin.tar.gz",
     "vendor": "oracle",
     "version": "21.0.6"
-  },
-  {
-    "checksum": "sha256:d876db943926408075f18372240d8b08b4540b10fe3fe602a7a488b91541b886",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://download.oracle.com/java/21/latest/jdk-21_macos-x64_bin.tar.gz",
-    "vendor": "oracle",
-    "version": "21.0.0"
   },
   {
     "checksum": "sha256:5dc0076b8c278080f9afb29b401c7736279a6722828ca822e1e70db941fa7052",
@@ -42741,6 +42701,16 @@
     "version": "21.0.7-b1034.51"
   },
   {
+    "checksum": "sha256:24094515078a83158bc7b76f73497d52127fdfe32a96665803a52285edd2c08c",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/graalvm/21/latest/graalvm-jdk-21_macos-x64_bin.tar.gz",
+    "vendor": "oracle-graalvm",
+    "version": "21.0.7"
+  },
+  {
     "checksum": "sha256:c69086950c006b17484a70ef7bc85e92d121be15e69e282e1446fd238d42b6b4",
     "features": [],
     "file_type": "tar.gz",
@@ -42771,6 +42741,16 @@
     "version": "8u345-b01_openj9-0.33.0"
   },
   {
+    "checksum": "sha256:35852ef7040be5e73d4b8f23481c4f70e4dcb088d302e28f6a88e6a4d47de2b9",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/graalvm/24/latest/graalvm-jdk-24_macos-x64_bin.tar.gz",
+    "vendor": "oracle-graalvm",
+    "version": "24.0.1"
+  },
+  {
     "checksum": "sha256:0d2b9746c3a06d9857e2675ecefaada8447dd6fe673b9279f9c3b4fa21ea2eee",
     "features": [],
     "file_type": "tar.gz",
@@ -42779,5 +42759,25 @@
     "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u352-b08_openj9-0.35.0/ibm-semeru-open-jdk_x64_mac_8u352b08_openj9-0.35.0.tar.gz",
     "vendor": "semeru",
     "version": "8u352-b08_openj9-0.35.0"
+  },
+  {
+    "checksum": "sha256:d876db943926408075f18372240d8b08b4540b10fe3fe602a7a488b91541b886",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/java/21/latest/jdk-21_macos-x64_bin.tar.gz",
+    "vendor": "oracle",
+    "version": "21.0.7"
+  },
+  {
+    "checksum": "sha256:cf77c1d143c94b8e0594822da608594c15f88749db808eaa36ebd6bd8b71a835",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/java/24/latest/jdk-24_macos-x64_bin.tar.gz",
+    "vendor": "oracle",
+    "version": "24.0.1"
   }
 ]

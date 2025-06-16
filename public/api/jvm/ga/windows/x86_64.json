@@ -32321,26 +32321,6 @@
     "version": "21.0.7+9"
   },
   {
-    "checksum": "sha256:51cf8eea72996af2d4dac1ad49076dea94daabf868284907a7c95490a43b451f",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://download.oracle.com/graalvm/24/latest/graalvm-jdk-24_windows-x64_bin.zip",
-    "vendor": "oracle-graalvm",
-    "version": "24.0.0"
-  },
-  {
-    "checksum": "sha256:0f7d09fb9bb3adc823e8cc12954730ba71d99699d169d47626d9088372b0854f",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://download.oracle.com/graalvm/21/latest/graalvm-jdk-21_windows-x64_bin.zip",
-    "vendor": "oracle-graalvm",
-    "version": "21.0.0"
-  },
-  {
     "checksum": "sha256:501da4f5610e64a8644df92773e1aba559d1c542a84aacea9b37d469aa9da8a7",
     "features": [],
     "file_type": "zip",
@@ -32473,26 +32453,6 @@
     "url": "https://download.oracle.com/java/23/archive/jdk-23.0.2_windows-x64_bin.zip",
     "vendor": "oracle",
     "version": "23.0.2"
-  },
-  {
-    "checksum": "sha256:624790de06830ef2747522fb795dc9599ff3a8b16af061bfaaed7bda811488f5",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://download.oracle.com/java/24/latest/jdk-24_windows-x64_bin.zip",
-    "vendor": "oracle",
-    "version": "24.0.0"
-  },
-  {
-    "checksum": "sha256:c0ce633915413f91b98add8be040bdf88270e13340d4f63691f029257e4f6433",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://download.oracle.com/java/21/latest/jdk-21_windows-x64_bin.zip",
-    "vendor": "oracle",
-    "version": "21.0.0"
   },
   {
     "checksum": "sha256:cdcf8ca3536882b7954e117c3e2758e168a91c96e6ed09d968a772fde56fdf00",
@@ -34113,5 +34073,45 @@
     "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/8u345-b01_openj9-0.33.0/ibm-semeru-open-jdk_x64_windows_8u345b01_openj9-0.33.0.zip",
     "vendor": "semeru",
     "version": "8u345-b01_openj9-0.33.0"
+  },
+  {
+    "checksum": "sha256:0f7d09fb9bb3adc823e8cc12954730ba71d99699d169d47626d9088372b0854f",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/graalvm/21/latest/graalvm-jdk-21_windows-x64_bin.zip",
+    "vendor": "oracle-graalvm",
+    "version": "21.0.7"
+  },
+  {
+    "checksum": "sha256:51cf8eea72996af2d4dac1ad49076dea94daabf868284907a7c95490a43b451f",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/graalvm/24/latest/graalvm-jdk-24_windows-x64_bin.zip",
+    "vendor": "oracle-graalvm",
+    "version": "24.0.1"
+  },
+  {
+    "checksum": "sha256:624790de06830ef2747522fb795dc9599ff3a8b16af061bfaaed7bda811488f5",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/java/24/latest/jdk-24_windows-x64_bin.zip",
+    "vendor": "oracle",
+    "version": "24.0.1"
+  },
+  {
+    "checksum": "sha256:c0ce633915413f91b98add8be040bdf88270e13340d4f63691f029257e4f6433",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/java/21/latest/jdk-21_windows-x64_bin.zip",
+    "vendor": "oracle",
+    "version": "21.0.7"
   }
 ]

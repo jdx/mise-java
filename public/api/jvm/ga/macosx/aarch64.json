@@ -33134,26 +33134,6 @@
     "version": "11.0.27+9"
   },
   {
-    "checksum": "sha256:5c665f8c4a9c10352023fdbee367784cd8dfc22ffda0e625cd8c823c83b4345d",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://download.oracle.com/graalvm/21/latest/graalvm-jdk-21_macos-aarch64_bin.tar.gz",
-    "vendor": "oracle-graalvm",
-    "version": "21.0.0"
-  },
-  {
-    "checksum": "sha256:875555f6063b4847b617504e8f8a36290a6726770be72388261f6118bcf28f81",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://download.oracle.com/graalvm/24/latest/graalvm-jdk-24_macos-aarch64_bin.tar.gz",
-    "vendor": "oracle-graalvm",
-    "version": "24.0.0"
-  },
-  {
     "checksum": "sha256:0e644b92d03d39bdf4842e378b8b22713faaa4edae8efff0da9929d1e04dd0cb",
     "features": [],
     "file_type": "tar.gz",
@@ -33266,26 +33246,6 @@
     "url": "https://download.java.net/java/GA/jdk24.0.1/24a58e0e276943138bf3e963e6291ac2/9/GPL/openjdk-24.0.1_macos-aarch64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "24.0.1"
-  },
-  {
-    "checksum": "sha256:692b4f8e7655a87a0a9c8f217c11d4d56995dfb114851fea8451759a5788a9fa",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://download.oracle.com/java/24/latest/jdk-24_macos-aarch64_bin.tar.gz",
-    "vendor": "oracle",
-    "version": "24.0.0"
-  },
-  {
-    "checksum": "sha256:d29e6bf91bd7ebd14c289c2daa112a0d613ee568ee5c1a8c5f9e4bb31b09173e",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://download.oracle.com/java/21/latest/jdk-21_macos-aarch64_bin.tar.gz",
-    "vendor": "oracle",
-    "version": "21.0.0"
   },
   {
     "checksum": "sha256:1be59c70b115ef946a307df4e4808271a6b4a9f594afcfc3e0c6b3b9738d8edd",
@@ -34570,5 +34530,45 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.7-osx-aarch64-b1034.51.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.7-b1034.51"
+  },
+  {
+    "checksum": "sha256:5c665f8c4a9c10352023fdbee367784cd8dfc22ffda0e625cd8c823c83b4345d",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/graalvm/21/latest/graalvm-jdk-21_macos-aarch64_bin.tar.gz",
+    "vendor": "oracle-graalvm",
+    "version": "21.0.7"
+  },
+  {
+    "checksum": "sha256:875555f6063b4847b617504e8f8a36290a6726770be72388261f6118bcf28f81",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/graalvm/24/latest/graalvm-jdk-24_macos-aarch64_bin.tar.gz",
+    "vendor": "oracle-graalvm",
+    "version": "24.0.1"
+  },
+  {
+    "checksum": "sha256:692b4f8e7655a87a0a9c8f217c11d4d56995dfb114851fea8451759a5788a9fa",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/java/24/latest/jdk-24_macos-aarch64_bin.tar.gz",
+    "vendor": "oracle",
+    "version": "24.0.1"
+  },
+  {
+    "checksum": "sha256:d29e6bf91bd7ebd14c289c2daa112a0d613ee568ee5c1a8c5f9e4bb31b09173e",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/java/21/latest/jdk-21_macos-aarch64_bin.tar.gz",
+    "vendor": "oracle",
+    "version": "21.0.7"
   }
 ]

@@ -47465,26 +47465,6 @@
     "version": "23.0.2"
   },
   {
-    "checksum": "sha256:757389c22d3448d4d02d5cf78fbff1da2d6c6e2fdfb4ebc96acab08830641ce6",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://download.oracle.com/graalvm/24/latest/graalvm-jdk-24_linux-x64_bin.tar.gz",
-    "vendor": "oracle-graalvm",
-    "version": "24.0.0"
-  },
-  {
-    "checksum": "sha256:67ac85876b4402ce253bbce85debd1ac515c650530ef0ed2b64c7d754078e821",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://download.oracle.com/graalvm/21/latest/graalvm-jdk-21_linux-x64_bin.tar.gz",
-    "vendor": "oracle-graalvm",
-    "version": "21.0.0"
-  },
-  {
     "checksum": "sha1:31a00485ea5ae2643c1cc563186c54f28ca265d2",
     "features": [],
     "file_type": "tar.gz",
@@ -47659,26 +47639,6 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.15%2B10/bellsoft-jre17.0.15%2B10-linux-x64-musl.tar.gz",
     "vendor": "liberica",
     "version": "17.0.15+10"
-  },
-  {
-    "checksum": "sha256:07096b29c65feb393972870347f36021be421a74c1800be468b3c19f04e8e943",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://download.oracle.com/java/24/latest/jdk-24_linux-x64_bin.tar.gz",
-    "vendor": "oracle",
-    "version": "24.0.0"
-  },
-  {
-    "checksum": "sha256:267b10b14b4e5fada19aca3be3b961ce4f81f1bd3ffcd070e90a5586106125eb",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.tar.gz",
-    "vendor": "oracle",
-    "version": "21.0.0"
   },
   {
     "checksum": "sha256:12d7553d06b5cacf88b26cad4a8ba83cabe79646f1defb1b7fd029f3356d0922",
@@ -51974,6 +51934,16 @@
     "version": "8u345-b01_openj9-0.33.0"
   },
   {
+    "checksum": "sha256:67ac85876b4402ce253bbce85debd1ac515c650530ef0ed2b64c7d754078e821",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/graalvm/21/latest/graalvm-jdk-21_linux-x64_bin.tar.gz",
+    "vendor": "oracle-graalvm",
+    "version": "21.0.7"
+  },
+  {
     "checksum": "sha256:cdaea9083f7f34034d4bf8658a68b3bf96f055ecc5a1c1dc1aad1bab41415d25",
     "features": [],
     "file_type": "tar.gz",
@@ -52002,5 +51972,35 @@
     "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/8u345-b01_openj9-0.33.0/ibm-semeru-open-jdk_x64_linux_8u345b01_openj9-0.33.0.tar.gz",
     "vendor": "semeru",
     "version": "8u345-b01_openj9-0.33.0"
+  },
+  {
+    "checksum": "sha256:757389c22d3448d4d02d5cf78fbff1da2d6c6e2fdfb4ebc96acab08830641ce6",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/graalvm/24/latest/graalvm-jdk-24_linux-x64_bin.tar.gz",
+    "vendor": "oracle-graalvm",
+    "version": "24.0.1"
+  },
+  {
+    "checksum": "sha256:267b10b14b4e5fada19aca3be3b961ce4f81f1bd3ffcd070e90a5586106125eb",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/java/21/latest/jdk-21_linux-x64_bin.tar.gz",
+    "vendor": "oracle",
+    "version": "21.0.7"
+  },
+  {
+    "checksum": "sha256:07096b29c65feb393972870347f36021be421a74c1800be468b3c19f04e8e943",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/java/24/latest/jdk-24_linux-x64_bin.tar.gz",
+    "vendor": "oracle",
+    "version": "24.0.1"
   }
 ]

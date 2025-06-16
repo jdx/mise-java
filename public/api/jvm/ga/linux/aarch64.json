@@ -32648,26 +32648,6 @@
     "version": "21.0.6"
   },
   {
-    "checksum": "sha256:cee1554b96f2b402d410161661e27d174a696a67cc360535e257a8f9bd6ac7b6",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://download.oracle.com/graalvm/21/latest/graalvm-jdk-21_linux-aarch64_bin.tar.gz",
-    "vendor": "oracle-graalvm",
-    "version": "21.0.0"
-  },
-  {
-    "checksum": "sha256:83802df162b394ce1915a932182c38205c506515a22995a45d526b910a30b609",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://download.oracle.com/graalvm/24/latest/graalvm-jdk-24_linux-aarch64_bin.tar.gz",
-    "vendor": "oracle-graalvm",
-    "version": "24.0.0"
-  },
-  {
     "checksum": "sha256:56507aeb8fe5ecd58542b3c4def109bc25e4133284274724fc7354e691864f05",
     "features": [],
     "file_type": "tar.gz",
@@ -32844,16 +32824,6 @@
     "version": "24.0.1+11"
   },
   {
-    "checksum": "sha256:47372cfa9244dc74ec783a1b287381502419b564fbd0b18abc8f2d6b19ac865e",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://download.oracle.com/java/21/latest/jdk-21_linux-aarch64_bin.tar.gz",
-    "vendor": "oracle",
-    "version": "21.0.0"
-  },
-  {
     "checksum": "sha256:3f8423bbd538e7cb20a26f944429170b47413af00ccc0e01ce5255f3f9a8d69b",
     "features": [],
     "file_type": "tar.gz",
@@ -32872,16 +32842,6 @@
     "url": "https://download.oracle.com/java/21/archive/jdk-21.0.6_linux-aarch64_bin.tar.gz",
     "vendor": "oracle",
     "version": "21.0.6"
-  },
-  {
-    "checksum": "sha256:4a9c23c7b6b7b343634376c45213068ce99067c23e8e7c5fa238bf2c0e2a4f54",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://download.oracle.com/java/24/latest/jdk-24_linux-aarch64_bin.tar.gz",
-    "vendor": "oracle",
-    "version": "24.0.0"
   },
   {
     "checksum": "sha256:3c8f777be1fad2dbbfc6d7e4ea55cfcbb91b3e0cc063e9e96f573b3d0238485d",
@@ -35351,5 +35311,45 @@
     "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u352-b08_openj9-0.35.0/ibm-semeru-open-jre_aarch64_linux_8u352b08_openj9-0.35.0.tar.gz",
     "vendor": "semeru",
     "version": "8u352-b08_openj9-0.35.0"
+  },
+  {
+    "checksum": "sha256:cee1554b96f2b402d410161661e27d174a696a67cc360535e257a8f9bd6ac7b6",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/graalvm/21/latest/graalvm-jdk-21_linux-aarch64_bin.tar.gz",
+    "vendor": "oracle-graalvm",
+    "version": "21.0.7"
+  },
+  {
+    "checksum": "sha256:83802df162b394ce1915a932182c38205c506515a22995a45d526b910a30b609",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/graalvm/24/latest/graalvm-jdk-24_linux-aarch64_bin.tar.gz",
+    "vendor": "oracle-graalvm",
+    "version": "24.0.1"
+  },
+  {
+    "checksum": "sha256:47372cfa9244dc74ec783a1b287381502419b564fbd0b18abc8f2d6b19ac865e",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/java/21/latest/jdk-21_linux-aarch64_bin.tar.gz",
+    "vendor": "oracle",
+    "version": "21.0.7"
+  },
+  {
+    "checksum": "sha256:4a9c23c7b6b7b343634376c45213068ce99067c23e8e7c5fa238bf2c0e2a4f54",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/java/24/latest/jdk-24_linux-aarch64_bin.tar.gz",
+    "vendor": "oracle",
+    "version": "24.0.1"
   }
 ]
