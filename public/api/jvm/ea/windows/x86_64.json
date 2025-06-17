@@ -19317,6 +19317,16 @@
     "version": "21.0.0-b126.4"
   },
   {
+    "checksum": null,
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B26-ea/bellsoft-jre25%2B26-ea-windows-amd64.zip",
+    "vendor": "liberica",
+    "version": "25.0.0+26-ea"
+  },
+  {
     "checksum": "sha256:919b5d8091696cc5f098dbc84cc3f0a1b90adc9a864aab074278990696b9cbe2",
     "features": [
       "jcef"
@@ -19445,6 +19455,16 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.4-windows-x64-b469.44.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.4-b469.44"
+  },
+  {
+    "checksum": null,
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B26-ea/bellsoft-jdk25%2B26-ea-windows-amd64.zip",
+    "vendor": "liberica",
+    "version": "25.0.0+26-ea"
   },
   {
     "checksum": "sha256:f98678d5e570461fae23716ca21d677ea483faf4beb4ea07b0cf61499aa33b26",
@@ -19695,6 +19715,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-17.0.6-windows-x64-b802.1.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.6-b802.1"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "lite"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B26-ea/bellsoft-jdk25%2B26-ea-windows-amd64-lite.zip",
+    "vendor": "liberica",
+    "version": "25.0.0+26-ea"
   },
   {
     "checksum": "sha512:835b9d8a86cd0c82812307a3346462edb16eb9c408b22c91c1bec40c109cf0a9f6084c4859b23bea3152c939569fd389d78da0d1038fcb9285d00f80ff9f8c58",
@@ -20821,26 +20853,6 @@
     "version": "26.0.0-ea.1"
   },
   {
-    "checksum": "sha256:72fd684ed46401d74779af3b8922d28e14e5ddc3a8939f7bb423fc0db5ec4293",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.8%2B6/sapmachine-jdk-21.0.8-ea.6_windows-x64_bin.zip",
-    "vendor": "sapmachine",
-    "version": "21.0.8-ea.6"
-  },
-  {
-    "checksum": "sha256:4993155c21d9bebc8852ac8f6822edbd899b81de11734441ca6c1279c6a8119c",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jre",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.8%2B6/sapmachine-jre-21.0.8-ea.6_windows-x64_bin.zip",
-    "vendor": "sapmachine",
-    "version": "21.0.8-ea.6"
-  },
-  {
     "checksum": "sha256:c29b512a7b967525b3286a6451ba478530d950d8d4981c8ce5d681ff715a5c22",
     "features": [],
     "file_type": "zip",
@@ -20859,5 +20871,25 @@
     "url": "https://download.java.net/java/early_access/jdk26/2/GPL/openjdk-26-ea+2_windows-x64_bin.zip",
     "vendor": "openjdk",
     "version": "26.0.0-ea+2"
+  },
+  {
+    "checksum": "sha256:24202085eb387fe28d0480b668ccefa4cd2007d323332d56f804808aea93346f",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.8%2B6/sapmachine-jre-21.0.8-ea.6_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "21.0.8-ea.6"
+  },
+  {
+    "checksum": "sha256:b0e1b79dd88ef2d3807131d43652009b01271b224766440ebb64e26b9a88e997",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.8%2B6/sapmachine-jdk-21.0.8-ea.6_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "21.0.8-ea.6"
   }
 ]

@@ -7383,6 +7383,18 @@
     "version": "23.0.0-ea.26"
   },
   {
+    "checksum": null,
+    "features": [
+      "lite"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B26-ea/bellsoft-jdk25%2B26-ea-macos-aarch64-lite.zip",
+    "vendor": "liberica",
+    "version": "25.0.0+26-ea"
+  },
+  {
     "checksum": "sha256:15869dce9be754e16b605b556949182c337913ac98628c726096f285ab64670e",
     "features": [],
     "file_type": "tar.gz",
@@ -9701,6 +9713,16 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-24%2B10/sapmachine-jdk-24-ea.10_macos-aarch64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "24.0.0-ea.10"
+  },
+  {
+    "checksum": null,
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B26-ea/bellsoft-jdk25%2B26-ea-macos-aarch64.zip",
+    "vendor": "liberica",
+    "version": "25.0.0+26-ea"
   },
   {
     "checksum": "sha256:9024b4dd66a5ea6448cd952f22c491faf11984251b030f26f24482fc789cf47f",
@@ -12843,6 +12865,26 @@
     "version": "21.0.0-b126.4"
   },
   {
+    "checksum": null,
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B26-ea/bellsoft-jdk25%2B26-ea-macos-aarch64.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.0+26-ea"
+  },
+  {
+    "checksum": null,
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B26-ea/bellsoft-jre25%2B26-ea-macos-aarch64.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.0+26-ea"
+  },
+  {
     "checksum": "sha256:f93af76a77654ae8759be24614eb8aa9cffeb83dbec179d416a987e75a9cfbc6",
     "features": [],
     "file_type": "tar.gz",
@@ -12993,6 +13035,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-17.0.8.1-osx-aarch64-b1063.1.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.8.1-b1063.1"
+  },
+  {
+    "checksum": null,
+    "features": [
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B26-ea/bellsoft-jdk25%2B26-ea-macos-aarch64-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.0+26-ea"
   },
   {
     "checksum": "sha512:ad553827b9865e3ac81dd3e877af1b798ba3b45607004348d28e67fd9bbf3a9d065f6d150e6997b0a096d935fa2461869fe9903b907889db4aebd7dda94d6d48",
@@ -13169,6 +13223,16 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.3-osx-aarch64-b509.1.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.3-b509.1"
+  },
+  {
+    "checksum": null,
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25%2B26-ea/bellsoft-jre25%2B26-ea-macos-aarch64.zip",
+    "vendor": "liberica",
+    "version": "25.0.0+26-ea"
   },
   {
     "checksum": "sha256:d1d1d2c03e76fd17ac85a127a290dbc00bd9f8d659cf39fcef93a77da065ea77",
@@ -14038,16 +14102,6 @@
     "version": "25.0.0-ea+26"
   },
   {
-    "checksum": "sha256:5ac0325e3f940dd48d45d05be80b3c58a36ec92acdda7ef8816f00b81abde2b7",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.8%2B6/sapmachine-jdk-21.0.8-ea.6_macos-aarch64_bin.tar.gz",
-    "vendor": "sapmachine",
-    "version": "21.0.8-ea.6"
-  },
-  {
     "checksum": "sha256:0d35aaeb176c2c58485057600028d6d089250c50c07e8bc043ef5dcc92f5d7c2",
     "features": [],
     "file_type": "tar.gz",
@@ -14088,16 +14142,6 @@
     "version": "17.0.16-ea.6"
   },
   {
-    "checksum": "sha256:f498960dfb51b3a6ba4442ca5de5c2dd02a6433bce4d46dcd383223b22c237cd",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jre",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.8%2B6/sapmachine-jre-21.0.8-ea.6_macos-aarch64_bin.tar.gz",
-    "vendor": "sapmachine",
-    "version": "21.0.8-ea.6"
-  },
-  {
     "checksum": "sha256:c7d5e57012e6519bc3af078e2e44880d7acc90000900714cf490f4279cd236d3",
     "features": [],
     "file_type": "tar.gz",
@@ -14116,5 +14160,25 @@
     "url": "https://download.java.net/java/early_access/jdk26/2/GPL/openjdk-26-ea+2_macos-aarch64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "26.0.0-ea+2"
+  },
+  {
+    "checksum": "sha256:a76ddd676b627d338f016a69567aa29da65a5efe69749eaba08f9e9af14e35ef",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.8%2B6/sapmachine-jre-21.0.8-ea.6_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.8-ea.6"
+  },
+  {
+    "checksum": "sha256:db96e1335a34e7d8f5cabb7c02710fcd5556d01aa6ddf0cb1ef42e66feb869eb",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.8%2B6/sapmachine-jdk-21.0.8-ea.6_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.8-ea.6"
   }
 ]

@@ -42779,5 +42779,49 @@
     "url": "https://download.oracle.com/java/24/latest/jdk-24_macos-x64_bin.tar.gz",
     "vendor": "oracle",
     "version": "24.0.1"
+  },
+  {
+    "checksum": "sha512:f8f4a516cb284e66559a13b921d6f36325178710983face3afbca03c7f1550491a6532cc5c27a2684433280f7c43608cd084a5ccf1faa6a83c76570a2eef7da9",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.7-osx-x64-b1038.54.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.7-b1038.54"
+  },
+  {
+    "checksum": "sha512:8af5ddaf705b3f7882a9af08fc3a28dd95b991468994316c46de42e68f34a5e2e877936aa520750e5cbc48accc184a10afe9ce5e40e2d9c3806f101e7266bf4e",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.7-osx-x64-b1038.54.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.7-b1038.54"
+  },
+  {
+    "checksum": "sha512:ef171faaea6989d60bc8fb4b112e8b60dd6b24e7874d054b52b86053c01701cbc18bde835a8b5f4e159a9ada52e89321328b47c75d851f8c5624755e63ae9319",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.7-osx-x64-b1038.54.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.7-b1038.54"
+  },
+  {
+    "checksum": "sha512:8c4b567ad936434dd7b66b62a0433e9a7cbc9535e9ee7c9bad2cb42ab55f396d5dda8f0fb343b791ca91a96689a20c1500fed900284017cc78d7a277a02ab5e7",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.7-osx-x64-b1038.54.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.7-b1038.54"
   }
 ]
