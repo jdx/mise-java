@@ -16524,6 +16524,16 @@
     "version": "17.0.16-ea.6"
   },
   {
+    "checksum": "sha256:7ff66831680c31bb5053d0fe1029014b622cd1fb05781c634e6da4c229e853df",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.0.39-beta-jdk25.0.0-beta.27-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.0.39.0"
+  },
+  {
     "checksum": "sha256:5be08bb7c84147f00a3098ea3c1e427fd969a12376a64969f82ca29edbdf5fe6",
     "features": [],
     "file_type": "tar.gz",
@@ -16582,5 +16592,25 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.8%2B6/sapmachine-jdk-21.0.8-ea.6_linux-aarch64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "21.0.8-ea.6"
+  },
+  {
+    "checksum": "sha256:62251f3d724a03e4c25ceeca4bb75755b9e70ce275e5a4bf2cbb1e6579699839",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk26/3/GPL/openjdk-26-ea+3_linux-aarch64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "26.0.0-ea+3"
+  },
+  {
+    "checksum": "sha256:bfbc99aedd5015a5ab41d74f53972f7cb6616032c983216add8cf2de21a1fa5b",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk25/28/GPL/openjdk-25-ea+28_linux-aarch64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "25.0.0-ea+28"
   }
 ]
