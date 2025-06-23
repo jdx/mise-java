@@ -34932,6 +34932,18 @@
     "version": "26.0.0-ea+2"
   },
   {
+    "checksum": "sha256:adfec3cf378b895f6301d904637e99e7d116afed26df49003adb4d23c14b7350",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B2/sapmachine-jre-26-ea.2_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.2"
+  },
+  {
     "checksum": "sha256:96753b911566d9a6bcbdc84cde764dad6ac5250976260bbd3af509765ddfc8bf",
     "features": [],
     "file_type": "tar.gz",
@@ -35080,5 +35092,37 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B27/sapmachine-jdk-25-ea.27_linux-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "25.0.0-ea.27"
+  },
+  {
+    "checksum": "sha256:968cbb86b888ff5b0300542efacef9a567798e4a772055bf2c053d42bc6350c4",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B2/sapmachine-jre-26-ea.2_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.2"
+  },
+  {
+    "checksum": "sha256:b56669db48a9e61d2451d5aaf023b3442dbe2bf900c28421cda71931207bc6d5",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B2/sapmachine-jdk-26-ea.2_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.2"
+  },
+  {
+    "checksum": "sha256:4296cc95af87704dc8b7371bda99a389fcb7037248f049ff448226cdba891800",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B2/sapmachine-jdk-26-ea.2_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.2"
   }
 ]

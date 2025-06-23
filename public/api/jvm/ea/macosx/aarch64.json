@@ -14162,6 +14162,16 @@
     "version": "25.0.0-ea+27"
   },
   {
+    "checksum": "sha256:0980ee4bd8936de5f445f32978a4a4d2ecad7d22ed272cfda52cb161683870e3",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B2/sapmachine-jdk-26-ea.2_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.2"
+  },
+  {
     "checksum": "sha256:241d8e83c06ab225745e54333d7c15433dcb55e9a25a9757d90c6f71708dc88b",
     "features": [],
     "file_type": "tar.gz",
@@ -14230,5 +14240,15 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B27/sapmachine-jdk-25-ea.27_macos-aarch64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "25.0.0-ea.27"
+  },
+  {
+    "checksum": "sha256:f78a1586bd4e22946263bb6a50fc7f63ce887b3d767e28a7aad14ee2bb06f72e",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B2/sapmachine-jre-26-ea.2_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.2"
   }
 ]
