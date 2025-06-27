@@ -16694,16 +16694,6 @@
     "version": "17.0.16-ea.7"
   },
   {
-    "checksum": "sha256:6211b6fbb085c7fa7d30499161cc963deccb1681209f2501785c529daf7711cd",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jre",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.8%2B7/sapmachine-jre-21.0.8-ea.7_linux-aarch64_bin.tar.gz",
-    "vendor": "sapmachine",
-    "version": "21.0.8-ea.7"
-  },
-  {
     "checksum": "sha256:db5edc9b4bcf6444206a4938a69abef6dfda796b5b20c9c17b85670afa6f51e3",
     "features": [],
     "file_type": "tar.gz",
@@ -16724,12 +16714,42 @@
     "version": "26.0.0-ea.3"
   },
   {
-    "checksum": "sha256:59a593e4d51b955923e28de35b795cba3dcca363bc99dc1201e8f9eb8ce1ae7f",
+    "checksum": "sha256:529cc863c692cfa63afec612e73bdb9f2d8097a509454664315649e9955a16c2",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk26/4/GPL/openjdk-26-ea+4_linux-aarch64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "26.0.0-ea+4"
+  },
+  {
+    "checksum": "sha256:565ce268822423c068fb97a832ad2c4add94427561e8e3ce29057fb8ccfbb72e",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk25/29/GPL/openjdk-25-ea+29_linux-aarch64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "25.0.0-ea+29"
+  },
+  {
+    "checksum": "sha256:21649cdf3e79b7a3aee9a1841f2322cc208537f3ad5b768df33d7ac576dd82cb",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
     "jvm_impl": "hotspot",
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.8%2B7/sapmachine-jdk-21.0.8-ea.7_linux-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.8-ea.7"
+  },
+  {
+    "checksum": "sha256:d070f033fe1bfdf55428adccef3c5e99f334aa98338c2ff19de321beb75f244a",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.8%2B7/sapmachine-jre-21.0.8-ea.7_linux-aarch64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "21.0.8-ea.7"
   }

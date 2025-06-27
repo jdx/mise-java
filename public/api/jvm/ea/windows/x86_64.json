@@ -20933,6 +20933,16 @@
     "version": "25.0.0-ea.27"
   },
   {
+    "checksum": "sha256:397a0df027bd02d080370a97f2ef38cd9130020afb8e124d86949c681e2cf191",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk25/29/GPL/openjdk-25-ea+29_windows-x64_bin.zip",
+    "vendor": "openjdk",
+    "version": "25.0.0-ea+29"
+  },
+  {
     "checksum": "sha256:f9ef37893dc794d9bd2c1033b86a15183e1f77033612f56de85b81f81d06ddb4",
     "features": [],
     "file_type": "zip",
@@ -21003,26 +21013,6 @@
     "version": "25.0.0-ea.28"
   },
   {
-    "checksum": "sha256:608291f8674ff6f6acca14d59f4b57fe0fa5c8ef62547e3353f7b400e204fb85",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jre",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.8%2B7/sapmachine-jre-21.0.8-ea.7_windows-x64_bin.zip",
-    "vendor": "sapmachine",
-    "version": "21.0.8-ea.7"
-  },
-  {
-    "checksum": "sha256:3a34039a075be35090a6e828c32093317c98d8b05973bddb5ba614d213701cb4",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.8%2B7/sapmachine-jdk-21.0.8-ea.7_windows-x64_bin.zip",
-    "vendor": "sapmachine",
-    "version": "21.0.8-ea.7"
-  },
-  {
     "checksum": "sha256:468156eca1ffe729aa8208f33f3960b4cde73abeffd42ee1dcb1fc2dc085d140",
     "features": [],
     "file_type": "zip",
@@ -21041,5 +21031,35 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B3/sapmachine-jre-26-ea.3_windows-x64_bin.zip",
     "vendor": "sapmachine",
     "version": "26.0.0-ea.3"
+  },
+  {
+    "checksum": "sha256:bb9270496ac199b05ed1ccbf5c3caa75f278f93900fac9444931bbbc76524588",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk26/4/GPL/openjdk-26-ea+4_windows-x64_bin.zip",
+    "vendor": "openjdk",
+    "version": "26.0.0-ea+4"
+  },
+  {
+    "checksum": "sha256:f5f26e78a1e99825129d9aba68b40c6eb0b7a4b1abb5868c1fce6726c94d701d",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.8%2B7/sapmachine-jre-21.0.8-ea.7_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "21.0.8-ea.7"
+  },
+  {
+    "checksum": "sha256:7b0ef4d0b61064f7e9623fd08c18458ca3f43064e461948712d81b863fcf4cc1",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.8%2B7/sapmachine-jdk-21.0.8-ea.7_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "21.0.8-ea.7"
   }
 ]
