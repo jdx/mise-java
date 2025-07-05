@@ -23380,5 +23380,65 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu25.0.41-beta-jdk25.0.0-beta.28-macosx_x64.tar.gz",
     "vendor": "zulu",
     "version": "25.0.41.0"
+  },
+  {
+    "checksum": "sha256:77fe22567b9dfbc55ade2296b2261ca6b4672389ae61cea1559c36935c2a0df0",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.8%2B8/sapmachine-jdk-21.0.8-ea.8_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.8-ea.8"
+  },
+  {
+    "checksum": "sha256:7ebb4a0a904e0ff6329b24a6e2e57dd8fd06a7b119363842334b8832dce8ee42",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.8%2B8/sapmachine-jre-21.0.8-ea.8_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.8-ea.8"
+  },
+  {
+    "checksum": "sha256:9686ad4f3acd375395748ace5f229dcdeacdf10a4e67145496754c4b5c38c10d",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B4/sapmachine-jdk-26-ea.4_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.4"
+  },
+  {
+    "checksum": "sha256:09a18a2237eca402e074002281df3570293a4422483880deef320ae54c05f78b",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B4/sapmachine-jre-26-ea.4_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.4"
+  },
+  {
+    "checksum": "sha256:2d5fa4aaed68c0b6fe939ceffca7fa0e1883f995d2596827c8cbcfa29a706a57",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk25/30/GPL/openjdk-25-ea+30_macos-x64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "25.0.0-ea+30"
+  },
+  {
+    "checksum": "sha256:65472bdeb389c10d1cc14c64396f883a98e6db1de56bc9e6cc39f5dbed322e0c",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk26/5/GPL/openjdk-26-ea+5_macos-x64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "26.0.0-ea+5"
   }
 ]
