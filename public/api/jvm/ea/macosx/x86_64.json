@@ -23440,5 +23440,25 @@
     "url": "https://download.java.net/java/early_access/jdk26/5/GPL/openjdk-26-ea+5_macos-x64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "26.0.0-ea+5"
+  },
+  {
+    "checksum": "sha256:11760d23c185e1acf0072686d2648d42fb31d2ff7d5afb236317fa539ff1d757",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B29/sapmachine-jre-25-ea.29_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.0-ea.29"
+  },
+  {
+    "checksum": "sha256:2fe49b9f75b2fe9928c39dcffbc09768e812b0f41b98f491bf5cd4e8ce54b385",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B29/sapmachine-jdk-25-ea.29_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.0-ea.29"
   }
 ]
