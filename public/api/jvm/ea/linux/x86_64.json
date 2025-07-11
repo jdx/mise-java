@@ -35626,5 +35626,25 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-24.0.2%2B1/sapmachine-jdk-24.0.2-ea.1_linux-x64-musl_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "24.0.2-ea.1"
+  },
+  {
+    "checksum": "sha256:0fa76bfe95e0b721fbb5840d8cb9aea918b3232f52d7a94fa1dfb43fd945a009",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk26/6/GPL/openjdk-26-ea+6_linux-x64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "26.0.0-ea+6"
+  },
+  {
+    "checksum": "sha256:4c51d8b8a01121cdd3dd7c661afe7439238210199758c431aecb991c6395df99",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk25/31/GPL/openjdk-25-ea+31_linux-x64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "25.0.0-ea+31"
   }
 ]
