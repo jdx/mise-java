@@ -52690,5 +52690,650 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-24.0.2/sapmachine-jdk-24.0.2_linux-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "24.0.2"
+  },
+  {
+    "checksum": "sha1:9457eca08de856a0b6e9f3ddc0dd4b0beb9abb80",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.8%2B13/bellsoft-jdk21.0.8%2B13-linux-x64-musl-crac.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.8+13"
+  },
+  {
+    "checksum": "sha1:d3246301423e24112db571d547ac52494c73df20",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.8%2B12/bellsoft-jdk21.0.8%2B12-linux-amd64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.8+12"
+  },
+  {
+    "checksum": "sha1:bea03bf471036974f0558228def50aea2118743d",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.8%2B12/bellsoft-jdk21.0.8%2B12-linux-x64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.8+12"
+  },
+  {
+    "checksum": "sha1:52f9712ac17a04b0de5e70bdf280c8fbbd0fdc99",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.16%2B13/bellsoft-jdk17.0.16%2B13-linux-amd64-crac.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.16+13"
+  },
+  {
+    "checksum": "sha1:75117346b962888032f530659343ba166848b662",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.28%2B12/bellsoft-jre11.0.28%2B12-linux-amd64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.28+12"
+  },
+  {
+    "checksum": "sha1:959f82f902d9ce1dd63e5b7bba02af284d8f4d5a",
+    "features": [
+      "lite",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.8%2B12/bellsoft-jdk21.0.8%2B12-linux-x64-musl-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.8+12"
+  },
+  {
+    "checksum": "sha1:136af4637f568ceaba071a40c28a7c5820da5e63",
+    "features": [
+      "lite",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u462%2B11/bellsoft-jdk8u462%2B11-linux-x64-musl-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "8u462+11"
+  },
+  {
+    "checksum": "sha1:3eede84c90f1db53eff7900807314e256742ead6",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u462%2B11/bellsoft-jdk8u462%2B11-linux-amd64.tar.gz",
+    "vendor": "liberica",
+    "version": "8u462+11"
+  },
+  {
+    "checksum": "sha1:90d940ce9802eca5136b7baa3aed5e68e8522699",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u462%2B11/bellsoft-jre8u462%2B11-linux-amd64.tar.gz",
+    "vendor": "liberica",
+    "version": "8u462+11"
+  },
+  {
+    "checksum": "sha1:a51ec8f6f6d3247f8351a922b61d194df3d23625",
+    "features": [
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.28%2B12/bellsoft-jdk11.0.28%2B12-linux-amd64-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.28+12"
+  },
+  {
+    "checksum": "sha1:9251bd49dde6620bd850a4938aa930ffd2f4a269",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/24.0.2%2B12/bellsoft-jdk24.0.2%2B12-linux-amd64.tar.gz",
+    "vendor": "liberica",
+    "version": "24.0.2+12"
+  },
+  {
+    "checksum": "sha1:d52e79a4da290f80782ae4669e2327541957ca25",
+    "features": [
+      "lite",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.28%2B12/bellsoft-jdk11.0.28%2B12-linux-x64-musl-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.28+12"
+  },
+  {
+    "checksum": "sha1:f2e4b50f65e851d9b6a265c581248fb9a33b8f90",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.16%2B13/bellsoft-jdk17.0.16%2B13-linux-x64-musl-crac.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.16+13"
+  },
+  {
+    "checksum": "sha1:ca8d4530b384f3929540f802d81271712e7b5f50",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.8%2B12/bellsoft-jre21.0.8%2B12-linux-x64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.8+12"
+  },
+  {
+    "checksum": "sha1:125fae7060893611160d7f74f5a336777ab1f1a6",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.28%2B12/bellsoft-jdk11.0.28%2B12-linux-amd64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.28+12"
+  },
+  {
+    "checksum": "sha1:d9ba8ffff1766ca8ba427881d74a77486e6d697a",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.28%2B12/bellsoft-jre11.0.28%2B12-linux-x64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.28+12"
+  },
+  {
+    "checksum": "sha1:92992aefec7984c4e9ba9e245c8833a92bb90ad5",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/24.0.2%2B12/bellsoft-jdk24.0.2%2B12-linux-x64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "24.0.2+12"
+  },
+  {
+    "checksum": "sha1:61846247fb50e60ad1f83b03f0cb8b75f0bc2d29",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/24.0.2%2B12/bellsoft-jre24.0.2%2B12-linux-amd64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "24.0.2+12"
+  },
+  {
+    "checksum": "sha1:4337669743cb17076e5af896d07d0816912b5997",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.28%2B12/bellsoft-jdk11.0.28%2B12-linux-amd64.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.28+12"
+  },
+  {
+    "checksum": "sha1:01a5cb7ee8d24ffca27d746c542f847912497170",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.16%2B12/bellsoft-jdk17.0.16%2B12-linux-amd64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.16+12"
+  },
+  {
+    "checksum": "sha1:e7f98ecdcaeb98c7691d0859c54a80cd401f0fbf",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/24.0.2%2B12/bellsoft-jdk24.0.2%2B12-linux-amd64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "24.0.2+12"
+  },
+  {
+    "checksum": "sha1:dc5a43987ae089ced3f76494dd08889ab87871b5",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.28%2B12/bellsoft-jre11.0.28%2B12-linux-amd64.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.28+12"
+  },
+  {
+    "checksum": "sha1:34fbc0f7e8d4cd0ad3be6e2073053f4e79536ea3",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.8%2B12/bellsoft-jdk21.0.8%2B12-linux-amd64.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.8+12"
+  },
+  {
+    "checksum": "sha1:50b16256020a2302c339ab3d0731a414cd609c81",
+    "features": [
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.16%2B12/bellsoft-jdk17.0.16%2B12-linux-amd64-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.16+12"
+  },
+  {
+    "checksum": "sha1:7a7ad3e2a1a6f0c1cd7b2226eac878b088e9f7fa",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.16%2B12/bellsoft-jdk17.0.16%2B12-linux-x64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.16+12"
+  },
+  {
+    "checksum": "sha1:e80d2d901e747791689d68b3c885464d272fce24",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/24.0.2%2B12/bellsoft-jre24.0.2%2B12-linux-amd64.tar.gz",
+    "vendor": "liberica",
+    "version": "24.0.2+12"
+  },
+  {
+    "checksum": "sha1:20f07857507f23fbaa171bbb36b811c14e8a97c0",
+    "features": [
+      "lite",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.16%2B12/bellsoft-jdk17.0.16%2B12-linux-x64-musl-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.16+12"
+  },
+  {
+    "checksum": "sha1:3120a7af22634f7ccbe79373579f98d10af1b7f4",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u462%2B11/bellsoft-jre8u462%2B11-linux-amd64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "8u462+11"
+  },
+  {
+    "checksum": "sha1:d94d63677d7513c45f6d0f0010e98d0e9563a3a2",
+    "features": [
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/24.0.2%2B12/bellsoft-jdk24.0.2%2B12-linux-amd64-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "24.0.2+12"
+  },
+  {
+    "checksum": "sha1:656893792601165bf8ac9458f98608b2abfc94be",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.16%2B12/bellsoft-jre17.0.16%2B12-linux-amd64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.16+12"
+  },
+  {
+    "checksum": "sha1:d1e3ae30f6bf1975a848751aebd2e2ff8c3b9247",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.8%2B12/bellsoft-jre21.0.8%2B12-linux-amd64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.8+12"
+  },
+  {
+    "checksum": "sha1:668f9bcdffd08d4231ca5233610b95e0b7d484b5",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.8%2B12/bellsoft-jre21.0.8%2B12-linux-amd64.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.8+12"
+  },
+  {
+    "checksum": "sha1:8ea046c11d3bf222fc5b237ecd3235813b0f504d",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.16%2B12/bellsoft-jre17.0.16%2B12-linux-amd64.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.16+12"
+  },
+  {
+    "checksum": "sha1:4bd85871c39837cbde93d9679c8ef0ce4307ef0c",
+    "features": [
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.8%2B12/bellsoft-jdk21.0.8%2B12-linux-amd64-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.8+12"
+  },
+  {
+    "checksum": "sha1:8caa5aa94fc5afa81dcaf04cd69f77c2bc4cfca7",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.16%2B12/bellsoft-jdk17.0.16%2B12-linux-amd64.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.16+12"
+  },
+  {
+    "checksum": "sha1:a523d0dbce62968ca53cb4b73a9b0623baa06d2d",
+    "features": [
+      "lite",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/24.0.2%2B12/bellsoft-jdk24.0.2%2B12-linux-x64-musl-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "24.0.2+12"
+  },
+  {
+    "checksum": "sha1:b4bb41a43d2856caf15f4632790d91e4c101cdea",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u462%2B11/bellsoft-jdk8u462%2B11-linux-amd64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "8u462+11"
+  },
+  {
+    "checksum": "sha1:6448e9e8d7007976c3976a403fb442cbf5d7a82e",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.8%2B13/bellsoft-jdk21.0.8%2B13-linux-amd64-crac.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.8+13"
+  },
+  {
+    "checksum": "sha1:e1a2ef44ba5e58604b164e9f0819ea6c252ff413",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u462%2B11/bellsoft-jre8u462%2B11-linux-x64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "8u462+11"
+  },
+  {
+    "checksum": "sha1:48e1575dfec18fb5472ca6640625bdb55964294c",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u462%2B11/bellsoft-jdk8u462%2B11-linux-x64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "8u462+11"
+  },
+  {
+    "checksum": "sha1:71289bbd2d2885dab6de8fc6b34d957c4a89d8d2",
+    "features": [
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u462%2B11/bellsoft-jdk8u462%2B11-linux-amd64-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "8u462+11"
+  },
+  {
+    "checksum": "sha1:d91e2ba5a6ad1dce6ae9dbaae45ed3b830d6d73c",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.16%2B12/bellsoft-jre17.0.16%2B12-linux-x64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.16+12"
+  },
+  {
+    "checksum": "sha1:603aae28cfc434210447eac520c6579df4bb3501",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/24.0.2%2B12/bellsoft-jre24.0.2%2B12-linux-x64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "24.0.2+12"
+  },
+  {
+    "checksum": "sha1:b87d3784ecb2504082994e84b170616a1ca36790",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.28%2B12/bellsoft-jdk11.0.28%2B12-linux-x64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.28+12"
+  },
+  {
+    "checksum": "sha256:86be550b203970414df9d181a72607731a1a592f7c5416f649bcce9a537e7572",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/21.0.8.9.1/amazon-corretto-21.0.8.9.1-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "21.0.8.9.1"
+  },
+  {
+    "checksum": "sha256:ad6a9e3b97dbe15dec0a849c626532609fbed42dc7e53c1225cb8b8dedde0784",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/8.462.08.1/amazon-corretto-8.462.08.1-alpine-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "8.462.08.1"
+  },
+  {
+    "checksum": "sha256:d4cd1f03a8b9aad58d0fdac96d1ba5de6b7ac86f3069729535f2fc1e5a33f7c6",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/24.0.2.12.1/amazon-corretto-24.0.2.12.1-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "24.0.2.12.1"
+  },
+  {
+    "checksum": "sha256:ec20048e3330059fbcc22cc6459344e87b0b19a7676f8ca43de8241937e9bc08",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/17.0.16.8.1/amazon-corretto-17.0.16.8.1-alpine-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "17.0.16.8.1"
+  },
+  {
+    "checksum": "sha256:70734c46e0bbeb7f45b721756ba0b2f1f1e1ef85a11e10d5a488f06b257dadd9",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/11.0.28.6.1/amazon-corretto-11.0.28.6.1-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "11.0.28.6.1"
+  },
+  {
+    "checksum": "sha256:b30a150ba1eacb54595fca0675eb3b1670e36062a2cc489fe055f7b713efa115",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/8.462.08.1/amazon-corretto-8.462.08.1-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "8.462.08.1"
+  },
+  {
+    "checksum": "sha256:a8cebf866e41e514a98627acf6e1a1b006354b701a79b42fc0a9ce6d97ac4af9",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/24.0.2.12.1/amazon-corretto-24.0.2.12.1-alpine-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "24.0.2.12.1"
+  },
+  {
+    "checksum": "sha256:4c09427494e5ddf6d51470125711ba20b24a3d633912870fe7d8680c66d70603",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/11.0.28.6.1/amazon-corretto-11.0.28.6.1-alpine-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "11.0.28.6.1"
+  },
+  {
+    "checksum": "sha256:8459613474a7701b9aa8e42c99f6f15cedb294c0f43146860c3d1e70dece29e5",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/17.0.16.8.1/amazon-corretto-17.0.16.8.1-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "17.0.16.8.1"
+  },
+  {
+    "checksum": "sha256:82eeff2318217bbcffde5e5c351de551c1ba2793d82a5c6722c0a53ad94c6b59",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/21.0.8.9.1/amazon-corretto-21.0.8.9.1-alpine-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "21.0.8.9.1"
   }
 ]
