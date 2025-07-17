@@ -43817,5 +43817,45 @@
     "url": "https://corretto.aws/downloads/resources/11.0.28.6.1/amazon-corretto-11.0.28.6.1-macosx-x64.tar.gz",
     "vendor": "corretto",
     "version": "11.0.28.6.1"
+  },
+  {
+    "checksum": "sha256:34464861ed170ea0e5acdf870011f9e92f836e712b620ba37c4b2d0e5aeb8675",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.8%2B9/OpenJDK21U-jre_x64_mac_hotspot_21.0.8_9.tar.gz",
+    "vendor": "temurin",
+    "version": "21.0.8+9.0.LTS"
+  },
+  {
+    "checksum": "sha256:45438e511171f21ade709c6987ef4b88ea98b6c0124b4775a4b29d5822395cdd",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jre_x64_mac_hotspot_17.0.16_8.tar.gz",
+    "vendor": "temurin",
+    "version": "17.0.16+8"
+  },
+  {
+    "checksum": "sha256:ca5700c5d13124467ae52e1609881d7ce45d974870b18c3382ea8b7ae69d0f00",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jdk_x64_mac_hotspot_17.0.16_8.tar.gz",
+    "vendor": "temurin",
+    "version": "17.0.16+8"
+  },
+  {
+    "checksum": "sha256:0ceaf7060b2c9dbbe8ecc4fb9351c6b4cf24e4350d58772c9656589933a4fdeb",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.8%2B9/OpenJDK21U-jdk_x64_mac_hotspot_21.0.8_9.tar.gz",
+    "vendor": "temurin",
+    "version": "21.0.8+9.0.LTS"
   }
 ]

@@ -36464,5 +36464,49 @@
     "url": "https://corretto.aws/downloads/resources/17.0.16.8.1/amazon-corretto-17.0.16.8.1-alpine-linux-aarch64.tar.gz",
     "vendor": "corretto",
     "version": "17.0.16.8.1"
+  },
+  {
+    "checksum": "sha256:f495749fce8d8974323f30428c1183168f90592dc90bb94c96edab33ffccc94e",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.8%2B9/OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.8_9.tar.gz",
+    "vendor": "temurin",
+    "version": "21.0.8+9.0.LTS"
+  },
+  {
+    "checksum": "sha256:e5c41a1ab0865ea5de9b4529bf8526005f1d4593090845387d14fe450ce39c33",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.8%2B9/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.8_9.tar.gz",
+    "vendor": "temurin",
+    "version": "21.0.8+9.0.LTS"
+  },
+  {
+    "checksum": "sha256:f54f6e2a907c4aef95ce6d7388474c6d5d87ae87899dd309561672bcfda9121e",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.8%2B9/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.8_9.tar.gz",
+    "vendor": "temurin",
+    "version": "21.0.8+9.0.LTS"
+  },
+  {
+    "checksum": "sha256:4773cfdc59d66b75f4a68ac843b2b5854791840114cf8bb1b56fb6f7826ae498",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.8%2B9/OpenJDK21U-jdk_aarch64_alpine-linux_hotspot_21.0.8_9.tar.gz",
+    "vendor": "temurin",
+    "version": "21.0.8+9.0.LTS"
   }
 ]

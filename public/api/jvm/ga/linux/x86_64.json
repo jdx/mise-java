@@ -53335,5 +53335,25 @@
     "url": "https://corretto.aws/downloads/resources/21.0.8.9.1/amazon-corretto-21.0.8.9.1-alpine-linux-x64.tar.gz",
     "vendor": "corretto",
     "version": "21.0.8.9.1"
+  },
+  {
+    "checksum": "sha256:bee902852ae8b6698e04eb1599dc94af844ae45b72b3b8ec854350b9aba41335",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.2%2B12/OpenJDK24U-jre_x64_linux_hotspot_24.0.2_12.tar.gz",
+    "vendor": "temurin",
+    "version": "24.0.2+12"
+  },
+  {
+    "checksum": "sha256:aea1cc55e51cf651c85f2f00ad021603fe269c4bb6493fa97a321ad770c9b096",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.2%2B12/OpenJDK24U-jdk_x64_linux_hotspot_24.0.2_12.tar.gz",
+    "vendor": "temurin",
+    "version": "24.0.2+12"
   }
 ]
