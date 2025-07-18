@@ -36508,5 +36508,29 @@
     "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.8%2B9/OpenJDK21U-jdk_aarch64_alpine-linux_hotspot_21.0.8_9.tar.gz",
     "vendor": "temurin",
     "version": "21.0.8+9.0.LTS"
+  },
+  {
+    "checksum": "sha256:389100187cf328c7b6b6b390fc0f5071ab38e93e8a6c06beb11e59363d2fd0d0",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.2%2B12/OpenJDK24U-jre_aarch64_alpine-linux_hotspot_24.0.2_12.tar.gz",
+    "vendor": "temurin",
+    "version": "24.0.2+12"
+  },
+  {
+    "checksum": "sha256:5563867bf1abfc466c59bf3d08e9957a30666fe96fb8f9c5bae939ab11d262d5",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.2%2B12/OpenJDK24U-jdk_aarch64_alpine-linux_hotspot_24.0.2_12.tar.gz",
+    "vendor": "temurin",
+    "version": "24.0.2+12"
   }
 ]
