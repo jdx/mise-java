@@ -53487,5 +53487,59 @@
     "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.28%2B6/OpenJDK11U-jdk_x64_linux_hotspot_11.0.28_6.tar.gz",
     "vendor": "temurin",
     "version": "11.0.28+6"
+  },
+  {
+    "checksum": "sha256:66ed417287326b5c20a80ab5e53300fccd0244239453f826ef08821796497916",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-17.0.16-alpine-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "17.0.16"
+  },
+  {
+    "checksum": "sha256:281cc487016d4c4adda22fbba4a34c01bc0994a25facf2879175cd1ca002c6c1",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-11.0.28-linux-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "11.0.28"
+  },
+  {
+    "checksum": "sha256:2f6a74a4b78cd493fe3543e15779d006663401f9ae77c81165d044cfc2cb0dd0",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-11.0.28-alpine-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "11.0.28"
+  },
+  {
+    "checksum": "sha256:ef7ccf007efc473d3a19ffd84464da19905e2c11eaa31e96886c46dda27f94eb",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-17.0.16-linux-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "17.0.16"
+  },
+  {
+    "checksum": "sha256:da1cae7d08d41f32e87712bd3feac73faf7646a30476164c9e62a598dbd30aac",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-21.0.8-linux-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "21.0.8"
   }
 ]
