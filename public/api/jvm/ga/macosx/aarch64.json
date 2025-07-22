@@ -35678,5 +35678,25 @@
     "url": "https://aka.ms/download-jdk/microsoft-jdk-21.0.8-macos-aarch64.tar.gz",
     "vendor": "microsoft",
     "version": "21.0.8"
+  },
+  {
+    "checksum": "sha256:f9845abc8403f1d489402201064e7b9f2c57605d8717b85a95a15d94f882eeb7",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jdk_aarch64_mac_hotspot_17.0.16_8.tar.gz",
+    "vendor": "temurin",
+    "version": "17.0.16+8"
+  },
+  {
+    "checksum": "sha256:30c3cfb717a2a84bf164c010a9c51dc81a15dcf214cf83a9695206233c9c5d37",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jre_aarch64_mac_hotspot_17.0.16_8.tar.gz",
+    "vendor": "temurin",
+    "version": "17.0.16+8"
   }
 ]
