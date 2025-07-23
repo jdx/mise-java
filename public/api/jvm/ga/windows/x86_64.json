@@ -34889,5 +34889,115 @@
     "url": "https://aka.ms/download-jdk/microsoft-jdk-17.0.16-windows-x64.zip",
     "vendor": "microsoft",
     "version": "17.0.16"
+  },
+  {
+    "checksum": "sha256:f669c534a8e7a18434e480df62685f4046cec0c7e8ffb5590d5cac6de4275984",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://developers.redhat.com/content-gateway/file/pub/openjdk/adoptium/July_2025/java-1.8.0-openjdk-1.8.0.462.b08-2.win.jre.x86_64.zip",
+    "vendor": "redhat",
+    "version": "8u462-b08_1"
+  },
+  {
+    "checksum": "sha256:7035A82F2245E0F50F15762B6BEBDA6FDBF153C1D8D0C52AF10D68F35B66A5D4",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-23.1.8.0-Final/mandrel-java21-windows-amd64-23.1.8.0-Final.zip",
+    "vendor": "mandrel",
+    "version": "23.1.8.0-Final+java21"
+  },
+  {
+    "checksum": "sha256:238d74ec4ec9422d416fa98805ba375eecd8bc8f971bd0c61a21051a4fe42db8",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.8%2B9/OpenJDK21U-jre_x64_windows_hotspot_21.0.8_9.zip",
+    "vendor": "temurin",
+    "version": "21.0.8+9.0.LTS"
+  },
+  {
+    "checksum": "sha256:2b6c90b23e19d53a89dd4969758c430222f558345a4690be8add77bf7542faf4",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://developers.redhat.com/content-gateway/file/pub/openjdk/adoptium/July_2025/java-21-openjdk-21.0.8.0.9-1.win.jre.x86_64.zip",
+    "vendor": "redhat",
+    "version": "21.0.8+9_1"
+  },
+  {
+    "checksum": "sha256:1861355cefc357c5bde831d1af7955f1d8b3503bf707005d5d0f768e7fa2a2be",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://developers.redhat.com/content-gateway/file/pub/openjdk/adoptium/July_2025/java-17-openjdk-17.0.16.0.8-1.win.jre.x86_64.zip",
+    "vendor": "redhat",
+    "version": "17.0.16+8_1"
+  },
+  {
+    "checksum": "sha256:91395bf07da38dff1e9118acb91466eaacd1c18400224056392f15a6d4d364e9",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://developers.redhat.com/content-gateway/file/pub/openjdk/adoptium/July_2025/java-21-openjdk-21.0.8.0.9-1.win.jdk.x86_64.zip",
+    "vendor": "redhat",
+    "version": "21.0.8+9_1"
+  },
+  {
+    "checksum": "sha256:d29a159156a6c67ee57ea8fd0cb1906996112758182e431cce27c5d28645a372",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://developers.redhat.com/content-gateway/file/pub/openjdk/adoptium/July_2025/java-17-openjdk-17.0.16.0.8-1.win.jdk.x86_64.zip",
+    "vendor": "redhat",
+    "version": "17.0.16+8_1"
+  },
+  {
+    "checksum": "sha256:1ef361726c109f760fd9869c42f84167d3851436c41e5207cad3df0500edcaa3",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://developers.redhat.com/content-gateway/file/pub/openjdk/adoptium/July_2025/java-1.8.0-openjdk-1.8.0.462.b08-2.win.jdk.x86_64.zip",
+    "vendor": "redhat",
+    "version": "8u462-b08_1"
+  },
+  {
+    "checksum": "sha256:d35b05f4832215d8877d0dbf15c6370c854d7d5b812f890a9c0db8ad412a6bf2",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jre_x64_windows_hotspot_17.0.16_8.zip",
+    "vendor": "temurin",
+    "version": "17.0.16+8"
+  },
+  {
+    "checksum": "sha256:8c7cfff78a55c56ebaf470ed6a89c6466b47d8274bdabdda997d7507c20325c5",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jdk_x64_windows_hotspot_17.0.16_8.zip",
+    "vendor": "temurin",
+    "version": "17.0.16+8"
+  },
+  {
+    "checksum": "sha256:5dbb74a4edda94c2aae97a1e30f448db0ad9023a9466fe31a8c68377d9dfbac4",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.8%2B9/OpenJDK21U-jdk_x64_windows_hotspot_21.0.8_9.zip",
+    "vendor": "temurin",
+    "version": "21.0.8+9.0.LTS"
   }
 ]

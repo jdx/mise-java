@@ -10970,5 +10970,25 @@
     "url": "https://aka.ms/download-jdk/microsoft-jdk-17.0.16-windows-aarch64.zip",
     "vendor": "microsoft",
     "version": "17.0.16"
+  },
+  {
+    "checksum": "sha256:66617116409d3106eb5c8d230919773c01e09460562972633a09a89116c446e5",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.8%2B9/OpenJDK21U-jdk_aarch64_windows_hotspot_21.0.8_9.zip",
+    "vendor": "temurin",
+    "version": "21.0.8+9.0.LTS"
+  },
+  {
+    "checksum": "sha256:559b35e0ccb5b72b42d477aa104eb00256b79e26391348689beb36f65f7da95c",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.8%2B9/OpenJDK21U-jre_aarch64_windows_hotspot_21.0.8_9.zip",
+    "vendor": "temurin",
+    "version": "21.0.8+9.0.LTS"
   }
 ]

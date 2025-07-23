@@ -53589,5 +53589,75 @@
     "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.28%2B6/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.28_6.tar.gz",
     "vendor": "temurin",
     "version": "11.0.28+6"
+  },
+  {
+    "checksum": "sha256:dd6b419cac0335fc76d8b0c8dc8cdbf0e07ae80511594a355e3823454e8242b2",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-23.1.8.0-Final/mandrel-java21-linux-amd64-23.1.8.0-Final.tar.gz",
+    "vendor": "mandrel",
+    "version": "23.1.8.0-Final+java21"
+  },
+  {
+    "checksum": "sha256:1e708a7ac620e55b7a44a934d7a3a2211ddeafd90052cca7cceaa1ad1903a8fe",
+    "features": [],
+    "file_type": "tar.xz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://developers.redhat.com/content-gateway/file/pub/openjdk/adoptium/July_2025/java-17-openjdk-17.0.16.0.8-1.portable.jre.el.x86_64.tar.xz",
+    "vendor": "redhat",
+    "version": "17.0.16+8_1"
+  },
+  {
+    "checksum": "sha256:9234b04b3617b442f2d67b8b5cfde15c2e5b5f8ab175e66eafe54ede1e77e326",
+    "features": [],
+    "file_type": "tar.xz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://developers.redhat.com/content-gateway/file/pub/openjdk/adoptium/July_2025/java-21-openjdk-21.0.8.0.9-1.portable.jdk.x86_64.tar.xz",
+    "vendor": "redhat",
+    "version": "21.0.8+9_1"
+  },
+  {
+    "checksum": "sha256:f6ecc485a1947a850d250adc103d9e62bef97c6729c4fad1edce5b46fc7b0ea6",
+    "features": [],
+    "file_type": "tar.xz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://developers.redhat.com/content-gateway/file/pub/openjdk/adoptium/July_2025/java-1.8.0-openjdk-portable-1.8.0.462.b08-1.portable.jre.el.x86_64.tar.xz",
+    "vendor": "redhat",
+    "version": "8u462-b08_1"
+  },
+  {
+    "checksum": "sha256:774f5efd9a9a5bb8a351ec902691fb47a8c4b78215912cc8a3d7f3161c723231",
+    "features": [],
+    "file_type": "tar.xz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://developers.redhat.com/content-gateway/file/pub/openjdk/adoptium/July_2025/java-21-openjdk-21.0.8.0.9-1.portable.jre.x86_64.tar.xz",
+    "vendor": "redhat",
+    "version": "21.0.8+9_1"
+  },
+  {
+    "checksum": "sha256:491dd079cc74aad381266f38a46b86429a2c255ac3e2eb39f159dc00c319b46d",
+    "features": [],
+    "file_type": "tar.xz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://developers.redhat.com/content-gateway/file/pub/openjdk/adoptium/July_2025/java-17-openjdk-17.0.16.0.8-1.portable.jdk.el.x86_64.tar.xz",
+    "vendor": "redhat",
+    "version": "17.0.16+8_1"
+  },
+  {
+    "checksum": "sha256:400730c5754bd04bff4271f66e9c7e066c0ed128f2691695ac346587b8d71cc7",
+    "features": [],
+    "file_type": "tar.xz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://developers.redhat.com/content-gateway/file/pub/openjdk/adoptium/July_2025/java-1.8.0-openjdk-portable-1.8.0.462.b08-1.portable.jdk.el.x86_64.tar.xz",
+    "vendor": "redhat",
+    "version": "8u462-b08_1"
   }
 ]

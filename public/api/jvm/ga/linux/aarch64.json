@@ -36562,5 +36562,55 @@
     "url": "https://aka.ms/download-jdk/microsoft-jdk-11.0.28-linux-aarch64.tar.gz",
     "vendor": "microsoft",
     "version": "11.0.28"
+  },
+  {
+    "checksum": "sha256:4d1ec9bb271632703629f04f4961fb98bd1ef8f095b873d235e1c10941eed158",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-23.1.8.0-Final/mandrel-java21-linux-aarch64-23.1.8.0-Final.tar.gz",
+    "vendor": "mandrel",
+    "version": "23.1.8.0-Final+java21"
+  },
+  {
+    "checksum": "sha256:32c316cb3998a9c9dee2829fbb577ea1c0ed666700cec73e049d44c342bb19af",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.28%2B6/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.28_6.tar.gz",
+    "vendor": "temurin",
+    "version": "11.0.28+6"
+  },
+  {
+    "checksum": "sha256:761a0a87ca2b1e75eb5208565a56a4c3f49e02a5d4c00ce6a4930d015660e5d1",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.28%2B6/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.28_6.tar.gz",
+    "vendor": "temurin",
+    "version": "11.0.28+6"
+  },
+  {
+    "checksum": "sha256:c34506736ab52768c59660a5d4246b94f57543c79b7e4b53d322dda3ec4a9302",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u462-b08/OpenJDK8U-jre_aarch64_linux_hotspot_8u462b08.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.462+8"
+  },
+  {
+    "checksum": "sha256:19552c1cf7f5c18290a6bdcd6757f70ea5c331a2bc0dd7a3b3120e8dbc4b4891",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u462-b08/OpenJDK8U-jdk_aarch64_linux_hotspot_8u462b08.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.462+8"
   }
 ]
