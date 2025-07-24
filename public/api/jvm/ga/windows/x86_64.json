@@ -34999,5 +34999,105 @@
     "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.8%2B9/OpenJDK21U-jdk_x64_windows_hotspot_21.0.8_9.zip",
     "vendor": "temurin",
     "version": "21.0.8+9.0.LTS"
+  },
+  {
+    "checksum": "sha256:1422b070f94c93d3fdba7e0bcaa269389c92a928de54e47d988a1002d3a35dc2",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.28%2B6/OpenJDK11U-jdk_x64_windows_hotspot_11.0.28_6.zip",
+    "vendor": "temurin",
+    "version": "11.0.28+6"
+  },
+  {
+    "checksum": "sha256:d9ebfc6a09eee77ed1789bd802612a846181b9d0f30b40acfeff678cf94d43e7",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.28%2B6/OpenJDK11U-jre_x64_windows_hotspot_11.0.28_6.zip",
+    "vendor": "temurin",
+    "version": "11.0.28+6"
+  },
+  {
+    "checksum": "sha256:6222addcf9657c89410fd9e22358ce0c2d9148aee8c2ebce2ed85465bbaeb513",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.16%2B8_openj9-0.53.0/ibm-semeru-open-jre_x64_windows_17.0.16_8_openj9-0.53.0.zip",
+    "vendor": "semeru",
+    "version": "17.0.16+8_openj9-0.53.0"
+  },
+  {
+    "checksum": "sha256:f74e7092119d37d0234a31dbfd4042071dc97eda541768c3477ae65c6d12e858",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.16%2B8_openj9-0.53.0/ibm-semeru-open-jdk_x64_windows_17.0.16_8_openj9-0.53.0.zip",
+    "vendor": "semeru",
+    "version": "17.0.16+8_openj9-0.53.0"
+  },
+  {
+    "checksum": "sha256:e19d5df99050a4283714f99c5fff8c2f558cf183f712a94a5a2f003b076cf9bd",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.28%2B6_openj9-0.53.0/ibm-semeru-open-jdk_x64_windows_11.0.28_6_openj9-0.53.0.zip",
+    "vendor": "semeru",
+    "version": "11.0.28+6_openj9-0.53.0"
+  },
+  {
+    "checksum": "sha256:9a0564a472ae30142d7a2a48eaaa9672e3ec5cf74eae0028e86bf5be1251a792",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u462-b08_openj9-0.53.0/ibm-semeru-open-jdk_x64_windows_8u462b08_openj9-0.53.0.zip",
+    "vendor": "semeru",
+    "version": "8u462-b08_openj9-0.53.0"
+  },
+  {
+    "checksum": "sha256:27a8a4e1e3e111088ecf0620822cf3e905eb4b0f68156c46f71aed2073f6386e",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.28%2B6_openj9-0.53.0/ibm-semeru-open-jre_x64_windows_11.0.28_6_openj9-0.53.0.zip",
+    "vendor": "semeru",
+    "version": "11.0.28+6_openj9-0.53.0"
+  },
+  {
+    "checksum": "sha256:a74892795ab8b2c21417a61ede14a48aacd7419c9a2c1c2bc88881e6f595a2bd",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u462-b08_openj9-0.53.0/ibm-semeru-open-jre_x64_windows_8u462b08_openj9-0.53.0.zip",
+    "vendor": "semeru",
+    "version": "8u462-b08_openj9-0.53.0"
+  },
+  {
+    "checksum": "sha256:6a98e374e430ac4a499f91b63764b698a9ab83276ad586d351f9b78fb882a123",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.8%2B9_openj9-0.53.0/ibm-semeru-open-jdk_x64_windows_21.0.8_9_openj9-0.53.0.zip",
+    "vendor": "semeru",
+    "version": "21.0.8+9_openj9-0.53.0"
+  },
+  {
+    "checksum": "sha256:b331a3b9a5fd1bd160f251cd5f8d21f4f22e52bdc99db369dab4570461ff95d6",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.8%2B9_openj9-0.53.0/ibm-semeru-open-jre_x64_windows_21.0.8_9_openj9-0.53.0.zip",
+    "vendor": "semeru",
+    "version": "21.0.8+9_openj9-0.53.0"
   }
 ]

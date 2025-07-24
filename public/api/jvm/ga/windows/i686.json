@@ -17162,5 +17162,45 @@
     "url": "https://corretto.aws/downloads/resources/8.462.08.1/amazon-corretto-8.462.08.1-windows-x86-jdk.zip",
     "vendor": "corretto",
     "version": "8.462.08.1"
+  },
+  {
+    "checksum": "sha256:ca382202d08d57aff7816a2b51fe1f152d99576e0e3fabab57949cc2e40d4661",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jdk_x86-32_windows_hotspot_17.0.16_8.zip",
+    "vendor": "temurin",
+    "version": "17.0.16+8"
+  },
+  {
+    "checksum": "sha256:c6a570ebbcc9ace13117fcd88f7f2b2e5fb07e72a3708c21f10ba82f93a9bb6f",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.16%2B8/OpenJDK17U-jre_x86-32_windows_hotspot_17.0.16_8.zip",
+    "vendor": "temurin",
+    "version": "17.0.16+8"
+  },
+  {
+    "checksum": "sha256:3fdf9ec6512137109426e875131db8e713fb8f8491c86d790dff319cde1b2efb",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u462-b08_openj9-0.53.0/ibm-semeru-open-jre_x86-32_windows_8u462b08_openj9-0.53.0.zip",
+    "vendor": "semeru",
+    "version": "8u462-b08_openj9-0.53.0"
+  },
+  {
+    "checksum": "sha256:1fc7e9bae7600957118eaddba60fe5d7d315ca1606e63c209bb604f60ae1d2df",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u462-b08_openj9-0.53.0/ibm-semeru-open-jdk_x86-32_windows_8u462b08_openj9-0.53.0.zip",
+    "vendor": "semeru",
+    "version": "8u462-b08_openj9-0.53.0"
   }
 ]
