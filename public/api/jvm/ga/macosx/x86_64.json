@@ -43987,5 +43987,49 @@
     "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.16%2B8_openj9-0.53.0/ibm-semeru-open-jre_x64_mac_17.0.16_8_openj9-0.53.0.tar.gz",
     "vendor": "semeru",
     "version": "17.0.16+8_openj9-0.53.0"
+  },
+  {
+    "checksum": "sha512:36ddaa2373535e2539d42d47e72819f101993f667f1c5bf7a73c764882ec115fa7c9a3b32c0b2d74363c9ade31be94dfa566410a6b11df6aacda067deba72c95",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.8-osx-x64-b1038.68.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1038.68"
+  },
+  {
+    "checksum": "sha512:40b57086c22a8feaea30b541a5e45b4c5ceb6ac2df11a7caae81f272e713be401a0a0e0241db271041e995805b68f2684f0deccc3a044a4b7d4c7562d74e9839",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.8-osx-x64-b1038.68.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1038.68"
+  },
+  {
+    "checksum": "sha512:9983907aaa410f2e2ecf41bf979ea1ea3baaecafdf62cb9d322d85fa59580577c57d950f1c977a9159f3c9f7c0fe55b17ee6becddfb08ca1acda366a395fae69",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.8-osx-x64-b1038.68.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1038.68"
+  },
+  {
+    "checksum": "sha512:0865509788fba6c872843cd6c216b4620d9de258eec66baef4ebb1bfb55cae6f104a5812a244f2cc1811a44cbdc2b3d03c85a215c042f76a8e9626518b3377b9",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.8-osx-x64-b1038.68.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1038.68"
   }
 ]

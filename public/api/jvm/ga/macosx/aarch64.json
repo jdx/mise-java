@@ -35788,5 +35788,49 @@
     "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.28%2B6_openj9-0.53.0/ibm-semeru-open-jdk_aarch64_mac_11.0.28_6_openj9-0.53.0.tar.gz",
     "vendor": "semeru",
     "version": "11.0.28+6_openj9-0.53.0"
+  },
+  {
+    "checksum": "sha512:dfdf088eee6d41bc018b1934629baf22e63c20bca0081cacf599242428d5addf611bf1cc39c7f4b7edda40398644c19db9074b33a3050c4da6e65a2cba72d1a9",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.8-osx-aarch64-b1038.68.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1038.68"
+  },
+  {
+    "checksum": "sha512:2c437c107e10978a6c211d521e364411aeabd9b3b36e6674ca82078288eb52dcdb74948d5e4ec4d6e679e534229b6295b80895ec29534701403a4f39bf6fa938",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.8-osx-aarch64-b1038.68.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1038.68"
+  },
+  {
+    "checksum": "sha512:f5832c26ce8ed0db29092cc33913b571918acf887edbc924f05efdc18ac4ab85bbd5a39f388a6fcc591bdab5d10b17a7a0734ac521a05870b7bf30d21e1c5d9c",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.8-osx-aarch64-b1038.68.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1038.68"
+  },
+  {
+    "checksum": "sha512:e1212681d12d7b75a6fec39180d54b94d5cd63949c433f7552821c90783b0388f3a27eda712a6339fd2c21a25cc0b8a0846c5808ba7901e97e5c8a543dc6a55f",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.8-osx-aarch64-b1038.68.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1038.68"
   }
 ]
