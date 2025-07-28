@@ -36820,5 +36820,286 @@
     "url": "https://github.com/adoptium/temurin24-binaries/releases/download/jdk-24.0.2%2B12/OpenJDK24U-jre_aarch64_linux_hotspot_24.0.2_12.tar.gz",
     "vendor": "temurin",
     "version": "24.0.2+12"
+  },
+  {
+    "checksum": "sha256:f8276c265d4634868b052401f94da01c14e3c8bc6ef5197e5498eb8450daad38",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.32.13-ca-crac-jre24.0.2-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "24.32.13.0"
+  },
+  {
+    "checksum": "sha256:e74bcc2df2cd070eb0325fe599a9c102e9728e7d266862048634bc1e7043b5d0",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.60.17-ca-fx-jre17.0.16-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.60.17.0"
+  },
+  {
+    "checksum": "sha256:22ac92e6accfcd2b993dfd1bb2f26a54e3309f455c81013bcc43479ba9630b47",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.88.0.19-ca-fx-jre8.0.462-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "8.88.0.19"
+  },
+  {
+    "checksum": "sha256:bcffd3bc1f9ca7e58087b5f83c5c4f8c0e534b1ae5fa13c912f25686b508311f",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.44.17-ca-crac-jdk21.0.8-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.44.17.0"
+  },
+  {
+    "checksum": "sha256:b40ffb41f108e8d6bc4ac5dc99fa3f9edbb3a6917adb4990dc11ae19f1e59284",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.82.19-ca-fx-jre11.0.28-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "11.82.19.0"
+  },
+  {
+    "checksum": "sha256:d90197e415eac3f6f89ccef9b2c3012cc0fb16721227593b08057a1ecad451f7",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.60.17-ca-crac-jre17.0.16-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.60.17.0"
+  },
+  {
+    "checksum": "sha256:eaa170a36ac157e99b1050d9368a84b37cfedac6a3df57ec3871bd8d3a124f64",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.44.17-ca-fx-jdk21.0.8-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.44.17.0"
+  },
+  {
+    "checksum": "sha256:a55b297b947920d9842093628a10da9cec25781925529ed2be3d4dc3339efb0b",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.32.13-ca-fx-jdk24.0.2-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "24.32.13.0"
+  },
+  {
+    "checksum": "sha256:3151ce1ffa476c09cbf2bac2f2d556a776fa9284b495c2b92ac62deddfdc59e0",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.32.13-ca-crac-jdk24.0.2-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "24.32.13.0"
+  },
+  {
+    "checksum": "sha256:3733b3eb4c72f6e4c238fcb2892eb1af07c796548056a04ea9243c6e6cb016e0",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.60.17-ca-fx-jdk17.0.16-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.60.17.0"
+  },
+  {
+    "checksum": "sha256:cf4caada39bee6a7d5c7159ba36d8987eef1633729d40a3af4ee920e95743742",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.44.17-ca-crac-jdk21.0.8-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.44.17.0"
+  },
+  {
+    "checksum": "sha256:c0ab86704436c027564aab08ac05c4027518ee31672983ce5c22f2d788645760",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.32.13-ca-fx-jre24.0.2-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "24.32.13.0"
+  },
+  {
+    "checksum": "sha256:bde53ef0f442709b2271e04a337e2a2d20fa7e68184643fe9cf772bb005a6caa",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.44.17-ca-fx-jre21.0.8-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.44.17.0"
+  },
+  {
+    "checksum": "sha256:c06cfd20fbcaebc4457bdc04d7a3d94e7c4ef44d9c13af04c4d6f7563ed16e64",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu24.32.13-ca-crac-jdk24.0.2-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "24.32.13.0"
+  },
+  {
+    "checksum": "sha256:fc7da524cdcfb8380c18f027482e82c56200b5aa11035a106aa682714a7f87dc",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.82.19-ca-fx-jdk11.0.28-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "11.82.19.0"
+  },
+  {
+    "checksum": "sha256:3d5e23bfcf8d6743296ba457ba5e2ebe19b5d8732d67ea18cfc8cfd508961675",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.60.17-ca-crac-jdk17.0.16-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.60.17.0"
+  },
+  {
+    "checksum": "sha256:aee246ea892a3df023ba74a80916f2d39cad32eae8dc48f43ce0546adba7ba61",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.44.17-ca-crac-jre21.0.8-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.44.17.0"
+  },
+  {
+    "checksum": "sha256:129b3f44cfe74db8a7c3c1320bb6722f44e5cc75800b6380e8625f5374bf6ea9",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.88.0.19-ca-fx-jdk8.0.462-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "8.88.0.19"
+  },
+  {
+    "checksum": "sha256:1a1d737d49f6d2a0534359ad62a80f965f5c0a99daee441a3382140d4be904af",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.60.17-ca-crac-jdk17.0.16-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.60.17.0"
+  },
+  {
+    "checksum": "md5:a9f5536e68702ebe07124089515cc4c0",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.28/TencentKona-11.0.28.b1-jdk_linux-aarch64.tar.gz",
+    "vendor": "kona",
+    "version": "11.0.28.b1"
+  },
+  {
+    "checksum": "md5:f0b4fc8997298427ed0430f3c8b427f4",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.23-GA/TencentKona8.0.23.b1_jdk_linux-aarch64_8u462.tar.gz",
+    "vendor": "kona",
+    "version": "8.0.23.b1"
+  },
+  {
+    "checksum": "md5:6c047c40b928d7182efe358c8e7512ba",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.16/TencentKona-17.0.16.b1-jdk_linux-aarch64.tar.gz",
+    "vendor": "kona",
+    "version": "17.0.16.b1"
+  },
+  {
+    "checksum": "md5:fd98aa38a65fa6e3ebf1aaab0838030d",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.23-GA/TencentKona8.0.23.b1_jdk_linux-musl-aarch64_8u462.tar.gz",
+    "vendor": "kona",
+    "version": "8.0.23.b1"
+  },
+  {
+    "checksum": "md5:1f67d0727987ce3bd8a2ce0fb0b40f0d",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.8/TencentKona-21.0.8.b1-jdk_linux-aarch64.tar.gz",
+    "vendor": "kona",
+    "version": "21.0.8.b1"
   }
 ]
