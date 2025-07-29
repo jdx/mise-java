@@ -44399,5 +44399,25 @@
     "url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.8/TencentKona-21.0.8.b1_jdk_macosx-x86_64_notarized.tar.gz",
     "vendor": "kona",
     "version": "21.0.8.b1"
+  },
+  {
+    "checksum": "sha256:026001d776b9e692e9c79b7de975f7a1d819def42bd12e7d655ab16136b7dcf6",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u462-b08/OpenJDK8U-jdk_x64_mac_hotspot_8u462b08.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.462+8"
+  },
+  {
+    "checksum": "sha256:d34f688e4b8f58dca0599d0f99b31729568af26837e30d997d77fc65929d7041",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u462-b08/OpenJDK8U-jre_x64_mac_hotspot_8u462b08.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.462+8"
   }
 ]

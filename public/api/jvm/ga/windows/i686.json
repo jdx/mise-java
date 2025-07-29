@@ -17314,5 +17314,25 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu11.82.19-ca-fx-jre11.0.28-win_i686.zip",
     "vendor": "zulu",
     "version": "11.82.19.0"
+  },
+  {
+    "checksum": "sha256:bf88e85e140cd44af4134cc5d063bd79d77b24d26484790a132bd6ef56870110",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.28%2B6/OpenJDK11U-jre_x86-32_windows_hotspot_11.0.28_6.zip",
+    "vendor": "temurin",
+    "version": "11.0.28+6"
+  },
+  {
+    "checksum": "sha256:21835a3a761932d93a79759dc1c823112d54a3288f0f04e65a188eaf45cc6d69",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.28%2B6/OpenJDK11U-jdk_x86-32_windows_hotspot_11.0.28_6.zip",
+    "vendor": "temurin",
+    "version": "11.0.28+6"
   }
 ]
