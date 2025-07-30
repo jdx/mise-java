@@ -17142,5 +17142,45 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu25.0.43-beta-jdk25.0.0-beta.32-linux_aarch64.tar.gz",
     "vendor": "zulu",
     "version": "25.0.43.0"
+  },
+  {
+    "checksum": "sha256:4871b93d751e69c1bd221f0bb1ee189c97fcc5f98ab5ffaf649db04d32430b5d",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B8/sapmachine-jre-26-ea.8_linux-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.8"
+  },
+  {
+    "checksum": "sha256:cb6e4a989af0e00936344e442c0c70d1ef1724fe29cee7f1b87f0923fb482752",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B33/sapmachine-jre-25-ea.33_linux-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.0-ea.33"
+  },
+  {
+    "checksum": "sha256:3ebc0da903df6896ed495e19c73002228132b9644d55d8ce24f83b5d71461fbd",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B8/sapmachine-jdk-26-ea.8_linux-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.8"
+  },
+  {
+    "checksum": "sha256:24cfc8f0e996edd7d48d2a494a36b18c67c489f09ec400208c1b422d57929022",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B33/sapmachine-jdk-25-ea.33_linux-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.0-ea.33"
   }
 ]
