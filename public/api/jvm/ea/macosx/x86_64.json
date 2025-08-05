@@ -23840,5 +23840,25 @@
     "url": "https://download.java.net/java/early_access/jdk26/9/GPL/openjdk-26-ea+9_macos-x64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "26.0.0-ea+9"
+  },
+  {
+    "checksum": "sha256:fbc694646bbc4f0898809c8ffdcd713e76635c3322154530733bcb9ed58ae7f4",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.17%2B1/sapmachine-jre-17.0.17-ea.1_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.17-ea.1"
+  },
+  {
+    "checksum": "sha256:b77d83ac3ee73389457954a86f59cb212a8d329783849698afe68e36346e9960",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.17%2B1/sapmachine-jdk-17.0.17-ea.1_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.17-ea.1"
   }
 ]
