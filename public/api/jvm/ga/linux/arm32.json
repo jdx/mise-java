@@ -2228,5 +2228,25 @@
     "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u462-b08/OpenJDK8U-jdk_arm_linux_hotspot_8u462b08.tar.gz",
     "vendor": "temurin",
     "version": "8.0.462+8"
+  },
+  {
+    "checksum": "sha256:96c27d5ef39ab4ff2c92a1cd2901f2a862833591022d122f09283dd420d49250",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu-embedded/bin/zulu11.82.19-ca-jdk11.0.28-linux_aarch32sf.tar.gz",
+    "vendor": "zulu",
+    "version": "11.82.19.0"
+  },
+  {
+    "checksum": "sha256:3555342ea5991dad9098e2825afeef722d45f93e263a2099c16b9633aa0ef944",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu-embedded/bin/zulu8.88.0.19-ca-jdk8.0.462-linux_aarch32sf.tar.gz",
+    "vendor": "zulu",
+    "version": "8.88.0.19"
   }
 ]
