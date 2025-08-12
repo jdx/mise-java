@@ -103,11 +103,12 @@ fn normalize_features(package: &Package) -> Option<Vec<String>> {
     if let Some(true) = package.crac_supported {
         features.push("crac".to_string());
     }
-    if let Some(lib_c_type) = &package.lib_c_type {
-        if lib_c_type == "musl" {
-            features.push("musl".to_string());
-        }
+    if let Some(lib_c_type) = &package.lib_c_type
+        && lib_c_type == "musl"
+    {
+        features.push("musl".to_string());
     }
+
     match features.is_empty() {
         true => None,
         false => Some(features),

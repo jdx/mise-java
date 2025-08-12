@@ -27,10 +27,10 @@ fn main() -> eyre::Result<()> {
 }
 
 fn handle_err(err: eyre::Report) -> eyre::Result<()> {
-    if let Some(err) = err.downcast_ref::<std::io::Error>() {
-        if err.kind() == std::io::ErrorKind::BrokenPipe {
-            return Ok(());
-        }
+    if let Some(err) = err.downcast_ref::<std::io::Error>()
+        && err.kind() == std::io::ErrorKind::BrokenPipe
+    {
+        return Ok(());
     }
     Err(err)
 }
