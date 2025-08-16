@@ -17154,6 +17154,18 @@
     "version": "26.0.0-ea.8"
   },
   {
+    "checksum": "sha256:7295bf7fee10c4deff317e039b8f8baa94f29c7d57686189d9888e9fc97f6198",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/25.0.0.34.1/amazon-corretto-25.0.0.34.1-alpine-linux-aarch64.tar.gz",
+    "vendor": "corretto",
+    "version": "25.0.0.34.1"
+  },
+  {
     "checksum": "sha256:cb6e4a989af0e00936344e442c0c70d1ef1724fe29cee7f1b87f0923fb482752",
     "features": [],
     "file_type": "tar.gz",
@@ -17374,6 +17386,16 @@
     "version": "21.0.9-ea.3"
   },
   {
+    "checksum": "sha256:a627a52be57e90e15f4714a6b78255efedd4a39c8da13140f0744e5b80995e5c",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/25.0.0.34.1/amazon-corretto-25.0.0.34.1-linux-aarch64.tar.gz",
+    "vendor": "corretto",
+    "version": "25.0.0.34.1"
+  },
+  {
     "checksum": "sha256:159d3f28abd8efd74b28a2489ebe697cc9917d3466b2072ab70fdda908d01097",
     "features": [],
     "file_type": "tar.gz",
@@ -17402,5 +17424,25 @@
     "url": "https://download.java.net/java/early_access/jdk26/11/GPL/openjdk-26-ea+11_linux-aarch64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "26.0.0-ea+11"
+  },
+  {
+    "checksum": "sha256:c9365771f4cd2dd0c80c73480e74062e2cb353a5cb3b7f98740ab579d200cb1f",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B11/sapmachine-jre-26-ea.11_linux-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.11"
+  },
+  {
+    "checksum": "sha256:fdf8380eb1d5829a691601cd208f5997e490ad18ba4eb913b24c545b7a672659",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B11/sapmachine-jdk-26-ea.11_linux-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.11"
   }
 ]

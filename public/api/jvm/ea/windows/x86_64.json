@@ -21711,5 +21711,35 @@
     "url": "https://download.java.net/java/early_access/jdk26/11/GPL/openjdk-26-ea+11_windows-x64_bin.zip",
     "vendor": "openjdk",
     "version": "26.0.0-ea+11"
+  },
+  {
+    "checksum": "sha256:57cc00ea3f6fb26ac21f71e030c75f521e8e33b4116710ba81b66435f36ec722",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B11/sapmachine-jre-26-ea.11_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.11"
+  },
+  {
+    "checksum": "sha256:a4c26b6e7d3fa424c5aa101e2bf5bb28d6d3a605f88a9247a3ad74eaed1ddd44",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B11/sapmachine-jdk-26-ea.11_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.11"
+  },
+  {
+    "checksum": "sha256:4f951d4994d2c37fd9bb8462039482a61b21e0336b99775193053b99e04ca3c4",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/25.0.0.34.1/amazon-corretto-25.0.0.34.1-windows-x64-jdk.zip",
+    "vendor": "corretto",
+    "version": "25.0.0.34.1"
   }
 ]

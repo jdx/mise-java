@@ -15000,5 +15000,35 @@
     "url": "https://download.java.net/java/early_access/jdk26/11/GPL/openjdk-26-ea+11_macos-aarch64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "26.0.0-ea+11"
+  },
+  {
+    "checksum": "sha256:15b1c0a51b4d126080c1b931d3343d3540081166f0e8bfbc67fd6453880b30db",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B11/sapmachine-jre-26-ea.11_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.11"
+  },
+  {
+    "checksum": "sha256:23437d4469b8e8fc9ead9d4847b2afc0df9b09fab1fcb8406f107bb6f1b2add0",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B11/sapmachine-jdk-26-ea.11_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.11"
+  },
+  {
+    "checksum": "sha256:d6d786cc150bf5a3c3360fea612a53a31aa84ea0024dade3c89806a02fddd9ce",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/25.0.0.34.1/amazon-corretto-25.0.0.34.1-macosx-aarch64.tar.gz",
+    "vendor": "corretto",
+    "version": "25.0.0.34.1"
   }
 ]
