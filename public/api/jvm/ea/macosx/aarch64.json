@@ -15030,5 +15030,25 @@
     "url": "https://corretto.aws/downloads/resources/25.0.0.34.1/amazon-corretto-25.0.0.34.1-macosx-aarch64.tar.gz",
     "vendor": "corretto",
     "version": "25.0.0.34.1"
+  },
+  {
+    "checksum": "sha256:220088ce1a7b75648c228233a6dd09ba2b9fd627e4cf36aa811ebffe88423b95",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B36/sapmachine-jre-25-ea.36_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.0-ea.36"
+  },
+  {
+    "checksum": "sha256:d58f62cde8ac3aae9c62e6d574599f9738ecf4814bf98a3be553de231ef48862",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B36/sapmachine-jdk-25-ea.36_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.0-ea.36"
   }
 ]

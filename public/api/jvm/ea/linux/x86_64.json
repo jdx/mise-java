@@ -36732,5 +36732,49 @@
     "url": "https://corretto.aws/downloads/resources/25.0.0.34.1/amazon-corretto-25.0.0.34.1-linux-x64.tar.gz",
     "vendor": "corretto",
     "version": "25.0.0.34.1"
+  },
+  {
+    "checksum": "sha256:6ec5239277a123e11d77f949a02dc31fa9e999bd074f4f22af3a62fb44010413",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B36/sapmachine-jdk-25-ea.36_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.0-ea.36"
+  },
+  {
+    "checksum": "sha256:5f4af0e6f65e811ab152a5c5f47835413621adca4290eaeeab3f1d49188a81ba",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B36/sapmachine-jre-25-ea.36_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.0-ea.36"
+  },
+  {
+    "checksum": "sha256:83687d4fe9346df9e8e5092051ae62ad082c1bc3dd9724315b9f98d450cbd835",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B36/sapmachine-jre-25-ea.36_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.0-ea.36"
+  },
+  {
+    "checksum": "sha256:a765ef7b0e2c1aadbe2a422ee8a7b466c9b92ae83d66ec01b5e63a2d0415ec15",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B36/sapmachine-jdk-25-ea.36_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.0-ea.36"
   }
 ]

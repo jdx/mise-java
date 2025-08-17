@@ -21741,5 +21741,25 @@
     "url": "https://corretto.aws/downloads/resources/25.0.0.34.1/amazon-corretto-25.0.0.34.1-windows-x64-jdk.zip",
     "vendor": "corretto",
     "version": "25.0.0.34.1"
+  },
+  {
+    "checksum": "sha256:26393f446f973b2409f79448a69e68eab096c65e99a31d1ecac3130809c8b34f",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B36/sapmachine-jre-25-ea.36_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "25.0.0-ea.36"
+  },
+  {
+    "checksum": "sha256:dcad08dbf7ab12090d9da0643a30353fe90a4c0250407c0eb7e27a66f07e8c75",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25%2B36/sapmachine-jdk-25-ea.36_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "25.0.0-ea.36"
   }
 ]
