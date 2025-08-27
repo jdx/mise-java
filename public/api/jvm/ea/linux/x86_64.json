@@ -36808,5 +36808,115 @@
     "url": "https://corretto.aws/downloads/resources/25.0.0.36.1/amazon-corretto-25.0.0.36.1-alpine-linux-x64.tar.gz",
     "vendor": "corretto",
     "version": "25.0.0.36.1"
+  },
+  {
+    "checksum": "sha256:b11c2675d6997d3fcbef2d420708ae4f1ddc97ff4246c12a38a4c9f8d035ad1e",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.0.47-beta-jdk25.0.0-beta.34-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.0.47.0"
+  },
+  {
+    "checksum": "sha256:3e36c32c1b7c9f93dbcca8405fe259a742e2dca7b38b0d97be3a5b7bea8fbc59",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.0.47-beta-jdk25.0.0-beta.34-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.0.47.0"
+  },
+  {
+    "checksum": "sha256:6e432d3de1345668a997a2d082e06fc35f231092765f91fd9bb849624f8b40f5",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu26.0.19-beta-jdk26.0.0-beta.11-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "26.0.19.0"
+  },
+  {
+    "checksum": "sha256:866bcc8b54a743b61821b2e2ff94d1757b6ff593882f51aa9cf923d51c56403a",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu26.0.19-beta-jdk26.0.0-beta.11-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "26.0.19.0"
+  },
+  {
+    "checksum": "sha256:0ec3fe66583a383557f2c906d1d84739f18b27ed6107923468bb80ab5b61b419",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu26.0.17-beta-jdk26.0.0-beta.8-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "26.0.17.0"
+  },
+  {
+    "checksum": "sha256:fb376a72d959d88eacc8d0470c6dfe3ec43f731bf42b5c682bea01881be07599",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu26.0.17-beta-jdk26.0.0-beta.8-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "26.0.17.0"
+  },
+  {
+    "checksum": "sha256:73a8e3da6e6b9e01dbc12b3db5a7f3bcd55234f208929027f72e4083da05b29d",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.9%2B4/sapmachine-jdk-21.0.9-ea.4_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.9-ea.4"
+  },
+  {
+    "checksum": "sha256:83593d552ec56eb5e5afcd7cdb9c80548771f76efd1c49ad4ff8d9dbbf0707c5",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.9%2B4/sapmachine-jre-21.0.9-ea.4_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.9-ea.4"
+  },
+  {
+    "checksum": "sha256:3313ded4c6161f6e506715d351f0d6840726d658f2019aa388d12720e1a4c19a",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.9%2B4/sapmachine-jdk-21.0.9-ea.4_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.9-ea.4"
+  },
+  {
+    "checksum": "sha256:94ff5032211726f2e1915d2f96f402e13b4d9f200a182b91724c9277aa072a7b",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.9%2B4/sapmachine-jre-21.0.9-ea.4_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.9-ea.4"
   }
 ]
