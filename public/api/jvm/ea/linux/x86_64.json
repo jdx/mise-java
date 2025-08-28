@@ -36918,5 +36918,59 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.9%2B4/sapmachine-jre-21.0.9-ea.4_linux-x64-musl_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "21.0.9-ea.4"
+  },
+  {
+    "checksum": "sha256:02f41a550ed7605e6de1872db13381a1da011a14c4bd68da7fa47213d14e247f",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.17%2B4/sapmachine-jdk-17.0.17-ea.4_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.17-ea.4"
+  },
+  {
+    "checksum": "sha256:d109eb25e4ae13fed443f5fc72d5c579b10e6663f091eece61b234bd00f5284d",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.17%2B4/sapmachine-jre-17.0.17-ea.4_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.17-ea.4"
+  },
+  {
+    "checksum": "sha256:da66228cb238d6b67b5daa37c90a1101bc7f9df2bb820189a506eb7d6dc419f4",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.17%2B4/sapmachine-jdk-17.0.17-ea.4_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.17-ea.4"
+  },
+  {
+    "checksum": "sha256:b6b6d9f01c2ce1f7a78932aa08b1941be170d3f1c94b1d18ff940e4a5e3c54ec",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.17%2B4/sapmachine-jre-17.0.17-ea.4_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.17-ea.4"
+  },
+  {
+    "checksum": "sha256:866efe47f88fbe0b50dc0ba7e2ea501e0d760deacfa2b1d473fa991c285001dd",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/leyden/1/openjdk-26-leydenpremain+1_linux-x64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "26.0.0-leydenpremain+1"
   }
 ]
