@@ -21881,5 +21881,133 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B12/sapmachine-jre-26-ea.12_windows-x64_bin.zip",
     "vendor": "sapmachine",
     "version": "26.0.0-ea.12"
+  },
+  {
+    "checksum": "sha512:692c236d04b770b8a4642fcd3ee49a1075e51c70438080fc4ed82177a294cc22000c9e3db97afd124b76c9b08af79e60f3d00ee3a076021d980790a9b495853d",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.8-windows-x64-b1097.42.zip",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1097.42"
+  },
+  {
+    "checksum": "sha512:6989b8412f0019e60a6c078d6f532f108d86e4438d0fd9d300e30f7fcb43f1cfb2a122806eff7903e3f4d5d376fea1fdfdc539eeedf302571d0bb03980fef2ea",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.8-windows-x64-b1097.42.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1097.42"
+  },
+  {
+    "checksum": "sha256:515057a92dae7615ac8fcb69d2be434f4f78788bda6c01f915ae563310ab113f",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.9%2B5/sapmachine-jre-21.0.9-ea.5_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "21.0.9-ea.5"
+  },
+  {
+    "checksum": "sha256:73d577209bc70e6b3bda37127da2be8e1ed9022728f48424f41b8c4295716aad",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.17%2B5/sapmachine-jre-17.0.17-ea.5_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "17.0.17-ea.5"
+  },
+  {
+    "checksum": "sha256:2eddd6ff4b3fd858ef5099c60956be0ca2fa6fa07fb2e7bb40602c0fbfd8ccd0",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.9%2B5/sapmachine-jdk-21.0.9-ea.5_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "21.0.9-ea.5"
+  },
+  {
+    "checksum": "sha512:f4f8f23b64adf0c1dbd02a0b831c427ee9d44d0a8281d50fdb21f15a9b44a06d5167587973faf30c9ca0a8fc6635e2f600022c95484c6006eea20f20d6305973",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.8-windows-x64-b1097.42.zip",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1097.42"
+  },
+  {
+    "checksum": "sha512:ab4224efde129aee7dc543b3ed940dbc9c84c8ce3bd1fb9453bdd666928b050ccd4e17caedd5b49a10f14cc5e8cf59483aa8497459ccaa5f61a0c178043e210e",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.8-windows-x64-b1097.42.zip",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1097.42"
+  },
+  {
+    "checksum": "sha512:cec81b50a0b7b83fe436ee8ccc13ec4501d5540a78fa9e4d5ab728a851627cb48da19ac3851e05ac6dc21197b3f2893e63fae20c73aaa1f36f99f4677b4e736b",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.8-windows-x64-b1097.42.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1097.42"
+  },
+  {
+    "checksum": "sha512:099a2815445d93fe1e5c35f9d27665097f12c622e14f0a6804e1a4d233b84989378b744e32ff53ba21b5a4604a4469cb91968dbf7fd2da823e01ace9d8b82027",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.8-windows-x64-b1097.42.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1097.42"
+  },
+  {
+    "checksum": "sha512:279d444788ff95b3a160b21da781499fe38cb381953f25a7639013965adac2fdd34c7ab904a21bf7f235011342619628478615afef111806d1c1580cf793ace1",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.8-windows-x64-b1097.42.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1097.42"
+  },
+  {
+    "checksum": "sha512:3bec3f0b4b958948b76f0f100aeecc041eb20d83032a9e204929536a737262f1f231c5f7fc5a983cbd026d17395bb8c677be94a3d178d2fdce74065ef257a554",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.8-windows-x64-b1097.42.zip",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1097.42"
+  },
+  {
+    "checksum": "sha256:e2bcfc6bbd3d36e6b046cfa2b4296238913702b1a9bb7705c3eb49c20ae77334",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.17%2B5/sapmachine-jdk-17.0.17-ea.5_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "17.0.17-ea.5"
   }
 ]
