@@ -54361,5 +54361,93 @@
     "url": "https://github.com/dragonwell-project/dragonwell17/releases/download/dragonwell-standard-17.0.16.0.17%2B8_jdk-17.0.16-ga/Alibaba_Dragonwell_Standard_17.0.16.0.17.8_x64_linux.tar.gz",
     "vendor": "dragonwell",
     "version": "17.0.16.0.17.8"
+  },
+  {
+    "checksum": "sha512:d060061dbd72c8412902b947df4e773f64bee997501310ba8f6e83b8f721d731d42bfb118b2f88fb3893dc83f08920d38b8fb4d413d70c2361b6f4456e2126ce",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.8-linux-musl-x64-b1038.71.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1038.71"
+  },
+  {
+    "checksum": "sha512:48b554961959daf3348fdb42866f23ef5e9de6377eb6a4bcc9733606b3bd21b301ef430f4aa95887dd71d621119d0052c282daa0d95b04f691e6e6f47abd94d0",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_lb-21.0.8-linux-x64-b1038.71.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1038.71"
+  },
+  {
+    "checksum": "sha512:e7cc9bd25de8c4427d265828f581ad7c412c579b29ef7719c2699fffe4aa99d1cb24934d5adba52f93052b404e37e16a78d6d7fa8d464f0859247521739c0adc",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_lb-21.0.8-linux-x64-b1038.71.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1038.71"
+  },
+  {
+    "checksum": "sha512:d66d951107d0676b8dc1fba0e22a2567d9ec167033e3316a114037328e828a18fb132f0c6f1ca4573a1c4225b9ee0005de2e76d71719175ed36e77186d818a6d",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.8-linux-x64-b1038.71.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1038.71"
+  },
+  {
+    "checksum": "sha512:d2d07c82bf19ef2b9782d5fc60fbe03dc77582b23e36b7d3b3d6e5ad94c33a978ebebf349305b80e57fd37a9dabe7db19103f9621685cf421b5115bb8bb441df",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.8-linux-x64-b1038.71.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1038.71"
+  },
+  {
+    "checksum": "sha512:714b3d97fbf1dd6388a1b000ee881665b942370172f3e011b582ba5e6ad2f821b2902e7358f693159e13e901ec01083f69e53159e1db19e44ae98e506526ffac",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.8-linux-x64-b1038.71.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1038.71"
+  },
+  {
+    "checksum": "sha512:48e85386869fd9df8ca0e5a7dbf0e32e5a9c83c6c16e906f52b1917b89994ef30af949c9164e803f2557b4a60666c29f49b9e10980f1be82ceba692374cf3a5a",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.8-linux-x64-b1038.71.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1038.71"
+  },
+  {
+    "checksum": "sha512:059a8bbf6acdcb045fb946fc0e92d54d625719f0833d3806808c5fb37127199be6bd2c03b5d0bc0431d261598eb3c3e660f5081d85d3a8d8900d09630fa8bcf9",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.8-linux-musl-x64-b1038.71.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1038.71"
   }
 ]
