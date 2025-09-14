@@ -31,8 +31,11 @@ jobs:
         with:
           repository: ${{ github.event.pull_request.head.repo.full_name }}
           ref: ${{ github.head_ref }}
+
       - uses: Swatinem/rust-cache@f13886b937689c021905a6b90929199931d60db1 # v2
+
       - uses: jdx/mise-action@5ac50f778e26fac95da98d50503682459e86d566 # v2
         with:
           experimental: true
+
       - run: mise run ci

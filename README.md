@@ -12,6 +12,7 @@ Supported distributions:
 * [Amazon Corretto](https://aws.amazon.com/corretto/)
 * [Azul Zulu](https://www.azul.com/downloads/)
 * [Bellsoft Liberica](https://bell-sw.com/pages/downloads)
+* [Bellsoft Liberica Native Image Kit](https://bell-sw.com/pages/downloads/native-image-kit/)
 * [Eclipse Temurin](https://adoptium.net/)
 * [GraalVM Community Edition](https://www.graalvm.org/)
 * [IBM Semeru](https://developer.ibm.com/languages/java/semeru-runtimes/)

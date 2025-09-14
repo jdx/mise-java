@@ -16,11 +16,6 @@ pub struct GitHubRelease {
 }
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct GitHubTag {
-    pub name: String,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct GitHubAsset {
     pub browser_download_url: String,
     pub content_type: String,

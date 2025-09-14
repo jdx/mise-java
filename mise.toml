@@ -58,24 +58,30 @@ run = '''
 cargo run -- fetch {{arg(name="vendor")}}
 '''
 
-[tasks."export:release-type"]
-run = '''
-cargo run -- export release-type --pretty -o linux,macosx,windows -a aarch64,arm32,i686,x86_64
-'''
-
 [tasks."export:mise"]
 run = '''
 cargo run -- export release-type \
           --pretty \
           -o 'linux,macosx,windows' \
           -a 'aarch64,arm32,i686,x86_64' \
-          -e 'architecture,checksum_url,filename,java_version,os,release_type,size' \
+          -e 'architecture,checksum_url,filename,os,release_type,size' \
           -f 'file_type=tar.gz,tar.xz,zip&image_type=jre,jdk&features=!certified,!debug,!fastdebug,!freetype'
+'''
+
+[tasks."export:release-type"]
+run = '''
+cargo run -- export release-type \
+          --pretty \
+          -o linux,macosx,windows \
+          -a aarch64,arm32,i686,x86_64
 '''
 
 [tasks."export:vendor"]
 run = '''
-cargo run -- export vendor --pretty -o linux,macosx,windows -a aarch64,arm32,i686,x86_64
+cargo run -- export vendor \
+          --pretty \
+          -o linux,macosx,windows \
+          -a aarch64,arm32,i686,x86_64
 '''
 
 [tasks."db:dump"]

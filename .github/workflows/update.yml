@@ -36,6 +36,10 @@ jobs:
         with:
           shared-key: "roast"
 
+      - uses: jdx/mise-action@5ac50f778e26fac95da98d50503682459e86d566 # v2
+        with:
+          experimental: true
+
       - name: Update Data
         run: |
           cargo run -- fetch ${{ github.event.inputs.vendors }}
@@ -46,7 +50,7 @@ jobs:
           --pretty \
           -o 'linux,macosx,windows' \
           -a 'aarch64,arm32,i686,x86_64' \
-          -e 'architecture,checksum_url,filename,java_version,os,release_type,size' \
+          -e 'architecture,checksum_url,filename,os,release_type,size' \
           -f 'file_type=tar.gz,tar.xz,zip&image_type=jre,jdk&features=!certified,!debug,!fastdebug,!freetype'
 
       - name: Create Pull Request
@@ -58,6 +62,5 @@ jobs:
           base: main
           labels: automated-pr
           assignees: ${{ vars.CREATE_PR_ASSIGNEES || 'roele' }}
-          reviewers: ${{ vars.CREATE_PR_REVIEWERS || 'roele' }}
           branch: issues/update-data
           delete-branch: true

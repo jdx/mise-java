@@ -88,17 +88,39 @@ impl JvmData {
             .collect::<Vec<String>>();
         if let Some(v) = props.get(key) {
             match v {
-                Value::String(s) => contains(&eq, s) && !contains(&neq, s),
-                Value::Number(n) => n
-                    .as_i64()
-                    .is_some_and(|i| contains(&eq, &i.to_string()) && !contains(&neq, &i.to_string())),
-                Value::Bool(b) => contains(&eq, &b.to_string()) && !contains(&neq, &b.to_string()),
+                Value::String(s) => {
+                    if eq.is_empty() {
+                        !contains(&neq, s)
+                    } else {
+                        contains(&eq, s) && !contains(&neq, s)
+                    }
+                }
+                Value::Number(n) => {
+                    let s = n.to_string();
+                    if eq.is_empty() {
+                        !contains(&neq, &s)
+                    } else {
+                        contains(&eq, &s) && !contains(&neq, &s)
+                    }
+                }
+                Value::Bool(b) => {
+                    let s = b.to_string();
+                    if eq.is_empty() {
+                        !contains(&neq, &s)
+                    } else {
+                        contains(&eq, &s) && !contains(&neq, &s)
+                    }
+                }
                 Value::Array(arr) => {
                     if arr.is_empty() {
                         return true;
                     }
-                    (eq.is_empty() || eq.iter().any(|v| arr.contains(&Value::String(v.to_string()))))
-                        && (neq.is_empty() || !neq.iter().any(|v| arr.contains(&Value::String(v.to_string()))))
+                    if eq.is_empty() {
+                        neq.is_empty() || !neq.iter().any(|v| arr.contains(&Value::String(v.to_string())))
+                    } else {
+                        (eq.iter().any(|v| arr.contains(&Value::String(v.to_string()))))
+                            && (neq.is_empty() || !neq.iter().any(|v| arr.contains(&Value::String(v.to_string()))))
+                    }
                 }
                 _ => true,
             }
