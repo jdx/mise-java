@@ -44497,6 +44497,18 @@
     "version": "21.0.8-b895.146"
   },
   {
+    "checksum": "sha256:7edb95b921b28ddc7bdf2911dc437843580c221dd0c805e2c1e9df6ae9d94867",
+    "features": [
+      "crac"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-crac-jdk25.0.0-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "25.28.85.0"
+  },
+  {
     "checksum": "sha512:c94a33914e02cc7b651b44bb4d5007775d78bc850f8ef524144d5dc3f46568b211f19c82e8da191ee44b0d5047f3a174bb1517bdf709f430ffca7c71b858d688",
     "features": [
       "jcef"
@@ -44539,5 +44551,135 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.8-osx-x64-b1038.71.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.8-b1038.71"
+  },
+  {
+    "checksum": "sha256:c2cde1d313d904b793c3760214eefa207ecca7df04e7c4084abdf1f6bbebc27a",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-jdk25.0.0-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.28.85.0"
+  },
+  {
+    "checksum": "sha256:61dd2c22735bac6bb48165501ce797fb8c97d05fd6e09511e73e6cac926c14e6",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-fx-jre25.0.0-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.28.85.0"
+  },
+  {
+    "checksum": "sha256:d601d82d5f9d4f885279ea070da8acbfd146c047bf736962748dafb534bb9757",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-fx-jdk25.0.0-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "25.28.85.0"
+  },
+  {
+    "checksum": "sha256:b7a0aa6901bf2facc052df2507a6bd04cf98c30577d2c76a0ae923207c250b0f",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-fx-jre25.0.0-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "25.28.85.0"
+  },
+  {
+    "checksum": "sha256:a73455c80413daa31af6b09589e3655bb8b8b91e4aa884ca7c91dc5552b9e974",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-jre25.0.0-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.28.85.0"
+  },
+  {
+    "checksum": "sha256:97352ebc7b6e25c75a6f84f9f51cbdcd134792e911185681d54e7e712f35d301",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-jre25.0.0-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "25.28.85.0"
+  },
+  {
+    "checksum": "sha256:279024bf6f32dd7a09830e6ad91878c47bf5015d48df78e73ec961c43ad37341",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-fx-jdk25.0.0-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.28.85.0"
+  },
+  {
+    "checksum": "sha256:4a1963c39cd751dcd0ec2060775958dac6e00d9b481cd40c8f2dcc3abaf9f648",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-crac-jdk25.0.0-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.28.85.0"
+  },
+  {
+    "checksum": "sha256:7cd399e914d7d588bc0c6318d5bb57d2d814d0eda3a8ceb878bcf4b31cdc8ea3",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-jdk25.0.0-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "25.28.85.0"
+  },
+  {
+    "checksum": "sha256:04278cf867d040e29dc71dd7727793f0ea67eb72adce8a35d04b87b57906778d",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-25.0.0/graalvm-community-jdk-25.0.0_macos-x64_bin.tar.gz",
+    "vendor": "graalvm-community",
+    "version": "25.0.0"
+  },
+  {
+    "checksum": "sha256:88a2f025bf43f60cc64c099b3dcbfaac090ef2e2601a30fb974ef76600daf5ce",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/java/25/latest/jdk-25_macos-x64_bin.tar.gz",
+    "vendor": "oracle",
+    "version": "25.0.0"
+  },
+  {
+    "checksum": "sha256:a64f90dde4695612902c58b1df286089f3af26b0b96d9c4fb7774812118f624f",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/25.0.0.36.2/amazon-corretto-25.0.0.36.2-macosx-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "25.0.0.36.2"
   }
 ]

@@ -54287,6 +54287,16 @@
     "version": "21.0.8-b895.146"
   },
   {
+    "checksum": "sha256:807e96e43db00af3390a591ed40f2c8c35f7f475fb14b6061dfb19db33702cba",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-jre25.0.0-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.28.85.0"
+  },
+  {
     "checksum": "sha256:7015c78868b29b735e689924c25e38987132d63f62c2327f081574d94a2c1f00",
     "features": [
       "musl"
@@ -54449,5 +54459,256 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.8-linux-musl-x64-b1038.71.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.8-b1038.71"
+  },
+  {
+    "checksum": "sha256:fde4d3d907d2f06b189135bfd0596acf65ac834b2c9481c4141bf8875f7b2678",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-crac-jre25.0.0-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.28.85.0"
+  },
+  {
+    "checksum": "sha256:9cf58ebba11f0fba5c628824c5cb26658afca8cdf335a9a954265e40d487b32a",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-crac-jdk25.0.0-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.28.85.0"
+  },
+  {
+    "checksum": "sha256:780d7b58d1d1063a6fe721d368d96660e913ab690c4bf04b6dc80ee527facc95",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-jre25.0.0-linux_x64.zip",
+    "vendor": "zulu",
+    "version": "25.28.85.0"
+  },
+  {
+    "checksum": "sha256:1d00a4fd4815ce29b1d61863ae0905630242275afcbc7a4f0ba35bb0ba6da294",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-fx-jre25.0.0-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.28.85.0"
+  },
+  {
+    "checksum": "sha256:e478686fceae0b1aeb76b144bcd6aa3da404686ac5e3b8e981489b2a436cd404",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-fx-jdk25.0.0-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.28.85.0"
+  },
+  {
+    "checksum": "sha256:db40251a23eb588fa6fc60a7db1feca12bfece34b18c6f9cd81f060d6afbf390",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-jdk25.0.0-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.28.85.0"
+  },
+  {
+    "checksum": "sha256:164d901e5a240b8c18516f5ab55bc11fc9689ab6e829045aea8467356dcdb340",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-jdk25.0.0-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.28.85.0"
+  },
+  {
+    "checksum": "sha256:442e8d98af176c1f3ec4d120d01350f70bd2d3b7d65b179bd7804942f049a874",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-crac-jre25.0.0-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.28.85.0"
+  },
+  {
+    "checksum": "sha256:6b89ade0dea54668859937dde9701de3fddf3272766423f3c55b6cedcddb1e52",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-jre25.0.0-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.28.85.0"
+  },
+  {
+    "checksum": "sha256:f7be8b4ec9781575019a602a50934cb9641a722ed9fb228445e44ac2648affae",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-jdk25.0.0-linux_x64.zip",
+    "vendor": "zulu",
+    "version": "25.28.85.0"
+  },
+  {
+    "checksum": "sha256:cc6789d9351c7bbb964e2861684d61a10fcea3022f2337a22d1c9e17a0d322b0",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.28.85-ca-crac-jdk25.0.0-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.28.85.0"
+  },
+  {
+    "checksum": "sha256:1862f2ce97387a303cae4c512cb21baf36fafd2457c3cbbc10d87db94b89d3dd",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-25.0.0/graalvm-community-jdk-25.0.0_linux-x64_bin.tar.gz",
+    "vendor": "graalvm-community",
+    "version": "25.0.0"
+  },
+  {
+    "checksum": "sha256:2b3181a0e99c0af43c375b15b4f26c35d73fd624358178cee25bbc10c0f15700",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25/sapmachine-jdk-25_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.0"
+  },
+  {
+    "checksum": "sha256:91aaa04433659a4260215162ba14025f5e103c1cc7173912ec777f48cb7de3a3",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25/sapmachine-jre-25_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.0"
+  },
+  {
+    "checksum": "sha256:0bda66d23a4bab730e05f2cb2ef3d69718eb92b9fd564f7213057b600e5a721a",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25/sapmachine-jre-25_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.0"
+  },
+  {
+    "checksum": "sha256:325699e647af27f7c5692cfb48e2a70972c0535ccd8c0d4290d440ae86c5dc45",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25/sapmachine-jdk-25_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.0"
+  },
+  {
+    "checksum": "sha256:2752e0c3540517dfeeb6b8875ab2e96af1c11f3c332f4443949b6e1daae2bf9e",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/25.0.0.36.2/amazon-corretto-25.0.0.36.2-alpine-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "25.0.0.36.2"
+  },
+  {
+    "checksum": "sha256:7fa3a845e2a2197d01d875889597d4196e3da310c85a4687d4214a4161cdccd0",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/25.0.0.36.2/amazon-corretto-25.0.0.36.2-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "25.0.0.36.2"
+  },
+  {
+    "checksum": "sha256:7a69dcae4842aedbec9bee0e1b0df441528ac8c8e21fe884d3b849262ae28c02",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/java/25/latest/jdk-25_linux-x64_bin.tar.gz",
+    "vendor": "oracle",
+    "version": "25.0.0"
+  },
+  {
+    "checksum": "sha256:0394cfdb28e362525ef82b69b8a7ac1f63a01230bd2290fd6f08826eca6eda00",
+    "features": [
+      "extended"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.28.25_jdk-11.0.28-ga/Alibaba_Dragonwell_Extended_11.0.28.25.6_x64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "11.0.28.25.6"
+  },
+  {
+    "checksum": "sha256:c9b1bb85a0963d629a2470049b4184cc347d486c6d0f96bb7d95e71942e11f7f",
+    "features": [
+      "extended"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.26.25_jdk8u462-ga/Alibaba_Dragonwell_Extended_8.26.25_x64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "8.26.25"
+  },
+  {
+    "checksum": "sha256:f84a93714e95671c5eac5ab5ff5d19ccf03cd8b9a5bbf2fc7dd09f95997549a6",
+    "features": [
+      "musl",
+      "extended"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.28.25_jdk-11.0.28-ga/Alibaba_Dragonwell_Extended_11.0.28.25.6_x64_alpine-linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "11.0.28.25.6"
   }
 ]
