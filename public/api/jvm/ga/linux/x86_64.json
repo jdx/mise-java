@@ -54945,5 +54945,54 @@
     "url": "https://github.com/ibmruntimes/semeru24-binaries/releases/download/jdk-24.0.2%2B12_openj9-0.54.0/ibm-semeru-open-jdk_x64_linux_24.0.2_12_openj9-0.54.0.tar.gz",
     "vendor": "semeru",
     "version": "24.0.2+12_openj9-0.54.0"
+  },
+  {
+    "checksum": "sha256:aa5160aa130f0f0b4379fc62a0d5198c065815224e01318272864e56f260de34",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jre_x64_alpine-linux_hotspot_25_36.tar.gz",
+    "vendor": "temurin",
+    "version": "25.0.0+36.0.LTS"
+  },
+  {
+    "checksum": "sha256:637e47474d411ed86134f413af7d5fef4180ddb0bf556347b7e74a88cf8904c8",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jdk_x64_alpine-linux_hotspot_25_36.tar.gz",
+    "vendor": "temurin",
+    "version": "25.0.0+36.0.LTS"
+  },
+  {
+    "checksum": "sha256:19624e3fdbfa6ca01397520a184921209ed23c1c551281beabce65c31e2f8f4c",
+    "features": [
+      "musl",
+      "extended"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.8.0.8%2B9_jdk-21.0.8-ga/Alibaba_Dragonwell_Extended_21.0.8.0.8.9_x64_alpine-linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "21.0.8.0.8.9"
+  },
+  {
+    "checksum": "sha256:eccbd08b431cbd2bd6a0b8f4809373997d4339c6ef8447c1c1b63aeec1e63e3e",
+    "features": [
+      "extended"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.8.0.8%2B9_jdk-21.0.8-ga/Alibaba_Dragonwell_Extended_21.0.8.0.8.9_x64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "21.0.8.0.8.9"
   }
 ]
