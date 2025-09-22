@@ -36696,5 +36696,49 @@
     "url": "https://github.com/ibmruntimes/semeru24-binaries/releases/download/jdk-24.0.2%2B12_openj9-0.54.0/ibm-semeru-open-jdk_aarch64_mac_24.0.2_12_openj9-0.54.0.tar.gz",
     "vendor": "semeru",
     "version": "24.0.2+12_openj9-0.54.0"
+  },
+  {
+    "checksum": "sha512:d09038a0684ce7e731135076cfd64a27d126bccb566ed83e0d24fa6ac9e14d74b9c0d7010265e36e306666843d811ca3f7a2a46825c7adff673503a203d4f6ab",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.8-osx-aarch64-b1138.52.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1138.52"
+  },
+  {
+    "checksum": "sha512:2127525f04e9a2463c3df42aa3549412aceae2ba2e226b8b923a4309ba69f81d94f8e19734d1b0869ef58a1b53c13ff3383fc6263631cd82dc76b5f57f0da0e0",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.8-osx-aarch64-b1138.52.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1138.52"
+  },
+  {
+    "checksum": "sha512:7f29f20c6f71bb90dcf8a2cc4c50e6a9da0d5cf8f4b17c8ec3a93192a22fa144bd5a81659bcc0f0ac1842e7b7ebc2f4968b4f412735a9c52d712de908048b52c",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.8-osx-aarch64-b1138.52.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1138.52"
+  },
+  {
+    "checksum": "sha512:e7d32857702bb1db53d7f63d89e49aadcb98de1a56a5f085509ff4fae3fcc49515d7c92f167602cb7b2621410876abd1ad940dd3b8103a4756e7075ca821aa71",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.8-osx-aarch64-b1138.52.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1138.52"
   }
 ]
