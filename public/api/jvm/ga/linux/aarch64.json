@@ -42965,5 +42965,49 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.8-linux-aarch64-b1038.72.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.8-b1038.72"
+  },
+  {
+    "checksum": "sha256:939a1517971985363b2b57b8c6008f4bd48b91f565366d6eb3bae3aa503a05e2",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25+36-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jre_aarch64_linux_hotspot_25_36.tar.gz",
+    "vendor": "temurin",
+    "version": "25.0.0+36.0.LTS"
+  },
+  {
+    "checksum": "sha256:95716d04bdfc8b10c94f4448ea8d57a3ba872d98b53c752e4c6b48f1c95bc582",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25+36-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jdk_aarch64_linux_hotspot_25_36.tar.gz",
+    "vendor": "temurin",
+    "version": "25.0.0+36.0.LTS"
+  },
+  {
+    "checksum": "sha256:f917271612b0a29dac208bcbed1544008223ab96e0a000c6c8ca59d58cecd83e",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.0+36_openj9-0.55.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25%2B36_openj9-0.55.0/ibm-semeru-open-jre_aarch64_linux_25_36_openj9-0.55.0.tar.gz",
+    "vendor": "semeru",
+    "version": "25.0.0+36_openj9-0.55.0"
+  },
+  {
+    "checksum": "sha256:4572e8bbe1310dc518037d60ac2938bd0dada1c15bba1c94e65e0e9777b1ad17",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0+36_openj9-0.55.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25%2B36_openj9-0.55.0/ibm-semeru-open-jdk_aarch64_linux_25_36_openj9-0.55.0.tar.gz",
+    "vendor": "semeru",
+    "version": "25.0.0+36_openj9-0.55.0"
   }
 ]

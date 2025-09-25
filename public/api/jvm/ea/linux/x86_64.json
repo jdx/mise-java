@@ -41139,5 +41139,53 @@
     "url": "https://download.bell-sw.com/vm/22.3.0/bellsoft-liberica-vm-core-openjdk17.0.5+8-22.3.0+1-ea-linux-amd64.tar.gz",
     "vendor": "liberica-nik",
     "version": "22.3.0+1"
+  },
+  {
+    "checksum": "sha256:2f948b950d153e88e6477db4e80d93a3931472f8d7ff4be0aa8992f736dcec38",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "26.0.0-ea.16",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B16/sapmachine-jre-26-ea.16_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.16"
+  },
+  {
+    "checksum": "sha256:5effa6324bb7f835a43d0eafdab26a879f5b922f849d594327d4d03ab731eb4b",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.0-ea.16",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B16/sapmachine-jdk-26-ea.16_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.16"
+  },
+  {
+    "checksum": "sha256:7b98267f7a95c6d75e2985339d2b011edb590d7e0d9717e620415d69399dfe3a",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "26.0.0-ea.16",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B16/sapmachine-jre-26-ea.16_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.16"
+  },
+  {
+    "checksum": "sha256:bd326b7cc8a44671f9eb6364cc5e87aff4b0d11abf50bff489e61b885c55d6e3",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.0-ea.16",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B16/sapmachine-jdk-26-ea.16_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.16"
   }
 ]

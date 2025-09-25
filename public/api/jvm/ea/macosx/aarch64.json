@@ -17022,5 +17022,27 @@
     "url": "https://download.bell-sw.com/vm/22.3.0/bellsoft-liberica-vm-core-openjdk17.0.5+8-22.3.0+1-ea-macos-aarch64.tar.gz",
     "vendor": "liberica-nik",
     "version": "22.3.0+1"
+  },
+  {
+    "checksum": "sha256:241f81cd7c4e7d8193bfea2e1cb1c0ba21b730ab95be1119cffd005ee162b667",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.0-ea.16",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B16/sapmachine-jdk-26-ea.16_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.16"
+  },
+  {
+    "checksum": "sha256:5b6f530924110e198367c2cf7891841bcbc13affeb8dc1ca5007a17ce1c5da6b",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "26.0.0-ea.16",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B16/sapmachine-jre-26-ea.16_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.16"
   }
 ]

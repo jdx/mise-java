@@ -61692,5 +61692,27 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_lb-21.0.8-linux-x64-b1038.72.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.8-b1038.72"
+  },
+  {
+    "checksum": "sha256:718b4cb10c95a872d63c22254e4d1879011f7fff05dde1d21af6b63d40a5bb47",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0+36_openj9-0.55.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25%2B36_openj9-0.55.0/ibm-semeru-open-jdk_x64_linux_25_36_openj9-0.55.0.tar.gz",
+    "vendor": "semeru",
+    "version": "25.0.0+36_openj9-0.55.0"
+  },
+  {
+    "checksum": "sha256:3f3a6e3e1f0f29cebb7b8a0e8661b4e59cba99aae3752f5c7c131eca3ab4ca57",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.0+36_openj9-0.55.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25%2B36_openj9-0.55.0/ibm-semeru-open-jre_x64_linux_25_36_openj9-0.55.0.tar.gz",
+    "vendor": "semeru",
+    "version": "25.0.0+36_openj9-0.55.0"
   }
 ]
