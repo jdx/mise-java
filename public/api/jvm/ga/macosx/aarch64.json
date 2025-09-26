@@ -41044,5 +41044,38 @@
     "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jre_aarch64_mac_hotspot_25_36.tar.gz",
     "vendor": "temurin",
     "version": "25.0.0+36.0.LTS"
+  },
+  {
+    "checksum": "sha256:564bbc735a1337579652c87336bab8281345415c70cfdbb1a583601cfb40d3e3",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-25.0.0-macos-aarch64.tar.gz",
+    "vendor": "microsoft",
+    "version": "25.0.0"
+  },
+  {
+    "checksum": "sha256:9f218441f77e725982825d517661bded4ac5c01f50c339acbeaafba0d410599b",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.0+36_openj9-0.55.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25%2B36_openj9-0.55.0/ibm-semeru-open-jre_aarch64_mac_25_36_openj9-0.55.0.tar.gz",
+    "vendor": "semeru",
+    "version": "25.0.0+36_openj9-0.55.0"
+  },
+  {
+    "checksum": "sha256:da978d868089d7fa3b4582f4d738e3a1549c3d9677bc72a5b142de79115e1872",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0+36_openj9-0.55.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25%2B36_openj9-0.55.0/ibm-semeru-open-jdk_aarch64_mac_25_36_openj9-0.55.0.tar.gz",
+    "vendor": "semeru",
+    "version": "25.0.0+36_openj9-0.55.0"
   }
 ]
