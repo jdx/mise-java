@@ -41077,5 +41077,64 @@
     "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25%2B36_openj9-0.55.0/ibm-semeru-open-jdk_aarch64_mac_25_36_openj9-0.55.0.tar.gz",
     "vendor": "semeru",
     "version": "25.0.0+36_openj9-0.55.0"
+  },
+  {
+    "checksum": "sha256:3ba789d61adc742f621a02a3a3680cf60437afc067f7d7887f807a266a313ac6",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-25.0.0.1-Final/mandrel-java25-macos-aarch64-25.0.0.1-Final.tar.gz",
+    "vendor": "mandrel",
+    "version": "25.0.0.1-Final+java25"
+  },
+  {
+    "checksum": "sha512:03436536edf8cb5e3675229ae606c568454bedb469d62db4b1232c287bcca1087e77e33a6d52aedddca042416a2a6edaacb9f69710af37831c4166d03cb0c12d",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1140.54",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.8-osx-aarch64-b1140.54.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1140.54"
+  },
+  {
+    "checksum": "sha512:22718d2559ab9d2718b0430bfc21ad42d61fa7b2e8f943c40b864fe086645c873914156291ea6e201ef6677ab2a63e37b5ce791c3ea7e54d796a0713ecb8ccd3",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1140.54",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.8-osx-aarch64-b1140.54.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1140.54"
+  },
+  {
+    "checksum": "sha512:ff45e1275e06b986e41054dbcbe953c3027e6d857dc6202667f18124e20efe046e26dba463d40fe45365b27a35385895733332aee2939a74174895e87e142236",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1140.54",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.8-osx-aarch64-b1140.54.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1140.54"
+  },
+  {
+    "checksum": "sha512:f9fe0af320ab1fe71b83c0eba50f30348734c4a71fc802e65bddcc6bfc92b1586b599b106ee96b6f431cfeca7f9e498fb69b2b9cb9f317a0c2a48587960f0ea0",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1140.54",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.8-osx-aarch64-b1140.54.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1140.54"
   }
 ]

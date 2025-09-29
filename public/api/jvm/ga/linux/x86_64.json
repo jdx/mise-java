@@ -61725,5 +61725,112 @@
     "url": "https://aka.ms/download-jdk/microsoft-jdk-25.0.0-linux-x64.tar.gz",
     "vendor": "microsoft",
     "version": "25.0.0"
+  },
+  {
+    "checksum": "sha256:d4eaeacc7737d7f0285164c56472d5cdd5f44228597b38329d8b436594c15af5",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-25.0.0.1-Final/mandrel-java25-linux-amd64-25.0.0.1-Final.tar.gz",
+    "vendor": "mandrel",
+    "version": "25.0.0.1-Final+java25"
+  },
+  {
+    "checksum": "sha512:4d42d1935d228c3643debae2092f4848c899be394c49a39ff0761dc54d0a13de26a78164583f33db9492906033660fd13f26bdc8a37cd2956a262bebc019407b",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1140.54",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.8-linux-x64-b1140.54.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1140.54"
+  },
+  {
+    "checksum": "sha512:1fd1d5b092cea0a92a466d5915ca82db08e1886a3bf98077966ddd38b36bb808f7cdc1c908a72beb482c303fb17fc7fe13c49014a8eb884d6e5c0dd4bfb4101b",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1140.54",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_lb-21.0.8-linux-x64-b1140.54.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1140.54"
+  },
+  {
+    "checksum": "sha512:ca6e454443f26be8b3627b5df7ff3eb8a3f1a1f35799ddf500dab8a91c7ad5622b3b8e2788b0898859a9af8199d1852bdebb7ab3626e1508658dbe5156a9be6f",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1140.54",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.8-linux-x64-b1140.54.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1140.54"
+  },
+  {
+    "checksum": "sha512:b39aa796c1ad806287bc9b77988a1dfd5cb72a3e5fca0ed573c49b1ff860f8681060819af54a7388c39337887eb3195b1b544899f21fe3d7dba5ec60cf11826a",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1140.54",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.8-linux-musl-x64-b1140.54.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1140.54"
+  },
+  {
+    "checksum": "sha512:58374444f5931ad5ab0bcca34a99e3382899de51e253193b831875da70dd718be8a47cefb6004d82cec67b9923e423856a944bcfbdc069448ec1344b10049e70",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1140.54",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_lb-21.0.8-linux-x64-b1140.54.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1140.54"
+  },
+  {
+    "checksum": "sha512:1a41fc6c97e0778fb35893f0943184cfe43ac9162990653a84b97286da49e72b11387ff97364704ffe871ea6544c25ca4c5d5c078c07d5d4a27c9f5bcf5cd1f6",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1140.54",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.8-linux-musl-x64-b1140.54.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1140.54"
+  },
+  {
+    "checksum": "sha512:4d91b63886f55bffdd26dcbd5477b7c6538ee7cbf7ceae32517b80fad9da212f8452b32829afccd4c0e1bd61759396e5e880a455917b0ded4988ea04636a0484",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1140.54",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.8-linux-x64-b1140.54.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1140.54"
+  },
+  {
+    "checksum": "sha512:a1125d8031d6594e1c33573711cd4847ec6df4616e1b792e05492ffc8eb51b8c008996ddb54e1fdf6430c26cd21812b9ba81a6c81ac0226cc389b58b3bfa6e60",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1140.54",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.8-linux-x64-b1140.54.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1140.54"
   }
 ]
