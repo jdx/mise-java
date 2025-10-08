@@ -61832,5 +61832,101 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.8-linux-x64-b1140.54.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.8-b1140.54"
+  },
+  {
+    "checksum": "sha512:ab51c926b0f08bdff0ba6bfd299b5308748c795e2b606b382670f2ed968ee22c09c8dfcc3e9ee8fe52af6af8c79288766f601cc218232daa532911545918af1a",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1148.57",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.8-linux-musl-x64-b1148.57.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1148.57"
+  },
+  {
+    "checksum": "sha512:b4cab3ba9e093d290b829af215b0584ad2a6083799de43b679254d7e848d77582641cd0e545a0dbc38d2f6ffef7bb7d5900f59a24274959952c192fd035a0286",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1148.57",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.8-linux-x64-b1148.57.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1148.57"
+  },
+  {
+    "checksum": "sha512:1994a2ab832f725c71b638ef38c9d5902c69de0a3bceba03270c0add5b17802457069022a3be453bb059e13c6686e9ea7235454ff3a7e90b9e4d78c4c9a4f1d4",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1148.57",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.8-linux-x64-b1148.57.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1148.57"
+  },
+  {
+    "checksum": "sha512:2670501597361ddd0ecf32ba556fe7a4f289daf9122dc701e7dc7d1367fe1a338c9b008fe6c309ee92b637fc7447c612e2843e9148ac8c292341255a24ea0a14",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1148.57",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_lb-21.0.8-linux-x64-b1148.57.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1148.57"
+  },
+  {
+    "checksum": "sha512:21ee8b5d37c4fabe8cd3bfd6bb76efa9c22adda185edd77b5a095faaf697d7bc2ed4cabc22f6487640f13904a40333978416a2a831c207fc2ab66819b155c2a3",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1148.57",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_lb-21.0.8-linux-x64-b1148.57.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1148.57"
+  },
+  {
+    "checksum": "sha512:b1b7667ffc258b6b8e8fe69f5085cae24fe6ada4a292fa90fc851a3d8954f0458a197add0367999d3d751f76099ecbd53132d118dad518fcb1635c3315b59ecd",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1148.57",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.8-linux-x64-b1148.57.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1148.57"
+  },
+  {
+    "checksum": "sha512:5c7edcb774f96b693f02372e985a8b7a3f5f106121189090441f5b26a567047cae18cc7c4db9d90ba28a82a01b3bb16e67e63317f60fcb9b542cb72abd1ba963",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1148.57",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.8-linux-musl-x64-b1148.57.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1148.57"
+  },
+  {
+    "checksum": "sha512:de3bb37e4b42a3c29e09a7d4d1a2f4a924d6d19c720a40a1b578428443fb607c502577c2d3cb41e5faf76dc5c0dc63d67c4c866aecef7b6306f9102de31b63b3",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1148.57",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.8-linux-x64-b1148.57.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1148.57"
   }
 ]
