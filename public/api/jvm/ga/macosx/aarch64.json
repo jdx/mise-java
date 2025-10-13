@@ -41195,5 +41195,101 @@
     "url": "https://download.oracle.com/graalvm/24/archive/graalvm-jdk-24_macos-aarch64_bin.tar.gz",
     "vendor": "oracle-graalvm",
     "version": "24.0.2"
+  },
+  {
+    "checksum": "sha512:ab0359388d5a74ce67ebc0514b08cf4b9d598cf0bcf858b2a90327e70a169a33ec4dcf910efe9e63ef342ac8f8888e835ac39fb159bd87848c0665337f9f42d7",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1163.59",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.8-osx-aarch64-b1163.59.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.59"
+  },
+  {
+    "checksum": "sha512:b0611561a0421a7560d3f6505422ffcafbc4080161bbb875338a03820412cafc21e656f139161ec815a0f80c3a0cd805c6cd3eef323a36044cc71c8874a3ab4d",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1163.59",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.8-osx-aarch64-b1163.59.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.59"
+  },
+  {
+    "checksum": "sha512:57743f39dca79fefb5a0db133a09200386312c1521a914d7504ef3387c271cb17b1701b31dd97a90f9ab09126486fcae5268b37691a78b7705afa88f56c4983f",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1163.59",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.8-osx-aarch64-b1163.59.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.59"
+  },
+  {
+    "checksum": "sha512:77b2fad5f091d077ae083862aac48cfc69787650b3617de5067e8058bd66930615aec34dbd89f635fb9da03bf442baadbab0abad02d3f006e061f3bedeac9598",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1038.73",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.8-osx-aarch64-b1038.73.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1038.73"
+  },
+  {
+    "checksum": "sha512:e7c26142132ed29768f53653c4daf0969162282552c275c033ef45e42a23f8163897de45825bf64c15405fba08c8549a35719f39a4ce97844b5fa7dd9c61d4bf",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1038.73",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.8-osx-aarch64-b1038.73.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1038.73"
+  },
+  {
+    "checksum": "sha512:af87c44e3da1ec36124e75401599cfea86b75a5af95b1c93d7d532caa9f3787c1c4ea471c872b7f8a629cef4e30b413a6f303a2c68150b93fffde89318bd6b82",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1163.59",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.8-osx-aarch64-b1163.59.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.59"
+  },
+  {
+    "checksum": "sha512:1c7224498942be8f0c55390bc5fe35509537de85833dfaf14499adf23f1fbb9dc1edd2ad7c5627fdb1220189d7d77d902aee98f40be8aa90148a51c0bed92156",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1038.73",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.8-osx-aarch64-b1038.73.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1038.73"
+  },
+  {
+    "checksum": "sha512:0f2fee74f878b9ce812e19528e319a25f3ec4322a24a4c709a848aa3d41b145e3758ed53efb25eee0e555211a36478a28841892a02339c5fe4e3b1aa058beafe",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1038.73",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.8-osx-aarch64-b1038.73.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1038.73"
   }
 ]
