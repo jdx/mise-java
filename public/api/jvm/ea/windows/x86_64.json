@@ -24478,6 +24478,17 @@
     "version": "17.0.17-ea.8"
   },
   {
+    "checksum": "sha256:ef3d1d99805fce9188c83cbff2cf2084d5ecee2a379a51af1d2466049334cc59",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "26.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu26.0.23-beta-jdk26.0.0-beta.17-win_x64.zip",
+    "vendor": "zulu",
+    "version": "26.0.23.0"
+  },
+  {
     "checksum": "sha256:09f3ca32c955345abc68ca120fd394fd96fb928cff0a49e716465af34da1999b",
     "features": [],
     "file_type": "zip",
@@ -24619,5 +24630,38 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B18/sapmachine-jre-26-ea.18_windows-x64_bin.zip",
     "vendor": "sapmachine",
     "version": "26.0.0-ea.18"
+  },
+  {
+    "checksum": "sha256:a55298166a98c793279ca844e5d86c5f4bbfec82de673d8ce6aef4e53f345282",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "26.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu26.0.25-beta-jdk26.0.0-beta.18-win_x64.zip",
+    "vendor": "zulu",
+    "version": "26.0.25.0"
+  },
+  {
+    "checksum": "sha256:eb98fc488d9c17eb7f78c5bf03ce90f85d7a5374df53a227eff2166d238ee73e",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "26.0.0-ea.19",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B19/sapmachine-jdk-26-ea.19_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.19"
+  },
+  {
+    "checksum": "sha256:25a6195abee024b7c62ae0d5f2ef9d17311bf6472ba61b98110e87090f27f3e4",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "26.0.0-ea.19",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B19/sapmachine-jre-26-ea.19_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.19"
   }
 ]
