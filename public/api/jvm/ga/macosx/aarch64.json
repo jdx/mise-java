@@ -41291,5 +41291,53 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.8-osx-aarch64-b1038.73.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.8-b1038.73"
+  },
+  {
+    "checksum": "sha512:7bc40c235a3932a383ca4fd80828626827867896320667ade386f9e950384d8afdbdb73d467acdc33303ff6390f8ecd283187e0201076a8e0340f2d0846bc011",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1163.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.8-osx-aarch64-b1163.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.62"
+  },
+  {
+    "checksum": "sha512:187315caa48def3b6359e5ad0b0f69f1d14a3d76af38c41cfc40967d1eaa4f5a9c6bfa5bd4497f33fdde32631aae0d6e413ef5dd428bc286629a5d4a73afb443",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1163.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.8-osx-aarch64-b1163.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.62"
+  },
+  {
+    "checksum": "sha512:d20b10560b6fc7e613067da6db19cdc9d5f73f704a30890b60ba3cb2652ad47ec97e49a18828fe6fc41eab1fbb270e1183a37c85ad7126432989c9c5c5c724ac",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1163.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.8-osx-aarch64-b1163.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.62"
+  },
+  {
+    "checksum": "sha512:0634c541f74523bf281fb0c7458586af409b678f2282b81d2b69a2d206046b9b2d1c92cb0d9653a676a2a793a9799e9cb732b757389af71829aca22dfb296c6c",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1163.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.8-osx-aarch64-b1163.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.62"
   }
 ]

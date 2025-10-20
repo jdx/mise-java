@@ -62131,5 +62131,101 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.8-linux-x64-b1163.59.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.8-b1163.59"
+  },
+  {
+    "checksum": "sha512:d2f4eb4ab05882ed0b8f1d713d84d0bcc3f41404c95feba4095582e3c2431d16e713c5c2b1a44993ecff642978e5c2ca0016bb0263174ae0cce8d05634dbacba",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1163.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.8-linux-x64-b1163.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.62"
+  },
+  {
+    "checksum": "sha512:13972a64b9c0b228ae8c90f91cc2705dc80f3178f8e3965377f6543210473fb7e5f5153743722e622f84d49f9434c8740b9dfdadff38e288f9554199b6785563",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1163.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_lb-21.0.8-linux-x64-b1163.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.62"
+  },
+  {
+    "checksum": "sha512:63eb74340702fb14901636d9a0fbe681e8ec3cb8f505fda74263cfa9d2e4f95ef834ca1baedd1468163f37c8d44d2d16113fe3f0df3a5ff729ea12adcda4b2d9",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1163.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.8-linux-x64-b1163.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.62"
+  },
+  {
+    "checksum": "sha512:0a45a769c940fea315f18988546e974c6c942acf203d2206bbd60af384b503ec0a6dde839f5ddd7bdf39a13f62a840eabe85bd5bc91afebc199581dacccdb56f",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1163.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_lb-21.0.8-linux-x64-b1163.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.62"
+  },
+  {
+    "checksum": "sha512:fc08baf28a59e3bee89c2c640f0d01f963cdbfbb3ade195242bdf87e9e8aafd07a7ba26c20cac364165a128725d2db68597c38a15756958218e649475a786b49",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1163.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.8-linux-x64-b1163.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.62"
+  },
+  {
+    "checksum": "sha512:48289b4d54cb9147e2e106b2c4e2f0015c7a3e8c7f86bf40f828203dc5476f1b70e1d6369d367aaf42822f2732425a69526c13bdc7a1e983d4153b60a41b3785",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1163.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.8-linux-x64-b1163.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.62"
+  },
+  {
+    "checksum": "sha512:bec79ffe14b5dcc806c9e5bc152d528f9837c68c0d40ca70eb97c49329a2cdfa54e2e18e929de02fa1d3017a4af74396d3941ccf552140bf836a297a0b6b6fb3",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1163.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.8-linux-musl-x64-b1163.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.62"
+  },
+  {
+    "checksum": "sha512:f20d3150cbc7f9beb6600fa90465b560aca8319cb29c5e92ef132019de7748146837e43305c8ed83545657c2a9181fb4a5083d72108034efa7780d5786c8e141",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1163.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.8-linux-musl-x64-b1163.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.62"
   }
 ]
