@@ -46711,15 +46711,15 @@
     "version": "8u352-b08_openj9-0.35.0"
   },
   {
-    "checksum": "sha256:43eaf4e0224986087c946c201567fe31b2b6b23dec5a702bcf679276708d0d7e",
+    "checksum": "sha256:535979c514bec4b9011b3584f6a91b0c747378e4e79349ca4465f9c69fc4e607",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
-    "java_version": "21.0.8",
+    "java_version": "21.0.9",
     "jvm_impl": "hotspot",
     "url": "https://download.oracle.com/java/21/latest/jdk-21_macos-x64_bin.tar.gz",
     "vendor": "oracle",
-    "version": "21.0.8"
+    "version": "21.0.9"
   },
   {
     "checksum": "sha512:f8f4a516cb284e66559a13b921d6f36325178710983face3afbca03c7f1550491a6532cc5c27a2684433280f7c43608cd084a5ccf1faa6a83c76570a2eef7da9",
@@ -48726,17 +48726,6 @@
     "jvm_impl": "graalvm",
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-25.0.0/graalvm-community-jdk-25.0.0_macos-x64_bin.tar.gz",
     "vendor": "graalvm-community",
-    "version": "25.0.0"
-  },
-  {
-    "checksum": "sha256:88a2f025bf43f60cc64c099b3dcbfaac090ef2e2601a30fb974ef76600daf5ce",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "java_version": "25.0.0",
-    "jvm_impl": "hotspot",
-    "url": "https://download.oracle.com/java/25/latest/jdk-25_macos-x64_bin.tar.gz",
-    "vendor": "oracle",
     "version": "25.0.0"
   },
   {
@@ -50770,5 +50759,148 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.8-osx-x64-b1163.62.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.8-b1163.62"
+  },
+  {
+    "checksum": "sha256:aa9e7c8752d6375dbc981a442c2cbb13333acb6371cf1e10618fedac8cf1a4b6",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.1",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/java/25/latest/jdk-25_macos-x64_bin.tar.gz",
+    "vendor": "oracle",
+    "version": "25.0.1"
+  },
+  {
+    "checksum": "sha256:43eaf4e0224986087c946c201567fe31b2b6b23dec5a702bcf679276708d0d7e",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/java/21/archive/jdk-21.0.8_macos-x64_bin.tar.gz",
+    "vendor": "oracle",
+    "version": "21.0.8"
+  },
+  {
+    "checksum": "sha256:906fec42291d1f01b4cbd419eece8ff8872dbde1e74bb22e6a98ee0322a22bcb",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.1",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/GA/jdk25.0.1/2fbf10d8c78e40bd87641c434705079d/8/GPL/openjdk-25.0.1_macos-x64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "25.0.1"
+  },
+  {
+    "checksum": "sha256:a3d895b4cd1c783badbd277ec70409806bd4102fca0d2a60dbaeb0bab41aec30",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.1",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-25.0.1/graalvm-community-jdk-25.0.1_macos-x64_bin.tar.gz",
+    "vendor": "graalvm-community",
+    "version": "25.0.1"
+  },
+  {
+    "checksum": "sha256:4a53f1f6f90fcbd4c2e6e68e486e8520d39429d014afa482a1b306447f8ffe0f",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.17",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.17/sapmachine-jre-17.0.17_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.17"
+  },
+  {
+    "checksum": "sha256:81f00539702a58491fd819d13f654253ab523dc45881b3c38e204756e3974339",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.472.08.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/8.472.08.1/amazon-corretto-8.472.08.1-macosx-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "8.472.08.1"
+  },
+  {
+    "checksum": "sha256:0d83fa831649d69d91ddee2fd8ee9f576b76b6502e6609c5d9d540fbc4340c32",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.1.8.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/25.0.1.8.1/amazon-corretto-25.0.1.8.1-macosx-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "25.0.1.8.1"
+  },
+  {
+    "checksum": "sha256:ccebc80425b5f92c3969dfb72293d54821893ad0d2cd5ad583d92f0832f13620",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.17",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.17/sapmachine-jdk-17.0.17_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.17"
+  },
+  {
+    "checksum": "sha256:df8c7679848824b15ba2f478d82587962093ce813f028388d32a008be8e98f99",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.9/sapmachine-jdk-21.0.9_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.9"
+  },
+  {
+    "checksum": "sha256:87bf9ed61df612682323a09500a9f6ce23a7fc9951e499142461da0e3518b05e",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.9/sapmachine-jre-21.0.9_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.9"
+  },
+  {
+    "checksum": "sha256:e0c0454f3e17a98d0f1fc1263c6d213e45549f2600b174900bff4b31de5a4c23",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.17.10.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/17.0.17.10.1/amazon-corretto-17.0.17.10.1-macosx-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "17.0.17.10.1"
+  },
+  {
+    "checksum": "sha256:8082372d91e6c131c1cfc0159897f1e0a308aff00ea8232a52bfb37e8c07c9df",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.29.7.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/11.0.29.7.1/amazon-corretto-11.0.29.7.1-macosx-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "11.0.29.7.1"
+  },
+  {
+    "checksum": "sha256:4ba0214d8166f88b78e102b8d99411666a6551be4382dd2e3c347d8752c13a54",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9.10.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/21.0.9.10.1/amazon-corretto-21.0.9.10.1-macosx-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "21.0.9.10.1"
   }
 ]

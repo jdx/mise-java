@@ -41757,5 +41757,79 @@
     "url": "https://download.java.net/java/early_access/jdk26/20/GPL/openjdk-26-ea+20_linux-x64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "26.0.0-ea+20"
+  },
+  {
+    "checksum": "sha512:3371835eceaf7fd0a0d6b6987309e46ad905d251e84b3444614cf5126534645964e7c0fb782c7a4e0742228cbf2ae1bcdabdaf0f234f3cf2ab02161ab7d247b7",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.0-b176.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25-linux-x64-b176.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.2"
+  },
+  {
+    "checksum": "sha512:5eecc901619891d0afd883312d257c72861f0ec106a1cfe09a27ee5b5ddde91561a6ab102701796466d4e573014af81861719799e64f8dca757d381c2097dfd5",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-b176.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25-linux-x64-b176.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.2"
+  },
+  {
+    "checksum": "sha512:a1bc76350faa86aadaffae4b3ba944e06622f230bbd9524afff32067b6921c094d9809691e5d1a285c50000dacdb5cf5f7532e51ef1472b68ff03a669edb72a0",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.0-b176.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25-linux-musl-x64-b176.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.2"
+  },
+  {
+    "checksum": "sha512:7d1be310c59dadc00b09130a98955734d79353085a40feeae6204d22282b49221ee16ebde3dbbb2dabb596662866f2b07536f839e6d0ca182d2f96f394baa763",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-b176.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25-linux-musl-x64-b176.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.2"
+  },
+  {
+    "checksum": "sha512:0a7ca0febed982e46bbbe137dc170ff31e42ef63b435681c0fb3c48f11e2bcc2e0bb573e4c7e0dc0835c4ea23eb357aedda67221e160037aeb9fb677812b9841",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.0-b176.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25-linux-x64-b176.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.2"
+  },
+  {
+    "checksum": "sha512:889c7a634fc5282ce33121da16fcc7324e8ffa5654375620aacc27332ead55c7eef0f1d0b0d093a42b8ce974687e61116b3d3256f129a0b85341917fe435be75",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-b176.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25-linux-x64-b176.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.2"
   }
 ]

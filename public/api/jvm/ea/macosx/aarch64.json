@@ -17352,5 +17352,53 @@
     "url": "https://download.java.net/java/early_access/jdk26/20/GPL/openjdk-26-ea+20_macos-aarch64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "26.0.0-ea+20"
+  },
+  {
+    "checksum": "sha512:6d460a159459c39d1e130c1b0c907c108a5a05bcd55c4452c82d166d66b0ff1f88b4d0b7c22e9f6c7ffa84be1466fe2ee16e0695a3ecca8efd242fe8e12bfce9",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-b176.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25-osx-aarch64-b176.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.2"
+  },
+  {
+    "checksum": "sha512:12a302027b0ea6e6977b5a2991aae24787f4111b981ac2d8bd8097999666012b269406c1622e396459f6d536a60c85c7a086b886926a742e93f0d0640af069ae",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.0-b176.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25-osx-aarch64-b176.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.2"
+  },
+  {
+    "checksum": "sha512:1dd327e909d9628be4e8feac88884f8cec8d210c5ad0a37f386943ec737050c3c8decd3d12c06fca314fe543462e171bf263c473bf0dafb3ddc9ad2405cd01bc",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-b176.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25-osx-aarch64-b176.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.2"
+  },
+  {
+    "checksum": "sha512:66f422ed9ce68f313703e9464b8bcab180c0d04fff9eba26531c0539d148c3c991cd62ed5d53271e28713ea4c1f0a4616096aa0f8f36cd2d4bccd7e36b310468",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.0-b176.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25-osx-aarch64-b176.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.2"
   }
 ]

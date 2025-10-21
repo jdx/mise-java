@@ -27131,5 +27131,53 @@
     "url": "https://download.java.net/java/early_access/jdk26/20/GPL/openjdk-26-ea+20_macos-x64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "26.0.0-ea+20"
+  },
+  {
+    "checksum": "sha512:0fa10c567ba3ee43fff4da628247e55f9043883b7cf59dc0155c8b17ad2154791353dee49cdc9839688e9b5e7307f5e1d01314682e36a55e8138ef4d4ad67fdd",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.0-b176.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25-osx-x64-b176.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.2"
+  },
+  {
+    "checksum": "sha512:e04cb0d43f0e9d207e5c7d482b66d5842a85299f9dd02cf50b132f1ce4e28fa90e492dda1be0a70ec8cb24f5b5f28374fa2b8fcb12b421ba3a63f9918cdc0835",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-b176.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25-osx-x64-b176.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.2"
+  },
+  {
+    "checksum": "sha512:10af175f1bcee02aaa23a81d5464e18209a5e1fa6a48dd8c885db07560fe6aee075150ec68240932c64626046adc15b1d0e26e1966d45efcd13d86ea2eb040e0",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-b176.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25-osx-x64-b176.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.2"
+  },
+  {
+    "checksum": "sha512:578fbf00f15008afd01913b70c1c14aa71b51925ec26fa0554ed7b254f67301eba426b0a760d9e383c25540f00cd3e97298c98c5942dae608dcf69defe940d1e",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.0-b176.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25-osx-x64-b176.2.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.2"
   }
 ]
