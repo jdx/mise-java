@@ -19246,5 +19246,265 @@
     "url": "https://corretto.aws/downloads/resources/11.0.29.7.1/amazon-corretto-11.0.29.7.1-windows-x86-jdk.zip",
     "vendor": "corretto",
     "version": "11.0.29.7.1"
+  },
+  {
+    "checksum": "sha1:d3b6f480414e18e6207b72f0e8edcfb4872b0525",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.29+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.29%2B10/bellsoft-jdk11.0.29%2B10-windows-i586-full.zip",
+    "vendor": "liberica",
+    "version": "11.0.29+10"
+  },
+  {
+    "checksum": "sha1:d3b0170339c186abd378863c0fc263e87e4f6f39",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "8u472+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u472%2B9/bellsoft-jre8u472%2B9-windows-i586.zip",
+    "vendor": "liberica",
+    "version": "8u472+9"
+  },
+  {
+    "checksum": "sha1:ee7ff457d56824cb1e57eaed4961a1ac9d82c5ef",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "21.0.9+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.9%2B11/bellsoft-jre21.0.9%2B11-windows-i586.zip",
+    "vendor": "liberica",
+    "version": "21.0.9+11"
+  },
+  {
+    "checksum": "sha1:29a6835a108e2cb0732f7fbe46597d2c54657e4f",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.29+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.29%2B10/bellsoft-jdk11.0.29%2B10-windows-i586.zip",
+    "vendor": "liberica",
+    "version": "11.0.29+10"
+  },
+  {
+    "checksum": "sha1:79d25f5c3e26fb75db58ef4e57df02bd1ba9252e",
+    "features": [
+      "lite"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.29+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.29%2B10/bellsoft-jdk11.0.29%2B10-windows-i586-lite.zip",
+    "vendor": "liberica",
+    "version": "11.0.29+10"
+  },
+  {
+    "checksum": "sha1:871d5e8936ab4a6a26bacb0a4f2092a0b6eba78e",
+    "features": [
+      "lite"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8u472+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u472%2B9/bellsoft-jdk8u472%2B9-windows-i586-lite.zip",
+    "vendor": "liberica",
+    "version": "8u472+9"
+  },
+  {
+    "checksum": "sha1:cb196d754e2063a0e017b3793c8d740550939fcb",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "17.0.17+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.17%2B11/bellsoft-jre17.0.17%2B11-windows-i586.zip",
+    "vendor": "liberica",
+    "version": "17.0.17+11"
+  },
+  {
+    "checksum": "sha1:7cd785e640e5c603f878c460f14822906d6347cb",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8u472+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u472%2B9/bellsoft-jdk8u472%2B9-windows-i586-full.zip",
+    "vendor": "liberica",
+    "version": "8u472+9"
+  },
+  {
+    "checksum": "sha1:6f86395aa3fd750e29edced375fc17ada51cfdac",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8u472+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u472%2B9/bellsoft-jdk8u472%2B9-windows-i586.zip",
+    "vendor": "liberica",
+    "version": "8u472+9"
+  },
+  {
+    "checksum": "sha1:1a9a300c0f4d735674234f4285b8988e7a91d147",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.17+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.17%2B11/bellsoft-jdk17.0.17%2B11-windows-i586-full.zip",
+    "vendor": "liberica",
+    "version": "17.0.17+11"
+  },
+  {
+    "checksum": "sha1:23573719aa7596d4561a922fc56a91882aafd72a",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.17+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.17%2B11/bellsoft-jdk17.0.17%2B11-windows-i586.zip",
+    "vendor": "liberica",
+    "version": "17.0.17+11"
+  },
+  {
+    "checksum": "sha1:48bdb90f94b1321ff587d6ce881edd2dfff6d6f6",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.9+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.9%2B11/bellsoft-jdk21.0.9%2B11-windows-i586.zip",
+    "vendor": "liberica",
+    "version": "21.0.9+11"
+  },
+  {
+    "checksum": "sha1:ca5d2faa85903d5156ca1828b1964471cd95277e",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "17.0.17+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.17%2B11/bellsoft-jre17.0.17%2B11-windows-i586-full.zip",
+    "vendor": "liberica",
+    "version": "17.0.17+11"
+  },
+  {
+    "checksum": "sha1:3da50e3dc9809f77aeb411391eb177fba4addff2",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "8u472+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u472%2B9/bellsoft-jre8u472%2B9-windows-i586-full.zip",
+    "vendor": "liberica",
+    "version": "8u472+9"
+  },
+  {
+    "checksum": "sha1:f5caa4352b910ea0e57c757c90cfde597979352c",
+    "features": [
+      "lite"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.9+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.9%2B11/bellsoft-jdk21.0.9%2B11-windows-i586-lite.zip",
+    "vendor": "liberica",
+    "version": "21.0.9+11"
+  },
+  {
+    "checksum": "sha1:13a978f7ca4e2c0c5c36183cf39532ce549abbcd",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "21.0.9+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.9%2B11/bellsoft-jre21.0.9%2B11-windows-i586-full.zip",
+    "vendor": "liberica",
+    "version": "21.0.9+11"
+  },
+  {
+    "checksum": "sha1:d108b222fc3746935b75ee9852d72644f2722274",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "11.0.29+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.29%2B10/bellsoft-jre11.0.29%2B10-windows-i586.zip",
+    "vendor": "liberica",
+    "version": "11.0.29+10"
+  },
+  {
+    "checksum": "sha1:7bf09a5c5dd1f9be254ee1f2b75e25af8750f42a",
+    "features": [
+      "lite"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.17+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.17%2B11/bellsoft-jdk17.0.17%2B11-windows-i586-lite.zip",
+    "vendor": "liberica",
+    "version": "17.0.17+11"
+  },
+  {
+    "checksum": "sha1:e35b295dce3057209727bbcb2a19729bb4ffb929",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.9+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.9%2B11/bellsoft-jdk21.0.9%2B11-windows-i586-full.zip",
+    "vendor": "liberica",
+    "version": "21.0.9+11"
+  },
+  {
+    "checksum": "sha1:27b2e73710ca5afa6c711643e52a59e00337095e",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "11.0.29+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.29%2B10/bellsoft-jre11.0.29%2B10-windows-i586-full.zip",
+    "vendor": "liberica",
+    "version": "11.0.29+10"
   }
 ]

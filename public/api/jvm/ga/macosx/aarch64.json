@@ -41493,5 +41493,875 @@
     "url": "https://corretto.aws/downloads/resources/8.472.08.1/amazon-corretto-8.472.08.1-macosx-aarch64.tar.gz",
     "vendor": "corretto",
     "version": "8.472.08.1"
+  },
+  {
+    "checksum": "sha256:f33bdd918376f53badb7360f727507435f2d670b3439de76f537d1415960d905",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "17.0.17",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.62.17-ca-jre17.0.17-macosx_aarch64.zip",
+    "vendor": "zulu",
+    "version": "17.62.17.0"
+  },
+  {
+    "checksum": "sha256:e9bfb6427b0ebbd77e78f4bfd44b2759de22db11ce151487c8549c9161f7c02a",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.30.17-ca-jre25.0.1-macosx_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.30.17.0"
+  },
+  {
+    "checksum": "sha256:28e62746e505b3df04e971dce1c174e8eb8283644f2f3741530c1bb13e7ce798",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.17",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.62.17-ca-jre17.0.17-macosx_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.62.17.0"
+  },
+  {
+    "checksum": "sha256:dd3bf21b824062ffa3f061f24eff5a8563043f9e9e494b3417e0393ccd9385e6",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "8.0.472",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.90.0.19-ca-jre8.0.472-macosx_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "8.90.0.19"
+  },
+  {
+    "checksum": "sha256:09ed1734c2d88fadcb75fdbec1ba5467d32e7fa2b10894541aa8e3d3ce78dc2d",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.29",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.84.17-ca-jdk11.0.29-macosx_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "11.84.17.0"
+  },
+  {
+    "checksum": "sha256:fdf71974f75d53cf0d6f11c95d927fd8079751cd76dc217636e717645065ab7a",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "25.0.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.30.17-ca-jre25.0.1-macosx_aarch64.zip",
+    "vendor": "zulu",
+    "version": "25.30.17.0"
+  },
+  {
+    "checksum": "sha256:87dbbf8225402d811fc84c2b45115017539ca2ea5c47ddbf614df6bf88c63ed0",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "11.0.29",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.84.17-ca-jre11.0.29-macosx_aarch64.zip",
+    "vendor": "zulu",
+    "version": "11.84.17.0"
+  },
+  {
+    "checksum": "sha256:ab4623db23d100fb201cf0b291d430809e0186bccbbf0fb98049f9ba4e14d8bc",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8.0.472",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.90.0.19-ca-jdk8.0.472-macosx_aarch64.zip",
+    "vendor": "zulu",
+    "version": "8.90.0.19"
+  },
+  {
+    "checksum": "sha256:83a0f6eff83ece56590a6780a6f9975f7b2a666dfa8b33180a28f355eb5e12fa",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.29",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.84.17-ca-jdk11.0.29-macosx_aarch64.zip",
+    "vendor": "zulu",
+    "version": "11.84.17.0"
+  },
+  {
+    "checksum": "sha256:5558f7efe6297ecb20f422f31471555cd43e9499beb304b8f3ddc68796d2874b",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.17",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.62.17-ca-jdk17.0.17-macosx_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.62.17.0"
+  },
+  {
+    "checksum": "sha256:dc73129a6b110d87d8dbf3095f6e9f03f308cc8b84d6e2465d83c85aa62090c1",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "21.0.9",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.46.19-ca-jre21.0.9-macosx_aarch64.zip",
+    "vendor": "zulu",
+    "version": "21.46.19.0"
+  },
+  {
+    "checksum": "sha256:c64b588e7496cafacabdf58b1bcf832071106bd789a647a2f8ad6d5d78016aa1",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.9",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.46.19-ca-jdk21.0.9-macosx_aarch64.zip",
+    "vendor": "zulu",
+    "version": "21.46.19.0"
+  },
+  {
+    "checksum": "sha256:823d547ab9508e3a2b8abd3c5de66a39a50a254dc5835747cf3c2617fbe55600",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.0.472",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.90.0.19-ca-jdk8.0.472-macosx_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "8.90.0.19"
+  },
+  {
+    "checksum": "sha256:0e4f9e2c7865bad538f50160c45703b0586deb7448a957d91b37fe656a72b620",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.30.17-ca-jdk25.0.1-macosx_aarch64.zip",
+    "vendor": "zulu",
+    "version": "25.30.17.0"
+  },
+  {
+    "checksum": "sha256:abca0ca479c06250184d44ed9968461a3857ca7fa27dd952c39a38c54df1d2ad",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.17",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.62.17-ca-jdk17.0.17-macosx_aarch64.zip",
+    "vendor": "zulu",
+    "version": "17.62.17.0"
+  },
+  {
+    "checksum": "sha256:b56112ad12d3dfe62802840655ecf198fe4ca48729824c939d65a69e803536c7",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.46.19-ca-jdk21.0.9-macosx_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.46.19.0"
+  },
+  {
+    "checksum": "sha256:00153fbda20fec9bfeefd575ad57209649c6a9cc6f53986a3091925e6a057854",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "8.0.472",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.90.0.19-ca-jre8.0.472-macosx_aarch64.zip",
+    "vendor": "zulu",
+    "version": "8.90.0.19"
+  },
+  {
+    "checksum": "sha256:2590c634199b8365d12a6cd2d6de1a13dab00ea9a57ebcc9e53254b6f57b00d8",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.46.19-ca-jre21.0.9-macosx_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.46.19.0"
+  },
+  {
+    "checksum": "sha256:126061d6046b0c0df0472b361ca7895951d34fef1dd522f222f2c7d8738a39d8",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.30.17-ca-jdk25.0.1-macosx_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.30.17.0"
+  },
+  {
+    "checksum": "sha256:b069bbeb5c81bd1b054f0d152a9e1c33eb264824f19e8d5f2621aae36a6ec119",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.29",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.84.17-ca-jre11.0.29-macosx_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "11.84.17.0"
+  },
+  {
+    "checksum": "sha1:d8b5a07dadacd9d3082b0087935774eaab824555",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "25.0.1+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25.0.1%2B11/bellsoft-jre25.0.1%2B11-macos-aarch64.zip",
+    "vendor": "liberica",
+    "version": "25.0.1+11"
+  },
+  {
+    "checksum": "sha1:e91549db1e064d0c713003004a02f98c5f9d9ca4",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.9%2B11/bellsoft-jdk21.0.9%2B11-macos-aarch64.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.9+11"
+  },
+  {
+    "checksum": "sha1:786b994c969cfd12b8ab5129fb25192ce87e07d5",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.1+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25.0.1%2B11/bellsoft-jdk25.0.1%2B11-macos-aarch64.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.1+11"
+  },
+  {
+    "checksum": "sha1:b87e8c26e4c681363876ce978669d01f504bb88a",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.1+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25.0.1%2B11/bellsoft-jdk25.0.1%2B11-macos-aarch64-full.zip",
+    "vendor": "liberica",
+    "version": "25.0.1+11"
+  },
+  {
+    "checksum": "sha1:59e6fc211e35290d476c45a317b6fdb4d15fc744",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "21.0.9+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.9%2B11/bellsoft-jre21.0.9%2B11-macos-aarch64.zip",
+    "vendor": "liberica",
+    "version": "21.0.9+11"
+  },
+  {
+    "checksum": "sha1:2924ff49121d74922ab669c2201b2a48d193a531",
+    "features": [
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.9%2B11/bellsoft-jdk21.0.9%2B11-macos-aarch64-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.9+11"
+  },
+  {
+    "checksum": "sha1:947fad8a0676fda65b66776f4505ad71136500f8",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "11.0.29+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.29%2B10/bellsoft-jre11.0.29%2B10-macos-aarch64-full.zip",
+    "vendor": "liberica",
+    "version": "11.0.29+10"
+  },
+  {
+    "checksum": "sha1:a51269af618921ef502b7d5c0603784008d0e4cb",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.17+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.17%2B11/bellsoft-jre17.0.17%2B11-macos-aarch64.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.17+11"
+  },
+  {
+    "checksum": "sha1:f2230f10d73496fedff1d939732860048c91d24b",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "17.0.17+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.17%2B11/bellsoft-jre17.0.17%2B11-macos-aarch64.zip",
+    "vendor": "liberica",
+    "version": "17.0.17+11"
+  },
+  {
+    "checksum": "sha1:7bed2abbf0622da009b5265a6534a405b8d1fb5b",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.9%2B11/bellsoft-jre21.0.9%2B11-macos-aarch64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.9+11"
+  },
+  {
+    "checksum": "sha1:83adfd9c27319154a0a6ceaab70f0655bf9e610e",
+    "features": [
+      "lite"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.9+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.9%2B11/bellsoft-jdk21.0.9%2B11-macos-aarch64-lite.zip",
+    "vendor": "liberica",
+    "version": "21.0.9+11"
+  },
+  {
+    "checksum": "sha1:6b8c0142b8ac3ea30e3280e9871e26f5953174b9",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8u472+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u472%2B9/bellsoft-jdk8u472%2B9-macos-aarch64.tar.gz",
+    "vendor": "liberica",
+    "version": "8u472+9"
+  },
+  {
+    "checksum": "sha1:b1317ef08e3917055bae50286120de68378cae86",
+    "features": [
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.1+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25.0.1%2B11/bellsoft-jdk25.0.1%2B11-macos-aarch64-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.1+11"
+  },
+  {
+    "checksum": "sha1:d20460c517aab7ebbc0615a8ec3c1ada2c717034",
+    "features": [
+      "lite"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.17+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.17%2B11/bellsoft-jdk17.0.17%2B11-macos-aarch64-lite.zip",
+    "vendor": "liberica",
+    "version": "17.0.17+11"
+  },
+  {
+    "checksum": "sha1:943caaf4809d4b85c944e479b171245318aa2298",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "21.0.9+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.9%2B11/bellsoft-jre21.0.9%2B11-macos-aarch64-full.zip",
+    "vendor": "liberica",
+    "version": "21.0.9+11"
+  },
+  {
+    "checksum": "sha1:444839494eb50c3f5ed59a3e2b08928d6d685414",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.17+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.17%2B11/bellsoft-jdk17.0.17%2B11-macos-aarch64-full.zip",
+    "vendor": "liberica",
+    "version": "17.0.17+11"
+  },
+  {
+    "checksum": "sha1:cc7907411cb2d1e921582df664eb7ac2b9259452",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.1+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25.0.1%2B11/bellsoft-jdk25.0.1%2B11-macos-aarch64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.1+11"
+  },
+  {
+    "checksum": "sha1:f064364ad01d49292df80e7123746761fa794ed6",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.17+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.17%2B11/bellsoft-jdk17.0.17%2B11-macos-aarch64.zip",
+    "vendor": "liberica",
+    "version": "17.0.17+11"
+  },
+  {
+    "checksum": "sha1:a35f0bf062d0ceb3adc3cddff7144600c0c8dae4",
+    "features": [
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.17+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.17%2B11/bellsoft-jdk17.0.17%2B11-macos-aarch64-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.17+11"
+  },
+  {
+    "checksum": "sha1:cf4970c589ef9ccc63d7301f414eaa9aa772c5a6",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.29+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.29%2B10/bellsoft-jdk11.0.29%2B10-macos-aarch64-full.zip",
+    "vendor": "liberica",
+    "version": "11.0.29+10"
+  },
+  {
+    "checksum": "sha1:5098b9e6e3904327ca0b5066a1c1ef0e2e2d5de4",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "11.0.29+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.29%2B10/bellsoft-jre11.0.29%2B10-macos-aarch64.zip",
+    "vendor": "liberica",
+    "version": "11.0.29+10"
+  },
+  {
+    "checksum": "sha1:13090443c7a5fcb92b50a023dd00b4eabc79ce11",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.9%2B11/bellsoft-jdk21.0.9%2B11-macos-aarch64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.9+11"
+  },
+  {
+    "checksum": "sha1:054683ed08769cfba4f4ca3b1005aa4dbb340e85",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.17+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.17%2B11/bellsoft-jdk17.0.17%2B11-macos-aarch64.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.17+11"
+  },
+  {
+    "checksum": "sha1:c37defd2c91049048b896b1ffe6a8ee2c0e5f02a",
+    "features": [
+      "lite"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.29+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.29%2B10/bellsoft-jdk11.0.29%2B10-macos-aarch64-lite.zip",
+    "vendor": "liberica",
+    "version": "11.0.29+10"
+  },
+  {
+    "checksum": "sha1:665a6c83771ff316d7173926408b7c4ee2a95e11",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.1+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25.0.1%2B11/bellsoft-jre25.0.1%2B11-macos-aarch64.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.1+11"
+  },
+  {
+    "checksum": "sha1:e64acbe404a67e5a32381fb26cff1b2342a9a271",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "8u472+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u472%2B9/bellsoft-jre8u472%2B9-macos-aarch64.zip",
+    "vendor": "liberica",
+    "version": "8u472+9"
+  },
+  {
+    "checksum": "sha1:97d704b029041ddaaf47f1030e03b669d5321420",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8u472+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u472%2B9/bellsoft-jdk8u472%2B9-macos-aarch64.zip",
+    "vendor": "liberica",
+    "version": "8u472+9"
+  },
+  {
+    "checksum": "sha1:60dff592ac98c23df2e76b47f7388adc06c31ea7",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8u472+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u472%2B9/bellsoft-jdk8u472%2B9-macos-aarch64-full.zip",
+    "vendor": "liberica",
+    "version": "8u472+9"
+  },
+  {
+    "checksum": "sha1:1a24425721fadc5b8ac4f484e069af1fabbeae53",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "17.0.17+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.17%2B11/bellsoft-jre17.0.17%2B11-macos-aarch64-full.zip",
+    "vendor": "liberica",
+    "version": "17.0.17+11"
+  },
+  {
+    "checksum": "sha1:c753a92007018369d75bf324784955015a74b282",
+    "features": [
+      "lite"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8u472+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u472%2B9/bellsoft-jdk8u472%2B9-macos-aarch64-lite.zip",
+    "vendor": "liberica",
+    "version": "8u472+9"
+  },
+  {
+    "checksum": "sha1:8bc97d6620067cb7597013789025507a980be7c3",
+    "features": [
+      "lite"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.1+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25.0.1%2B11/bellsoft-jdk25.0.1%2B11-macos-aarch64-lite.zip",
+    "vendor": "liberica",
+    "version": "25.0.1+11"
+  },
+  {
+    "checksum": "sha1:567c6e6fc67f73a6356b604408ced12a5e798967",
+    "features": [
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.29+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.29%2B10/bellsoft-jdk11.0.29%2B10-macos-aarch64-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.29+10"
+  },
+  {
+    "checksum": "sha1:ecfc290b486a2cd4188b9347b45faa4f3278705e",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.1+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25.0.1%2B11/bellsoft-jdk25.0.1%2B11-macos-aarch64.zip",
+    "vendor": "liberica",
+    "version": "25.0.1+11"
+  },
+  {
+    "checksum": "sha1:df8233049808dbad1e99d68e48f023a52310d56f",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.29+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.29%2B10/bellsoft-jdk11.0.29%2B10-macos-aarch64.zip",
+    "vendor": "liberica",
+    "version": "11.0.29+10"
+  },
+  {
+    "checksum": "sha1:ebcd1b96105a1640fd3803f4659284419fc7e1ac",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.17+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.17%2B11/bellsoft-jdk17.0.17%2B11-macos-aarch64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.17+11"
+  },
+  {
+    "checksum": "sha1:37ba50107ce23ce96eeb387b8a24951be85502ff",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.9+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.9%2B11/bellsoft-jdk21.0.9%2B11-macos-aarch64-full.zip",
+    "vendor": "liberica",
+    "version": "21.0.9+11"
+  },
+  {
+    "checksum": "sha1:d2317db4cf9d9df9c61ad4dae0bf1258210eb6bd",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.1+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25.0.1%2B11/bellsoft-jre25.0.1%2B11-macos-aarch64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.1+11"
+  },
+  {
+    "checksum": "sha1:edbad49f54a2fde8f044f55b8199a4ffc4b4862d",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8u472+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u472%2B9/bellsoft-jdk8u472%2B9-macos-aarch64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "8u472+9"
+  },
+  {
+    "checksum": "sha1:5a663dfa22d5045b39639494211077102160bca3",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.17+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.17%2B11/bellsoft-jre17.0.17%2B11-macos-aarch64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.17+11"
+  },
+  {
+    "checksum": "sha1:06d5d64c38c63d63d2f26e691de0dd07922bd392",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.29+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.29%2B10/bellsoft-jre11.0.29%2B10-macos-aarch64.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.29+10"
+  },
+  {
+    "checksum": "sha1:2d965e8b8c398c54a03dbb6d03fa8d44a0bb8a20",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.29+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.29%2B10/bellsoft-jre11.0.29%2B10-macos-aarch64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.29+10"
+  },
+  {
+    "checksum": "sha1:1dea6185bd50bf02facd896866cffcdeef49bfc6",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.29+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.29%2B10/bellsoft-jdk11.0.29%2B10-macos-aarch64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.29+10"
+  },
+  {
+    "checksum": "sha1:7752d0299482abc62ecd9558e918d48e4a73d954",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "8u472+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u472%2B9/bellsoft-jre8u472%2B9-macos-aarch64.tar.gz",
+    "vendor": "liberica",
+    "version": "8u472+9"
+  },
+  {
+    "checksum": "sha1:15e5c4fcc0804a404a31638afbee504fc2f30a2e",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.9%2B11/bellsoft-jre21.0.9%2B11-macos-aarch64.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.9+11"
+  },
+  {
+    "checksum": "sha1:a371ee618cff03708ef6e3504be6ea1d6bc1ab6d",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "25.0.1+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25.0.1%2B11/bellsoft-jre25.0.1%2B11-macos-aarch64-full.zip",
+    "vendor": "liberica",
+    "version": "25.0.1+11"
+  },
+  {
+    "checksum": "sha1:c3d92d1e004c3a9794ece7ba884da41c2d379d25",
+    "features": [
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8u472+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u472%2B9/bellsoft-jdk8u472%2B9-macos-aarch64-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "8u472+9"
+  },
+  {
+    "checksum": "sha1:92c1ce548b3de05231485e0548362cd7b0ab19f3",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "8u472+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u472%2B9/bellsoft-jre8u472%2B9-macos-aarch64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "8u472+9"
+  },
+  {
+    "checksum": "sha1:d82c322b7bd6857daa52eb58a7322355f1b81874",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.29+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.29%2B10/bellsoft-jdk11.0.29%2B10-macos-aarch64.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.29+10"
+  },
+  {
+    "checksum": "sha1:6cfe802c7644d2feee5cac695f289e4a63442963",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "8u472+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u472%2B9/bellsoft-jre8u472%2B9-macos-aarch64-full.zip",
+    "vendor": "liberica",
+    "version": "8u472+9"
+  },
+  {
+    "checksum": "sha1:8ee1aa8e3fb453c9ba978af24372e3d0d3e52d66",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.9+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.9%2B11/bellsoft-jdk21.0.9%2B11-macos-aarch64.zip",
+    "vendor": "liberica",
+    "version": "21.0.9+11"
   }
 ]
