@@ -51772,5 +51772,53 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.17%2B11/bellsoft-jdk17.0.17%2B11-macos-amd64-full.zip",
     "vendor": "liberica",
     "version": "17.0.17+11"
+  },
+  {
+    "checksum": "sha512:31d38ad00e1440f0bc331d5139f4b13324c37e2b14f6284189170d73645be1819a5bc12c2ff4da4faa1459740d2563f1c615affdb73fa3033efc6692572b7371",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-b176.4",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25-osx-x64-b176.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.4"
+  },
+  {
+    "checksum": "sha512:8af6a951fb3efafd45b90439df757f43d0f45e94959f8e0a754a931b85bde8cd7dec37961ab81bde5117b8f50435650857991b5a9a4576c0a4f59b1b76cf8947",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.0-b176.4",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25-osx-x64-b176.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.4"
+  },
+  {
+    "checksum": "sha512:d92375ecf07392cf40bc27ab04a3e1fc7d60e54ccfcc3d5749d042eaa67d0354666e429ca279a9e4c5c7eedc5a77fbd98904ffaf768dcb3a098075f9ccddee46",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.0-b176.4",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25-osx-x64-b176.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.4"
+  },
+  {
+    "checksum": "sha512:5923d33fde1adaa75d36b74a9d096beae77f9ab6bc33cad4df23ada531adc21a95844d0f46924ce105a7b85ac63c3ab36d1707e4c43ce539846921d12f475f83",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-b176.4",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25-osx-x64-b176.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.4"
   }
 ]

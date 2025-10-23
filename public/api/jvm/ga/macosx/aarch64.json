@@ -42363,5 +42363,97 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.9%2B11/bellsoft-jdk21.0.9%2B11-macos-aarch64.zip",
     "vendor": "liberica",
     "version": "21.0.9+11"
+  },
+  {
+    "checksum": "sha512:727952aa1b3762c68c4caddde663df1f8389113730aa57bbd947e30c998abc80d4bf78c2e55654ad3ac6385bfadfaf1b6b43a7f16379bbf7e8ad0c9ef7d721d1",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-b176.4",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25-osx-aarch64-b176.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.4"
+  },
+  {
+    "checksum": "sha256:b37759cce74d3104da243c5a4ca1f8a73d6d8811b4a1711028744ec5559f7eb0",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.17+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.17%2B10/OpenJDK17U-jre_aarch64_mac_hotspot_17.0.17_10.tar.gz",
+    "vendor": "temurin",
+    "version": "17.0.17+10"
+  },
+  {
+    "checksum": "sha256:55a40abeb0e174fdc70f769b34b50b70c3967e0b12a643e6a3e23f9a582aac16",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9+10-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jdk_aarch64_mac_hotspot_21.0.9_10.tar.gz",
+    "vendor": "temurin",
+    "version": "21.0.9+10.0.LTS"
+  },
+  {
+    "checksum": "sha256:856059de21518c2ff6eba6126ffc93390affe363c3ee205b3146a3bac3be0aa5",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.17+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.17%2B10/OpenJDK17U-jdk_aarch64_mac_hotspot_17.0.17_10.tar.gz",
+    "vendor": "temurin",
+    "version": "17.0.17+10"
+  },
+  {
+    "checksum": "sha256:1f7f6506b598e85d7d8ff8b36563d98657d2d81b16bfca3cd242d7906cfbd11b",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9+10-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jre_aarch64_mac_hotspot_21.0.9_10.tar.gz",
+    "vendor": "temurin",
+    "version": "21.0.9+10.0.LTS"
+  },
+  {
+    "checksum": "sha512:493c5ae7944389dd9662d7b137e0e4edf5150708a1a73ed0b2cdae32ef645a09bc4cf07aee4e19cbd4256b4518cd50c644623188642fb72b77152c32531ea501",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.0-b176.4",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25-osx-aarch64-b176.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.4"
+  },
+  {
+    "checksum": "sha512:bbb6caf9fdc5462341eba90cb4f5c25a263d4a66f96d355f844ed5c09cdd3479905bff102b7b10af734d2e0060964cadcc62414ce1b6ad36539075acbe87152f",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.0-b176.4",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25-osx-aarch64-b176.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.4"
+  },
+  {
+    "checksum": "sha512:52a5970b0c9ec73611cfbb096543a61d553885f350e823e1a78890d59b80b72e5fd9884521b3a4833e898abaf18d636cdc03b6667245dc19dc5625a13acc6285",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-b176.4",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25-osx-aarch64-b176.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.4"
   }
 ]

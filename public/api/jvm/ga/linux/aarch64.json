@@ -44535,5 +44535,79 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.17%2B11/bellsoft-jdk17.0.17%2B11-linux-aarch64.tar.gz",
     "vendor": "liberica",
     "version": "17.0.17+11"
+  },
+  {
+    "checksum": "sha512:9a17436e716d872ee5483f3633c326863a83e3f08e43192924c134baa0a097dbdec3a2db7a111bf4e6f5b0551008d31d94ae1de461d65b053f1bb9fc9c1ef9da",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.0-b176.4",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25-linux-aarch64-b176.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.4"
+  },
+  {
+    "checksum": "sha512:11775c8f3d19b1f6b534bc1d24489d5014aa3c4ed9eed6ffa68ef5db6dca9590d9d3d68816a9839753c2c2b37a1a899fac3c7bbb90f150fe0af47ed47770b0ce",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-b176.4",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25-linux-musl-aarch64-b176.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.4"
+  },
+  {
+    "checksum": "sha512:a5e44ce63477ea23a751f20b0da527167c4802f63c13c1800208ff079833f53a650685053fdb7c926be2d06889aeb23491b7d28d71cadc75812438c0d524f642",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.0-b176.4",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25-linux-musl-aarch64-b176.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.4"
+  },
+  {
+    "checksum": "sha512:730327903440be2b3189ec22e162cafbe8afa0db3def854c82ab8540bc72d20f58bcd636a43a60d2ddb13f4b5f29721fea9d48bc32ce68ea14a3d5804600c91f",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.0-b176.4",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25-linux-aarch64-b176.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.4"
+  },
+  {
+    "checksum": "sha512:d417a60f681169ee6a7cdd8e9d2a4b0384e4c424603f7fc81d21f5090c5111211b2165e7e3e0ecc837aa93cd80f1a049792e2b6e0152d6c68d050c3c6196f2d3",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-b176.4",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25-linux-aarch64-b176.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.4"
+  },
+  {
+    "checksum": "sha512:086821c4419eae197529fe597211129615f272aa98ca4d712228a4b388f64182ee63eaf3d57772888e9bab7ae173faad4235d964afe3ee6a2d09c29efa623c24",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-b176.4",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25-linux-aarch64-b176.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.4"
   }
 ]

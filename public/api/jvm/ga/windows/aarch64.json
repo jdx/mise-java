@@ -13399,5 +13399,101 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.29%2B10/bellsoft-jre11.0.29%2B10-windows-aarch64.zip",
     "vendor": "liberica",
     "version": "11.0.29+10"
+  },
+  {
+    "checksum": "sha512:e9d535c97d12d951078f3508e5fd0d700cc081cf6823cef03e61a5c7fc5a49e8a4c6900a36ba0eb378a84c6ca5d1af53991fb0fe35f3e375bf034f1e53a4222e",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-b176.4",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25-windows-aarch64-b176.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.4"
+  },
+  {
+    "checksum": "sha512:ee281a15f2c161696620fb6f32825c4461423911507ab41fed142fb8039a795234e355e8084fd84014bebc6b119486e49c3fc1950389b413d6dcd3af64ad20c7",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.0-b176.4",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25-windows-aarch64-b176.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.4"
+  },
+  {
+    "checksum": "sha512:1a715ecb1a40cca17b7fd8db6c4050cd6f8e798ab22e8bb29c841ab4690ff7a06697ea9f2510e873e5a5c671d2397d5d7b9d2ba95e142b7f944f00fd38214aab",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-b176.4",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25-windows-aarch64-b176.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.4"
+  },
+  {
+    "checksum": "sha512:793a322f141e9223a7be5de1e30742124559583564843af10d1d70836663b3053398bad014d06a432a77d54274e95abe9a6c0199c13ee613d1d9bacf2aa4bdba",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.0-b176.4",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25-windows-aarch64-b176.4.zip",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.4"
+  },
+  {
+    "checksum": "sha512:fcd1ae7151562938afe029a0273040633e0e56729993e29457f87858c0a2e9343f7fd3bbb9145d7ff69026c03a98d72326c10608d84e42708fa870a09e097f00",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "25.0.0-b176.4",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25-windows-aarch64-b176.4.zip",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.4"
+  },
+  {
+    "checksum": "sha512:20ae40617bd3eeb306e30f6ee9197d89d991ef88d04fc32b0f29d7daa3ae6b6cc1445aa71efc7860265877a962585727c4a36a110c842b2e824e7a093c30e853",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "25.0.0-b176.4",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25-windows-aarch64-b176.4.zip",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.4"
+  },
+  {
+    "checksum": "sha512:73ef9f8df213b2289cbaee46a4aa62a53bf6d0b0426fef5dcc68925cd8eb0e680bb9fa0b69345fd14670dbd917e7f2c92e79b357b28722e170777d970c514e57",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.0-b176.4",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25-windows-aarch64-b176.4.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.4"
+  },
+  {
+    "checksum": "sha512:b2a30f3707a098522712aafe0b03c7722b118c3a7951848e9174ce1ce020dff2a71df7c95fc3636d07a817f0a0df4f778f437f5ecdcecbb28945ccc23c251a74",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.0-b176.4",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25-windows-aarch64-b176.4.zip",
+    "vendor": "jetbrains",
+    "version": "25.0.0-b176.4"
   }
 ]
