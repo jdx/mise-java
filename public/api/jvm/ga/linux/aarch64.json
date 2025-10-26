@@ -44635,5 +44635,53 @@
     "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.9%2B10/OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.9_10.tar.gz",
     "vendor": "temurin",
     "version": "21.0.9+10.0.LTS"
+  },
+  {
+    "checksum": "sha256:dc29ca6d35beb4419b4b00419b8a3dfbf5ae551e1ae2b046b516d9a579d04533",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.17+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.17%2B10/OpenJDK17U-jdk_aarch64_linux_hotspot_17.0.17_10.tar.gz",
+    "vendor": "temurin",
+    "version": "17.0.17+10"
+  },
+  {
+    "checksum": "sha256:0176d4b18047ce6669c451e7293998961340a6720e979adfbfefb7356d21d597",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.1+8-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.1%2B8/OpenJDK25U-jre_aarch64_alpine-linux_hotspot_25.0.1_8.tar.gz",
+    "vendor": "temurin",
+    "version": "25.0.1+8.0.LTS"
+  },
+  {
+    "checksum": "sha256:d184e8d5caabe51b7ce9d4e0410f51b447a703eab3cec60ca94b7c59fecdad01",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.17+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.17%2B10/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.17_10.tar.gz",
+    "vendor": "temurin",
+    "version": "17.0.17+10"
+  },
+  {
+    "checksum": "sha256:e95584c7fb7d4020003b325d5c3af9c29dde514571da362aac04586a88f2d728",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.1+8-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.1%2B8/OpenJDK25U-jdk_aarch64_alpine-linux_hotspot_25.0.1_8.tar.gz",
+    "vendor": "temurin",
+    "version": "25.0.1+8.0.LTS"
   }
 ]
