@@ -44683,5 +44683,101 @@
     "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.1%2B8/OpenJDK25U-jdk_aarch64_alpine-linux_hotspot_25.0.1_8.tar.gz",
     "vendor": "temurin",
     "version": "25.0.1+8.0.LTS"
+  },
+  {
+    "checksum": "sha512:afd9d15f153c7eacae56d650e97e209ad17d1b283f1712924aca9f2d00b8e30e9c5cbee51e98b40b3d961d23c1b151d2980c9c0ffa982b2d1ba55223becc143f",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1163.69",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_lb-21.0.8-linux-aarch64-b1163.69.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.69"
+  },
+  {
+    "checksum": "sha512:9daf9cd7b3f87acc2913487e2971b64a3f36897bef0bcbec847ba70f1f969caf7b44c4b8605e5fe29133ec9c5dae9b6016a2a88afe3a9a0de3fe95aab729a496",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1163.69",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.8-linux-aarch64-b1163.69.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.69"
+  },
+  {
+    "checksum": "sha512:284b1fa1ba213dc1de1dd2a07729cc877ae4e298a19c08f6d12d29e34b0b99e318e6e79dd99e458a889c41675d855ed63f340c3a4db30b674d11d10c94d953fa",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1163.69",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.8-linux-musl-aarch64-b1163.69.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.69"
+  },
+  {
+    "checksum": "sha512:fc15f7a98619b10afffdda37d311d7ad9a048e44a7258c4ee84c785528a7a275d439727f90743618e9c5715941485a613586e2a16ebe7fa7c036644e3b4a7922",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1163.69",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.8-linux-aarch64-b1163.69.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.69"
+  },
+  {
+    "checksum": "sha512:2f3e37fb56648f5c77015c79312150032eb5e26516886114279b500a718e9783a5440c7a88f66c16f63b543bda88d51a18a13eb9e58a9b453a666c840c495be1",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1163.69",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_lb-21.0.8-linux-aarch64-b1163.69.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.69"
+  },
+  {
+    "checksum": "sha512:b87393b1f825f552ba234b8643e2418a701a8996b3b21a77e0d26e8d78fd11f14ea1b34fef6d95cf101f71db53965c146419d59da347d249ca3bb4bb2a444f23",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1163.69",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.8-linux-musl-aarch64-b1163.69.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.69"
+  },
+  {
+    "checksum": "sha512:25d4f8c595a660cbf435f37f98485a3325d0b9ced35fdd8e25551fb069737ba50b319b34fd56da4c1d1ce52e973b00c67f69c4a5b61b0f7dc6feafb963333b77",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1163.69",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.8-linux-aarch64-b1163.69.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.69"
+  },
+  {
+    "checksum": "sha512:cbb435e2ef508b2337ab07260cd8a9369e729affb057aa2ae6285214c9e35fbb94db8aabb4e825f3350139584238665e1a333f13e11238c060835cbb59b1dd29",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1163.69",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.8-linux-aarch64-b1163.69.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.69"
   }
 ]

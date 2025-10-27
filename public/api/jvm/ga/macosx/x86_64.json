@@ -51820,5 +51820,53 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25-osx-x64-b176.4.tar.gz",
     "vendor": "jetbrains",
     "version": "25.0.0-b176.4"
+  },
+  {
+    "checksum": "sha512:72df5c81b85b84e28c18997479ef2893d80dd10a150b876a58aff182dc224598e47bafc97b6ec2ccbaf7f43fc9f9653f0ea782fe8163060cfe512273c32a42e5",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1163.69",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.8-osx-x64-b1163.69.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.69"
+  },
+  {
+    "checksum": "sha512:64c1ca5a618633ec8e81daa37ee2d5a1761f1a81fb44eb819d26044ceb8d87b42e324b1271c75b8c7def45162bca712460f24a0547f320808444c95429da0415",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1163.69",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.8-osx-x64-b1163.69.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.69"
+  },
+  {
+    "checksum": "sha512:a749f8df797f87b190a14e2ae862e54c0effc7a1a2c66a9369d644aef6267c9c7ce925149098785f412c1a016428bfd93dfb3cdc12edf34f4844b6a31ee3ff6f",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.8-b1163.69",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.8-osx-x64-b1163.69.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.69"
+  },
+  {
+    "checksum": "sha512:2527fa7b90bd9f0d6582847914d771b603ef74d676c39986dcae4411a94cb3092d763fd9edcd9bf901fefa6e7700ffdb35d2c0162d2df946ababc95e2ff6179c",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.8-b1163.69",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.8-osx-x64-b1163.69.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.8-b1163.69"
   }
 ]
