@@ -63567,6 +63567,17 @@
     "version": "25.0.0-b176.4"
   },
   {
+    "checksum": "sha256:013703e991080434979c60c649b1639aa1e08e7937f612545e7d7c3d87cc31e4",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.29",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-11.0.29-linux-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "11.0.29"
+  },
+  {
     "checksum": "sha256:2ded87ce3a1f912ac7263f7df526fb0a2ccbc09a2a0124e0b35e22c3decb9bc5",
     "features": [
       "musl"
@@ -63813,5 +63824,196 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.8-linux-x64-b1163.69.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.8-b1163.69"
+  },
+  {
+    "checksum": "sha256:aaa05d730eb76382ac3154919b62fdf5fc1459683aca4f79b2a5dbcef412818b",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.17",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-17.0.17-linux-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "17.0.17"
+  },
+  {
+    "checksum": "sha256:4795bedb003cad57762fb2d26bfad8d848c855220983b6dc0553f62e10fca673",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.17",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-17.0.17-alpine-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "17.0.17"
+  },
+  {
+    "checksum": "sha256:753711b08bc9f404021f292c76d16ffdace1958878b4b911e4fc7c02a537a94f",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-21.0.9-linux-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "21.0.9"
+  },
+  {
+    "checksum": "sha256:1186ada3f51f6517f46edfbca06ab21c692f3d95f7abe403691f85267eb0c3aa",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.1",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-25.0.1-linux-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "25.0.1"
+  },
+  {
+    "checksum": "sha256:c2bf1e756f0ee1a44e1dbf4b22200c081342fc444750db0ff3fa70dc85ac4c25",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.29",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-11.0.29-alpine-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "11.0.29"
+  },
+  {
+    "checksum": "sha256:6f7fb5fd640a0fd00837344b0920cbc4b9b9284b50e66f33789e3b250446a16e",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "1.8.0_472-b08",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u472-b08/OpenJDK8U-jre_x64_linux_hotspot_8u472b08.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.472+8"
+  },
+  {
+    "checksum": "sha256:97a4c089411868e24bf74a9789a819ae4164818316f8a3146460a102e8db6149",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.29+7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.29%2B7/OpenJDK11U-jre_x64_linux_hotspot_11.0.29_7.tar.gz",
+    "vendor": "temurin",
+    "version": "11.0.29+7"
+  },
+  {
+    "checksum": "sha256:3c8f2b53dd137cd86e54f40df96fd0fc56df72c749c06469e7eab216503bc7cf",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.29+7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.29%2B7/OpenJDK11U-jdk_x64_linux_hotspot_11.0.29_7.tar.gz",
+    "vendor": "temurin",
+    "version": "11.0.29+7"
+  },
+  {
+    "checksum": "sha256:5becaa4ac660e844c5a39e2ebc39ff5ac824c37ff1b625af8c8b111dc13c3592",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "1.8.0_472-b08",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u472-b08/OpenJDK8U-jdk_x64_linux_hotspot_8u472b08.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.472+8"
+  },
+  {
+    "checksum": "sha256:13c8bbbb9ffa57b33a48ca018fd281e69dd6fdbb4e96ca7df72a49db614d899c",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.17+10_openj9-0.56.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.17%2B10_openj9-0.56.0/ibm-semeru-open-jre_x64_linux_17.0.17_10_openj9-0.56.0.tar.gz",
+    "vendor": "semeru",
+    "version": "17.0.17+10_openj9-0.56.0"
+  },
+  {
+    "checksum": "sha256:474acb3b9c1ba608efe0c3aa0321a271cfbe2044e89d73e7129b0b013eb484df",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.29+7_openj9-0.56.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.29%2B7_openj9-0.56.0/ibm-semeru-open-jre_x64_linux_11.0.29_7_openj9-0.56.0.tar.gz",
+    "vendor": "semeru",
+    "version": "11.0.29+7_openj9-0.56.0"
+  },
+  {
+    "checksum": "sha256:e6c7faea4fc0bcf43b252621f8ec9b1bfcc4986f5fb914266e80f135d3139940",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8u472-b08_openj9-0.56.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u472-b08_openj9-0.56.0/ibm-semeru-open-jdk_x64_linux_8u472b08_openj9-0.56.0.tar.gz",
+    "vendor": "semeru",
+    "version": "8u472-b08_openj9-0.56.0"
+  },
+  {
+    "checksum": "sha256:6b3022f3d286b2fde9a964028da637a5ad9a93b1028741dcb72aa3bca49c83d2",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9+10_openj9-0.56.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.9%2B10_openj9-0.56.0/ibm-semeru-open-jre_x64_linux_21.0.9_10_openj9-0.56.0.tar.gz",
+    "vendor": "semeru",
+    "version": "21.0.9+10_openj9-0.56.0"
+  },
+  {
+    "checksum": "sha256:5babd67d884af6251b504932e2cdce2e5a969075efa856c91087ecc6f3933fc6",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "8u472-b08_openj9-0.56.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u472-b08_openj9-0.56.0/ibm-semeru-open-jre_x64_linux_8u472b08_openj9-0.56.0.tar.gz",
+    "vendor": "semeru",
+    "version": "8u472-b08_openj9-0.56.0"
+  },
+  {
+    "checksum": "sha256:f17b7d34d108edff2b9da3a353378c972a1f5cf605cc2e08fce19e842e70d9d2",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.29+7_openj9-0.56.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.29%2B7_openj9-0.56.0/ibm-semeru-open-jdk_x64_linux_11.0.29_7_openj9-0.56.0.tar.gz",
+    "vendor": "semeru",
+    "version": "11.0.29+7_openj9-0.56.0"
+  },
+  {
+    "checksum": "sha256:bbf506e09ad0c84b77534d3ce10afa60cfc50196a70580c75d6e4994530717c0",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9+10_openj9-0.56.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.9%2B10_openj9-0.56.0/ibm-semeru-open-jdk_x64_linux_21.0.9_10_openj9-0.56.0.tar.gz",
+    "vendor": "semeru",
+    "version": "21.0.9+10_openj9-0.56.0"
+  },
+  {
+    "checksum": "sha256:65b4d151e63554e708210af28ef53504327ba548cbe1ede1c95d79c2207985ed",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.17+10_openj9-0.56.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.17%2B10_openj9-0.56.0/ibm-semeru-open-jdk_x64_linux_17.0.17_10_openj9-0.56.0.tar.gz",
+    "vendor": "semeru",
+    "version": "17.0.17+10_openj9-0.56.0"
   }
 ]
