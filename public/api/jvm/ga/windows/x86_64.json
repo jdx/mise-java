@@ -41487,6 +41487,17 @@
     "version": "25.0.0-b176.4"
   },
   {
+    "checksum": "sha256:7bf59e0bab043c1869303aff89ce9c76982561ec9a0d74ae868ac65468822466",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.17",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-17.0.17-windows-x64.zip",
+    "vendor": "microsoft",
+    "version": "17.0.17"
+  },
+  {
     "checksum": "sha512:719fc61993152209beebc7901cbae59287c3716a761551391a1745c30b702db7b62d56797b33a04b011a285e1de189f454ba2ec9b3c282b959cb37390fd4ec38",
     "features": [
       "jcef"
@@ -41533,6 +41544,17 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25-windows-x64-b176.4.zip",
     "vendor": "jetbrains",
     "version": "25.0.0-b176.4"
+  },
+  {
+    "checksum": "sha256:96cda27c4d2171b94125e2c7dedad3d22c8e02f99babfe3369ac52af06b4397a",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.9",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-21.0.9-windows-x64.zip",
+    "vendor": "microsoft",
+    "version": "21.0.9"
   },
   {
     "checksum": "sha512:d703a03e15fb46fee74f5cfb2d1e380db2d6581112648ce1a7ff0f0db2619cb0966d2a88552bb3d47418b715e7a05741fb54b4636a64dfc7fed93d14f4a8e77b",
@@ -41629,5 +41651,115 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.8-windows-x64-b1163.69.zip",
     "vendor": "jetbrains",
     "version": "21.0.8-b1163.69"
+  },
+  {
+    "checksum": "sha256:f08e75753d3b61fea575d74eb13aa93f58a1ee87043b6ba931489956d8ba2a0d",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.29",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-11.0.29-windows-x64.zip",
+    "vendor": "microsoft",
+    "version": "11.0.29"
+  },
+  {
+    "checksum": "sha256:d56bed274adb2b16deea2dce3f21718d1b0dcdbe2253bc5cc332b525cbcd1fd1",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.1",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-25.0.1-windows-x64.zip",
+    "vendor": "microsoft",
+    "version": "25.0.1"
+  },
+  {
+    "checksum": "sha256:5c64d83df704c757cb92db102900f3ed844e7cf1af0081ea5dad373b24f7ba69",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.9+10_openj9-0.56.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.9%2B10_openj9-0.56.0/ibm-semeru-open-jdk_x64_windows_21.0.9_10_openj9-0.56.0.zip",
+    "vendor": "semeru",
+    "version": "21.0.9+10_openj9-0.56.0"
+  },
+  {
+    "checksum": "sha256:b86a53a3df42ccb2b2d4152f2684ace43cf6810d415a03c353e80cae740557c9",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "21.0.9+10_openj9-0.56.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.9%2B10_openj9-0.56.0/ibm-semeru-open-jre_x64_windows_21.0.9_10_openj9-0.56.0.zip",
+    "vendor": "semeru",
+    "version": "21.0.9+10_openj9-0.56.0"
+  },
+  {
+    "checksum": "sha256:21c7e4238b30e5f1832258415c07120a864d3ea248568b79e8d79aa2b97ec16a",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.17+10_openj9-0.56.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.17%2B10_openj9-0.56.0/ibm-semeru-open-jdk_x64_windows_17.0.17_10_openj9-0.56.0.zip",
+    "vendor": "semeru",
+    "version": "17.0.17+10_openj9-0.56.0"
+  },
+  {
+    "checksum": "sha256:9ddc9a371e4955d6eb5c37848aa3106f13b0001677382410fd118ca75a63cba0",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "11.0.29+7_openj9-0.56.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.29%2B7_openj9-0.56.0/ibm-semeru-open-jre_x64_windows_11.0.29_7_openj9-0.56.0.zip",
+    "vendor": "semeru",
+    "version": "11.0.29+7_openj9-0.56.0"
+  },
+  {
+    "checksum": "sha256:3b28462176d3de5fbf4a2c97a2a2a6f3a1c2503952ff89c19d7e39cb56e6582e",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8u472-b08_openj9-0.56.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u472-b08_openj9-0.56.0/ibm-semeru-open-jdk_x64_windows_8u472b08_openj9-0.56.0.zip",
+    "vendor": "semeru",
+    "version": "8u472-b08_openj9-0.56.0"
+  },
+  {
+    "checksum": "sha256:38c78acd02c4df866aa2ce2839012968dbddccc3c2898e4000ed08b663ff7e2d",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "17.0.17+10_openj9-0.56.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.17%2B10_openj9-0.56.0/ibm-semeru-open-jre_x64_windows_17.0.17_10_openj9-0.56.0.zip",
+    "vendor": "semeru",
+    "version": "17.0.17+10_openj9-0.56.0"
+  },
+  {
+    "checksum": "sha256:baf36de3179dbdef1ec0237eb59663ec1d976d5325493187f1cb884e7a3e780e",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "8u472-b08_openj9-0.56.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u472-b08_openj9-0.56.0/ibm-semeru-open-jre_x64_windows_8u472b08_openj9-0.56.0.zip",
+    "vendor": "semeru",
+    "version": "8u472-b08_openj9-0.56.0"
+  },
+  {
+    "checksum": "sha256:b0532e99b02d1947ed9b8c72525db2b262da035ee29c9c70a353c2a921b45687",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.29+7_openj9-0.56.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.29%2B7_openj9-0.56.0/ibm-semeru-open-jdk_x64_windows_11.0.29_7_openj9-0.56.0.zip",
+    "vendor": "semeru",
+    "version": "11.0.29+7_openj9-0.56.0"
   }
 ]
