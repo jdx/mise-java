@@ -1,6 +1,7 @@
 [tools]
 aws = "latest"
-"cargo:cargo-deny" = "0.17"
+"cargo:cargo-deny" = "latest"
+"cargo:cargo-llvm-cov" = "latest"
 "npm:@stoplight/spectral-cli" = "latest"
 
 [env]
@@ -30,6 +31,17 @@ spectral lint public/api/openapi.yaml
 depends = ["build"]
 run = '''
 cargo test --all
+'''
+
+[tasks.test-coverage]
+depends = ["build"]
+run = '''
+cargo llvm-cov test --lcov --output-path ./target/lcov.info
+'''
+
+[tasks.test-coverage-watch]
+run = '''
+cargo watch -x 'llvm-cov test --lcov --output-path ./target/lcov.info' -w src
 '''
 
 [tasks.check]
