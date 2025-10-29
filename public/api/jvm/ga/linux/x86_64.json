@@ -63962,6 +63962,17 @@
     "version": "8u472-b08_openj9-0.56.0"
   },
   {
+    "checksum": "md5:754163359812b7b3e306a169dce67e64",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.29.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.29/TencentKona-11.0.29.b1-jdk_linux-x86_64.tar.gz",
+    "vendor": "kona",
+    "version": "11.0.29.b1"
+  },
+  {
     "checksum": "sha256:6b3022f3d286b2fde9a964028da637a5ad9a93b1028741dcb72aa3bca49c83d2",
     "features": [],
     "file_type": "tar.gz",
@@ -64015,5 +64026,49 @@
     "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.17%2B10_openj9-0.56.0/ibm-semeru-open-jdk_x64_linux_17.0.17_10_openj9-0.56.0.tar.gz",
     "vendor": "semeru",
     "version": "17.0.17+10_openj9-0.56.0"
+  },
+  {
+    "checksum": "md5:c4ee7f8bfd599196ffb18628c2efc9a0",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.17.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.17/TencentKona-17.0.17.b1-jdk_linux-x86_64.tar.gz",
+    "vendor": "kona",
+    "version": "17.0.17.b1"
+  },
+  {
+    "checksum": "md5:d7cb2f1871d4e6363ead5a312cff0916",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.0.24.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.24-GA/TencentKona8.0.24.b1_jdk_linux-x86_64_8u472.tar.gz",
+    "vendor": "kona",
+    "version": "8.0.24.b1"
+  },
+  {
+    "checksum": "md5:408ef7c6917d5bc5c6fc5b2a564ca0c0",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.9/TencentKona-21.0.9.b1-jdk_linux-x86_64.tar.gz",
+    "vendor": "kona",
+    "version": "21.0.9.b1"
+  },
+  {
+    "checksum": "md5:1f7da16c41ffec66477de52bb820bdc3",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.0.24.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.24-GA/TencentKona8.0.24.b1_jdk_linux-musl-x86_64_8u472.tar.gz",
+    "vendor": "kona",
+    "version": "8.0.24.b1"
   }
 ]
