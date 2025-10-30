@@ -19550,5 +19550,83 @@
     "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u472-b08_openj9-0.56.0/ibm-semeru-open-jdk_x86-32_windows_8u472b08_openj9-0.56.0.zip",
     "vendor": "semeru",
     "version": "8u472-b08_openj9-0.56.0"
+  },
+  {
+    "checksum": "sha256:11a6f74074de88dab7b248d269520ed02a88a1ed8599e38e374050a9e64099c3",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "11.0.29",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.84.17-ca-fx-jre11.0.29-win_i686.zip",
+    "vendor": "zulu",
+    "version": "11.84.17.0"
+  },
+  {
+    "checksum": "sha256:0616c4170ede2c15d7395ca8a02124d3120d54e267cffa559fc613205d1bef3d",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "17.0.17",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.62.17-ca-fx-jre17.0.17-win_i686.zip",
+    "vendor": "zulu",
+    "version": "17.62.17.0"
+  },
+  {
+    "checksum": "sha256:a756a7b89098df356e08c56d294611f4496f6b79376d35466d98caf24347c5ff",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.17",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.62.17-ca-fx-jdk17.0.17-win_i686.zip",
+    "vendor": "zulu",
+    "version": "17.62.17.0"
+  },
+  {
+    "checksum": "sha256:6a425207aa710a89628afeb99b44e9eb80fb9bc2deb9f23ba01790f661368f9b",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8.0.472",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.90.0.19-ca-fx-jdk8.0.472-win_i686.zip",
+    "vendor": "zulu",
+    "version": "8.90.0.19"
+  },
+  {
+    "checksum": "sha256:47325ecae75110e17de6a8dd2b8de4e00c51291ce9b2cde24f8b3b8d57b62cec",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "8.0.472",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.90.0.19-ca-fx-jre8.0.472-win_i686.zip",
+    "vendor": "zulu",
+    "version": "8.90.0.19"
+  },
+  {
+    "checksum": "sha256:55b3dbcea5e0c5a20f8082c58edc455755ebf3ef7d207e0096bba089db99b034",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.29",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.84.17-ca-fx-jdk11.0.29-win_i686.zip",
+    "vendor": "zulu",
+    "version": "11.84.17.0"
   }
 ]
