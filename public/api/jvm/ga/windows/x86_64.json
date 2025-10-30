@@ -41557,6 +41557,19 @@
     "version": "21.0.9"
   },
   {
+    "checksum": "sha256:7dbccc2e51c65e2edcee18447eaeed8612c217ec4499600ab0fb9e94aceb2f59",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "21.0.9",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.46.19-ca-fx-jre21.0.9-win_x64.zip",
+    "vendor": "zulu",
+    "version": "21.46.19.0"
+  },
+  {
     "checksum": "sha512:d703a03e15fb46fee74f5cfb2d1e380db2d6581112648ce1a7ff0f0db2619cb0966d2a88552bb3d47418b715e7a05741fb54b4636a64dfc7fed93d14f4a8e77b",
     "features": [],
     "file_type": "tar.gz",
@@ -41835,5 +41848,162 @@
     "url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.29/TencentKona-11.0.29.b1_jdk_windows-x86_64_signed.zip",
     "vendor": "kona",
     "version": "11.0.29.b1"
+  },
+  {
+    "checksum": "sha256:7c94f7d8c918009355534cbdeed622d8a4e23fcd8bda08fc943aba48c00a2bf8",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "17.0.17",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.62.17-ca-fx-jre17.0.17-win_x64.zip",
+    "vendor": "zulu",
+    "version": "17.62.17.0"
+  },
+  {
+    "checksum": "sha256:4383fed694c640886dc99a1c38c4f2b3d035a6a4911f17ea8f8dcd35188b527a",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "8.0.472",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.90.0.19-ca-fx-jre8.0.472-win_x64.zip",
+    "vendor": "zulu",
+    "version": "8.90.0.19"
+  },
+  {
+    "checksum": "sha256:23261e91918dcb4321e5ddba35f8814f562161a464cedee168fcd02b8c31c58b",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.29",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.84.17-ca-fx-jdk11.0.29-win_x64.zip",
+    "vendor": "zulu",
+    "version": "11.84.17.0"
+  },
+  {
+    "checksum": "sha256:3624b00c678a18ad6ba57665aa8704715606ebab2805647e8bd80de3c944c7e3",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.17",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.62.17-ca-fx-jdk17.0.17-win_x64.zip",
+    "vendor": "zulu",
+    "version": "17.62.17.0"
+  },
+  {
+    "checksum": "sha256:406fa94c6f818814a2aca411c3db58241fcc049a4e82987a4330c5f6dad7196b",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "11.0.29",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.84.17-ca-fx-jre11.0.29-win_x64.zip",
+    "vendor": "zulu",
+    "version": "11.84.17.0"
+  },
+  {
+    "checksum": "sha256:254b6b18d25294dbeadf98acd470e12fc09dc5c4a96ff0b8a1a31e2379cad9b8",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.9",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.46.19-ca-fx-jdk21.0.9-win_x64.zip",
+    "vendor": "zulu",
+    "version": "21.46.19.0"
+  },
+  {
+    "checksum": "sha256:6628e6b3586d6003a93f38fb7d8841ea46d4c386920a535b76e6b54c28266f9f",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8.0.472",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.90.0.19-ca-fx-jdk8.0.472-win_x64.zip",
+    "vendor": "zulu",
+    "version": "8.90.0.19"
+  },
+  {
+    "checksum": "sha256:dcf0064efec7e515a5e3b56e7532f1a1c125510303c6c9e60af8878e3f7347fe",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.17+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.17%2B10/OpenJDK17U-jdk_x64_windows_hotspot_17.0.17_10.zip",
+    "vendor": "temurin",
+    "version": "17.0.17+10"
+  },
+  {
+    "checksum": "sha256:598b8eb9bd299e6d569085793a90ff87a84738221d50c994e82aca35c49b117d",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "1.8.0_472-b08",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u472-b08/OpenJDK8U-jre_x64_windows_hotspot_8u472b08.zip",
+    "vendor": "temurin",
+    "version": "8.0.472+8"
+  },
+  {
+    "checksum": "sha256:cbafb089f7c8a3e873607c8f4fe40e4943297f641d27806e055e782c82a33985",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "1.8.0_472-b08",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u472-b08/OpenJDK8U-jdk_x64_windows_hotspot_8u472b08.zip",
+    "vendor": "temurin",
+    "version": "8.0.472+8"
+  },
+  {
+    "checksum": "sha256:bd17db1cc08b3a8a98cedc7b8b8a203f683793be65a9ffbe4ceaacde71fc2b6b",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "17.0.17+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.17%2B10/OpenJDK17U-jre_x64_windows_hotspot_17.0.17_10.zip",
+    "vendor": "temurin",
+    "version": "17.0.17+10"
+  },
+  {
+    "checksum": "sha256:b5f9a7b32fe779b6e9d61ba9717048eebe53d5664a2d70c016a558a71f36e8b9",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.1+8_openj9-0.56.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25.0.1%2B8_openj9-0.56.0/ibm-semeru-open-jdk_x64_windows_25.0.1_8_openj9-0.56.0.zip",
+    "vendor": "semeru",
+    "version": "25.0.1+8_openj9-0.56.0"
+  },
+  {
+    "checksum": "sha256:92d2fbbad08a6d70894ef210bb3ad0f1ba6781a9ab813e0138e168a8c3b65851",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "25.0.1+8_openj9-0.56.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25.0.1%2B8_openj9-0.56.0/ibm-semeru-open-jre_x64_windows_25.0.1_8_openj9-0.56.0.zip",
+    "vendor": "semeru",
+    "version": "25.0.1+8_openj9-0.56.0"
   }
 ]

@@ -64070,5 +64070,185 @@
     "url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.24-GA/TencentKona8.0.24.b1_jdk_linux-musl-x86_64_8u472.tar.gz",
     "vendor": "kona",
     "version": "8.0.24.b1"
+  },
+  {
+    "checksum": "sha256:5a719aaf3d65e8a76af3740d7a919c6d1bccb208672430b543a358b311d1cece",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.17",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.62.17-ca-fx-jre17.0.17-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.62.17.0"
+  },
+  {
+    "checksum": "sha256:693fe90f2d782728e244696c5d2ab3d97c4fce1e72db0904a34b66f923284e74",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.46.19-ca-fx-jdk21.0.9-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.46.19.0"
+  },
+  {
+    "checksum": "sha256:46ec6cf04f3f884ee6ef6dbdeb0c58df2db58a02638c4e50af842d39c3d3fabc",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "8.0.472",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.90.0.19-ca-fx-jre8.0.472-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "8.90.0.19"
+  },
+  {
+    "checksum": "sha256:4e92caea31cce6b00af6a5f561b1060582b5a0afbe6b2db05cc4f72a2c55056c",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.29",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.84.17-ca-fx-jre11.0.29-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "11.84.17.0"
+  },
+  {
+    "checksum": "sha256:1a16f93442ede69d3b1e69d78d0bcf99453971675c7ae147f9a4fe530c9a4fd9",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.17",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.62.17-ca-fx-jdk17.0.17-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.62.17.0"
+  },
+  {
+    "checksum": "sha256:7ddbb57de8b76303aeab09621faceee12704d8a71856182956e6030adf35d7ae",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.0.472",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.90.0.19-ca-fx-jdk8.0.472-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "8.90.0.19"
+  },
+  {
+    "checksum": "sha256:69e0ecaa687bb0d16bcbea33234af515a8388b2d54cc1eeb1122b191778f4275",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.29",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.84.17-ca-fx-jdk11.0.29-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "11.84.17.0"
+  },
+  {
+    "checksum": "sha256:f3acb0aea8ccd7a7293bbf580f09b9614b5c8fa7729ac1a0478f7da58cd246e5",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.46.19-ca-fx-jre21.0.9-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.46.19.0"
+  },
+  {
+    "checksum": "sha1:f8ea1a1e0435d8e8d6101a1aa43a867c2342bbac",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9+12",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.9%2B12/bellsoft-jdk21.0.9%2B12-linux-amd64-crac.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.9+12"
+  },
+  {
+    "checksum": "sha1:3e9d9904817541fa9506ea5b04784d3b6f953ff0",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.17+12",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.17%2B12/bellsoft-jdk17.0.17%2B12-linux-x64-musl-crac.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.17+12"
+  },
+  {
+    "checksum": "sha1:4f23e59578e820564cd92e6361147d6e556e48c6",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9+12",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.9%2B12/bellsoft-jdk21.0.9%2B12-linux-x64-musl-crac.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.9+12"
+  },
+  {
+    "checksum": "sha1:8b0c4ac994da4989acb049db4b44b17c2d5683b4",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.17+12",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.17%2B12/bellsoft-jdk17.0.17%2B12-linux-amd64-crac.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.17+12"
+  },
+  {
+    "checksum": "sha256:5d4bfbfe647e0a68d7f32aabc5047257fd3ae8b945008b44b102be202221eb12",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.1+8_openj9-0.56.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25.0.1%2B8_openj9-0.56.0/ibm-semeru-open-jre_x64_linux_25.0.1_8_openj9-0.56.0.tar.gz",
+    "vendor": "semeru",
+    "version": "25.0.1+8_openj9-0.56.0"
+  },
+  {
+    "checksum": "sha256:827cd477c672b8280646ef5d52421fef8d0c8f24bf43c2a83031fadaf28dad19",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.1+8_openj9-0.56.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25.0.1%2B8_openj9-0.56.0/ibm-semeru-open-jdk_x64_linux_25.0.1_8_openj9-0.56.0.tar.gz",
+    "vendor": "semeru",
+    "version": "25.0.1+8_openj9-0.56.0"
   }
 ]
