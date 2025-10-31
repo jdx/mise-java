@@ -149,7 +149,7 @@ fn meta_from_name(name: &str) -> Result<FileNameMeta> {
 
 fn build_urls() -> Vec<String> {
     let mut urls = vec!["https://www.oracle.com/java/technologies/downloads/".to_string()];
-    for version in 17..=24 {
+    for version in 17..=25 {
         urls.push(format!(
             "https://www.oracle.com/java/technologies/javase/jdk{version}-archive-downloads.html"
         ));
