@@ -13613,5 +13613,101 @@
     "url": "https://aka.ms/download-jdk/microsoft-jdk-11.0.29-windows-aarch64.zip",
     "vendor": "microsoft",
     "version": "11.0.29"
+  },
+  {
+    "checksum": "sha512:3827b3a6ed7b77aa3a7bc04598f45f09d33fbe10e14dab6f3692f29e46e33c39a4e0f8ebc59f204e50d4aee993d703043d8f1ec1506403697c757ff302855129",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9-b1163.78",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.9-windows-aarch64-b1163.78.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1163.78"
+  },
+  {
+    "checksum": "sha512:2500b8931d9cb914b101dbd44455369d4be2f9d5e63cbbc30b3234c733d43696e01733f0aed1818ad8a0f7117a0c0dcd7d865a347c672269f711ec48bd73a2a6",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9-b1163.78",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.9-windows-aarch64-b1163.78.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1163.78"
+  },
+  {
+    "checksum": "sha512:2870f0248fa35e912a7847194a10e5dd924d2cdeefef416f07be188ba0ade8a122abf6a3eb24dfb29c10888dc016893de5530531b1fe17992f0869e45814870f",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.9-b1163.78",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.9-windows-aarch64-b1163.78.zip",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1163.78"
+  },
+  {
+    "checksum": "sha512:21638e065e30cc95ef32bcb2348f8c9731bb47281efe7116ee75671ea06f94e6b4c1d8d7739679a7265cf9b99dce0da8f8f55b2361a9a5401a7ffcfdb878210d",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "21.0.9-b1163.78",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.9-windows-aarch64-b1163.78.zip",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1163.78"
+  },
+  {
+    "checksum": "sha512:0a8e6fd83f484608955282097b7a7c9e48d5b990019e3723cc7b67541d6e3e005b7f49db267c79283620504f3967ad6586f223e586f4581e397b2fd679fca673",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.9-b1163.78",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.9-windows-aarch64-b1163.78.zip",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1163.78"
+  },
+  {
+    "checksum": "sha512:cf77aee47eccae164e70029afecef6a0dc39d5a0714a6e531cca2da0f364688fb913888da97e7ecf69cd3c0654c0a762a7dbed48b66cb689223cc17b0ece0f91",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9-b1163.78",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.9-windows-aarch64-b1163.78.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1163.78"
+  },
+  {
+    "checksum": "sha512:583aea8a2c3ef32c985b54d8b715d884429a2d658b7816fda06ad12e86d55c55f18748919aef60578bf561630c0305b7b9c46c79489b8e71399add09021ee4bc",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9-b1163.78",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.9-windows-aarch64-b1163.78.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1163.78"
+  },
+  {
+    "checksum": "sha512:e36137fccb63f7bb0144140f7d9fdee6d999d7f42ce4c39c6fee12341312953d9ff47e1d8d2b0145c61d57c31a14bcf8172ae8fde968a71a34eb7d039f78bada",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "21.0.9-b1163.78",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.9-windows-aarch64-b1163.78.zip",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1163.78"
   }
 ]
