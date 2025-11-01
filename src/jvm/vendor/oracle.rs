@@ -73,7 +73,7 @@ fn map_release(a: &AnchorElement) -> Result<JvmData> {
         .ok_or_else(|| eyre::eyre!("no name found"))?
         .to_string();
     let filename_meta = meta_from_name(&name)?;
-    let sha256_url = format!("{}.sha256", &a.href);
+    let sha256_url = format!("{}.sha256", a.href.clone());
     let sha256 = match HTTP.get_text(&sha256_url) {
         Ok(sha256) => sha256.split_whitespace().next().map(|s| format!("sha256:{s}")),
         Err(_) => {
@@ -118,17 +118,20 @@ fn extract_latest_versions(document: &Html) -> Vec<String> {
 
 fn replace_with_latest_version(anchor: &mut AnchorElement, latest_versions: &[String]) {
     if anchor.href.contains("/latest/") {
-        anchor.name = latest_versions
-            .iter()
-            .find(|v| {
-                let major = v.split('.').next().unwrap_or("");
-                anchor.name.contains(major)
-            })
-            .map(|v| {
-                let major = v.split('.').next().unwrap_or("");
-                anchor.name.replace(&format!("jdk-{major}_"), &format!("jdk-{}_", &v))
-            })
-            .unwrap_or_else(|| anchor.name.clone());
+        // Update both name and href to use the latest version
+        if let Some(v) = latest_versions.iter().find(|v| {
+            let major = v.split('.').next().unwrap_or("");
+            anchor.name.contains(major)
+        }) {
+            let major = v.split('.').next().unwrap_or("");
+            let new_name = anchor.name.replace(&format!("jdk-{major}_"), &format!("jdk-{}_", v));
+            let new_href = anchor
+                .href
+                .replace("/latest/", "/archive/")
+                .replace(&format!("jdk-{major}_"), &format!("jdk-{}_", v));
+            anchor.name = new_name;
+            anchor.href = new_href;
+        }
     }
 }
 
