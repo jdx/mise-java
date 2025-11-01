@@ -72,8 +72,9 @@ fn map_release(a: &AnchorElement) -> Result<JvmData> {
         .last()
         .ok_or_else(|| eyre::eyre!("no name found"))?
         .to_string();
+    let url = a.href.clone().replace("/latest/", "/archive/");
     let filename_meta = meta_from_name(&name)?;
-    let sha256_url = format!("{}.sha256", &a.href);
+    let sha256_url = format!("{}.sha256", &url);
     let sha256 = match HTTP.get_text(&sha256_url) {
         Ok(sha256) => sha256.split_whitespace().next().map(|s| format!("sha256:{s}")),
         Err(_) => {
@@ -94,7 +95,7 @@ fn map_release(a: &AnchorElement) -> Result<JvmData> {
         jvm_impl: "hotspot".to_string(),
         os: normalize_os(&filename_meta.os),
         release_type: "ga".to_string(),
-        url: a.href.clone(),
+        url: url.clone(),
         version: normalize_version(&filename_meta.version),
         vendor: "oracle".to_string(),
         ..Default::default()
