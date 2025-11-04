@@ -64608,5 +64608,64 @@
     "url": "https://download.oracle.com/java/21/archive/jdk-21.0.9_linux-x64_bin.tar.gz",
     "vendor": "oracle",
     "version": "21.0.9"
+  },
+  {
+    "checksum": "sha256:8c1c0da1de121ce3570c5c84f92bf13cbc5a294a1fb0bb694dfa7e408d0af228",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.1.9.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/25.0.1.9.1/amazon-corretto-25.0.1.9.1-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "25.0.1.9.1"
+  },
+  {
+    "checksum": "sha256:6a422ce1bbf9cef18852efb5e86f2be50dfb253cdcffb279d0566df7a4426796",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9.11.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/21.0.9.11.1/amazon-corretto-21.0.9.11.1-alpine-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "21.0.9.11.1"
+  },
+  {
+    "checksum": "sha256:e00963dffc5ab6bf1970b302772bafa40d0065700e13b152bf25d6e2a31c3aa5",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9.11.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/21.0.9.11.1/amazon-corretto-21.0.9.11.1-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "21.0.9.11.1"
+  },
+  {
+    "checksum": "sha256:ea2920dd0b972c13a636ba2c31671dc988502077f26e31888df2d7fc32a44188",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.1.9.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/25.0.1.9.1/amazon-corretto-25.0.1.9.1-alpine-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "25.0.1.9.1"
+  },
+  {
+    "checksum": "sha256:3f3ad5078af27ca8de6e80545bab8d61adda7c968eb84a73ba0beac6ed247a27",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.0",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-23.1.9.0-Final/mandrel-java21-linux-amd64-23.1.9.0-Final.tar.gz",
+    "vendor": "mandrel",
+    "version": "23.1.9.0-Final+java21"
   }
 ]
