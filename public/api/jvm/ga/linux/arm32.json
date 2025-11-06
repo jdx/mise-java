@@ -2506,5 +2506,27 @@
     "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.17%2B10/OpenJDK17U-jdk_arm_linux_hotspot_17.0.17_10.tar.gz",
     "vendor": "temurin",
     "version": "17.0.17+10"
+  },
+  {
+    "checksum": "sha256:aa242ddaa669a826a615b16cd2efcb239b77e8bdf1d5f0a649412ab76bd2b5bc",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.0.472",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu-embedded/bin/zulu8.90.0.19-ca-jdk8.0.472-linux_aarch32sf.tar.gz",
+    "vendor": "zulu",
+    "version": "8.90.0.19"
+  },
+  {
+    "checksum": "sha256:68077668f5c5594d797d5bb7e862ef3f4fee533fe1c34fbf6f17abf41a80ed8b",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.29",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu-embedded/bin/zulu11.84.17-ca-jdk11.0.29-linux_aarch32sf.tar.gz",
+    "vendor": "zulu",
+    "version": "11.84.17.0"
   }
 ]

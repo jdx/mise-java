@@ -64678,5 +64678,29 @@
     "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-25.0.1.0-Final/mandrel-java25-linux-amd64-25.0.1.0-Final.tar.gz",
     "vendor": "mandrel",
     "version": "25.0.1.0-Final+java25"
+  },
+  {
+    "checksum": "sha256:5e8a6edb9df3b4fe11e1be1f69d3944dea03fb9a05ecc4ce902b4c0f8f0d87bd",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.17.0.18.9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell17/releases/download/dragonwell-standard-17.0.17.0.18%2B9_jdk-17.0.17-ga/Alibaba_Dragonwell_Standard_17.0.17.0.18.9_x64_alpine-linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "17.0.17.0.18.9"
+  },
+  {
+    "checksum": "sha256:4540793aaa90a6f2362a17a6254f971fdac6b132c77510f7795079974013fd8e",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.17.0.18.9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell17/releases/download/dragonwell-standard-17.0.17.0.18%2B9_jdk-17.0.17-ga/Alibaba_Dragonwell_Standard_17.0.17.0.18.9_x64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "17.0.17.0.18.9"
   }
 ]
