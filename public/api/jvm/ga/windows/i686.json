@@ -19694,5 +19694,27 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.9-windows-x86-b1038.75.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.9-b1038.75"
+  },
+  {
+    "checksum": "sha256:0b5bb836546f86aab9ffe53a14ae51f4801c5a020383d7ea88a054091676698c",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.29+7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.29%2B7/OpenJDK11U-jdk_x86-32_windows_hotspot_11.0.29_7.zip",
+    "vendor": "temurin",
+    "version": "11.0.29+7"
+  },
+  {
+    "checksum": "sha256:b747698a05a39391a58b9caac30310275e4e6bd9fef92d6c149cba310d91d2be",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "11.0.29+7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.29%2B7/OpenJDK11U-jre_x86-32_windows_hotspot_11.0.29_7.zip",
+    "vendor": "temurin",
+    "version": "11.0.29+7"
   }
 ]

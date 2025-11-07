@@ -2528,5 +2528,49 @@
     "url": "https://cdn.azul.com/zulu-embedded/bin/zulu11.84.17-ca-jdk11.0.29-linux_aarch32sf.tar.gz",
     "vendor": "zulu",
     "version": "11.84.17.0"
+  },
+  {
+    "checksum": "sha256:25896dbbd14240d789d1b88d66d76a534b42e857c8ec17d0bf031708d9836241",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "1.8.0_472-b08",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u472-b08/OpenJDK8U-jre_arm_linux_hotspot_8u472b08.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.472+8"
+  },
+  {
+    "checksum": "sha256:93454a64c922111e57a86659e5fd6d44406173226cf051aa6228af06a7a44a56",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.29+7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.29%2B7/OpenJDK11U-jre_arm_linux_hotspot_11.0.29_7.tar.gz",
+    "vendor": "temurin",
+    "version": "11.0.29+7"
+  },
+  {
+    "checksum": "sha256:93cfb86c52d9a02a0a00235c089ed7bdc85581fcbad2df7f4fa12bd909742d24",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.29+7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.29%2B7/OpenJDK11U-jdk_arm_linux_hotspot_11.0.29_7.tar.gz",
+    "vendor": "temurin",
+    "version": "11.0.29+7"
+  },
+  {
+    "checksum": "sha256:184d3f914f1e41476449043382cb81bd8086214acef7353ed1b456b49b8ac9eb",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "1.8.0_472-b08",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u472-b08/OpenJDK8U-jdk_arm_linux_hotspot_8u472b08.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.472+8"
   }
 ]
