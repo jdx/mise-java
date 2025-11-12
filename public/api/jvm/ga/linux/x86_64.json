@@ -64702,5 +64702,191 @@
     "url": "https://github.com/dragonwell-project/dragonwell17/releases/download/dragonwell-standard-17.0.17.0.18%2B9_jdk-17.0.17-ga/Alibaba_Dragonwell_Standard_17.0.17.0.18.9_x64_linux.tar.gz",
     "vendor": "dragonwell",
     "version": "17.0.17.0.18.9"
+  },
+  {
+    "checksum": "sha256:01ceeb3cccb251dffece16f8218d3678924b520bd4f93882c37dc88e99aabf32",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.30.19-ca-crac-jdk25.0.1-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.30.19.0"
+  },
+  {
+    "checksum": "sha256:46e18ae2f8a4886270ed295632e2dc3cd0d8eb6f78101572e29f8feb4325e96c",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.30.19-ca-crac-jdk25.0.1-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.30.19.0"
+  },
+  {
+    "checksum": "sha256:4cfede3c451e79fd6951299b63d21abca387ca9c51d41b46e351034ecfa70acf",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.17",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.62.19-ca-crac-jre17.0.17-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.62.19.0"
+  },
+  {
+    "checksum": "sha256:abe5ccc6b27d75cbceadc5a5573ac5a6134040e859679ae3ca714c70760bd776",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.46.23-ca-crac-jre21.0.9-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.46.23.0"
+  },
+  {
+    "checksum": "sha256:f0f4fdfb278cdc69f335b31e333271450d5c0e1d7498094067cbd0de212348ff",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.30.19-ca-crac-jre25.0.1-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.30.19.0"
+  },
+  {
+    "checksum": "sha256:f603c4e59dd1fb83ecc1ca60e1061de9ce9d7fbd5045b7cf051208f6267c3d79",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.17",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.62.19-ca-crac-jdk17.0.17-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.62.19.0"
+  },
+  {
+    "checksum": "sha256:8946bd02f829d516a288512314845c2f767cb8e95459e71c6879488b3203a98f",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.46.23-ca-crac-jdk21.0.9-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.46.23.0"
+  },
+  {
+    "checksum": "sha256:b58c78c1931ff4e3f79dd5f5e0927d7be66bb28e471ce31eba0eba63228d5267",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.17",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.62.19-ca-crac-jdk17.0.17-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.62.19.0"
+  },
+  {
+    "checksum": "sha256:cd0fadd86dd5c079358826807cdf4377e43f59e3231d7be1821e9c6a9b169c89",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.46.23-ca-crac-jre21.0.9-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.46.23.0"
+  },
+  {
+    "checksum": "sha256:33785785e5323cf772d081843c1b20943716ade0556468a0470ce9f643d56a31",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.17",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.62.19-ca-crac-jre17.0.17-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.62.19.0"
+  },
+  {
+    "checksum": "sha256:ef97f9114a946a1762077f954a8475584e8ebcb2524b0efbc292dbd377f1aef4",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.30.19-ca-crac-jre25.0.1-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.30.19.0"
+  },
+  {
+    "checksum": "sha256:e17f0fb4571ccb4fa47253798a44371d0d612783aedd9506083dbf2c335fed40",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.46.23-ca-crac-jdk21.0.9-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.46.23.0"
+  },
+  {
+    "checksum": "sha256:b2059da24701aad0c341a49aca60bcd8d4d3cc9b81e8a2853719a25699eec2ed",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9.0.9.10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-standard-21.0.9.0.9%2B10_jdk-21.0.9-ga/Alibaba_Dragonwell_Standard_21.0.9.0.9.10_x64_alpine-linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "21.0.9.0.9.10"
+  },
+  {
+    "checksum": "sha256:4251b6fad50b90eb9c4b5d302731db6f9aae08b307efa91e7bed79978635b13f",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9.0.9.10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-standard-21.0.9.0.9%2B10_jdk-21.0.9-ga/Alibaba_Dragonwell_Standard_21.0.9.0.9.10_x64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "21.0.9.0.9.10"
   }
 ]
