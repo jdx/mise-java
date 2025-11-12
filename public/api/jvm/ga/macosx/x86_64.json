@@ -52654,5 +52654,83 @@
     "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.17%2B10/OpenJDK17U-jdk_x64_mac_hotspot_17.0.17_10.tar.gz",
     "vendor": "temurin",
     "version": "17.0.17+10"
+  },
+  {
+    "checksum": "sha256:11d7a4ca6b462b62093add88356dc878681d3cc646dba65dd125d3be183e68ad",
+    "features": [
+      "crac"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.30.19-ca-crac-jdk25.0.1-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "25.30.19.0"
+  },
+  {
+    "checksum": "sha256:4cc410b3f985e7f8174196c2125b5e9e3c453488e82721289fb21894b7a4cd43",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.46.23-ca-crac-jdk21.0.9-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.46.23.0"
+  },
+  {
+    "checksum": "sha256:75eaee9e2de7e2f31a8566e45c8a139564ef5528c42b919397c8631aff10c144",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.17",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.62.19-ca-crac-jdk17.0.17-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.62.19.0"
+  },
+  {
+    "checksum": "sha256:19536ab58f43889614056499788648e09773c55e60540d970593a9ae8d955972",
+    "features": [
+      "crac"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.17",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.62.19-ca-crac-jdk17.0.17-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "17.62.19.0"
+  },
+  {
+    "checksum": "sha256:9bfb98eb46a15abb4afac6ecb7dc4b433fa311495a0a3c956d200ce4135f4d4b",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.30.19-ca-crac-jdk25.0.1-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.30.19.0"
+  },
+  {
+    "checksum": "sha256:52af405579871bf9efb566ed1ebb5cb912f669c3cf2eacba020f2b0a84434cab",
+    "features": [
+      "crac"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.9",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.46.23-ca-crac-jdk21.0.9-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "21.46.23.0"
   }
 ]
