@@ -52732,5 +52732,53 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu21.46.23-ca-crac-jdk21.0.9-macosx_x64.zip",
     "vendor": "zulu",
     "version": "21.46.23.0"
+  },
+  {
+    "checksum": "sha512:f4b5ae19fdf4c0f1b2642c3fc0d645348ec7f309cf20ac05646451303c7f03a27fe926cb34b9242d5ca1fc4b97a4133c7ba848a2a29ca7ff7674119dbda819f7",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9-b1038.76",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.9-osx-x64-b1038.76.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1038.76"
+  },
+  {
+    "checksum": "sha512:b0bcb23d23e2d4fa3f5e7d382545c63b481f8090feee79306f361c6638775703005ccf7a6964615160eff70c06753db1a52b81e18b436a0c244a6385abe75ec5",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9-b1038.76",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.9-osx-x64-b1038.76.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1038.76"
+  },
+  {
+    "checksum": "sha512:f11836969f0c9f0205e3cb313c3f77fe6b8b9a98731569c26799862a04f4760b54a49906b3834147ca0283cbda0c2afa0dbea4ab302a139bd0b3ac9fee7995b8",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9-b1038.76",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.9-osx-x64-b1038.76.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1038.76"
+  },
+  {
+    "checksum": "sha512:9db09c258dc6c1397ac942e318456ca87458cb7f1723f7351cf0bcc51ba4eb67a67d96f9c293ef0004937b9aad1a02dc326074ffa14b0be1387f8ceb5ceb217f",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9-b1038.76",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.9-osx-x64-b1038.76.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1038.76"
   }
 ]

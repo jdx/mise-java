@@ -43301,5 +43301,53 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu17.62.19-ca-crac-jdk17.0.17-macosx_aarch64.zip",
     "vendor": "zulu",
     "version": "17.62.19.0"
+  },
+  {
+    "checksum": "sha512:851ae0c1497c5b5a7c464ad4df20d3ce273c1593eb86ca0c5f6ba3ae01068175b3290c0430501cedf9d351d4e87f23d8b578e129bef09e22ec707f10a4ee2d98",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9-b1038.76",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.9-osx-aarch64-b1038.76.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1038.76"
+  },
+  {
+    "checksum": "sha512:ad66649a0be56bb92842390ea0c213d074565c5afc7483a8d095d2ef30b24c4e1044444de4d286e86cc2de2ffd18f8911c4e95375fa5fc9503c23305b60894be",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9-b1038.76",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.9-osx-aarch64-b1038.76.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1038.76"
+  },
+  {
+    "checksum": "sha512:8641b852711ce570a8afb752a27c6b4824e67be06a878061ed111f16bd9868092cab6ce62958df1b8cb660b5d03732dc5775f05b117a0dac5f05b05176453f44",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9-b1038.76",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.9-osx-aarch64-b1038.76.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1038.76"
+  },
+  {
+    "checksum": "sha512:e41b5b8697d767314dd7f9f745550489e3d8392a94a32f89d9a8a861eb54a6d48618e08781a788e8b74a9496eaa77d7d8bef6b53c33c53b6e8789d862413a364",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9-b1038.76",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.9-osx-aarch64-b1038.76.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1038.76"
   }
 ]
