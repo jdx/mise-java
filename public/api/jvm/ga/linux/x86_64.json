@@ -65576,5 +65576,94 @@
     "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.27.26_jdk8u472-ga/Alibaba_Dragonwell_Extended_8.27.26_x64_linux.tar.gz",
     "vendor": "dragonwell",
     "version": "8.27.26"
+  },
+  {
+    "checksum": "sha256:63b362877de924f5f2b02b7cb4839705c0ecd38ee51308d3035d27d18fec1820",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.27.26",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-standard-8.27.26_jdk8u472-ga/Alibaba_Dragonwell_Standard_8.27.26_x64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "8.27.26"
+  },
+  {
+    "checksum": "sha256:56459a75baaba55be231d041311ff47c0435bb4c694c9a060345da93f6968248",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.29.25.7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-standard-11.0.29.25_jdk-11.0.29-ga/Alibaba_Dragonwell_Standard_11.0.29.25.7_x64_alpine-linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "11.0.29.25.7"
+  },
+  {
+    "checksum": "sha256:538f6dac788b724b9b3d029dfab04c7579824a69906d4dc922a3095cfb9522eb",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.29.25.7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-standard-11.0.29.25_jdk-11.0.29-ga/Alibaba_Dragonwell_Standard_11.0.29.25.7_x64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "11.0.29.25.7"
+  },
+  {
+    "checksum": "sha256:6e34b04deeccff0557eabaf63f6a9170335ad633aafda1729188b8d54b5d23a7",
+    "features": [
+      "extended"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.29.26.7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.29.26_jdk-11.0.29-ga/Alibaba_Dragonwell_Extended_11.0.29.26.7_x64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "11.0.29.26.7"
+  },
+  {
+    "checksum": "sha256:fb4d721126937df4600c7e58a6b5c7af9491ed6b678f1c5de011e92eaaaecf45",
+    "features": [
+      "musl",
+      "extended"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.29.26.7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.29.26_jdk-11.0.29-ga/Alibaba_Dragonwell_Extended_11.0.29.26.7_x64_alpine-linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "11.0.29.26.7"
+  },
+  {
+    "checksum": "sha256:59f2950f069e1c3b929c04dcf20033337a617e2729c8b1bcf86a5ea00acbcde4",
+    "features": [
+      "extended"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9.0.9.10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.9.0.9%2B10_jdk-21.0.9-ga/Alibaba_Dragonwell_Extended_21.0.9.0.9.10_x64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "21.0.9.0.9.10"
+  },
+  {
+    "checksum": "sha256:23d1e4ec9363be2c783942acdaf2c657d197e3cd9db8dcd7bfba77ed5f6a3f34",
+    "features": [
+      "musl",
+      "extended"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9.0.9.10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.9.0.9%2B10_jdk-21.0.9-ga/Alibaba_Dragonwell_Extended_21.0.9.0.9.10_x64_alpine-linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "21.0.9.0.9.10"
   }
 ]
