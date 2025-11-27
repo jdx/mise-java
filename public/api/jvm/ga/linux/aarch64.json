@@ -46462,5 +46462,53 @@
     "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.27.26_jdk8u472-ga/Alibaba_Dragonwell_Extended_8.27.26_aarch64_linux.tar.gz",
     "vendor": "dragonwell",
     "version": "8.27.26"
+  },
+  {
+    "checksum": "sha256:d12137c993b3ecd5dec2b4fc9bacbe6d63c17d7f44efb70f3ac55d7e78ac494e",
+    "features": [
+      "extended"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9.0.9.10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.9.0.9%2B10_jdk-21.0.9-ga/Alibaba_Dragonwell_Extended_21.0.9.0.9.10_aarch64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "21.0.9.0.9.10"
+  },
+  {
+    "checksum": "sha256:07375dcfba369cd40453e20c5adcd9d1c3cbbf6f9f356955cfe129dc6dc85e6a",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.27.26",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-standard-8.27.26_jdk8u472-ga/Alibaba_Dragonwell_Standard_8.27.26_aarch64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "8.27.26"
+  },
+  {
+    "checksum": "sha256:c9b7fc04ed3ee049ad2bb31e752cd51bf094794b82a39b9070f016b675e5e124",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.29.25.7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-standard-11.0.29.25_jdk-11.0.29-ga/Alibaba_Dragonwell_Standard_11.0.29.25.7_aarch64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "11.0.29.25.7"
+  },
+  {
+    "checksum": "sha256:0975da8842dca426063423237754c57cf3afe59b9eb3a35b38c272260eb4b213",
+    "features": [
+      "extended"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.29.26.7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.29.26_jdk-11.0.29-ga/Alibaba_Dragonwell_Extended_11.0.29.26.7_aarch64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "11.0.29.26.7"
   }
 ]
