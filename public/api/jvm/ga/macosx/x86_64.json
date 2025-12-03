@@ -53430,5 +53430,101 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/8u472%2B11/bellsoft-jdk8u472%2B11-macos-amd64-full.zip",
     "vendor": "liberica",
     "version": "8u472+11"
+  },
+  {
+    "checksum": "sha512:0672b4ed6c77493c33a4b5a663ed03bbaec5d2cdef1df25442d23a33e1a6194fee10ab2c409a2d77f5f11512546281e9e3cc37fc9b516e2247d64bd923991b06",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9-b1038.78",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.9-osx-x64-b1038.78.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1038.78"
+  },
+  {
+    "checksum": "sha512:994c1befafe42fedb661034747b6b784fb42c02ea870df7fe7a88aac849bc6be0defd0cd6642668b546041371ea7d820433c17c5305bb3240ff0c04f25e41e4a",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9-b1038.78",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.9-osx-x64-b1038.78.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1038.78"
+  },
+  {
+    "checksum": "sha512:91a4c9e773604f5075ad7fe193a3991e316c1f3766ca38d4db02957cbc161881a5903321e3e13a4a1332319ab2c8eaedafd910cd2ad32d14e5dec47276c78f25",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9-b1163.86",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.9-osx-x64-b1163.86.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1163.86"
+  },
+  {
+    "checksum": "sha512:aba09fcdfca907f8114c473dc9bcc9cea55de21be1301c41600a6f72ecb41b3c741c531896f6c99925587b80e8be68c53f1b190f7471dc39e9b8db777ac42b3b",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9-b1163.86",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.9-osx-x64-b1163.86.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1163.86"
+  },
+  {
+    "checksum": "sha512:a0ac16b1893408ca109fcc10b5be3b42510fadb7fae08728eda12aed7ff895e2b585e13f4af021e84ff1244fe267d3955a4a705b39648802238234ad370d54d7",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9-b1163.86",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.9-osx-x64-b1163.86.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1163.86"
+  },
+  {
+    "checksum": "sha512:6eab5f7b2b9623084274be032e45c357683837640308ac37acad00f01168203b1655ff4de4816751726ab7f239b541f0e2b506cc0d503f8704307495306d5c0d",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9-b1038.78",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.9-osx-x64-b1038.78.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1038.78"
+  },
+  {
+    "checksum": "sha512:e952d7185d84c55ed5dd3836b8821c25f4244306b77eeb83573f4fa34304554b8cbd9a9bab690c99133b0ae50c17af8d0ba82509359beab381cafed5162e9c55",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9-b1163.86",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.9-osx-x64-b1163.86.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1163.86"
+  },
+  {
+    "checksum": "sha512:8cc5d38ad094447fdb28643b508e14cde53f9c0d9717effa8ff2c54fb1b57daabbb724410070d288d0652fa0561284ac3d049d634c122afb1640a7b2f22c21ed",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9-b1038.78",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.9-osx-x64-b1038.78.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1038.78"
   }
 ]
