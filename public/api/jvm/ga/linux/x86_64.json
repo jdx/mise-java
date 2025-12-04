@@ -65857,5 +65857,101 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.9-linux-x64-b1163.86.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.9-b1163.86"
+  },
+  {
+    "checksum": "sha512:31a443918a5bd10090b827fa8f1efe8e8a3acc2beafb5cdaafe190629d07364665a87e425efe67b2e18fd012721da4647fda2b20829557836fcb804ebe1c4e85",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9-b895.149",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.9-linux-musl-x64-b895.149.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b895.149"
+  },
+  {
+    "checksum": "sha512:f2466cd27e6cb21478cd13d80948bafff4880ad3bbf8024ead69a209eba6da9bea5bf182e43508a06f7c827d17707259d0e76e35a2e56103754c8936d0ecf3e5",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9-b895.149",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.9-linux-x64-b895.149.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b895.149"
+  },
+  {
+    "checksum": "sha512:eb4ba7083eeae4c105818c09d49d5afb6555839c376106e7275ff5b00aeb7973fa628d9705054ed9a1be961b454585b4663e107bd5d6a89d0d2d5bbea169e48a",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9-b895.149",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.9-linux-x64-b895.149.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b895.149"
+  },
+  {
+    "checksum": "sha512:b64285ce0e6228320c200873078451539e455bdd01483a342516862ecd187cc34be010e622f4b48986f785b5b9f2e80ac2e8cc141b19c28d8b21ef1ebbdcabd5",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9-b895.149",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_vk-21.0.9-linux-x64-b895.149.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b895.149"
+  },
+  {
+    "checksum": "sha512:9428e715977580174a9186f0b75592b8bfe197d279dd0b588f3a9fd342f802fd772c9730c81f505869dedcb659cc3896b72eca26b5a61c3c466a6e547efe2a5f",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9-b895.149",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.9-linux-x64-b895.149.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b895.149"
+  },
+  {
+    "checksum": "sha512:0b4a8b5e354ac7851f52dce5044b865d39aba06359cbc3f34fa5c7dbe225a02b20d31c8bd9290936cfe37a8f48df9172e290f7023a80292ec4a59ce8c78a892f",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9-b895.149",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_vk-21.0.9-linux-x64-b895.149.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b895.149"
+  },
+  {
+    "checksum": "sha512:9cd04a0a8f2e8968b441aa0d59caedea593179ac92c98e37623947fd8a82aef8d5156972475e1890e8a4d8f52e44dd8af28aab99bdf514babbb168607114f58e",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9-b895.149",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.9-linux-x64-b895.149.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b895.149"
+  },
+  {
+    "checksum": "sha512:2fc6d1c7f0edd4b2988cf54f97d9d64aff9142d7f4db1bf708b710cc02979f373595c5336b745957fa03c617ac78cfe3dc393c455a9ae92ae009dfc9260b50af",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9-b895.149",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.9-linux-musl-x64-b895.149.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b895.149"
   }
 ]
