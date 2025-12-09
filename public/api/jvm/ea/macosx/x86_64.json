@@ -27509,5 +27509,49 @@
     "url": "https://download.java.net/java/early_access/jdk26/27/GPL/openjdk-26-ea+27_macos-x64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "26.0.0-ea+27"
+  },
+  {
+    "checksum": "sha256:61564be97193789f9d0337e12fe43ad5d2c11692c5c0dd71626858d012da5049",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.18-ea.5",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.18%2B5/sapmachine-jdk-17.0.18-ea.5_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.18-ea.5"
+  },
+  {
+    "checksum": "sha256:a37f43d2fb5635c9c1500d7ff06c602ad41e850d0122af55cac0754ac6f043fe",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.10-ea.5",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.10%2B5/sapmachine-jdk-21.0.10-ea.5_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.10-ea.5"
+  },
+  {
+    "checksum": "sha256:f0c773c7d992fbeacec9ee12c8c2b8f3e8431d90e4428d3985f30c98412a59e7",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.18-ea.5",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.18%2B5/sapmachine-jre-17.0.18-ea.5_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.18-ea.5"
+  },
+  {
+    "checksum": "sha256:84e7e45dce63394fe58b4c7ab12ffe3b2860c9183466426e0ce4536148015dab",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.10-ea.5",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.10%2B5/sapmachine-jre-21.0.10-ea.5_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.10-ea.5"
   }
 ]
