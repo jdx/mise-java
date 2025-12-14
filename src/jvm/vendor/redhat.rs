@@ -83,6 +83,7 @@ fn map_release(release: &Release) -> Vec<JvmData> {
                 architecture: normalize_architecture(binary.architecture.as_str()),
                 checksum: artifact.checksum.and_then(|c| format!("sha256:{c}").into()),
                 checksum_url: artifact.checksum_link,
+                created_at: None,
                 image_type: binary.image_type.clone(),
                 features: None,
                 file_type: artifact.extension.to_string(),
