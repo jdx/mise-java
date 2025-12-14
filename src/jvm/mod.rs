@@ -10,6 +10,7 @@ pub struct JvmData {
     pub architecture: String,
     pub checksum: Option<String>,
     pub checksum_url: Option<String>,
+    pub created_at: Option<String>,
     #[serde(serialize_with = "empty_vec_if_none")]
     pub features: Option<Vec<String>>,
     pub file_type: String,
@@ -139,6 +140,7 @@ mod tests {
             architecture: "x86_64".to_string(),
             checksum: Some("sha256:checksum".to_string()),
             checksum_url: Some("http://example.com/checksum".to_string()),
+            created_at: Some("2024-01-15T10:30:00Z".to_string()),
             features: Some(vec!["feature1".to_string(), "feature2".to_string()]),
             file_type: "tar.gz".to_string(),
             filename: "openjdk.tar.gz".to_string(),
@@ -219,6 +221,7 @@ mod tests {
             "architecture".to_string(),
             "checksum".to_string(),
             "checksum_url".to_string(),
+            "created_at".to_string(),
             "features".to_string(),
             "file_type".to_string(),
             "filename".to_string(),
@@ -238,6 +241,7 @@ mod tests {
         assert_eq!(map.get("architecture").unwrap(), "x86_64");
         assert_eq!(map.get("checksum").unwrap(), "sha256:checksum");
         assert_eq!(map.get("checksum_url").unwrap(), "http://example.com/checksum");
+        assert_eq!(map.get("created_at").unwrap(), "2024-01-15T10:30:00Z");
         assert_eq!(map.get("features").unwrap(), &json!(vec!["feature1", "feature2"]));
         assert_eq!(map.get("file_type").unwrap(), "tar.gz");
         assert_eq!(map.get("filename").unwrap(), "openjdk.tar.gz");
@@ -298,6 +302,7 @@ mod tests {
         assert!(map.get("architecture").is_none());
         assert_eq!(map.get("checksum").unwrap(), "sha256:checksum");
         assert_eq!(map.get("checksum_url").unwrap(), "http://example.com/checksum");
+        assert_eq!(map.get("created_at").unwrap(), "2024-01-15T10:30:00Z");
         assert_eq!(map.get("features").unwrap(), &json!(vec!["feature1", "feature2"]));
         assert_eq!(map.get("file_type").unwrap(), "tar.gz");
         assert_eq!(map.get("filename").unwrap(), "openjdk.tar.gz");

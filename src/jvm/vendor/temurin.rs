@@ -96,6 +96,7 @@ fn map_release(release: &Release) -> Vec<JvmData> {
             architecture: normalize_architecture(binary.architecture.as_str()),
             checksum: package_checksum.and_then(|c| format!("sha256:{c}").into()),
             checksum_url: package_checksum_link,
+            created_at: None,
             image_type: binary.image_type.clone(),
             features: normalize_features(binary.clone()),
             file_type: package_extension.unwrap_or_default().to_string(),

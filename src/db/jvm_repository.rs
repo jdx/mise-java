@@ -121,6 +121,7 @@ impl JvmRepository {
               architecture,
               checksum,
               checksum_url,
+              created_at,
               features,
               file_type,
               filename,
@@ -151,6 +152,7 @@ impl JvmRepository {
               architecture,
               checksum,
               checksum_url,
+              created_at,
               features,
               file_type,
               filename,
@@ -185,6 +187,7 @@ impl JvmRepository {
                 architecture: row.get("architecture"),
                 checksum: row.get("checksum"),
                 checksum_url: row.get("checksum_url"),
+                created_at: row.get("created_at"),
                 features: row
                     .get::<_, Option<String>>("features")
                     .map(|f| f.split(',').map(String::from).collect()),
