@@ -23,7 +23,7 @@ path = "src/main.rs"
 
 [dependencies]
 build-time = "0.1"
-chrono = { version = "0.4", default-features = false, features = ["clock", "std"] }
+chrono = { version = "0.4", default-features = false, features = ["clock", "serde", "std"] }
 clap = { version = "4", features = ["derive", "env", "string"] }
 color-eyre = "0.6"
 color-print = "0.3"
@@ -36,7 +36,7 @@ indoc = "2"
 itertools = "0.14"
 log = "0.4"
 openssl = "0.10"
-postgres = "0.19"
+postgres = { version = "0.19", features = ["with-chrono-0_4"] }
 postgres-openssl = "0.5"
 r2d2 = "0.8"
 r2d2_postgres = "0.18"
