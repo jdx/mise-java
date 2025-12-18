@@ -46909,5 +46909,57 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/26%2B29-ea/bellsoft-jre26%2B29-ea-linux-amd64.tar.gz",
     "vendor": "liberica",
     "version": "26.0.0+29-ea"
+  },
+  {
+    "checksum": "sha256:67da6378666a8b4955b34735145c9bd85b5824440fd513e55c056ee2d449fa60",
+    "created_at": "2025-12-18T22:08:03.247525",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu26.0.29-beta-jdk26.0.0-beta.20-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "26.0.29.0"
+  },
+  {
+    "checksum": "sha256:5691f162cdf4e8a7a79ce1801743a2813cc2b5ab70b4bf3f48fcb284f6319b8f",
+    "created_at": "2025-12-18T22:08:03.247525",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu26.0.29-beta-jdk26.0.0-beta.20-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "26.0.29.0"
+  },
+  {
+    "checksum": "sha256:bafe7bd824fbd17dfee61e699d49b22d0a98e0f7e5c55675601d2cc65946cc4a",
+    "created_at": "2025-12-18T22:08:03.247525",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu26.0.31-beta-jdk26.0.0-beta.22-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "26.0.31.0"
+  },
+  {
+    "checksum": "sha256:cdbc19e310bafe8ee9898c7fb2fd42e1d870604425ee2e076bd5122191b0a5d0",
+    "created_at": "2025-12-18T22:08:03.247525",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu26.0.31-beta-jdk26.0.0-beta.22-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "26.0.31.0"
   }
 ]
