@@ -47025,5 +47025,57 @@
     "url": "https://download.java.net/java/early_access/jdk26/29/GPL/openjdk-26-ea+29_linux-x64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "26.0.0-ea+29"
+  },
+  {
+    "checksum": "sha256:5e7a30d16cf49ce7a0d8432ebac001c1e2a7235f73ecc8fb8a23f80925e576c9",
+    "created_at": "2025-12-20T22:05:17.704527",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0-ea.2",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B2/sapmachine-jdk-27-ea.2_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.2"
+  },
+  {
+    "checksum": "sha256:a3cf61adb9be04c4b4ed903e74bb64bcbec9bf434c572ab1543cf72e90814273",
+    "created_at": "2025-12-20T22:05:17.704527",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0-ea.2",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B2/sapmachine-jdk-27-ea.2_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.2"
+  },
+  {
+    "checksum": "sha256:30ef7731409fe1dc0b0c9a69ed954faab3fb8a030e6c896682854d820a8f81c3",
+    "created_at": "2025-12-20T22:05:17.704527",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.0-ea.2",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B2/sapmachine-jre-27-ea.2_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.2"
+  },
+  {
+    "checksum": "sha256:3f5fb7d10be2605925437713ce450e5b3299b8cf73b71a5bc2e74d1272a70549",
+    "created_at": "2025-12-20T22:05:17.704527",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.0-ea.2",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B2/sapmachine-jre-27-ea.2_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.2"
   }
 ]
