@@ -73297,5 +73297,29 @@
     "url": "https://corretto.aws/downloads/resources/11.0.30.7.1/amazon-corretto-11.0.30.7.1-linux-x64.tar.gz",
     "vendor": "corretto",
     "version": "11.0.30.7.1"
+  },
+  {
+    "checksum": "sha256:987387933b64b9833846dee373b640440d3e1fd48a04804ec01a6dbf718e8ab8",
+    "created_at": "2026-01-23T22:07:07.262935",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2+10-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.2%2B10/OpenJDK25U-jdk_x64_linux_hotspot_25.0.2_10.tar.gz",
+    "vendor": "temurin",
+    "version": "25.0.2+10.0.LTS"
+  },
+  {
+    "checksum": "sha256:d6c89e08f42be94cd55eab20190958a35b993625018a3ac59cb3d16d8445cf98",
+    "created_at": "2026-01-23T22:07:07.262935",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.2+10-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.2%2B10/OpenJDK25U-jre_x64_linux_hotspot_25.0.2_10.tar.gz",
+    "vendor": "temurin",
+    "version": "25.0.2+10.0.LTS"
   }
 ]
