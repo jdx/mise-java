@@ -2818,5 +2818,29 @@
     "url": "https://corretto.aws/downloads/resources/11.0.30.7.1/amazon-corretto-11.0.30.7.1-linux-armv7.tar.gz",
     "vendor": "corretto",
     "version": "11.0.30.7.1"
+  },
+  {
+    "checksum": "sha256:21050b8325b62cb3fca4f871aadbddc04c67e21f3ab57236439aa951cbcb17ae",
+    "created_at": "2026-01-23T22:07:07.262935",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.18+8",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jdk_arm_linux_hotspot_17.0.18_8.tar.gz",
+    "vendor": "temurin",
+    "version": "17.0.18+8"
+  },
+  {
+    "checksum": "sha256:437c30e861fb091d4bb2ff66a28b1d09e7ac9167f6163e286cb2968d29864e1b",
+    "created_at": "2026-01-23T22:07:07.262935",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.18+8",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.18%2B8/OpenJDK17U-jre_arm_linux_hotspot_17.0.18_8.tar.gz",
+    "vendor": "temurin",
+    "version": "17.0.18+8"
   }
 ]
