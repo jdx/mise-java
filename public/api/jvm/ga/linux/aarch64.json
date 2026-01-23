@@ -52223,5 +52223,33 @@
     "url": "https://corretto.aws/downloads/resources/25.0.2.10.1/amazon-corretto-25.0.2.10.1-linux-aarch64.tar.gz",
     "vendor": "corretto",
     "version": "25.0.2.10.1"
+  },
+  {
+    "checksum": "sha256:19eba6c3877612157ef1f46deb92745b4567cfcd64b79f15449c68cd2b7501e3",
+    "created_at": "2026-01-22T22:05:53.680854",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.10+7-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jdk_aarch64_alpine-linux_hotspot_21.0.10_7.tar.gz",
+    "vendor": "temurin",
+    "version": "21.0.10+7.0.LTS"
+  },
+  {
+    "checksum": "sha256:d1cd7b33dcd81293b0b705f4d0e79adce092786be31736a63abe6a4b31841ae5",
+    "created_at": "2026-01-22T22:05:53.680854",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.10+7-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_aarch64_alpine-linux_hotspot_21.0.10_7.tar.gz",
+    "vendor": "temurin",
+    "version": "21.0.10+7.0.LTS"
   }
 ]
