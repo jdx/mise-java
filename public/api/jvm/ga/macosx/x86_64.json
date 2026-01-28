@@ -59349,5 +59349,81 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.1-osx-x64-b285.56.tar.gz",
     "vendor": "jetbrains",
     "version": "25.0.1-b285.56"
+  },
+  {
+    "checksum": "sha256:da04fdde03f100783df8f84283be8035a118f2c95be6b145f09d3354bfb814aa",
+    "created_at": "2026-01-28T22:08:21.106207",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.30",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-11.0.30-macos-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "11.0.30"
+  },
+  {
+    "checksum": "sha256:6bc02fd3182dee12510f253d08eeac342a1f0e03d7f4114763f83d8722e2915e",
+    "created_at": "2026-01-28T22:08:21.106207",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-25.0.2-macos-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "25.0.2"
+  },
+  {
+    "checksum": "sha256:e281696a0751638c41e531000bd72180872b714a5f8599085c9fec1f4ebc5415",
+    "created_at": "2026-01-28T22:08:21.106207",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.18",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-17.0.18-macos-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "17.0.18"
+  },
+  {
+    "checksum": "sha256:b4c94a74d06e1046480ebe35e01e038b532e966b10ff797dc8d530ee75fa560e",
+    "created_at": "2026-01-28T22:08:21.106207",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.10",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-21.0.10-macos-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "21.0.10"
+  },
+  {
+    "checksum": "md5:e366c04ddbd006aa632d77eef4cced92",
+    "created_at": "2026-01-28T22:08:31.128847",
+    "features": [
+      "notarized"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.10.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.10/TencentKona-21.0.10.b1_jdk_macosx-x86_64_notarized.tar.gz",
+    "vendor": "kona",
+    "version": "21.0.10.b1"
+  },
+  {
+    "checksum": "md5:8873f8b7a913870e1e2dcc65e0dfaf25",
+    "created_at": "2026-01-28T22:08:31.128847",
+    "features": [
+      "notarized"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.18.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.18/TencentKona-17.0.18.b1_jdk_macosx-x86_64_notarized.tar.gz",
+    "vendor": "kona",
+    "version": "17.0.18.b1"
   }
 ]

@@ -52383,5 +52383,101 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.1-linux-musl-aarch64-b285.56.tar.gz",
     "vendor": "jetbrains",
     "version": "25.0.1-b285.56"
+  },
+  {
+    "checksum": "sha256:9b2367315db533fd5ebf8307a38528f22a89282fa771679e5c7f8ecd999d571a",
+    "created_at": "2026-01-28T22:08:21.106207",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.30",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-11.0.30-linux-aarch64.tar.gz",
+    "vendor": "microsoft",
+    "version": "11.0.30"
+  },
+  {
+    "checksum": "sha256:a300df93b4e1fee51857e658cb83bd88896e195308a6ddb2090d2b3fee1e4921",
+    "created_at": "2026-01-28T22:08:21.106207",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.18",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-17.0.18-linux-aarch64.tar.gz",
+    "vendor": "microsoft",
+    "version": "17.0.18"
+  },
+  {
+    "checksum": "sha256:5d80661f5a55c6d0f3abba2b8196b269fa6a490142f4c751c8373058c00ba233",
+    "created_at": "2026-01-28T22:08:21.106207",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.10",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-21.0.10-linux-aarch64.tar.gz",
+    "vendor": "microsoft",
+    "version": "21.0.10"
+  },
+  {
+    "checksum": "sha256:bdc5fffc0d1e741ab7840b8e733fca48b70d1b6838db4d90b94a78b90e6ea8cb",
+    "created_at": "2026-01-28T22:08:21.106207",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-25.0.2-linux-aarch64.tar.gz",
+    "vendor": "microsoft",
+    "version": "25.0.2"
+  },
+  {
+    "checksum": "sha256:3ca84da7c4f57eee8d7e7f0645dc904a3a06456d32b37a4dd57a5e7527245250",
+    "created_at": "2026-01-28T22:08:21.134339",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.10+7-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.10_7.tar.gz",
+    "vendor": "temurin",
+    "version": "21.0.10+7.0.LTS"
+  },
+  {
+    "checksum": "sha256:357fee29fb0d5c079f6730db98b28942df13a6eed426f6c61cd4ad703ab27b9a",
+    "created_at": "2026-01-28T22:08:21.134339",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.10+7-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.10%2B7/OpenJDK21U-jdk_aarch64_linux_hotspot_21.0.10_7.tar.gz",
+    "vendor": "temurin",
+    "version": "21.0.10+7.0.LTS"
+  },
+  {
+    "checksum": "md5:e93886d597cb2c00fd23ddd5efe5f806",
+    "created_at": "2026-01-28T22:08:31.128847",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.18.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.18/TencentKona-17.0.18.b1-jdk_linux-aarch64.tar.gz",
+    "vendor": "kona",
+    "version": "17.0.18.b1"
+  },
+  {
+    "checksum": "md5:f34fa497d4f389046c7ab36488e9acb5",
+    "created_at": "2026-01-28T22:08:31.128847",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.10.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.10/TencentKona-21.0.10.b1-jdk_linux-aarch64.tar.gz",
+    "vendor": "kona",
+    "version": "21.0.10.b1"
   }
 ]
