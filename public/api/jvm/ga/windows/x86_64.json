@@ -48295,5 +48295,81 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.1-windows-x64-b285.56.tar.gz",
     "vendor": "jetbrains",
     "version": "25.0.1-b285.56"
+  },
+  {
+    "checksum": "sha256:e569ae41ae35c097e9f75cc267fa1a5f97395e32ddd508b95bed208df6a5722f",
+    "created_at": "2026-01-28T22:08:21.106207",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.30",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-11.0.30-windows-x64.zip",
+    "vendor": "microsoft",
+    "version": "11.0.30"
+  },
+  {
+    "checksum": "sha256:45a44af1f832e720ea6ad90dd7b2c94a48b2e5bf2fab92b2403e975f78d7d5e1",
+    "created_at": "2026-01-28T22:08:21.106207",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.10",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-21.0.10-windows-x64.zip",
+    "vendor": "microsoft",
+    "version": "21.0.10"
+  },
+  {
+    "checksum": "sha256:38d1a42d189c50b24152014ef131931f25f4cc80400ce618f0477f5e4e5aa252",
+    "created_at": "2026-01-28T22:08:21.106207",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.2",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-25.0.2-windows-x64.zip",
+    "vendor": "microsoft",
+    "version": "25.0.2"
+  },
+  {
+    "checksum": "sha256:757815b4a0af282188d3141b9d84b91e68f8a10d9a599301ea1380590703070a",
+    "created_at": "2026-01-28T22:08:21.106207",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.18",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-17.0.18-windows-x64.zip",
+    "vendor": "microsoft",
+    "version": "17.0.18"
+  },
+  {
+    "checksum": "md5:0921beabc0c915acc10cd012aedd7906",
+    "created_at": "2026-01-28T22:08:31.128847",
+    "features": [
+      "signed"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.18.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.18/TencentKona-17.0.18.b1_jdk_windows-x86_64_signed.zip",
+    "vendor": "kona",
+    "version": "17.0.18.b1"
+  },
+  {
+    "checksum": "md5:0f59ea4955fdb1683b28557d26f48cbf",
+    "created_at": "2026-01-28T22:08:31.128847",
+    "features": [
+      "signed"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.10.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.10/TencentKona-21.0.10.b1_jdk_windows-x86_64_signed.zip",
+    "vendor": "kona",
+    "version": "21.0.10.b1"
   }
 ]
