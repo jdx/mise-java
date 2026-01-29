@@ -48371,5 +48371,195 @@
     "url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.10/TencentKona-21.0.10.b1_jdk_windows-x86_64_signed.zip",
     "vendor": "kona",
     "version": "21.0.10.b1"
+  },
+  {
+    "checksum": "sha1:b2b80184f9d5bda30378f4ea2f7084bfc629ddac",
+    "created_at": "2026-01-29T22:05:00.977437",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.18+11",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.11+1-17.0.18+11/bellsoft-liberica-vm-core-openjdk17.0.18+11-23.0.11+1-windows-amd64.zip",
+    "vendor": "liberica-nik",
+    "version": "23.0.11+1"
+  },
+  {
+    "checksum": "sha1:008a6ef9af71f384b85a3e6b4e67acbfa7bccb43",
+    "created_at": "2026-01-29T22:05:00.977437",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.10+11",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.10+1-21.0.10+11/bellsoft-liberica-vm-core-openjdk21.0.10+11-23.1.10+1-windows-amd64.zip",
+    "vendor": "liberica-nik",
+    "version": "23.1.10+1"
+  },
+  {
+    "checksum": "sha256:b280b4813a200e71d415b9cbc988d8625a4a70430c43243167f997d0987d9f54",
+    "created_at": "2026-01-29T22:05:09.628259",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "11.0.30",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.86.21-ca-fx-jre11.0.30-win_x64.zip",
+    "vendor": "zulu",
+    "version": "11.86.21.0"
+  },
+  {
+    "checksum": "sha256:b51c359c1283b751a55ff3364371078c63b90727dd6359db4b0cd871cd4fe2aa",
+    "created_at": "2026-01-29T22:05:09.628259",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.18",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.64.17-ca-fx-jdk17.0.18-win_x64.zip",
+    "vendor": "zulu",
+    "version": "17.64.17.0"
+  },
+  {
+    "checksum": "sha256:50d428552aef90f1f36117f68f03a7f52f63753ade454b1319ea4ae44b52ac19",
+    "created_at": "2026-01-29T22:05:09.628259",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.32.21-ca-fx-jdk25.0.2-win_x64.zip",
+    "vendor": "zulu",
+    "version": "25.32.21.0"
+  },
+  {
+    "checksum": "sha256:5602ba2d87b6466386f4f25487ec49214fbc6d9e4617914ad9f6f5dec80dd9a3",
+    "created_at": "2026-01-29T22:05:09.628259",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.10",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.48.17-ca-fx-jdk21.0.10-win_x64.zip",
+    "vendor": "zulu",
+    "version": "21.48.17.0"
+  },
+  {
+    "checksum": "sha256:eb759b0ded86bf7f18819bce4b164d7fc203ab051fb1641c9df2c9ef2960ae08",
+    "created_at": "2026-01-29T22:05:09.628259",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "17.0.18",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.64.17-ca-fx-jre17.0.18-win_x64.zip",
+    "vendor": "zulu",
+    "version": "17.64.17.0"
+  },
+  {
+    "checksum": "sha256:4367da129a97d9dd22ef08702cc32df9ae04ac80c0d23b656d7d79783bee4483",
+    "created_at": "2026-01-29T22:05:09.628259",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "21.0.10",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.48.17-ca-fx-jre21.0.10-win_x64.zip",
+    "vendor": "zulu",
+    "version": "21.48.17.0"
+  },
+  {
+    "checksum": "sha256:d3742c5ff212861f46aa41df26de70a61424cb7751f5b3a286a0105b7733f76d",
+    "created_at": "2026-01-29T22:05:09.628259",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8.0.482",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.92.0.21-ca-fx-jdk8.0.482-win_x64.zip",
+    "vendor": "zulu",
+    "version": "8.92.0.21"
+  },
+  {
+    "checksum": "sha256:e72a6c9b53b6ee970a49dedd2b7c9223760f2acf0421b68515989c7c20946f53",
+    "created_at": "2026-01-29T22:05:09.628259",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "8.0.482",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.92.0.21-ca-fx-jre8.0.482-win_x64.zip",
+    "vendor": "zulu",
+    "version": "8.92.0.21"
+  },
+  {
+    "checksum": "sha256:c4dcaaa1b65494ab510acbbd93a9a9bf7f0e33b0378c4427ce6914dd8fd30afe",
+    "created_at": "2026-01-29T22:05:09.628259",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.30",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.86.21-ca-fx-jdk11.0.30-win_x64.zip",
+    "vendor": "zulu",
+    "version": "11.86.21.0"
+  },
+  {
+    "checksum": "sha256:4042b60589ef40e8d3bf38ae792e8143037ba6a39112ef88ca9ef7d2fa71b259",
+    "created_at": "2026-01-29T22:05:09.628259",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "25.0.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.32.21-ca-fx-jre25.0.2-win_x64.zip",
+    "vendor": "zulu",
+    "version": "25.32.21.0"
+  },
+  {
+    "checksum": "md5:3cc28b4768e16ddae428834207438bad",
+    "created_at": "2026-01-29T22:09:00.723480",
+    "features": [
+      "signed"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.30.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.30/TencentKona-11.0.30.b1_jdk_windows-x86_64_signed.zip",
+    "vendor": "kona",
+    "version": "11.0.30.b1"
+  },
+  {
+    "checksum": "sha256:ce2305ec89c93ffda7c13bec0c81e92732fb7c2f990cdc6793057009582ccaa6",
+    "created_at": "2026-01-29T22:09:01.082961",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.18.9.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/17.0.18.9.1/amazon-corretto-17.0.18.9.1-windows-x64-jdk.zip",
+    "vendor": "corretto",
+    "version": "17.0.18.9.1"
   }
 ]
