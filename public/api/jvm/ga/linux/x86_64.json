@@ -73605,5 +73605,235 @@
     "url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.18/TencentKona-17.0.18.b1-jdk_linux-x86_64.tar.gz",
     "vendor": "kona",
     "version": "17.0.18.b1"
+  },
+  {
+    "checksum": "sha1:f93f9bcb8563041637bf73b4d1d9c2d3dec8b26b",
+    "created_at": "2026-01-29T22:05:00.977437",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.18+11",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.11+1-17.0.18+11/bellsoft-liberica-vm-core-openjdk17.0.18+11-23.0.11+1-linux-amd64.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.0.11+1"
+  },
+  {
+    "checksum": "sha1:002eb3350c60765fd181bc3a926f7035c5a80111",
+    "created_at": "2026-01-29T22:05:00.977437",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.10+11",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.10+1-21.0.10+11/bellsoft-liberica-vm-core-openjdk21.0.10+11-23.1.10+1-linux-amd64.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.1.10+1"
+  },
+  {
+    "checksum": "sha1:0fd7d5cb63cced80f1442411dc75ba70716bfd09",
+    "created_at": "2026-01-29T22:05:00.977437",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.18+11",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.11+1-17.0.18+11/bellsoft-liberica-vm-core-openjdk17.0.18+11-23.0.11+1-linux-x64-musl.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.0.11+1"
+  },
+  {
+    "checksum": "sha1:752a3ee921495990e2bbcd53de0384bdafbc09a7",
+    "created_at": "2026-01-29T22:05:00.977437",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.10+11",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.10+1-21.0.10+11/bellsoft-liberica-vm-core-openjdk21.0.10+11-23.1.10+1-linux-x64-musl.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.1.10+1"
+  },
+  {
+    "checksum": "sha256:bcff5baba41fcf76a7249f11989cbda2e53eea186dd580c780a8e9f73c770252",
+    "created_at": "2026-01-29T22:05:09.628259",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.30",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.86.21-ca-fx-jdk11.0.30-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "11.86.21.0"
+  },
+  {
+    "checksum": "sha256:01c257a7dda977e08db696a486788b302fb8d07c6bc23f14e40c87a2e8a52204",
+    "created_at": "2026-01-29T22:05:09.628259",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.18",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.64.17-ca-fx-jre17.0.18-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.64.17.0"
+  },
+  {
+    "checksum": "sha256:aba0159c1abd5744a627ddcf56e7e2ed35b1e3a5f2257754a5cfa8024fb1682b",
+    "created_at": "2026-01-29T22:05:09.628259",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.32.21-ca-fx-jre25.0.2-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.32.21.0"
+  },
+  {
+    "checksum": "sha256:720d22b4dec15d2baffe0a70f38b4c9826eaa270448efad4610a7f6c8aed2e86",
+    "created_at": "2026-01-29T22:05:09.628259",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "8.0.482",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.92.0.21-ca-fx-jre8.0.482-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "8.92.0.21"
+  },
+  {
+    "checksum": "sha256:8d0d81c882ad8afa1cf6727f2cf3190a4b728dc7aa5d8f81e9adfab179b051b1",
+    "created_at": "2026-01-29T22:05:09.628259",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.18",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.64.17-ca-fx-jdk17.0.18-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.64.17.0"
+  },
+  {
+    "checksum": "sha256:4d36ec06a08e085eeac9a1401824b5f7bd6f8cc1920446cde55b7a5e4f5e0b37",
+    "created_at": "2026-01-29T22:05:09.628259",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.30",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.86.21-ca-fx-jre11.0.30-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "11.86.21.0"
+  },
+  {
+    "checksum": "sha256:ec65034d972e9af9f0aad78d7f1c58c5cc29b9f5cdd0266d2fc311b901561933",
+    "created_at": "2026-01-29T22:05:09.628259",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.10",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.48.17-ca-fx-jdk21.0.10-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.48.17.0"
+  },
+  {
+    "checksum": "sha256:79c86ab353409af60d6e99b966f88ddbc46c587acddd10612fc4f4ded62647f0",
+    "created_at": "2026-01-29T22:05:09.628259",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.10",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.48.17-ca-fx-jre21.0.10-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.48.17.0"
+  },
+  {
+    "checksum": "sha256:2a97720c043166381fb6e1e7884969ac9d9149107678ec2f424d50697c55fa49",
+    "created_at": "2026-01-29T22:05:09.628259",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.32.21-ca-fx-jdk25.0.2-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.32.21.0"
+  },
+  {
+    "checksum": "sha256:84a2ed92eb0f41b33a884b85750f943653c29ace0e24dece4f33c192d4d9424d",
+    "created_at": "2026-01-29T22:05:09.628259",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.0.482",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.92.0.21-ca-fx-jdk8.0.482-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "8.92.0.21"
+  },
+  {
+    "checksum": "md5:5482452d90f6004b5fe51c4df31d7aab",
+    "created_at": "2026-01-29T22:09:00.723480",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.30.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.30/TencentKona-11.0.30.b1-jdk_linux-x86_64.tar.gz",
+    "vendor": "kona",
+    "version": "11.0.30.b1"
+  },
+  {
+    "checksum": "sha256:c8c274db25c9b897e366d3b66dc21bc5a842c09adede79740f5259c7c8695141",
+    "created_at": "2026-01-29T22:09:01.082961",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.18.9.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/17.0.18.9.1/amazon-corretto-17.0.18.9.1-alpine-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "17.0.18.9.1"
+  },
+  {
+    "checksum": "sha256:87411b0792a0f2b8e0fef1178c012bfe338b5f5fedb8c1e7985213cb7f790428",
+    "created_at": "2026-01-29T22:09:01.082961",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.18.9.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/17.0.18.9.1/amazon-corretto-17.0.18.9.1-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "17.0.18.9.1"
   }
 ]
