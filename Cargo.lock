@@ -3881,9 +3881,9 @@ checksum = "2fb433233f2df9344722454bc7e96465c9d03bff9d77c248f9e7523fe79585b5"
 
 [[package]]
 name = "xx"
-version = "2.3.1"
+version = "2.5.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b2df0028c106b318c37108eaa6930ee85c73e0ad03e2d54dfe7fea44975c1259"
+checksum = "82a174a1d4ba003417df5f1ac4f66fa5a198aa08abcc9c0b67bb2e4b8a9bf9b5"
 dependencies = [
  "duct",
  "filetime",
@@ -3892,6 +3892,7 @@ dependencies = [
  "miette",
  "rand",
  "regex",
+ "strsim",
  "thiserror 2.0.17",
 ]
 
