@@ -47979,5 +47979,31 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B32/sapmachine-jre-26-ea.32_linux-x64-musl_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "26.0.0-ea.32"
+  },
+  {
+    "checksum": "sha256:bc66965d2d50811525801ec1450b1b22437fedccb61dc687080552db34276668",
+    "created_at": "2026-02-03T22:07:02.246803",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu26.0.41-beta-jdk26.0.0-beta.26-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "26.0.41.0"
+  },
+  {
+    "checksum": "sha256:f6940504f0ad2ca635fceffccb0610371dc9f2dd5a86e830251654c336926e39",
+    "created_at": "2026-02-03T22:07:02.246803",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu26.0.41-beta-jdk26.0.0-beta.26-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "26.0.41.0"
   }
 ]
