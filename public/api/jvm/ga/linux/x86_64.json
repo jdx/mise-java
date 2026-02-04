@@ -74677,5 +74677,31 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.2-linux-x64-b300.57.tar.gz",
     "vendor": "jetbrains",
     "version": "25.0.2-b300.57"
+  },
+  {
+    "checksum": "sha256:f5e02a86676b001af874e53d40a7c40ced261f917546eb58759cd0774d690377",
+    "created_at": "2026-02-04T22:08:17.579960",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.18.0.19.8",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell17/releases/download/dragonwell-standard-17.0.18.0.19%2B8_jdk-17.0.18-ga/Alibaba_Dragonwell_Standard_17.0.18.0.19.8_x64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "17.0.18.0.19.8"
+  },
+  {
+    "checksum": "sha256:d4e997eba5b16985ebecb16ec7350d4d1501cd5a5cd81c9a322bc2a907fff4f4",
+    "created_at": "2026-02-04T22:08:17.579960",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.18.0.19.8",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell17/releases/download/dragonwell-standard-17.0.18.0.19%2B8_jdk-17.0.18-ga/Alibaba_Dragonwell_Standard_17.0.18.0.19.8_x64_alpine-linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "17.0.18.0.19.8"
   }
 ]
