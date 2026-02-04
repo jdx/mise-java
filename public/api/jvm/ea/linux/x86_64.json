@@ -48005,5 +48005,31 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu26.0.41-beta-jdk26.0.0-beta.26-linux_x64.tar.gz",
     "vendor": "zulu",
     "version": "26.0.41.0"
+  },
+  {
+    "checksum": "sha256:d0b106646a6fc61c4c721b951d8e280df3925af27b36c5dd805739018fccd487",
+    "created_at": "2026-02-04T22:04:09.963051",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu26.0.43-beta-jdk26.0.0-beta.27-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "26.0.43.0"
+  },
+  {
+    "checksum": "sha256:b63dcde39d4fa1e2878c4d5fd15a3bb161d57df36ec31a91732035acc8eb2384",
+    "created_at": "2026-02-04T22:04:09.963051",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu26.0.43-beta-jdk26.0.0-beta.27-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "26.0.43.0"
   }
 ]
