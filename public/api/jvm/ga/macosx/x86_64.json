@@ -59817,20 +59817,6 @@
     "version": "21.48.17.0"
   },
   {
-    "checksum": "md5:aa53b50aee17ea8b6d5c52b6454b51dd",
-    "created_at": "2026-01-30T22:07:09.517635",
-    "features": [
-      "notarized"
-    ],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "java_version": "8.0.25.b1",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.25-GA/TencentKona8.0.25.b1_jdk_macosx-x86_64_8u482_notarized.tar.gz",
-    "vendor": "kona",
-    "version": "8.0.25.b1"
-  },
-  {
     "checksum": "sha256:6d13cfa2ebc608ef1a71d2d613130f24f93897c927f157341614eee61ca146a6",
     "created_at": "2026-01-30T22:07:31.952987",
     "features": [],
@@ -60473,5 +60459,19 @@
     "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u482-b08/OpenJDK8U-jre_x64_mac_hotspot_8u482b08.tar.gz",
     "vendor": "temurin",
     "version": "8.0.482+8"
+  },
+  {
+    "checksum": "md5:dcddf99977f889fd05308ac9ed7bae1a",
+    "created_at": "2026-01-30T22:07:09.517635",
+    "features": [
+      "notarized"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.0.25.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.25-GA/TencentKona8.0.25.b1_jdk_macosx-x86_64_8u482_notarized.tar.gz",
+    "vendor": "kona",
+    "version": "8.0.25.b1"
   }
 ]
