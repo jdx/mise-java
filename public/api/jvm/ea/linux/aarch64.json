@@ -23139,5 +23139,53 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu26.0.43-beta-jdk26.0.0-beta.27-linux_aarch64.tar.gz",
     "vendor": "zulu",
     "version": "26.0.43.0"
+  },
+  {
+    "checksum": "sha256:c8daf95e8f89a29d6ad37fecd3241b4df4b607067cbfebf28ef80d07e1553c3c",
+    "created_at": "2026-02-06T22:06:44.616550",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.0-ea.33",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B33/sapmachine-jdk-26-ea.33_linux-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.33"
+  },
+  {
+    "checksum": "sha256:73c4b177dee86daad45f0ba07c7b7923381465b2abbc016fd0cb8d45e24bd31b",
+    "created_at": "2026-02-06T22:06:44.616550",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0-ea.7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B7/sapmachine-jdk-27-ea.7_linux-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.7"
+  },
+  {
+    "checksum": "sha256:e3aaa9e0169da21608cdc5f335a820d316c78171c75cb4b8e468a8a490412bef",
+    "created_at": "2026-02-06T22:06:44.616550",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.0-ea.7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B7/sapmachine-jre-27-ea.7_linux-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.7"
+  },
+  {
+    "checksum": "sha256:7efb111813ce252f7dc6d2d1db56d130206e2b2c9db49677401524ec67984e77",
+    "created_at": "2026-02-06T22:06:44.616550",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "26.0.0-ea.33",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B33/sapmachine-jre-26-ea.33_linux-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.33"
   }
 ]
