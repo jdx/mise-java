@@ -48031,5 +48031,109 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu26.0.43-beta-jdk26.0.0-beta.27-linux_musl_x64.tar.gz",
     "vendor": "zulu",
     "version": "26.0.43.0"
+  },
+  {
+    "checksum": "sha256:032c8fbc624f1cd2fabc8961375776d87ad50f8f917f2175907627e9c3d8990c",
+    "created_at": "2026-02-06T22:06:44.616550",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "26.0.0-ea.33",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B33/sapmachine-jre-26-ea.33_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.33"
+  },
+  {
+    "checksum": "sha256:142e800e47d81149ef01ca1a468658f574aaaa5c2ead899179fbf59d84fe5f30",
+    "created_at": "2026-02-06T22:06:44.616550",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.0-ea.7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B7/sapmachine-jre-27-ea.7_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.7"
+  },
+  {
+    "checksum": "sha256:1321bd4f6ac5754fb2be1996be904b91a7597c8114ed533741114291f25c86be",
+    "created_at": "2026-02-06T22:06:44.616550",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0-ea.7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B7/sapmachine-jdk-27-ea.7_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.7"
+  },
+  {
+    "checksum": "sha256:e1db41f533ae10203881d02a605e2c1e4c0ddde771359193c4fdb99b9be0908f",
+    "created_at": "2026-02-06T22:06:44.616550",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.0-ea.33",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B33/sapmachine-jdk-26-ea.33_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.33"
+  },
+  {
+    "checksum": "sha256:730f08882a8e2ed5078bba0ce419a250c065b2b575fa41d8ee084926599a6ede",
+    "created_at": "2026-02-06T22:06:44.616550",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "26.0.0-ea.33",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B33/sapmachine-jre-26-ea.33_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.33"
+  },
+  {
+    "checksum": "sha256:de943ec256b2654a173673b8d7070d3402540b13ed5170d30a4596efb8659c28",
+    "created_at": "2026-02-06T22:06:44.616550",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.0-ea.33",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B33/sapmachine-jdk-26-ea.33_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.33"
+  },
+  {
+    "checksum": "sha256:4a026f7986e228713a9e0b5550a727c0308fb2f4c7ce28159381fa33b652ef3d",
+    "created_at": "2026-02-06T22:06:44.616550",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0-ea.7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B7/sapmachine-jdk-27-ea.7_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.7"
+  },
+  {
+    "checksum": "sha256:f1c39e3d4f6e46b461f10fa3c939e37fe694cfb13bba5fd325a75837aa107619",
+    "created_at": "2026-02-06T22:06:44.616550",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.0-ea.7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B7/sapmachine-jre-27-ea.7_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.7"
   }
 ]
