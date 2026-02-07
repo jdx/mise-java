@@ -32,7 +32,7 @@ impl Vendor for Dragonwell {
     }
 
     fn fetch_data(&self, jvm_data: &mut HashSet<JvmData>) -> eyre::Result<()> {
-        for version in &["8", "11", "17", "21"] {
+        for version in &["8", "11", "17", "21", "25"] {
             debug!("[dragonwell] fetching releases for version: {version}");
             let repo = format!("dragonwell-project/dragonwell{version}");
             let releases = github::list_releases(repo.as_str())?;
