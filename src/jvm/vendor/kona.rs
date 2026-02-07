@@ -31,7 +31,7 @@ impl Vendor for Kona {
     }
 
     fn fetch_data(&self, jvm_data: &mut HashSet<JvmData>) -> eyre::Result<()> {
-        for version in &["8", "11", "17", "21"] {
+        for version in &["8", "11", "17", "21", "25"] {
             debug!("[kona] fetching releases for version: {version}");
             let repo = format!("Tencent/TencentKona-{version}");
             let releases = github::list_releases(&repo)?;
