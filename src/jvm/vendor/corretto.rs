@@ -30,7 +30,9 @@ impl Vendor for Corretto {
     }
 
     fn fetch_data(&self, jvm_data: &mut HashSet<JvmData>) -> Result<()> {
-        let versions = ["8", "11", "jdk", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26"];
+        let versions = [
+            "8", "11", "jdk", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26",
+        ];
         for version in versions.iter() {
             debug!("[corretto] fetching releases for version: {version}");
             let repo = format!("corretto/corretto-{version}");
