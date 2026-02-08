@@ -48135,5 +48135,43 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B7/sapmachine-jre-27-ea.7_linux-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "27.0.0-ea.7"
+  },
+  {
+    "checksum": "sha256:26424619f5fc68be80026db27b8d73d0e36e791df4b4c4e8dbee4edae1f8ffeb",
+    "created_at": "2026-02-08T22:08:32.807830",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0-ea+8",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk27/8/GPL/openjdk-27-ea+8_linux-x64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "27.0.0-ea+8"
+  },
+  {
+    "checksum": "sha256:d1cbf1f297e03667686eaf6ebfbdfb3fccc0dc94eb22971fb19b139bcf5f9117",
+    "created_at": "2026-02-08T22:08:39.771478",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.0.34.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/26.0.0.34.1/amazon-corretto-26.0.0.34.1-alpine-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "26.0.0.34.1"
+  },
+  {
+    "checksum": "sha256:07bd1f9f1982e34ac67dc2782c4bd619e5b280685e5e7baf4965c2f74e5f9536",
+    "created_at": "2026-02-08T22:08:39.771478",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.0.34.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/26.0.0.34.1/amazon-corretto-26.0.0.34.1-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "26.0.0.34.1"
   }
 ]

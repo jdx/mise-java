@@ -53499,5 +53499,53 @@
     "url": "https://download.java.net/java/GA/jdk26/c3cc523845074aa0af4f5e1e1ed4151d/34/GPL/openjdk-26_linux-aarch64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "26.0.0"
+  },
+  {
+    "checksum": "sha256:0c3d0f63a502ecceb510aa5317172af57dbee08e061226bb7f645e1a1b285a49",
+    "created_at": "2026-02-08T22:08:38.904048",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0.0.1.36",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell25/releases/download/dragonwell-standard-25.0.0.0.1%2B36_jdk-25.0.0-ga/Alibaba_Dragonwell_Standard_25.0.0.0.1.36_aarch64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "25.0.0.0.1.36"
+  },
+  {
+    "checksum": null,
+    "created_at": "2026-02-08T22:08:38.904048",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2.0.2.10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell25/releases/download/dragonwell-standard-25.0.2.0.2%2B10_jdk-25.0.2-ga/Alibaba_Dragonwell_Standard_25.0.2.0.2.10_aarch64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "25.0.2.0.2.10"
+  },
+  {
+    "checksum": "md5:e686200b3d494637cbf53aba4c8f54d4",
+    "created_at": "2026-02-08T22:08:38.933333",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-25/releases/download/TencentKona-25.0.2/TencentKona-25.0.2.b1-jdk_linux-aarch64.tar.gz",
+    "vendor": "kona",
+    "version": "25.0.2.b1"
+  },
+  {
+    "checksum": "md5:63bb563f3bca10779fb4da34654389d9",
+    "created_at": "2026-02-08T22:08:38.933333",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.1.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-25/releases/download/TencentKona-25.0.1/TencentKona-25.0.1.b1-jdk_linux-aarch64.tar.gz",
+    "vendor": "kona",
+    "version": "25.0.1.b1"
   }
 ]

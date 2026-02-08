@@ -50220,5 +50220,33 @@
     "url": "https://download.java.net/java/GA/jdk26/c3cc523845074aa0af4f5e1e1ed4151d/34/GPL/openjdk-26_macos-aarch64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "26.0.0"
+  },
+  {
+    "checksum": "md5:41ce6c83bf5c5cd648e80de30a9d5cca",
+    "created_at": "2026-02-08T22:08:38.933333",
+    "features": [
+      "notarized"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.1.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-25/releases/download/TencentKona-25.0.1/TencentKona-25.0.1.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "vendor": "kona",
+    "version": "25.0.1.b1"
+  },
+  {
+    "checksum": "md5:54bc3f274486082a3c5cc5baaf76409c",
+    "created_at": "2026-02-08T22:08:38.933333",
+    "features": [
+      "notarized"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-25/releases/download/TencentKona-25.0.2/TencentKona-25.0.2.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "vendor": "kona",
+    "version": "25.0.2.b1"
   }
 ]
