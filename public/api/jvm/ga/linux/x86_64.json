@@ -74715,5 +74715,69 @@
     "url": "https://download.java.net/java/GA/jdk26/c3cc523845074aa0af4f5e1e1ed4151d/34/GPL/openjdk-26_linux-x64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "26.0.0"
+  },
+  {
+    "checksum": "sha256:0a720d7d2182215b1ab7235a0ee890c6632b4f1e3c70483a8c887f9ca7c30450",
+    "created_at": "2026-02-08T22:08:38.904048",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0.0.1.36",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell25/releases/download/dragonwell-standard-25.0.0.0.1%2B36_jdk-25.0.0-ga/Alibaba_Dragonwell_Standard_25.0.0.0.1.36_x64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "25.0.0.0.1.36"
+  },
+  {
+    "checksum": "sha256:ab916f162741a4af4806c90274b4c11ed68767b7facb5d4cf445a3d5b6917310",
+    "created_at": "2026-02-08T22:08:38.904048",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2.0.2.10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell25/releases/download/dragonwell-standard-25.0.2.0.2%2B10_jdk-25.0.2-ga/Alibaba_Dragonwell_Standard_25.0.2.0.2.10_x64_alpine-linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "25.0.2.0.2.10"
+  },
+  {
+    "checksum": "sha256:6e3fbb6498ff5abf70582de197207ca9377af4a1a74af9ab85e51a3a225deeef",
+    "created_at": "2026-02-08T22:08:38.904048",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0.0.1.36",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell25/releases/download/dragonwell-standard-25.0.0.0.1%2B36_jdk-25.0.0-ga/Alibaba_Dragonwell_Standard_25.0.0.0.1.36_x64_alpine-linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "25.0.0.0.1.36"
+  },
+  {
+    "checksum": "md5:ae9ab6bbdffcbbb89f8c424795a0d739",
+    "created_at": "2026-02-08T22:08:38.933333",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.1.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-25/releases/download/TencentKona-25.0.1/TencentKona-25.0.1.b1-jdk_linux-x86_64.tar.gz",
+    "vendor": "kona",
+    "version": "25.0.1.b1"
+  },
+  {
+    "checksum": "md5:da2ac06be32f4ee271146b4fe63bd76f",
+    "created_at": "2026-02-08T22:08:38.933333",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-25/releases/download/TencentKona-25.0.2/TencentKona-25.0.2.b1-jdk_linux-x86_64.tar.gz",
+    "vendor": "kona",
+    "version": "25.0.2.b1"
   }
 ]

@@ -30436,5 +30436,29 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu26.0.43-beta-jdk26.0.0-beta.27-macosx_x64.tar.gz",
     "vendor": "zulu",
     "version": "26.0.43.0"
+  },
+  {
+    "checksum": "sha256:edff1b1b7235b8e8e58bfd77c2f6111f9e0d708a716c4ead95643e9f38d4d181",
+    "created_at": "2026-02-08T22:08:32.807830",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0-ea+8",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk27/8/GPL/openjdk-27-ea+8_macos-x64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "27.0.0-ea+8"
+  },
+  {
+    "checksum": "sha256:3f4e31b918ab5bd03d50595c6da47364e7f993cd264aa1026b6fb518b98a722f",
+    "created_at": "2026-02-08T22:08:39.771478",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.0.34.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/26.0.0.34.1/amazon-corretto-26.0.0.34.1-macosx-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "26.0.0.34.1"
   }
 ]
