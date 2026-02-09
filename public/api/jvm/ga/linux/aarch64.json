@@ -53547,5 +53547,133 @@
     "url": "https://github.com/Tencent/TencentKona-25/releases/download/TencentKona-25.0.1/TencentKona-25.0.1.b1-jdk_linux-aarch64.tar.gz",
     "vendor": "kona",
     "version": "25.0.1.b1"
+  },
+  {
+    "checksum": "sha256:fe969e29f3209f31864740f5373ba421ca7bbfcc078516b54f2db3c2c52a41d3",
+    "created_at": "2026-02-09T22:13:31.732860",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.0",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-23.1.10.0-Final/mandrel-java21-linux-aarch64-23.1.10.0-Final.tar.gz",
+    "vendor": "mandrel",
+    "version": "23.1.10.0-Final+java21"
+  },
+  {
+    "checksum": "sha256:cd35e69b328621cca07de110f5bd307e04e4614ddc4c3d00e35393adb28c39e8",
+    "created_at": "2026-02-09T22:13:31.732860",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-25.0.2.0-Final/mandrel-java25-linux-aarch64-25.0.2.0-Final.tar.gz",
+    "vendor": "mandrel",
+    "version": "25.0.2.0-Final+java25"
+  },
+  {
+    "checksum": "sha512:25be78cd4f7347fbb64a909969b88c9ca8fdf46c057dc3aa2446cd983f04ad49bdbe05094b70a59f63ca16f37f6cc3626a11e590b0392309387eaee3ca009b9e",
+    "created_at": "2026-02-09T22:13:31.768769",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2-b315.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.2-linux-aarch64-b315.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b315.62"
+  },
+  {
+    "checksum": "sha512:6a4cc4c4459d921bb953e25fb6ae9210d07385fdb86f84df5e5684e0a0715d16c014ca2abcf27c2b63c0e0fd851fa643aadc19b0b602b55f40eeee0bf04d5008",
+    "created_at": "2026-02-09T22:13:31.768769",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2-b315.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.2-linux-aarch64-b315.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b315.62"
+  },
+  {
+    "checksum": "sha512:7ae5a4137f429e30a23b33595f72e3f5c96b9030b1df2cb41384b721492d0accfd34c5396ee8597cc87714fc86b9fd948a176662cba811d41f4c90a89631cd26",
+    "created_at": "2026-02-09T22:13:31.768769",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2-b315.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_lb-25.0.2-linux-aarch64-b315.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b315.62"
+  },
+  {
+    "checksum": "sha512:65a175303baf180ed7a0e94b7c98a62370c0946377ae2ea6fc0d07fb362b7db130fd41a693bd2365a02353b30fb29ea321ca697e584d57119530dc47f8d9cbb0",
+    "created_at": "2026-02-09T22:13:31.768769",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2-b315.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.2-linux-musl-aarch64-b315.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b315.62"
+  },
+  {
+    "checksum": "sha512:0f08df0211fe3559df058b9a86d054d261bc074db8f30cef4947b3456d0e0991eff673ecd6c966903f37d95051506235c131e50e997c3eacc51b732925d9a520",
+    "created_at": "2026-02-09T22:13:31.768769",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.2-b315.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.2-linux-musl-aarch64-b315.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b315.62"
+  },
+  {
+    "checksum": "sha512:34d6736883fa053dc1421d4221a430ca58e3ebc3a01e2af29d9ded0a6369d73b6fa98511d84abfc013830502f9b055acb1cd4b7ca3cce5db843eeb0750477ba4",
+    "created_at": "2026-02-09T22:13:31.768769",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.2-b315.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.2-linux-aarch64-b315.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b315.62"
+  },
+  {
+    "checksum": "sha512:26ea3f6574002cf71ab28ae5a8dfe60abc8a1fae581bcac81cb917d2acd7652f66cd0fba7862a6b8eab80c9fb79622a2d08d5abcdacff1256e5f254876366306",
+    "created_at": "2026-02-09T22:13:31.768769",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.2-b315.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_lb-25.0.2-linux-aarch64-b315.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b315.62"
+  },
+  {
+    "checksum": "sha512:d592bd8c1e0790a140fd446526352cdb86ffdf9b9a4df09c8c7fc16dd73abed7b635b80d2d2a41108bdedcc634367e2df86179a323989431963f6f359f409d2a",
+    "created_at": "2026-02-09T22:13:31.768769",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.2-b315.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25.0.2-linux-aarch64-b315.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b315.62"
   }
 ]
