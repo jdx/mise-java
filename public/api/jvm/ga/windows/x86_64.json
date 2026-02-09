@@ -49245,5 +49245,171 @@
     "url": "https://github.com/Tencent/TencentKona-25/releases/download/TencentKona-25.0.2/TencentKona-25.0.2.b1_jdk_windows-x86_64_signed.zip",
     "vendor": "kona",
     "version": "25.0.2.b1"
+  },
+  {
+    "checksum": "sha256:722725CFD5E67CCCF4E0B985A9970C40CF6C95BF97E18E330188A8F1FABF9DB9",
+    "created_at": "2026-02-09T22:13:31.732860",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.0",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-25.0.2.0-Final/mandrel-java25-windows-amd64-25.0.2.0-Final.zip",
+    "vendor": "mandrel",
+    "version": "25.0.2.0-Final+java25"
+  },
+  {
+    "checksum": "sha256:62DBBB274328AAE2B150429681F9CC9D1D5636B8AC905B8734E9E4BD2C032B65",
+    "created_at": "2026-02-09T22:13:31.732860",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.0",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-23.1.10.0-Final/mandrel-java21-windows-amd64-23.1.10.0-Final.zip",
+    "vendor": "mandrel",
+    "version": "23.1.10.0-Final+java21"
+  },
+  {
+    "checksum": "sha512:1451424ae1adee5b929a75b58ba15499567d593a0533291bf0dc8a8539e82f3a00e60bf630fde71b218f42701e37641627343c945f4d662d51eeef91cdcad2f3",
+    "created_at": "2026-02-09T22:13:31.768769",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.2-b315.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25.0.2-windows-x64-b315.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b315.62"
+  },
+  {
+    "checksum": "sha512:355676c42233e53b79c62e5bee8e253ddf85979d4460f017ce9c77bfac59216a38a214741f79c24b991dc11a5865cd28a4c3e4af5e99b2a4ebad8fe9639dc1a2",
+    "created_at": "2026-02-09T22:13:31.768769",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.2-b315.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.2-windows-x64-b315.62_pdb.zip",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b315.62"
+  },
+  {
+    "checksum": "sha512:65fe585c442b625833e4fc7e25e4dd6628406f7a5ffe1ec75033c41280e5ec3f3c79ccd5d3c77b872ff205b1ba039a778328a6e1395800778872c470960fc057",
+    "created_at": "2026-02-09T22:13:31.768769",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2-b315.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.2-windows-x64-b315.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b315.62"
+  },
+  {
+    "checksum": "sha512:f00e525cb211d90e7617b955b87d4b6d1189f7be0e7f98b37f4879b7f328ece23bf0b0c3d45813ab4e63ebe825d3c723abda354770e1ccc195e0bffb19b17481",
+    "created_at": "2026-02-09T22:13:31.768769",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "25.0.2-b315.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.2-windows-x64-b315.62.zip",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b315.62"
+  },
+  {
+    "checksum": "sha512:0f8b342a1afb807d8b96c5c31e676340f64a17b2fd58e84d30c247629a78badd4eb0efbbbd6cfe62fd69d0b17ed9d998f1453e53239ac2b5b8178156d623c477",
+    "created_at": "2026-02-09T22:13:31.768769",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2-b315.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.2-windows-x64-b315.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b315.62"
+  },
+  {
+    "checksum": "sha512:ffb7795754ad9a28bcd03e30e881992c8d6111c7be7aefec2ce2a46c595391267622dfca300f53b4a5ff52ad6b1906e9a14d8dec82aeec97f7f2a3ad65570c9b",
+    "created_at": "2026-02-09T22:13:31.768769",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.2-b315.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.2-windows-x64-b315.62.zip",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b315.62"
+  },
+  {
+    "checksum": "sha512:d753957298e06cd23b7eb18e6e469e4adbf47b9143bf372075af14d7cfa1ba883f4d91adc7bb0a3e38d0faae03e116452bff3e3f1a289ed8c8da350684dedce1",
+    "created_at": "2026-02-09T22:13:31.768769",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "25.0.2-b315.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25.0.2-windows-x64-b315.62.zip",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b315.62"
+  },
+  {
+    "checksum": "sha512:54b76f1ecc205468b25f6dfb6af801dbec66a937812e036d59100486c5ca73ca58150916e7d178d72f8ce609ee2f252d6cd01f258bbba47c9303e759183bb9eb",
+    "created_at": "2026-02-09T22:13:31.768769",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.2-b315.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.2-windows-x64-b315.62_pdb.zip",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b315.62"
+  },
+  {
+    "checksum": "sha512:7cb52726e3cf4ce883595d9efe835acf41f5fa50844a5b3f5563bd9a55aaed3b8b86ffd839c5c6f9ec44bb28955b618ef206925e16a04ba62a3e49fcedee7ee1",
+    "created_at": "2026-02-09T22:13:31.768769",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.2-b315.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.2-windows-x64-b315.62.zip",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b315.62"
+  },
+  {
+    "checksum": "sha512:adf44b29447d4e9d7b7f1c190cfdcc23d6c71de3e49e50833a0135021597c50ac0748be0b21a7473c366068eb6d67bc8bd520db941373eebaf345463e08c1f34",
+    "created_at": "2026-02-09T22:13:31.768769",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.2-b315.62",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.2-windows-x64-b315.62.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b315.62"
+  },
+  {
+    "checksum": "sha256:0c158e848dbe57ee0181ee9061e375dedaffc56f5770ce955a34e345d08f71fe",
+    "created_at": "2026-02-09T22:13:39.668770",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.2.0.2.10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell25/releases/download/dragonwell-standard-25.0.2.0.2%2B10_jdk-25.0.2-ga/Alibaba_Dragonwell_Standard_25.0.2.0.2.10_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "25.0.2.0.2.10"
   }
 ]
