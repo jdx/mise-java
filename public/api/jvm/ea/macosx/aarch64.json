@@ -20368,5 +20368,53 @@
     "url": "https://corretto.aws/downloads/resources/26.0.0.34.1/amazon-corretto-26.0.0.34.1-macosx-aarch64.tar.gz",
     "vendor": "corretto",
     "version": "26.0.0.34.1"
+  },
+  {
+    "checksum": "sha256:375bf5ed9a5e71adb161b1c7bc16cc723ccdee4f9a9709b1e8bdbff37a5593aa",
+    "created_at": "2026-02-12T22:09:44.492779",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.19-ea.1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.19%2B1/sapmachine-jdk-17.0.19-ea.1_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.19-ea.1"
+  },
+  {
+    "checksum": "sha256:c59da4a3350de3e8e106e30d5fe30015fff39971021e24856a16434c9c693897",
+    "created_at": "2026-02-12T22:09:44.492779",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.19-ea.1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.19%2B1/sapmachine-jre-17.0.19-ea.1_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.19-ea.1"
+  },
+  {
+    "checksum": "sha256:1a159ab19b92dd06e90187206f40bcdf2ba3314a46586587c9120e78e05f3615",
+    "created_at": "2026-02-12T22:09:44.492779",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "26.0.0-ea.34",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B34/sapmachine-jre-26-ea.34_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.34"
+  },
+  {
+    "checksum": "sha256:9565d2ffa42e7569fd5198387bcfc630138abc5fd086b599c7c7fc059e89ecb6",
+    "created_at": "2026-02-12T22:09:44.492779",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.0-ea.34",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B34/sapmachine-jdk-26-ea.34_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "26.0.0-ea.34"
   }
 ]

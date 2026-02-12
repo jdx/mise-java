@@ -30460,5 +30460,29 @@
     "url": "https://corretto.aws/downloads/resources/26.0.0.34.1/amazon-corretto-26.0.0.34.1-macosx-x64.tar.gz",
     "vendor": "corretto",
     "version": "26.0.0.34.1"
+  },
+  {
+    "checksum": "sha256:c80aad7eb314e96765b556c65b1ff016b2e01d79d0addd606c181a32340b2f34",
+    "created_at": "2026-02-12T22:09:44.492779",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.19-ea.1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.19%2B1/sapmachine-jdk-17.0.19-ea.1_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.19-ea.1"
+  },
+  {
+    "checksum": "sha256:5d7e86dd07b5f06e2b037ae16de9d4f64f021e212b162bf99a437a92d9164b86",
+    "created_at": "2026-02-12T22:09:44.492779",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.19-ea.1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.19%2B1/sapmachine-jre-17.0.19-ea.1_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.19-ea.1"
   }
 ]
