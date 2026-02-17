@@ -50440,5 +50440,29 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.2-osx-aarch64-b329.66.tar.gz",
     "vendor": "jetbrains",
     "version": "25.0.2-b329.66"
+  },
+  {
+    "checksum": "sha256:af0eed971dfac7a3a1a66f39f43bde45a946228d9108edac280ebff5c91d37ae",
+    "created_at": "2026-02-17T22:09:13.911920",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.10.0.1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.10.0.1/sapmachine-jdk-21.0.10.0.1_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.10.0.1"
+  },
+  {
+    "checksum": "sha256:d576bc86ebdb801555e8c0d08c5d9e7b8827215c957bceeee28157701785466c",
+    "created_at": "2026-02-17T22:09:13.911920",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.10.0.1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.10.0.1/sapmachine-jre-21.0.10.0.1_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.10.0.1"
   }
 ]
