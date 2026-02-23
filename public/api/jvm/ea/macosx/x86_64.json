@@ -30616,5 +30616,29 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.11%2B2/sapmachine-jdk-21.0.11-ea.2_macos-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "21.0.11-ea.2"
+  },
+  {
+    "checksum": "sha256:9e42175180c23fec25f8e23234648cd355208ffe2fd5af201e9c340a0048b2b5",
+    "created_at": "2026-02-20T22:05:58.000823",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0-ea+10",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk27/10/GPL/openjdk-27-ea+10_macos-x64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "27.0.0-ea+10"
+  },
+  {
+    "checksum": "sha256:9f0a64492eec8655deaf8682600c04a7efc9894542c3b2742b33605091368e6e",
+    "created_at": "2026-02-23T22:16:20.979098",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.0.35.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/26.0.0.35.1/amazon-corretto-26.0.0.35.1-macosx-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "26.0.0.35.1"
   }
 ]
