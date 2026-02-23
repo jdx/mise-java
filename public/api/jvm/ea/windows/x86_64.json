@@ -28563,5 +28563,53 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26%2B35/sapmachine-jre-26-ea.35_windows-x64_bin.zip",
     "vendor": "sapmachine",
     "version": "26.0.0-ea.35"
+  },
+  {
+    "checksum": "sha256:d1432c88d30b58d092b5037125bd3a101e3c727da20c1c5a29a28543e9582f9c",
+    "created_at": "2026-02-19T22:08:38.127524",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "27.0.0-ea.9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B9/sapmachine-jdk-27-ea.9_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.9"
+  },
+  {
+    "checksum": "sha256:c090b2b31e7155e1dc67ee1a31beba2a2c766ed3f581cccb91c1255179ae2d0a",
+    "created_at": "2026-02-19T22:08:38.127524",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "27.0.0-ea.9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B9/sapmachine-jre-27-ea.9_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.9"
+  },
+  {
+    "checksum": "sha256:243b7c1e79f8514af5765815d8b878c7362cacf8a9c4312c5c9c9e7a1eeee3e9",
+    "created_at": "2026-02-20T22:05:58.000823",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "27.0.0-ea+10",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk27/10/GPL/openjdk-27-ea+10_windows-x64_bin.zip",
+    "vendor": "openjdk",
+    "version": "27.0.0-ea+10"
+  },
+  {
+    "checksum": "sha256:47d88838df4c27e940721b026803c352ef6e3679ed1cf85948de5f2dc74732b9",
+    "created_at": "2026-02-23T22:16:20.979098",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "26.0.0.35.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/26.0.0.35.1/amazon-corretto-26.0.0.35.1-windows-x64-jdk.zip",
+    "vendor": "corretto",
+    "version": "26.0.0.35.1"
   }
 ]

@@ -23489,5 +23489,67 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.11%2B2/sapmachine-jdk-21.0.11-ea.2_linux-aarch64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "21.0.11-ea.2"
+  },
+  {
+    "checksum": "sha256:f731e17aafbb34de1a742ad082322267169a8ea33b8329a8ba13cf0e58321dba",
+    "created_at": "2026-02-19T22:08:38.127524",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0-ea.9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B9/sapmachine-jdk-27-ea.9_linux-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.9"
+  },
+  {
+    "checksum": "sha256:c84c3cc37e1d44ac2b5326c82bac8829376897238a620e24593fdf3eca667593",
+    "created_at": "2026-02-19T22:08:38.127524",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.0-ea.9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B9/sapmachine-jre-27-ea.9_linux-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.9"
+  },
+  {
+    "checksum": "sha256:91f6dae354fee821c0052fdbe9acd9f894976596733268741b65d4a4a25ec686",
+    "created_at": "2026-02-20T22:05:58.000823",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0-ea+10",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk27/10/GPL/openjdk-27-ea+10_linux-aarch64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "27.0.0-ea+10"
+  },
+  {
+    "checksum": "sha256:3fb72c801247795867bd113fc8704c9c64754e8f83b19fa461b1efd224845f0b",
+    "created_at": "2026-02-23T22:16:20.979098",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.0.35.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/26.0.0.35.1/amazon-corretto-26.0.0.35.1-linux-aarch64.tar.gz",
+    "vendor": "corretto",
+    "version": "26.0.0.35.1"
+  },
+  {
+    "checksum": "sha256:685644d1d6fa6ae4774389c86d334ad9b3ef431731a4d7078f434447cc9e60f7",
+    "created_at": "2026-02-23T22:16:20.979098",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.0.35.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/26.0.0.35.1/amazon-corretto-26.0.0.35.1-alpine-linux-aarch64.tar.gz",
+    "vendor": "corretto",
+    "version": "26.0.0.35.1"
   }
 ]
