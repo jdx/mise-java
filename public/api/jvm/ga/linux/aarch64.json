@@ -54048,5 +54048,53 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu25.32.21-ca-crac-jre25.0.2-linux_aarch64.tar.gz",
     "vendor": "zulu",
     "version": "25.32.21.0"
+  },
+  {
+    "checksum": "sha256:cc1a194e9320b92f9c76a82be798424ccf175f43024ba209b0e006d6052ebaf5",
+    "created_at": "2026-02-25T22:10:58.903881",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.2+10.1_openj9-0.57.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25.0.2%2B10.1_openj9-0.57.0/ibm-semeru-open-jre_aarch64_linux_25.0.2.1.tar.gz",
+    "vendor": "semeru",
+    "version": "25.0.2+10.1_openj9-0.57.0"
+  },
+  {
+    "checksum": "sha256:a9fb6a2524378d7f49913406eded71013d9de853009a3e6df58fb27fa6fb727b",
+    "created_at": "2026-02-25T22:10:58.903881",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.30+7.1_openj9-0.57.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.30%2B7.1_openj9-0.57.0/ibm-semeru-open-jdk_aarch64_linux_11.0.30.1.tar.gz",
+    "vendor": "semeru",
+    "version": "11.0.30+7.1_openj9-0.57.0"
+  },
+  {
+    "checksum": "sha256:08fe20fbcb5c5ad8d9f32ce4c9aaa42388aeea30b2f16dcb4d28acd50df99375",
+    "created_at": "2026-02-25T22:10:58.903881",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2+10.1_openj9-0.57.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25.0.2%2B10.1_openj9-0.57.0/ibm-semeru-open-jdk_aarch64_linux_25.0.2.1.tar.gz",
+    "vendor": "semeru",
+    "version": "25.0.2+10.1_openj9-0.57.0"
+  },
+  {
+    "checksum": "sha256:d11853bdda82f9246e012e3f619bbd66c46924199ff2d0f31079bc9637a406c0",
+    "created_at": "2026-02-25T22:10:58.903881",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.30+7.1_openj9-0.57.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.30%2B7.1_openj9-0.57.0/ibm-semeru-open-jre_aarch64_linux_11.0.30.1.tar.gz",
+    "vendor": "semeru",
+    "version": "11.0.30+7.1_openj9-0.57.0"
   }
 ]

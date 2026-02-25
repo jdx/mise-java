@@ -30640,5 +30640,53 @@
     "url": "https://corretto.aws/downloads/resources/26.0.0.35.1/amazon-corretto-26.0.0.35.1-macosx-x64.tar.gz",
     "vendor": "corretto",
     "version": "26.0.0.35.1"
+  },
+  {
+    "checksum": "sha256:d4a95194fb2bcc75ae912926b89b1ebb82aa2d978a38dd9dfaac1da1fb342f6d",
+    "created_at": "2026-02-25T22:10:19.308018",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.19-ea.3",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.19%2B3/sapmachine-jdk-17.0.19-ea.3_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.19-ea.3"
+  },
+  {
+    "checksum": "sha256:6ffbc242311fd00f901e105c1931732b140a944241988f5e364154fa24fce445",
+    "created_at": "2026-02-25T22:10:19.308018",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.11-ea.3",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.11%2B3/sapmachine-jdk-21.0.11-ea.3_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.11-ea.3"
+  },
+  {
+    "checksum": "sha256:466f27ed70a42ab91db31a1278f27cac2e1a40451a0206c4e5edee2eb010c416",
+    "created_at": "2026-02-25T22:10:19.308018",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.11-ea.3",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.11%2B3/sapmachine-jre-21.0.11-ea.3_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.11-ea.3"
+  },
+  {
+    "checksum": "sha256:c33ecbcdef48cdf950ec666587bd397b4a971c03262ddd2545fe80861fafe75e",
+    "created_at": "2026-02-25T22:10:19.308018",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.19-ea.3",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.19%2B3/sapmachine-jre-17.0.19-ea.3_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.19-ea.3"
   }
 ]
