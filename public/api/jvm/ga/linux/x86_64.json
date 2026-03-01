@@ -75485,5 +75485,31 @@
     "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u482-b08.1_openj9-0.57.0/ibm-semeru-open-jre_x64_linux_8.0.482.1.tar.gz",
     "vendor": "semeru",
     "version": "8u482-b08.1_openj9-0.57.0"
+  },
+  {
+    "checksum": "sha256:ea9ce11aa7075b366077848704aff1f93136233cb28d2b5f019dadd110b6a1ee",
+    "created_at": "2026-02-28T22:05:36.883983",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.10.0.10.7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-standard-21.0.10.0.10%2B7_jdk-21.0.10-ga/Alibaba_Dragonwell_Standard_21.0.10.0.10.7_x64_alpine-linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "21.0.10.0.10.7"
+  },
+  {
+    "checksum": "sha256:de94de33aa08b9e5438df4d433eded93695b751d1287febe75f115062cee9db7",
+    "created_at": "2026-02-28T22:05:36.883983",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.10.0.10.7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-standard-21.0.10.0.10%2B7_jdk-21.0.10-ga/Alibaba_Dragonwell_Standard_21.0.10.0.10.7_x64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "21.0.10.0.10.7"
   }
 ]
