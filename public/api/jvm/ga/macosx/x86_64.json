@@ -60909,5 +60909,57 @@
     "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u482-b08.1_openj9-0.57.0/ibm-semeru-open-jdk_x64_mac_8.0.482.1.tar.gz",
     "vendor": "semeru",
     "version": "8u482-b08.1_openj9-0.57.0"
+  },
+  {
+    "checksum": "sha512:ee5fab3c5460a89e63947dc5ca76f7cfd8b22313c124cb1b2855ad832d36f690a7ca10cfe22d5c89ddb64d23a6becf813d217c1ba525197f7db093f8a27ac1ed",
+    "created_at": "2026-03-02T22:10:47.621119",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2-b329.70",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.2-osx-x64-b329.70.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b329.70"
+  },
+  {
+    "checksum": "sha512:a2fb469d8304a118f8f9f7cbb27e261ddb96ca2f143d327236be43bfdb0bf2e6befaa12e47d8c4d90995930c69912ee2227cc21d9b1e8859da2dc305c9d28c48",
+    "created_at": "2026-03-02T22:10:47.621119",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.2-b329.70",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25.0.2-osx-x64-b329.70.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b329.70"
+  },
+  {
+    "checksum": "sha512:c77a00f1cfd0f3664c1744d49591da61de341dfbce42bbe6db0155c666e04078f5e787077ca6d219f1a919598490a96a539ed84c5433bbcbcab7b7d52b4dceb2",
+    "created_at": "2026-03-02T22:10:47.621119",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.2-b329.70",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.2-osx-x64-b329.70.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b329.70"
+  },
+  {
+    "checksum": "sha512:cf815306340b2ada40828adcc70a07da0d593e77706b289efb2ff137347aedd8892a9b7d2db8107fbd008e6d96da6be2b306095a31a0ea1bec6cc4b6a51da7e3",
+    "created_at": "2026-03-02T22:10:47.621119",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2-b329.70",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.2-osx-x64-b329.70.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b329.70"
   }
 ]
