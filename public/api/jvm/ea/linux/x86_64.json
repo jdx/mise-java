@@ -49093,5 +49093,61 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.11%2B4/sapmachine-jdk-21.0.11-ea.4_linux-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "21.0.11-ea.4"
+  },
+  {
+    "checksum": "sha256:9c5c59315e3ca6bede9ce70be873bf2946cd19911445aaca60456a09672e6d58",
+    "created_at": "2026-03-05T22:06:58.865",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.19-ea.4",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.19%2B4/sapmachine-jdk-17.0.19-ea.4_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.19-ea.4"
+  },
+  {
+    "checksum": "sha256:234744ccbfac64c373b015224a26ca681ff57242f4c43a7985dc95bbb78f5eff",
+    "created_at": "2026-03-05T22:06:58.865",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0-ea.11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B11/sapmachine-jdk-27-ea.11_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.11"
+  },
+  {
+    "checksum": "sha256:d39ca0b7b3f050fc621ac37cc12a16aa40df1e052244688f784c9c076079dc79",
+    "created_at": "2026-03-05T22:06:58.865",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.0-ea.11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B11/sapmachine-jre-27-ea.11_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.11"
+  },
+  {
+    "checksum": "sha256:8300b26d7a186d3afd0f07b404f73c43bcc1918b9762d4b6a5ab5ef554beb325",
+    "created_at": "2026-03-05T22:06:58.865",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.19-ea.4",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.19%2B4/sapmachine-jre-17.0.19-ea.4_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.19-ea.4"
   }
 ]
