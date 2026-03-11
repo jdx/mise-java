@@ -33894,18 +33894,6 @@
     "version": "21.0.4"
   },
   {
-    "checksum": "sha256:7cbba13effe3d6ea0fb91d94644ef267d3e0183569a49a9899d0a181b8a194fb",
-    "created_at": "2025-03-28T22:04:28.081056",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "java_version": "10.0.2.13",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-10.0.2%2B13-0/sapmachine-jdk-10.0.2.13_linux-x64_bin.tar.gz",
-    "vendor": "sapmachine",
-    "version": "10.0.2.13"
-  },
-  {
     "checksum": "sha256:2af0c4e41ef93f78fde27df019c401d0b77de11eb630ab18cc47803dcf35ef64",
     "created_at": "2025-03-28T22:04:28.081056",
     "features": [],
@@ -35940,18 +35928,6 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.8/sapmachine-jdk-11.0.8_linux-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "11.0.8"
-  },
-  {
-    "checksum": "sha256:55a7dc05489d710571f2a1161a2d0c102515f4eafbe0d6c873b4a7f437ef7c0b",
-    "created_at": "2025-03-28T22:04:28.081056",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jre",
-    "java_version": "10.0.2.13",
-    "jvm_impl": "hotspot",
-    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-10.0.2%2B13-0/sapmachine-jre-10.0.2.13_linux-x64_bin.tar.gz",
-    "vendor": "sapmachine",
-    "version": "10.0.2.13"
   },
   {
     "checksum": "sha256:413a0791a6fa8651d24fd0e4471043a69f49be6e1f3e8ef7517bf5c1aa60b514",
@@ -75379,6 +75355,18 @@
     "version": "25.0.2+10.1_openj9-0.57.0"
   },
   {
+    "checksum": "sha256:f3f3e072a3f8887f0dea47ddeb724b9c063c02014c46896d341e9af108cca4d4",
+    "created_at": "2026-03-11T22:08:57.889187",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "10.46",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-10/sapmachine-jdk-10.46_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "10.46"
+  },
+  {
     "checksum": "sha256:eda3cce037d291e78ea4228e50b1a6b79e9e95cf6cfabc939305c1b25042509e",
     "created_at": "2026-02-25T22:10:58.903881",
     "features": [],
@@ -75829,5 +75817,217 @@
     "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-extended-11.0.30.27_jdk-11.0.30-ga/Alibaba_Dragonwell_Extended_11.0.30.27.7_x64_alpine-linux.tar.gz",
     "vendor": "dragonwell",
     "version": "11.0.30.27.7"
+  },
+  {
+    "checksum": "sha512:5d93f1d31c1b063e785ba9ec4f8137539bd1536a3dbf482fd7bb3bacb7d3a97a9bb671bc1c8b358ea1826f2d1e26bf2e327cb258633fc4ac5e1f3169f8df7dc3",
+    "created_at": "2026-03-10T22:09:10.202556",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.10-b1163.110",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_lb-21.0.10-linux-x64-b1163.110.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.10-b1163.110"
+  },
+  {
+    "checksum": "sha512:70ae96517f0732f8f28e62b402a5186d0de9034654304890b1d19df23b28ec8899f0b765379e71ecee1af83c1eaa3135e66e84ec6635e2c6812214371da7d7bf",
+    "created_at": "2026-03-10T22:09:10.202556",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.10-b1163.110",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.10-linux-x64-b1163.110.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.10-b1163.110"
+  },
+  {
+    "checksum": "sha512:a2e3910f6c0650923cea22ab8fe5596c15553b757cd85d4b5cd7e3b213f699c740a64a3016df96ffc9b845093b6ac737eb025d6bcbd3fd1868972c6722cfc7e2",
+    "created_at": "2026-03-10T22:09:10.202556",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.10-b1163.110",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.10-linux-x64-b1163.110.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.10-b1163.110"
+  },
+  {
+    "checksum": "sha512:93fb8ef12f982c7277a5e52e603a90c08f18306ba9c78308d3be7274413d37dbcdd32208c9b2f74e97f271e17d6cf684c081ac3e2ada09c8c2958992618309c7",
+    "created_at": "2026-03-10T22:09:10.202556",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.10-b1163.110",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.10-linux-musl-x64-b1163.110.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.10-b1163.110"
+  },
+  {
+    "checksum": "sha512:ee5c6b56006b992f01b7f68f4538b5da54040a5f7206619d4415d0eb95d90fd12fceb8af05619768db0a0a329b010e73d8d90d0b78051d88c82e3d975c125ed1",
+    "created_at": "2026-03-10T22:09:10.202556",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.10-b1163.110",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_lb-21.0.10-linux-x64-b1163.110.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.10-b1163.110"
+  },
+  {
+    "checksum": "sha512:f889e7acf7b1acb37848e8fcec4305bc94013fd894b0e327575e00aea7ff99750d852f67e5f22d46427f0bf7032a516896b6e28d502b86402dfc53b3da3e120b",
+    "created_at": "2026-03-10T22:09:10.202556",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.10-b1163.110",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.10-linux-x64-b1163.110.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.10-b1163.110"
+  },
+  {
+    "checksum": "sha512:3cf5da452128380758674f71f0c1587b318c6f1836bc893c3a6dc229c3c55f575645b53347b8f4a004303a1ecadeff66cf6369b94139a13c81f041b510135468",
+    "created_at": "2026-03-10T22:09:10.202556",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.10-b1163.110",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.10-linux-musl-x64-b1163.110.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.10-b1163.110"
+  },
+  {
+    "checksum": "sha512:7abd35d670ca3110b7a8c1fcc4c06441e6eca693fc9f69bc0a1b3cba240b7f4313f123df1ce26273582d8f6a0c41ece6c05157983f669c56efdd8c49265b7bb1",
+    "created_at": "2026-03-10T22:09:10.202556",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.10-b1163.110",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.10-linux-x64-b1163.110.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.10-b1163.110"
+  },
+  {
+    "checksum": "sha256:e59fb5c426da0433a15d4f49198ad37fdd8f124b7ee82d3ca22711190090be1f",
+    "created_at": "2026-03-11T22:08:57.889187",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.1.13",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.1/sapmachine-jre-11.0.1.13_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "11.0.1.13"
+  },
+  {
+    "checksum": "sha256:8d367d49aef22cbc4be938905da93650193564c10881289dd372c076ee291519",
+    "created_at": "2026-03-11T22:08:57.889187",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "10.0.1.10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-10.0.1/sapmachine-jdk-10.0.1.10_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "10.0.1.10"
+  },
+  {
+    "checksum": "sha256:fd1986fba3d9a6ecc32aeacf1132d832f4f6ac5f299377b21d07eb5c729729ed",
+    "created_at": "2026-03-11T22:08:57.889187",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "10.0.1.10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-10.0.1/sapmachine-jre-10.0.1.10_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "10.0.1.10"
+  },
+  {
+    "checksum": "sha256:26117204d872fec0af05a5c0689e6d548366372a191a22730b43f7a01bcff718",
+    "created_at": "2026-03-11T22:08:57.889187",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "10.0.2.13",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-10.0.2/sapmachine-jdk-10.0.2.13_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "10.0.2.13"
+  },
+  {
+    "checksum": "sha256:2af0c4e41ef93f78fde27df019c401d0b77de11eb630ab18cc47803dcf35ef64",
+    "created_at": "2026-03-11T22:08:57.889187",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "10.46",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-10/sapmachine-jre-10.46_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "10.46"
+  },
+  {
+    "checksum": "sha256:41d70861c71d33ed437d28f3aaa0a22543b83271c35b7910cd8613961dee3d2f",
+    "created_at": "2026-03-11T22:08:57.889187",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.1.13",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.1/sapmachine-jdk-11.0.1.13_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "11.0.1.13"
+  },
+  {
+    "checksum": "sha256:5d57d3b8ccafb40324cad3882ce80681c16b003ea0822b0e958b6cf6314bd15e",
+    "created_at": "2026-03-11T22:08:57.889187",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.28",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11/sapmachine-jre-11.28_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "11.28"
+  },
+  {
+    "checksum": "sha256:2236f8c407134c4b12ce136c874018e03429940603f176b67c27a7eaee04fc95",
+    "created_at": "2026-03-11T22:08:57.889187",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.28",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11/sapmachine-jdk-11.28_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "11.28"
+  },
+  {
+    "checksum": "sha256:8d4a207454c7dbd3ca2be00286cffedbf68717012af70d03c84ade7033585b21",
+    "created_at": "2026-03-11T22:08:57.889187",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "10.0.2.13",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-10.0.2/sapmachine-jre-10.0.2.13_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "10.0.2.13"
   }
 ]
