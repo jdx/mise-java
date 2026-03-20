@@ -50285,5 +50285,189 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.10-windows-x64-b1163.110.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.10-b1163.110"
+  },
+  {
+    "checksum": "sha256:10da2d30c6e59f4b2feab5da858b72a3d2956f875bebf86c73949cea843cbbdd",
+    "created_at": "2026-03-17T22:08:21.616921",
+    "features": [
+      "crac"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "26.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu26.28.61-ca-crac-jdk26.0.0-win_x64.zip",
+    "vendor": "zulu",
+    "version": "26.28.61.0"
+  },
+  {
+    "checksum": "sha256:3901515df9438cd912f020c084911e8559d329c2aced327c974e231852d07e20",
+    "created_at": "2026-03-17T22:08:21.616921",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "26.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu26.28.59-ca-jre26.0.0-win_x64.zip",
+    "vendor": "zulu",
+    "version": "26.28.59.0"
+  },
+  {
+    "checksum": "sha256:ce804f03bebecdc119dde240b7cf533821c815fd5a43edf72edda4e8e63e6e60",
+    "created_at": "2026-03-17T22:08:21.616921",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "26.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu26.28.63-ca-fx-jre26.0.0-win_x64.zip",
+    "vendor": "zulu",
+    "version": "26.28.63.0"
+  },
+  {
+    "checksum": "sha256:c112d51af20e00090aff3af2b11cb39e94362922c40c90623098064a5d1cd8ed",
+    "created_at": "2026-03-17T22:08:21.616921",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "26.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu26.28.59-ca-jdk26.0.0-win_x64.zip",
+    "vendor": "zulu",
+    "version": "26.28.59.0"
+  },
+  {
+    "checksum": "sha256:c84ce5e38329c259ac020270f06b8fdb15879c0d4c0a8fcaf4158eac70f7ef26",
+    "created_at": "2026-03-17T22:08:21.616921",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "26.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu26.28.63-ca-fx-jdk26.0.0-win_x64.zip",
+    "vendor": "zulu",
+    "version": "26.28.63.0"
+  },
+  {
+    "checksum": "sha256:21fb9521d0313fdc0e7c76e646eaa884d224abaf048c5b5c4f3a256c4e1fa30a",
+    "created_at": "2026-03-17T22:10:11.887341",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "26.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/java/26/latest/jdk-26_windows-x64_bin.zip",
+    "vendor": "oracle",
+    "version": "26.0.0"
+  },
+  {
+    "checksum": "sha256:6c8f5656a1a132193e9d5b3299278c3290bd7608f2d3f11f61a73de4fd0cc772",
+    "created_at": "2026-03-17T22:10:15.209311",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "26.0.0.35.2",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/26.0.0.35.2/amazon-corretto-26.0.0.35.2-windows-x64-jdk.zip",
+    "vendor": "corretto",
+    "version": "26.0.0.35.2"
+  },
+  {
+    "checksum": "sha256:3387870d83372f5309f503c00e97d09d9f40f052051c6121a6708408be4793f8",
+    "created_at": "2026-03-18T22:09:12.500575",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "26.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26/sapmachine-jdk-26_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "26.0.0"
+  },
+  {
+    "checksum": "sha256:aba0e2820a4e5c01281e8f6ad3144db3ac96cf67959a92a3ea09bb950f717208",
+    "created_at": "2026-03-18T22:09:12.500575",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "26.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26/sapmachine-jre-26_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "26.0.0"
+  },
+  {
+    "checksum": "sha1:147e5fb2cae8c3def71be9d71fb83ce6994b031f",
+    "created_at": "2026-03-19T22:07:13.524838",
+    "features": [
+      "lite"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "26.0.0+37",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/26%2B37/bellsoft-jdk26%2B37-windows-amd64-lite.zip",
+    "vendor": "liberica",
+    "version": "26.0.0+37"
+  },
+  {
+    "checksum": "sha1:62af2d408e7d9f805e331e2da67855b2c3e1b3fa",
+    "created_at": "2026-03-19T22:07:13.524838",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "26.0.0+37",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/26%2B37/bellsoft-jre26%2B37-windows-amd64.zip",
+    "vendor": "liberica",
+    "version": "26.0.0+37"
+  },
+  {
+    "checksum": "sha1:363688e8fc69b43b057630c42d0e65aa32ca8eb5",
+    "created_at": "2026-03-19T22:07:13.524838",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "26.0.0+37",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/26%2B37/bellsoft-jdk26%2B37-windows-amd64.zip",
+    "vendor": "liberica",
+    "version": "26.0.0+37"
+  },
+  {
+    "checksum": "sha1:70923ce8f9445f4d9e38a3cf23d835c46ec114c2",
+    "created_at": "2026-03-19T22:07:13.524838",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "26.0.0+37",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/26%2B37/bellsoft-jdk26%2B37-windows-amd64-full.zip",
+    "vendor": "liberica",
+    "version": "26.0.0+37"
+  },
+  {
+    "checksum": "sha1:1ea28f37eda35671e81138a5cb82530083520393",
+    "created_at": "2026-03-19T22:07:13.524838",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "26.0.0+37",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/26%2B37/bellsoft-jre26%2B37-windows-amd64-full.zip",
+    "vendor": "liberica",
+    "version": "26.0.0+37"
   }
 ]
