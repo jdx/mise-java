@@ -76394,5 +76394,63 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/26%2B37/bellsoft-jre26%2B37-linux-x64-musl.tar.gz",
     "vendor": "liberica",
     "version": "26.0.0+37"
+  },
+  {
+    "checksum": "sha256:2ebb784450f158e628f5717034aac3126591a6ef03498290297f2f46d8f886b1",
+    "created_at": "2026-03-23T22:06:29.994874",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.32.23-ca-crac-jdk25.0.2-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.32.23.0"
+  },
+  {
+    "checksum": "sha256:6560046716d80d1817007a04d637ce008dcea80b8ee73a389cd9b18701f53b5a",
+    "created_at": "2026-03-23T22:06:29.994874",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.32.23-ca-crac-jdk25.0.2-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.32.23.0"
+  },
+  {
+    "checksum": "sha256:74578ab7f3956dd10da9c54f4fa7c5e855fd2bf15ca668c25f5613dcd3a5f55d",
+    "created_at": "2026-03-23T22:06:29.994874",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.32.23-ca-crac-jre25.0.2-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.32.23.0"
+  },
+  {
+    "checksum": "sha256:0aad60af1f5e174ff2024544dbd1486f745e5dbc54984faeadb169e3834becb4",
+    "created_at": "2026-03-23T22:06:29.994874",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.32.23-ca-crac-jre25.0.2-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.32.23.0"
   }
 ]

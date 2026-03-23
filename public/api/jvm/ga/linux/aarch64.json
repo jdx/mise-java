@@ -54871,5 +54871,48 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/26%2B37/bellsoft-jdk26%2B37-linux-aarch64-musl-lite.tar.gz",
     "vendor": "liberica",
     "version": "26.0.0+37"
+  },
+  {
+    "checksum": "sha256:e0f0634974a4d62777dda6664e2fda146cca05f20f2393eeb8014b9877bf004e",
+    "created_at": "2026-03-23T22:06:29.994874",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.32.23-ca-crac-jdk25.0.2-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.32.23.0"
+  },
+  {
+    "checksum": "sha256:83f4621c04cf8f8d2ce8ce82e7505b85897d9e5b4cadb5472a1c679bc27a41bd",
+    "created_at": "2026-03-23T22:06:29.994874",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.32.23-ca-crac-jdk25.0.2-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.32.23.0"
+  },
+  {
+    "checksum": "sha256:3d2d89b01a8a16f3803fca407ec283839cf82ace5af75c632fecbca4ff254b81",
+    "created_at": "2026-03-23T22:06:29.994874",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.32.23-ca-crac-jre25.0.2-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.32.23.0"
   }
 ]
