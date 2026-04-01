@@ -61445,5 +61445,29 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu21.48.19-ca-crac-jdk21.0.10-macosx_x64.tar.gz",
     "vendor": "zulu",
     "version": "21.48.19.0"
+  },
+  {
+    "checksum": "sha256:67d8049ff31ca1ffe3329162c0ed895cc074e37a19dd2c43ac3121ec3d889084",
+    "created_at": "2026-04-01T22:13:21.217216",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "26+35",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jre_x64_mac_hotspot_26_35.tar.gz",
+    "vendor": "temurin",
+    "version": "26.0.0+35"
+  },
+  {
+    "checksum": "sha256:a5cabec41a19e83e33fde381a978f93bc7f5bd5accadf5b7c34770f08f4b5504",
+    "created_at": "2026-04-01T22:13:21.217216",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26+35",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_x64_mac_hotspot_26_35.tar.gz",
+    "vendor": "temurin",
+    "version": "26.0.0+35"
   }
 ]

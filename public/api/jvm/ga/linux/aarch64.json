@@ -54914,5 +54914,57 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu25.32.23-ca-crac-jre25.0.2-linux_aarch64.tar.gz",
     "vendor": "zulu",
     "version": "25.32.23.0"
+  },
+  {
+    "checksum": "sha256:460dff59e58d77980d8f3aa3172f53d09c17beca1a16b5762f388aee8c91656c",
+    "created_at": "2026-03-31T22:12:40.190355",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "26+35",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jre_aarch64_linux_hotspot_26_35.tar.gz",
+    "vendor": "temurin",
+    "version": "26.0.0+35"
+  },
+  {
+    "checksum": "sha256:049027647a2d1cf3b1e3c1e7dad746aa6436928932bbed9130b87a25f585908a",
+    "created_at": "2026-03-31T22:12:40.190355",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26+35",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_aarch64_alpine-linux_hotspot_26_35.tar.gz",
+    "vendor": "temurin",
+    "version": "26.0.0+35"
+  },
+  {
+    "checksum": "sha256:e8ff1f23c5acef74d1b4937dadd67286d67be06758f5d9dca5478c35bf404e83",
+    "created_at": "2026-03-31T22:12:40.190355",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26+35",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_aarch64_linux_hotspot_26_35.tar.gz",
+    "vendor": "temurin",
+    "version": "26.0.0+35"
+  },
+  {
+    "checksum": "sha256:f3c21f425f9e9f53ab8a19aed6a25cedee662be19fa221696c1450eb67470905",
+    "created_at": "2026-03-31T22:12:40.190355",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "26+35",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jre_aarch64_alpine-linux_hotspot_26_35.tar.gz",
+    "vendor": "temurin",
+    "version": "26.0.0+35"
   }
 ]
