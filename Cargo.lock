@@ -471,9 +471,9 @@ checksum = "75984efb6ed102a0d42db99afb6c1948f0380d1d91808d5529916e6c08b49d8d"
 
 [[package]]
 name = "comrak"
-version = "0.51.0"
+version = "0.52.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9f07383e7799d964bf7ffa6fc4457d177c54a44614661c7458bb0bd91b108e32"
+checksum = "aac0b255932a9cd52fbfd664b67957f9f2e095ae4711cb0e41b4e291edef94c2"
 dependencies = [
  "bon",
  "caseless",
@@ -4130,16 +4130,16 @@ checksum = "2fb433233f2df9344722454bc7e96465c9d03bff9d77c248f9e7523fe79585b5"
 
 [[package]]
 name = "xx"
-version = "2.5.2"
+version = "2.5.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6421bd0c62aed0062f02c54ad5983e54c1bf884fae7ea9ab57f25eb59f47adad"
+checksum = "61cdbadb4cf2151c38b7c07c1383284bcf63b51baac062c83bd8286962b41dd9"
 dependencies = [
  "duct",
  "filetime",
  "homedir",
  "log",
  "miette",
- "rand 0.9.2",
+ "rand 0.10.0",
  "regex",
  "strsim",
  "thiserror 2.0.17",
