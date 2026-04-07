@@ -76504,5 +76504,109 @@
     "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jre_x64_linux_hotspot_26_35.tar.gz",
     "vendor": "temurin",
     "version": "26.0.0+35"
+  },
+  {
+    "checksum": "sha512:507acf9343c5f081465625e2d591b7a1fcf402d23b1bcd26442398dc366856c618a0a41e02bd86caec46c657802a82bd2f6e52aa9319c96ae067b45ea2d230c9",
+    "created_at": "2026-04-06T22:10:28.892263",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2-b329.111",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.2-linux-musl-x64-b329.111.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b329.111"
+  },
+  {
+    "checksum": "sha512:23b9eb74acad98ccb018270737f658f84842e1c61419e8911772510d3290873d4b801c8b1e9fdd24a8417aa978a35b5ef5a38fc97404a997cc9d367f13f7d6e6",
+    "created_at": "2026-04-06T22:10:28.892263",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.2-b329.111",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.2-linux-x64-b329.111.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b329.111"
+  },
+  {
+    "checksum": "sha512:1f6ce23af8f947ce7ffea84f31ac64492063fddc0f02f3a08c304e2896b254e9b5062f2b0ee56b477518e60f98957f8d10406fa90e44d780b6ed2d14124842bc",
+    "created_at": "2026-04-06T22:10:28.892263",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.2-b329.111",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.2-linux-musl-x64-b329.111.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b329.111"
+  },
+  {
+    "checksum": "sha512:3a525752e6d66e4a56072280e78a3447224aab31cbdf60e2d5df61391b9970113d6ada2d8dbf631964b5210a8cbc9d67eba3b727e6dfb030e993c0e1d9a6ceb8",
+    "created_at": "2026-04-06T22:10:28.892263",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2-b329.111",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.2-linux-x64-b329.111.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b329.111"
+  },
+  {
+    "checksum": "sha512:997be5b8f6d36d8ada97a4ede6a7e78dbddcbe4e807a3ac737d1fd66f2545acfeca845280836a329be56d554937beab21d534ed1ef9858829a5283a8ad89a500",
+    "created_at": "2026-04-06T22:10:28.892263",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.2-b329.111",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_lb-25.0.2-linux-x64-b329.111.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b329.111"
+  },
+  {
+    "checksum": "sha512:25885cc1c676f8df2d296f97733be874361124ed85fb322807395de396a779f400bb1a4f1e1796a57da44e244612c2902807aa22d241f8b402dc398d8e38db36",
+    "created_at": "2026-04-06T22:10:28.892263",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.2-b329.111",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25.0.2-linux-x64-b329.111.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b329.111"
+  },
+  {
+    "checksum": "sha512:c5ddb9d40f099b09fcd0d914491eed4db543f4611b46080b62f1f1d9a05811be2fd1a2f13e2c9140b1a87e6bb067ca197ec50afd17085ffee0549677d4f00fe0",
+    "created_at": "2026-04-06T22:10:28.892263",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2-b329.111",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.2-linux-x64-b329.111.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b329.111"
+  },
+  {
+    "checksum": "sha512:1f99235156d67f94dabdf160082850f4e7230effa7e9a673f46cc6ee9d0181af9f3816813392a66bd6a2ac8d0286c6a526ab0283dde5fc62a97cdde876d2c258",
+    "created_at": "2026-04-06T22:10:28.892263",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2-b329.111",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_lb-25.0.2-linux-x64-b329.111.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b329.111"
   }
 ]
