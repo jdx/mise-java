@@ -51204,5 +51204,81 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu25.32.23-ca-crac-jdk25.0.2-macosx_aarch64.zip",
     "vendor": "zulu",
     "version": "25.32.23.0"
+  },
+  {
+    "checksum": "sha512:3a1393203df4d4653f2df523ff6ba889806337ee97b77e3a6dc12eccde9470e1b43a6449abc93126b4b734d04713c8a1de7b4373fa1095047a359947b0961dbb",
+    "created_at": "2026-04-06T22:10:28.892263",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2-b329.111",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.2-osx-aarch64-b329.111.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b329.111"
+  },
+  {
+    "checksum": "sha512:c8e6dc887d98273c9a94019a8709956415d2f6fc17c25d08d89abbfb90f500c4a4dcb4071291c7147c6a1c2cc9b72c718276c385b39033a309f28e6c89abc31b",
+    "created_at": "2026-04-06T22:10:28.892263",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.2-b329.111",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25.0.2-osx-aarch64-b329.111.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b329.111"
+  },
+  {
+    "checksum": "sha512:89f67e054b7676d0f7c7e49d6c05cea8c8f00cdcee22151d5255d091982c34f22a1bd3c1c1ee351b5ef5590bf7e70a584c959b98ef02b53af878e6368a6ad5ba",
+    "created_at": "2026-04-06T22:10:28.892263",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2-b329.111",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.2-osx-aarch64-b329.111.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b329.111"
+  },
+  {
+    "checksum": "sha512:63b2b9a91df874f49493817016de49724adf16fce1aaf4352043b1c118f282d47404eeff7b99c023b1805719946cc0fe2df0e2d54d90e0210823f9ef5e0a3277",
+    "created_at": "2026-04-06T22:10:28.892263",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.2-b329.111",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.2-osx-aarch64-b329.111.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b329.111"
+  },
+  {
+    "checksum": "sha256:935060cf2e94875da1e4ffd7028a88efc87261f3843bf77520c6276ed4c6e46d",
+    "created_at": "2026-04-07T22:14:01.301394",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "26+35",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jre_aarch64_mac_hotspot_26_35.tar.gz",
+    "vendor": "temurin",
+    "version": "26.0.0+35"
+  },
+  {
+    "checksum": "sha256:596ba026474808b75e934aa8c32cf9b340fafc455d06f366ede4f2932f206eb1",
+    "created_at": "2026-04-07T22:14:01.301394",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26+35",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_aarch64_mac_hotspot_26_35.tar.gz",
+    "vendor": "temurin",
+    "version": "26.0.0+35"
   }
 ]
