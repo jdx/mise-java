@@ -149,6 +149,9 @@ fn normalize_features(name: &str) -> Option<Vec<String>> {
     if name.contains("_diz") {
         features.push("debug".to_string());
     }
+    if name.contains("_pdb") {
+        features.push("debug".to_string());
+    }
     if name.contains("jcef") {
         features.push("jcef".to_string());
     }
@@ -179,6 +182,7 @@ mod tests {
     fn test_normalize_features() {
         for (actual, expected) in [
             ("_diz", Some(vec!["debug".to_string()])),
+            ("_pdb", Some(vec!["debug".to_string()])),
             ("_fd", Some(vec!["jcef".to_string(), "fastdebug".to_string()])),
             ("_ft", Some(vec!["freetype".to_string()])),
             ("_musl", Some(vec!["musl".to_string()])),
