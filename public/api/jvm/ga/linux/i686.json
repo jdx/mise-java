@@ -18528,5 +18528,393 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.10-linux-x86-b1163.110.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.10-b1163.110"
+  },
+  {
+    "checksum": "sha256:8284c8998c13fcb6ae44976aed9fe09cc82ce5a77c217a7f27be2e50fdaf84c8",
+    "created_at": "2026-04-21T22:14:31.355774",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8.0.492",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.94.0.17-ca-jdk8.0.492-linux_i686.zip",
+    "vendor": "zulu",
+    "version": "8.94.0.17"
+  },
+  {
+    "checksum": "sha256:d339499f2fa08815c72a8d914cbda0149eea0dd51ef4d7c3b9a416063a6942b4",
+    "created_at": "2026-04-21T22:14:31.355774",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "17.0.19",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.66.15-ca-jre17.0.19-linux_i686.zip",
+    "vendor": "zulu",
+    "version": "17.66.15.0"
+  },
+  {
+    "checksum": "sha256:429d6149ee59a4b63b6bf400725c66359bb7c566d688945e7d267a0727d0c66b",
+    "created_at": "2026-04-21T22:14:31.355774",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.31",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.88.17-ca-jdk11.0.31-linux_i686.zip",
+    "vendor": "zulu",
+    "version": "11.88.17.0"
+  },
+  {
+    "checksum": "sha256:2b57dcbc72f13f4155c3bb29d48dfa5f04c409e5a5416f03c37cc382777192b9",
+    "created_at": "2026-04-21T22:14:31.355774",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.31",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.88.17-ca-jre11.0.31-linux_i686.tar.gz",
+    "vendor": "zulu",
+    "version": "11.88.17.0"
+  },
+  {
+    "checksum": "sha256:ec8b13e39a789908b49005dc1a2110d2fa6e9ad34a1290e227e8161c14f1df60",
+    "created_at": "2026-04-21T22:14:31.355774",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "8.0.492",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.94.0.17-ca-jre8.0.492-linux_i686.tar.gz",
+    "vendor": "zulu",
+    "version": "8.94.0.17"
+  },
+  {
+    "checksum": "sha256:01988951ede56bb3733258de0494df3e5269d1a0fb540aaa60056f16c25d92b8",
+    "created_at": "2026-04-21T22:14:31.355774",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.19",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.66.19-ca-jre17.0.19-linux_i686.tar.gz",
+    "vendor": "zulu",
+    "version": "17.66.19.0"
+  },
+  {
+    "checksum": "sha256:e449f522be5fa4df98d80bbf92a2800a1270c5fef0b86b919cc2968a36339d53",
+    "created_at": "2026-04-21T22:14:31.355774",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.19",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.66.19-ca-jdk17.0.19-linux_i686.tar.gz",
+    "vendor": "zulu",
+    "version": "17.66.19.0"
+  },
+  {
+    "checksum": "sha256:cb202387ec3a53be729750d969e63f045f124cb9f40d7e1295e1c0cde47a0978",
+    "created_at": "2026-04-21T22:14:31.355774",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.31",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.88.17-ca-jdk11.0.31-linux_i686.tar.gz",
+    "vendor": "zulu",
+    "version": "11.88.17.0"
+  },
+  {
+    "checksum": "sha256:10f7a037026b264b28fcc251211da115a5bb25d90312fc249354658da3e4fa05",
+    "created_at": "2026-04-21T22:14:31.355774",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.19",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.66.19-ca-jdk17.0.19-linux_i686.zip",
+    "vendor": "zulu",
+    "version": "17.66.19.0"
+  },
+  {
+    "checksum": "sha256:5c798431f73a9d9b584c52ae28af8a947fbbb46abb99515af5239e708fd780a2",
+    "created_at": "2026-04-21T22:14:31.355774",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "8.0.492",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.94.0.17-ca-jre8.0.492-linux_i686.zip",
+    "vendor": "zulu",
+    "version": "8.94.0.17"
+  },
+  {
+    "checksum": "sha256:4158563e1afdfce26bda6d19392f00a5e3d3d3719a4df7a8ef751511cfe4fbed",
+    "created_at": "2026-04-21T22:14:31.355774",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.19",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.66.15-ca-jre17.0.19-linux_i686.tar.gz",
+    "vendor": "zulu",
+    "version": "17.66.15.0"
+  },
+  {
+    "checksum": "sha256:245127d7752d231713a980418befdb9ca29ee86302e4c9846586ad8a4c43f50d",
+    "created_at": "2026-04-21T22:14:31.355774",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.0.492",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.94.0.17-ca-jdk8.0.492-linux_i686.tar.gz",
+    "vendor": "zulu",
+    "version": "8.94.0.17"
+  },
+  {
+    "checksum": "sha256:fe68fe41f3c508ca53651035524769d57d9684401668008276566567a09dfe1f",
+    "created_at": "2026-04-21T22:14:31.355774",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "11.0.31",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.88.17-ca-jre11.0.31-linux_i686.zip",
+    "vendor": "zulu",
+    "version": "11.88.17.0"
+  },
+  {
+    "checksum": "sha256:8c385574e92da533f4a015e4d955d073bebf37e5afc7138f05bbe5da005234a7",
+    "created_at": "2026-04-21T22:14:31.355774",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.19",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.66.15-ca-jdk17.0.19-linux_i686.tar.gz",
+    "vendor": "zulu",
+    "version": "17.66.15.0"
+  },
+  {
+    "checksum": "sha256:71d75c4d3f5b51b22503b86adc0fb7a2182569d60e6c7fc7a3a89f280c4fd8e1",
+    "created_at": "2026-04-21T22:14:31.355774",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "17.0.19",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.66.19-ca-jre17.0.19-linux_i686.zip",
+    "vendor": "zulu",
+    "version": "17.66.19.0"
+  },
+  {
+    "checksum": "sha256:10b40e0606c2605c70cd64b6aea44fb64078f7ef69ff29e658ab971327d85c38",
+    "created_at": "2026-04-21T22:14:31.355774",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.19",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.66.15-ca-jdk17.0.19-linux_i686.zip",
+    "vendor": "zulu",
+    "version": "17.66.15.0"
+  },
+  {
+    "checksum": "sha1:daab54134c18f7e29bc462fafffb0e86badafde3",
+    "created_at": "2026-04-22T22:17:03.822439",
+    "features": [
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.19+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.19%2B11/bellsoft-jdk17.0.19%2B11-linux-i586-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.19+11"
+  },
+  {
+    "checksum": "sha1:f527f2d3d57469b91dd01095e71c616cfff685e6",
+    "created_at": "2026-04-22T22:17:03.822439",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "8u492+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u492%2B9/bellsoft-jre8u492%2B9-linux-i586-full.tar.gz",
+    "vendor": "liberica",
+    "version": "8u492+9"
+  },
+  {
+    "checksum": "sha1:8aefb609ee754811d19d4b250a7d2c0994c30c42",
+    "created_at": "2026-04-22T22:17:03.822439",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.11+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.11%2B11/bellsoft-jdk21.0.11%2B11-linux-i586.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.11+11"
+  },
+  {
+    "checksum": "sha1:73887901f12a32574d61b6021dc7bcd6b798d2ff",
+    "created_at": "2026-04-22T22:17:03.822439",
+    "features": [
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.31+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.31%2B11/bellsoft-jdk11.0.31%2B11-linux-i586-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.31+11"
+  },
+  {
+    "checksum": "sha1:2db3aa774e0c9d48150d95ec6d30efb6a75c28ac",
+    "created_at": "2026-04-22T22:17:03.822439",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8u492+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u492%2B9/bellsoft-jdk8u492%2B9-linux-i586.tar.gz",
+    "vendor": "liberica",
+    "version": "8u492+9"
+  },
+  {
+    "checksum": "sha1:096584eab3b62d731d68d4184ad577c1c2968d40",
+    "created_at": "2026-04-22T22:17:03.822439",
+    "features": [
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8u492+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u492%2B9/bellsoft-jdk8u492%2B9-linux-i586-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "8u492+9"
+  },
+  {
+    "checksum": "sha1:720b28624f64d062f2c7343dfd0081b7e92ffe11",
+    "created_at": "2026-04-22T22:17:03.822439",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.31+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.31%2B11/bellsoft-jre11.0.31%2B11-linux-i586.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.31+11"
+  },
+  {
+    "checksum": "sha1:641f814c1acf4adae717895f00b8068006944de7",
+    "created_at": "2026-04-22T22:17:03.822439",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.31+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.31%2B11/bellsoft-jdk11.0.31%2B11-linux-i586.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.31+11"
+  },
+  {
+    "checksum": "sha1:358cad63c781078d387fe06b1ca6854a68fb4c62",
+    "created_at": "2026-04-22T22:17:03.822439",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.19+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.19%2B11/bellsoft-jdk17.0.19%2B11-linux-i586.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.19+11"
+  },
+  {
+    "checksum": "sha1:362bd041248f62be888e6494893707dffe3a4e9e",
+    "created_at": "2026-04-22T22:17:03.822439",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.19+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.19%2B11/bellsoft-jre17.0.19%2B11-linux-i586.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.19+11"
+  },
+  {
+    "checksum": "sha1:3b6eef10390c1dd4ea79b9abf551210be9726d89",
+    "created_at": "2026-04-22T22:17:03.822439",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "8u492+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u492%2B9/bellsoft-jre8u492%2B9-linux-i586.tar.gz",
+    "vendor": "liberica",
+    "version": "8u492+9"
+  },
+  {
+    "checksum": "sha1:59eba53df514943a07ae23b4d594a2e3196c3a79",
+    "created_at": "2026-04-22T22:17:03.822439",
+    "features": [
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.11+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.11%2B11/bellsoft-jdk21.0.11%2B11-linux-i586-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.11+11"
+  },
+  {
+    "checksum": "sha1:bf6d47bd22bea9f6ba402db072ba7454c10bdc43",
+    "created_at": "2026-04-22T22:17:03.822439",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8u492+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u492%2B9/bellsoft-jdk8u492%2B9-linux-i586-full.tar.gz",
+    "vendor": "liberica",
+    "version": "8u492+9"
+  },
+  {
+    "checksum": "sha1:2a6f7cd4cb6dac941e0154e9f54d225176bf1d6d",
+    "created_at": "2026-04-22T22:17:03.822439",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.11+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.11%2B11/bellsoft-jre21.0.11%2B11-linux-i586.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.11+11"
+  },
+  {
+    "checksum": "sha256:7423a636ca1000688e874cdb961a507012f6eacb9cf42afc1273a7f279c61ada",
+    "created_at": "2026-04-22T22:20:31.320121",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.31.11.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/11.0.31.11.1/amazon-corretto-11.0.31.11.1-linux-x86.tar.gz",
+    "vendor": "corretto",
+    "version": "11.0.31.11.1"
   }
 ]
