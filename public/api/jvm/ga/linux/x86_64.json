@@ -78458,5 +78458,171 @@
     "url": "https://corretto.aws/downloads/resources/25.0.3.9.1/amazon-corretto-25.0.3.9.1-linux-x64.tar.gz",
     "vendor": "corretto",
     "version": "25.0.3.9.1"
+  },
+  {
+    "checksum": "sha1:3cc6e8a4d18dd6e7717386eba1614d83cb6d0852",
+    "created_at": "2026-04-24T22:15:37.044538",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.19+12",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.19%2B12/bellsoft-jdk17.0.19%2B12-linux-x64-musl-crac.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.19+12"
+  },
+  {
+    "checksum": "sha256:4b2220e232a97997b436ca6ab15cbf70171ecff52958a46159dfa5a8c44ca4de",
+    "created_at": "2026-04-23T22:16:36.644715",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.11+10-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jdk_x64_linux_hotspot_21.0.11_10.tar.gz",
+    "vendor": "temurin",
+    "version": "21.0.11+10.0.LTS"
+  },
+  {
+    "checksum": "sha256:22d4d5579902d134dede626d0fdfb95891abc7578e13dea9cb23775498c4cf51",
+    "created_at": "2026-04-23T22:16:36.644715",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.19+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jre_x64_alpine-linux_hotspot_17.0.19_10.tar.gz",
+    "vendor": "temurin",
+    "version": "17.0.19+10"
+  },
+  {
+    "checksum": "sha256:e5038aae3ca9ff670bc696496b0728dbd23d280026bad30291cb919221ecfdcb",
+    "created_at": "2026-04-23T22:16:36.644715",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.11+10-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jre_x64_linux_hotspot_21.0.11_10.tar.gz",
+    "vendor": "temurin",
+    "version": "21.0.11+10.0.LTS"
+  },
+  {
+    "checksum": "sha256:960b4090b75a887bb21a915a294bee3a97cd11876967c95e5bd29d9ec4812e17",
+    "created_at": "2026-04-23T22:16:36.644715",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.19+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jdk_x64_alpine-linux_hotspot_17.0.19_10.tar.gz",
+    "vendor": "temurin",
+    "version": "17.0.19+10"
+  },
+  {
+    "checksum": "sha1:74e9c901aa269216d27cec73c0034c004cd3596c",
+    "created_at": "2026-04-24T22:15:37.044538",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.19+12",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.19%2B12/bellsoft-jdk17.0.19%2B12-linux-amd64-crac.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.19+12"
+  },
+  {
+    "checksum": "sha1:ed3d19724ef8861662029dfc59220d9db7792363",
+    "created_at": "2026-04-24T22:15:37.044538",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.11+12",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.11%2B12/bellsoft-jdk21.0.11%2B12-linux-amd64-crac.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.11+12"
+  },
+  {
+    "checksum": "sha1:416491b162d6fd48ce1c3405a8d148503d5486cc",
+    "created_at": "2026-04-24T22:15:37.044538",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.11+12",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.11%2B12/bellsoft-jdk21.0.11%2B12-linux-x64-musl-crac.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.11+12"
+  },
+  {
+    "checksum": "sha256:ad202c8f8b216800ed0d6581130f92e5680b685ba394ba38e62e7605c3fd9494",
+    "created_at": "2026-04-24T22:16:13.664939",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.3+9-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_x64_alpine-linux_hotspot_25.0.3_9.tar.gz",
+    "vendor": "temurin",
+    "version": "25.0.3+9.0.LTS"
+  },
+  {
+    "checksum": "sha256:51c2415b370aac7c3796b0c4663c8fcf91bc22d76f03df95b25fa5667cb5fdd8",
+    "created_at": "2026-04-24T22:16:13.664939",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.3+9-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jdk_x64_alpine-linux_hotspot_25.0.3_9.tar.gz",
+    "vendor": "temurin",
+    "version": "25.0.3+9.0.LTS"
+  },
+  {
+    "checksum": "sha256:38bfdcef1e4b45de2ec222047ac79c76bea75d4d7406a310e26cfa236763f05f",
+    "created_at": "2026-04-25T22:12:49.599528",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.11+10-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jdk_x64_alpine-linux_hotspot_21.0.11_10.tar.gz",
+    "vendor": "temurin",
+    "version": "21.0.11+10.0.LTS"
+  },
+  {
+    "checksum": "sha256:b75c9f0dd052adfd213f0c2c1cc0c8a6d4539a8de9f7947d2b8fc45d18289975",
+    "created_at": "2026-04-25T22:12:49.599528",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.11+10-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jre_x64_alpine-linux_hotspot_21.0.11_10.tar.gz",
+    "vendor": "temurin",
+    "version": "21.0.11+10.0.LTS"
   }
 ]

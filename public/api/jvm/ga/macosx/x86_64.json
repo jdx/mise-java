@@ -62869,5 +62869,29 @@
     "url": "https://corretto.aws/downloads/resources/26.0.1.8.1/amazon-corretto-26.0.1.8.1-macosx-x64.tar.gz",
     "vendor": "corretto",
     "version": "26.0.1.8.1"
+  },
+  {
+    "checksum": "sha256:4c539a18b4d656960ff6766727e9ca546fc17f7a29714dba9e7b47bdcb37c447",
+    "created_at": "2026-04-24T22:16:13.664939",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.3+9-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jdk_x64_mac_hotspot_25.0.3_9.tar.gz",
+    "vendor": "temurin",
+    "version": "25.0.3+9.0.LTS"
+  },
+  {
+    "checksum": "sha256:594bf4e7d15b622157a54915de7e458c208e3363d61a5e488d8abfbda9aff3e5",
+    "created_at": "2026-04-24T22:16:13.664939",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.3+9-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_x64_mac_hotspot_25.0.3_9.tar.gz",
+    "vendor": "temurin",
+    "version": "25.0.3+9.0.LTS"
   }
 ]
