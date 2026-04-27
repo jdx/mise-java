@@ -52700,5 +52700,95 @@
     "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_aarch64_mac_hotspot_25.0.3_9.tar.gz",
     "vendor": "temurin",
     "version": "25.0.3+9.0.LTS"
+  },
+  {
+    "checksum": "sha256:6ebcf221c9b41507b14c098e93c6ead6440b8d9bd154f8ec666c4c73abbdb201",
+    "created_at": "2026-04-27T22:17:59.322660",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.11+10-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jdk_aarch64_mac_hotspot_21.0.11_10.tar.gz",
+    "vendor": "temurin",
+    "version": "21.0.11+10.0.LTS"
+  },
+  {
+    "checksum": "sha512:91c42893727c5e71c1b5faf0650c78c4f746c1f47aaab7081757632541647a11e29a06ce4ae51afaf3a10fa556177caf7f1d18b2edd8673ed3030cd0320f8161",
+    "created_at": "2026-04-27T22:17:59.333809",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2-b432.48",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.2-osx-aarch64-b432.48.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b432.48"
+  },
+  {
+    "checksum": "sha256:4b7a8cd23102c251c8b8be42a9a5f1263fb337cf1037f6f64b25f3070efe4b76",
+    "created_at": "2026-04-27T22:17:59.322660",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.11+10-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.11%2B10/OpenJDK21U-jre_aarch64_mac_hotspot_21.0.11_10.tar.gz",
+    "vendor": "temurin",
+    "version": "21.0.11+10.0.LTS"
+  },
+  {
+    "checksum": null,
+    "created_at": "2026-04-27T22:18:01.124383",
+    "features": [
+      "notarized"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.3.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-25/releases/download/TencentKona-25.0.3/TencentKona-25.0.3.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "vendor": "kona",
+    "version": "25.0.3.b1"
+  },
+  {
+    "checksum": "sha512:dda180f60a2b30dfd21203036c2bac20566c393e488c5495cea9b250e768f29123818fa0c5c51d6cf95c3eb2381d7cf81a29e45a8973729b46e9c90b62be9841",
+    "created_at": "2026-04-27T22:17:59.333809",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.2-b432.48",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.2-osx-aarch64-b432.48.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b432.48"
+  },
+  {
+    "checksum": "sha512:ba4a81e3b7297b0e60a0fcacdb4181b896cd04518fc1d65ef9760d16ca7199b8f6f4925a2bf6934b8bc7dda226b188e9bd50eb59fb22e9ff90d923fb0a8923d4",
+    "created_at": "2026-04-27T22:17:59.333809",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.2-b432.48",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25.0.2-osx-aarch64-b432.48.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b432.48"
+  },
+  {
+    "checksum": "sha512:b8024c9b7651804282e1355629868abb93cba08be192ea543a476c1cbb4171fde446ae4c1b08aeabbf62e7723acf0b56661a1082b635a7ae3d867e5b0997443d",
+    "created_at": "2026-04-27T22:17:59.333809",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.2-b432.48",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.2-osx-aarch64-b432.48.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.2-b432.48"
   }
 ]
