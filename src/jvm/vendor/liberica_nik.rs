@@ -39,8 +39,11 @@ impl Vendor for LibericaNIK {
             .into_par_iter()
             // filter out source releases
             .filter(|release| !&release.filename.contains("-src"))
-            // filter out full and standard releases, keep only core releases for now
-            .filter(|release| release.filename.contains("-core-"))
+            // keep only core releases unless for version 25+ since core is not longer available
+            .filter(|release| {
+                let major = major_version(&release.version);
+                release.bundle_type == "core" || (release.bundle_type == "standard" && major >= 25)
+            }) // filter out jre releases
             .flat_map(|release| match map_release(&release) {
                 Ok(meta) => vec![meta],
                 Err(err) => {
@@ -114,6 +117,15 @@ fn normalize_features(release: &Release) -> Option<Vec<String>> {
     if features.is_empty() { None } else { Some(features) }
 }
 
+fn major_version(version: &str) -> u32 {
+    version
+        .chars()
+        .take_while(|c| c.is_ascii_digit())
+        .collect::<String>()
+        .parse::<u32>()
+        .unwrap_or(0)
+}
+
 #[derive(Debug, Default, Deserialize, Serialize)]
 struct Release {
     architecture: String,
@@ -177,6 +189,16 @@ mod tests {
                     java_version: "17.0.5+8".to_string(),
                     os: "macos".to_string(),
                     version: "22.3.0+1".to_string(),
+                },
+            ),
+            (
+                "bellsoft-liberica-vm-openjdk25.0.1+16-25.0.1+3-linux-amd64.tar.gz",
+                FileNameMeta {
+                    arch: "amd64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    java_version: "25.0.1+16".to_string(),
+                    os: "linux".to_string(),
+                    version: "25.0.1+3".to_string(),
                 },
             ),
         ] {
