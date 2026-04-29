@@ -51869,5 +51869,29 @@
     "url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.19/TencentKona-17.0.19.b1_jdk_windows-x86_64_signed.zip",
     "vendor": "kona",
     "version": "17.0.19.b1"
+  },
+  {
+    "checksum": "sha256:709312cd0420296d9b9de917fe6e28a5b979e875ee5ab91783fb79bcd5857235",
+    "created_at": "2026-04-29T22:21:10.693097",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.3+9-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jdk_x64_windows_hotspot_25.0.3_9.zip",
+    "vendor": "temurin",
+    "version": "25.0.3+9.0.LTS"
+  },
+  {
+    "checksum": "sha256:a183e7280220ad5f6fe94ecbf025a5f10fc5797a0b18c600ed8f813c8158c530",
+    "created_at": "2026-04-29T22:21:10.693097",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "25.0.3+9-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.3%2B9/OpenJDK25U-jre_x64_windows_hotspot_25.0.3_9.zip",
+    "vendor": "temurin",
+    "version": "25.0.3+9.0.LTS"
   }
 ]

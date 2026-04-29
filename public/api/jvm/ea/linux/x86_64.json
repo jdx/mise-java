@@ -50733,5 +50733,57 @@
     "url": "https://download.java.net/java/early_access/jdk27/19/GPL/openjdk-27-ea+19_linux-x64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "27.0.0-ea+19"
+  },
+  {
+    "checksum": "sha256:2b16316c3859e9b38b371af6546601aa9c9dbf0e2ddc39b0e7105f5821385351",
+    "created_at": "2026-04-29T22:18:40.161065",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.0.17-beta-jdk27.0.0-beta.12-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.0.17.0"
+  },
+  {
+    "checksum": "sha256:7b111daa4023efa4c85f2ad0a0cfe22a7adcc07fa32fc09190a636aebef236d8",
+    "created_at": "2026-04-29T22:18:40.161065",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.0.17-beta-jdk27.0.0-beta.12-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.0.17.0"
+  },
+  {
+    "checksum": "sha256:671988ff637c678e8b9ef05c5648364e01ae361805064a4501f7b3c7125ff55e",
+    "created_at": "2026-04-29T22:18:40.161065",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.0.15-beta-jdk27.0.0-beta.11-linux_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.0.15.0"
+  },
+  {
+    "checksum": "sha256:354b5ee1e4402c610f6d69a00fac4b56e3bda2e817081d69f7ada139f8153b6e",
+    "created_at": "2026-04-29T22:18:40.161065",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.0.15-beta-jdk27.0.0-beta.11-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.0.15.0"
   }
 ]
