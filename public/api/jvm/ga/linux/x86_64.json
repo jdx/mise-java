@@ -79271,5 +79271,81 @@
     "url": "https://github.com/dragonwell-project/dragonwell25/releases/download/dragonwell-extended-25.0.3.0.3%2B9_jdk-25.0.3-ga/Alibaba_Dragonwell_Extended_25.0.3.0.3.9_x64_linux.tar.gz",
     "vendor": "dragonwell",
     "version": "25.0.3.0.3.9"
+  },
+  {
+    "checksum": "sha256:c5cdd9ba67c868e4427b7a4ad8b51abcde2c82e7fe3d617000d8c8459577118b",
+    "created_at": "2026-05-01T22:17:48.846720",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.31",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-11.0.31-alpine-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "11.0.31"
+  },
+  {
+    "checksum": "sha256:d10004134ed177a4d1a5417e8216af4baf44b4abbaf44d8b973d32088cb03b59",
+    "created_at": "2026-05-01T22:17:48.846720",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.31",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-11.0.31-linux-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "11.0.31"
+  },
+  {
+    "checksum": "sha256:d6fdc9d10009186daf1c410014351367212f50ad8f89750b7b20d0f766ec0279",
+    "created_at": "2026-05-01T22:17:48.846720",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.19",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-17.0.19-alpine-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "17.0.19"
+  },
+  {
+    "checksum": "sha256:127694536ed818bb135d2464ea76fabe3cfc485c660a6304301775e26a0b7035",
+    "created_at": "2026-05-01T22:17:48.846720",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.19",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-17.0.19-linux-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "17.0.19"
+  },
+  {
+    "checksum": "sha256:1d58b1335d019bfe1c7c56979c927d0f51222c6dd41c33772d8396ea6cd409c1",
+    "created_at": "2026-05-01T22:17:48.846720",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.11",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-21.0.11-linux-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "21.0.11"
+  },
+  {
+    "checksum": "sha256:8c896f5e0c1aacf19cbee28c336ecdbdb6a9ede142641faadf4ed29a835f17b2",
+    "created_at": "2026-05-01T22:17:48.846720",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.3",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-25.0.3-linux-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "25.0.3"
   }
 ]
