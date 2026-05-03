@@ -53,3 +53,6 @@ xx = "2"
 
 [build-dependencies]
 built = { version = "0.8", features = ["chrono"] }
+
+[profile.dev]
+debug = 1
