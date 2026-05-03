@@ -52063,5 +52063,29 @@
     "url": "https://aka.ms/download-jdk/microsoft-jdk-17.0.19-windows-x64.zip",
     "vendor": "microsoft",
     "version": "17.0.19"
+  },
+  {
+    "checksum": "sha256:E80F9684673A99F583848F22C455D917E3D7FDBC821647634976E54C289DF6FC",
+    "created_at": "2026-05-03T22:16:16.325692",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.0",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-23.1.11.0-Final/mandrel-java21-windows-amd64-23.1.11.0-Final.zip",
+    "vendor": "mandrel",
+    "version": "23.1.11.0-Final+java21"
+  },
+  {
+    "checksum": "sha256:BAC1126AA9EF3EBF56501E57D8B960E1EEACB59A10296A21847C2765100A837C",
+    "created_at": "2026-05-03T22:16:16.325692",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.0",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-25.0.3.0-Final/mandrel-java25-windows-amd64-25.0.3.0-Final.zip",
+    "vendor": "mandrel",
+    "version": "25.0.3.0-Final+java25"
   }
 ]
