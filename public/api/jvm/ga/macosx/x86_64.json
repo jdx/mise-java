@@ -63663,5 +63663,29 @@
     "url": "https://aka.ms/download-jdk/microsoft-jdk-21.0.11-macos-x64.tar.gz",
     "vendor": "microsoft",
     "version": "21.0.11"
+  },
+  {
+    "checksum": "sha256:dd2cc870118fe9fba136e48b2988cfa63d3bda46cc6f1646677cae27a1a02e99",
+    "created_at": "2026-05-04T22:23:23.082266",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "1.8.0_492-b09",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jdk_x64_mac_hotspot_8u492b09.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.492+9"
+  },
+  {
+    "checksum": "sha256:e4acfc82781f0a4ec1fb9785afee41dcb4bb444655d445a2b31edbacbe6bf040",
+    "created_at": "2026-05-04T22:23:23.082266",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "1.8.0_492-b09",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jre_x64_mac_hotspot_8u492b09.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.492+9"
   }
 ]

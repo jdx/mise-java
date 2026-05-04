@@ -79371,5 +79371,29 @@
     "url": "https://github.com/graalvm/mandrel/releases/download/mandrel-23.1.11.0-Final/mandrel-java21-linux-amd64-23.1.11.0-Final.tar.gz",
     "vendor": "mandrel",
     "version": "23.1.11.0-Final+java21"
+  },
+  {
+    "checksum": "sha256:da257f161d7f8c6ca5b0e5d9e4090f65ac28c5e398072e68b8ae87988b1d1a2e",
+    "created_at": "2026-05-04T22:23:23.082266",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "1.8.0_492-b09",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jdk_x64_linux_hotspot_8u492b09.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.492+9"
+  },
+  {
+    "checksum": "sha256:8eef3d4a837bb7a9e45d30a7579d84d5b76a4321f4376573311e6bf89e48f9b0",
+    "created_at": "2026-05-04T22:23:23.082266",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "1.8.0_492-b09",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jre_x64_linux_hotspot_8u492b09.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.492+9"
   }
 ]
