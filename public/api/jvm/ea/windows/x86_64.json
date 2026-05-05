@@ -29583,5 +29583,41 @@
     "url": "https://download.java.net/java/early_access/jdk27/20/GPL/openjdk-27-ea+20_windows-x64_bin.zip",
     "vendor": "openjdk",
     "version": "27.0.0-ea+20"
+  },
+  {
+    "checksum": "sha256:2ec738da754a989e1327a0559b03ee23e4fceedd932a32e3b15d773984bc21bc",
+    "created_at": "2026-05-05T22:19:53.581190",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.0.19-beta-jdk27.0.0-beta.19-win_x64.zip",
+    "vendor": "zulu",
+    "version": "27.0.19.0"
+  },
+  {
+    "checksum": "sha256:5578608d4f0ce07225b19e7f1a854b7db4de8ac3fc84fa7f25c625d6d1ea349b",
+    "created_at": "2026-05-05T22:22:05.233568",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "27.0.0-ea.19",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B19/sapmachine-jre-27-ea.19_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.19"
+  },
+  {
+    "checksum": "sha256:a17a55c4cf95627d6644b423c1ece928f7434362efdc6b32c8d8dd397c28d424",
+    "created_at": "2026-05-05T22:22:05.233568",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "27.0.0-ea.19",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B19/sapmachine-jdk-27-ea.19_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.19"
   }
 ]

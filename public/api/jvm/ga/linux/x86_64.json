@@ -79395,5 +79395,33 @@
     "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jre_x64_linux_hotspot_8u492b09.tar.gz",
     "vendor": "temurin",
     "version": "8.0.492+9"
+  },
+  {
+    "checksum": "sha256:5db39d393a0c3c5c8bb0c639e6f74edc474a13c84d3caf33dc9ba3bba0097a49",
+    "created_at": "2026-05-05T22:21:50.364539",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "1.8.0_492-b09",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jdk_x64_alpine-linux_hotspot_8u492b09.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.492+9"
+  },
+  {
+    "checksum": "sha256:82b74dc9042ce6735624a1ca9585e6a43c44f0f6093a7f2088b0a622f304d62c",
+    "created_at": "2026-05-05T22:21:50.364539",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "1.8.0_492-b09",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jre_x64_alpine-linux_hotspot_8u492b09.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.492+9"
   }
 ]
