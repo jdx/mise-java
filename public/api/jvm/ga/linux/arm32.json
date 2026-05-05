@@ -2974,5 +2974,53 @@
     "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.19%2B10/OpenJDK17U-jdk_arm_linux_hotspot_17.0.19_10.tar.gz",
     "vendor": "temurin",
     "version": "17.0.19+10"
+  },
+  {
+    "checksum": "sha256:70d6ea4fb9041e057a42fc5a3b863682e749c887d51ca949a4af1361c4c71951",
+    "created_at": "2026-05-05T22:19:53.581190",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.0.492",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.94.0.17-ca-jdk8.0.492-linux_aarch32sf.tar.gz",
+    "vendor": "zulu",
+    "version": "8.94.0.17"
+  },
+  {
+    "checksum": "sha256:eae61a6d8942baac2df964540e8e8323b4be581c0f077b85e50c5c2edbcdad75",
+    "created_at": "2026-05-05T22:19:53.581190",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.31",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.88.17-ca-jdk11.0.31-linux_aarch32sf.tar.gz",
+    "vendor": "zulu",
+    "version": "11.88.17.0"
+  },
+  {
+    "checksum": "sha256:5f0693c6c8ca0eb8df969bb1053b1926b1e7c57a3f90c6f9e8d493395e76a329",
+    "created_at": "2026-05-05T22:21:50.364539",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "1.8.0_492-b09",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jre_arm_linux_hotspot_8u492b09.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.492+9"
+  },
+  {
+    "checksum": "sha256:ac93b4b75d6c0592c83030dbbeeaed46f5fbfccb276cf26c86aab3e49bba090e",
+    "created_at": "2026-05-05T22:21:50.364539",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "1.8.0_492-b09",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u492-b09/OpenJDK8U-jdk_arm_linux_hotspot_8u492b09.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.492+9"
   }
 ]

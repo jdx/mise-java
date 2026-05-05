@@ -21688,5 +21688,53 @@
     "url": "https://download.java.net/java/early_access/jdk27/20/GPL/openjdk-27-ea+20_macos-aarch64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "27.0.0-ea+20"
+  },
+  {
+    "checksum": "sha256:fab98304beb15fcc150a0c499e0a4f6ea212b4a1233c18d801d1abdffbf48acd",
+    "created_at": "2026-05-05T22:19:53.581190",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.0.19-beta-jdk27.0.0-beta.19-macosx_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.0.19.0"
+  },
+  {
+    "checksum": "sha256:884b422e49514bb7b69ee83d98ca05fb785b77f57c215a1f8d40edb3463671d5",
+    "created_at": "2026-05-05T22:19:53.581190",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.0.19-beta-jdk27.0.0-beta.19-macosx_aarch64.zip",
+    "vendor": "zulu",
+    "version": "27.0.19.0"
+  },
+  {
+    "checksum": "sha256:b46cda0cd4f2177476da315da44b1d1ea26df1f904b558916eb93f2694878e27",
+    "created_at": "2026-05-05T22:22:05.233568",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.0-ea.19",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B19/sapmachine-jre-27-ea.19_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.19"
+  },
+  {
+    "checksum": "sha256:aad860fc8e23918da72effc7e5e5dbe7200c82a3bdf7f308ae4a1d3b1f6b8f38",
+    "created_at": "2026-05-05T22:22:05.233568",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0-ea.19",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B19/sapmachine-jdk-27-ea.19_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.19"
   }
 ]
