@@ -40,6 +40,61 @@ DROP INDEX IF EXISTS JVM_IDX_VERSION;
 CREATE INDEX JVM_IDX_VERSION ON JVM ("version");
 
 --
+-- Create View JVM_VIEW for data mappings
+--
+-- Maps linux rows with musl feature to os=alpine-linux
+--
+DROP VIEW IF EXISTS JVM_VIEW;
+CREATE VIEW JVM_VIEW AS
+SELECT
+    architecture,
+    checksum,
+    checksum_url,
+    created_at,
+    features,
+    file_type,
+    filename,
+    image_type,
+    java_version,
+    jvm_impl,
+    modified_at,
+    CASE
+        WHEN os = 'linux' AND features LIKE '%musl%' THEN 'alpine-linux'
+        ELSE os
+    END AS os,
+    release_type,
+    size,
+    url,
+    vendor,
+    version
+FROM JVM
+--
+-- For backwards compatibility (remove in near future)
+--
+UNION ALL
+SELECT
+    architecture,
+    checksum,
+    checksum_url,
+    created_at,
+    features,
+    file_type,
+    filename,
+    image_type,
+    java_version,
+    jvm_impl,
+    modified_at,
+    os,
+    release_type,
+    size,
+    url,
+    vendor,
+    version
+FROM JVM
+;
+
+--
 -- Allow read/write for user roast
 --
 GRANT SELECT, INSERT, UPDATE, DELETE ON JVM TO roast;
+GRANT SELECT ON JVM_VIEW TO roast;
