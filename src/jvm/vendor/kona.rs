@@ -96,7 +96,7 @@ fn map_asset(asset: &GitHubAsset) -> Result<JvmData> {
                 .split_whitespace()
                 .map(|s| s.to_string())
                 .collect();
-            if filename_meta.version.contains("musl") {
+            if filename_meta.os.contains("musl") {
                 feat.push("musl".to_string());
             }
             Some(feat)
@@ -179,6 +179,16 @@ mod test {
                     features: "".to_string(),
                     os: "linux".to_string(),
                     version: "21.0.6.b1".to_string(),
+                },
+            ),
+            (
+                "TencentKona8.0.15.b1_jdk_linux-musl-aarch64_8u382.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    features: "".to_string(),
+                    os: "linux-musl".to_string(),
+                    version: "8.0.15.b1".to_string(),
                 },
             ),
             (
