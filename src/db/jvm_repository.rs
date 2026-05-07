@@ -135,7 +135,7 @@ impl JvmRepository {
               vendor,
               version
           FROM
-              JVM
+              JVM_VIEW
           WHERE
               release_type = $1
               AND os = $2
@@ -166,7 +166,7 @@ impl JvmRepository {
               vendor,
               version
           FROM
-              JVM
+              JVM_VIEW
           WHERE
               vendor = $1
               AND os = $2
@@ -209,7 +209,9 @@ impl JvmRepository {
 
     pub fn get_distinct(&self, column: &str) -> Result<Vec<String>> {
         let mut conn = self.pool.get()?;
-        let stmt = conn.prepare(&format!("SELECT DISTINCT {column} FROM JVM ORDER BY {column} ASC;"))?;
+        let stmt = conn.prepare(&format!(
+            "SELECT DISTINCT {column} FROM JVM_VIEW ORDER BY {column} ASC;"
+        ))?;
         let mut data = Vec::new();
         let rows = conn.query(&stmt, &[])?;
         for row in rows {
