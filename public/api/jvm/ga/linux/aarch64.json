@@ -15886,6 +15886,20 @@
     "version": "21.0.8-b895.146"
   },
   {
+    "checksum": "sha256:f3be9415814d8fb233140e67b074d82fdf59e1c8574445d5a2e2608bd59b3d11",
+    "created_at": "2026-05-08T22:23:40.876736",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.492.09.2",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/8.492.09.2/amazon-corretto-8.492.09.2-alpine-linux-aarch64.tar.gz",
+    "vendor": "corretto",
+    "version": "8.492.09.2"
+  },
+  {
     "checksum": "sha512:d9e7d914e73ac7d10abf3f5667ac21af05381c9bb9b29b72d1cf5f0d3d6259d6e1e679ff11793cf3069dfbef51908566bdb028e12875b7854518582b74c1bd7a",
     "created_at": "2026-03-02T22:10:47.621119",
     "features": [],
@@ -46257,6 +46271,18 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.13/sapmachine-jdk-17.0.13_linux-aarch64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "17.0.13"
+  },
+  {
+    "checksum": "sha256:1409bc282d3bdb0826a9cc1fec9704f924264dbde282e2aa1e09027aed5d6df2",
+    "created_at": "2026-05-08T22:23:40.876736",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.492.09.2",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/8.492.09.2/amazon-corretto-8.492.09.2-linux-aarch64.tar.gz",
+    "vendor": "corretto",
+    "version": "8.492.09.2"
   },
   {
     "checksum": "sha1:cd9f6b75ee8f5183a37f9a2c0dc6059fae5f720c",
