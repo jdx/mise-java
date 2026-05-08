@@ -8872,6 +8872,20 @@
     "version": "25.34.17.0"
   },
   {
+    "checksum": "sha256:e97980a27a05942f1ad3f1f02a9eb03e626e960586ca677580a87a2d8307cd08",
+    "created_at": "2026-05-08T22:23:40.876736",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.492.09.2",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/8.492.09.2/amazon-corretto-8.492.09.2-alpine-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "8.492.09.2"
+  },
+  {
     "checksum": "sha256:ea2920dd0b972c13a636ba2c31671dc988502077f26e31888df2d7fc32a44188",
     "created_at": "2025-11-04T22:02:51.825954",
     "features": [
@@ -56200,6 +56214,18 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.12%2B7/bellsoft-jre11.0.12%2B7-linux-amd64.tar.gz",
     "vendor": "liberica",
     "version": "11.0.12+7"
+  },
+  {
+    "checksum": "sha256:b9a74845d1171eabd1482b43a759164efd529cf8317d7edc4484688b459c3a88",
+    "created_at": "2026-05-08T22:23:40.876736",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.492.09.2",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/8.492.09.2/amazon-corretto-8.492.09.2-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "8.492.09.2"
   },
   {
     "checksum": "sha256:1e708a7ac620e55b7a44a934d7a3a2211ddeafd90052cca7cceaa1ad1903a8fe",
