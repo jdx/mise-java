@@ -5243,6 +5243,20 @@
     "version": "15.38.17.0"
   },
   {
+    "checksum": "sha512:d155c39962e59c847b52e9010e26f2067adf56a7fa33c406cb431d99db870139564afe9885694d3d7997dd04a84b4e51e0043083e1deefb845e2fe8f28b793b8",
+    "created_at": "2026-05-15T22:22:18.033215",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.11-b1163.116",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.11-osx-x64-b1163.116.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.11-b1163.116"
+  },
+  {
     "checksum": "sha256:994956503ee32b80366a9d3d5c7ea6dbf06a687deb9b249ca20246fd90d33ed3",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [
@@ -11441,6 +11455,18 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu11.54.23-ca-jdk11.0.14-macosx_x64.tar.gz",
     "vendor": "zulu",
     "version": "11.54.23.0"
+  },
+  {
+    "checksum": "sha512:13d4c2ef4c7e47fbe4af3d67146cb6658ff384e0942ca14d5b2044544a0687d2251a0985fefe5e894e46048a2f66f576628c592c0f30f5756a7cc97f132fd148",
+    "created_at": "2026-05-15T22:22:18.033215",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.3-b329.124",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.3-osx-x64-b329.124.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.3-b329.124"
   },
   {
     "checksum": "sha1:5d8cf8b5a9b6d521672bee07b0719406be99ca0f",
@@ -18317,6 +18343,18 @@
     "version": "11.60.19.0"
   },
   {
+    "checksum": "sha512:f881a9f44a2a595f61f6bf95de43dee28bf57f90c1c442719f4dbfb20d212a57c68bbdbef3e562bcf10a6f3ff8953542704aa94083ab6ecfab9b2bc79a673356",
+    "created_at": "2026-05-15T22:22:18.033215",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.11-b1163.116",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.11-osx-x64-b1163.116.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.11-b1163.116"
+  },
+  {
     "checksum": "sha1:e966298bab08363b1603af03e0ed6c284228d4fc",
     "created_at": "2025-03-28T22:03:17.339783",
     "features": [],
@@ -23833,6 +23871,20 @@
     "version": "8u275+1"
   },
   {
+    "checksum": "sha512:5cb0f502f1f55de0525b1c4a5a4725937de3ae872cf4cf2848973955357833ace96d8ffc09d8fa37e2b7a66f4d25de7472bc8aa93083d9731c7d37463478d716",
+    "created_at": "2026-05-15T22:22:18.033215",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.3-b329.124",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25.0.3-osx-x64-b329.124.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.3-b329.124"
+  },
+  {
     "checksum": "sha512:60fadf2e9203f4adc5e992358b350a609f2d16dfe5ba77fc7e6e9ec5bd42bfba245694c43756128464f86c64856118bfbbe58a1aef7753ff75c0b9d19421708a",
     "created_at": "2025-03-28T22:04:32.259007",
     "features": [
@@ -25151,6 +25203,20 @@
     "url": "https://github.com/ibmruntimes/semeru22-binaries/releases/download/jdk-22.0.2%2B9_openj9-0.46.0/ibm-semeru-open-jre_x64_mac_22.0.2_9_openj9-0.46.0.tar.gz",
     "vendor": "semeru",
     "version": "22.0.2+9_openj9-0.46.0"
+  },
+  {
+    "checksum": "sha512:ad4099bc3aacf32d223c3035a8a120cd3439417ec9e53edd8c3ec7a08c1691fe51b1f514880b4ddb6476e8f266bec55b52af29949f88ef0c3c96bb929fc0b5b1",
+    "created_at": "2026-05-15T22:22:18.033215",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.3-b329.124",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.3-osx-x64-b329.124.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.3-b329.124"
   },
   {
     "checksum": "sha1:1a3195c1eb09cc728def49581194f96ec9d4784a",
@@ -33182,6 +33248,18 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.3%2B10/bellsoft-jdk21.0.3%2B10-macos-amd64-full.zip",
     "vendor": "liberica",
     "version": "21.0.3+10"
+  },
+  {
+    "checksum": "sha512:fcfdd2c73824399bd8e7c4f9b6a2b24ecaf1ba96d5fc5086d70b1c0c2798fe106f1474bcb0258504a0e7c454c18840c4f5048736a95af204051e3d843f954c95",
+    "created_at": "2026-05-15T22:22:18.033215",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.3-b329.124",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.3-osx-x64-b329.124.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.3-b329.124"
   },
   {
     "checksum": "sha1:ab5808ae278c31b88f91a5ca16de40839d73a4fb",
@@ -44322,6 +44400,18 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu11.37.17-ca-fx-jdk11.0.6-macosx_x64.zip",
     "vendor": "zulu",
     "version": "11.37.17.0"
+  },
+  {
+    "checksum": "sha512:efe9b3636804a1f7089414b10b77b53adf108b566b751eef483c0507197c8282b8459419c5a0f37fd67ad5e64111650069f70ea8ba8abf451078d6900045c88a",
+    "created_at": "2026-05-15T22:22:18.033215",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.11-b1163.116",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.11-osx-x64-b1163.116.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.11-b1163.116"
   },
   {
     "checksum": "sha1:c6e2f8733c0d2fb0a606f9736904c0b76471b911",
@@ -59309,6 +59399,20 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.15%2B10/bellsoft-jre17.0.15%2B10-macos-amd64.zip",
     "vendor": "liberica",
     "version": "17.0.15+10"
+  },
+  {
+    "checksum": "sha512:19c9e078ffa85cdc4e98fa90e62719913f8227d887d47adbb4372fc77fc23d69e8b55bb99d352e7c806ac5c3062b89ef71a1036170ebe7c4277061430e0c0674",
+    "created_at": "2026-05-15T22:22:18.033215",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.11-b1163.116",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.11-osx-x64-b1163.116.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.11-b1163.116"
   },
   {
     "checksum": "sha256:a011ec84aa2a7348971f5f97c83029e3dc5a1d359beb169d29f278f2384e6657",
