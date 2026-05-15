@@ -1064,6 +1064,20 @@
     "version": "25.0.0-ea.6"
   },
   {
+    "checksum": "sha256:0eb721efbe4005a6315413bf0ac24f01217bcf475888f80ce264cf19d0a86f76",
+    "created_at": "2026-05-14T22:26:06.860376",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.20-ea.1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.20%2B1/sapmachine-jdk-17.0.20-ea.1_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.20-ea.1"
+  },
+  {
     "checksum": "sha256:0f219c083a6861ab547cd7648e659c97b55c493454160e44f85ff31689a0ed2d",
     "created_at": "2025-03-28T22:04:28.081056",
     "features": [
@@ -5038,6 +5052,20 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-22%2B19/sapmachine-jdk-22-ea.19_linux-x64-musl_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "22.0.0-ea.19"
+  },
+  {
+    "checksum": "sha256:42ddf3517146b688cbd3aa355f9fc9d248ea667eb949f07b3e073948489cd5b9",
+    "created_at": "2026-05-14T22:26:06.860376",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4-ea.1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25.0.4%2B1/sapmachine-jdk-25.0.4-ea.1_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.4-ea.1"
   },
   {
     "checksum": "sha256:42e5306cc83973c45556bc7f62607721047a3921b027eb2b3a37335bb46e7aa6",
@@ -14168,6 +14196,20 @@
     "version": "24.0.23.0"
   },
   {
+    "checksum": "sha256:b7b5a8bdf672f5419861608c91e7a51ca20aece2d67595477bc9fbf6959b515a",
+    "created_at": "2026-05-14T22:26:06.860376",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.20-ea.1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-17.0.20%2B1/sapmachine-jre-17.0.20-ea.1_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "17.0.20-ea.1"
+  },
+  {
     "checksum": "sha256:b7f992dbe575d17a8e0f30c53cd11991ce59bd6879d3723a180276b5dd15233b",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [
@@ -14376,6 +14418,20 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu26.0.31-beta-jdk26.0.0-beta.22-linux_musl_x64.tar.gz",
     "vendor": "zulu",
     "version": "26.0.31.0"
+  },
+  {
+    "checksum": "sha256:bb8dc56c23684942dd644931323f98b7077f9072558dd471de28038d32f07a99",
+    "created_at": "2026-05-14T22:26:06.860376",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.12-ea.1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.12%2B1/sapmachine-jdk-21.0.12-ea.1_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.12-ea.1"
   },
   {
     "checksum": "sha256:bc35963eb3ca775372a97adba07221cf518ecc68e1104cf72dc52c398cdeb8c7",
@@ -15904,6 +15960,20 @@
     "version": "20.0.29.0"
   },
   {
+    "checksum": "sha256:d051349318dc7e4489556abc6949da0bfd068d46d9724e15fd6325e70b889d9a",
+    "created_at": "2026-05-14T22:26:06.860376",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.12-ea.1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.12%2B1/sapmachine-jre-21.0.12-ea.1_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.12-ea.1"
+  },
+  {
     "checksum": "sha256:d092771d0dff9c0def8dd679bb936b37105ba55e13dc3e878f7e285a27f1bb47",
     "created_at": "2025-03-28T22:04:28.081056",
     "features": [
@@ -16938,6 +17008,20 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-10%2B46-0/sapmachine-jre-10-ea.46_linux-x64-musl_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "10.0.0-ea.46"
+  },
+  {
+    "checksum": "sha256:de0b9b53c182b72289b17f9bd0a133252bee66f255fa632c5662db2a398d7377",
+    "created_at": "2026-05-14T22:26:06.860376",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.0-ea.21",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B21/sapmachine-jre-27-ea.21_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.21"
   },
   {
     "checksum": "sha256:de3ef035a5a380c3143e07144688e3ac0d7f6403996555ecfc4098ff6ca26721",
@@ -18256,6 +18340,20 @@
     "version": "24.0.0-ea.21"
   },
   {
+    "checksum": "sha256:f205f53c31e5465ac788dce1df76214068ebcb45ec914e39ae26b9ccf172f5bb",
+    "created_at": "2026-05-14T22:26:06.860376",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0-ea.21",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B21/sapmachine-jdk-27-ea.21_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.21"
+  },
+  {
     "checksum": "sha256:f21a4caa34bc6823263d3ff98147b1b270aa3d8fc0eb6733dba3f0341d3301c6",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [
@@ -18716,6 +18814,20 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-22%2B21/sapmachine-jre-22-ea.21_linux-x64-musl_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "22.0.0-ea.21"
+  },
+  {
+    "checksum": "sha256:fa699def91b34524bf08dc94d0028eda0999cfc5824baf92ebf770cc53799317",
+    "created_at": "2026-05-14T22:26:06.860376",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4-ea.1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25.0.4%2B1/sapmachine-jre-25.0.4-ea.1_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.4-ea.1"
   },
   {
     "checksum": "sha256:faaf50ed812901f2ebe10e3c55cee4dab601d15232f1c2e1c3420710dc8f51c8",
