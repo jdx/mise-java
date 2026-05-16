@@ -1586,6 +1586,18 @@
     "version": "23.1.4.0-Final+java21"
   },
   {
+    "checksum": "sha512:59c5e1979aa1cb0b772c45e7f527129a566646562af29c91f8376cb0fb129fd2b4dd4384cf03f5542b947ed2b1f101822a371581614957ee27ca859dbafbf3f3",
+    "created_at": "2026-05-15T22:22:18.033215",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "25.0.3-b329.124",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.3-windows-x64-b329.124.zip",
+    "vendor": "jetbrains",
+    "version": "25.0.3-b329.124"
+  },
+  {
     "checksum": "sha256:ab84f59539d1fbaa8686655c8fd283934c314bf8120ab1c0201c2b35dc0c1ff0",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [
@@ -2596,6 +2608,18 @@
     "version": "21.3.6.0-Final+java11"
   },
   {
+    "checksum": "sha256:89bb8bd6ec5f4fdb77d303ad1d8ea530b85b384a646fe214c11547a51adb5bdb",
+    "created_at": "2026-05-15T22:22:25.779345",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8.29.28",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-standard-8.29.28_jdk8u492-ga/Alibaba_Dragonwell_Standard_8.29.28_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "8.29.28"
+  },
+  {
     "checksum": "sha256:37d91bad975a644ffb9e8fa8c74dec462f84706a1455a8436b5746c6b7b70652",
     "created_at": "2025-03-28T22:04:28.484345",
     "features": [],
@@ -3044,6 +3068,18 @@
     "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.27%2B5_openj9-0.51.0-m2/ibm-semeru-open-jdk_x64_windows_11.0.27_5_openj9-0.51.0-m2.zip",
     "vendor": "semeru",
     "version": "11.0.27+5_openj9-0.51.0-m2"
+  },
+  {
+    "checksum": "sha256:bab6b82ad8600dc177f45b3225d5810779fe9d90179561d877a731294e173404",
+    "created_at": "2026-05-15T22:22:13.709388",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "26.0.1+8",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jre_x64_windows_hotspot_26.0.1_8.zip",
+    "vendor": "temurin",
+    "version": "26.0.1+8"
   },
   {
     "checksum": "sha512:dd8647ff74141e84bca9df8628d03b9f47ad3b683f75d1ca4b9891575bc26f33922bbb042425b059300e55253258c4a25755e41474ece3a077f7a0c9e14106d0",
@@ -9308,6 +9344,20 @@
     "version": "17.0.9-b1162.7"
   },
   {
+    "checksum": "sha512:0202a783f0f9041a72db69c2510b7242d80c0953cf7d14be866c824d7c10d2f3ec522891df77989194128ee9b80eeaecafbd9bc84cfca885f4e12426fb6f677f",
+    "created_at": "2026-05-15T22:22:18.033215",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.3-b329.124",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.3-windows-x64-b329.124.zip",
+    "vendor": "jetbrains",
+    "version": "25.0.3-b329.124"
+  },
+  {
     "checksum": "sha256:95c9ebe3ee16baab7239531757513d9a03799ca06483ef2f3b530e81e93e7b5b",
     "created_at": "2026-02-04T22:08:06.620644",
     "features": [],
@@ -10610,6 +10660,20 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-17.0.8-windows-x64-b1000.22.tar.gz",
     "vendor": "jetbrains",
     "version": "17.0.8-b1000.22"
+  },
+  {
+    "checksum": "sha512:240ab1444cf5941936ab174686002a6b57806071dad4bd6ba55a970ab360b63a0434d5d38450bad50e8e69c9a591a70f428d9519b748c3ce1043a3a162a6e309",
+    "created_at": "2026-05-15T22:22:18.033215",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.3-b329.124",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.3-windows-x64-b329.124.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.3-b329.124"
   },
   {
     "checksum": "sha256:c31b535cd67efe9dd882d1fb96944bc0c207ef55c1a09f395f3377205a3535f5",
@@ -15988,6 +16052,20 @@
     "version": "17.0.9"
   },
   {
+    "checksum": "sha256:7729fc8fcf8ba38eb48b8e875638a82ac3901c88fd215b1daa84accd754c9ff0",
+    "created_at": "2026-05-15T22:22:25.779345",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8.29.28",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell8/releases/download/dragonwell-extended-8.29.28_jdk8u492-ga/Alibaba_Dragonwell_Extended_8.29.28_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "8.29.28"
+  },
+  {
     "checksum": "sha512:d06f5f1bf409e81f18f8e3b6e708a23df287dde66715e549a9d0195a0432e61221c940069d280b09407f1cb9e3147995ae37f7d68c11ad9a302d68177d933c41",
     "created_at": "2026-02-03T22:09:26.924501",
     "features": [
@@ -18958,6 +19036,20 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-11_0_15-windows-x64-b2043.56.tar.gz",
     "vendor": "jetbrains",
     "version": "11.0.15-b2043.56"
+  },
+  {
+    "checksum": "sha512:facbd7cbe80b24279e5b052a9ae48bdd480ad43ae154491270b949e2c2db7fcb9b40e5ad5ecb0e1c29855068ad277d28d484b4fef866c7da5fe0cce31355af06",
+    "created_at": "2026-05-15T22:22:18.033215",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.11-b1163.116",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.11-windows-x64-b1163.116.zip",
+    "vendor": "jetbrains",
+    "version": "21.0.11-b1163.116"
   },
   {
     "checksum": "sha512:b197aa242e3d8d0d0697f6c213f553b2836349a8f46682882763b0ad4d7def7a303c61bc25aa6b1585650f3f02acf0ddb46600a1e5f3c1429af5efa24c65bb17",
@@ -22970,6 +23062,18 @@
     "version": "8.42.0.23"
   },
   {
+    "checksum": "sha512:457c15d931bb5055ae97574fc7d899aa70917c266d4b40a1c50d949ff1d2b431eb95ad078b2038bd94561fbd57889803f867dd9c295868fbb0c3c870f1f4d1d3",
+    "created_at": "2026-05-15T22:22:18.033215",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.11-b1163.116",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.11-windows-x64-b1163.116.zip",
+    "vendor": "jetbrains",
+    "version": "21.0.11-b1163.116"
+  },
+  {
     "checksum": "sha512:1068287e724ff446df58a4014d951468578d741d472cf68b306ed871108748d35207929d3df95280500729683e640446ce742f025bc2c4d364359a1382fcd639",
     "created_at": "2025-03-28T22:04:32.259007",
     "features": [],
@@ -25279,6 +25383,18 @@
     "version": "24.0.2"
   },
   {
+    "checksum": "sha256:d8e4befe8c7da3c0c13f25af50989e4066446abe77576b3a6dc0424b6d8b23d3",
+    "created_at": "2026-05-15T22:22:25.779345",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.31.27.11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell11/releases/download/dragonwell-standard-11.0.31.27_jdk-11.0.31-ga/Alibaba_Dragonwell_Standard_11.0.31.27.11_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "11.0.31.27.11"
+  },
+  {
     "checksum": "sha1:720150d6698c0302146dd3d76a4475dfd9647cfb",
     "created_at": "2026-04-22T22:17:03.822439",
     "features": [],
@@ -27337,6 +27453,18 @@
     "version": "8.58.0.13"
   },
   {
+    "checksum": "sha512:c7a30783c20ddbd4b9417a20492b404e8be6ab857c3984bbfecb0101bfcea4a26a7bf19bac393b98dd3258f6cea7d8a78aa7fe185b01a8e49ad870a00323a86a",
+    "created_at": "2026-05-15T22:22:18.033215",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.3-b329.124",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.3-windows-x64-b329.124.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.3-b329.124"
+  },
+  {
     "checksum": "sha1:3fab044c7126944d45884bba8932f4cb03b29324",
     "created_at": "2025-03-28T22:03:17.339783",
     "features": [],
@@ -28731,6 +28859,20 @@
     "version": "26.0.0+37"
   },
   {
+    "checksum": "sha512:0968d381735d502dcf2f5b21980f6be1447739721441a191226a75b2a4c6f4a01dca9d2187a49e66d92e1107744c7a5a1d4ec8ff1c7730b55ed228618975ee2a",
+    "created_at": "2026-05-15T22:22:18.033215",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.11-b1163.116",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.11-windows-x64-b1163.116.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.11-b1163.116"
+  },
+  {
     "checksum": "sha256:323a9e5503b31475ea6056e50607d2e0a61c53200cf5a19fc24b79d7df7d1a6f",
     "created_at": "2025-03-28T22:04:32.259007",
     "features": [
@@ -29433,6 +29575,18 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/23.0.1%2B13/bellsoft-jdk23.0.1%2B13-windows-amd64.zip",
     "vendor": "liberica",
     "version": "23.0.1+13"
+  },
+  {
+    "checksum": "sha512:82cf653b7d6a63333908f979517f00bd197e9126d70956ab931e4cd5fb55905fa0c04ea96ae89857c5fc424d7dc2827d007760cfa3d5ca367362474e8ab0043e",
+    "created_at": "2026-05-15T22:22:18.033215",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.3-b329.124",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.3-windows-x64-b329.124.zip",
+    "vendor": "jetbrains",
+    "version": "25.0.3-b329.124"
   },
   {
     "checksum": "sha512:0409f7a8324dc1ca1b3de8ec504b1c2e730d4c7304e5abe4451b08737aacdd7d5f31adab2b4bcb87c18bd2e509a3e6997ac3813443c00f11501b2cb45876a7b9",
@@ -31317,6 +31471,18 @@
     "version": "11.82.19.0"
   },
   {
+    "checksum": "sha512:1b5a3b602bf8096263a87d60a524fdd422696a0ff4af288e554dde8b11a3178c99f5a8d9161e9cc6b318790330fa75fdaa597d23551cbfc6a9387afbc4f51626",
+    "created_at": "2026-05-15T22:22:18.033215",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.11-b1163.116",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.11-windows-x64-b1163.116.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.11-b1163.116"
+  },
+  {
     "checksum": "sha512:7cbdc6874d690a19f49fd65559e3d3444f8e8cb0c6bd9ef51c13e880d874448afbceceea6d61e58dc18e15a857f4a605559c2966e5e07878abfde490ede76808",
     "created_at": "2026-04-06T22:10:28.892263",
     "features": [],
@@ -32937,6 +33103,20 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu11.64.19-ca-fx-jre11.0.19-win_x64.zip",
     "vendor": "zulu",
     "version": "11.64.19.0"
+  },
+  {
+    "checksum": "sha512:fc0e90faac3ae6b00e5192d2cc58ec4817b12f419e0f17488286c192d6f95d17ab6001d7076ee5690ab47d28db78703b1cc3ef06684ca61f80f5b50c001263d6",
+    "created_at": "2026-05-15T22:22:18.033215",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.3-b329.124",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25.0.3-windows-x64-b329.124.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.3-b329.124"
   },
   {
     "checksum": "sha256:2d6740ba6b6ee46d4868bf77e953d5bbd9b19d8e83ab769b999c3ea7df355f7e",
@@ -35299,6 +35479,20 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu7.27.0.1-ca-jdk7.0.211-win_x64.zip",
     "vendor": "zulu",
     "version": "7.27.0.1"
+  },
+  {
+    "checksum": "sha512:3bea77c80f6f518fcede754ddfec90863f29ca356168cd08b17348036a2d74962355a21d607933b80558a65ce337b2613fad88092de74ad44c440fcd2516b6e9",
+    "created_at": "2026-05-15T22:22:18.033215",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "25.0.3-b329.124",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25.0.3-windows-x64-b329.124.zip",
+    "vendor": "jetbrains",
+    "version": "25.0.3-b329.124"
   },
   {
     "checksum": "sha256:afc9fe0f0528d6c6e7c9939994c3c1c6f735fa5f4cfa5b38e8576d30b3868df4",
@@ -38362,6 +38556,18 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu21.48.15-ca-jdk21.0.10-win_x64.zip",
     "vendor": "zulu",
     "version": "21.48.15.0"
+  },
+  {
+    "checksum": "sha512:c36315464a41a3a0346baa14b026ebf999e3a49a6904edf8e26956ae6c99461143fa849e2f2acbe6101545d7a497f8a321bd3e89e247a5d9f0d264ff2f7659cf",
+    "created_at": "2026-05-15T22:22:18.033215",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.3-b329.124",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.3-windows-x64-b329.124.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.3-b329.124"
   },
   {
     "checksum": "sha512:a530fee709a20baf59ca1de4f06c65c08caf946ffeef43366a65e0c21490b96c74431b6d76439bc0e27f7e3b0acc712b4217e2384df4222b20377143aca1383b",
@@ -43975,6 +44181,18 @@
     "version": "25.0.0.1-Final+java25"
   },
   {
+    "checksum": "sha512:69cc76cc74be812e940f08fb7d54f58d9b688c21c28a6728da98e13b4a3226a9da240b2ec0e6fa90e123501d02beb6c4a7835b855fce35f5cd5384953d40f4a9",
+    "created_at": "2026-05-15T22:22:18.033215",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "21.0.11-b1163.116",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.11-windows-x64-b1163.116.zip",
+    "vendor": "jetbrains",
+    "version": "21.0.11-b1163.116"
+  },
+  {
     "checksum": "sha256:a0c262128cb1394bb52e3b4b0f78b77845680e3b43991caa0bf47cd1f7411ef0",
     "created_at": "2025-03-28T22:04:28.484345",
     "features": [],
@@ -44855,6 +45073,18 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/25.0.1%2B13/bellsoft-jre25.0.1%2B13-windows-amd64.zip",
     "vendor": "liberica",
     "version": "25.0.1+13"
+  },
+  {
+    "checksum": "sha512:a792e735ac542c3cc02207f01d16cf983a569db752a27a6533763fa5ea17ed73eaa9a5e7bb011d652313248ca45cdeebacbc678cb95777f2d99e284b5c3a2264",
+    "created_at": "2026-05-15T22:22:18.033215",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.11-b1163.116",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.11-windows-x64-b1163.116.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.11-b1163.116"
   },
   {
     "checksum": "sha256:d1652a753873b7c5268a3bd86c9c71947a30d5f1e1cebb7a09a0418d594c05a6",
@@ -48219,6 +48449,20 @@
     "version": "17.0.8.1-b1080.1"
   },
   {
+    "checksum": "sha512:3f23f43d1697513fa688cc0b7069bb8c24914121a4b8227b3f65d8f23914c4ac3d511f3e34c8b60ef1d873ec6442f70e6528d15b1fb29056ffb95ee22793936d",
+    "created_at": "2026-05-15T22:22:18.033215",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "21.0.11-b1163.116",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.11-windows-x64-b1163.116.zip",
+    "vendor": "jetbrains",
+    "version": "21.0.11-b1163.116"
+  },
+  {
     "checksum": null,
     "created_at": "2025-03-28T22:02:37.280838",
     "features": [],
@@ -49355,6 +49599,20 @@
     "version": "23.1.5+1"
   },
   {
+    "checksum": "sha512:92a2b1271ade034c338a35ff4a0f81b865100a24f3e507b733933985203ce8d8a40304ac298eb62d6d4320dc034ba6bb14023b987edd2c002077456b0039246a",
+    "created_at": "2026-05-15T22:22:18.033215",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.11-b1163.116",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.11-windows-x64-b1163.116.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.11-b1163.116"
+  },
+  {
     "checksum": "sha512:87c9eb5e0ae5acebe5da1f71d78ce5196ba989cdeaabb42a94f01736cdfabbd0ca0850aa3f2cb54034310dda0db80732f1b4b41a830a66640361075fa367ed62",
     "created_at": "2025-04-04T22:07:12.838898",
     "features": [],
@@ -50349,6 +50607,18 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu11.31.11-ca-fx-jdk11.0.3-win_x64.zip",
     "vendor": "zulu",
     "version": "11.31.11.0"
+  },
+  {
+    "checksum": "sha256:81b35819085dd73a204c3219464c5f154cb111a526ec63dad793c0eefd469b3d",
+    "created_at": "2026-05-15T22:22:13.709388",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "26.0.1+8",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk_x64_windows_hotspot_26.0.1_8.zip",
+    "vendor": "temurin",
+    "version": "26.0.1+8"
   },
   {
     "checksum": "sha256:93f1325d55f510047013931c94ef5fcae0e24f6601e5b3184527bf607aead4e2",
