@@ -7,6 +7,7 @@ use std::hash::{Hash, Hasher};
 pub mod vendor;
 
 #[derive(Clone, Default, Debug, Serialize, Deserialize)]
+#[serde(default)]
 pub struct JvmData {
     pub architecture: String,
     pub checksum: Option<String>,
