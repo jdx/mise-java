@@ -33,34 +33,17 @@ The API schema can be found at [mise-java.jdx.dev](https://mise-java.jdx.dev).
 
 ## Build & Run
 
-### Create and initialize the database
-
-#### Local Docker PostgreSQL
-
-Assuming you have a PostgreSQL container `postgres` running with a user `postgres`.
-
-```bash
-docker exec -i -u postgres postgres psql -d postgres -c "DROP DATABASE roast;"
-docker exec -i -u postgres postgres psql -d postgres -c "CREATE DATABASE roast;"
-docker exec -i -u postgres postgres psql -d roast -c "CREATE USER roast WITH PASSWORD 'roast';"
-docker exec -i -u postgres postgres psql -d roast < ./sql/schema.sql
-```
-
 ## Run
 
 ### Environment variables
 
-Roast uses a configuration file `config.toml` to configure the database connection and other settings.
+Roast uses a configuration file `config.toml` to configure the SQLite database and other settings.
 You can use the following environment variables to override the default configuration in `config.toml`.
 
 | Variable name              | Description                                  |
 | -------------------------- | -------------------------------------------- |
-| `ROAST_DATABASE_POOL_SIZE` | Number of threads to use for fetching data   |
-| `ROAST_DATABASE_URL`       | PostgreSQL connection string                 |
-| `ROAST_DATABASE_SSL_MODE`  | SSL mode for PostgreSQL connection           |
-| `ROAST_DATABASE_SSL_CA`    | CA certificate for PostgreSQL connection     |
-| `ROAST_DATABASE_SSL_CERT`  | Client certificate for PostgreSQL connection |
-| `ROAST_DATABASE_SSL_KEY`   | Client key for PostgreSQL connection         |
+| `ROAST_DATABASE_POOL_SIZE` | Maximum SQLite connection pool size          |
+| `ROAST_DATABASE_PATH`      | SQLite database path                         |
 | `ROAST_EXPORT_PATH`        | Export path for the data                     |
 
 Additionally, you can set the following environment variables to configure the logging and threading.
@@ -77,6 +60,12 @@ env \
 RAYON_NUM_THREADS=50 \
 RUST_LOG=roast=INFO \
 cargo run -- fetch 2>&1 | tee -a error.log
+```
+
+### Seed the database from exported JSON
+
+```bash
+cargo run -- import
 ```
 
 ### Export data by release_type
