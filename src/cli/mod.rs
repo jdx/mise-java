@@ -20,6 +20,23 @@ pub enum Commands {
 }
 
 impl Commands {
+    /// Dispatches the selected subcommand to its `run` implementation.
+    ///
+    /// Executes the corresponding subcommand handler for this `Commands` variant.
+    ///
+    /// # Examples
+    ///
+    /// ```
+    /// use crate::cli::Commands;
+    /// use crate::cli::version::Version;
+    ///
+    /// // construct a Version subcommand then execute it
+    /// let cmd = Commands::Version(Version::default());
+    /// let _ = cmd.run();
+    /// ```
+    ///
+    /// # Returns
+    /// `Ok(())` if the subcommand completed successfully, `Err` with the underlying error otherwise.
     pub fn run(self) -> Result<()> {
         match self {
             Self::Export(cmd) => cmd.run(),

@@ -14,10 +14,51 @@ pub struct JvmRepository {
 }
 
 impl JvmRepository {
+    /// Create a new JvmRepository that wraps the provided SQLite connection pool.
+    ///
+    /// # Examples
+    ///
+    /// ```no_run
+    /// use r2d2_sqlite::SqliteConnectionManager;
+    /// use r2d2::Pool;
+    /// let manager = SqliteConnectionManager::file(":memory:");
+    /// let pool = Pool::new(manager).unwrap();
+    /// let repo = crate::db::jvm_repository::JvmRepository::new(pool).unwrap();
+    /// ```
+    ///
+    /// # Returns
+    ///
+    /// `Ok` containing the newly created `JvmRepository` when successful.
     pub fn new(pool: Pool<SqliteConnectionManager>) -> Result<Self> {
         Ok(JvmRepository { pool })
     }
 
+    /// Inserts or updates multiple JVM records in batched transactions.
+    ///
+    /// Performs batched multi-row INSERTs into the `JVM` table and applies an
+    /// `ON CONFLICT(url) DO UPDATE` upsert that updates the row only when at least
+    /// one stored column differs from the incoming row. All chunks are executed
+    /// inside a single database transaction.
+    ///
+    /// # Parameters
+    ///
+    /// * `jvm_data` - A set of `JvmData` items to be inserted or upserted; items are
+    ///   processed in batches.
+    ///
+    /// # Returns
+    ///
+    /// The total number of rows affected (sum of rows inserted or updated).
+    ///
+    /// # Examples
+    ///
+    /// ```
+    /// # use std::collections::HashSet;
+    /// # fn example(repo: &crate::db::JvmRepository, data: HashSet<crate::db::JvmData>) -> anyhow::Result<u64> {
+    /// let affected = repo.insert(&data)?;
+    /// assert!(affected >= 0);
+    /// # Ok(affected)
+    /// # }
+    /// ```
     pub fn insert(&self, jvm_data: &HashSet<JvmData>) -> Result<u64> {
         let mut conn = self.pool.get()?;
         let mut result = 0;
@@ -115,6 +156,19 @@ impl JvmRepository {
         Ok(result)
     }
 
+    /// Exports JVM entries filtered by release type, architecture, and operating system.
+    ///
+    /// # Examples
+    ///
+    /// ```
+    /// // Fetch JVM entries for GA releases on x64 Linux
+    /// let jvms = repo.export_release_type("ga", "x64", "linux")?;
+    /// assert!(jvms.iter().all(|j| j.release_type == "ga" && j.architecture == "x64" && j.os == "linux"));
+    /// ```
+    ///
+    /// # Returns
+    ///
+    /// A `Vec<JvmData>` containing all JVM records from `JVM_VIEW` that match the provided `release_type`, `architecture`, and `os`.
     pub fn export_release_type(&self, release_type: &str, arch: &str, os: &str) -> Result<Vec<JvmData>> {
         let stmt = indoc! {
           "SELECT
@@ -146,6 +200,20 @@ impl JvmRepository {
         self.export(stmt, &[&release_type, &os, &arch])
     }
 
+    /// Exports JVM records filtered by vendor, operating system, and architecture from `JVM_VIEW`.
+    ///
+    /// # Examples
+    ///
+    /// ```
+    /// // Given a `repo: JvmRepository` already connected to the database:
+    /// let records = repo.export_vendor("Temurin", "linux", "x64").unwrap();
+    /// // `records` contains `JvmData` entries matching the provided vendor, os, and architecture.
+    /// assert!(records.iter().all(|r| r.vendor == "Temurin"));
+    /// ```
+    ///
+    /// # Returns
+    ///
+    /// A vector of `JvmData` records that match the provided `vendor`, `os`, and `arch`.
     pub fn export_vendor(&self, vendor: &str, os: &str, arch: &str) -> Result<Vec<JvmData>> {
         let stmt = indoc::indoc! {
           "SELECT
@@ -177,6 +245,20 @@ impl JvmRepository {
         self.export(stmt, &[&vendor, &os, &arch])
     }
 
+    /// Executes the given SQL query with the provided parameters and maps each result row into a `JvmData`.
+    ///
+    /// The optional `features` column, if present, is parsed from a comma-separated string into `Option<Vec<String>>`.
+    ///
+    /// # Examples
+    ///
+    /// ```
+    /// let rows = repo.export("SELECT * FROM JVM_VIEW WHERE vendor = ?1", &[&vendor]).unwrap();
+    /// assert!(rows.iter().all(|r| r.vendor == vendor));
+    /// ```
+    ///
+    /// # Returns
+    ///
+    /// A `Vec<JvmData>` containing one entry for each row returned by the query.
     fn export(&self, query: &str, params: &[&dyn ToSql]) -> Result<Vec<JvmData>> {
         let conn = self.pool.get()?;
         let mut stmt = conn.prepare(query)?;
@@ -207,6 +289,22 @@ impl JvmRepository {
         Ok(data)
     }
 
+    /// Retrieve distinct values for a column from `JVM_VIEW` in ascending order.
+    ///
+    /// `column` must be a valid column name present in `JVM_VIEW`.
+    ///
+    /// # Returns
+    ///
+    /// A `Vec<String>` containing the distinct values for the given column, ordered ascending.
+    ///
+    /// # Examples
+    ///
+    /// ```rust,no_run
+    /// // Acquire a JvmRepository (example; replace with real construction)
+    /// // let repo = JvmRepository::new(pool).unwrap();
+    /// // let vendors = repo.get_distinct("vendor").unwrap();
+    /// // assert!(vendors.windows(2).all(|w| w[0] <= w[1]));
+    /// ```
     pub fn get_distinct(&self, column: &str) -> Result<Vec<String>> {
         let conn = self.pool.get()?;
         let mut stmt = conn.prepare(&format!(

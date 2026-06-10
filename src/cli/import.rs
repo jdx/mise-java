@@ -15,6 +15,24 @@ use crate::{
 pub struct Import {}
 
 impl Import {
+    /// Imports JVM JSON files from the configured export directory into the database.
+    ///
+    /// Scans a directory tree rooted at `conf.export.path` (defaulting to `public/api/jvm/`)
+    /// expecting the layout `<release_type>/<os>/<architecture>.json`. Each JSON file is
+    /// deserialized to `JvmData`, enriched with `release_type`, `os`, and `architecture`,
+    /// deduplicated, and inserted/updated via `JvmRepository`.
+    ///
+    /// # Errors
+    ///
+    /// Returns an error if configuration lookup, filesystem access, JSON deserialization,
+    /// database pool/repository creation, or the insert operation fail.
+    ///
+    /// # Examples
+    ///
+    /// ```no_run
+    /// let cmd = Import {};
+    /// cmd.run().unwrap();
+    /// ```
     pub fn run(self) -> Result<()> {
         let conf = Conf::try_get()?;
         let export_path = conf.export.path.unwrap_or("public/api/jvm/".to_string());
