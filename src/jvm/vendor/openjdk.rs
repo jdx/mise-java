@@ -27,7 +27,7 @@ impl Vendor for OpenJDK {
 
     fn fetch_data(&self, jvm_data: &mut HashSet<JvmData>) -> eyre::Result<()> {
         let anchors: Vec<AnchorElement> = vec![
-            "archive", "21", "22", "23", "24", "25", "26", "27", "leyden", "loom", "valhalla",
+            "archive", "21", "22", "23", "24", "25", "26", "27", "28", "leyden", "loom", "valhalla",
         ]
         .into_par_iter()
         .flat_map(|version| {
