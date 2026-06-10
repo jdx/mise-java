@@ -4,7 +4,6 @@ use indoc::indoc;
 
 mod export;
 mod fetch;
-mod import;
 mod ls;
 pub mod version;
 
@@ -14,7 +13,6 @@ pub struct Cli {}
 pub enum Commands {
     Export(export::Export),
     Fetch(fetch::Fetch),
-    Import(import::Import),
     Ls(ls::Ls),
     Version(version::Version),
 }
@@ -24,7 +22,6 @@ impl Commands {
         match self {
             Self::Export(cmd) => cmd.run(),
             Self::Fetch(cmd) => cmd.run(),
-            Self::Import(cmd) => cmd.run(),
             Self::Ls(cmd) => cmd.run(),
             Self::Version(cmd) => cmd.run(),
         }
