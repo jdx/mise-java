@@ -51,8 +51,11 @@ impl ConnectionPool {
                     }
                     let tls_connector = MakeTlsConnector::new(connector.build());
                     let manager = PostgresConnectionManager::new(url.parse().unwrap(), tls_connector);
+                    let pool_size = conf.database.pool_size.unwrap_or(10);
+                    let min_idle = conf.database.min_idle.unwrap_or(1).min(pool_size);
                     let pool = Pool::builder()
-                        .max_size(conf.database.pool_size.unwrap_or(10))
+                        .max_size(pool_size)
+                        .min_idle(Some(min_idle))
                         .max_lifetime(Some(Duration::from_secs(60 * 60)))
                         .build(manager)?;
                     Ok(pool)

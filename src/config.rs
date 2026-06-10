@@ -15,6 +15,9 @@ pub struct DatabaseConf {
     /// Database connection pool size. Default: 10
     #[config(env = "ROAST_DATABASE_POOL_SIZE")]
     pub pool_size: Option<u32>,
+    /// Minimum idle database connections. Default: 1
+    #[config(env = "ROAST_DATABASE_MIN_IDLE")]
+    pub min_idle: Option<u32>,
     /// Database connection URL
     #[config(env = "ROAST_DATABASE_URL")]
     pub url: Option<String>,

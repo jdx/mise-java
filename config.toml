@@ -3,6 +3,10 @@
 # Maximum number of connections to the database. Default is 10.
 pool_size = 10
 
+# ROAST_DATABASE_MIN_IDLE
+# Minimum idle database connections. Default is 1.
+min_idle = 1
+
 # ROAST_DATABASE_URL
 # Database connection URL.
 url = "postgres://roast:roast@localhost:5432/roast"
