@@ -140,6 +140,8 @@ impl JvmRepository {
               release_type = ?1
               AND os = ?2
               AND architecture = ?3
+          ORDER BY
+              url
           ;",
         };
 
@@ -171,6 +173,8 @@ impl JvmRepository {
               vendor = ?1
               AND os = ?2
               AND architecture = ?3
+          ORDER BY
+              url
           ;"
         };
 
@@ -188,9 +192,7 @@ impl JvmRepository {
                 checksum: row.get("checksum")?,
                 checksum_url: row.get("checksum_url")?,
                 created_at: row.get("created_at")?,
-                features: row
-                    .get::<_, Option<String>>("features")
-                    .map(|f| f.map(|f| f.split(',').map(String::from).collect()))?,
+                features: decode_features(row.get::<_, Option<String>>("features")?),
                 file_type: row.get("file_type")?,
                 filename: row.get("filename")?,
                 image_type: row.get("image_type")?,
@@ -250,7 +252,7 @@ fn map_workaround(jvm_data: &HashSet<JvmData>) -> Vec<DbJvmData> {
             architecture: item.architecture.clone(),
             checksum: item.checksum.clone(),
             checksum_url: item.checksum_url.clone(),
-            features: item.features.as_ref().map(|f| f.join(",")),
+            features: encode_features(&item.features),
             file_type: item.file_type.clone(),
             filename: item.filename.clone(),
             image_type: item.image_type.clone(),
@@ -264,4 +266,54 @@ fn map_workaround(jvm_data: &HashSet<JvmData>) -> Vec<DbJvmData> {
             version: item.version.clone(),
         })
         .collect::<Vec<DbJvmData>>()
+}
+
+fn encode_features(features: &Option<Vec<String>>) -> Option<String> {
+    let features = features
+        .as_ref()?
+        .iter()
+        .filter(|feature| !feature.is_empty())
+        .cloned()
+        .collect::<Vec<_>>();
+    if features.is_empty() {
+        None
+    } else {
+        Some(features.join(","))
+    }
+}
+
+fn decode_features(features: Option<String>) -> Option<Vec<String>> {
+    let features = features?
+        .split(',')
+        .filter(|feature| !feature.is_empty())
+        .map(String::from)
+        .collect::<Vec<_>>();
+    if features.is_empty() { None } else { Some(features) }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::{decode_features, encode_features};
+
+    #[test]
+    fn empty_features_are_not_encoded_as_an_empty_string() {
+        assert_eq!(encode_features(&None), None);
+        assert_eq!(encode_features(&Some(vec![])), None);
+        assert_eq!(encode_features(&Some(vec!["".to_string()])), None);
+        assert_eq!(
+            encode_features(&Some(vec!["musl".to_string(), "javafx".to_string()])),
+            Some("musl,javafx".to_string())
+        );
+    }
+
+    #[test]
+    fn blank_db_features_are_not_exported_as_a_feature() {
+        assert_eq!(decode_features(None), None);
+        assert_eq!(decode_features(Some("".to_string())), None);
+        assert_eq!(decode_features(Some(",".to_string())), None);
+        assert_eq!(
+            decode_features(Some("musl,javafx".to_string())),
+            Some(vec!["musl".to_string(), "javafx".to_string()])
+        );
+    }
 }

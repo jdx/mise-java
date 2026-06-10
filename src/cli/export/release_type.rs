@@ -78,11 +78,16 @@ impl ReleaseType {
                 for arch in &archs {
                     let data = db.export_release_type(release_type, arch, os)?;
 
-                    let export_data = data
+                    let mut export_data = data
                         .into_par_iter()
                         .filter(|item| JvmData::filter(item, &filters))
                         .map(|item| JvmData::map(&item, &include, &exclude))
                         .collect::<Vec<Map<String, Value>>>();
+                    export_data.sort_by(|a, b| {
+                        a.get("url")
+                            .and_then(Value::as_str)
+                            .cmp(&b.get("url").and_then(Value::as_str))
+                    });
                     let size = export_data.len();
 
                     info!("exporting {size} records to {release_type}/{os}/{arch}.json");

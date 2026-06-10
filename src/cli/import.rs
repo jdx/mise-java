@@ -43,7 +43,15 @@ impl Import {
                     let mut items: Vec<JvmData> = serde_json::from_reader(file)?;
                     for item in &mut items {
                         item.release_type.clone_from(&release_type);
-                        item.os.clone_from(&os);
+                        if os == "alpine-linux" {
+                            item.os = "linux".to_string();
+                            let features = item.features.get_or_insert_with(Vec::new);
+                            if !features.iter().any(|feature| feature == "musl") {
+                                features.push("musl".to_string());
+                            }
+                        } else {
+                            item.os.clone_from(&os);
+                        }
                         item.architecture.clone_from(&architecture);
                     }
                     data.extend(items);
