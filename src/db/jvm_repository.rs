@@ -3,25 +3,25 @@ use std::collections::HashSet;
 use crate::jvm::JvmData;
 use eyre::Result;
 use indoc::indoc;
+use postgres_openssl::MakeTlsConnector;
 use r2d2::Pool;
-use r2d2_sqlite::SqliteConnectionManager;
-use rusqlite::types::ToSql;
+use r2d2_postgres::PostgresConnectionManager;
 
 const BATCH_SIZE: usize = 1000;
 
 pub struct JvmRepository {
-    pool: Pool<SqliteConnectionManager>,
+    pool: Pool<PostgresConnectionManager<MakeTlsConnector>>,
 }
 
 impl JvmRepository {
-    pub fn new(pool: Pool<SqliteConnectionManager>) -> Result<Self> {
+    pub fn new(pool: Pool<PostgresConnectionManager<MakeTlsConnector>>) -> Result<Self> {
         Ok(JvmRepository { pool })
     }
 
     pub fn insert(&self, jvm_data: &HashSet<JvmData>) -> Result<u64> {
         let mut conn = self.pool.get()?;
         let mut result = 0;
-        let tx = conn.transaction()?;
+        let mut tx = conn.transaction()?;
         let columns = 15;
 
         for chunk in map_workaround(jvm_data).chunks(BATCH_SIZE) {
@@ -31,13 +31,13 @@ impl JvmRepository {
                 VALUES "
             );
 
-            let mut params: Vec<&dyn ToSql> = Vec::new();
+            let mut params: Vec<&(dyn postgres::types::ToSql + Sync)> = Vec::new();
             for (i, data) in chunk.iter().enumerate() {
                 if i > 0 {
                     query.push(',');
                 }
                 query.push_str(&format!(
-                    "(?{}, ?{}, ?{}, ?{}, ?{}, ?{}, ?{}, ?{}, ?{}, ?{}, ?{}, ?{}, ?{}, ?{}, ?{})",
+                    "(${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${})",
                     i * columns + 1,
                     i * columns + 2,
                     i * columns + 3,
@@ -90,25 +90,25 @@ impl JvmRepository {
                 vendor = excluded.vendor,
                 version = excluded.version
                 WHERE
-                   excluded.architecture IS NOT JVM.architecture
-                OR excluded.checksum IS NOT JVM.checksum
-                OR excluded.checksum_url IS NOT JVM.checksum_url
-                OR excluded.features IS NOT JVM.features
-                OR excluded.file_type IS NOT JVM.file_type
-                OR excluded.filename IS NOT JVM.filename
-                OR excluded.image_type IS NOT JVM.image_type
-                OR excluded.java_version IS NOT JVM.java_version
-                OR excluded.jvm_impl IS NOT JVM.jvm_impl
-                OR excluded.os IS NOT JVM.os
-                OR excluded.release_type IS NOT JVM.release_type
-                OR excluded.size IS NOT JVM.size
-                OR excluded.url IS NOT JVM.url
-                OR excluded.vendor IS NOT JVM.vendor
-                OR excluded.version IS NOT JVM.version
+                   excluded.architecture != JVM.architecture
+                OR excluded.checksum != JVM.checksum
+                OR excluded.checksum_url != JVM.checksum_url
+                OR excluded.features != JVM.features
+                OR excluded.file_type != JVM.file_type
+                OR excluded.filename != JVM.filename
+                OR excluded.image_type != JVM.image_type
+                OR excluded.java_version != JVM.java_version
+                OR excluded.jvm_impl != JVM.jvm_impl
+                OR excluded.os != JVM.os
+                OR excluded.release_type != JVM.release_type
+                OR excluded.size != JVM.size
+                OR excluded.url != JVM.url
+                OR excluded.vendor != JVM.vendor
+                OR excluded.version != JVM.version
                 ;",
             );
 
-            result += tx.execute(&query, params.as_slice())? as u64;
+            result += tx.execute(&query, &params)?;
         }
 
         tx.commit()?;
@@ -137,9 +137,9 @@ impl JvmRepository {
           FROM
               JVM_VIEW
           WHERE
-              release_type = ?1
-              AND os = ?2
-              AND architecture = ?3
+              release_type = $1
+              AND os = $2
+              AND architecture = $3
           ;",
         };
 
@@ -168,54 +168,54 @@ impl JvmRepository {
           FROM
               JVM_VIEW
           WHERE
-              vendor = ?1
-              AND os = ?2
-              AND architecture = ?3
+              vendor = $1
+              AND os = $2
+              AND architecture = $3
           ;"
         };
 
         self.export(stmt, &[&vendor, &os, &arch])
     }
 
-    fn export(&self, query: &str, params: &[&dyn ToSql]) -> Result<Vec<JvmData>> {
-        let conn = self.pool.get()?;
-        let mut stmt = conn.prepare(query)?;
+    fn export(&self, query: &str, params: &[&(dyn postgres::types::ToSql + Sync)]) -> Result<Vec<JvmData>> {
+        let mut conn = self.pool.get()?;
+        let stmt = conn.prepare(query)?;
         let mut data = Vec::new();
-        let mut rows = stmt.query(params)?;
-        while let Some(row) = rows.next()? {
+        let rows = conn.query(&stmt, params)?;
+        for row in rows {
             data.push(JvmData {
-                architecture: row.get("architecture")?,
-                checksum: row.get("checksum")?,
-                checksum_url: row.get("checksum_url")?,
-                created_at: row.get("created_at")?,
+                architecture: row.get("architecture"),
+                checksum: row.get("checksum"),
+                checksum_url: row.get("checksum_url"),
+                created_at: row.get("created_at"),
                 features: row
                     .get::<_, Option<String>>("features")
-                    .map(|f| f.map(|f| f.split(',').map(String::from).collect()))?,
-                file_type: row.get("file_type")?,
-                filename: row.get("filename")?,
-                image_type: row.get("image_type")?,
-                java_version: row.get("java_version")?,
-                jvm_impl: row.get("jvm_impl")?,
-                os: row.get("os")?,
-                release_type: row.get("release_type")?,
-                size: row.get::<_, Option<i32>>("size")?,
-                url: row.get("url")?,
-                vendor: row.get("vendor")?,
-                version: row.get("version")?,
+                    .map(|f| f.split(',').map(String::from).collect()),
+                file_type: row.get("file_type"),
+                filename: row.get("filename"),
+                image_type: row.get("image_type"),
+                java_version: row.get("java_version"),
+                jvm_impl: row.get("jvm_impl"),
+                os: row.get("os"),
+                release_type: row.get("release_type"),
+                size: row.get::<_, Option<i32>>("size"),
+                url: row.get("url"),
+                vendor: row.get("vendor"),
+                version: row.get("version"),
             });
         }
         Ok(data)
     }
 
     pub fn get_distinct(&self, column: &str) -> Result<Vec<String>> {
-        let conn = self.pool.get()?;
-        let mut stmt = conn.prepare(&format!(
+        let mut conn = self.pool.get()?;
+        let stmt = conn.prepare(&format!(
             "SELECT DISTINCT {column} FROM JVM_VIEW ORDER BY {column} ASC;"
         ))?;
         let mut data = Vec::new();
-        let mut rows = stmt.query([])?;
-        while let Some(row) = rows.next()? {
-            data.push(row.get::<usize, String>(0)?);
+        let rows = conn.query(&stmt, &[])?;
+        for row in rows {
+            data.push(row.get::<usize, String>(0));
         }
         Ok(data)
     }
