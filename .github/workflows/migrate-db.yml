@@ -43,6 +43,22 @@ jobs:
             exit 1
           fi
 
+      - name: Validate database URLs
+        run: |
+          if [ -z "$OLD_ROAST_DATABASE_URL" ]; then
+            echo "OLD_ROAST_DATABASE_URL is not configured."
+            exit 1
+          fi
+          if [ -z "$ROAST_DATABASE_URL" ]; then
+            echo "ROAST_DATABASE_URL is not configured."
+            exit 1
+          fi
+          if [[ "$ROAST_DATABASE_URL" == *":6543/"* ]]; then
+            echo "ROAST_DATABASE_URL points at Supabase transaction pooler port 6543."
+            echo "Use the direct connection or session pooler for schema and pg_dump/psql migration work."
+            exit 1
+          fi
+
       - name: Checkout
         uses: actions/checkout@v6
 
@@ -61,11 +77,12 @@ jobs:
 
       - name: Reset target schema
         run: |
-          psql "$ROAST_DATABASE_URL" < sql/schema.sql
+          psql -v ON_ERROR_STOP=1 "$ROAST_DATABASE_URL" < sql/schema.sql
 
       - name: Copy JVM table
         run: |
-          pg_dump "$OLD_ROAST_DATABASE_URL" --data-only --table=JVM --column-inserts | psql "$ROAST_DATABASE_URL"
+          set -o pipefail
+          pg_dump "$OLD_ROAST_DATABASE_URL" --data-only --table=JVM --column-inserts --no-owner --no-privileges | psql -v ON_ERROR_STOP=1 "$ROAST_DATABASE_URL"
 
       - name: Export Data
         run: |
