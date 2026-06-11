@@ -46,6 +46,27 @@ docker exec -i -u postgres postgres psql -d roast -c "CREATE USER roast WITH PAS
 docker exec -i -u postgres postgres psql -d roast < ./sql/schema.sql
 ```
 
+#### Supabase PostgreSQL
+
+Create a Supabase project, copy its Postgres connection string, and initialize the schema. Prefer the direct
+connection or session pooler connection for update jobs.
+
+```bash
+ROAST_DATABASE_URL="postgresql://postgres.PROJECT_REF:PASSWORD@aws-0-REGION.pooler.supabase.com:6543/postgres?sslmode=require"
+ROAST_DATABASE_SSL_MODE=require
+psql "$ROAST_DATABASE_URL" < ./sql/schema.sql
+```
+
+Dump and restore the `JVM` table from the old database. The database is an accumulating metadata catalog, so preserving
+existing rows prevents older Java versions from disappearing when upstream vendor APIs stop listing them.
+
+```bash
+pg_dump "$OLD_ROAST_DATABASE_URL" --data-only --table=JVM --column-inserts > jvm.sql
+psql "$ROAST_DATABASE_URL" < jvm.sql
+```
+
+After restoring the table, run the export task and review the generated API diff before publishing.
+
 ## Run
 
 ### Environment variables
