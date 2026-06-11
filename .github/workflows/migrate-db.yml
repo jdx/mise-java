@@ -37,8 +37,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check confirmation
+        env:
+          CONFIRM: ${{ inputs.confirm }}
         run: |
-          if [ "${{ inputs.confirm }}" != "migrate" ]; then
+          if [ "$CONFIRM" != "migrate" ]; then
             echo "Refusing to migrate: confirmation input must be exactly 'migrate'."
             exit 1
           fi
@@ -51,6 +53,10 @@ jobs:
           fi
           if [ -z "$ROAST_DATABASE_URL" ]; then
             echo "ROAST_DATABASE_URL is not configured."
+            exit 1
+          fi
+          if [ "$OLD_ROAST_DATABASE_URL" = "$ROAST_DATABASE_URL" ]; then
+            echo "OLD_ROAST_DATABASE_URL and ROAST_DATABASE_URL must point at different databases."
             exit 1
           fi
           if [[ "$ROAST_DATABASE_URL" == *":6543/"* ]]; then
@@ -77,7 +83,7 @@ jobs:
 
       - name: Reset target schema
         run: |
-          psql -v ON_ERROR_STOP=1 "$ROAST_DATABASE_URL" < sql/schema.sql
+          sed '/^GRANT .* TO roast;$/d' sql/schema.sql | psql -v ON_ERROR_STOP=1 "$ROAST_DATABASE_URL"
 
       - name: Copy JVM table
         run: |
