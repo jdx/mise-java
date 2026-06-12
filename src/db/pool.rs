@@ -16,7 +16,7 @@ impl ConnectionPool {
 
         match conf.database.url {
             Some(url) => {
-                if url.starts_with("postgres://") {
+                if is_supported_database_url(&url) {
                     let mut connector = SslConnector::builder(SslMethod::tls())?;
                     match conf
                         .database
@@ -57,10 +57,28 @@ impl ConnectionPool {
                         .build(manager)?;
                     Ok(pool)
                 } else {
-                    Err(eyre::eyre!("unsupported database URL: {}", url))
+                    Err(eyre::eyre!(
+                        "unsupported database URL scheme: expected postgres:// or postgresql://"
+                    ))
                 }
             }
             None => Err(eyre::eyre!("database.url is not configured")),
         }
+    }
+}
+
+fn is_supported_database_url(url: &str) -> bool {
+    url.starts_with("postgres://") || url.starts_with("postgresql://")
+}
+
+#[cfg(test)]
+mod tests {
+    use super::is_supported_database_url;
+
+    #[test]
+    fn test_is_supported_database_url() {
+        assert!(is_supported_database_url("postgres://user:pass@example.com/db"));
+        assert!(is_supported_database_url("postgresql://user:pass@example.com/db"));
+        assert!(!is_supported_database_url("mysql://user:pass@example.com/db"));
     }
 }

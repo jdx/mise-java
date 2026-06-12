@@ -4,11 +4,12 @@
 pool_size = 10
 
 # ROAST_DATABASE_URL
-# Database connection URL.
+# Database connection URL. Supabase postgresql:// URLs are also supported.
 url = "postgres://roast:roast@localhost:5432/roast"
 
 # ROAST_DATABASE_SSL_MODE
 # SSL mode for the database connection. One of allow, prefer, require, verify-ca, verify-full. Default is "prefer".
+# Use "require" for Supabase.
 ssl_mode = "prefer"
 
 # ROAST_DATABASE_SSL_CA
