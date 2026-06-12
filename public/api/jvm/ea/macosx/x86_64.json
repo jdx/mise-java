@@ -18371,6 +18371,18 @@
     "version": "11.0.3-ea.6"
   },
   {
+    "checksum": "sha256:793a5886f2adf15fe81e95cd6cbfe315a03dfd0d21eddce211514a6a0cb829d3",
+    "created_at": "2026-06-12T22:47:04.084448",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.12-ea.6",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.12%2B6/sapmachine-jdk-21.0.12-ea.6_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.12-ea.6"
+  },
+  {
     "checksum": "sha256:24cf3a3b890b169342bb9c7f7bf61e942d446eb0d39680531eee299ad2560fd2",
     "created_at": "2025-03-28T22:04:28.081056",
     "features": [],
@@ -30295,6 +30307,18 @@
     "version": "11.0.7-ea.10"
   },
   {
+    "checksum": "sha256:0444755cf3b8d99c8d82e99ffe8b72ba184a8a988ef3d883805ee1494062c6a5",
+    "created_at": "2026-06-12T22:47:04.084448",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.12-ea.6",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.12%2B6/sapmachine-jre-21.0.12-ea.6_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.12-ea.6"
+  },
+  {
     "checksum": "sha256:599e6cbdfa18fda0e822bfd1ccbcb63b0cd2a5a95d03446b52fd4cff2d9c653e",
     "created_at": "2026-03-25T22:11:49.424729",
     "features": [],
@@ -31588,5 +31612,41 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11.0.4%2B2/sapmachine-jre-11.0.4-ea.2_osx-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "11.0.4-ea.2"
+  },
+  {
+    "checksum": "sha256:e05721370e15808593e6fc86ce889dbfd8e0ce8160b24c62fe153446882aa779",
+    "created_at": "2026-01-30T22:06:59.841439",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.0-ea",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk26/33/GPL/openjdk-26-ea+33_macos-x64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "26.0.0-ea"
+  },
+  {
+    "checksum": "sha256:769a57ec9e8f66dc2e4d574e9239e23f81a08d94a416fe354b4e30132309bf55",
+    "created_at": "2025-08-01T22:04:36.630175",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-ea",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk25/34/GPL/openjdk-25-ea+34_macos-x64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "25.0.0-ea"
+  },
+  {
+    "checksum": "sha256:9a4028a08994fa37f6cabfcf70683464b6f56b7b001601286192d90cf000b7fa",
+    "created_at": "2026-05-14T22:26:05.251011",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0-ea",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk27/22/GPL/openjdk-27-ea+22_macos-x64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "27.0.0-ea"
   }
 ]
