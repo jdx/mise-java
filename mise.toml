@@ -103,6 +103,7 @@ cargo run -- export vendor \
 '''
 
 [tasks."db:dump"]
+raw = true
 run = '''
 if ! command -v pg_dump &> /dev/null; then
   echo "pg_dump not found, please install it (brew install libpq)"
@@ -114,7 +115,7 @@ pg_dump \
 --port=$ROAST_DB_PORT \
 --username=$ROAST_DB_USR \
 --dbname=$ROAST_DB_NAME \
---format=plain | gzip > backup/"$(date -u +"%Y-%m-%dT%H.%M.%SZ")-roast.sql.gz"
+--format=plain --no-privileges | gzip > backup/"$(date -u +"%Y-%m-%dT%H.%M.%SZ")-roast.sql.gz"
 '''
 
 [tasks."db:restore"]

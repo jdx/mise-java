@@ -92,9 +92,3 @@ SELECT
     version
 FROM JVM
 ;
-
---
--- Allow read/write for user roast
---
-GRANT SELECT, INSERT, UPDATE, DELETE ON JVM TO roast;
-GRANT SELECT ON JVM_VIEW TO roast;
