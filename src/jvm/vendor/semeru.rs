@@ -139,12 +139,15 @@ fn map_asset(release: &GitHubRelease, asset: &GitHubAsset) -> Result<JvmData> {
 }
 
 fn version_from_tag(tag: &str) -> Result<String> {
-    let capture = regex!(r"^(?:jdk-?)?(.*)[_-]openj9-(.*)$")
+    let capture = regex!(r"^(?:jdk-?)?(.*?)(?:[_-]openj9-(.*))?$")
         .captures(tag)
         .ok_or_else(|| eyre::eyre!("regular expression failed for tag: {}", tag))?;
     let version = capture.get(1).unwrap().as_str().to_string();
-    let openj_version = capture.get(2).unwrap().as_str().to_string();
-    Ok(format!("{version}_openj9-{openj_version}"))
+    if let Some(openj_version) = capture.get(2) {
+        Ok(format!("{version}_openj9-{}", openj_version.as_str()))
+    } else {
+        Ok(version)
+    }
 }
 
 fn meta_from_name(name: &str) -> Result<FileNameMeta> {
@@ -197,6 +200,17 @@ mod test {
     use super::*;
 
     #[test]
+    fn test_version_from_tag() {
+        for (actual, expected) in [
+            ("jdk-11.0.22_7_openj9-0.43.0", "11.0.22_7_openj9-0.43.0"),
+            ("11.0.22_7_openj9-0.43.0", "11.0.22_7_openj9-0.43.0"),
+            ("jdk-21.0.11", "21.0.11"),
+        ] {
+            assert_eq!(version_from_tag(actual).unwrap(), expected);
+        }
+    }
+
+    #[test]
     fn test_meta_from_name() {
         for (actual, expected) in [
             (
@@ -215,6 +229,15 @@ mod test {
                     ext: "tar.gz".to_string(),
                     image_type: "jdk".to_string(),
                     os: "mac".to_string(),
+                },
+            ),
+            (
+                "ibm-semeru-open-jdk_aarch64_linux_21.0.11.0.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    image_type: "jdk".to_string(),
+                    os: "linux".to_string(),
                 },
             ),
             (
