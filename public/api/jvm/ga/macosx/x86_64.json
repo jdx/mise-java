@@ -22623,6 +22623,18 @@
     "version": "25.0.1+8_openj9-0.56.0"
   },
   {
+    "checksum": "sha256:063e6a6017d806380db110a1205942f7797aa0ad92d781e4905c92e0ad339278",
+    "created_at": "2026-06-16T22:42:22.570532",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.11.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.11.0/ibm-semeru-open-jre_x64_mac_21.0.11.0.tar.gz",
+    "vendor": "semeru",
+    "version": "21.0.11.0"
+  },
+  {
     "checksum": "sha256:0647d57ec98d7aa19d2801b3ec58697d7eb44a408df511bd49d39f0150a08f87",
     "created_at": "2025-03-28T22:04:32.319048",
     "features": [],
@@ -23991,6 +24003,18 @@
     "version": "8.30.0.1"
   },
   {
+    "checksum": "sha256:1019c6f25d6ce0330ffe54fd67253b527859d6f56a62ccccb6d5ad0c5196ca9f",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8.0.172",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.30.0.1-jdk8.0.172-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "8.30.0.1"
+  },
+  {
     "checksum": "sha256:1028cde7fab24f0d0221276ddae8c576ce1611af7ffc43b0ec725247f2365845",
     "created_at": "2025-03-28T22:04:32.259007",
     "features": [
@@ -24371,6 +24395,18 @@
     "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u412-b08/OpenJDK8U-jre_x64_mac_hotspot_8u412b08.tar.gz",
     "vendor": "temurin",
     "version": "8.0.412+8"
+  },
+  {
+    "checksum": "sha256:12579b7df096d25e4c686f79c1006c01ef5078099710ecdf395e20b159129096",
+    "created_at": "2026-06-16T22:42:22.570532",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.3.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25.0.3.0/ibm-semeru-open-jre_x64_mac_25.0.3.0.tar.gz",
+    "vendor": "semeru",
+    "version": "25.0.3.0"
   },
   {
     "checksum": "sha256:12579c27312e083003dc3595ca477b8e4878c2068c1a173fc3497bc8241730a0",
@@ -24817,6 +24853,18 @@
     "java_version": "9.0.1",
     "jvm_impl": "hotspot",
     "url": "https://cdn.azul.com/zulu/bin/zulu9.0.1.3-jdk9.0.1-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "9.0.1.3"
+  },
+  {
+    "checksum": "sha256:14c252a0e565e1eacbc4c4c0d17c17368a3f2f348e9aef1104b516856fd25641",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "9.0.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu9.0.1.3-ca-jdk9.0.1-macosx_x64.tar.gz",
     "vendor": "zulu",
     "version": "9.0.1.3"
   },
@@ -25505,6 +25553,18 @@
     "version": "8.92.0.21"
   },
   {
+    "checksum": "sha256:1a3b5acfb74c842f6b814d26a11683112d1c32fead7450fb66a43c2eed29a21b",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "7.0.80",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu7.10.0.1-ca-jdk7.0.80-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "7.10.0.1"
+  },
+  {
     "checksum": "sha256:1a6fa526f7e557c33fca4b94b14c83e9f730cd09d8d3ee4820e13791e0ba65d3",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [
@@ -25691,6 +25751,18 @@
     "version": "17.60.17.0"
   },
   {
+    "checksum": "sha256:1be68ff8b82c02d6ccd736366577bd37a93249efc7ec11c6088c13bbe0234dbb",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.0.66",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.11.0.1-ca-jdk8.0.66-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "8.11.0.1"
+  },
+  {
     "checksum": "sha256:1bec1024b342dc5728a0a477203fb9e12ce4b14db7cf6fdcb68dd21458e96fcf",
     "created_at": "2025-03-28T22:04:28.081056",
     "features": [],
@@ -25849,6 +25921,18 @@
     "version": "8.27.0.7"
   },
   {
+    "checksum": "sha256:1d05fa6173c01c6b6f1a4ba64a63d6026c65f12c2739d72298c49e74a1629c93",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8.0.162",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.27.0.7-jdk8.0.162-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "8.27.0.7"
+  },
+  {
     "checksum": "sha256:1d4020045b5183407e65b511ca4c805195f896da2e4fc2d572466a9d3bc5e5d4",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [],
@@ -25869,6 +25953,18 @@
     "java_version": "7.0.111",
     "jvm_impl": "hotspot",
     "url": "https://cdn.azul.com/zulu/bin/zulu7.15.0.1-ca-jdk7.0.111-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "7.15.0.1"
+  },
+  {
+    "checksum": "sha256:1d45972c642c6595285bf59b4ce78e1dc1cbc95e9df27ce5bae37ca218383fbf",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "7.0.111",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu7.15.0.1-jdk7.0.111-macosx_x64.zip",
     "vendor": "zulu",
     "version": "7.15.0.1"
   },
@@ -26119,6 +26215,18 @@
     "java_version": "11.0.1",
     "jvm_impl": "hotspot",
     "url": "https://cdn.azul.com/zulu/bin/zulu11.2.3-ca-jdk11.0.1-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "11.2.3.0"
+  },
+  {
+    "checksum": "sha256:1edf366ee821e5db8e348152fcb337b28dfd6bf0f97943c270dcc6747cedb6cb",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.2.3-jdk11.0.1-macosx_x64.tar.gz",
     "vendor": "zulu",
     "version": "11.2.3.0"
   },
@@ -27725,6 +27833,18 @@
     "version": "8.20.0.5"
   },
   {
+    "checksum": "sha256:2a58bd1d9b0cbf0b3d8d1bcdd117c407e3d5a0ec01e2f53565c9bec5cf9ea78b",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8.0.121",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.20.0.5-ca-jdk8.0.121-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "8.20.0.5"
+  },
+  {
     "checksum": "sha256:2a5f418bd97f4d39c295ba108694f7edcc258cdbfe6701c419cde4e4cce2f36c",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [],
@@ -28293,6 +28413,18 @@
     "java_version": "8.0.192",
     "jvm_impl": "hotspot",
     "url": "https://cdn.azul.com/zulu/bin/zulu8.33.0.1-ca-jdk8.0.192-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "8.33.0.1"
+  },
+  {
+    "checksum": "sha256:2f49058ecb532cd6ef2773441f7a10aa23e484639881775b367c28f8f2d9566a",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8.0.192",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.33.0.1-jdk8.0.192-macosx_x64.zip",
     "vendor": "zulu",
     "version": "8.33.0.1"
   },
@@ -30589,6 +30721,18 @@
     "version": "21.28.85.0"
   },
   {
+    "checksum": "sha256:42d076eaabc00b20dea37498110ee79e0334c3e859ce40d797003cca12ec50ea",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.0.60",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.9.0.4-ca-jdk8.0.60-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "8.9.0.4"
+  },
+  {
     "checksum": "sha256:42d4ada88e39b0f222ffdcf3c833f442af22852687992997eca82c573e65b86f",
     "created_at": "2025-03-28T22:04:33.817456",
     "features": [],
@@ -30775,6 +30919,18 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu14.27.1-ca-jdk14.0.0-macosx_x64.tar.gz",
     "vendor": "zulu",
     "version": "14.27.1.0"
+  },
+  {
+    "checksum": "sha256:445db356704fdfd735b27c8cb1c539dcb77c02e3b9b1bcb465289c3eebf8b81f",
+    "created_at": "2026-06-16T22:42:22.570532",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.3.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25.0.3.0/ibm-semeru-open-jdk_x64_mac_25.0.3.0.tar.gz",
+    "vendor": "semeru",
+    "version": "25.0.3.0"
   },
   {
     "checksum": "sha256:447ad93d5d5587f1e5581b51c7ae821f1d2de19a13a0e0f63b38b83e4a81bb34",
@@ -31283,6 +31439,18 @@
     "version": "10.3.5.0"
   },
   {
+    "checksum": "sha256:479551040608b0d08645aa6401b03cb8cc8e9bf6b64bd81f9b41822693ecfcf4",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "10.0.2",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu10.3.5-ca-jdk10.0.2-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "10.3.5.0"
+  },
+  {
     "checksum": "sha256:47ad8859d4e98deb67264f3551345e132653d710ae8b576c1f5f713d6b9d8eb5",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [
@@ -31685,6 +31853,18 @@
     "version": "11.64.19.0"
   },
   {
+    "checksum": "sha256:4a6565e4d1bbc3eb1a771cab459b4d9ed823633ac7fbaed62139ad14cb09fefc",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8.0.60",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.9.0.4-ca-jdk8.0.60-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "8.9.0.4"
+  },
+  {
     "checksum": "sha256:4a6e68ff0390404dfe74207784bb8a9d72efe20eb8949f5318880c6acd796938",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [],
@@ -31805,6 +31985,18 @@
     "java_version": "9.0.7",
     "jvm_impl": "hotspot",
     "url": "https://cdn.azul.com/zulu/bin/zulu9.0.7.1-ca-jdk9.0.7-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "9.0.7.1"
+  },
+  {
+    "checksum": "sha256:4b1f8529ff3a8bebc974e2a22395cb27ad8750e386c8c4d1b0a1b16f89cfcf66",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "9.0.7",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu9.0.7.1-jdk9.0.7-macosx_x64.zip",
     "vendor": "zulu",
     "version": "9.0.7.1"
   },
@@ -32475,6 +32667,18 @@
     "version": "8u402-b06_openj9-0.43.0"
   },
   {
+    "checksum": "sha256:5045004638d2ffe01ef76f4d45994fafe85fcc4c4e0e9b4e4bf82765199e39a4",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "7.0.60",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu7.5.0.1-ca-jdk7.0.60-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "7.5.0.1"
+  },
+  {
     "checksum": "sha256:506e80f781a0f4ea4ad0f1ce3e02a175448dc66b343e9f597f63580522567abb",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [],
@@ -32645,6 +32849,18 @@
     "java_version": "8.0.92",
     "jvm_impl": "hotspot",
     "url": "https://cdn.azul.com/zulu/bin/zulu8.15.0.1-jdk8.0.92-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "8.15.0.1"
+  },
+  {
+    "checksum": "sha256:51b6ee838224d0b7ed18999043db2850d57cf3e9b06246a03d0b684a9807f8d4",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8.0.92",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.15.0.1-ca-jdk8.0.92-macosx_x64.zip",
     "vendor": "zulu",
     "version": "8.15.0.1"
   },
@@ -33649,6 +33865,18 @@
     "version": "10.1.11.0"
   },
   {
+    "checksum": "sha256:5995eb1b4810ca310adebf51c742aaa6ad2c0a66086d2fa8d3c6f0e0899fd28a",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "10.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu10.1.11-ca-jdk10.0.0-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "10.1.11.0"
+  },
+  {
     "checksum": "sha256:599f534b12431f14951c4c6cabe8997f3dbffb8afbe26fb97f820d21424905cd",
     "created_at": "2025-03-28T22:04:32.259007",
     "features": [],
@@ -33771,6 +33999,18 @@
     "java_version": "9.0.7",
     "jvm_impl": "hotspot",
     "url": "https://cdn.azul.com/zulu/bin/zulu9.0.7.1-jdk9.0.7-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "9.0.7.1"
+  },
+  {
+    "checksum": "sha256:5a5b3225b86d3fdb51e9add5335f43cc19c6b2d9b8b5558e72b52d7b2ce9162e",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "9.0.7",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu9.0.7.1-ca-jdk9.0.7-macosx_x64.tar.gz",
     "vendor": "zulu",
     "version": "9.0.7.1"
   },
@@ -34237,6 +34477,18 @@
     "version": "7.18.0.3"
   },
   {
+    "checksum": "sha256:5ddb19982464165a4f43b7e40e15ab6d95bc0742401eb52d6f35233d33f4940e",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "7.0.141",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu7.18.0.3-ca-jdk7.0.141-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "7.18.0.3"
+  },
+  {
     "checksum": "sha256:5ddd6ee1af9308857589a1c82023061eccd03f042c4082ee00e3044a4200c233",
     "created_at": "2025-03-28T22:04:28.081056",
     "features": [],
@@ -34413,6 +34665,18 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu15.38.17-ca-jre15.0.6-macosx_x64.zip",
     "vendor": "zulu",
     "version": "15.38.17.0"
+  },
+  {
+    "checksum": "sha256:5f0fa1425468868fc425c094e03e28bd72c2c10530872e6a4fa000b7c7ba6b5f",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8.0.66",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.11.0.1-ca-jdk8.0.66-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "8.11.0.1"
   },
   {
     "checksum": "sha256:5f45be80eccc21da0f8853c11916e464dc14fc1f170bc1f60c9d213235d19405",
@@ -35995,6 +36259,18 @@
     "version": "23.28.85.0"
   },
   {
+    "checksum": "sha256:695d74b5dbc41dc0792cac8641b0b40c00db47b86da844231c81c2680a245cce",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "7.0.72",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu7.7.0.1-ca-jdk7.0.72-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "7.7.0.1"
+  },
+  {
     "checksum": "sha256:698c9fd522901a03b9c0f6fe7c17c9835f6cfaa515987bde9a1eb10f05d0b697",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [],
@@ -36265,6 +36541,18 @@
     "java_version": "7.0.161",
     "jvm_impl": "hotspot",
     "url": "https://cdn.azul.com/zulu/bin/zulu7.21.0.3-jdk7.0.161-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "7.21.0.3"
+  },
+  {
+    "checksum": "sha256:6bb3d562b79e97c08e33f5eaf3a0193a1b8b0617105a3fbdcfe833d04bdbe2fd",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "7.0.161",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu7.21.0.3-ca-jdk7.0.161-macosx_x64.zip",
     "vendor": "zulu",
     "version": "7.21.0.3"
   },
@@ -39015,6 +39303,18 @@
     "version": "8.33.0.1"
   },
   {
+    "checksum": "sha256:7fd453f4e26331fa31f36d8431fab87939946979aef10c7d5f919a1f6c4e9690",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.0.192",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.33.0.1-jdk8.0.192-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "8.33.0.1"
+  },
+  {
     "checksum": "sha256:7fd6b60478a23ebb6309d3c5bdfc06bb67c900f4c8b5d18c89d4463280cad968",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [],
@@ -39063,6 +39363,18 @@
     "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.3%2B7_openj9-0.32.0/ibm-semeru-open-jre_x64_mac_17.0.3_7_openj9-0.32.0.tar.gz",
     "vendor": "semeru",
     "version": "17.0.3+7_openj9-0.32.0"
+  },
+  {
+    "checksum": "sha256:801f7731660bdd81a311504c16a2e89541a648f1ac09f74624a82856f2aa60f1",
+    "created_at": "2026-06-16T22:42:22.570532",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.11.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.11.0/ibm-semeru-open-jdk_x64_mac_21.0.11.0.tar.gz",
+    "vendor": "semeru",
+    "version": "21.0.11.0"
   },
   {
     "checksum": "sha256:8029385ec6516a21c9ff85cb5a61a2022fe4ce537f9489b93d5e33cfc5bc3e5f",
@@ -39805,6 +40117,18 @@
     "version": "8.21.0.1"
   },
   {
+    "checksum": "sha256:87575cbe5dc98ae4326c3c786dbe53515030f832451af910c11ce1b67e5b0977",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8.0.131",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.21.0.1-jdk8.0.131-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "8.21.0.1"
+  },
+  {
     "checksum": "sha256:878b72abcb5714e7959816fff6bf5c6b69aa5ada60fda3557f80d658a00abc86",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [
@@ -40313,6 +40637,18 @@
     "java_version": "9.0.0",
     "jvm_impl": "hotspot",
     "url": "https://cdn.azul.com/zulu/bin/zulu9.0.0.15-ca-jdk9.0.0-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "9.0.0.15"
+  },
+  {
+    "checksum": "sha256:8bd82ee91755e198f16f37caffbcf987c4736d94b0183b76434e469e750d9c80",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "9.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu9.0.0.15-jdk9.0.0-macosx_x64.zip",
     "vendor": "zulu",
     "version": "9.0.0.15"
   },
@@ -40973,6 +41309,18 @@
     "java_version": "9.0.1",
     "jvm_impl": "hotspot",
     "url": "https://cdn.azul.com/zulu/bin/zulu9.0.1.3-ca-jdk9.0.1-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "9.0.1.3"
+  },
+  {
+    "checksum": "sha256:90973bf704e39a39b22510e3185a73053df661260790e6b9ff60b94b4cbf2569",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "9.0.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu9.0.1.3-jdk9.0.1-macosx_x64.zip",
     "vendor": "zulu",
     "version": "9.0.1.3"
   },
@@ -42713,6 +43061,18 @@
     "version": "13.44.13.0"
   },
   {
+    "checksum": "sha256:9d8f4a2f8bd65809c85163c0aa32b2a6d4a651419d5a514ce8472b431d910ae3",
+    "created_at": "2026-06-16T22:42:22.570532",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "8.0.492.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk-8.0.492.0/ibm-semeru-open-jre_x64_mac_8.0.492.0.tar.gz",
+    "vendor": "semeru",
+    "version": "8.0.492.0"
+  },
+  {
     "checksum": "sha256:9d97e6ef7eaaf79ebf565103786f6c8182af443d59f2a8f95a462c0981f04aa5",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [
@@ -43571,6 +43931,18 @@
     "java_version": "7.0.154",
     "jvm_impl": "hotspot",
     "url": "https://cdn.azul.com/zulu/bin/zulu7.20.0.3-ca-jdk7.0.154-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "7.20.0.3"
+  },
+  {
+    "checksum": "sha256:a2fbe9fe9b61b8c99f60bd26a25bead62925b1eb4f703455949dbebdc422a553",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "7.0.154",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu7.20.0.3-jdk7.0.154-macosx_x64.zip",
     "vendor": "zulu",
     "version": "7.20.0.3"
   },
@@ -44785,6 +45157,18 @@
     "version": "24.0.2+12_openj9-0.54.0"
   },
   {
+    "checksum": "sha256:abe8ab34bc5806f1eb309bbcbba42cb91bbcacceddf82d313fc5c4698830fd3f",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "7.0.85",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu7.11.0.3-ca-jdk7.0.85-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "7.11.0.3"
+  },
+  {
     "checksum": "sha256:abffad27dbafe46ff1e43172859ee28c314a864c72538bb71886a531457c56c9",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [
@@ -45117,6 +45501,18 @@
     "java_version": "8.0.91",
     "jvm_impl": "hotspot",
     "url": "https://cdn.azul.com/zulu/bin/zulu8.14.0.1-ca-jdk8.0.91-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "8.14.0.1"
+  },
+  {
+    "checksum": "sha256:aee9cabc317aab54f195a6525527b3166c73362da1136540ffeedb9d3cc4fe5e",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8.0.91",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.14.0.1-jdk8.0.91-macosx_x64.zip",
     "vendor": "zulu",
     "version": "8.14.0.1"
   },
@@ -49551,6 +49947,18 @@
     "version": "11.0.15"
   },
   {
+    "checksum": "sha256:ce80e2d8e7a0c973c24eaff1c7261575e0d4a5628f4e91dec688d68a46e538ff",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "7.0.65",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu7.6.0.1-ca-jdk7.0.65-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "7.6.0.1"
+  },
+  {
     "checksum": "sha256:ce87d4110d61922ae3ee6d61d4c0ee48d7a98dcda38cffb8abc8299c47b5a730",
     "created_at": "2025-03-28T22:04:32.217430",
     "features": [],
@@ -50055,6 +50463,18 @@
     "java_version": "7.0.181",
     "jvm_impl": "hotspot",
     "url": "https://cdn.azul.com/zulu/bin/zulu7.23.0.1-jdk7.0.181-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "7.23.0.1"
+  },
+  {
+    "checksum": "sha256:d2165cb86f730cba2fa6e6544592334f2ca67aa42096ee07139ad996a3e3fa44",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "7.0.181",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu7.23.0.1-ca-jdk7.0.181-macosx_x64.zip",
     "vendor": "zulu",
     "version": "7.23.0.1"
   },
@@ -53405,6 +53825,18 @@
     "version": "7.13.0.1"
   },
   {
+    "checksum": "sha256:ebdfe9b22041f1c23117aae8800f03973876d92972c33cd760fc64ea76686419",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "7.0.95",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu7.13.0.1-ca-jdk7.0.95-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "7.13.0.1"
+  },
+  {
     "checksum": "sha256:ec3eab5ac01c5bcfcc1fc9e790e5e044b908d4c51a15c38fcd54fb6d0d79ef3c",
     "created_at": "2025-03-28T22:04:28.484345",
     "features": [],
@@ -53453,6 +53885,18 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.10/sapmachine-jre-21.0.10_macos-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "21.0.10"
+  },
+  {
+    "checksum": "sha256:ec8c84dee17104ad43f189c9be6e2d3e121a4cfd09bf3c17681a4fee65e4b2d9",
+    "created_at": "2026-06-16T22:42:22.570532",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.0.492.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk-8.0.492.0/ibm-semeru-open-jdk_x64_mac_8.0.492.0.tar.gz",
+    "vendor": "semeru",
+    "version": "8.0.492.0"
   },
   {
     "checksum": "sha256:eca737bbc29de298da04856fdc9c856c2638df4151885050f710675a989cd31f",
@@ -53981,6 +54425,18 @@
     "java_version": "9.0.0",
     "jvm_impl": "hotspot",
     "url": "https://cdn.azul.com/zulu/bin/zre9.0.0.15-jre9.0.0-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "9.0.0.15"
+  },
+  {
+    "checksum": "sha256:f01c15b2a7cdc4a5161bf4f18c6cf627132f7209a19652880a11d95cd47476ca",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "9.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu9.0.0.15-ca-jre9.0.0-macosx_x64.tar.gz",
     "vendor": "zulu",
     "version": "9.0.0.15"
   },
@@ -56067,6 +56523,18 @@
     "version": "17.0.2"
   },
   {
+    "checksum": "sha256:fe703d8ae6c0a6c6d855596242f62f312e9bc0be8e1f267fc5414b09fa203660",
+    "created_at": "2026-06-16T22:42:22.570532",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.19.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.19.0/ibm-semeru-open-jre_x64_mac_17.0.19.0.tar.gz",
+    "vendor": "semeru",
+    "version": "17.0.19.0"
+  },
+  {
     "checksum": "sha256:fe9fc8ac16ddf6dd3b01564cff4c0a062208f940409dc5e33ed6b32f243f97de",
     "created_at": "2025-03-28T22:04:28.081056",
     "features": [],
@@ -56165,6 +56633,18 @@
     "java_version": "8.0.144",
     "jvm_impl": "hotspot",
     "url": "https://cdn.azul.com/zulu/bin/zulu8.23.0.3-jdk8.0.144-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "8.23.0.3"
+  },
+  {
+    "checksum": "sha256:ff533364c9cbd3b271ab5328efe28e2dd6d7bae5b630098a5683f742ecf0709d",
+    "created_at": "2026-06-16T22:39:44.491761",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8.0.144",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.23.0.3-ca-jdk8.0.144-macosx_x64.zip",
     "vendor": "zulu",
     "version": "8.23.0.3"
   },
@@ -63737,6 +64217,42 @@
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/vm-20.2.0/graalvm-ce-java8-darwin-amd64-20.2.0.tar.gz",
     "vendor": "graalvm",
     "version": "20.2.0+java8"
+  },
+  {
+    "checksum": null,
+    "created_at": "2026-06-16T22:42:22.570532",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.31.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.31.0/ibm-semeru-open-jdk_x64_mac_11.0.31.0.tar.gz",
+    "vendor": "semeru",
+    "version": "11.0.31.0"
+  },
+  {
+    "checksum": null,
+    "created_at": "2026-06-16T22:42:22.570532",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.31.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.31.0/ibm-semeru-open-jre_x64_mac_11.0.31.0.tar.gz",
+    "vendor": "semeru",
+    "version": "11.0.31.0"
+  },
+  {
+    "checksum": null,
+    "created_at": "2026-06-16T22:42:22.570532",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.19.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.19.0/ibm-semeru-open-jdk_x64_mac_17.0.19.0.tar.gz",
+    "vendor": "semeru",
+    "version": "17.0.19.0"
   },
   {
     "checksum": null,
