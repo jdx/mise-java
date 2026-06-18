@@ -47092,6 +47092,18 @@
     "version": "25.32.21.0"
   },
   {
+    "checksum": "sha256:3bdcd7c17fcab27c1290b84b1e1e67283ba19f2495f65faec39c24d1fe23f3f7",
+    "created_at": "2026-06-16T22:42:22.570532",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.3.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25.0.3.0/ibm-semeru-open-jre_aarch64_mac_25.0.3.0.tar.gz",
+    "vendor": "semeru",
+    "version": "25.0.3.0"
+  },
+  {
     "checksum": "sha512:ec52b78cbb6b64d82fc19d347e5e32f3c3639b84ff059861c96fc5dcd4d3c75f9901ea65347b2177d181a97e966fe3963d046e68da8feb102e20bbccca43b576",
     "created_at": "2026-01-12T22:06:06.692761",
     "features": [
@@ -47412,6 +47424,18 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu26.30.11-ca-fx-jre26.0.1-macosx_aarch64.tar.gz",
     "vendor": "zulu",
     "version": "26.30.11.0"
+  },
+  {
+    "checksum": null,
+    "created_at": "2026-06-16T22:42:22.570532",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.31.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.31.0/ibm-semeru-open-jdk_aarch64_mac_11.0.31.0.tar.gz",
+    "vendor": "semeru",
+    "version": "11.0.31.0"
   },
   {
     "checksum": "sha1:4ab1d8d6df52549f24ad869beb2675c263a4349e",
@@ -49310,6 +49334,18 @@
     "version": "25.0.2-b432.48"
   },
   {
+    "checksum": "sha256:54eb04f3caf81071876e71235e4d4edc7294522e9572de965fd0376e037ccb14",
+    "created_at": "2026-06-16T22:42:22.570532",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.11.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.11.0/ibm-semeru-open-jre_aarch64_mac_21.0.11.0.tar.gz",
+    "vendor": "semeru",
+    "version": "21.0.11.0"
+  },
+  {
     "checksum": "sha1:c3ae79bdb46a76e4b1d033a62ffcb873d2cb6fe5",
     "created_at": "2026-03-19T22:07:13.524838",
     "features": [
@@ -49454,6 +49490,18 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/25.0.1%2B13/bellsoft-jdk25.0.1%2B13-macos-aarch64-lite.tar.gz",
     "vendor": "liberica",
     "version": "25.0.1+13"
+  },
+  {
+    "checksum": null,
+    "created_at": "2026-06-16T22:42:22.570532",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.31.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.31.0/ibm-semeru-open-jre_aarch64_mac_11.0.31.0.tar.gz",
+    "vendor": "semeru",
+    "version": "11.0.31.0"
   },
   {
     "checksum": "sha1:6585715b9b234d7bc47600bcfe690633c0e9af56",
@@ -51114,6 +51162,18 @@
     "version": "8.92.0.21"
   },
   {
+    "checksum": "sha256:3eadaf09b075321c13fc3c494ad50033614b3119810b15f2547ebed678a9d2ef",
+    "created_at": "2026-06-16T22:42:22.570532",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.11.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.11.0/ibm-semeru-open-jdk_aarch64_mac_21.0.11.0.tar.gz",
+    "vendor": "semeru",
+    "version": "21.0.11.0"
+  },
+  {
     "checksum": "sha512:851ae0c1497c5b5a7c464ad4df20d3ce273c1593eb86ca0c5f6ba3ae01068175b3290c0430501cedf9d351d4e87f23d8b578e129bef09e22ec707f10a4ee2d98",
     "created_at": "2025-11-19T22:05:30.503639",
     "features": [],
@@ -51232,6 +51292,18 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/8u472%2B11/bellsoft-jdk8u472%2B11-macos-aarch64-full.tar.gz",
     "vendor": "liberica",
     "version": "8u472+11"
+  },
+  {
+    "checksum": null,
+    "created_at": "2026-06-16T22:42:22.570532",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.19.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.19.0/ibm-semeru-open-jre_aarch64_mac_17.0.19.0.tar.gz",
+    "vendor": "semeru",
+    "version": "17.0.19.0"
   },
   {
     "checksum": "sha256:714ce4382f8e1ec9531013a9766c81c77611fd308c12d34b4ef475cbd7d401db",
@@ -53270,6 +53342,18 @@
     "version": "21.0.9-b895.147"
   },
   {
+    "checksum": null,
+    "created_at": "2026-06-16T22:42:22.570532",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.19.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.19.0/ibm-semeru-open-jdk_aarch64_mac_17.0.19.0.tar.gz",
+    "vendor": "semeru",
+    "version": "17.0.19.0"
+  },
+  {
     "checksum": "md5:41ce6c83bf5c5cd648e80de30a9d5cca",
     "created_at": "2026-02-08T22:08:38.933333",
     "features": [
@@ -53586,6 +53670,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.2-osx-aarch64-b432.48.tar.gz",
     "vendor": "jetbrains",
     "version": "25.0.2-b432.48"
+  },
+  {
+    "checksum": "sha256:a69eb48b9c2a3321d44d6bbc3ec26e860e894ee3e96888f0ad114bd65c5fc73a",
+    "created_at": "2026-06-16T22:42:22.570532",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.3.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25.0.3.0/ibm-semeru-open-jdk_aarch64_mac_25.0.3.0.tar.gz",
+    "vendor": "semeru",
+    "version": "25.0.3.0"
   },
   {
     "checksum": "sha1:0ef6c898aa1de2201508719e3c306b8fb5579994",
