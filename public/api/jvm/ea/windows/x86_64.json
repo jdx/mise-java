@@ -17502,6 +17502,18 @@
     "version": "23.0.0-ea.14"
   },
   {
+    "checksum": "sha256:95f2039dcf26a1c012aaa98a839b7c4ccc5974f9697e6d7c7c6a332afcf12fed",
+    "created_at": "2026-06-19T22:24:47.152198",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "27.0.0-ea+27",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk27/27/GPL/openjdk-27-ea+27_windows-x64_bin.zip",
+    "vendor": "openjdk",
+    "version": "27.0.0-ea+27"
+  },
+  {
     "checksum": "sha256:96203c45d2ebe3597243bc47f192dc56980e3e56f71446162482dedf426a9363",
     "created_at": "2026-03-18T22:09:12.500575",
     "features": [],
@@ -26962,6 +26974,18 @@
     "version": "19.0.35.0"
   },
   {
+    "checksum": "sha256:ea552c7a26368ac534c4cae4c56666b9efdf9ad421575f4281dfbb81c4185fa3",
+    "created_at": "2026-06-19T22:24:47.152198",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "28.0.0-ea+3",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk28/3/GPL/openjdk-28-ea+3_windows-x64_bin.zip",
+    "vendor": "openjdk",
+    "version": "28.0.0-ea+3"
+  },
+  {
     "checksum": "sha256:ea715409649412eceacf28f6aabddc306f6f8d9fcff24bf94e5029a8d551e237",
     "created_at": "2025-03-28T22:04:28.081056",
     "features": [],
@@ -30389,42 +30413,6 @@
     "version": "26.0.0+29-ea"
   },
   {
-    "checksum": "sha256:59e8a607698d978c77ab04b5a7748f85831b5776858eac51fea4c4c165a32fd0",
-    "created_at": "2025-08-01T22:04:36.630175",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "java_version": "25.0.0-ea",
-    "jvm_impl": "hotspot",
-    "url": "https://download.java.net/java/early_access/jdk25/34/GPL/openjdk-25-ea+34_windows-x64_bin.zip",
-    "vendor": "openjdk",
-    "version": "25.0.0-ea"
-  },
-  {
-    "checksum": "sha256:007c293206270ff1040e9d27b573b2c3373cecfe97da2798206c6c1000cab9b9",
-    "created_at": "2026-06-12T22:43:33.273614",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "java_version": "27.0.0-ea",
-    "jvm_impl": "hotspot",
-    "url": "https://download.java.net/java/early_access/jdk27/26/GPL/openjdk-27-ea+26_windows-x64_bin.zip",
-    "vendor": "openjdk",
-    "version": "27.0.0-ea"
-  },
-  {
-    "checksum": "sha256:6e0811bf75540123fa28845352ebc400893f45c2b1ad8bedcf7837395fce7e5e",
-    "created_at": "2026-06-12T22:43:33.273614",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "java_version": "28.0.0-ea",
-    "jvm_impl": "hotspot",
-    "url": "https://download.java.net/java/early_access/jdk28/2/GPL/openjdk-28-ea+2_windows-x64_bin.zip",
-    "vendor": "openjdk",
-    "version": "28.0.0-ea"
-  },
-  {
     "checksum": "sha256:1613acc47081355dcb54aca5db4a0cc088734861b42bd254657ab88fd50944ec",
     "created_at": "2026-01-30T22:06:59.841439",
     "features": [],
@@ -30435,5 +30423,41 @@
     "url": "https://download.java.net/java/early_access/jdk26/33/GPL/openjdk-26-ea+33_windows-x64_bin.zip",
     "vendor": "openjdk",
     "version": "26.0.0-ea"
+  },
+  {
+    "checksum": "sha256:95f2039dcf26a1c012aaa98a839b7c4ccc5974f9697e6d7c7c6a332afcf12fed",
+    "created_at": "2026-06-19T22:24:47.152198",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "27.0.0-ea",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk27/27/GPL/openjdk-27-ea+27_windows-x64_bin.zip",
+    "vendor": "openjdk",
+    "version": "27.0.0-ea"
+  },
+  {
+    "checksum": "sha256:ea552c7a26368ac534c4cae4c56666b9efdf9ad421575f4281dfbb81c4185fa3",
+    "created_at": "2026-06-19T22:24:47.152198",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "28.0.0-ea",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk28/3/GPL/openjdk-28-ea+3_windows-x64_bin.zip",
+    "vendor": "openjdk",
+    "version": "28.0.0-ea"
+  },
+  {
+    "checksum": "sha256:59e8a607698d978c77ab04b5a7748f85831b5776858eac51fea4c4c165a32fd0",
+    "created_at": "2025-08-01T22:04:36.630175",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.0-ea",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk25/34/GPL/openjdk-25-ea+34_windows-x64_bin.zip",
+    "vendor": "openjdk",
+    "version": "25.0.0-ea"
   }
 ]
