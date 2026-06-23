@@ -22674,16 +22674,16 @@
     "version": "26.0.0+29-ea"
   },
   {
-    "checksum": "sha256:a24ad6d766245d35408ffa1d80894c5b861e4b987bef1f5b04b05286fc6de147",
-    "created_at": "2025-08-01T22:04:36.630175",
+    "checksum": "sha256:19ad2333706f7afe55263584b11b309c3737b45bbee9a19c1804561b04806d49",
+    "created_at": "2026-06-19T22:24:47.152198",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
-    "java_version": "25.0.0-ea",
+    "java_version": "28.0.0-ea",
     "jvm_impl": "hotspot",
-    "url": "https://download.java.net/java/early_access/jdk25/34/GPL/openjdk-25-ea+34_macos-aarch64_bin.tar.gz",
+    "url": "https://download.java.net/java/early_access/jdk28/3/GPL/openjdk-28-ea+3_macos-aarch64_bin.tar.gz",
     "vendor": "openjdk",
-    "version": "25.0.0-ea"
+    "version": "28.0.0-ea"
   },
   {
     "checksum": "sha256:a3439a5ea7102fac453cacf8b41adb29debda74975b555a84fb599a3f6154ad7",
@@ -22698,18 +22698,6 @@
     "version": "27.0.0-ea"
   },
   {
-    "checksum": "sha256:19ad2333706f7afe55263584b11b309c3737b45bbee9a19c1804561b04806d49",
-    "created_at": "2026-06-19T22:24:47.152198",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "java_version": "28.0.0-ea",
-    "jvm_impl": "hotspot",
-    "url": "https://download.java.net/java/early_access/jdk28/3/GPL/openjdk-28-ea+3_macos-aarch64_bin.tar.gz",
-    "vendor": "openjdk",
-    "version": "28.0.0-ea"
-  },
-  {
     "checksum": "sha256:a382052deb1f5ff0907f38344f4b5244b97532d4344af54380459a6f48bfaa4e",
     "created_at": "2026-01-30T22:06:59.841439",
     "features": [],
@@ -22720,5 +22708,17 @@
     "url": "https://download.java.net/java/early_access/jdk26/33/GPL/openjdk-26-ea+33_macos-aarch64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "26.0.0-ea"
+  },
+  {
+    "checksum": "sha256:a24ad6d766245d35408ffa1d80894c5b861e4b987bef1f5b04b05286fc6de147",
+    "created_at": "2025-08-01T22:04:36.630175",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-ea",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk25/34/GPL/openjdk-25-ea+34_macos-aarch64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "25.0.0-ea"
   }
 ]
