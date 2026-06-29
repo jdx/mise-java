@@ -266,6 +266,20 @@
     "version": "11.0.10-ea.9"
   },
   {
+    "checksum": "sha256:a9ac4aeb9142c735bce9a297c29788a0f4741412c29d26eccdccacea0f2b117c",
+    "created_at": "2026-06-27T22:30:55.779612",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4-ea.6",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25.0.4%2B6/sapmachine-jdk-25.0.4-ea.6_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.4-ea.6"
+  },
+  {
     "checksum": "sha256:de0522621797054dcf66da762c010517d55646656dc182971f6276e7bac217dd",
     "created_at": "2025-03-28T22:04:28.081056",
     "features": [
@@ -8237,6 +8251,20 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-11%2B10-0/sapmachine-jdk-11-ea.10_linux-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "11.0.0-ea.10"
+  },
+  {
+    "checksum": "sha256:8a6b6023b05bc5a7bd3eb657ec58153cd1e8381ad0fe438a89525979f3ee29cc",
+    "created_at": "2026-06-27T22:30:55.779612",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.0-ea.28",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B28/sapmachine-jre-27-ea.28_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.28"
   },
   {
     "checksum": "sha256:cb5cbeb3b0a4f18c49031dc036e04f9b5bf5902c7ca7eccb6ed2829428c94a5f",
@@ -20279,6 +20307,18 @@
     "version": "17.0.79.0"
   },
   {
+    "checksum": "sha256:fd8e521a9ef72f7f77c8fc04d1e26194bd2d8701a4be934406af08b0ae168c95",
+    "created_at": "2026-06-27T22:30:55.779612",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4-ea.6",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25.0.4%2B6/sapmachine-jdk-25.0.4-ea.6_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.4-ea.6"
+  },
+  {
     "checksum": "sha256:1eac77880d8f92b3c2881b61c0447301e9a48095ee947a7b0f51aa72e3e9ef0f",
     "created_at": "2025-03-28T22:04:28.081056",
     "features": [],
@@ -25763,6 +25803,20 @@
     "version": "14.0.0-ea.4"
   },
   {
+    "checksum": "sha256:c97851ab9297685f109f64de5aa4bfa3d5bf04227ed4db6a1440015cde560f7c",
+    "created_at": "2026-06-27T22:30:55.779612",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.12-ea.7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.12%2B7/sapmachine-jre-21.0.12-ea.7_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.12-ea.7"
+  },
+  {
     "checksum": "sha256:8bd2eb51f45440779cf2ac05808669fd1ea7895beaf85413a42bcbe60f5b3999",
     "created_at": "2025-03-28T22:04:28.081056",
     "features": [
@@ -28257,6 +28311,18 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-20%2B18/sapmachine-jdk-20-eabeta.18_linux-x64-musl_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "20.0.0-eabeta.18"
+  },
+  {
+    "checksum": "sha256:d78fe468d608304c46c871436eb57bdf827cb55d200cbe16f02aba6358ba9dbc",
+    "created_at": "2026-06-27T22:30:55.779612",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.0-ea.28",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B28/sapmachine-jre-27-ea.28_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.28"
   },
   {
     "checksum": "sha256:0c34dd794007f59614c20864fc6d31f3b64f75808fc3687b17b0de6c1e411784",
@@ -30862,6 +30928,18 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu17.0.67-ea-jdk17.0.0-ea.29-linux_x64.tar.gz",
     "vendor": "zulu",
     "version": "17.0.67.0"
+  },
+  {
+    "checksum": "sha256:245faa6f4f858197fa60d669b946644c5c6d328b6c16caf60818d0c5f5985abd",
+    "created_at": "2026-06-27T22:30:55.779612",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4-ea.6",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25.0.4%2B6/sapmachine-jre-25.0.4-ea.6_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.4-ea.6"
   },
   {
     "checksum": "sha256:9fd1a1ceaf6b33ab7eba15fb36eea03a08063b74a16a0e6764eb4acc1a029e37",
@@ -33746,6 +33824,18 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-23%2B22/sapmachine-jdk-23-ea.22_linux-x64-musl_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "23.0.0-ea.22"
+  },
+  {
+    "checksum": "sha256:81e07ae77165970f52d63a0d0fe5c8e55e738670a72903237a70ceed5f85960d",
+    "created_at": "2026-06-27T22:30:55.779612",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.12-ea.7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.12%2B7/sapmachine-jdk-21.0.12-ea.7_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.12-ea.7"
   },
   {
     "checksum": "sha256:6c6680b66b9d7ed62e1ecdce55fc0a17d62b1a30956ce8ccd3257225679c8813",
@@ -37228,6 +37318,20 @@
     "version": "11.0.0-ea.8"
   },
   {
+    "checksum": "sha256:ab4b7f112a56575ef561becdfb331fd3a00a6bee8255379e284261972a075af3",
+    "created_at": "2026-06-27T22:30:55.779612",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0-ea.28",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B28/sapmachine-jdk-27-ea.28_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.28"
+  },
+  {
     "checksum": "sha256:9f37cb9d436abb143c5a6486c3f009b543162547dd557bc660a3acf88ed081bc",
     "created_at": "2025-11-14T22:04:28.244849",
     "features": [
@@ -38556,6 +38660,20 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-12%2B26-0/sapmachine-jdk-12-ea.26_linux-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "12.0.0-ea.26"
+  },
+  {
+    "checksum": "sha256:b3e22ee488ff57c04150d10bd69f2fd10b49a1c153084929b778f942174f2a1f",
+    "created_at": "2026-06-27T22:30:55.779612",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4-ea.6",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25.0.4%2B6/sapmachine-jre-25.0.4-ea.6_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.4-ea.6"
   },
   {
     "checksum": "sha256:75a300b52539589c8c4b172ef292d5b58486de4d88d774be659975bc661767bf",
@@ -41324,6 +41442,20 @@
     "version": "21.0.3-ea.6"
   },
   {
+    "checksum": "sha256:80999fcb174f7910594f208665003ad71dc89236dc334dc0b903185e057405fa",
+    "created_at": "2026-06-27T22:30:55.779612",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.12-ea.7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.12%2B7/sapmachine-jdk-21.0.12-ea.7_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.12-ea.7"
+  },
+  {
     "checksum": "sha256:e58228cbf1e24be3d16392e6789a3c0ed17e6419a4fd64f0b378db2d7d16ca35",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [],
@@ -43210,6 +43342,18 @@
     "version": "19.0.0-ea.8"
   },
   {
+    "checksum": "sha256:e36d038d8488073ebf9c937b9d07d089c1dedca6ab3150ea4365ab17985e8ddb",
+    "created_at": "2026-06-27T22:30:55.779612",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0-ea.28",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B28/sapmachine-jdk-27-ea.28_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.28"
+  },
+  {
     "checksum": "sha256:f97d44b2d9ff810058ac7ddbe462ea277f9f8be8e0e25a8fdcf05bfc309f2c03",
     "created_at": "2026-01-21T22:08:07.756634",
     "features": [],
@@ -45017,6 +45161,18 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21%2B33/sapmachine-jdk-21-ea.33_linux-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "21.0.0-ea.33"
+  },
+  {
+    "checksum": "sha256:04368275058e096da12da843b4d0cfe56dc82c8148dcf247eb1adb3894643479",
+    "created_at": "2026-06-27T22:30:55.779612",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.12-ea.7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.12%2B7/sapmachine-jre-21.0.12-ea.7_linux-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.12-ea.7"
   },
   {
     "checksum": "sha256:99fe44e8b2970da6bea615d4da70cb7d059c57494808578980ab5758c472c555",
@@ -52737,28 +52893,16 @@
     "version": "13.0.2-ea.1"
   },
   {
-    "checksum": "sha256:9491eba6266080ac690d5e31b7776f5c94188c3f8092874d9fd250660d51050e",
-    "created_at": "2026-01-30T22:06:59.841439",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "java_version": "26.0.0-ea",
-    "jvm_impl": "hotspot",
-    "url": "https://download.java.net/java/early_access/jdk26/33/GPL/openjdk-26-ea+33_linux-x64_bin.tar.gz",
-    "vendor": "openjdk",
-    "version": "26.0.0-ea"
-  },
-  {
-    "checksum": "sha256:45707add322e7be16c9eaf4e6f15febf5bd06baeab88aea73d3a89fae0d7bcd7",
+    "checksum": "sha256:3f349a9ae39761069b8132f7ba529bec7bf6c759376f77cb57520d3f21d4fa23",
     "created_at": "2026-06-25T22:37:30.392034",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
-    "java_version": "27.0.0-ea",
+    "java_version": "28.0.0-ea",
     "jvm_impl": "hotspot",
-    "url": "https://download.java.net/java/early_access/jdk27/28/GPL/openjdk-27-ea+28_linux-x64_bin.tar.gz",
+    "url": "https://download.java.net/java/early_access/jdk28/4/GPL/openjdk-28-ea+4_linux-x64_bin.tar.gz",
     "vendor": "openjdk",
-    "version": "27.0.0-ea"
+    "version": "28.0.0-ea"
   },
   {
     "checksum": "sha256:e8424103dce5e96460091df569c5fbd874c357e86cad7ad6164c71abf7c33319",
@@ -52773,15 +52917,27 @@
     "version": "25.0.0-ea"
   },
   {
-    "checksum": "sha256:3f349a9ae39761069b8132f7ba529bec7bf6c759376f77cb57520d3f21d4fa23",
+    "checksum": "sha256:45707add322e7be16c9eaf4e6f15febf5bd06baeab88aea73d3a89fae0d7bcd7",
     "created_at": "2026-06-25T22:37:30.392034",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
-    "java_version": "28.0.0-ea",
+    "java_version": "27.0.0-ea",
     "jvm_impl": "hotspot",
-    "url": "https://download.java.net/java/early_access/jdk28/4/GPL/openjdk-28-ea+4_linux-x64_bin.tar.gz",
+    "url": "https://download.java.net/java/early_access/jdk27/28/GPL/openjdk-27-ea+28_linux-x64_bin.tar.gz",
     "vendor": "openjdk",
-    "version": "28.0.0-ea"
+    "version": "27.0.0-ea"
+  },
+  {
+    "checksum": "sha256:9491eba6266080ac690d5e31b7776f5c94188c3f8092874d9fd250660d51050e",
+    "created_at": "2026-01-30T22:06:59.841439",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.0-ea",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk26/33/GPL/openjdk-26-ea+33_linux-x64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "26.0.0-ea"
   }
 ]
