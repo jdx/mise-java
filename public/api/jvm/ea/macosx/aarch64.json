@@ -22842,18 +22842,6 @@
     "version": "26.0.0+29-ea"
   },
   {
-    "checksum": "sha256:e469a817c1b16497cef23cf3bde4ede13a8b2c58ab0d3f6c4ccf1eb132185228",
-    "created_at": "2026-06-25T22:37:30.392034",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "java_version": "27.0.0-ea",
-    "jvm_impl": "hotspot",
-    "url": "https://download.java.net/java/early_access/jdk27/28/GPL/openjdk-27-ea+28_macos-aarch64_bin.tar.gz",
-    "vendor": "openjdk",
-    "version": "27.0.0-ea"
-  },
-  {
     "checksum": "sha256:a382052deb1f5ff0907f38344f4b5244b97532d4344af54380459a6f48bfaa4e",
     "created_at": "2026-01-30T22:06:59.841439",
     "features": [],
@@ -22866,16 +22854,16 @@
     "version": "26.0.0-ea"
   },
   {
-    "checksum": "sha256:762a2e5eee52f81c12c0178933d72c86923764266afb100f733fdefb098906d3",
+    "checksum": "sha256:e469a817c1b16497cef23cf3bde4ede13a8b2c58ab0d3f6c4ccf1eb132185228",
     "created_at": "2026-06-25T22:37:30.392034",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
-    "java_version": "28.0.0-ea",
+    "java_version": "27.0.0-ea",
     "jvm_impl": "hotspot",
-    "url": "https://download.java.net/java/early_access/jdk28/4/GPL/openjdk-28-ea+4_macos-aarch64_bin.tar.gz",
+    "url": "https://download.java.net/java/early_access/jdk27/28/GPL/openjdk-27-ea+28_macos-aarch64_bin.tar.gz",
     "vendor": "openjdk",
-    "version": "28.0.0-ea"
+    "version": "27.0.0-ea"
   },
   {
     "checksum": "sha256:a24ad6d766245d35408ffa1d80894c5b861e4b987bef1f5b04b05286fc6de147",
@@ -22888,5 +22876,17 @@
     "url": "https://download.java.net/java/early_access/jdk25/34/GPL/openjdk-25-ea+34_macos-aarch64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "25.0.0-ea"
+  },
+  {
+    "checksum": "sha256:762a2e5eee52f81c12c0178933d72c86923764266afb100f733fdefb098906d3",
+    "created_at": "2026-06-25T22:37:30.392034",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "28.0.0-ea",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk28/4/GPL/openjdk-28-ea+4_macos-aarch64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "28.0.0-ea"
   }
 ]
