@@ -8330,6 +8330,18 @@
     "version": "11.0.22-ea.3"
   },
   {
+    "checksum": "sha256:46a2b315fff6031d48b099400eafeaf8cc225d2f0e15c137b4855cdfc97ff90c",
+    "created_at": "2026-07-01T22:32:41.061165",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "28.0.0-ea.4",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-28%2B4/sapmachine-jdk-28-ea.4_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "28.0.0-ea.4"
+  },
+  {
     "checksum": "sha256:46c47281310039b4e8d7e583a1629bfb2ca08a102794c3a68d1f2051101e9f5b",
     "created_at": "2025-04-04T22:07:12.800962",
     "features": [],
@@ -26914,6 +26926,18 @@
     "version": "22.0.0-ea.13"
   },
   {
+    "checksum": "sha256:e7e20f1b53753fab08ef06316a5285bb89954fd0d689dc5e84a4e6e77f41d879",
+    "created_at": "2026-07-01T22:32:41.061165",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "28.0.0-ea.4",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-28%2B4/sapmachine-jre-28-ea.4_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "28.0.0-ea.4"
+  },
+  {
     "checksum": "sha256:e7f2986a36eb3665b013c1d0c141f35d2ec86beb64ac2d5515dff580b4c178d2",
     "created_at": "2026-06-22T22:35:55.130633",
     "features": [],
@@ -30653,18 +30677,6 @@
     "version": "26.0.0-ea"
   },
   {
-    "checksum": "sha256:b85f4b0c1313453fc760c198dec39f0c3a27e386671a184a123c19fcfb46c776",
-    "created_at": "2026-06-25T22:37:30.392034",
-    "features": [],
-    "file_type": "zip",
-    "image_type": "jdk",
-    "java_version": "28.0.0-ea",
-    "jvm_impl": "hotspot",
-    "url": "https://download.java.net/java/early_access/jdk28/4/GPL/openjdk-28-ea+4_windows-x64_bin.zip",
-    "vendor": "openjdk",
-    "version": "28.0.0-ea"
-  },
-  {
     "checksum": "sha256:59e8a607698d978c77ab04b5a7748f85831b5776858eac51fea4c4c165a32fd0",
     "created_at": "2025-08-01T22:04:36.630175",
     "features": [],
@@ -30675,5 +30687,17 @@
     "url": "https://download.java.net/java/early_access/jdk25/34/GPL/openjdk-25-ea+34_windows-x64_bin.zip",
     "vendor": "openjdk",
     "version": "25.0.0-ea"
+  },
+  {
+    "checksum": "sha256:b85f4b0c1313453fc760c198dec39f0c3a27e386671a184a123c19fcfb46c776",
+    "created_at": "2026-06-25T22:37:30.392034",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "28.0.0-ea",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk28/4/GPL/openjdk-28-ea+4_windows-x64_bin.zip",
+    "vendor": "openjdk",
+    "version": "28.0.0-ea"
   }
 ]
