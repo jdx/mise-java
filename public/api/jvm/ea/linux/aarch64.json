@@ -25665,16 +25665,16 @@
     "version": "19.0.23.0"
   },
   {
-    "checksum": "sha256:97ec261f623f97266972374bfc02851323f4e2145e1b96f5309810ecdcfbfeaf",
-    "created_at": "2025-08-01T22:04:36.630175",
+    "checksum": "sha256:6174e657a12be73b744acdd27e5a30aeab150c2a6bcf162666690184aedcc815",
+    "created_at": "2026-07-03T22:32:07.675895",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
-    "java_version": "25.0.0-ea",
+    "java_version": "28.0.0-ea",
     "jvm_impl": "hotspot",
-    "url": "https://download.java.net/java/early_access/jdk25/34/GPL/openjdk-25-ea+34_linux-aarch64_bin.tar.gz",
+    "url": "https://download.java.net/java/early_access/jdk28/5/GPL/openjdk-28-ea+5_linux-aarch64_bin.tar.gz",
     "vendor": "openjdk",
-    "version": "25.0.0-ea"
+    "version": "28.0.0-ea"
   },
   {
     "checksum": "sha256:f9ebfe93a1ff1ebbc6d7b3a4348b1197797f1c57c9f7a69b2bed30014af4039e",
@@ -25689,18 +25689,6 @@
     "version": "26.0.0-ea"
   },
   {
-    "checksum": "sha256:6174e657a12be73b744acdd27e5a30aeab150c2a6bcf162666690184aedcc815",
-    "created_at": "2026-07-03T22:32:07.675895",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "java_version": "28.0.0-ea",
-    "jvm_impl": "hotspot",
-    "url": "https://download.java.net/java/early_access/jdk28/5/GPL/openjdk-28-ea+5_linux-aarch64_bin.tar.gz",
-    "vendor": "openjdk",
-    "version": "28.0.0-ea"
-  },
-  {
     "checksum": "sha256:a4564029f6c9903249f0b9355bf1952ec04f0b38ec6f6d5d5375e7c4fd850836",
     "created_at": "2026-07-03T22:32:07.675895",
     "features": [],
@@ -25711,5 +25699,17 @@
     "url": "https://download.java.net/java/early_access/jdk27/29/GPL/openjdk-27-ea+29_linux-aarch64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "27.0.0-ea"
+  },
+  {
+    "checksum": "sha256:97ec261f623f97266972374bfc02851323f4e2145e1b96f5309810ecdcfbfeaf",
+    "created_at": "2025-08-01T22:04:36.630175",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.0-ea",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk25/34/GPL/openjdk-25-ea+34_linux-aarch64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "25.0.0-ea"
   }
 ]

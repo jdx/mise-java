@@ -53073,6 +53073,18 @@
     "version": "13.0.2-ea.1"
   },
   {
+    "checksum": "sha256:f41a631e7ba0d71d2235dc849c6b73306846b34f690e015d394940e180284e73",
+    "created_at": "2026-07-03T22:32:07.675895",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "28.0.0-ea",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk28/5/GPL/openjdk-28-ea+5_linux-x64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "28.0.0-ea"
+  },
+  {
     "checksum": "sha256:9491eba6266080ac690d5e31b7776f5c94188c3f8092874d9fd250660d51050e",
     "created_at": "2026-01-30T22:06:59.841439",
     "features": [],
@@ -53083,18 +53095,6 @@
     "url": "https://download.java.net/java/early_access/jdk26/33/GPL/openjdk-26-ea+33_linux-x64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "26.0.0-ea"
-  },
-  {
-    "checksum": "sha256:f4820c527635c627b3b7a592b80e416f2b203f2688d2ea66d2ff63692ccdf2a2",
-    "created_at": "2026-07-03T22:32:07.675895",
-    "features": [],
-    "file_type": "tar.gz",
-    "image_type": "jdk",
-    "java_version": "27.0.0-ea",
-    "jvm_impl": "hotspot",
-    "url": "https://download.java.net/java/early_access/jdk27/29/GPL/openjdk-27-ea+29_linux-x64_bin.tar.gz",
-    "vendor": "openjdk",
-    "version": "27.0.0-ea"
   },
   {
     "checksum": "sha256:e8424103dce5e96460091df569c5fbd874c357e86cad7ad6164c71abf7c33319",
@@ -53109,15 +53109,15 @@
     "version": "25.0.0-ea"
   },
   {
-    "checksum": "sha256:f41a631e7ba0d71d2235dc849c6b73306846b34f690e015d394940e180284e73",
+    "checksum": "sha256:f4820c527635c627b3b7a592b80e416f2b203f2688d2ea66d2ff63692ccdf2a2",
     "created_at": "2026-07-03T22:32:07.675895",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
-    "java_version": "28.0.0-ea",
+    "java_version": "27.0.0-ea",
     "jvm_impl": "hotspot",
-    "url": "https://download.java.net/java/early_access/jdk28/5/GPL/openjdk-28-ea+5_linux-x64_bin.tar.gz",
+    "url": "https://download.java.net/java/early_access/jdk27/29/GPL/openjdk-27-ea+29_linux-x64_bin.tar.gz",
     "vendor": "openjdk",
-    "version": "28.0.0-ea"
+    "version": "27.0.0-ea"
   }
 ]
