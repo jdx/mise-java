@@ -73,7 +73,7 @@ arg <vendor> "Vendor to fetch (e.g. temurin)"
 complete "vendor" run="cargo run -- ls vendor"
 '''
 run = '''
-cargo run -- fetch {{arg(name="vendor")}}
+cargo run -- fetch ${usage_vendor?}
 '''
 
 [tasks."export:mise"]
@@ -129,7 +129,7 @@ if ! command -v psql &> /dev/null; then
   exit 1
 fi
 
-gunzip -c {{arg(name="file")}} | \
+gunzip -c ${usage_file?} | \
 psql postgresql://$ROAST_DB_HOST:$ROAST_DB_PORT/$ROAST_DB_NAME \
 --username=$ROAST_DB_USR \
 --password
