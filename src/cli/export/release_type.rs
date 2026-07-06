@@ -78,11 +78,16 @@ impl ReleaseType {
                 for arch in &archs {
                     let data = with_openjdk_ea_aliases(db.export_release_type(release_type, arch, os)?);
 
-                    let export_data = data
+                    let mut export_data: Vec<Map<String, Value>> = data
                         .into_par_iter()
                         .filter(|item| JvmData::filter(item, &filters))
                         .map(|item| JvmData::map(&item, &include, &exclude))
-                        .collect::<Vec<Map<String, Value>>>();
+                        .collect();
+                    export_data.sort_by(|a, b| {
+                        a.get("url")
+                            .and_then(|v| v.as_str())
+                            .cmp(&b.get("url").and_then(|v| v.as_str()))
+                    });
                     let size = export_data.len();
 
                     info!("exporting {size} records to {release_type}/{os}/{arch}.json");
