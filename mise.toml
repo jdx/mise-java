@@ -1,7 +1,7 @@
 [tools]
 aws = "2"
-"cargo:cargo-deny" = "0.19"
-"cargo:cargo-llvm-cov" = "0.8"
+"github:EmbarkStudios/cargo-deny" = "0.19"
+"github:taiki-e/cargo-llvm-cov" = "0.8"
 "npm:@stoplight/spectral-cli" = "6"
 
 [env]
