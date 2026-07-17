@@ -73,7 +73,7 @@ fn map_release(release: &GitHubRelease, a: &ElementRef<'_>) -> Result<JvmData> {
         .ok_or_else(|| eyre::eyre!("no name found"))?
         .to_string();
     let filename_meta = meta_from_name(&name)?;
-    let sha512_url = format!("{}.checksum", &href);
+    let sha512_url = format!("{}.checksum", href);
     let sha512 = match HTTP.get_text(&sha512_url) {
         Ok(sha512) => match sha512.split_whitespace().next() {
             Some(s) => match s.len() {
