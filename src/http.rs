@@ -27,7 +27,7 @@ impl Client {
 
     fn _new() -> ClientBuilder {
         reqwest::blocking::ClientBuilder::new()
-            .user_agent(format!("{}/{}", &*env::BINARY_NAME, &*version::VERSION))
+            .user_agent(format!("{}/{}", *env::BINARY_NAME, *version::VERSION))
             .gzip(true)
             .zstd(true)
     }

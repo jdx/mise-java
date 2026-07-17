@@ -52,7 +52,7 @@ fn map_packages(packages: Vec<Package>) -> Result<Vec<JvmData>> {
         let arch = match arch_from_name(&package.name) {
             Ok(arch) => arch,
             Err(_) => {
-                debug!("[zulu] failed to parse architecture for: {}", &package.name);
+                debug!("[zulu] failed to parse architecture for: {}", package.name);
                 &package.arch
             }
         };

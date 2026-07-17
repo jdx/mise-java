@@ -111,7 +111,7 @@ fn map_asset(asset: &GitHubAsset) -> Result<JvmData> {
         version: format!(
             "{}+java{}",
             normalize_version(&filename_meta.version),
-            &filename_meta.java_version
+            filename_meta.java_version
         ),
         ..Default::default()
     })
