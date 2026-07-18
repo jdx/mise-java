@@ -38,12 +38,7 @@ impl Vendor for LibericaNIK {
         let data = releases
             .into_par_iter()
             // filter out source releases
-            .filter(|release| !&release.filename.contains("-src"))
-            // keep only core releases unless for version 25+ since core is not longer available
-            .filter(|release| {
-                let major = major_version(&release.version);
-                release.bundle_type == "core" || (release.bundle_type == "standard" && major >= 25)
-            }) // filter out jre releases
+            .filter(|release| !&release.filename.contains("-src")) // filter out jre releases
             .flat_map(|release| match map_release(&release) {
                 Ok(meta) => vec![meta],
                 Err(err) => {
@@ -114,16 +109,10 @@ fn normalize_features(release: &Release) -> Option<Vec<String>> {
     if release.filename.contains("-musl") {
         features.push("musl".to_string());
     }
+    if release.bundle_type == "full" {
+        features.push("javafx".to_string());
+    }
     if features.is_empty() { None } else { Some(features) }
-}
-
-fn major_version(version: &str) -> u32 {
-    version
-        .chars()
-        .take_while(|c| c.is_ascii_digit())
-        .collect::<String>()
-        .parse::<u32>()
-        .unwrap_or(0)
 }
 
 #[derive(Debug, Default, Deserialize, Serialize)]
