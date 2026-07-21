@@ -4180,6 +4180,78 @@
     "version": "27.0.37.0"
   },
   {
+    "checksum": "sha256:1c912ad8c4febbcd43ab70bebec1bcb18c5e68c242e90493ee345b49606eee8d",
+    "created_at": "2026-07-21T22:20:08.684636",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.0.39-beta-jdk27.0.0-beta.28-macosx_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.0.39.0"
+  },
+  {
+    "checksum": "sha256:a4841fe58949f815c6c265ae9d75e23a20adc98be3450b275c49551aa5d8aed0",
+    "created_at": "2026-07-21T22:20:08.684636",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.0.39-beta-jdk27.0.0-beta.28-macosx_aarch64.zip",
+    "vendor": "zulu",
+    "version": "27.0.39.0"
+  },
+  {
+    "checksum": "sha256:6ea14ec283067dff530557b5d63b117e0e15be77009a5cf015b5e47796e4ae87",
+    "created_at": "2026-07-21T22:20:08.684636",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.0.41-beta-jdk27.0.0-beta.29-macosx_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.0.41.0"
+  },
+  {
+    "checksum": "sha256:fffd1b9856bfdf8b1704105fe5fd104725b103b94afb33f7d001086152ab9c4c",
+    "created_at": "2026-07-21T22:20:08.684636",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.0.41-beta-jdk27.0.0-beta.29-macosx_aarch64.zip",
+    "vendor": "zulu",
+    "version": "27.0.41.0"
+  },
+  {
+    "checksum": "sha256:369071ab379e8e65a708d8b57f23b2bfffa0961c8e3fa3d844402df0be72b3d4",
+    "created_at": "2026-07-21T22:20:08.684636",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.0.43-beta-jdk27.0.0-beta.30-macosx_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.0.43.0"
+  },
+  {
+    "checksum": "sha256:c9dbc91161ffd2a1b390147ad53ffa8ebc9ffe7536e78239e6f32618d4681e3d",
+    "created_at": "2026-07-21T22:20:08.684636",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.0.43-beta-jdk27.0.0-beta.30-macosx_aarch64.zip",
+    "vendor": "zulu",
+    "version": "27.0.43.0"
+  },
+  {
     "checksum": "md5:64fca690c1e1799d71ad2fb302bf4794",
     "created_at": "2025-03-28T22:02:59.599901",
     "features": [],
@@ -22432,6 +22504,30 @@
     "version": "27.0.0-ea.30"
   },
   {
+    "checksum": "sha256:9210ae6571e8a86afa3c32973975bdf45e20975fbe538fbfc59167353678c3bc",
+    "created_at": "2026-07-21T22:24:07.200",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0-ea.31",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B31/sapmachine-jdk-27-ea.31_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.31"
+  },
+  {
+    "checksum": "sha256:085456ee7141016179e82f4604909d867faf6078c4a9f4dfd725544e91e0a310",
+    "created_at": "2026-07-21T22:24:07.200",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.0-ea.31",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27%2B31/sapmachine-jre-27-ea.31_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0-ea.31"
+  },
+  {
     "checksum": "sha256:ae2576724d82e0755ca3bc558d77fba418f2e17196279d17c02750f61c474235",
     "created_at": "2026-01-14T22:05:46.877391",
     "features": [],
@@ -22718,6 +22814,30 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-28%2B6/sapmachine-jre-28-ea.6_macos-aarch64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "28.0.0-ea.6"
+  },
+  {
+    "checksum": "sha256:ad50354e4656d87c23c95871fb404240aec65474bb7ca59c4b8d5e8d2c4425a0",
+    "created_at": "2026-07-21T22:24:07.200",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "28.0.0-ea.7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-28%2B7/sapmachine-jdk-28-ea.7_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "28.0.0-ea.7"
+  },
+  {
+    "checksum": "sha256:d1f7ce450f17e2dd51d3c1c6ed352418eabed9389f784fa24991077d3d45e204",
+    "created_at": "2026-07-21T22:24:07.200",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "28.0.0-ea.7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-28%2B7/sapmachine-jre-28-ea.7_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "28.0.0-ea.7"
   },
   {
     "checksum": null,
