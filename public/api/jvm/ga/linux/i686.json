@@ -12906,6 +12906,18 @@
     "version": "11.0.31.11.1"
   },
   {
+    "checksum": "sha256:157dd35d976e15d17f89d331717dfa03ce24061a909e27beeef1725303185b50",
+    "created_at": "2026-07-22T22:25:22.055001",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.32.9.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/11.0.32.9.1/amazon-corretto-11.0.32.9.1-linux-x86.tar.gz",
+    "vendor": "corretto",
+    "version": "11.0.32.9.1"
+  },
+  {
     "checksum": "md5:c0452faf40a6a0593bb6bd711d58640d",
     "created_at": "2025-03-28T22:02:59.599901",
     "features": [],
@@ -14030,6 +14042,44 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.31%2B11/bellsoft-jre11.0.31%2B11-linux-i586.tar.gz",
     "vendor": "liberica",
     "version": "11.0.31+11"
+  },
+  {
+    "checksum": "sha1:bb56fef3152d6961a7d4f9a0ce6487899db5a5ca",
+    "created_at": "2026-07-22T22:23:40.440173",
+    "features": [
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.32+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.32%2B11/bellsoft-jdk11.0.32%2B11-linux-i586-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.32+11"
+  },
+  {
+    "checksum": "sha1:2244e87c177837d2165ca6a24e2d04a9a8283896",
+    "created_at": "2026-07-22T22:23:40.440173",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.32+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.32%2B11/bellsoft-jdk11.0.32%2B11-linux-i586.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.32+11"
+  },
+  {
+    "checksum": "sha1:e9a094a4033907579fa5ae6429c2349ca50ffb82",
+    "created_at": "2026-07-22T22:23:40.440173",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.32+11",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.32%2B11/bellsoft-jre11.0.32%2B11-linux-i586.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.32+11"
   },
   {
     "checksum": "sha1:836eb2fd2c59bc53746964e0bacc0c8b833107cf",
@@ -15530,6 +15580,44 @@
     "version": "17.0.2+9"
   },
   {
+    "checksum": "sha1:c355009f8fd9320f85a5fca585b746521ddb7e2f",
+    "created_at": "2026-07-22T22:23:40.440173",
+    "features": [
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.20+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.20%2B10/bellsoft-jdk17.0.20%2B10-linux-i586-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.20+10"
+  },
+  {
+    "checksum": "sha1:72086a4603b32256ec08fb9ed201b2711792a5a8",
+    "created_at": "2026-07-22T22:23:40.440173",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.20+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.20%2B10/bellsoft-jdk17.0.20%2B10-linux-i586.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.20+10"
+  },
+  {
+    "checksum": "sha1:8fea4304646ee0e11b719d3e461dae028e42885d",
+    "created_at": "2026-07-22T22:23:40.440173",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.20+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.20%2B10/bellsoft-jre17.0.20%2B10-linux-i586.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.20+10"
+  },
+  {
     "checksum": "sha1:5a7254a86b8afcbfb85bec44ea8d49609778e763",
     "created_at": "2025-03-28T22:03:17.339783",
     "features": [
@@ -16478,6 +16566,44 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.11%2B11/bellsoft-jre21.0.11%2B11-linux-i586.tar.gz",
     "vendor": "liberica",
     "version": "21.0.11+11"
+  },
+  {
+    "checksum": "sha1:39911482990f71d000fe1b9053230eff5529c785",
+    "created_at": "2026-07-22T22:23:40.440173",
+    "features": [
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.12+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.12%2B10/bellsoft-jdk21.0.12%2B10-linux-i586-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.12+10"
+  },
+  {
+    "checksum": "sha1:855791d366b70ceb0a23a2b56b000b47912f78ef",
+    "created_at": "2026-07-22T22:23:40.440173",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.12+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.12%2B10/bellsoft-jdk21.0.12%2B10-linux-i586.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.12+10"
+  },
+  {
+    "checksum": "sha1:e5807278cb98a94b63c53c00509adcea71b307e1",
+    "created_at": "2026-07-22T22:23:40.440173",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.12+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.12%2B10/bellsoft-jre21.0.12%2B10-linux-i586.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.12+10"
   },
   {
     "checksum": "sha1:bdff5bb7bdab0dd91f97832c71776767dd61994e",
@@ -19264,5 +19390,75 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/8u492%2B9/bellsoft-jre8u492%2B9-linux-i586.tar.gz",
     "vendor": "liberica",
     "version": "8u492+9"
+  },
+  {
+    "checksum": "sha1:466523aa383b7591dca4cdb9c21216a49199637e",
+    "created_at": "2026-07-22T22:23:40.440173",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8u502+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u502%2B9/bellsoft-jdk8u502%2B9-linux-i586-full.tar.gz",
+    "vendor": "liberica",
+    "version": "8u502+9"
+  },
+  {
+    "checksum": "sha1:665d7803f1b9c52293bcf13cdadbb885704907e1",
+    "created_at": "2026-07-22T22:23:40.440173",
+    "features": [
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8u502+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u502%2B9/bellsoft-jdk8u502%2B9-linux-i586-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "8u502+9"
+  },
+  {
+    "checksum": "sha1:3752ed758fb99249f15c62c143f4d8a780bfd764",
+    "created_at": "2026-07-22T22:23:40.440173",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8u502+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u502%2B9/bellsoft-jdk8u502%2B9-linux-i586.tar.gz",
+    "vendor": "liberica",
+    "version": "8u502+9"
+  },
+  {
+    "checksum": "sha1:c08f6af39dff4fb06c5ebd5323a93a2e39e9c2e0",
+    "created_at": "2026-07-22T22:23:40.440173",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "8u502+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u502%2B9/bellsoft-jre8u502%2B9-linux-i586-full.tar.gz",
+    "vendor": "liberica",
+    "version": "8u502+9"
+  },
+  {
+    "checksum": "sha1:7824139624506bb0eb87346d38078fadf1fa9a75",
+    "created_at": "2026-07-22T22:23:40.440173",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "8u502+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u502%2B9/bellsoft-jre8u502%2B9-linux-i586.tar.gz",
+    "vendor": "liberica",
+    "version": "8u502+9"
   }
 ]
