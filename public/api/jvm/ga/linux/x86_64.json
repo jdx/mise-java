@@ -76653,6 +76653,72 @@
     "version": "23.0.12+1"
   },
   {
+    "checksum": "sha1:618fc485cd09f0b52f658177148646022b168cc4",
+    "created_at": "2026-07-23T22:23:45.699611",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.20+11",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.13+1-17.0.20+11/bellsoft-liberica-vm-core-openjdk17.0.20+11-23.0.13+1-linux-amd64.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.0.13+1"
+  },
+  {
+    "checksum": "sha1:85ad3ac5d6405e59c9bca995c6ff8e4f11a416e9",
+    "created_at": "2026-07-23T22:23:45.699611",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.20+11",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.13+1-17.0.20+11/bellsoft-liberica-vm-core-openjdk17.0.20+11-23.0.13+1-linux-x64-musl.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.0.13+1"
+  },
+  {
+    "checksum": "sha1:1febea24207d72a3a92b3bb5178705399ae33ee5",
+    "created_at": "2026-07-23T22:23:45.699611",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.20+11",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.13+1-17.0.20+11/bellsoft-liberica-vm-full-openjdk17.0.20+11-23.0.13+1-linux-amd64.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.0.13+1"
+  },
+  {
+    "checksum": "sha1:4752cec5678b74bf12ed7aa66751c855d0ef0bbe",
+    "created_at": "2026-07-23T22:23:45.699611",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.20+11",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.13+1-17.0.20+11/bellsoft-liberica-vm-openjdk17.0.20+11-23.0.13+1-linux-amd64.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.0.13+1"
+  },
+  {
+    "checksum": "sha1:f7faf29a0a16ea1053fe73928261465d0f920c66",
+    "created_at": "2026-07-23T22:23:45.699611",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.20+11",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.13+1-17.0.20+11/bellsoft-liberica-vm-openjdk17.0.20+11-23.0.13+1-linux-x64-musl.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.0.13+1"
+  },
+  {
     "checksum": "sha1:7cdaac0af0df74daad01335d6c14047ef856bab7",
     "created_at": "2025-09-24T22:03:03.689318",
     "features": [],
@@ -77311,6 +77377,72 @@
     "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.11+2-21.0.11+12/bellsoft-liberica-vm-openjdk21.0.11+12-23.1.11+2-linux-x64-musl.tar.gz",
     "vendor": "liberica-nik",
     "version": "23.1.11+2"
+  },
+  {
+    "checksum": "sha1:031572eb75a0a0e106dd0f4b9f976b53d75c3616",
+    "created_at": "2026-07-23T22:23:45.699611",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.12+11",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.12+1-21.0.12+11/bellsoft-liberica-vm-core-openjdk21.0.12+11-23.1.12+1-linux-amd64.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.1.12+1"
+  },
+  {
+    "checksum": "sha1:5505ed5e9b5182e8a51c9fa34e7726f92c10107e",
+    "created_at": "2026-07-23T22:23:45.699611",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.12+11",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.12+1-21.0.12+11/bellsoft-liberica-vm-core-openjdk21.0.12+11-23.1.12+1-linux-x64-musl.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.1.12+1"
+  },
+  {
+    "checksum": "sha1:c69424b03c7982de693e80a98659e5d8b5bcab97",
+    "created_at": "2026-07-23T22:23:45.699611",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.12+11",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.12+1-21.0.12+11/bellsoft-liberica-vm-full-openjdk21.0.12+11-23.1.12+1-linux-amd64.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.1.12+1"
+  },
+  {
+    "checksum": "sha1:3059dd5ddd63d32169da3ffa5447f7d03c7027d1",
+    "created_at": "2026-07-23T22:23:45.699611",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.12+11",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.12+1-21.0.12+11/bellsoft-liberica-vm-openjdk21.0.12+11-23.1.12+1-linux-amd64.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.1.12+1"
+  },
+  {
+    "checksum": "sha1:bf7fd749a95f0d4319a0a7fb176666b244e4c82d",
+    "created_at": "2026-07-23T22:23:45.699611",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.12+11",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.12+1-21.0.12+11/bellsoft-liberica-vm-openjdk21.0.12+11-23.1.12+1-linux-x64-musl.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.1.12+1"
   },
   {
     "checksum": "sha1:32299869b1273e6f6eb06df85250113fd913549a",
@@ -78651,6 +78783,46 @@
     "url": "https://github.com/bell-sw/LibericaNIK/releases/download/25.0.3+2-25.0.3+12/bellsoft-liberica-vm-openjdk25.0.3+12-25.0.3+2-linux-x64-musl.tar.gz",
     "vendor": "liberica-nik",
     "version": "25.0.3+2"
+  },
+  {
+    "checksum": "sha1:5b275d48edc5578822d97b555fa8cfdcaed61fdf",
+    "created_at": "2026-07-23T22:23:45.699611",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4+10",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/25.0.4+1-25.0.4+10/bellsoft-liberica-vm-full-openjdk25.0.4+10-25.0.4+1-linux-amd64.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "25.0.4+1"
+  },
+  {
+    "checksum": "sha1:122d99d865c9a5ec30be81399ab0d285b7c6834d",
+    "created_at": "2026-07-23T22:23:45.699611",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4+10",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/25.0.4+1-25.0.4+10/bellsoft-liberica-vm-openjdk25.0.4+10-25.0.4+1-linux-amd64.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "25.0.4+1"
+  },
+  {
+    "checksum": "sha1:bede0cb45cfd283c3c28c7743fa9afea0af9f68d",
+    "created_at": "2026-07-23T22:23:45.699611",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4+10",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/25.0.4+1-25.0.4+10/bellsoft-liberica-vm-openjdk25.0.4+10-25.0.4+1-linux-x64-musl.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "25.0.4+1"
   },
   {
     "checksum": null,
