@@ -38124,6 +38124,30 @@
     "version": "25.0.3+9.0.LTS"
   },
   {
+    "checksum": "sha256:621f7196f0b682fb557da58bec89bd7dfe5419811fe1c0ba75c9cc8432f084c7",
+    "created_at": "2026-07-29T22:20:13.210118",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4+7-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jdk_aarch64_linux_hotspot_25.0.4_7.tar.gz",
+    "vendor": "temurin",
+    "version": "25.0.4+7.0.LTS"
+  },
+  {
+    "checksum": "sha256:1f2644427000316bc431df3389504551ed7464fe8486bf6b4f1130af9ffc8f55",
+    "created_at": "2026-07-29T22:20:13.210118",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4+7-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_aarch64_linux_hotspot_25.0.4_7.tar.gz",
+    "vendor": "temurin",
+    "version": "25.0.4+7.0.LTS"
+  },
+  {
     "checksum": "sha256:049027647a2d1cf3b1e3c1e7dad746aa6436928932bbed9130b87a25f585908a",
     "created_at": "2026-03-31T22:12:40.190355",
     "features": [
@@ -38226,6 +38250,30 @@
     "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jre_aarch64_linux_hotspot_26.0.1_8.tar.gz",
     "vendor": "temurin",
     "version": "26.0.1+8"
+  },
+  {
+    "checksum": "sha256:f82aeb1d5b0ddb93d3bd81c20948bc560c0758993157202424c17e805e2effbb",
+    "created_at": "2026-07-29T22:20:13.210118",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.2+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2%2B10/OpenJDK26U-jdk_aarch64_linux_hotspot_26.0.2_10.tar.gz",
+    "vendor": "temurin",
+    "version": "26.0.2+10"
+  },
+  {
+    "checksum": "sha256:3c689572d2ea7aa3e19db5e5bc4ee41e90b557593d15eefcec179a9b8abfff0e",
+    "created_at": "2026-07-29T22:20:13.210118",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "26.0.2+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2%2B10/OpenJDK26U-jre_aarch64_linux_hotspot_26.0.2_10.tar.gz",
+    "vendor": "temurin",
+    "version": "26.0.2+10"
   },
   {
     "checksum": "sha256:f287cdc2a688c2df247ea0d8bfe2863645b73848e4e5c35b02a8a3d2d6b69551",
