@@ -57349,6 +57349,58 @@
     "version": "25.0.3+9.0.LTS"
   },
   {
+    "checksum": "sha256:c6f3e9f975c130169283363bf0ef2fc55f45c36eacc909141ffa7189cd7bdcb7",
+    "created_at": "2026-07-29T22:20:13.210118",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4+7-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jdk_x64_alpine-linux_hotspot_25.0.4_7.tar.gz",
+    "vendor": "temurin",
+    "version": "25.0.4+7.0.LTS"
+  },
+  {
+    "checksum": "sha256:e58fcdcd637b25c03ca84cbbcefc70d11efb8f4b4cbd05decc9f661769d77f94",
+    "created_at": "2026-07-29T22:20:13.210118",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4+7-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jdk_x64_linux_hotspot_25.0.4_7.tar.gz",
+    "vendor": "temurin",
+    "version": "25.0.4+7.0.LTS"
+  },
+  {
+    "checksum": "sha256:4a641bfa74e961efd9cc6dbfb6eccf0bec13014904433f00eb33df84c393318f",
+    "created_at": "2026-07-29T22:20:13.210118",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4+7-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_x64_alpine-linux_hotspot_25.0.4_7.tar.gz",
+    "vendor": "temurin",
+    "version": "25.0.4+7.0.LTS"
+  },
+  {
+    "checksum": "sha256:aed3915f8facc0c80733ab2448bb0df4b494a36a2c5759e9a6e1eb979720f2b3",
+    "created_at": "2026-07-29T22:20:13.210118",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4+7-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_x64_linux_hotspot_25.0.4_7.tar.gz",
+    "vendor": "temurin",
+    "version": "25.0.4+7.0.LTS"
+  },
+  {
     "checksum": "sha256:c105e581fdccb4e7120d889235d1ad8d5b2bed0af4972bc881e0a8ba687c94a4",
     "created_at": "2026-03-31T22:12:40.190355",
     "features": [
@@ -57451,6 +57503,30 @@
     "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jre_x64_linux_hotspot_26.0.1_8.tar.gz",
     "vendor": "temurin",
     "version": "26.0.1+8"
+  },
+  {
+    "checksum": "sha256:56f768372f6ca1e2eb4c5f46b78f627949e8dcfe9c9723926cf45a45faf35802",
+    "created_at": "2026-07-29T22:20:13.210118",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.2+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2%2B10/OpenJDK26U-jdk_x64_linux_hotspot_26.0.2_10.tar.gz",
+    "vendor": "temurin",
+    "version": "26.0.2+10"
+  },
+  {
+    "checksum": "sha256:585c4cce5807ce5677289a123680a8648c84c9afac66727a0e3027298d8e32c7",
+    "created_at": "2026-07-29T22:20:13.210118",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "26.0.2+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2%2B10/OpenJDK26U-jre_x64_linux_hotspot_26.0.2_10.tar.gz",
+    "vendor": "temurin",
+    "version": "26.0.2+10"
   },
   {
     "checksum": "sha256:cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a",
