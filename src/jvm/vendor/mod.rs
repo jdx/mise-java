@@ -23,6 +23,7 @@ pub mod mandrel;
 pub mod microsoft;
 pub mod openjdk;
 pub mod oracle;
+pub mod oracle_graalvm;
 pub mod redhat;
 pub mod sapmachine;
 pub mod semeru;
@@ -43,6 +44,7 @@ pub static VENDORS: LazyLock<Vec<Arc<dyn Vendor>>> = LazyLock::new(|| {
         Arc::new(microsoft::Microsoft {}),
         Arc::new(openjdk::OpenJDK {}),
         Arc::new(oracle::Oracle {}),
+        Arc::new(oracle_graalvm::OracleGraalVM {}),
         Arc::new(redhat::RedHat {}),
         Arc::new(sapmachine::SAPMachine {}),
         Arc::new(semeru::Semeru {}),
