@@ -30762,6 +30762,42 @@
     "version": "20.0.2"
   },
   {
+    "checksum": "sha256:853724fa4944b369969ca5a348a31cbc143ec31d770124e36917e4997a8d94d2",
+    "created_at": "2026-08-04T18:04:49.016364",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.10",
+    "jvm_impl": "graalvm",
+    "url": "https://download.oracle.com/graalvm/21/archive/graalvm-jdk-21.0.10_windows-x64_bin.zip",
+    "vendor": "oracle-graalvm",
+    "version": "21.0.10"
+  },
+  {
+    "checksum": "sha256:fc487b76723a922eb65885e5fada8333bca64b752417a4cfa76ebec2a048666b",
+    "created_at": "2026-08-04T18:04:49.016364",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.11",
+    "jvm_impl": "graalvm",
+    "url": "https://download.oracle.com/graalvm/21/archive/graalvm-jdk-21.0.11_windows-x64_bin.zip",
+    "vendor": "oracle-graalvm",
+    "version": "21.0.11"
+  },
+  {
+    "checksum": "sha256:7560971e52b236ddba7a22e7a682a9a185e56a2f6ee9cd6c4ecbb800e9643990",
+    "created_at": "2026-08-04T18:04:49.016364",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.12",
+    "jvm_impl": "graalvm",
+    "url": "https://download.oracle.com/graalvm/21/archive/graalvm-jdk-21.0.12_windows-x64_bin.zip",
+    "vendor": "oracle-graalvm",
+    "version": "21.0.12"
+  },
+  {
     "checksum": "sha256:16ec0dbd1d4707870410bd59212186087a5bc126c31917e9836daed8018053c8",
     "created_at": "2025-03-28T22:04:32.319048",
     "features": [],
@@ -30844,6 +30880,18 @@
     "url": "https://download.oracle.com/graalvm/21/archive/graalvm-jdk-21.0.7_windows-x64_bin.zip",
     "vendor": "oracle-graalvm",
     "version": "21.0.7"
+  },
+  {
+    "checksum": "sha256:d9abf0fba5c21e7f05bbd205cfdcb82a4db4e2da330be6d92ab79e233ac936f8",
+    "created_at": "2026-08-04T18:04:49.016364",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.9",
+    "jvm_impl": "graalvm",
+    "url": "https://download.oracle.com/graalvm/21/archive/graalvm-jdk-21.0.9_windows-x64_bin.zip",
+    "vendor": "oracle-graalvm",
+    "version": "21.0.9"
   },
   {
     "checksum": "sha256:392acacbdae30487050968892b22ef05d2dc29b7e25816e16c5080795a813c82",
@@ -30972,7 +31020,7 @@
     "file_type": "zip",
     "image_type": "jdk",
     "java_version": "25.0.1",
-    "jvm_impl": "hotspot",
+    "jvm_impl": "graalvm",
     "url": "https://download.oracle.com/graalvm/25/archive/graalvm-jdk-25.0.1_windows-x64_bin.zip",
     "vendor": "oracle-graalvm",
     "version": "25.0.1"
@@ -30984,7 +31032,7 @@
     "file_type": "zip",
     "image_type": "jdk",
     "java_version": "25.0.2",
-    "jvm_impl": "hotspot",
+    "jvm_impl": "graalvm",
     "url": "https://download.oracle.com/graalvm/25/archive/graalvm-jdk-25.0.2_windows-x64_bin.zip",
     "vendor": "oracle-graalvm",
     "version": "25.0.2"
@@ -30996,10 +31044,22 @@
     "file_type": "zip",
     "image_type": "jdk",
     "java_version": "25.0.3",
-    "jvm_impl": "hotspot",
+    "jvm_impl": "graalvm",
     "url": "https://download.oracle.com/graalvm/25/archive/graalvm-jdk-25.0.3_windows-x64_bin.zip",
     "vendor": "oracle-graalvm",
     "version": "25.0.3"
+  },
+  {
+    "checksum": "sha256:5198b29a6448cb72b9a3cef10866723e2d1e2ec4799561a344e032bb7c61e555",
+    "created_at": "2026-08-04T18:04:49.016364",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.4",
+    "jvm_impl": "graalvm",
+    "url": "https://download.oracle.com/graalvm/25/archive/graalvm-jdk-25.0.4_windows-x64_bin.zip",
+    "vendor": "oracle-graalvm",
+    "version": "25.0.4"
   },
   {
     "checksum": "sha256:26388e7e448ba3341102ddfa29a3f514b2449e5876de26641b9fefb3cee2e584",
@@ -37905,6 +37965,30 @@
     "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jre_x64_windows_hotspot_26.0.1_8.zip",
     "vendor": "temurin",
     "version": "26.0.1+8"
+  },
+  {
+    "checksum": "sha256:0b532502e29a5d2babe608069f6df2423ae5e1aa714b715b560217cf8c6ce8ff",
+    "created_at": "2026-08-03T22:23:33.729483",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "26.0.2+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2%2B10/OpenJDK26U-jdk_x64_windows_hotspot_26.0.2_10.zip",
+    "vendor": "temurin",
+    "version": "26.0.2+10"
+  },
+  {
+    "checksum": "sha256:4323e886b6320e2166072bdfd604a4236c3dba6e5ab289e10aef623f09d355a0",
+    "created_at": "2026-08-03T22:23:33.729483",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "26.0.2+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2%2B10/OpenJDK26U-jre_x64_windows_hotspot_26.0.2_10.zip",
+    "vendor": "temurin",
+    "version": "26.0.2+10"
   },
   {
     "checksum": "sha256:3df3ebee978f5c9e9b4e34a74ce8d4b0c8f5bb7dfa83f2b315129c1eee6b70c4",

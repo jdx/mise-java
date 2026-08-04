@@ -37458,6 +37458,18 @@
     "version": "21.0.7"
   },
   {
+    "checksum": "sha256:aaf06b193ea1a05662d4a5a05e899eb51f8881eee4319db044707e79dcabbb32",
+    "created_at": "2026-08-04T18:04:49.016364",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9",
+    "jvm_impl": "graalvm",
+    "url": "https://download.oracle.com/graalvm/21/archive/graalvm-jdk-21.0.9_macos-x64_bin.tar.gz",
+    "vendor": "oracle-graalvm",
+    "version": "21.0.9"
+  },
+  {
     "checksum": "sha256:0744ab104998f8f45d9ae582134963f5d273286dff9aff586aed24f5f8434660",
     "created_at": "2025-03-28T22:04:32.319048",
     "features": [],
@@ -37584,7 +37596,7 @@
     "file_type": "tar.gz",
     "image_type": "jdk",
     "java_version": "25.0.1",
-    "jvm_impl": "hotspot",
+    "jvm_impl": "graalvm",
     "url": "https://download.oracle.com/graalvm/25/archive/graalvm-jdk-25.0.1_macos-x64_bin.tar.gz",
     "vendor": "oracle-graalvm",
     "version": "25.0.1"
