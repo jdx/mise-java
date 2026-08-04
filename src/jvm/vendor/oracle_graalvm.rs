@@ -158,6 +158,12 @@ fn map_file(file_key: &str, file_data: &FileData) -> Result<Option<JvmData>> {
         return Ok(None);
     }
 
+    // Skip URLs that require authentication
+    if url.contains("/otn/") {
+        debug!("[oracle-graalvm] skipping authenticated URL: {url}");
+        return Ok(None);
+    }
+
     // Get SHA256 checksum
     let checksum_url = format!("{url}.sha256");
     let checksum = if file_data.hash.len() >= 2 && file_data.hash[0] == "SHA256" {
