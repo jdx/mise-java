@@ -30644,6 +30644,42 @@
     "version": "20.0.2"
   },
   {
+    "checksum": "sha256:9e5d8c3b23b793ac3cc92462454edb9465208cb6eee18a0066971748ef5ce197",
+    "created_at": "2026-08-03T22:23:33.711611",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.10",
+    "jvm_impl": "graalvm",
+    "url": "https://download.oracle.com/graalvm/21/archive/graalvm-jdk-21.0.10_macos-aarch64_bin.tar.gz",
+    "vendor": "oracle-graalvm",
+    "version": "21.0.10"
+  },
+  {
+    "checksum": "sha256:e6bcbf3b31a5ec5d3c092c3fd5782d86471f0339de6e2b32961f00963a3643f2",
+    "created_at": "2026-08-03T22:23:33.711611",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.11",
+    "jvm_impl": "graalvm",
+    "url": "https://download.oracle.com/graalvm/21/archive/graalvm-jdk-21.0.11_macos-aarch64_bin.tar.gz",
+    "vendor": "oracle-graalvm",
+    "version": "21.0.11"
+  },
+  {
+    "checksum": "sha256:a98948c3a1ad037fe2dde5c80b06b214a5f80c120d8fc2453d155508cf677beb",
+    "created_at": "2026-08-03T22:23:33.711611",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.12",
+    "jvm_impl": "graalvm",
+    "url": "https://download.oracle.com/graalvm/21/archive/graalvm-jdk-21.0.12_macos-aarch64_bin.tar.gz",
+    "vendor": "oracle-graalvm",
+    "version": "21.0.12"
+  },
+  {
     "checksum": "sha256:4b5ddffad649b3e64853ba230b6e8f7acd65322bb8f11852e0521ab1bb4d8b03",
     "created_at": "2025-03-28T22:04:32.319048",
     "features": [],
@@ -30726,6 +30762,18 @@
     "url": "https://download.oracle.com/graalvm/21/archive/graalvm-jdk-21.0.7_macos-aarch64_bin.tar.gz",
     "vendor": "oracle-graalvm",
     "version": "21.0.7"
+  },
+  {
+    "checksum": "sha256:cda0e0ee16fe06ba0a3203ae77a680c6e696b592b697851e161ae92b66c683a6",
+    "created_at": "2026-08-03T22:23:33.711611",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9",
+    "jvm_impl": "graalvm",
+    "url": "https://download.oracle.com/graalvm/21/archive/graalvm-jdk-21.0.9_macos-aarch64_bin.tar.gz",
+    "vendor": "oracle-graalvm",
+    "version": "21.0.9"
   },
   {
     "checksum": "sha256:c2ca434adef1e497c8a4d942ae1dbf6bbd1c8174a6fcdafc65cde0e853285300",
@@ -30854,7 +30902,7 @@
     "file_type": "tar.gz",
     "image_type": "jdk",
     "java_version": "25.0.1",
-    "jvm_impl": "hotspot",
+    "jvm_impl": "graalvm",
     "url": "https://download.oracle.com/graalvm/25/archive/graalvm-jdk-25.0.1_macos-aarch64_bin.tar.gz",
     "vendor": "oracle-graalvm",
     "version": "25.0.1"
@@ -30866,7 +30914,7 @@
     "file_type": "tar.gz",
     "image_type": "jdk",
     "java_version": "25.0.2",
-    "jvm_impl": "hotspot",
+    "jvm_impl": "graalvm",
     "url": "https://download.oracle.com/graalvm/25/archive/graalvm-jdk-25.0.2_macos-aarch64_bin.tar.gz",
     "vendor": "oracle-graalvm",
     "version": "25.0.2"
@@ -30878,10 +30926,22 @@
     "file_type": "tar.gz",
     "image_type": "jdk",
     "java_version": "25.0.3",
-    "jvm_impl": "hotspot",
+    "jvm_impl": "graalvm",
     "url": "https://download.oracle.com/graalvm/25/archive/graalvm-jdk-25.0.3_macos-aarch64_bin.tar.gz",
     "vendor": "oracle-graalvm",
     "version": "25.0.3"
+  },
+  {
+    "checksum": "sha256:0b79e23c133facbad2f7aa55a3b76d17bd59d2fa15e2735bb63391ace223fd13",
+    "created_at": "2026-08-03T22:23:33.711611",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4",
+    "jvm_impl": "graalvm",
+    "url": "https://download.oracle.com/graalvm/25/archive/graalvm-jdk-25.0.4_macos-aarch64_bin.tar.gz",
+    "vendor": "oracle-graalvm",
+    "version": "25.0.4"
   },
   {
     "checksum": "sha256:6e77f17b01089dfdb0c54cce8aa936847e2a019e0110418813b49b3bd974dc90",
@@ -31566,6 +31626,54 @@
     "url": "https://download.oracle.com/java/26/latest/jdk-26_macos-aarch64_bin.tar.gz",
     "vendor": "oracle",
     "version": "26.0.0"
+  },
+  {
+    "checksum": "sha256:81a9c4ed36f925b90a8cf85b3a4af483e1bb37a0614e2e5245a93f3ae4c513a9",
+    "created_at": "2026-08-03T22:23:33.711611",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.17",
+    "jvm_impl": "graalvm",
+    "url": "https://download.oracle.com/otn/utilities_drivers/oracle-labs/graalvm-jdk-17.0.17_macos-aarch64_bin.tar.gz",
+    "vendor": "oracle-graalvm",
+    "version": "17.0.17"
+  },
+  {
+    "checksum": "sha256:987f502eb36f0fc1e6d6b751634f7ceb5391e8d8503b625175629ff62ab7fb9a",
+    "created_at": "2026-08-03T22:23:33.711611",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.18",
+    "jvm_impl": "graalvm",
+    "url": "https://download.oracle.com/otn/utilities_drivers/oracle-labs/graalvm-jdk-17.0.18_macos-aarch64_bin.tar.gz",
+    "vendor": "oracle-graalvm",
+    "version": "17.0.18"
+  },
+  {
+    "checksum": "sha256:eab24921b7f6011e35bbdba27a7ca2293826f26a2a9e731547905583a21f2d66",
+    "created_at": "2026-08-03T22:23:33.711611",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.19",
+    "jvm_impl": "graalvm",
+    "url": "https://download.oracle.com/otn/utilities_drivers/oracle-labs/graalvm-jdk-17.0.19_macos-aarch64_bin.tar.gz",
+    "vendor": "oracle-graalvm",
+    "version": "17.0.19"
+  },
+  {
+    "checksum": "sha256:b424d11e86fe6343c72892acffc017a263c72580f1008b5b3e23b215a0359101",
+    "created_at": "2026-08-03T22:23:33.711611",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.20",
+    "jvm_impl": "graalvm",
+    "url": "https://download.oracle.com/otn/utilities_drivers/oracle-labs/graalvm-jdk-17.0.20_macos-aarch64_bin.tar.gz",
+    "vendor": "oracle-graalvm",
+    "version": "17.0.20"
   },
   {
     "checksum": "sha256:e3d8d11afd3766c300b02f5c4b4158041807ef2b6dba63d3de7320f9ce5a4826",
