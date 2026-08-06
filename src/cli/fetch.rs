@@ -1,5 +1,5 @@
 use crossbeam_channel::{select, unbounded};
-use eyre::Result;
+use eyre::{Result, bail};
 use log::{error, info};
 use std::{collections::HashMap, sync::Arc};
 
@@ -30,14 +30,17 @@ impl Fetch {
         let start = std::time::Instant::now();
         let conn_pool = ConnectionPool::get_pool()?;
         let pool = rayon::ThreadPoolBuilder::default().build()?;
+        let (failure_tx, failure_rx) = unbounded();
         pool.scope(|s| {
             let run = |name: String, vendor: Arc<dyn Vendor>| {
                 let conn_pool = conn_pool.clone();
+                let failure_tx = failure_tx.clone();
                 s.spawn(move |_| {
                     let db = match JvmRepository::new(conn_pool) {
                         Ok(db) => db,
                         Err(err) => {
                             error!("[{name}] failed to connect to database: {err}");
+                            failure_tx.send(name).unwrap();
                             return;
                         }
                     };
@@ -47,6 +50,7 @@ impl Fetch {
                         Ok(data) => data,
                         Err(err) => {
                             error!("[{name}] failed to fetch meta data: {err}");
+                            failure_tx.send(name).unwrap();
                             return;
                         }
                     };
@@ -58,6 +62,7 @@ impl Fetch {
                         }
                         Err(err) => {
                             error!("[{name}] failed to write to database: {err}");
+                            failure_tx.send(name).unwrap();
                         }
                     };
                 });
@@ -80,6 +85,9 @@ impl Fetch {
                 }
             }
         });
+        drop(failure_tx);
+
+        fail_if_any_vendor_updates_failed(failure_rx.into_iter().collect())?;
 
         info!("fetched all vendors in {:.2} seconds", start.elapsed().as_secs_f32());
         Ok(())
@@ -91,5 +99,30 @@ impl Fetch {
             .map(|v| (v.get_name(), v.to_owned()))
             .filter(|(k, _v)| self.vendors.is_empty() || self.vendors.contains(k))
             .collect()
+    }
+}
+
+fn fail_if_any_vendor_updates_failed(mut failures: Vec<String>) -> Result<()> {
+    if !failures.is_empty() {
+        failures.sort();
+        bail!("failed to update vendors: {}", failures.join(", "));
+    }
+    Ok(())
+}
+
+#[cfg(test)]
+mod tests {
+    use super::fail_if_any_vendor_updates_failed;
+
+    #[test]
+    fn fails_when_vendor_updates_fail() {
+        let err = fail_if_any_vendor_updates_failed(vec!["zulu".into(), "temurin".into()]).unwrap_err();
+
+        assert_eq!(err.to_string(), "failed to update vendors: temurin, zulu");
+    }
+
+    #[test]
+    fn succeeds_when_vendor_updates_succeed() {
+        assert!(fail_if_any_vendor_updates_failed(vec![]).is_ok());
     }
 }
