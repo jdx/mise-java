@@ -2156,6 +2156,34 @@
     "version": "25.0.3-b508.4"
   },
   {
+    "checksum": "sha512:996ca90dcea763d9feea415fe7e058faffc2e59b3caef18568647acae020bd2e4c1df390024b922e97a7dab5ffe410a9c84cd398cb4c076ef0d60e1f6f28c862",
+    "created_at": "2026-08-07T00:05:28.479735",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4-b329.128",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.4-linux-musl-x64-b329.128.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4-b329.128"
+  },
+  {
+    "checksum": "sha512:76b76fc29baa9f681d8f2ecc21a1aa8f8014826659a688d540f5895cdc47368481ea5b9f608649cdbbc6aa0e77fc4ff1b7dd40601940537dd4d34042d8ccbdb2",
+    "created_at": "2026-08-07T00:05:28.479735",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4-b508.27",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.4-linux-musl-x64-b508.27.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4-b508.27"
+  },
+  {
     "checksum": "sha512:67133a21004cd19c587ea6d406157ba14f7f622e499130ff889ad70d611d89806c0a6289c9471ad8eebad3d8e42112c4fd43984dad4bc2ae19d37ff27260c9fc",
     "created_at": "2025-03-28T22:04:32.259007",
     "features": [
@@ -3736,6 +3764,34 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.3-linux-musl-x64-b508.4.tar.gz",
     "vendor": "jetbrains",
     "version": "25.0.3-b508.4"
+  },
+  {
+    "checksum": "sha512:bb10aa2570431f9e78fff5b7d47946f7a55717131b431e634e92838d55eebad454df12d5bb3a221986e7d94a48d63ea5217d773dbb350af15d09182ac9ef4ad6",
+    "created_at": "2026-08-07T00:05:28.479735",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4-b329.128",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.4-linux-musl-x64-b329.128.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4-b329.128"
+  },
+  {
+    "checksum": "sha512:0c369046ee9614ce17d8e774b0de5e5cb5f531ecdd4387fdedc4c7816aa77e2881a4f5a3f81e9175d45779636726a0beecb022852704d0a5766ffb4b191f9966",
+    "created_at": "2026-08-07T00:05:28.479735",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4-b508.27",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.4-linux-musl-x64-b508.27.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4-b508.27"
   },
   {
     "checksum": "sha256:871d176655466de8d460d8f1c1d24182609818056e3e892086e0312c58f1626b",
@@ -26793,6 +26849,21 @@
     "version": "25.0.3.0.3.9"
   },
   {
+    "checksum": "sha256:6ff7f84ae3daf014df8ae4c275eb647dd4bd3e7bb60d03845bf2872e6294027f",
+    "created_at": "2026-08-07T00:05:45.479342",
+    "features": [
+      "musl",
+      "extended"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.0.4.7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell25/releases/download/dragonwell-extended-25.0.4.0.4%2B7_jdk-25.0.4-ga/Alibaba_Dragonwell_Extended_25.0.4.0.4.7_x64_alpine-linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "25.0.4.0.4.7"
+  },
+  {
     "checksum": "sha256:6e3fbb6498ff5abf70582de197207ca9377af4a1a74af9ab85e51a3a225deeef",
     "created_at": "2026-02-08T22:08:38.904048",
     "features": [
@@ -26833,5 +26904,19 @@
     "url": "https://github.com/dragonwell-project/dragonwell25/releases/download/dragonwell-standard-25.0.3.0.3%2B9_jdk-25.0.3-ga/Alibaba_Dragonwell_Standard_25.0.3.0.3.9_x64_alpine-linux.tar.gz",
     "vendor": "dragonwell",
     "version": "25.0.3.0.3.9"
+  },
+  {
+    "checksum": "sha256:c1b1fbfe1183eb200a463352e235005eea104d00112bdf6ebdb325b9866ab379",
+    "created_at": "2026-08-07T00:05:45.479342",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.0.4.7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell25/releases/download/dragonwell-standard-25.0.4.0.4%2B7_jdk-25.0.4-ga/Alibaba_Dragonwell_Standard_25.0.4.0.4.7_x64_alpine-linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "25.0.4.0.4.7"
   }
 ]

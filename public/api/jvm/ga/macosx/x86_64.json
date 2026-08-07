@@ -2832,6 +2832,30 @@
     "version": "25.0.3-b508.4"
   },
   {
+    "checksum": "sha512:ac6d2f77498e8968c9032b744503950dee3f27534eaace93e1a46e3103c952f0cf52053a848261f01f4f1bc6deaf393b116e2a5ff43850770e795c55852b4e8e",
+    "created_at": "2026-08-07T00:05:28.479735",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4-b329.128",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.4-osx-x64-b329.128.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4-b329.128"
+  },
+  {
+    "checksum": "sha512:28f9069c44b760f0663ae47777604977f9380b47ff04eef57d2b0aeb2ee27af451e9bae59698bc57802f31cdd995793d5227b770cc77741d42fba73d070e1cd4",
+    "created_at": "2026-08-07T00:05:28.479735",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4-b508.27",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.4-osx-x64-b508.27.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4-b508.27"
+  },
+  {
     "checksum": "sha256:c81b7878b44845dc50b038b32944992ff2b7b90202c5c96fe2f55d069e4243a7",
     "created_at": "2025-03-28T22:04:32.259007",
     "features": [],
@@ -6184,6 +6208,34 @@
     "version": "25.0.3-b508.4"
   },
   {
+    "checksum": "sha512:def3a0ac3b026c42d57b67e396bd84b86388179df30706a2ec47180d9c9a29b5a6e4f289dd65740ae2b667621e1bb0f40b6c38f6c62429737456545f4eb3245d",
+    "created_at": "2026-08-07T00:05:28.479735",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4-b329.128",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25.0.4-osx-x64-b329.128.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4-b329.128"
+  },
+  {
+    "checksum": "sha512:aee4d434c20b16da0de9cbeebfcceb2c529cc4fcddc358fae40d7d9b02ace2c3da638aba433ebb2b7da7c08a441e1f31a936eadaadc6c65d872a9556dc27db27",
+    "created_at": "2026-08-07T00:05:28.479735",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4-b508.27",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25.0.4-osx-x64-b508.27.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4-b508.27"
+  },
+  {
     "checksum": "sha256:f1629dc31ac957dcc5c1480fe552c89a520406b5931061f96724eaed112e3306",
     "created_at": "2025-03-28T22:04:32.259007",
     "features": [],
@@ -9028,6 +9080,30 @@
     "version": "25.0.3-b508.4"
   },
   {
+    "checksum": "sha512:ce334bf4bc9295bcf8cdf173da9605a52de00b10cc13d39fe41cb5a816ad7eeb8a2a3863c54ef3327a0d2ea572724be7fca30c9d611d822381d1dd86fcf960cf",
+    "created_at": "2026-08-07T00:05:28.479735",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4-b329.128",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.4-osx-x64-b329.128.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4-b329.128"
+  },
+  {
+    "checksum": "sha512:1318153828d67d23f6a11473e23349e2fdeabef4d6b2cd8ad6224bf3a069add3ebb7a187628bf813fe97891fdb12ecfe3d84b7f1038956768489da7317445cd5",
+    "created_at": "2026-08-07T00:05:28.479735",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4-b508.27",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.4-osx-x64-b508.27.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4-b508.27"
+  },
+  {
     "checksum": "sha256:6f54d61758e81abc38b804afef1f9e278e2a09f82c40c636fd8d8bb4c25038cf",
     "created_at": "2025-03-28T22:04:32.259007",
     "features": [],
@@ -11572,6 +11648,34 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.3-osx-x64-b508.4.tar.gz",
     "vendor": "jetbrains",
     "version": "25.0.3-b508.4"
+  },
+  {
+    "checksum": "sha512:f03f632779d18812df297e5f62ea1fc6792b89d746c40e388740fe7b5af247fb9446b590303879c98f72bd9347fe2d2e0fb58a19500675fb77bf9739eccaa8d7",
+    "created_at": "2026-08-07T00:05:28.479735",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4-b329.128",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.4-osx-x64-b329.128.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4-b329.128"
+  },
+  {
+    "checksum": "sha512:654a2060430915be696b6ef94ce9bf1db2eeebecd0834ceb12b044443e6183dba92c9f351b5531deb4b931028dfd9cbd5638a15305faa704ef8036d15e4311cf",
+    "created_at": "2026-08-07T00:05:28.479735",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4-b508.27",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.4-osx-x64-b508.27.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4-b508.27"
   },
   {
     "checksum": "sha256:7fad9915cdc401cb59dd5a800e2c11422b9d0aefb34f6fb00d0be9b51d1d57d4",
@@ -41116,6 +41220,20 @@
     "version": "11.0.31.b1"
   },
   {
+    "checksum": "md5:9adb10ae2802b541108b11fc01b86c68",
+    "created_at": "2026-08-07T00:05:45.412644",
+    "features": [
+      "notarized"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.32.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.32/TencentKona-11.0.32.b1_jdk_macosx-x86_64_notarized.tar.gz",
+    "vendor": "kona",
+    "version": "11.0.32.b1"
+  },
+  {
     "checksum": "md5:82aa794ec1289a5ca68882be6253e907",
     "created_at": "2025-03-28T22:04:33.827899",
     "features": [
@@ -41282,6 +41400,20 @@
     "url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.2/TencentKona-17.0.2.b1_jdk_macosx-x86_64_notarized.tar.gz",
     "vendor": "kona",
     "version": "17.0.2.b1"
+  },
+  {
+    "checksum": "md5:aa6ba030b65fc63a22fdde7418709ebf",
+    "created_at": "2026-08-07T00:05:45.412644",
+    "features": [
+      "notarized"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.20.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-17/releases/download/TencentKona-17.0.20/TencentKona-17.0.20.b1_jdk_macosx-x86_64_notarized.tar.gz",
+    "vendor": "kona",
+    "version": "17.0.20.b1"
   },
   {
     "checksum": "md5:86896c65853369cbdf83bf1f67489365",
@@ -41452,6 +41584,20 @@
     "version": "21.0.11.b1"
   },
   {
+    "checksum": "md5:4e996adb5d91b0e4b982a84ee77dbf20",
+    "created_at": "2026-08-07T00:05:45.412644",
+    "features": [
+      "notarized"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.12.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-21/releases/download/TencentKona-21.0.12/TencentKona-21.0.12.b1_jdk_macosx-x86_64_notarized.tar.gz",
+    "vendor": "kona",
+    "version": "21.0.12.b1"
+  },
+  {
     "checksum": "md5:2fd10ec7453297e0a8079b1c9d8cb9bd",
     "created_at": "2025-03-28T22:04:33.827899",
     "features": [
@@ -41604,6 +41750,20 @@
     "url": "https://github.com/Tencent/TencentKona-25/releases/download/TencentKona-25.0.3/TencentKona-25.0.3.b1_jdk_macosx-x86_64_notarized.tar.gz",
     "vendor": "kona",
     "version": "25.0.3.b1"
+  },
+  {
+    "checksum": "md5:23fb2896913362d5e115b596e9191ca7",
+    "created_at": "2026-08-07T00:05:45.412644",
+    "features": [
+      "notarized"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-25/releases/download/TencentKona-25.0.4/TencentKona-25.0.4.b1_jdk_macosx-x86_64_notarized.tar.gz",
+    "vendor": "kona",
+    "version": "25.0.4.b1"
   },
   {
     "checksum": "md5:84f393d3f206228fd8def1263fa29eea",
@@ -41842,6 +42002,20 @@
     "url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.26-GA/TencentKona8.0.26.b1_jdk_macosx-x86_64_8u492_notarized.tar.gz",
     "vendor": "kona",
     "version": "8.0.26.b1"
+  },
+  {
+    "checksum": "md5:6227dacf296b6b134947bec5e9e19682",
+    "created_at": "2026-08-07T00:05:45.412644",
+    "features": [
+      "notarized"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.0.27.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.27-GA/TencentKona8.0.27.b1_jdk_macosx-x86_64_8u502_notarized.tar.gz",
+    "vendor": "kona",
+    "version": "8.0.27.b1"
   },
   {
     "checksum": "md5:38dbabc30af8ca71a69fa8cce3fb3551",
@@ -68701,6 +68875,30 @@
     "version": "11.0.31.0"
   },
   {
+    "checksum": "sha256:3f24cebbfaf947d24bbb0fe194d001876a5c3ea75a9d08d06a34bf61ae51185f",
+    "created_at": "2026-08-07T00:06:13.996006",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.32.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.32.0/ibm-semeru-open-jdk_x64_mac_11.0.32.0.tar.gz",
+    "vendor": "semeru",
+    "version": "11.0.32.0"
+  },
+  {
+    "checksum": "sha256:7580f1a6601c17233d6ab26499b6696666b6922c4a1ef4fad0d89d7d8dd90696",
+    "created_at": "2026-08-07T00:06:13.996006",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.32.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.32.0/ibm-semeru-open-jre_x64_mac_11.0.32.0.tar.gz",
+    "vendor": "semeru",
+    "version": "11.0.32.0"
+  },
+  {
     "checksum": "sha256:89e807261145243a358a2a626f64340944c03622f34eaa35429053e2085d7aef",
     "created_at": "2025-03-28T22:04:27.453987",
     "features": [],
@@ -69083,6 +69281,30 @@
     "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.2%2B8_openj9-0.30.0/ibm-semeru-open-jre_x64_mac_17.0.2_8_openj9-0.30.0.tar.gz",
     "vendor": "semeru",
     "version": "17.0.2+8_openj9-0.30.0"
+  },
+  {
+    "checksum": "sha256:04d711f51e00021e4c24d8917cd3a8a79c7564f50c7f57679a962aaeb0f7e911",
+    "created_at": "2026-08-07T00:06:13.996006",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.20.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.20.0/ibm-semeru-open-jdk_x64_mac_17.0.20.0.tar.gz",
+    "vendor": "semeru",
+    "version": "17.0.20.0"
+  },
+  {
+    "checksum": "sha256:5aa33ee532b1074e92315642b2e554789e38b24797760afaf7aef50435a24ad1",
+    "created_at": "2026-08-07T00:06:13.996006",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.20.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.20.0/ibm-semeru-open-jre_x64_mac_17.0.20.0.tar.gz",
+    "vendor": "semeru",
+    "version": "17.0.20.0"
   },
   {
     "checksum": "sha256:b4439c09ee0916a328f8aa8e4bd98e45b3621bbb3e2ecc59b81f98fa2ec7704a",
@@ -69563,6 +69785,30 @@
     "url": "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.11.0/ibm-semeru-open-jre_x64_mac_21.0.11.0.tar.gz",
     "vendor": "semeru",
     "version": "21.0.11.0"
+  },
+  {
+    "checksum": "sha256:d83274d852cfddaa6d3c7b703debe9da65b9f37d87ee002a96d530edf99627eb",
+    "created_at": "2026-08-07T00:06:13.996006",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.12.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.12.0/ibm-semeru-open-jdk_x64_mac_21.0.12.0.tar.gz",
+    "vendor": "semeru",
+    "version": "21.0.12.0"
+  },
+  {
+    "checksum": "sha256:4f25e8e1bf1901ce14e633f10d9ad04cd800793b74366305f0b02eeb9aa0b322",
+    "created_at": "2026-08-07T00:06:13.996006",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.12.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.12.0/ibm-semeru-open-jre_x64_mac_21.0.12.0.tar.gz",
+    "vendor": "semeru",
+    "version": "21.0.12.0"
   },
   {
     "checksum": "sha256:d4918284a06a921dcadeec700d2a22c7e3d9bf09f28b30423563daecececb8f4",
@@ -70117,6 +70363,30 @@
     "version": "25.0.3.0"
   },
   {
+    "checksum": "sha256:6a0be956cf61f73cdb2f016c04a9b5d8118d9ebf3b2e58a22703d1fd341e1e42",
+    "created_at": "2026-08-07T00:06:13.996006",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25.0.4.0/ibm-semeru-open-jdk_x64_mac_25.0.4.0.tar.gz",
+    "vendor": "semeru",
+    "version": "25.0.4.0"
+  },
+  {
+    "checksum": "sha256:3d734c618383a65e4a8d1cbc72a7e01cb7c9d69175c680152d894ccf5881d7d4",
+    "created_at": "2026-08-07T00:06:13.996006",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25.0.4.0/ibm-semeru-open-jre_x64_mac_25.0.4.0.tar.gz",
+    "vendor": "semeru",
+    "version": "25.0.4.0"
+  },
+  {
     "checksum": "sha256:c69086950c006b17484a70ef7bc85e92d121be15e69e282e1446fd238d42b6b4",
     "created_at": "2025-06-15T22:04:07.945456",
     "features": [],
@@ -70163,6 +70433,30 @@
     "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk-8.0.492.0/ibm-semeru-open-jre_x64_mac_8.0.492.0.tar.gz",
     "vendor": "semeru",
     "version": "8.0.492.0"
+  },
+  {
+    "checksum": "sha256:62fbb02e49c44c9c447f75108480b4900b3f2583f197e22bb986a731b938e700",
+    "created_at": "2026-08-07T00:06:13.996006",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.0.502.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk-8.0.502.0/ibm-semeru-open-jdk_x64_mac_8.0.502.0.tar.gz",
+    "vendor": "semeru",
+    "version": "8.0.502.0"
+  },
+  {
+    "checksum": "sha256:d504dcd2d14bef4212f19f7bedcba9b08ffb793b17f11404a7add55ba2a9bf49",
+    "created_at": "2026-08-07T00:06:13.996006",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "8.0.502.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk-8.0.502.0/ibm-semeru-open-jre_x64_mac_8.0.502.0.tar.gz",
+    "vendor": "semeru",
+    "version": "8.0.502.0"
   },
   {
     "checksum": "sha256:0bc4972188b06c3276cf9225a6718b19a7866f7543808b0fe9612039320849b5",
