@@ -152,11 +152,12 @@ fn map_file(file_key: &str, file_data: &FileData) -> Result<Option<JvmData>> {
     // Parse filename to extract os, arch, and java version
     let meta = meta_from_name(filename)?;
 
-    // Skip innovation releases (treated as early access)
-    if regex!(r"graalvm-jdk-\d+i").is_match(filename) {
-        debug!("[oracle-graalvm] skipping innovation release: {filename}");
-        return Ok(None);
-    }
+    // Innovation releases are included and tagged with the "innovation" feature
+    let features = if regex!(r"graalvm-jdk-\d+i").is_match(filename) {
+        Some(vec!["innovation".to_string()])
+    } else {
+        None
+    };
 
     // Skip URLs that require authentication
     if url.contains("/otn/") {
@@ -187,7 +188,7 @@ fn map_file(file_key: &str, file_data: &FileData) -> Result<Option<JvmData>> {
         architecture: arch,
         checksum,
         checksum_url: Some(checksum_url),
-        features: None,
+        features,
         filename: filename.to_string(),
         file_type,
         image_type: "jdk".to_string(),
@@ -307,5 +308,39 @@ mod test {
                 "Expected an error for invalid file name: {invalid_name}",
             );
         }
+    }
+
+    #[test]
+    fn test_map_file_innovation_release() {
+        let file_data = FileData {
+            file: "https://download.oracle.com/graalvm/25/archive/graalvm-jdk-25i1-25.0.3_linux-x64_bin.tar.gz"
+                .to_string(),
+            hash: vec!["SHA256".to_string(), "abc123".to_string()],
+        };
+
+        let jvm = map_file("25.1.3-Linux-x64-25", &file_data)
+            .unwrap()
+            .expect("innovation release should not be skipped");
+
+        assert_eq!(jvm.features, Some(vec!["innovation".to_string()]));
+        assert_eq!(jvm.version, "25.0.3");
+        assert_eq!(jvm.java_version, "25.0.3");
+        assert_eq!(jvm.release_type, "ga");
+    }
+
+    #[test]
+    fn test_map_file_ga_release() {
+        let file_data = FileData {
+            file: "https://download.oracle.com/graalvm/25/archive/graalvm-jdk-25.0.3_linux-x64_bin.tar.gz".to_string(),
+            hash: vec!["SHA256".to_string(), "abc123".to_string()],
+        };
+
+        let jvm = map_file("25.0.3-Linux-x64-25", &file_data)
+            .unwrap()
+            .expect("ga release should be included");
+
+        assert_eq!(jvm.features, None);
+        assert_eq!(jvm.version, "25.0.3");
+        assert_eq!(jvm.java_version, "25.0.3");
     }
 }
