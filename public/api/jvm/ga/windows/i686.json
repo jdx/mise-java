@@ -5394,6 +5394,30 @@
     "version": "11.90.19.0"
   },
   {
+    "checksum": "sha256:cc0efa75cc7e8467d88202c8fe4d20f843369419659fa3444a65a09f3c75240c",
+    "created_at": "2026-08-18T22:05:02.756880",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.32.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.90.205-ca-jdk11.0.32.1-win_i686.zip",
+    "vendor": "zulu",
+    "version": "11.90.205.0"
+  },
+  {
+    "checksum": "sha256:0503954e7fa29eb3e58f639e2df9c48213ac5a16680d15268e3098023aaed0f6",
+    "created_at": "2026-08-18T22:05:02.756880",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "11.0.32.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.90.205-ca-jre11.0.32.1-win_i686.zip",
+    "vendor": "zulu",
+    "version": "11.90.205.0"
+  },
+  {
     "checksum": "sha256:d14abf12a09629d75272f40ef2317337b2a53b0ff39186d7ffab8ca14f16afd7",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [],
@@ -8258,6 +8282,42 @@
     "version": "17.68.17.0"
   },
   {
+    "checksum": "sha256:f0a30de6764ebc06e662726943830e572b9cc149aa005d9d9c120e85e23f4b28",
+    "created_at": "2026-08-18T22:05:02.756880",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.20.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.68.203-ca-jdk17.0.20.1-win_i686.zip",
+    "vendor": "zulu",
+    "version": "17.68.203.0"
+  },
+  {
+    "checksum": "sha256:01f4ca7aa779cfcef76c0fd030b21965fa90a88431fcecbc9a10ce2e0968e7a4",
+    "created_at": "2026-08-18T22:05:02.756880",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.20.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.68.203-ca-jre17.0.20.1-win_i686.tar.gz",
+    "vendor": "zulu",
+    "version": "17.68.203.0"
+  },
+  {
+    "checksum": "sha256:685eb34766224f64b11c7cc8d5dab20ba96481818865149d01044a9df6ccfcbb",
+    "created_at": "2026-08-18T22:05:02.756880",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "17.0.20.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.68.203-ca-jre17.0.20.1-win_i686.zip",
+    "vendor": "zulu",
+    "version": "17.68.203.0"
+  },
+  {
     "checksum": "sha256:6b7182581510960162e2bd2f67b472021ff46287bf9ff2ab5ecf570322bd4236",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [
@@ -10826,6 +10886,30 @@
     "version": "8.96.0.19"
   },
   {
+    "checksum": "sha256:bc8fbc9057c639fb5d83167a09429dedce9243f92bae810fdb04c06bb6045016",
+    "created_at": "2026-08-18T22:05:02.756880",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8.0.504",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.96.0.205-ca-jdk8.0.504-win_i686.zip",
+    "vendor": "zulu",
+    "version": "8.96.0.205"
+  },
+  {
+    "checksum": "sha256:f77546602fafbb71ffa1af0f7fbfeda62ff4c69156212c6c35a698a1844b8b9e",
+    "created_at": "2026-08-18T22:05:02.756880",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "8.0.504",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.96.0.205-ca-jre8.0.504-win_i686.zip",
+    "vendor": "zulu",
+    "version": "8.96.0.205"
+  },
+  {
     "checksum": "sha256:a759c8d4f0effb436e5f7f19f8f7fd3c0451fc92789f7e58a7b9ee5904561e8e",
     "created_at": "2026-06-16T22:39:44.491761",
     "features": [],
@@ -11184,6 +11268,18 @@
     "url": "https://corretto.aws/downloads/resources/11.0.31.11.1/amazon-corretto-11.0.31.11.1-windows-x86-jdk.zip",
     "vendor": "corretto",
     "version": "11.0.31.11.1"
+  },
+  {
+    "checksum": "sha256:f6c654f96d498739d214f86df63ff947d4796fd350e03c3365f9630988c14bd7",
+    "created_at": "2026-08-18T22:05:58.876030",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.32.10.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/11.0.32.10.1/amazon-corretto-11.0.32.10.1-windows-x86-jdk.zip",
+    "vendor": "corretto",
+    "version": "11.0.32.10.1"
   },
   {
     "checksum": "sha256:c6c19ba9962bd9532cefec6786af354db6f2b85360d4996dba00dd671233b993",
@@ -12012,6 +12108,30 @@
     "url": "https://corretto.aws/downloads/resources/8.502.07.1/amazon-corretto-8.502.07.1-windows-x86-jre.zip",
     "vendor": "corretto",
     "version": "8.502.07.1"
+  },
+  {
+    "checksum": "sha256:d6252a15636463223fc823a30ca50a62b6df180a9d34a7304072a3c53269fb99",
+    "created_at": "2026-08-18T22:05:58.876030",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8.504.01.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/8.504.01.1/amazon-corretto-8.504.01.1-windows-x86-jdk.zip",
+    "vendor": "corretto",
+    "version": "8.504.01.1"
+  },
+  {
+    "checksum": "sha256:67837bc933b4787ae3533e0d5709078b1fec1d082b7e2218f68a56785c54a82d",
+    "created_at": "2026-08-18T22:05:58.876030",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "8.504.01.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/8.504.01.1/amazon-corretto-8.504.01.1-windows-x86-jre.zip",
+    "vendor": "corretto",
+    "version": "8.504.01.1"
   },
   {
     "checksum": "md5:85dfaf1ee4117649d9bdf94fe9c05a64",
@@ -15776,6 +15896,76 @@
     "version": "11.0.32+11"
   },
   {
+    "checksum": "sha1:b64ac0f85ec964356526f0e9056283781eb4f972",
+    "created_at": "2026-08-19T22:07:50.512495",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.32.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.32.1%2B1/bellsoft-jdk11.0.32.1%2B1-windows-i586-full.zip",
+    "vendor": "liberica",
+    "version": "11.0.32.1+1"
+  },
+  {
+    "checksum": "sha1:1b12ae87b5f92f85597e4c0e89512e4aa4ddb0ca",
+    "created_at": "2026-08-19T22:07:50.512495",
+    "features": [
+      "lite"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.32.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.32.1%2B1/bellsoft-jdk11.0.32.1%2B1-windows-i586-lite.zip",
+    "vendor": "liberica",
+    "version": "11.0.32.1+1"
+  },
+  {
+    "checksum": "sha1:1fbd97eba6123dd5a4bf7a8bada26bcc1c6a221c",
+    "created_at": "2026-08-19T22:07:50.512495",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.32.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.32.1%2B1/bellsoft-jdk11.0.32.1%2B1-windows-i586.zip",
+    "vendor": "liberica",
+    "version": "11.0.32.1+1"
+  },
+  {
+    "checksum": "sha1:b6595f956d2b3f3409bdf92b00e69999963e1da6",
+    "created_at": "2026-08-19T22:07:50.512495",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "11.0.32.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.32.1%2B1/bellsoft-jre11.0.32.1%2B1-windows-i586-full.zip",
+    "vendor": "liberica",
+    "version": "11.0.32.1+1"
+  },
+  {
+    "checksum": "sha1:8352896ae40c83822ca090fb5029061c0df1434a",
+    "created_at": "2026-08-19T22:07:50.512495",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "11.0.32.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.32.1%2B1/bellsoft-jre11.0.32.1%2B1-windows-i586.zip",
+    "vendor": "liberica",
+    "version": "11.0.32.1+1"
+  },
+  {
     "checksum": "sha1:91b7950a8c100512ac656d391e13dbeb4d15804e",
     "created_at": "2025-03-28T22:03:17.339783",
     "features": [
@@ -18368,6 +18558,76 @@
     "version": "17.0.20+10"
   },
   {
+    "checksum": "sha1:eb0699d7cf8ad31d2efc588f61e4f754a333ef0b",
+    "created_at": "2026-08-19T22:07:50.512495",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.20.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.20.1%2B1/bellsoft-jdk17.0.20.1%2B1-windows-i586-full.zip",
+    "vendor": "liberica",
+    "version": "17.0.20.1+1"
+  },
+  {
+    "checksum": "sha1:044de0c6f144307b6f0792485df6bf63ac49c9cb",
+    "created_at": "2026-08-19T22:07:50.512495",
+    "features": [
+      "lite"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.20.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.20.1%2B1/bellsoft-jdk17.0.20.1%2B1-windows-i586-lite.zip",
+    "vendor": "liberica",
+    "version": "17.0.20.1+1"
+  },
+  {
+    "checksum": "sha1:bb5aca832a1351b2c8921fc33d389b625e1fe124",
+    "created_at": "2026-08-19T22:07:50.512495",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.20.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.20.1%2B1/bellsoft-jdk17.0.20.1%2B1-windows-i586.zip",
+    "vendor": "liberica",
+    "version": "17.0.20.1+1"
+  },
+  {
+    "checksum": "sha1:c76ea478e4588f586b67fbec49170259b86a35f7",
+    "created_at": "2026-08-19T22:07:50.512495",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "17.0.20.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.20.1%2B1/bellsoft-jre17.0.20.1%2B1-windows-i586-full.zip",
+    "vendor": "liberica",
+    "version": "17.0.20.1+1"
+  },
+  {
+    "checksum": "sha1:b0ef2fdc59b318cffd259ce1076005dc81e2c75d",
+    "created_at": "2026-08-19T22:07:50.512495",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "17.0.20.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.20.1%2B1/bellsoft-jre17.0.20.1%2B1-windows-i586.zip",
+    "vendor": "liberica",
+    "version": "17.0.20.1+1"
+  },
+  {
     "checksum": "sha1:276295e94d6503c335795d2a61e9e8af7c16d166",
     "created_at": "2025-03-28T22:03:17.339783",
     "features": [
@@ -20186,6 +20446,76 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.12%2B10/bellsoft-jre21.0.12%2B10-windows-i586.zip",
     "vendor": "liberica",
     "version": "21.0.12+10"
+  },
+  {
+    "checksum": "sha1:36eb0af8aff902987329ca8b4928d31d01b96d22",
+    "created_at": "2026-08-19T22:07:50.512495",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.12.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.12.1%2B1/bellsoft-jdk21.0.12.1%2B1-windows-i586-full.zip",
+    "vendor": "liberica",
+    "version": "21.0.12.1+1"
+  },
+  {
+    "checksum": "sha1:bd7183bbe815c82493f8e56478614c65f0ad8609",
+    "created_at": "2026-08-19T22:07:50.512495",
+    "features": [
+      "lite"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.12.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.12.1%2B1/bellsoft-jdk21.0.12.1%2B1-windows-i586-lite.zip",
+    "vendor": "liberica",
+    "version": "21.0.12.1+1"
+  },
+  {
+    "checksum": "sha1:225b8e305358587de8eb8c1fe21f8206e0d1a2f3",
+    "created_at": "2026-08-19T22:07:50.512495",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.12.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.12.1%2B1/bellsoft-jdk21.0.12.1%2B1-windows-i586.zip",
+    "vendor": "liberica",
+    "version": "21.0.12.1+1"
+  },
+  {
+    "checksum": "sha1:657127c34317b3f6997de474f2327f25a6842055",
+    "created_at": "2026-08-19T22:07:50.512495",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "21.0.12.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.12.1%2B1/bellsoft-jre21.0.12.1%2B1-windows-i586-full.zip",
+    "vendor": "liberica",
+    "version": "21.0.12.1+1"
+  },
+  {
+    "checksum": "sha1:a07891b379a8708e9d8aecbbac705e42fd1cb27b",
+    "created_at": "2026-08-19T22:07:50.512495",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "21.0.12.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.12.1%2B1/bellsoft-jre21.0.12.1%2B1-windows-i586.zip",
+    "vendor": "liberica",
+    "version": "21.0.12.1+1"
   },
   {
     "checksum": "sha1:ecdd8e5216bd73e3e9bb2f24a3424d499a3d0781",
@@ -23134,6 +23464,76 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/8u502%2B9/bellsoft-jre8u502%2B9-windows-i586.zip",
     "vendor": "liberica",
     "version": "8u502+9"
+  },
+  {
+    "checksum": "sha1:206aaa45e73e2c8994eeadffc1ce54dff7d0197e",
+    "created_at": "2026-08-19T22:07:50.512495",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8u504+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u504%2B1/bellsoft-jdk8u504%2B1-windows-i586-full.zip",
+    "vendor": "liberica",
+    "version": "8u504+1"
+  },
+  {
+    "checksum": "sha1:cfa8dfcd941396a0be384a0c441d10fabe70a024",
+    "created_at": "2026-08-19T22:07:50.512495",
+    "features": [
+      "lite"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8u504+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u504%2B1/bellsoft-jdk8u504%2B1-windows-i586-lite.zip",
+    "vendor": "liberica",
+    "version": "8u504+1"
+  },
+  {
+    "checksum": "sha1:c934e1139fc73278c8a879b010edd03e964b5210",
+    "created_at": "2026-08-19T22:07:50.512495",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8u504+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u504%2B1/bellsoft-jdk8u504%2B1-windows-i586.zip",
+    "vendor": "liberica",
+    "version": "8u504+1"
+  },
+  {
+    "checksum": "sha1:4cbf72acfb2314c1b3f1d623a136262a3ef92295",
+    "created_at": "2026-08-19T22:07:50.512495",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "8u504+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u504%2B1/bellsoft-jre8u504%2B1-windows-i586-full.zip",
+    "vendor": "liberica",
+    "version": "8u504+1"
+  },
+  {
+    "checksum": "sha1:55190083ebefcbe73bd2d3bd5918d656415b9b48",
+    "created_at": "2026-08-19T22:07:50.512495",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "8u504+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u504%2B1/bellsoft-jre8u504%2B1-windows-i586.zip",
+    "vendor": "liberica",
+    "version": "8u504+1"
   },
   {
     "checksum": "sha256:5dee18b8cf939c524d71fc354d8811b7c6d3a2f4898eb36ba4f761274ab93aef",
