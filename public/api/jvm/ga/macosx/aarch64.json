@@ -36066,6 +36066,30 @@
     "version": "17.0.20+8"
   },
   {
+    "checksum": "sha256:196d13ba5f10414bef7f6a05a9b3f00edacb18ebacef2b99485db9e2ee18f0e8",
+    "created_at": "2026-08-21T22:08:02.270960",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.20.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_aarch64_mac_hotspot_17.0.20.1_1.tar.gz",
+    "vendor": "temurin",
+    "version": "17.0.20+101"
+  },
+  {
+    "checksum": "sha256:190480874ccceb358cbc840393207f77ac3e63a4c5f8129d0e23e9518b96ad05",
+    "created_at": "2026-08-21T22:08:02.270960",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.20.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_aarch64_mac_hotspot_17.0.20.1_1.tar.gz",
+    "vendor": "temurin",
+    "version": "17.0.20+101"
+  },
+  {
     "checksum": "sha256:ff42be4d7a348d0d7aee07749e4daec9f427dcc7eb46b343f8131e8f3906c05b",
     "created_at": "2025-03-28T22:04:33.817456",
     "features": [],
@@ -37180,6 +37204,30 @@
     "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4%2B7/OpenJDK25U-jre_aarch64_mac_hotspot_25.0.4_7.tar.gz",
     "vendor": "temurin",
     "version": "25.0.4+7.0.LTS"
+  },
+  {
+    "checksum": "sha256:61979887f7506a24a57439ff99adb8b3a7fc89977d9cfe3b8984f58a981b7b9d",
+    "created_at": "2026-08-21T22:08:02.270960",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.1+1-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jdk_aarch64_mac_hotspot_25.0.4.1_1.tar.gz",
+    "vendor": "temurin",
+    "version": "25.0.4+101.0.LTS"
+  },
+  {
+    "checksum": "sha256:5b02bcc908da092e7e00b9772d4f9bbb87f44a60b7c90f7cf5a91a1d98f37e1b",
+    "created_at": "2026-08-21T22:08:02.270960",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4.1+1-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.4.1%2B1/OpenJDK25U-jre_aarch64_mac_hotspot_25.0.4.1_1.tar.gz",
+    "vendor": "temurin",
+    "version": "25.0.4+101.0.LTS"
   },
   {
     "checksum": "sha256:596ba026474808b75e934aa8c32cf9b340fafc455d06f366ede4f2932f206eb1",
@@ -56218,6 +56266,58 @@
     "version": "23.0.13+1"
   },
   {
+    "checksum": "sha1:79e43752f55ce9831ff58664a8e6ffa9752f00f4",
+    "created_at": "2026-08-21T22:05:44.903887",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.20.1+2",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.13.1+1-17.0.20.1+2/bellsoft-liberica-vm-core-openjdk17.0.20.1+2-23.0.13.1+1-macos-aarch64.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.0.13.1+1"
+  },
+  {
+    "checksum": "sha1:f49f39d27f49b56063e04793fb5d7d61740081ca",
+    "created_at": "2026-08-21T22:05:44.903887",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.20.1+2",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.13.1+1-17.0.20.1+2/bellsoft-liberica-vm-core-openjdk17.0.20.1+2-23.0.13.1+1-macos-aarch64.zip",
+    "vendor": "liberica-nik",
+    "version": "23.0.13.1+1"
+  },
+  {
+    "checksum": "sha1:72bf4931121f78e6955b723c44b407057488bc65",
+    "created_at": "2026-08-21T22:05:44.903887",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.20.1+2",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.13.1+1-17.0.20.1+2/bellsoft-liberica-vm-full-openjdk17.0.20.1+2-23.0.13.1+1-macos-aarch64.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.0.13.1+1"
+  },
+  {
+    "checksum": "sha1:42e8421d8c4793b6bdf05f9b39ca5302304912a5",
+    "created_at": "2026-08-21T22:05:44.903887",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.20.1+2",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.13.1+1-17.0.20.1+2/bellsoft-liberica-vm-full-openjdk17.0.20.1+2-23.0.13.1+1-macos-aarch64.zip",
+    "vendor": "liberica-nik",
+    "version": "23.0.13.1+1"
+  },
+  {
     "checksum": "sha1:a22ac0ddfc2ab4fb72f1dc9269e8eaa5c24b65c6",
     "created_at": "2025-09-24T22:03:03.689318",
     "features": [],
@@ -57052,6 +57152,58 @@
     "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.12+1-21.0.12+11/bellsoft-liberica-vm-openjdk21.0.12+11-23.1.12+1-macos-aarch64.zip",
     "vendor": "liberica-nik",
     "version": "23.1.12+1"
+  },
+  {
+    "checksum": "sha1:ba8dfa15b1be8571e93210f9f2812827b2167a5a",
+    "created_at": "2026-08-21T22:05:44.903887",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.12.1+2",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.12.1+1-21.0.12.1+2/bellsoft-liberica-vm-core-openjdk21.0.12.1+2-23.1.12.1+1-macos-aarch64.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.1.12.1+1"
+  },
+  {
+    "checksum": "sha1:bf61686d8179cb517249cb956c5e097f579fdb0a",
+    "created_at": "2026-08-21T22:05:44.903887",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.12.1+2",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.12.1+1-21.0.12.1+2/bellsoft-liberica-vm-core-openjdk21.0.12.1+2-23.1.12.1+1-macos-aarch64.zip",
+    "vendor": "liberica-nik",
+    "version": "23.1.12.1+1"
+  },
+  {
+    "checksum": "sha1:51aa62a7e2d3a75b5dfa5525d779fad8fcec8b47",
+    "created_at": "2026-08-21T22:05:44.903887",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.12.1+2",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.12.1+1-21.0.12.1+2/bellsoft-liberica-vm-full-openjdk21.0.12.1+2-23.1.12.1+1-macos-aarch64.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.1.12.1+1"
+  },
+  {
+    "checksum": "sha1:ff84a02e0844348c8dcb6a4d46c76140c5a14c62",
+    "created_at": "2026-08-21T22:05:44.903887",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.12.1+2",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.12.1+1-21.0.12.1+2/bellsoft-liberica-vm-full-openjdk21.0.12.1+2-23.1.12.1+1-macos-aarch64.zip",
+    "vendor": "liberica-nik",
+    "version": "23.1.12.1+1"
   },
   {
     "checksum": "sha1:3740084f4a22383de28f39745351804abb29dabc",
@@ -58748,6 +58900,58 @@
     "url": "https://github.com/bell-sw/LibericaNIK/releases/download/25.0.4+1-25.0.4+10/bellsoft-liberica-vm-openjdk25.0.4+10-25.0.4+1-macos-aarch64.zip",
     "vendor": "liberica-nik",
     "version": "25.0.4+1"
+  },
+  {
+    "checksum": "sha1:d3d655788718174017879fb64b3a91679fcd1c31",
+    "created_at": "2026-08-21T22:05:44.903887",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.1+2",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/25.0.4.1+1-25.0.4.1+2/bellsoft-liberica-vm-full-openjdk25.0.4.1+2-25.0.4.1+1-macos-aarch64.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "25.0.4.1+1"
+  },
+  {
+    "checksum": "sha1:d5c9f67aec286b26c4d8dd2199040249fb416339",
+    "created_at": "2026-08-21T22:05:44.903887",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.4.1+2",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/25.0.4.1+1-25.0.4.1+2/bellsoft-liberica-vm-full-openjdk25.0.4.1+2-25.0.4.1+1-macos-aarch64.zip",
+    "vendor": "liberica-nik",
+    "version": "25.0.4.1+1"
+  },
+  {
+    "checksum": "sha1:f65a5ce0f83c98112dd1b93a3e26b71097e19143",
+    "created_at": "2026-08-21T22:05:44.903887",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.1+2",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/25.0.4.1+1-25.0.4.1+2/bellsoft-liberica-vm-openjdk25.0.4.1+2-25.0.4.1+1-macos-aarch64.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "25.0.4.1+1"
+  },
+  {
+    "checksum": "sha1:3b1c7af02e9aba3927f045af9a357e803d703c21",
+    "created_at": "2026-08-21T22:05:44.903887",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.4.1+2",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/25.0.4.1+1-25.0.4.1+2/bellsoft-liberica-vm-openjdk25.0.4.1+2-25.0.4.1+1-macos-aarch64.zip",
+    "vendor": "liberica-nik",
+    "version": "25.0.4.1+1"
   },
   {
     "checksum": "sha256:05d9a51786c578cea346760b3ec3af3721780afb850b739407a2a123f5d081fd",
