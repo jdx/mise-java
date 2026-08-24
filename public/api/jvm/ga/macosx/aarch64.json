@@ -2868,6 +2868,18 @@
     "version": "25.0.4-b508.27"
   },
   {
+    "checksum": "sha512:00897aa0b34f45f1f6e6d223107ab4f888efd949aab2a327c0ff88c0d36b67882bc6b4e632d3dfa558f7646f91702ab26d97db82452d7412bb19afcf06381ecc",
+    "created_at": "2026-08-24T22:10:14.140980",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4.1-b583.48",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.4.1-osx-aarch64-b583.48.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4.1-b583.48"
+  },
+  {
     "checksum": "sha256:dbee94e3456cacc8d4897d3bb0c83f4d6d6f1b331ef2828f4ab8ab1a468840c4",
     "created_at": "2025-03-28T22:04:32.259007",
     "features": [],
@@ -6248,6 +6260,20 @@
     "version": "25.0.4-b508.27"
   },
   {
+    "checksum": "sha512:a4b1b8a3040936db57efd925d2f2c7218959a8f0908335f51be4713787b26174022b9dd58790cf6ec0defc6efe4564f0db9a7784c9e0652d19a5fbb347d1452d",
+    "created_at": "2026-08-24T22:10:14.140980",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4.1-b583.48",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25.0.4.1-osx-aarch64-b583.48.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4.1-b583.48"
+  },
+  {
     "checksum": "sha256:7d217e12d5a88afdf5b2d634d7f639b91e97b7c5e785467841a41c47b8caa26c",
     "created_at": "2025-03-28T22:04:32.259007",
     "features": [],
@@ -9116,6 +9142,18 @@
     "version": "25.0.4-b508.27"
   },
   {
+    "checksum": "sha512:8e639937251f52e0fcace5f343467d2a607665f38082447a60423541d41afa9c17052f3d942f04c2ed3f9ea997d83b6e81b62fb0d6c51dd7f6dd0206e5b062b6",
+    "created_at": "2026-08-24T22:10:14.140980",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.1-b583.48",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.4.1-osx-aarch64-b583.48.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4.1-b583.48"
+  },
+  {
     "checksum": "sha256:d31b71ac0edb5562a6a8031dbda2acce504182a6fb9fda71a8e38b39b55174ee",
     "created_at": "2025-03-28T22:04:32.259007",
     "features": [],
@@ -11688,6 +11726,20 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.4-osx-aarch64-b508.27.tar.gz",
     "vendor": "jetbrains",
     "version": "25.0.4-b508.27"
+  },
+  {
+    "checksum": "sha512:1f0a0cac819c1f142a32b8bf454e4939b0781993047b639419ca4b2f1e8d68805d8baf1a6307293ff184606c31d69ea610d07b2ba8200273c02a02e4dd0a9d3d",
+    "created_at": "2026-08-24T22:10:14.140980",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.1-b583.48",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.4.1-osx-aarch64-b583.48.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4.1-b583.48"
   },
   {
     "checksum": "sha256:3aa5ba24e7ea1cb18ce5f05c7b336b7442ee435e8dac110537a4cf0e1550605a",
@@ -32274,6 +32326,30 @@
     "url": "https://download.oracle.com/java/26/latest/jdk-26_macos-aarch64_bin.tar.gz",
     "vendor": "oracle",
     "version": "26.0.0"
+  },
+  {
+    "checksum": "sha256:cb86916f79aab52e3d85ca789f1eaf44dacfeeddb88c0e492784d876d14d5391",
+    "created_at": "2026-08-24T22:09:03.827730",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.12.1",
+    "jvm_impl": "graalvm",
+    "url": "https://gds.oracle.com/download/graal/21/archive/graalvm-jdk-21.0.12.1_macos-aarch64_bin.tar.gz",
+    "vendor": "oracle-graalvm",
+    "version": "21.0.12.1"
+  },
+  {
+    "checksum": "sha256:f3911011395f73030f6fc81c49e12d598602e2e2a2b38061d4b47a2b4bb408e9",
+    "created_at": "2026-08-24T22:09:03.827730",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.1",
+    "jvm_impl": "graalvm",
+    "url": "https://gds.oracle.com/download/graal/25/archive/graalvm-jdk-25.0.4.1_macos-aarch64_bin.tar.gz",
+    "vendor": "oracle-graalvm",
+    "version": "25.0.4.1"
   },
   {
     "checksum": "sha256:3b694d60985503bf561cd2444fb1a9b697b08fb700d0bb27d12c49adc5d914bb",
