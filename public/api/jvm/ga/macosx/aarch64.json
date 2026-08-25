@@ -32380,6 +32380,20 @@
     "version": "25.0.4"
   },
   {
+    "checksum": "sha256:8411c28344f47726c433a2fbf0fa399c199531802d458a917d4a05b106043141",
+    "created_at": "2026-08-25T22:08:21.003071",
+    "features": [
+      "innovation"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.1",
+    "jvm_impl": "graalvm",
+    "url": "https://gds.oracle.com/download/graal/25i3/archive/graalvm-jdk-25i3-25.0.4.1_macos-aarch64_bin.tar.gz",
+    "vendor": "oracle-graalvm",
+    "version": "25.0.4.1"
+  },
+  {
     "checksum": "sha256:e3d8d11afd3766c300b02f5c4b4158041807ef2b6dba63d3de7320f9ce5a4826",
     "created_at": "2025-03-28T22:04:28.081056",
     "features": [],
@@ -35816,6 +35830,30 @@
     "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.32%2B9/OpenJDK11U-jre_aarch64_mac_hotspot_11.0.32_9.tar.gz",
     "vendor": "temurin",
     "version": "11.0.32+9"
+  },
+  {
+    "checksum": "sha256:c487a1c3a56588b3a32d0d07cdd526bf3d401c4b8422be772ca178bfcd647f3f",
+    "created_at": "2026-08-25T22:08:21.021210",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.32.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.32.1%2B1/OpenJDK11U-jdk_aarch64_mac_hotspot_11.0.32.1_1.tar.gz",
+    "vendor": "temurin",
+    "version": "11.0.32+101"
+  },
+  {
+    "checksum": "sha256:4fb215c85ab144e0bf34e28c6edd126a3d60af9c3e1db33406a3b1d3e8bcec5e",
+    "created_at": "2026-08-25T22:08:21.021210",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.32.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.32.1%2B1/OpenJDK11U-jre_aarch64_mac_hotspot_11.0.32.1_1.tar.gz",
+    "vendor": "temurin",
+    "version": "11.0.32+101"
   },
   {
     "checksum": "sha256:910bb88543211c63298e5b49f7144ac4463f1d903926e94a89bfbf10163bbba1",
