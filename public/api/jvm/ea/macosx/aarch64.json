@@ -5488,14 +5488,26 @@
     "version": "28.0.0-ea+11"
   },
   {
-    "checksum": "sha256:9d888c6016a2bb016d8df2d6fec461664c4b81e005deacb33b69d48ca42c8ecf",
-    "created_at": "2026-08-13T22:20:07.711759",
+    "checksum": "sha256:052b0360790022119877b7d6c51a158848cc9bff77e0a2359f95fa425b5ae21a",
+    "created_at": "2026-08-24T22:09:03.828605",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "28.0.0-ea+12",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk28/12/GPL/openjdk-28-ea+12_macos-aarch64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "28.0.0-ea+12"
+  },
+  {
+    "checksum": "sha256:052b0360790022119877b7d6c51a158848cc9bff77e0a2359f95fa425b5ae21a",
+    "created_at": "2026-08-24T22:09:03.828605",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
     "java_version": "28.0.0-ea",
     "jvm_impl": "hotspot",
-    "url": "https://download.java.net/java/early_access/jdk28/11/GPL/openjdk-28-ea+11_macos-aarch64_bin.tar.gz",
+    "url": "https://download.java.net/java/early_access/jdk28/12/GPL/openjdk-28-ea+12_macos-aarch64_bin.tar.gz",
     "vendor": "openjdk",
     "version": "28.0.0-ea"
   },
@@ -21338,6 +21350,30 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25.0.5%2B2/sapmachine-jre-25.0.5-ea.2_macos-aarch64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "25.0.5-ea.2"
+  },
+  {
+    "checksum": "sha256:deb71e40252e24f3896b9bfbb6976d5c17519d3ef901da68687189f4218d7060",
+    "created_at": "2026-08-24T22:08:51.172370",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5-ea.3",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25.0.5%2B3/sapmachine-jdk-25.0.5-ea.3_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.5-ea.3"
+  },
+  {
+    "checksum": "sha256:e4d46dabbbcf8b537075f56abd992a90ed8af74ef13ea4882bf5f106ed1fac1a",
+    "created_at": "2026-08-24T22:08:51.172370",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.5-ea.3",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25.0.5%2B3/sapmachine-jre-25.0.5-ea.3_macos-aarch64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "25.0.5-ea.3"
   },
   {
     "checksum": "sha256:0d35aaeb176c2c58485057600028d6d089250c50c07e8bc043ef5dcc92f5d7c2",

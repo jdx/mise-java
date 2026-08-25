@@ -5620,14 +5620,26 @@
     "version": "28.0.0-ea+11"
   },
   {
-    "checksum": "sha256:8378faa16b706ea91e76075d582ab264ccc218380d7eeff8945c6cca1c752842",
-    "created_at": "2026-08-13T22:20:07.711759",
+    "checksum": "sha256:f0bc2313112a6ef96e10cce6fbfa634580e75feaef946b796b0d8ba3f0e1759d",
+    "created_at": "2026-08-24T22:09:03.828605",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "28.0.0-ea+12",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/early_access/jdk28/12/GPL/openjdk-28-ea+12_windows-x64_bin.zip",
+    "vendor": "openjdk",
+    "version": "28.0.0-ea+12"
+  },
+  {
+    "checksum": "sha256:f0bc2313112a6ef96e10cce6fbfa634580e75feaef946b796b0d8ba3f0e1759d",
+    "created_at": "2026-08-24T22:09:03.828605",
     "features": [],
     "file_type": "zip",
     "image_type": "jdk",
     "java_version": "28.0.0-ea",
     "jvm_impl": "hotspot",
-    "url": "https://download.java.net/java/early_access/jdk28/11/GPL/openjdk-28-ea+11_windows-x64_bin.zip",
+    "url": "https://download.java.net/java/early_access/jdk28/12/GPL/openjdk-28-ea+12_windows-x64_bin.zip",
     "vendor": "openjdk",
     "version": "28.0.0-ea"
   },
@@ -29174,6 +29186,30 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25.0.5%2B2/sapmachine-jre-25.0.5-ea.2_windows-x64_bin.zip",
     "vendor": "sapmachine",
     "version": "25.0.5-ea.2"
+  },
+  {
+    "checksum": "sha256:13204969058d5f7739c88326f08ba55208b2343dbcca430e00adc57ab9bd3405",
+    "created_at": "2026-08-24T22:08:51.172370",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.5-ea.3",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25.0.5%2B3/sapmachine-jdk-25.0.5-ea.3_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "25.0.5-ea.3"
+  },
+  {
+    "checksum": "sha256:ef7bd164a4f8eeeb874342872da5f4e020501e0e6fdf6fef88ecca3fec20ac4a",
+    "created_at": "2026-08-24T22:08:51.172370",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "25.0.5-ea.3",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-25.0.5%2B3/sapmachine-jre-25.0.5-ea.3_windows-x64_bin.zip",
+    "vendor": "sapmachine",
+    "version": "25.0.5-ea.3"
   },
   {
     "checksum": "sha256:59445a05d134f1bb9add98e67f4a6027b2cd1c497fbfbfd3c2b5d3412ba3f23c",
