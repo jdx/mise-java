@@ -110,7 +110,7 @@ fn map_asset(asset: &GitHubAsset) -> Result<JvmData> {
         java_version: filename_meta.java_version.clone(),
         jvm_impl: "hotspot".to_string(),
         os: normalize_os(&filename_meta.os),
-        release_type: normalize_release_type(&filename_meta.release_type.map_or("ga".to_string(), |s| s)),
+        release_type: normalize_release_type(&filename_meta.release_type.unwrap_or_else(|| "ga".to_string())),
         url,
         vendor: "dragonwell".to_string(),
         version,
