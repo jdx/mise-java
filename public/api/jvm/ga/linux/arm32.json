@@ -984,6 +984,18 @@
     "version": "11.90.19.0"
   },
   {
+    "checksum": "sha256:ca4fefacb1e187c3d9b9392ccb42ea3107038937bcb35946035f59dd522ef741",
+    "created_at": "2026-08-26T23:03:24.755198",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.32.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.90.205-ca-jdk11.0.32.1-linux_aarch32sf.tar.gz",
+    "vendor": "zulu",
+    "version": "11.90.205.0"
+  },
+  {
     "checksum": "sha256:9c93c238fb730acb35130de5acbb97451870420ea852e67eda7bd2fc2cc9d271",
     "created_at": "2026-06-16T22:39:44.491761",
     "features": [],
@@ -1102,6 +1114,18 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu8.94.0.17-ca-jdk8.0.492-linux_aarch32sf.tar.gz",
     "vendor": "zulu",
     "version": "8.94.0.17"
+  },
+  {
+    "checksum": "sha256:314a49cae7d4069d75abf6d3cbcb365d8488a3d6dc8b2224f918028726b172c0",
+    "created_at": "2026-08-26T23:03:24.755198",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.0.504",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.96.0.205-ca-jdk8.0.504-linux_aarch32sf.tar.gz",
+    "vendor": "zulu",
+    "version": "8.96.0.205"
   },
   {
     "checksum": "sha256:3b707b86b4be3abe155736b039d60c1bebb2ea14ed9fde94e2cb16a371b1dfff",
@@ -2362,6 +2386,30 @@
     "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20%2B8/OpenJDK17U-jre_arm_linux_hotspot_17.0.20_8.tar.gz",
     "vendor": "temurin",
     "version": "17.0.20+8"
+  },
+  {
+    "checksum": "sha256:e66816375d9ff7e18e622b370f0b523dd45a91ab4c6dcd17d6c8708e17ab80e9",
+    "created_at": "2026-08-26T23:06:56.364757",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.20.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jdk_arm_linux_hotspot_17.0.20.1_1.tar.gz",
+    "vendor": "temurin",
+    "version": "17.0.20+101"
+  },
+  {
+    "checksum": "sha256:f31a2a481a358c67f9a035212e9514ff58b1166f0811635cb127829af1ee40ec",
+    "created_at": "2026-08-26T23:06:56.364757",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.20.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.20.1%2B1/OpenJDK17U-jre_arm_linux_hotspot_17.0.20.1_1.tar.gz",
+    "vendor": "temurin",
+    "version": "17.0.20+101"
   },
   {
     "checksum": "sha256:d76c462f44c9f306a0fe4468a0218a261ab152f358a8fb55ec80865bf35e2c41",
