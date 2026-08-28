@@ -37752,6 +37752,30 @@
     "version": "26.0.2+10"
   },
   {
+    "checksum": "sha256:8c77a069a150c5b1c80280269ba062463053ebb7619ddef38dcfe3921fc60bdd",
+    "created_at": "2026-08-28T01:03:13.431445",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.2.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2.1%2B1/OpenJDK26U-jdk_aarch64_mac_hotspot_26.0.2.1_1.tar.gz",
+    "vendor": "temurin",
+    "version": "26.0.2+101"
+  },
+  {
+    "checksum": "sha256:63a94b3ba05308063536d60cb0f9bc847900a300fc53630c86eea3efa79313a4",
+    "created_at": "2026-08-28T01:03:13.431445",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "26.0.2.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2.1%2B1/OpenJDK26U-jre_aarch64_mac_hotspot_26.0.2.1_1.tar.gz",
+    "vendor": "temurin",
+    "version": "26.0.2+101"
+  },
+  {
     "checksum": "sha1:721583522bffded340fd91dd1bcebd36359fa714",
     "created_at": "2025-03-28T22:03:17.339783",
     "features": [
@@ -60592,6 +60616,30 @@
     "version": "11.0.32.0"
   },
   {
+    "checksum": "sha256:e2a00bd177449bd9eda4a49d7c282e70111c4c05fc6710be7328f1d87de06809",
+    "created_at": "2026-08-28T01:03:53.789459",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.32.10",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.32.10/ibm-semeru-open-jdk_aarch64_mac_11.0.32.10.tar.gz",
+    "vendor": "semeru",
+    "version": "11.0.32.10"
+  },
+  {
+    "checksum": "sha256:f95f0043951eb406a3191d23d0e73505268a5daf354fbbd018577941e062a0cc",
+    "created_at": "2026-08-28T01:03:53.789459",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.32.10",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.32.10/ibm-semeru-open-jre_aarch64_mac_11.0.32.10.tar.gz",
+    "vendor": "semeru",
+    "version": "11.0.32.10"
+  },
+  {
     "checksum": "sha256:8959721fc9b93eb8dae65e06332723019555672c8791f5518f1b487fe79d256c",
     "created_at": "2025-03-28T22:04:27.453987",
     "features": [],
@@ -60926,6 +60974,30 @@
     "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.20.0/ibm-semeru-open-jre_aarch64_mac_17.0.20.0.tar.gz",
     "vendor": "semeru",
     "version": "17.0.20.0"
+  },
+  {
+    "checksum": "sha256:1a2a4e83099bb801441158c6cfeb09690bbe0f1fb2fffbc4ee9cc63c6f2e7f17",
+    "created_at": "2026-08-28T01:03:53.789459",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.20.10",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.20.10/ibm-semeru-open-jdk_aarch64_mac_17.0.20.10.tar.gz",
+    "vendor": "semeru",
+    "version": "17.0.20.10"
+  },
+  {
+    "checksum": "sha256:83b952a71dcdb8224b569d413f6d7e609de9c4a6ec8de63b816c5a3c4b51769f",
+    "created_at": "2026-08-28T01:03:53.789459",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.20.10",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.20.10/ibm-semeru-open-jre_aarch64_mac_17.0.20.10.tar.gz",
+    "vendor": "semeru",
+    "version": "17.0.20.10"
   },
   {
     "checksum": "sha256:14d7a9f8aed106bdf964882fe693073ee73dffa06fe3878ce57a8c0e5737364b",
@@ -61430,6 +61502,30 @@
     "url": "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.12.0/ibm-semeru-open-jre_aarch64_mac_21.0.12.0.tar.gz",
     "vendor": "semeru",
     "version": "21.0.12.0"
+  },
+  {
+    "checksum": "sha256:30d85734fc7bca18930682ca707bdabd227f5c5eea26adc3d2d57fbefe45499b",
+    "created_at": "2026-08-28T01:03:53.789459",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.12.10",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.12.10/ibm-semeru-open-jdk_aarch64_mac_21.0.12.10.tar.gz",
+    "vendor": "semeru",
+    "version": "21.0.12.10"
+  },
+  {
+    "checksum": "sha256:1d35cfa637bdf214bcda8079c012bbeb9c3b83076cab8ef7b335bd4a8889c6db",
+    "created_at": "2026-08-28T01:03:53.789459",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.12.10",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.12.10/ibm-semeru-open-jre_aarch64_mac_21.0.12.10.tar.gz",
+    "vendor": "semeru",
+    "version": "21.0.12.10"
   },
   {
     "checksum": "sha256:78d3e37d57f7b1ab37bba82a65a0d575939cbb06c10e0ddc6a3a1c5576d185d3",
@@ -62006,5 +62102,29 @@
     "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25.0.4.0/ibm-semeru-open-jre_aarch64_mac_25.0.4.0.tar.gz",
     "vendor": "semeru",
     "version": "25.0.4.0"
+  },
+  {
+    "checksum": "sha256:7a5f6606454c2f347d1157babdcf5773886dfa04afe4eb4993c09a0e89edfcd7",
+    "created_at": "2026-08-28T01:03:53.789459",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.10",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25.0.4.10/ibm-semeru-open-jdk_aarch64_mac_25.0.4.10.tar.gz",
+    "vendor": "semeru",
+    "version": "25.0.4.10"
+  },
+  {
+    "checksum": "sha256:cfd051a6b8badc0ec596b8aa8905a4d315d6372a25331d2f94bc91b0346568df",
+    "created_at": "2026-08-28T01:03:53.789459",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4.10",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25.0.4.10/ibm-semeru-open-jre_aarch64_mac_25.0.4.10.tar.gz",
+    "vendor": "semeru",
+    "version": "25.0.4.10"
   }
 ]

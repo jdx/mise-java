@@ -56125,6 +56125,20 @@
     "version": "11.0.32+9"
   },
   {
+    "checksum": "sha256:1dc1d3259fa4ca7a2db43c539a60bfa7fc0ea595f445a71ef36d28120f3094aa",
+    "created_at": "2026-08-28T01:03:13.431445",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.32.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.32.1%2B1/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.32.1_1.tar.gz",
+    "vendor": "temurin",
+    "version": "11.0.32+101"
+  },
+  {
     "checksum": "sha256:5c3f68887c325d36d852ba534303e1f5f1f5cae7d6cc1e951d73e0d8e98a058d",
     "created_at": "2026-08-24T22:08:54.628233",
     "features": [],
@@ -56133,6 +56147,20 @@
     "java_version": "11.0.32.1+1",
     "jvm_impl": "hotspot",
     "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.32.1%2B1/OpenJDK11U-jdk_x64_linux_hotspot_11.0.32.1_1.tar.gz",
+    "vendor": "temurin",
+    "version": "11.0.32+101"
+  },
+  {
+    "checksum": "sha256:bb9951aab1dcd0f6c2b22d76a46773100a6639ad199f339ff288d360b3217ae2",
+    "created_at": "2026-08-28T01:03:13.431445",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.32.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.32.1%2B1/OpenJDK11U-jre_x64_alpine-linux_hotspot_11.0.32.1_1.tar.gz",
     "vendor": "temurin",
     "version": "11.0.32+101"
   },
@@ -87852,6 +87880,30 @@
     "version": "11.0.32.0"
   },
   {
+    "checksum": "sha256:e20d7b93c0293d9a1db89d415725776a9e4c237d194d7a35531b08cd37f9c546",
+    "created_at": "2026-08-28T01:03:53.789459",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.32.10",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.32.10/ibm-semeru-open-jdk_x64_linux_11.0.32.10.tar.gz",
+    "vendor": "semeru",
+    "version": "11.0.32.10"
+  },
+  {
+    "checksum": "sha256:3636af6794bbaf3ec6727d2446b1f23a4945de17177347f8102d1cec313fcd93",
+    "created_at": "2026-08-28T01:03:53.789459",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.32.10",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.32.10/ibm-semeru-open-jre_x64_linux_11.0.32.10.tar.gz",
+    "vendor": "semeru",
+    "version": "11.0.32.10"
+  },
+  {
     "checksum": "sha256:1349eb9a1d9af491a1984d66a80126730357c4a5c4fcbe7112a2c832f6c0886e",
     "created_at": "2025-03-28T22:04:27.453987",
     "features": [],
@@ -88258,6 +88310,30 @@
     "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.20.0/ibm-semeru-open-jre_x64_linux_17.0.20.0.tar.gz",
     "vendor": "semeru",
     "version": "17.0.20.0"
+  },
+  {
+    "checksum": "sha256:ba94140d369118e8a85ccfd8f099335a0bce09949d5b0eb5acce69ac0b4ec86c",
+    "created_at": "2026-08-28T01:03:53.789459",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.20.10",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.20.10/ibm-semeru-open-jdk_x64_linux_17.0.20.10.tar.gz",
+    "vendor": "semeru",
+    "version": "17.0.20.10"
+  },
+  {
+    "checksum": "sha256:fddbc4cbd086c9fb507ced27e8a9061d1da45c0dfd188d2dd2360392e4614d3d",
+    "created_at": "2026-08-28T01:03:53.789459",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.20.10",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.20.10/ibm-semeru-open-jre_x64_linux_17.0.20.10.tar.gz",
+    "vendor": "semeru",
+    "version": "17.0.20.10"
   },
   {
     "checksum": "sha256:7dca04533d539675cc22d60d567b660bbf9a5a8c6ce832a189caea753590bbdd",
@@ -88762,6 +88838,30 @@
     "url": "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.12.0/ibm-semeru-open-jre_x64_linux_21.0.12.0.tar.gz",
     "vendor": "semeru",
     "version": "21.0.12.0"
+  },
+  {
+    "checksum": "sha256:94da688246c7d3a9916a9a615a5270fa58868d3359942cb351a8e6857e47ae30",
+    "created_at": "2026-08-28T01:03:53.789459",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.12.10",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.12.10/ibm-semeru-open-jdk_x64_linux_21.0.12.10.tar.gz",
+    "vendor": "semeru",
+    "version": "21.0.12.10"
+  },
+  {
+    "checksum": "sha256:49396509ded8c7ca95e0f29e3b08025ba113dc2554e90e8f65952a5833aae3d8",
+    "created_at": "2026-08-28T01:03:53.789459",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.12.10",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.12.10/ibm-semeru-open-jre_x64_linux_21.0.12.10.tar.gz",
+    "vendor": "semeru",
+    "version": "21.0.12.10"
   },
   {
     "checksum": "sha256:7a7a186a7a48537519917331ec91d9180b961dcc7ea0f627a23fa369edab6f16",
@@ -89340,6 +89440,30 @@
     "version": "25.0.4.0"
   },
   {
+    "checksum": "sha256:b9db918800de1dc8de1657f52c6f97677b734c2b3b2dc8a0ec406e20ee6d8ad9",
+    "created_at": "2026-08-28T01:03:53.789459",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.10",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25.0.4.10/ibm-semeru-open-jdk_x64_linux_25.0.4.10.tar.gz",
+    "vendor": "semeru",
+    "version": "25.0.4.10"
+  },
+  {
+    "checksum": "sha256:6284d91a7eb54cabc313e9cf768099934499d76561739e70c4de0e95a3334ca1",
+    "created_at": "2026-08-28T01:03:53.789459",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4.10",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25.0.4.10/ibm-semeru-open-jre_x64_linux_25.0.4.10.tar.gz",
+    "vendor": "semeru",
+    "version": "25.0.4.10"
+  },
+  {
     "checksum": "sha256:82c8232a5cb420246457d65a5014602feb8b288079cdae896e22a2eb6e390b58",
     "created_at": "2025-06-15T22:04:07.945456",
     "features": [],
@@ -89410,6 +89534,30 @@
     "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk-8.0.502.0/ibm-semeru-open-jre_x64_linux_8.0.502.0.tar.gz",
     "vendor": "semeru",
     "version": "8.0.502.0"
+  },
+  {
+    "checksum": "sha256:5037b916de02da2f6a4efbf5f57733e35e58ffbb3e6874612ff92790e3a6fc28",
+    "created_at": "2026-08-28T01:03:53.789459",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.0.504.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk-8.0.504.0/ibm-semeru-open-jdk_x64_linux_8.0.504.0.tar.gz",
+    "vendor": "semeru",
+    "version": "8.0.504.0"
+  },
+  {
+    "checksum": "sha256:c2bf4b2e06ab4476fdbea4bc27eb26d61ad5afa6b4980a1373ec049fa3e441ca",
+    "created_at": "2026-08-28T01:03:53.789459",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "8.0.504.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk-8.0.504.0/ibm-semeru-open-jre_x64_linux_8.0.504.0.tar.gz",
+    "vendor": "semeru",
+    "version": "8.0.504.0"
   },
   {
     "checksum": "sha256:f1fea5d3049754ad13f9b90d90beb9157dbd7e84e00c255c2cef81441f0f348e",
