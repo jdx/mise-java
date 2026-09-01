@@ -40188,6 +40188,20 @@
     "version": "26.0.2+10"
   },
   {
+    "checksum": "sha256:60186535f49539d060d6e523a714f04e32dcc72643d9eba24738e41323fca79d",
+    "created_at": "2026-09-01T22:11:12.225981",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "26.0.2.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2.1%2B1/OpenJDK26U-jdk_aarch64_alpine-linux_hotspot_26.0.2.1_1.tar.gz",
+    "vendor": "temurin",
+    "version": "26.0.2+101"
+  },
+  {
     "checksum": "sha256:9f6ad9856a7dd880061adaf88db3c4da0642113d59b7960a892f0e551c0c948c",
     "created_at": "2026-08-28T01:03:13.431445",
     "features": [],
@@ -40196,6 +40210,20 @@
     "java_version": "26.0.2.1+1",
     "jvm_impl": "hotspot",
     "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2.1%2B1/OpenJDK26U-jdk_aarch64_linux_hotspot_26.0.2.1_1.tar.gz",
+    "vendor": "temurin",
+    "version": "26.0.2+101"
+  },
+  {
+    "checksum": "sha256:e69231c395189e522128c0cd4a77ba51afdb8a4d20043432e782c64598e75f09",
+    "created_at": "2026-09-01T22:11:12.225981",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "26.0.2.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2.1%2B1/OpenJDK26U-jre_aarch64_alpine-linux_hotspot_26.0.2.1_1.tar.gz",
     "vendor": "temurin",
     "version": "26.0.2+101"
   },
@@ -60269,6 +60297,18 @@
     "version": "17.0.19.0.20.10"
   },
   {
+    "checksum": null,
+    "created_at": "2026-09-01T22:11:18.123561",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.20.0.21.8",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell17/releases/download/dragonwell-standard-17.0.20.0.21%2B8_jdk-17.0.20-ga/Alibaba_Dragonwell_Standard_17.0.20.0.21.8_aarch64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "17.0.20.0.21.8"
+  },
+  {
     "checksum": "sha256:1e7b974b860e9062c8a65dab4c71f84b20527b08866062a67c38963017a5f3fe",
     "created_at": "2025-03-28T22:04:35.425188",
     "features": [],
@@ -60367,6 +60407,20 @@
     "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.11.0.11%2B10_jdk-21.0.11-ga/Alibaba_Dragonwell_Extended_21.0.11.0.11.10_aarch64_linux.tar.gz",
     "vendor": "dragonwell",
     "version": "21.0.11.0.11.10"
+  },
+  {
+    "checksum": null,
+    "created_at": "2026-09-01T22:11:18.123561",
+    "features": [
+      "extended"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.12.0.12.8",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.12.0.12%2B8_jdk-21.0.12-ga/Alibaba_Dragonwell_Extended_21.0.12.0.12.8_aarch64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "21.0.12.0.12.8"
   },
   {
     "checksum": "sha256:d8c2fd0cda3c4de8f79b6c96b8687d6edeff52371f69a3c32b0543cda09d9d24",
@@ -60487,6 +60541,18 @@
     "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-standard-21.0.11.0.11%2B10_jdk-21.0.11-ga/Alibaba_Dragonwell_Standard_21.0.11.0.11.10_aarch64_linux.tar.gz",
     "vendor": "dragonwell",
     "version": "21.0.11.0.11.10"
+  },
+  {
+    "checksum": null,
+    "created_at": "2026-09-01T22:11:18.123561",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.12.0.12.8",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-standard-21.0.12.0.12%2B8_jdk-21.0.12-ga/Alibaba_Dragonwell_Standard_21.0.12.0.12.8_aarch64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "21.0.12.0.12.8"
   },
   {
     "checksum": "sha256:307321a399c206f8d56e0ce5c65921f9448ec9882dfb81ffc5e841b8fb5f8ed8",
