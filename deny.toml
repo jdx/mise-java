@@ -80,6 +80,8 @@ ignore = [
     # quick-xml vulnerability
     {id = "RUSTSEC-2026-0194", reason = "transitive dependency of comrak" },
     {id = "RUSTSEC-2026-0195", reason = "transitive dependency of comrak" },
+    # rusttls vulnerability
+    {id = "RUSTSEC-2026-0285", reason = "transitive dependency of rusttls" },
 ]
 # If this is true, then cargo deny will use the git executable to fetch advisory database.
 # If this is false, then it uses a built-in git library.
