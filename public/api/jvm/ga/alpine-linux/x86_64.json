@@ -9259,6 +9259,64 @@
     "version": "26.32.203.0"
   },
   {
+    "checksum": "sha256:533dcbeecef6851dacbedd519dad800562e9abef8bacedf9ad1f33603abafea8",
+    "created_at": "2026-09-15T22:12:04.288102",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.28.101-ca-crac-jdk27.0.0-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.28.101.0"
+  },
+  {
+    "checksum": "sha256:d510a0d2e6ebe8c1294047a8fb106c82ce2b0924210fc69e8808e344cd4b12f0",
+    "created_at": "2026-09-15T22:12:04.288102",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.28.101-ca-crac-jre27.0.0-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.28.101.0"
+  },
+  {
+    "checksum": "sha256:94633cc0951b4c6820d206e77ec6014639e1ba42f25b80f263675630f71c13ff",
+    "created_at": "2026-09-15T22:12:04.288102",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.28.101-ca-jdk27.0.0-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.28.101.0"
+  },
+  {
+    "checksum": "sha256:d19ec87514887219c9ecbd7f49b86025714b4573ec3dd205207bcd8b6cbeeee3",
+    "created_at": "2026-09-15T22:12:04.288102",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.28.101-ca-jre27.0.0-linux_musl_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.28.101.0"
+  },
+  {
     "checksum": "sha256:c4db136324def61e1554faaa27ae23cab158084a34c57e88cab28859c52714a1",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [
@@ -15543,6 +15601,34 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-26/sapmachine-jre-26_linux-x64-musl_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "26.0.0"
+  },
+  {
+    "checksum": "sha256:b6255ecb0075edf69d3b57fb57d3b29c231fc7aad36c49b7d7594646c3c0754f",
+    "created_at": "2026-09-15T22:13:31.548271",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27/sapmachine-jdk-27_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0"
+  },
+  {
+    "checksum": "sha256:604826ac425e2f2452e0f088cd0f1db891173f837653d8a699cd667c0a89db30",
+    "created_at": "2026-09-15T22:13:31.548271",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-27/sapmachine-jre-27_linux-x64-musl_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "27.0.0"
   },
   {
     "checksum": "sha256:4216543c8eaa4b10475bbacb15bbda41e04ec5c8c57424b3303f60c36b8b362d",

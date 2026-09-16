@@ -6808,6 +6808,64 @@
     "version": "26.32.203.0"
   },
   {
+    "checksum": "sha256:d6e3577a4c7d6684de3ad5ded44289d065a304e6f70782d8450a2613c65fa205",
+    "created_at": "2026-09-15T22:12:04.288102",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.28.101-ca-crac-jdk27.0.0-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.28.101.0"
+  },
+  {
+    "checksum": "sha256:23d3dfc7a9b5c882995f38802bf45f7e98fe5857123bc42358338258da3aefca",
+    "created_at": "2026-09-15T22:12:04.288102",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.28.101-ca-crac-jre27.0.0-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.28.101.0"
+  },
+  {
+    "checksum": "sha256:1aeb85a7f7aeae7608d4a1adfaf0768daff224a3bf46933773ea2d3a793b5057",
+    "created_at": "2026-09-15T22:12:04.288102",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.28.101-ca-jdk27.0.0-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.28.101.0"
+  },
+  {
+    "checksum": "sha256:87bf2c1f08c11f18abe16dba33291b5566aaaa3d50d0f7bafa2085bb60b2e03c",
+    "created_at": "2026-09-15T22:12:04.288102",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.28.101-ca-jre27.0.0-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.28.101.0"
+  },
+  {
     "checksum": "sha256:c8c2f075e9f9ed2c56fa4b1c19a62b6bf0b542ca525f8d66c8e512498f22fcef",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [

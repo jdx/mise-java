@@ -27190,6 +27190,138 @@
     "version": "26.32.203.0"
   },
   {
+    "checksum": "sha256:e7013c4cbd547123cd4d618c4857fb342952510f6f5e406c45083a2dc20b1b54",
+    "created_at": "2026-09-15T22:12:04.288102",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.28.101-ca-crac-jdk27.0.0-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.28.101.0"
+  },
+  {
+    "checksum": "sha256:3c782dc0d77d67a8d5fd5e3170dc5c0029f1472d7710a61c8cd4ad6f19715198",
+    "created_at": "2026-09-15T22:12:04.288102",
+    "features": [
+      "crac"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.28.101-ca-crac-jdk27.0.0-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "27.28.101.0"
+  },
+  {
+    "checksum": "sha256:b5d64393a228ad8680e5936cb114243118d3f6d87b668f0280ef8c15d674439c",
+    "created_at": "2026-09-15T22:12:04.288102",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.28.101-ca-jdk27.0.0-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.28.101.0"
+  },
+  {
+    "checksum": "sha256:bc3a85e449545fdd57679fe80383297fc162fc545b5ad2693bbaf772e349f618",
+    "created_at": "2026-09-15T22:12:04.288102",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.28.101-ca-jdk27.0.0-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "27.28.101.0"
+  },
+  {
+    "checksum": "sha256:752df4530e4dfed7721b4e47abb2eb65836a98db091ec0cff3e5d2b6e2bee92d",
+    "created_at": "2026-09-15T22:12:04.288102",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.28.101-ca-jre27.0.0-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.28.101.0"
+  },
+  {
+    "checksum": "sha256:e63d79f34e354f889b81883b0ae8f861007c97dfa5412b8e5e270e226facec52",
+    "created_at": "2026-09-15T22:12:04.288102",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.28.101-ca-jre27.0.0-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "27.28.101.0"
+  },
+  {
+    "checksum": "sha256:3e495ef2b60b693ad1c4bb4326e0962a45e52ae2da95e4948371abce1173f55a",
+    "created_at": "2026-09-15T22:12:04.288102",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.28.103-ca-fx-jdk27.0.0-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.28.103.0"
+  },
+  {
+    "checksum": "sha256:81b6a32ad8b59425ba4b836ee2981bf08dee8ef414a205f2ea216d9a55bfe54f",
+    "created_at": "2026-09-15T22:12:04.288102",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.28.103-ca-fx-jdk27.0.0-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "27.28.103.0"
+  },
+  {
+    "checksum": "sha256:32c2fc4b46b70e0e67f3efe9408f28caf75161001b8cb5851efc3e829937fd1c",
+    "created_at": "2026-09-15T22:12:04.288102",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.28.103-ca-fx-jre27.0.0-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.28.103.0"
+  },
+  {
+    "checksum": "sha256:898570a1c5acfcc1e1a23f5aa8b3e7afd60696e53e69b45cf92b74d51ff2c08f",
+    "created_at": "2026-09-15T22:12:04.288102",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "27.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.28.103-ca-fx-jre27.0.0-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "27.28.103.0"
+  },
+  {
     "checksum": "sha256:1a3b5acfb74c842f6b814d26a11683112d1c32fead7450fb66a43c2eed29a21b",
     "created_at": "2026-06-16T22:39:44.491761",
     "features": [],
