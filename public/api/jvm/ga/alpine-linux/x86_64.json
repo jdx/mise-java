@@ -24668,6 +24668,49 @@
     "version": "26.0.2.1+1"
   },
   {
+    "checksum": "sha1:97355818abd2737542c22e113a950bc897c656b4",
+    "created_at": "2026-09-17T22:10:26.125279",
+    "features": [
+      "lite",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0+36",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/27%2B36/bellsoft-jdk27%2B36-linux-x64-musl-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "27.0.0+36"
+  },
+  {
+    "checksum": "sha1:e0f974dc36f6dda25b4d6904588679017eedb876",
+    "created_at": "2026-09-17T22:10:26.125279",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0+36",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/27%2B36/bellsoft-jdk27%2B36-linux-x64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "27.0.0+36"
+  },
+  {
+    "checksum": "sha1:4b6d8f987b895d1030df8a8993ca4801c57a7529",
+    "created_at": "2026-09-17T22:10:26.125279",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.0+36",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/27%2B36/bellsoft-jre27%2B36-linux-x64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "27.0.0+36"
+  },
+  {
     "checksum": "sha1:1f137e7274df7699189d2fa9f8254e4db63b8cad",
     "created_at": "2025-03-28T22:03:17.339783",
     "features": [
@@ -26415,7 +26458,7 @@
     "version": "23.1.12+1"
   },
   {
-    "checksum": "sha1:04d25b4ed9afca845cc0d280313e2c3a09fce909",
+    "checksum": "sha1:23a08cb5285e2824815055d60b090014223bfdcc",
     "created_at": "2026-08-21T22:05:44.903887",
     "features": [
       "musl"

@@ -55446,6 +55446,119 @@
     "version": "26.0.2.1+1"
   },
   {
+    "checksum": "sha1:483ef860b34e260b9bc075ea8b0a0dc788e6a4c6",
+    "created_at": "2026-09-17T22:10:26.125279",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0+36",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/27%2B36/bellsoft-jdk27%2B36-linux-aarch64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "27.0.0+36"
+  },
+  {
+    "checksum": "sha1:a2ba870f3f52b750531cf60ef7186c98f417830d",
+    "created_at": "2026-09-17T22:10:26.125279",
+    "features": [
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0+36",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/27%2B36/bellsoft-jdk27%2B36-linux-aarch64-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "27.0.0+36"
+  },
+  {
+    "checksum": "sha1:5c67403fac9a3da0c76c36262c7df06f0ee957d9",
+    "created_at": "2026-09-17T22:10:26.125279",
+    "features": [
+      "lite",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0+36",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/27%2B36/bellsoft-jdk27%2B36-linux-aarch64-musl-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "27.0.0+36"
+  },
+  {
+    "checksum": "sha1:d3d13826bdc297b13f1c657b707f0a2f03486819",
+    "created_at": "2026-09-17T22:10:26.125279",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0+36",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/27%2B36/bellsoft-jdk27%2B36-linux-aarch64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "27.0.0+36"
+  },
+  {
+    "checksum": "sha1:e9b59c1b3abd7b67b3aa6c111e0c6b529c0e1df4",
+    "created_at": "2026-09-17T22:10:26.125279",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.0+36",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/27%2B36/bellsoft-jdk27%2B36-linux-aarch64.tar.gz",
+    "vendor": "liberica",
+    "version": "27.0.0+36"
+  },
+  {
+    "checksum": "sha1:10893617bb12a637dbd5ca13006831d0e66babe7",
+    "created_at": "2026-09-17T22:10:26.125279",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.0+36",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/27%2B36/bellsoft-jre27%2B36-linux-aarch64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "27.0.0+36"
+  },
+  {
+    "checksum": "sha1:e0e48066ec350fe06098391d6e1e6657c2fd146a",
+    "created_at": "2026-09-17T22:10:26.125279",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.0+36",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/27%2B36/bellsoft-jre27%2B36-linux-aarch64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "27.0.0+36"
+  },
+  {
+    "checksum": "sha1:7df2a0731c2e1376b3dfbbde48f62368d9a53543",
+    "created_at": "2026-09-17T22:10:26.125279",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.0+36",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/27%2B36/bellsoft-jre27%2B36-linux-aarch64.tar.gz",
+    "vendor": "liberica",
+    "version": "27.0.0+36"
+  },
+  {
     "checksum": "sha1:f1e32cddf78f0c2415fe71a42c195889ff2d8886",
     "created_at": "2025-03-28T22:03:17.339783",
     "features": [],
@@ -58799,7 +58912,7 @@
     "version": "23.1.12+1"
   },
   {
-    "checksum": "sha1:862b6e25fd5b40a7b500f5f248cfef1f309382ad",
+    "checksum": "sha1:bbbfe6aca3c2db854be546cdc4a73f7f39416496",
     "created_at": "2026-08-21T22:05:44.903887",
     "features": [
       "musl"
@@ -58813,7 +58926,7 @@
     "version": "23.1.12.1+1"
   },
   {
-    "checksum": "sha1:3f88b3447fece68bb3110e8bfffd0220baec81db",
+    "checksum": "sha1:3bee3a9fe4ba2e138e385ea448f7d46d5e93877c",
     "created_at": "2026-08-21T22:05:44.903887",
     "features": [],
     "file_type": "tar.gz",

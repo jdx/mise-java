@@ -48887,6 +48887,76 @@
     "version": "26.0.2.1+1"
   },
   {
+    "checksum": "sha1:c85f83f756659631a610be62c729105c5edde43c",
+    "created_at": "2026-09-17T22:10:26.125279",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "27.0.0+36",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/27%2B36/bellsoft-jdk27%2B36-windows-amd64-full.zip",
+    "vendor": "liberica",
+    "version": "27.0.0+36"
+  },
+  {
+    "checksum": "sha1:3dc226467253de85b9927efd6c757fdb75d876a7",
+    "created_at": "2026-09-17T22:10:26.125279",
+    "features": [
+      "lite"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "27.0.0+36",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/27%2B36/bellsoft-jdk27%2B36-windows-amd64-lite.zip",
+    "vendor": "liberica",
+    "version": "27.0.0+36"
+  },
+  {
+    "checksum": "sha1:13dd9f0816890450eda644ee745dc19859756c68",
+    "created_at": "2026-09-17T22:10:26.125279",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "27.0.0+36",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/27%2B36/bellsoft-jdk27%2B36-windows-amd64.zip",
+    "vendor": "liberica",
+    "version": "27.0.0+36"
+  },
+  {
+    "checksum": "sha1:54315d19ab266e394806740acaebed6f1e291b1a",
+    "created_at": "2026-09-17T22:10:26.125279",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "27.0.0+36",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/27%2B36/bellsoft-jre27%2B36-windows-amd64-full.zip",
+    "vendor": "liberica",
+    "version": "27.0.0+36"
+  },
+  {
+    "checksum": "sha1:c164446dd19efc44c88cc43a6f82cffbd141f075",
+    "created_at": "2026-09-17T22:10:26.125279",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "27.0.0+36",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/27%2B36/bellsoft-jre27%2B36-windows-amd64.zip",
+    "vendor": "liberica",
+    "version": "27.0.0+36"
+  },
+  {
     "checksum": "sha1:309c33458a1b1883171f8312718aff431d1cbcee",
     "created_at": "2025-03-28T22:03:17.339783",
     "features": [],
@@ -51913,7 +51983,7 @@
     "version": "23.1.12+1"
   },
   {
-    "checksum": "sha1:dbb42519359aa5488c15c8b32e2af70df70d2065",
+    "checksum": "sha1:3dd5187b199c00fdcc0a70673bb6b630b2f50ab0",
     "created_at": "2026-08-21T22:05:44.903887",
     "features": [],
     "file_type": "zip",
@@ -51925,7 +51995,7 @@
     "version": "23.1.12.1+1"
   },
   {
-    "checksum": "sha1:d3bc3ed45ee1d66f8dc996025cb428cefc1f59f7",
+    "checksum": "sha1:5a2c89ea3c545eac1fc52a3a76768caf524a6728",
     "created_at": "2026-08-21T22:05:44.903887",
     "features": [
       "javafx"
