@@ -33944,6 +33944,20 @@
     "version": "25.0.4.1"
   },
   {
+    "checksum": "sha256:780d5784d3db9bbcff77775c4d026e4a0e21a041ba9dba7c59135949ea5234a4",
+    "created_at": "2026-09-22T22:09:42.571950",
+    "features": [
+      "innovation"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.1.1",
+    "jvm_impl": "graalvm",
+    "url": "https://gds.oracle.com/download/graal/25i4/archive/graalvm-jdk-25i4-25.0.4.1.1_linux-aarch64_bin.tar.gz",
+    "vendor": "oracle-graalvm",
+    "version": "25.0.4.1.1"
+  },
+  {
     "checksum": "sha256:f6798cdd2381297c22a632997eae79ff9d8d312ccdb0229e7dc0dc2968abbb7d",
     "created_at": "2025-03-28T22:04:28.081056",
     "features": [],
@@ -40582,6 +40596,18 @@
     "version": "27.0.0+35"
   },
   {
+    "checksum": "sha256:e4ec5c7276290c7bde0baecba9a29be4962f5388684296406a9799d465936087",
+    "created_at": "2026-09-22T22:09:42.587764",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27+35",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27%2B35/OpenJDK27U-jdk_aarch64_linux_hotspot_27_35.tar.gz",
+    "vendor": "temurin",
+    "version": "27.0.0+35"
+  },
+  {
     "checksum": "sha256:65177a444f1a8201ef6e557c6f24c1dded80ae2e4dc33987fb31173f6c06cd74",
     "created_at": "2026-09-21T22:11:08.562583",
     "features": [
@@ -40592,6 +40618,18 @@
     "java_version": "27+35",
     "jvm_impl": "hotspot",
     "url": "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27%2B35/OpenJDK27U-jre_aarch64_alpine-linux_hotspot_27_35.tar.gz",
+    "vendor": "temurin",
+    "version": "27.0.0+35"
+  },
+  {
+    "checksum": "sha256:a41b54098373f1ca8f75ee344db19b93ac39eca6c529c3ee9dc50f4b3e7857de",
+    "created_at": "2026-09-22T22:09:42.587764",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27+35",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27%2B35/OpenJDK27U-jre_aarch64_linux_hotspot_27_35.tar.gz",
     "vendor": "temurin",
     "version": "27.0.0+35"
   },
@@ -60470,7 +60508,7 @@
     "version": "11.0.31.28.11"
   },
   {
-    "checksum": "sha256:c81c16e34c7ba8030c4a7c18559ac490191960e9a010d72b5b61cf159210ca94",
+    "checksum": "sha256:69619469cc78e675f2e6492e240a602ab2050b4da91b147aafdfbd5469134c3c",
     "created_at": "2026-09-20T22:09:46.913029",
     "features": [
       "extended"
