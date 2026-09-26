@@ -27320,6 +27320,18 @@
     "version": "11.0.32.10.1"
   },
   {
+    "checksum": "sha256:622e5a5d8af2ffadd63bcb51fad0599c9a9f87c5826933ce6d593ed164523823",
+    "created_at": "2026-09-26T22:09:09.611500",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.32.12.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/11.0.32.12.1/amazon-corretto-11.0.32.12.1-windows-x64-jdk.zip",
+    "vendor": "corretto",
+    "version": "11.0.32.12.1"
+  },
+  {
     "checksum": "sha256:7734a131c0d2d35abd91cde880b1274dd49d73bd721409018726ec2b807fd7b2",
     "created_at": "2026-07-22T22:25:22.055001",
     "features": [],
@@ -27644,6 +27656,18 @@
     "version": "17.0.20.10.1"
   },
   {
+    "checksum": "sha256:1ac8d9dc48b170684ac6223113f524325bd842d14ed74dac28927f8165cffd3a",
+    "created_at": "2026-09-26T22:09:09.611500",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.20.12.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/17.0.20.12.1/amazon-corretto-17.0.20.12.1-windows-x64-jdk.zip",
+    "vendor": "corretto",
+    "version": "17.0.20.12.1"
+  },
+  {
     "checksum": "sha256:d6d7df966e34fa083b92285e6000c3237ff1250e6e70f6feae7053c7e88e83b0",
     "created_at": "2026-07-22T22:25:22.055001",
     "features": [],
@@ -27932,6 +27956,18 @@
     "version": "21.0.11.10.1"
   },
   {
+    "checksum": "sha256:8945e414866b498f0587ee78411e0abff5071770d56eab8fe6d13eb3766a8631",
+    "created_at": "2026-09-26T22:09:09.611500",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.12.12.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/21.0.12.12.1/amazon-corretto-21.0.12.12.1-windows-x64-jdk.zip",
+    "vendor": "corretto",
+    "version": "21.0.12.12.1"
+  },
+  {
     "checksum": "sha256:de9ad88fb2575a1aff4715b192014ba31edd6e411d243371f377cff0560e34bc",
     "created_at": "2026-07-22T22:25:22.055001",
     "features": [],
@@ -28206,6 +28242,18 @@
     "url": "https://corretto.aws/downloads/resources/25.0.3.9.1/amazon-corretto-25.0.3.9.1-windows-x64-jdk.zip",
     "vendor": "corretto",
     "version": "25.0.3.9.1"
+  },
+  {
+    "checksum": "sha256:7055981aeda6927cfa4c8bedd619eb6809b923c47dbfd42441a70d47c3235e71",
+    "created_at": "2026-09-26T22:09:09.611500",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.4.10.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/25.0.4.10.1/amazon-corretto-25.0.4.10.1-windows-x64-jdk.zip",
+    "vendor": "corretto",
+    "version": "25.0.4.10.1"
   },
   {
     "checksum": "sha256:3e9126f1af6ecdcae0104e5adfe21b15de0b406319c9b5bba4dacd6bfc0bfc9d",
@@ -39501,6 +39549,30 @@
     "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.2.1%2B1/OpenJDK26U-jre_x64_windows_hotspot_26.0.2.1_1.zip",
     "vendor": "temurin",
     "version": "26.0.2+101"
+  },
+  {
+    "checksum": "sha256:2031c9c5c624737ed29a0624caaf5bcc25e74235834c28b4bfa88f7ba7a40e4a",
+    "created_at": "2026-09-25T22:10:53.815865",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "27+35",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27%2B35/OpenJDK27U-jdk_x64_windows_hotspot_27_35.zip",
+    "vendor": "temurin",
+    "version": "27.0.0+35"
+  },
+  {
+    "checksum": "sha256:e9cf542d5ffe2a894637b18c27a7802853976deaa3abe3e04dfbb8a307a145dd",
+    "created_at": "2026-09-25T22:10:53.815865",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "27+35",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27%2B35/OpenJDK27U-jre_x64_windows_hotspot_27_35.zip",
+    "vendor": "temurin",
+    "version": "27.0.0+35"
   },
   {
     "checksum": "sha256:3df3ebee978f5c9e9b4e34a74ce8d4b0c8f5bb7dfa83f2b315129c1eee6b70c4",
