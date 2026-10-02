@@ -116,14 +116,25 @@ fn map_community(asset: &GitHubAsset) -> Result<JvmData> {
             None
         }
     };
+    map_community_metadata(asset, sha256sum)
+}
+
+fn map_community_metadata(asset: &GitHubAsset, checksum: Option<String>) -> Result<JvmData> {
     let filename = asset.name.clone();
     let filename_meta = meta_from_name_community(&filename)?;
     let url = asset.browser_download_url.clone();
     let version = normalize_version(&filename_meta.version);
+    // Match Oracle GraalVM's innovation feature and underlying Java version naming.
+    let features = if regex!(r"graalvm-community-jdk-\d+i").is_match(&filename) {
+        Some(vec!["innovation".to_string()])
+    } else {
+        None
+    };
     Ok(JvmData {
         architecture: normalize_architecture(&filename_meta.arch),
-        checksum: sha256sum,
-        checksum_url: Some(sha256_url),
+        checksum,
+        checksum_url: Some(format!("{url}.sha256")),
+        features,
         filename,
         file_type: filename_meta.ext.clone(),
         image_type: "jdk".to_string(),
@@ -166,7 +177,7 @@ fn meta_from_name_ce(name: &str) -> Result<FileNameMeta> {
 
 fn meta_from_name_community(name: &str) -> Result<FileNameMeta> {
     debug!("[graalvm] parsing name: {name}");
-    let capture = regex!(r"^graalvm-community-jdk-([0-9]{1,2}\.[0-9]{1}\.[0-9]{1,3})_(linux|macos|windows)-(aarch64|x64)_bin\.(zip|tar\.gz)$")
+    let capture = regex!(r"^graalvm-community-jdk-(?:[0-9]+i[0-9]+-)?([0-9]+\.[0-9]+\.[0-9]+(?:\.[0-9]+)*)_(linux|macos|windows)-(aarch64|x64)_bin\.(zip|tar\.gz)$")
       .captures(name)
       .ok_or_else(|| eyre::eyre!("regular expression did not match name: {name}"))?;
 
@@ -187,6 +198,47 @@ fn meta_from_name_community(name: &str) -> Result<FileNameMeta> {
 #[cfg(test)]
 mod test {
     use super::*;
+
+    #[test]
+    fn test_map_community_innovation_release() {
+        let asset = community_asset(
+            "graalvm-community-jdk-25i4-25.0.4.1.1_linux-x64_bin.tar.gz",
+            "graal-25.4.4.1.1",
+        );
+        let checksum = Some("sha256:abc123".to_string());
+        let jvm = map_community_metadata(&asset, checksum.clone()).unwrap();
+
+        assert_eq!(jvm.features, Some(vec!["innovation".to_string()]));
+        assert_eq!(jvm.version, "25.0.4.1.1");
+        assert_eq!(jvm.java_version, "25.0.4.1.1");
+        assert_eq!(jvm.checksum, checksum);
+        assert_eq!(jvm.checksum_url, Some(format!("{}.sha256", asset.browser_download_url)));
+        assert_eq!(jvm.url, asset.browser_download_url);
+    }
+
+    #[test]
+    fn test_map_community_standard_release() {
+        let asset = community_asset("graalvm-community-jdk-25.0.2_linux-x64_bin.tar.gz", "jdk-25.0.2");
+        let jvm = map_community_metadata(&asset, None).unwrap();
+
+        assert_eq!(jvm.features, None);
+        assert_eq!(jvm.version, "25.0.2");
+        assert_eq!(jvm.java_version, "25.0.2");
+        assert_eq!(jvm.checksum, None);
+        assert_eq!(jvm.checksum_url, Some(format!("{}.sha256", asset.browser_download_url)));
+        assert_eq!(jvm.url, asset.browser_download_url);
+    }
+
+    fn community_asset(name: &str, tag: &str) -> GitHubAsset {
+        GitHubAsset {
+            name: name.to_string(),
+            browser_download_url: format!(
+                "https://github.com/graalvm/graalvm-ce-builds/releases/download/{tag}/{name}"
+            ),
+            content_type: "application/gzip".to_string(),
+            size: 0,
+        }
+    }
 
     #[test]
     fn test_meta_from_name_ce() {
@@ -237,6 +289,46 @@ mod test {
                     java_version: "23.0.2".to_string(),
                     os: "windows".to_string(),
                     version: "23.0.2".to_string(),
+                },
+            ),
+            (
+                "graalvm-community-jdk-25i1-25.0.3_linux-aarch64_bin.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    java_version: "25.0.3".to_string(),
+                    os: "linux".to_string(),
+                    version: "25.0.3".to_string(),
+                },
+            ),
+            (
+                "graalvm-community-jdk-25i2-25.0.4_linux-x64_bin.tar.gz",
+                FileNameMeta {
+                    arch: "x64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    java_version: "25.0.4".to_string(),
+                    os: "linux".to_string(),
+                    version: "25.0.4".to_string(),
+                },
+            ),
+            (
+                "graalvm-community-jdk-25i3-25.0.4.1_macos-aarch64_bin.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    java_version: "25.0.4.1".to_string(),
+                    os: "macos".to_string(),
+                    version: "25.0.4.1".to_string(),
+                },
+            ),
+            (
+                "graalvm-community-jdk-25i4-25.0.4.1.1_windows-x64_bin.zip",
+                FileNameMeta {
+                    arch: "x64".to_string(),
+                    ext: "zip".to_string(),
+                    java_version: "25.0.4.1.1".to_string(),
+                    os: "windows".to_string(),
+                    version: "25.0.4.1.1".to_string(),
                 },
             ),
         ] {
