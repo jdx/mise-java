@@ -120,10 +120,17 @@ fn map_community(asset: &GitHubAsset) -> Result<JvmData> {
     let filename_meta = meta_from_name_community(&filename)?;
     let url = asset.browser_download_url.clone();
     let version = normalize_version(&filename_meta.version);
+    // Match Oracle GraalVM's innovation feature and underlying Java version naming.
+    let features = if regex!(r"graalvm-community-jdk-\d+i").is_match(&filename) {
+        Some(vec!["innovation".to_string()])
+    } else {
+        None
+    };
     Ok(JvmData {
         architecture: normalize_architecture(&filename_meta.arch),
         checksum: sha256sum,
         checksum_url: Some(sha256_url),
+        features,
         filename,
         file_type: filename_meta.ext.clone(),
         image_type: "jdk".to_string(),
@@ -166,7 +173,7 @@ fn meta_from_name_ce(name: &str) -> Result<FileNameMeta> {
 
 fn meta_from_name_community(name: &str) -> Result<FileNameMeta> {
     debug!("[graalvm] parsing name: {name}");
-    let capture = regex!(r"^graalvm-community-jdk-([0-9]{1,2}\.[0-9]{1}\.[0-9]{1,3})_(linux|macos|windows)-(aarch64|x64)_bin\.(zip|tar\.gz)$")
+    let capture = regex!(r"^graalvm-community-jdk-(?:[0-9]+i[0-9]+-)?([0-9]+\.[0-9]+\.[0-9]+(?:\.[0-9]+)*)_(linux|macos|windows)-(aarch64|x64)_bin\.(zip|tar\.gz)$")
       .captures(name)
       .ok_or_else(|| eyre::eyre!("regular expression did not match name: {name}"))?;
 
@@ -237,6 +244,46 @@ mod test {
                     java_version: "23.0.2".to_string(),
                     os: "windows".to_string(),
                     version: "23.0.2".to_string(),
+                },
+            ),
+            (
+                "graalvm-community-jdk-25i1-25.0.3_linux-aarch64_bin.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    java_version: "25.0.3".to_string(),
+                    os: "linux".to_string(),
+                    version: "25.0.3".to_string(),
+                },
+            ),
+            (
+                "graalvm-community-jdk-25i2-25.0.4_linux-x64_bin.tar.gz",
+                FileNameMeta {
+                    arch: "x64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    java_version: "25.0.4".to_string(),
+                    os: "linux".to_string(),
+                    version: "25.0.4".to_string(),
+                },
+            ),
+            (
+                "graalvm-community-jdk-25i3-25.0.4.1_macos-aarch64_bin.tar.gz",
+                FileNameMeta {
+                    arch: "aarch64".to_string(),
+                    ext: "tar.gz".to_string(),
+                    java_version: "25.0.4.1".to_string(),
+                    os: "macos".to_string(),
+                    version: "25.0.4.1".to_string(),
+                },
+            ),
+            (
+                "graalvm-community-jdk-25i4-25.0.4.1.1_windows-x64_bin.zip",
+                FileNameMeta {
+                    arch: "x64".to_string(),
+                    ext: "zip".to_string(),
+                    java_version: "25.0.4.1.1".to_string(),
+                    os: "windows".to_string(),
+                    version: "25.0.4.1.1".to_string(),
                 },
             ),
         ] {
