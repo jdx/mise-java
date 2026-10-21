@@ -2976,6 +2976,18 @@
     "version": "25.0.4.1-b635.72"
   },
   {
+    "checksum": "sha512:4b760a166848c897142235e4e02fcc233dfe17c8626b6b2bf137ec384cadea2d82f1e62dfb984d41cc4d74913df312472a5a5f7939b74869948fa4e73b94073b",
+    "created_at": "2026-10-19T22:12:20.790744",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4.1-b635.75",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.4.1-osx-x64-b635.75.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4.1-b635.75"
+  },
+  {
     "checksum": "sha256:c81b7878b44845dc50b038b32944992ff2b7b90202c5c96fe2f55d069e4243a7",
     "created_at": "2025-03-28T22:04:32.259007",
     "features": [],
@@ -6440,6 +6452,20 @@
     "version": "25.0.4.1-b635.72"
   },
   {
+    "checksum": "sha512:2b77428cfca5c3a58b393d69e9bdbd2e7be49a230e6ddf6340417449f356de5cbd9c197cd21282c075449e1d4b833b64737ddd33fe31d088142b39bedc962b7b",
+    "created_at": "2026-10-19T22:12:20.790744",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4.1-b635.75",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25.0.4.1-osx-x64-b635.75.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4.1-b635.75"
+  },
+  {
     "checksum": "sha256:f1629dc31ac957dcc5c1480fe552c89a520406b5931061f96724eaed112e3306",
     "created_at": "2025-03-28T22:04:32.259007",
     "features": [],
@@ -9380,6 +9406,18 @@
     "version": "25.0.4.1-b635.72"
   },
   {
+    "checksum": "sha512:80fa99cb0e8f50c2a5ea0306f5e72bdd18f4adde60d8dc23c5c267ff9e3af180494f165c28cf7b939e1e6d959e7230d9a909018be1b9cf0fc8c0c032fe935557",
+    "created_at": "2026-10-19T22:12:20.790744",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.1-b635.75",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.4.1-osx-x64-b635.75.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4.1-b635.75"
+  },
+  {
     "checksum": "sha256:6f54d61758e81abc38b804afef1f9e278e2a09f82c40c636fd8d8bb4c25038cf",
     "created_at": "2025-03-28T22:04:32.259007",
     "features": [],
@@ -12036,6 +12074,20 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.4.1-osx-x64-b635.72.tar.gz",
     "vendor": "jetbrains",
     "version": "25.0.4.1-b635.72"
+  },
+  {
+    "checksum": "sha512:258bb7d1c419bf15bd06b49d299f4b2fe51fe1eab5493940d3ed449a6f0a65c005b6fc811c12f43fc206bf1431ac6a5a7216b332c5586b17cac3abf8dd1fc579",
+    "created_at": "2026-10-19T22:12:20.790744",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.1-b635.75",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.4.1-osx-x64-b635.75.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4.1-b635.75"
   },
   {
     "checksum": "sha256:7fad9915cdc401cb59dd5a800e2c11422b9d0aefb34f6fb00d0be9b51d1d57d4",
@@ -39550,6 +39602,18 @@
     "version": "21.0.11"
   },
   {
+    "checksum": "sha256:36dc94414d59891390df14a494df32f4237c1ca0a8064eca7791cb2f676e16b8",
+    "created_at": "2026-10-20T22:12:27.967486",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.12.1",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/java/21/archive/jdk-21.0.12.1_macos-x64_bin.tar.gz",
+    "vendor": "oracle",
+    "version": "21.0.12.1"
+  },
+  {
     "checksum": "sha256:73943c130e0e064a7d4674f81e397b097f1a6bf2f35b5db6a4123d6d1f17b703",
     "created_at": "2026-07-21T22:23:53.837954",
     "features": [],
@@ -39826,6 +39890,18 @@
     "version": "25.0.3"
   },
   {
+    "checksum": "sha256:11ac3f46e24ce567cd213a4ab496868dc057275670c09a136969628cf74666d6",
+    "created_at": "2026-10-20T22:12:27.967486",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.1",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/java/25/archive/jdk-25.0.4.1_macos-x64_bin.tar.gz",
+    "vendor": "oracle",
+    "version": "25.0.4.1"
+  },
+  {
     "checksum": "sha256:55f4764b00e3422c07eab8721da5f175ee7e3f0d0e4fb63fd1d15bee09ec9774",
     "created_at": "2026-07-21T22:23:53.837954",
     "features": [],
@@ -39836,6 +39912,18 @@
     "url": "https://download.oracle.com/java/25/archive/jdk-25.0.4_macos-x64_bin.tar.gz",
     "vendor": "oracle",
     "version": "25.0.4"
+  },
+  {
+    "checksum": "sha256:8b21f5333e45cbf46eadd5088cb3daeb92f4ca5215ad8b3612cf06a2a2f59bba",
+    "created_at": "2026-10-20T22:12:27.967486",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/java/25/archive/jdk-25.0.5_macos-x64_bin.tar.gz",
+    "vendor": "oracle",
+    "version": "25.0.5"
   },
   {
     "checksum": "sha256:88a2f025bf43f60cc64c099b3dcbfaac090ef2e2601a30fb974ef76600daf5ce",
@@ -42020,6 +42108,30 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.12/sapmachine-jre-21.0.12_macos-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "21.0.12"
+  },
+  {
+    "checksum": "sha256:f2772e6bdcb1ac14003fd500f396bdc8ebf0add12ec8db6207909113f6372416",
+    "created_at": "2026-10-20T22:12:12.374815",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.13/sapmachine-jdk-21.0.13_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.13"
+  },
+  {
+    "checksum": "sha256:f3e880da131ac5b5517b13c13fb7fc55d99049b52cd80c4f811095e069645a9e",
+    "created_at": "2026-10-20T22:12:12.374815",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.13",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.13/sapmachine-jre-21.0.13_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.13"
   },
   {
     "checksum": "sha256:826fb6c8c5b4c24a1150ad3e393114a8be9072b9f9a65bc10ec8343971eb48fc",
