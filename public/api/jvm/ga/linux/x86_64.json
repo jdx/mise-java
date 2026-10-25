@@ -958,6 +958,32 @@
     "version": "17.0.20.1"
   },
   {
+    "checksum": "sha256:40fc35a752c3b00c443dc44bf54ad488b418f55f2cca126acfd98d46cb28bd90",
+    "created_at": "2026-10-24T22:09:48.082901",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.21.0.2",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-17.0.21.0.2-alpine-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "17.0.21.0.2"
+  },
+  {
+    "checksum": "sha256:f7230e6d76ccfd62ceb11687a24e93d1f63d236e6a5fdeb8d923700075de42f8",
+    "created_at": "2026-10-24T22:09:48.082901",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.21.0.2",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-17.0.21.0.2-linux-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "17.0.21.0.2"
+  },
+  {
     "checksum": "sha256:abf0ace7d908b4113b5008316739810e0865893d8529fed56b0e4e9915d116d6",
     "created_at": "2025-03-28T22:04:32.217430",
     "features": [
@@ -1250,6 +1276,18 @@
     "version": "21.0.12.1"
   },
   {
+    "checksum": "sha256:5bf17d27de3fe9d102981236cdea68482e3b5ef68a44ad21c6439b45d7d34da2",
+    "created_at": "2026-10-24T22:09:48.082901",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13.0.2",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-21.0.13.0.2-linux-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "21.0.13.0.2"
+  },
+  {
     "checksum": "sha256:758bc27957c5e4b1d06c80c5efbb0ffcb621e43a66486a58e9fd704b11517dca",
     "created_at": "2025-03-28T22:04:32.217430",
     "features": [],
@@ -1416,6 +1454,18 @@
     "url": "https://aka.ms/download-jdk/microsoft-jdk-25.0.4.1-linux-x64.tar.gz",
     "vendor": "microsoft",
     "version": "25.0.4.1"
+  },
+  {
+    "checksum": "sha256:2608ee3b394fb1113b9a58ef491abc7bf06c2c3d5756d19a4e5fbcefba7b57a8",
+    "created_at": "2026-10-24T22:09:48.082901",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.0.2",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-25.0.5.0.2-linux-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "25.0.5.0.2"
   },
   {
     "checksum": "sha256:b88e93411a727e822972bd7683a1b139c790835b284607b1ad51dab25329681a",
@@ -49149,6 +49199,18 @@
     "version": "27.0.1.0.2"
   },
   {
+    "checksum": "sha256:256199399aaddc6d66919b5de90794b4263e4ab312aa56692cb63b70a0abef41",
+    "created_at": "2026-10-24T22:09:55.755323",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.1.0.3",
+    "jvm_impl": "hotspot",
+    "url": "https://download.java.net/java/GA/jdk27.0.1.0.3/b14170c9b2de463d9b89442c6db3e384/1/GPL/openjdk-27.0.1.0.3_linux-x64_bin.tar.gz",
+    "vendor": "openjdk",
+    "version": "27.0.1.0.3"
+  },
+  {
     "checksum": "sha256:5748965a78d06be35bec771284066bcc474dab4d672113e428d5df729c264613",
     "created_at": "2026-10-20T22:12:25.072725",
     "features": [],
@@ -50275,6 +50337,18 @@
     "url": "https://download.oracle.com/java/25/archive/jdk-25.0.4_linux-x64_bin.tar.gz",
     "vendor": "oracle",
     "version": "25.0.4"
+  },
+  {
+    "checksum": "sha256:d430d3f9e91435d2d58d366b1dabf14b23fcf8629ed4b041757c1be444055946",
+    "created_at": "2026-10-24T22:09:55.631205",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.0.2",
+    "jvm_impl": "hotspot",
+    "url": "https://download.oracle.com/java/25/archive/jdk-25.0.5.0.2_linux-x64_bin.tar.gz",
+    "vendor": "oracle",
+    "version": "25.0.5.0.2"
   },
   {
     "checksum": "sha256:8748e3837bbceabfa17548564b6d814d123bd820e947e30dff885202b6f24f2c",
@@ -62469,6 +62543,58 @@
     "url": "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27%2B35/OpenJDK27U-jre_x64_linux_hotspot_27_35.tar.gz",
     "vendor": "temurin",
     "version": "27.0.0+35"
+  },
+  {
+    "checksum": "sha256:576a3b8ba79aa5a8bc7f1cb8b54aeffab8b2d1fb84a8fde4f8f3035ac65dfca1",
+    "created_at": "2026-10-24T22:09:48.111211",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.1.0",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27.0.1.0.2%2B1/OpenJDK27U-jdk_x64_alpine-linux_hotspot_27.0.1.0.2_1.tar.gz",
+    "vendor": "temurin",
+    "version": "27.0.1+0"
+  },
+  {
+    "checksum": "sha256:30cb129f6cf299c852cec0feca9ea2a596d2ee9f26d8605d3a253951f6c8b20f",
+    "created_at": "2026-10-24T22:09:48.111211",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.1.0",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27.0.1.0.2%2B1/OpenJDK27U-jdk_x64_linux_hotspot_27.0.1.0.2_1.tar.gz",
+    "vendor": "temurin",
+    "version": "27.0.1+0"
+  },
+  {
+    "checksum": "sha256:2ed5b164f40cf5f5a04b73054d147f9111e431eff710d9c725a0efb191ff20a6",
+    "created_at": "2026-10-24T22:09:48.111211",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.1.0",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27.0.1.0.2%2B1/OpenJDK27U-jre_x64_alpine-linux_hotspot_27.0.1.0.2_1.tar.gz",
+    "vendor": "temurin",
+    "version": "27.0.1+0"
+  },
+  {
+    "checksum": "sha256:104b5d204314aa33dff4a9a5b925e2c58790e9d8cd7097b678e8e4d8cf86ced0",
+    "created_at": "2026-10-24T22:09:48.111211",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.1.0",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27.0.1.0.2%2B1/OpenJDK27U-jre_x64_linux_hotspot_27.0.1.0.2_1.tar.gz",
+    "vendor": "temurin",
+    "version": "27.0.1+0"
   },
   {
     "checksum": "sha256:cc13f274becf9dd5517b6be583632819dfd4dd81e524b5c1b4f406bdaf0e063a",
