@@ -1750,6 +1750,20 @@
     "version": "25.0.4.1-b635.78"
   },
   {
+    "checksum": "sha512:ddb8181dc93cc03d2ef64cafefdf43300e28b77b3445afdeebfa89e6928faa656b4f481e055adc2804af896168411f33ef7e19d5742bd40c2246ffe361bbac1b",
+    "created_at": "2026-10-26T22:13:50.426029",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4.1-b635.79",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.4.1-linux-musl-aarch64-b635.79.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4.1-b635.79"
+  },
+  {
     "checksum": "sha512:74c38dafb8e0542f70183eee966c3df91fb89f4d7d8d6f25bfb58628490978bd467b222b1ccfe48c48b052d9c0bc4193936265cff43126d5d5dc2160fb6db1b7",
     "created_at": "2025-03-28T22:04:32.259007",
     "features": [
@@ -3498,6 +3512,20 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.4.1-linux-musl-aarch64-b635.78.tar.gz",
     "vendor": "jetbrains",
     "version": "25.0.4.1-b635.78"
+  },
+  {
+    "checksum": "sha512:b41e5d77159b60344a8aba1557028202b11b74f5bdcdd57fa21813eba261f6f0ac68e759f16d58da085bdd9a3e28779ec60f7391eca2de609b61d65dec0c735a",
+    "created_at": "2026-10-26T22:13:50.426029",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.1-b635.79",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.4.1-linux-musl-aarch64-b635.79.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4.1-b635.79"
   },
   {
     "checksum": "sha256:fcb46f70726fec697dd9628f686ccc62cb8efdeb680a653d3e36f9ba354ba3d6",
@@ -11500,6 +11528,34 @@
     "version": "25.0.4+101.0.LTS"
   },
   {
+    "checksum": "sha256:d02eadc0a0f93faba4be38c8657eb8eef842103a4c7c2400f5827dbd90fc21c9",
+    "created_at": "2026-10-26T22:13:50.413657",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5+8-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5%2B8/OpenJDK25U-jdk_aarch64_alpine-linux_hotspot_25.0.5_8.tar.gz",
+    "vendor": "temurin",
+    "version": "25.0.5+8.0.LTS"
+  },
+  {
+    "checksum": "sha256:7c2b97b1b34947399f6c911e5aa69d171b745b0005ea79f47c4f3f1d47554bc2",
+    "created_at": "2026-10-26T22:13:50.413657",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.5+8-LTS",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5%2B8/OpenJDK25U-jre_aarch64_alpine-linux_hotspot_25.0.5_8.tar.gz",
+    "vendor": "temurin",
+    "version": "25.0.5+8.0.LTS"
+  },
+  {
     "checksum": "sha256:049027647a2d1cf3b1e3c1e7dad746aa6436928932bbed9130b87a25f585908a",
     "created_at": "2026-03-31T22:12:40.190355",
     "features": [
@@ -11638,6 +11694,34 @@
     "url": "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27%2B35/OpenJDK27U-jre_aarch64_alpine-linux_hotspot_27_35.tar.gz",
     "vendor": "temurin",
     "version": "27.0.0+35"
+  },
+  {
+    "checksum": "sha256:d6e8d5e5c101d9319a995405de1e800b02f718ac226dccd8c3b11dae46479ae0",
+    "created_at": "2026-10-26T22:13:50.413657",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.1.0",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27.0.1.0.2%2B1/OpenJDK27U-jdk_aarch64_alpine-linux_hotspot_27.0.1.0.2_1.tar.gz",
+    "vendor": "temurin",
+    "version": "27.0.1+0"
+  },
+  {
+    "checksum": "sha256:96bd067e2a6904c2c48925b3b66cbcbf33fac7ebadee3409aeba40c5f9494209",
+    "created_at": "2026-10-26T22:13:50.413657",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.1.0",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27.0.1.0.2%2B1/OpenJDK27U-jre_aarch64_alpine-linux_hotspot_27.0.1.0.2_1.tar.gz",
+    "vendor": "temurin",
+    "version": "27.0.1+0"
   },
   {
     "checksum": "sha1:ea1a3026adecaadedbe8ab4393f197f833586d1a",
@@ -14288,6 +14372,49 @@
     "version": "17.0.21.0.2+6"
   },
   {
+    "checksum": "sha1:079d75f63c4c7a78ac48f12d57aa7bf0363b0220",
+    "created_at": "2026-10-26T22:12:47.947225",
+    "features": [
+      "lite",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.21.0.3+5",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.21.0.3%2B5/bellsoft-jdk17.0.21.0.3%2B5-linux-aarch64-musl-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.21.0.3+5"
+  },
+  {
+    "checksum": "sha1:88546bf78959a6b682b34f2382f090f01d217b9e",
+    "created_at": "2026-10-26T22:12:47.947225",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.21.0.3+5",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.21.0.3%2B5/bellsoft-jdk17.0.21.0.3%2B5-linux-aarch64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.21.0.3+5"
+  },
+  {
+    "checksum": "sha1:1121cecbd65b2bf0ef1a1128316a3f865d27fe0d",
+    "created_at": "2026-10-26T22:12:47.947225",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.21.0.3+5",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.21.0.3%2B5/bellsoft-jre17.0.21.0.3%2B5-linux-aarch64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.21.0.3+5"
+  },
+  {
     "checksum": "sha1:399fc3da55feda0211e6658380985895b02549a9",
     "created_at": "2025-03-28T22:03:17.339783",
     "features": [
@@ -15608,6 +15735,64 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.13.0.2%2B6/bellsoft-jdk21.0.13.0.2%2B6-linux-aarch64-musl-crac.tar.gz",
     "vendor": "liberica",
     "version": "21.0.13.0.2+6"
+  },
+  {
+    "checksum": "sha1:50387754e57c5e732e3da773cac3e25fb48dab32",
+    "created_at": "2026-10-26T22:12:47.947225",
+    "features": [
+      "lite",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13.0.3+5",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.13.0.3%2B5/bellsoft-jdk21.0.13.0.3%2B5-linux-aarch64-musl-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.13.0.3+5"
+  },
+  {
+    "checksum": "sha1:f7acd551f45a6c99789590bba6546d808a5b28f9",
+    "created_at": "2026-10-26T22:12:47.947225",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13.0.3+5",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.13.0.3%2B5/bellsoft-jdk21.0.13.0.3%2B5-linux-aarch64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.13.0.3+5"
+  },
+  {
+    "checksum": "sha1:8876cf05354f78af9e790c27007895d88b22087c",
+    "created_at": "2026-10-26T22:12:47.947225",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.13.0.3+5",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.13.0.3%2B5/bellsoft-jre21.0.13.0.3%2B5-linux-aarch64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.13.0.3+5"
+  },
+  {
+    "checksum": "sha1:56e9d5da7dacffc1fd25b0092f6c82b9995b1170",
+    "created_at": "2026-10-26T22:12:47.947225",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13.0.3+6",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/21.0.13.0.3%2B6/bellsoft-jdk21.0.13.0.3%2B6-linux-aarch64-musl-crac.tar.gz",
+    "vendor": "liberica",
+    "version": "21.0.13.0.3+6"
   },
   {
     "checksum": "sha1:708f1c5fd36371f490f38d3e5af8a265f7f27e3f",
@@ -17022,6 +17207,49 @@
     "version": "25.0.5.0.2+5"
   },
   {
+    "checksum": "sha1:e5d24a72eb6dd3d42607b47b11aecc6e66787e15",
+    "created_at": "2026-10-26T22:12:47.947225",
+    "features": [
+      "lite",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.0.3+5",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25.0.5.0.3%2B5/bellsoft-jdk25.0.5.0.3%2B5-linux-aarch64-musl-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.5.0.3+5"
+  },
+  {
+    "checksum": "sha1:764b0d2f27b98b4c656fb97b8a5d539f7d78e0d9",
+    "created_at": "2026-10-26T22:12:47.947225",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.0.3+5",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25.0.5.0.3%2B5/bellsoft-jdk25.0.5.0.3%2B5-linux-aarch64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.5.0.3+5"
+  },
+  {
+    "checksum": "sha1:4761c4c74a2da10168eab8b343bb652f786c632b",
+    "created_at": "2026-10-26T22:12:47.947225",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.5.0.3+5",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/25.0.5.0.3%2B5/bellsoft-jre25.0.5.0.3%2B5-linux-aarch64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "25.0.5.0.3+5"
+  },
+  {
     "checksum": "sha1:ccc700f27c1c983d53c3e33dfc4a9661a451010e",
     "created_at": "2026-03-19T22:07:13.524838",
     "features": [
@@ -17321,6 +17549,49 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/27.0.1.0.2%2B5/bellsoft-jre27.0.1.0.2%2B5-linux-aarch64-musl.tar.gz",
     "vendor": "liberica",
     "version": "27.0.1.0.2+5"
+  },
+  {
+    "checksum": "sha1:f06010c4fa88a4d331aba67889ee52cfa0378c73",
+    "created_at": "2026-10-26T22:12:47.947225",
+    "features": [
+      "lite",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.1.0.3+5",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/27.0.1.0.3%2B5/bellsoft-jdk27.0.1.0.3%2B5-linux-aarch64-musl-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "27.0.1.0.3+5"
+  },
+  {
+    "checksum": "sha1:28ba3d40a00d5ad17da4f97a3751c2bf96c9c6ba",
+    "created_at": "2026-10-26T22:12:47.947225",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.1.0.3+5",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/27.0.1.0.3%2B5/bellsoft-jdk27.0.1.0.3%2B5-linux-aarch64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "27.0.1.0.3+5"
+  },
+  {
+    "checksum": "sha1:5284f9f0f064cf01e2dd1e6e189c1361faee1533",
+    "created_at": "2026-10-26T22:12:47.947225",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.1.0.3+5",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/27.0.1.0.3%2B5/bellsoft-jre27.0.1.0.3%2B5-linux-aarch64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "27.0.1.0.3+5"
   },
   {
     "checksum": "sha1:d100fce6e2c2ee929dfe8bb736dc3ba42c7e4d71",
