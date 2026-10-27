@@ -1456,7 +1456,7 @@
     "version": "25.0.4.1"
   },
   {
-    "checksum": "sha256:2608ee3b394fb1113b9a58ef491abc7bf06c2c3d5756d19a4e5fbcefba7b57a8",
+    "checksum": "sha256:173e8e4286289335b422b591c88a1f553fc44c701a876a7c8dd29037a598fc14",
     "created_at": "2026-10-24T22:09:48.082901",
     "features": [],
     "file_type": "tar.gz",
@@ -2954,6 +2954,20 @@
     "version": "21.0.11-b1163.116"
   },
   {
+    "checksum": "sha512:695660103c7a0afb206187afa8268e2f65e0ec49f39c6d644e69fb60ab7b7af39a63fef7fed85f8278e7eed53aa9dd051afd03221ed8bd4bfb28f075547a3a14",
+    "created_at": "2026-10-27T22:08:47.455066",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.11-b1163.125",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.11-linux-musl-x64-b1163.125.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.11-b1163.125"
+  },
+  {
     "checksum": "sha512:ac3e29d91c00bab01d292adfa8b1a357195263acf4e3ca7429df142a5b4fed05fddf87ce657dbb77dfa544993009ed3814f2ad03e409d0d0ebf49ca95910d26b",
     "created_at": "2026-05-15T22:22:18.033215",
     "features": [],
@@ -2964,6 +2978,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.11-linux-x64-b1163.116.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.11-b1163.116"
+  },
+  {
+    "checksum": "sha512:9080e035778d65439be5f8256640201ce8edb83d605f3d8f9c127c7928c2604a8989921f40127b21e0bb5098f946524f077c9760ed09bca34484a8f3855da1ae",
+    "created_at": "2026-10-27T22:08:47.455066",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.11-b1163.125",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.11-linux-x64-b1163.125.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.11-b1163.125"
   },
   {
     "checksum": "sha512:b94d426013b1732885cdf769e208be387e8791ca9f62d6ea627279431c0d932b3dcf0e6b3bc141efad93ff293de86c97b2ef0aa5dbe52a66192c2ec86c6c14f1",
@@ -4464,6 +4490,20 @@
     "version": "21.0.9-b1038.78"
   },
   {
+    "checksum": "sha512:e1b34ad9f29b71c2946c8e3d4669e2aab7d85c7d38a771568ce6f8135ed6b63da5d57e73d714caadd3003b645b3762fb7a7a4c0e2a69f78824ecf374d6b37d33",
+    "created_at": "2026-10-27T22:08:47.455066",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9-b1038.91",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.9-linux-musl-x64-b1038.91.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1038.91"
+  },
+  {
     "checksum": "sha512:326f4b3e531928808552c5738b9307e1e557ba2c13763538e4dc080f93fce2832f878d5d90c2d2a25c60ce0c78e9edd3722c8a43f31fa6730eeffd3991e0405b",
     "created_at": "2025-11-01T22:05:52.650605",
     "features": [
@@ -4582,6 +4622,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.9-linux-x64-b1038.78.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.9-b1038.78"
+  },
+  {
+    "checksum": "sha512:a9c9b741d49d4296dbc64d817add0ef894099ce9202d041415ca11c591147c2076ab801c5adfbcda64313c1bf3009cc3a7a6545ae3e497ab5cab3212107cd555",
+    "created_at": "2026-10-27T22:08:47.455066",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9-b1038.91",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-21.0.9-linux-x64-b1038.91.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1038.91"
   },
   {
     "checksum": "sha512:60c7f9edfd14a693e5730320ccbf359a652cad64b425d500016c42c74db42d2a887b1aa044480a317a4a46dc05a7b5e22deb17f3a6e6a9e634396e4225499e06",
@@ -5244,6 +5296,20 @@
     "version": "25.0.4.1-b508.40"
   },
   {
+    "checksum": "sha512:4d5e0c5113bba5cf750d0806eac40db330c98a5e683cefde9ea30fdf9b4a703a56210117849c8d17d1dcc95677b737f16751f39a750c8dd43925c52165fc671d",
+    "created_at": "2026-10-27T22:08:47.455066",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4.1-b508.41",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.4.1-linux-musl-x64-b508.41.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4.1-b508.41"
+  },
+  {
     "checksum": "sha512:5082c8bff48fcb7c827f21a2bd0fd92d0ceee29a74797ab9435981d2bfd7ec467ffd54e552deee2b356606bd6aac8868d84270ab9762c820b4ab92839687ebdb",
     "created_at": "2026-08-24T22:10:14.140980",
     "features": [
@@ -5390,6 +5456,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.4.1-linux-x64-b508.40.tar.gz",
     "vendor": "jetbrains",
     "version": "25.0.4.1-b508.40"
+  },
+  {
+    "checksum": "sha512:246fae22f72680224ab9e476d579c0ed5432d62733d49d3464838f9231ec97ae386463f541a8e6b7a632e48412e31324fd409fb95036e429271d7a64a2429912",
+    "created_at": "2026-10-27T22:08:47.455066",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4.1-b508.41",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.4.1-linux-x64-b508.41.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4.1-b508.41"
   },
   {
     "checksum": "sha512:0035ae129261fe9b6278e5e0e9c4b11e82a6819aacf8b0526da8b1c26052b087d945c8dd2fb83f5a97e51598aa18e94ba26ec7340215058c482c3e490aea8a89",
@@ -7706,6 +7784,20 @@
     "version": "21.0.11-b1163.116"
   },
   {
+    "checksum": "sha512:106cf11060bb0b45c7bead2f7a808f62c8080225018755f308430ce83a087cf49a7b2ce5c7991389309f6280d01c3894451a03a8d4e613dfd6afbc5115cf97f5",
+    "created_at": "2026-10-27T22:08:47.455066",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.11-b1163.125",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.11-linux-x64-b1163.125.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.11-b1163.125"
+  },
+  {
     "checksum": "sha512:2fe36784285ae522f395301e9bd15b10efca6e8c7958583b9190bf6f263b0d877b604c2746e38c03fd55a648d98ddac84d2d7b173d3d056029468c212c24e4d6",
     "created_at": "2025-03-28T22:04:32.259007",
     "features": [
@@ -8532,6 +8624,20 @@
     "version": "21.0.9-b1038.78"
   },
   {
+    "checksum": "sha512:8bd6e1b7cfb75ba8a19a21a57c629238b03b6353e6f921caf20fbac5694b047b8a528d45961b75078c2680362cad611a380436b18ea6a2752259c74d50568176",
+    "created_at": "2026-10-27T22:08:47.455066",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9-b1038.91",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-21.0.9-linux-x64-b1038.91.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1038.91"
+  },
+  {
     "checksum": "sha512:faa0b6490a06ea3a3835ea7204ae7474847c16338b4ab6344d07f8cc1db8e52db5912fccf671f7c0fe8debe551fd16a7ac0822eb3c6f4df3bccc49fe8580518e",
     "created_at": "2025-11-01T22:05:52.650605",
     "features": [
@@ -8952,6 +9058,20 @@
     "version": "25.0.4.1-b508.40"
   },
   {
+    "checksum": "sha512:2da02c1420cb478e9d204b9a5526986580b32234683bb535408db9fd999e29855e7ddb7dbce9294c36bc5c716616e112572f5ae47d41795fda5d526c0abf80ba",
+    "created_at": "2026-10-27T22:08:47.455066",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4.1-b508.41",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25.0.4.1-linux-x64-b508.41.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4.1-b508.41"
+  },
+  {
     "checksum": "sha512:d56810129fee7b33e3bc34191823f2506f4908f6bbaf877fa7b3d8a7e0d0fd2fc275a9d1cdc1727575d0a2c821b522601355fe5bac9a967abfab794fa07e9033",
     "created_at": "2026-08-24T22:10:14.140980",
     "features": [
@@ -9110,6 +9230,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_lb-21.0.11-linux-x64-b1163.116.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.11-b1163.116"
+  },
+  {
+    "checksum": "sha512:e0cb9c49c841f710e51fd725626d7b6699a2464b00cf7706c2078488ee87d97ed85abb097039085598a6957534ec140996d9e90b41160069aa4fe67d80ac76cb",
+    "created_at": "2026-10-27T22:08:47.455066",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.11-b1163.125",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_lb-21.0.11-linux-x64-b1163.125.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.11-b1163.125"
   },
   {
     "checksum": "sha512:e6715547d093335c5fa76967642ecf046d3ab293a88b3415fdc5cf83efe2e2ab9d4d93ea13641b0b1ea58a067127a912f5a5cff85f8aadf8f5cb6a562a9b3677",
@@ -9350,6 +9482,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_lb-21.0.9-linux-x64-b1038.78.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.9-b1038.78"
+  },
+  {
+    "checksum": "sha512:ab39d408f5e2eb01a23671b5fcfad40efb71a615d7167ad46c116a039791cda520c0f5abd332a3d40f2d3b4a26fd1be410fbede4fb300aebf4b64708ef3d3c82",
+    "created_at": "2026-10-27T22:08:47.455066",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.9-b1038.91",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_lb-21.0.9-linux-x64-b1038.91.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1038.91"
   },
   {
     "checksum": "sha512:6f220d442f707fa5aae4fe9b63802afc39996d61785f1f994297bf60799b1fe5d6503f784eb1c8584b9b08b61619cc01a2427e9f21adbf4cbfc82904deaaf99f",
@@ -9662,6 +9806,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_lb-25.0.4.1-linux-x64-b508.40.tar.gz",
     "vendor": "jetbrains",
     "version": "25.0.4.1-b508.40"
+  },
+  {
+    "checksum": "sha512:c43f7234ccd57d2861a7eaa18f7bb9b3450630ab77f55ba7acee8975c5f4ea0219ba0d3c35e11d9da0a661219a66db054cf09ea5e5fe42d7884b3eae90527ad4",
+    "created_at": "2026-10-27T22:08:47.455066",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4.1-b508.41",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_lb-25.0.4.1-linux-x64-b508.41.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4.1-b508.41"
   },
   {
     "checksum": "sha512:d679261005d4f9dc2dd595101afff0570233a1f2fac5649962d428b90f7dec3dc61ce3a5a094442cf4b64f627b71859ef7c9ef38036b9c784f25fea7639fdad5",
@@ -12182,6 +12338,20 @@
     "version": "21.0.11-b1163.116"
   },
   {
+    "checksum": "sha512:e0f950d7f94960a50b2975a0b0f6ae7f2e178174f7e9a5527efb9f4f2b3585a34a75e870683d97c4827b328c10a733726683b9d961b3b3ff81615c233b529ab8",
+    "created_at": "2026-10-27T22:08:47.455066",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.11-b1163.125",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.11-linux-musl-x64-b1163.125.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.11-b1163.125"
+  },
+  {
     "checksum": "sha512:13d0aab4bcfa9e4f77a696b97d3998f7e82e22f7f1362d8ce97f0d50d69dddd9331a66ada3fe92c04e544795fc247bcbaf586ad0415df4eda5e0e0505753888f",
     "created_at": "2026-05-15T22:22:18.033215",
     "features": [],
@@ -12192,6 +12362,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.11-linux-x64-b1163.116.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.11-b1163.116"
+  },
+  {
+    "checksum": "sha512:690fbea6224aeb57478f98ad56671fdbb6e927b3513555e78088f276552c554fe672705e9c6da4a65ed8279846f42e0756bae539d8282bee01f78d2fd68f846a",
+    "created_at": "2026-10-27T22:08:47.455066",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.11-b1163.125",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.11-linux-x64-b1163.125.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.11-b1163.125"
   },
   {
     "checksum": "sha512:e922e630bd18ad390478d6fe1604b4c0a0f386ea7aa1710224cd7c2eee0cd1a8bb94a04bbb54af904b9bf18bdf4c5608351a1bc90b9aa3f2f8dc0b5630edfba8",
@@ -13692,6 +13874,20 @@
     "version": "21.0.9-b1038.78"
   },
   {
+    "checksum": "sha512:7c7ca05ae699083481b93a73d7d75cc1d875ca9effa5c0074e930c9cf046680480bdeb7251ed4c6d3ee6f4b0b32ed963e72eda7db46995de952f542912675374",
+    "created_at": "2026-10-27T22:08:47.455066",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9-b1038.91",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.9-linux-musl-x64-b1038.91.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1038.91"
+  },
+  {
     "checksum": "sha512:9d5ca578d7db4b339c07283b35bda3d37dc67cdb04b60f9a704f44d7f2fcc59ef21b5da515c99176d945a1079ceb1fdce0c1599066bc0e06f9510b20171c6bd1",
     "created_at": "2025-11-01T22:05:52.650605",
     "features": [
@@ -13810,6 +14006,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.9-linux-x64-b1038.78.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.9-b1038.78"
+  },
+  {
+    "checksum": "sha512:2be3f8b3079796443ad3be7a7d6b7adc3ba2b21a9cda1871bba4de14dc545471068a2c4f33166c28d2ba05bc13cb01263429d7e1c9ba29eb02c9f79b8f282875",
+    "created_at": "2026-10-27T22:08:47.455066",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9-b1038.91",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-21.0.9-linux-x64-b1038.91.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1038.91"
   },
   {
     "checksum": "sha512:6acc31a1681d3e7e0c51378e5e94fcf1cde82aeeefdd701759b0cec7b9eb4ccd1c756c0c4406aab7e1b2749cb57e1ec4130e3923f32de45fa1178421ace866f5",
@@ -14472,6 +14680,20 @@
     "version": "25.0.4.1-b508.40"
   },
   {
+    "checksum": "sha512:d1873047612054d4e6347493d833bbf0163317746133fd06ecfd044da5f8acb1aa7549cd5456d06af4fd3d8cac09721d09e6023d541f66a9c887fb7abeb71469",
+    "created_at": "2026-10-27T22:08:47.455066",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.1-b508.41",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.4.1-linux-musl-x64-b508.41.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4.1-b508.41"
+  },
+  {
     "checksum": "sha512:f87bece93ec57480ffffefe7dbd36da0a94f997f2cc4172c1ad076a91bc9d8eb7c392883311240d73beb6148d72702cb0e1636904b93c2fb7637a96cefb7b33d",
     "created_at": "2026-08-24T22:10:14.140980",
     "features": [
@@ -14618,6 +14840,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.4.1-linux-x64-b508.40.tar.gz",
     "vendor": "jetbrains",
     "version": "25.0.4.1-b508.40"
+  },
+  {
+    "checksum": "sha512:1a99b7ac222cfc21778a37709d511e266066bdf4e95e78e740fb07019bff0ff4049aecd91f8368a01b2f08a57c552c84540caebfe96871d75b2b79a62b109fda",
+    "created_at": "2026-10-27T22:08:47.455066",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.1-b508.41",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.4.1-linux-x64-b508.41.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4.1-b508.41"
   },
   {
     "checksum": null,
@@ -16128,6 +16362,20 @@
     "version": "21.0.11-b1163.116"
   },
   {
+    "checksum": "sha512:19b60f631c34493b64b102c8c309e2cac6194fbe48cc8732ba2fc0182b86797ea07ea389e80c0ff86aca2111c7d521dbb916dbf11f6ad86b37df798ffcaf0f11",
+    "created_at": "2026-10-27T22:08:47.455066",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.11-b1163.125",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.11-linux-x64-b1163.125.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.11-b1163.125"
+  },
+  {
     "checksum": "sha512:e1080d369b63bfe5967c020998d8384fc2c8af2c1d78db3d64cf82fd4cfda04285a13a6b0790d3cc8c62e388ecf0bf5b664cb5ac7c3b16e2592dd0da7e07737a",
     "created_at": "2025-03-28T22:04:32.259007",
     "features": [
@@ -16954,6 +17202,20 @@
     "version": "21.0.9-b1038.78"
   },
   {
+    "checksum": "sha512:073bcba383cfe659e6ac03946a96342afae405582734b47ce54ab1d1fd7f1af5209b26bd936dceb7d34616dadf99fedaa6161dfa4bc69aa954c221c967f45550",
+    "created_at": "2026-10-27T22:08:47.455066",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9-b1038.91",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-21.0.9-linux-x64-b1038.91.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1038.91"
+  },
+  {
     "checksum": "sha512:09feb8e25f881087f18b30e033eab49d2e8c07acff58116b0665292c049bf75261ecee6024507553e8f5e0ae750d2898d95d1529745ca5ccf7882be4aec537d2",
     "created_at": "2025-11-01T22:05:52.650605",
     "features": [
@@ -17374,6 +17636,20 @@
     "version": "25.0.4.1-b508.40"
   },
   {
+    "checksum": "sha512:3e9a0385dad6fa839264f564d52a34849c757be6b9d6c399047647c76186a22575613fdb1bc5ebeba4cebdd9001c3d9341c1a4dd36ceca70abbe1430735c967b",
+    "created_at": "2026-10-27T22:08:47.455066",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.1-b508.41",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.4.1-linux-x64-b508.41.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4.1-b508.41"
+  },
+  {
     "checksum": "sha512:7edbd5ef45c23d7d6795e35c2dbfd1b61c9d0c45b1ce8c761a2ad1899641a898ae1ed766c07e0d1fe30d308ef20082d51f06e10854753f28619e3723a56e403e",
     "created_at": "2026-08-24T22:10:14.140980",
     "features": [
@@ -17532,6 +17808,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_lb-21.0.11-linux-x64-b1163.116.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.11-b1163.116"
+  },
+  {
+    "checksum": "sha512:1776939d430f05822e5977c2173da30800c61d611d8e791f3241972ee7a6432f2165248b765284ecbcc5707658217696c759ac41d135a2406bcd3ea95cc87431",
+    "created_at": "2026-10-27T22:08:47.455066",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.11-b1163.125",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_lb-21.0.11-linux-x64-b1163.125.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.11-b1163.125"
   },
   {
     "checksum": "sha512:73b7dfbc971458b2145a7c98767ef6bc657803d1c0cb94a279f7661f8d8b7d7b37893d546352019b8207c07e645d63e13fb1f04cf164851af1af44cf2044cfcb",
@@ -17772,6 +18060,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_lb-21.0.9-linux-x64-b1038.78.tar.gz",
     "vendor": "jetbrains",
     "version": "21.0.9-b1038.78"
+  },
+  {
+    "checksum": "sha512:46974440b56be423f163f2ecc525bc016778952bc64b795c5bbf368b3b3462dd85c7ed1c082bedcc1e9d25ae16f595c0c7ec99722b5edab861a0968e144e5dd3",
+    "created_at": "2026-10-27T22:08:47.455066",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.9-b1038.91",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_lb-21.0.9-linux-x64-b1038.91.tar.gz",
+    "vendor": "jetbrains",
+    "version": "21.0.9-b1038.91"
   },
   {
     "checksum": "sha512:feb7ca833ec95081f948e9a1eb7db853b2158de880da0a360906bb92b5c3518ae72f92efa0986964618fae606525764e93767ff8e0800b05a56148efe40b1bff",
@@ -18084,6 +18384,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_lb-25.0.4.1-linux-x64-b508.40.tar.gz",
     "vendor": "jetbrains",
     "version": "25.0.4.1-b508.40"
+  },
+  {
+    "checksum": "sha512:1e3e89c32522db89faa5251aa5ce96f4cab47a688bd9b9b7f20b3cc8d3cb51ccb0e3af3650c32e41ae30e2b1decea2a8830214a3b98146a59f54254677006406",
+    "created_at": "2026-10-27T22:08:47.455066",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.1-b508.41",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_lb-25.0.4.1-linux-x64-b508.41.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4.1-b508.41"
   },
   {
     "checksum": null,
@@ -42067,6 +42379,32 @@
     "version": "11.0.32.9.1"
   },
   {
+    "checksum": "sha256:5faabfafe6f7e96624d3fc19e2ddd14dbfc2c2bd64b107cea5daa97e1d164e1e",
+    "created_at": "2026-10-27T22:08:49.979151",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.33.0.10",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/11.0.33.0.10/amazon-corretto-11.0.33.0.10-alpine-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "11.0.33.0.10"
+  },
+  {
+    "checksum": "sha256:f368ac379f3b20e266080e80fcc1f5e8567d044a4f895c8786220cab5b580c15",
+    "created_at": "2026-10-27T22:08:49.979151",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.33.0.10",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/11.0.33.0.10/amazon-corretto-11.0.33.0.10-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "11.0.33.0.10"
+  },
+  {
     "checksum": "sha256:bb27090a12192ea90084f820b4edc72e24e58d5f02ec48e4f5b9e281c73efd33",
     "created_at": "2026-10-23T22:12:20.471330",
     "features": [
@@ -42845,6 +43183,32 @@
     "version": "17.0.21.0.10"
   },
   {
+    "checksum": "sha256:0c457166868cba83eb81c48facdc3dede3e0c78d76bbdcd83ad69b966f5280b2",
+    "created_at": "2026-10-27T22:08:49.979151",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.21.0.11",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/17.0.21.0.11/amazon-corretto-17.0.21.0.11-alpine-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "17.0.21.0.11"
+  },
+  {
+    "checksum": "sha256:8f9a2ddb131ec5317419f2b0769240fe22ce27f8a0ae43f5346d53e1c8aec6a0",
+    "created_at": "2026-10-27T22:08:49.979151",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.21.0.11",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/17.0.21.0.11/amazon-corretto-17.0.21.0.11-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "17.0.21.0.11"
+  },
+  {
     "checksum": "sha256:ff9ea43dbfe8f4c0ff0259e2564a552964d115ea128090f93ccd5ad3b508981c",
     "created_at": "2025-03-28T22:02:59.599901",
     "features": [
@@ -43545,6 +43909,32 @@
     "url": "https://corretto.aws/downloads/resources/21.0.13.0.10/amazon-corretto-21.0.13.0.10-linux-x64.tar.gz",
     "vendor": "corretto",
     "version": "21.0.13.0.10"
+  },
+  {
+    "checksum": "sha256:0feb24e3fd320362bc89538f985cd144085a0febb1367b4c694174f9bed15183",
+    "created_at": "2026-10-27T22:08:49.979151",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13.0.11",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/21.0.13.0.11/amazon-corretto-21.0.13.0.11-alpine-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "21.0.13.0.11"
+  },
+  {
+    "checksum": "sha256:f3330bf440b8f4514b7b279b6145d4b4493dea9dda5f3a702b49c53c41bec1e4",
+    "created_at": "2026-10-27T22:08:49.979151",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13.0.11",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/21.0.13.0.11/amazon-corretto-21.0.13.0.11-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "21.0.13.0.11"
   },
   {
     "checksum": "sha256:7ba992014efa0d388ead64a933e758ed25e9e7e839c16c62cb68badca247b98b",
@@ -44287,6 +44677,32 @@
     "version": "25.0.4.8.1"
   },
   {
+    "checksum": "sha256:1c416e01fa9fc039e0c8fd97f443db375d0afcf1147a1e7d6a7106ae344c0993",
+    "created_at": "2026-10-27T22:08:49.979151",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.0.10",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/25.0.5.0.10/amazon-corretto-25.0.5.0.10-alpine-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "25.0.5.0.10"
+  },
+  {
+    "checksum": "sha256:1d89b4194f20ee513f4dd9fc2aadd038de3c713c37fd444d77566b3da7b0ee65",
+    "created_at": "2026-10-27T22:08:49.979151",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.0.10",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/25.0.5.0.10/amazon-corretto-25.0.5.0.10-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "25.0.5.0.10"
+  },
+  {
     "checksum": "sha256:fe98c4d75854ee30584f4237c0923c5a210ef9997149619b2aa4725794011752",
     "created_at": "2026-10-23T22:12:20.471330",
     "features": [
@@ -44467,6 +44883,32 @@
     "url": "https://corretto.aws/downloads/resources/27.0.1.0.10/amazon-corretto-27.0.1.0.10-linux-x64.tar.gz",
     "vendor": "corretto",
     "version": "27.0.1.0.10"
+  },
+  {
+    "checksum": "sha256:4160a1f87245311c5c8aa0504f528092e4404b8987e34e5b28856337e3a48e2c",
+    "created_at": "2026-10-27T22:08:49.979151",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.1.0.11",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/27.0.1.0.11/amazon-corretto-27.0.1.0.11-alpine-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "27.0.1.0.11"
+  },
+  {
+    "checksum": "sha256:2a8a5a833ec1b2e6e66bcf8a530438f471ebbbc928be90ab153b2985cdeac8e8",
+    "created_at": "2026-10-27T22:08:49.979151",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.1.0.11",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/27.0.1.0.11/amazon-corretto-27.0.1.0.11-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "27.0.1.0.11"
   },
   {
     "checksum": "md5:3adc824f87ff4c4f0827d30fdb5ed75e",
@@ -45439,6 +45881,32 @@
     "url": "https://corretto.aws/downloads/resources/8.512.08.1/amazon-corretto-8.512.08.1-linux-x64.tar.gz",
     "vendor": "corretto",
     "version": "8.512.08.1"
+  },
+  {
+    "checksum": "sha256:4d7621c45f649f7a0f3f27ec0fca7e0417c8075313f8464f09e716baf30758a0",
+    "created_at": "2026-10-27T22:08:49.979151",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.512.09.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/8.512.09.1/amazon-corretto-8.512.09.1-alpine-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "8.512.09.1"
+  },
+  {
+    "checksum": "sha256:2f2df938886e61c80010ed5af0ea6504ca685280a3b807c5c59ed3ca4fb95be4",
+    "created_at": "2026-10-27T22:08:49.979151",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.512.09.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/8.512.09.1/amazon-corretto-8.512.09.1-linux-x64.tar.gz",
+    "vendor": "corretto",
+    "version": "8.512.09.1"
   },
   {
     "checksum": "md5:4bbcd5e6d721fef56e46b3bfa8631c1c",
@@ -67837,6 +68305,119 @@
     "version": "11.0.33.0.2+5"
   },
   {
+    "checksum": "sha1:508336541977130974919c6c827fc476f5ed203e",
+    "created_at": "2026-10-27T22:08:44.602132",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.33.0.3+7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.33.0.3%2B7/bellsoft-jdk11.0.33.0.3%2B7-linux-amd64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.33.0.3+7"
+  },
+  {
+    "checksum": "sha1:7630741cd2018169a9b638d11b12dfa643a9d739",
+    "created_at": "2026-10-27T22:08:44.602132",
+    "features": [
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.33.0.3+7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.33.0.3%2B7/bellsoft-jdk11.0.33.0.3%2B7-linux-amd64-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.33.0.3+7"
+  },
+  {
+    "checksum": "sha1:8139f5ca4af65f8bd201320f7788525a77c1ed0b",
+    "created_at": "2026-10-27T22:08:44.602132",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.33.0.3+7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.33.0.3%2B7/bellsoft-jdk11.0.33.0.3%2B7-linux-amd64.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.33.0.3+7"
+  },
+  {
+    "checksum": "sha1:a1dc7a93e28639b26e17091c55f5be67f5d5b9bf",
+    "created_at": "2026-10-27T22:08:44.602132",
+    "features": [
+      "lite",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.33.0.3+7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.33.0.3%2B7/bellsoft-jdk11.0.33.0.3%2B7-linux-x64-musl-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.33.0.3+7"
+  },
+  {
+    "checksum": "sha1:b638e27e5de4c99f5b71498a3e58c3c0b143295e",
+    "created_at": "2026-10-27T22:08:44.602132",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.33.0.3+7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.33.0.3%2B7/bellsoft-jdk11.0.33.0.3%2B7-linux-x64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.33.0.3+7"
+  },
+  {
+    "checksum": "sha1:a7e156b220051328c7fcf13275ad53a929e39524",
+    "created_at": "2026-10-27T22:08:44.602132",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.33.0.3+7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.33.0.3%2B7/bellsoft-jre11.0.33.0.3%2B7-linux-amd64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.33.0.3+7"
+  },
+  {
+    "checksum": "sha1:4d8a5b188478b8172fcb7fa9333c06ca7540e1e4",
+    "created_at": "2026-10-27T22:08:44.602132",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.33.0.3+7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.33.0.3%2B7/bellsoft-jre11.0.33.0.3%2B7-linux-amd64.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.33.0.3+7"
+  },
+  {
+    "checksum": "sha1:a04a11ea25c9f3a7ae8f7104fc4b896aa27cec0b",
+    "created_at": "2026-10-27T22:08:44.602132",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.33.0.3+7",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/11.0.33.0.3%2B7/bellsoft-jre11.0.33.0.3%2B7-linux-x64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "11.0.33.0.3+7"
+  },
+  {
     "checksum": "sha1:b3c00f05e26862c8575a4ccd9040f55d57c3df92",
     "created_at": "2025-03-28T22:03:17.339783",
     "features": [
@@ -72979,6 +73560,35 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.21.0.3%2B5/bellsoft-jre17.0.21.0.3%2B5-linux-x64-musl.tar.gz",
     "vendor": "liberica",
     "version": "17.0.21.0.3+5"
+  },
+  {
+    "checksum": "sha1:5e69f2f7f26a1d4bca21d60415b4078e1966fee3",
+    "created_at": "2026-10-27T22:08:44.602132",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.21.0.3+6",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.21.0.3%2B6/bellsoft-jdk17.0.21.0.3%2B6-linux-amd64-crac.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.21.0.3+6"
+  },
+  {
+    "checksum": "sha1:e025b20bbebd23c52270f8264575b6bf8f986c70",
+    "created_at": "2026-10-27T22:08:44.602132",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.21.0.3+6",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/17.0.21.0.3%2B6/bellsoft-jdk17.0.21.0.3%2B6-linux-x64-musl-crac.tar.gz",
+    "vendor": "liberica",
+    "version": "17.0.21.0.3+6"
   },
   {
     "checksum": "sha1:f7bdd20a47b24da337ce11c569f8b5f175cb1bb0",
@@ -85019,6 +85629,119 @@
     "url": "https://github.com/bell-sw/Liberica/releases/download/8u513%2B5/bellsoft-jre8u513%2B5-linux-x64-musl.tar.gz",
     "vendor": "liberica",
     "version": "8u513+5"
+  },
+  {
+    "checksum": "sha1:9ce79fc3e7860926013dd7c6febeee8c9c7e143d",
+    "created_at": "2026-10-27T22:08:44.602132",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8u513+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u513%2B9/bellsoft-jdk8u513%2B9-linux-amd64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "8u513+9"
+  },
+  {
+    "checksum": "sha1:49ac91f5478c1977a450f2c83bf678d1f607c0d4",
+    "created_at": "2026-10-27T22:08:44.602132",
+    "features": [
+      "lite"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8u513+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u513%2B9/bellsoft-jdk8u513%2B9-linux-amd64-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "8u513+9"
+  },
+  {
+    "checksum": "sha1:6dd8bc295b00f60b6aed35856de9eb57359409b4",
+    "created_at": "2026-10-27T22:08:44.602132",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8u513+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u513%2B9/bellsoft-jdk8u513%2B9-linux-amd64.tar.gz",
+    "vendor": "liberica",
+    "version": "8u513+9"
+  },
+  {
+    "checksum": "sha1:f9db5efdfe4e627360bb8d2088456e2045215b25",
+    "created_at": "2026-10-27T22:08:44.602132",
+    "features": [
+      "lite",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8u513+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u513%2B9/bellsoft-jdk8u513%2B9-linux-x64-musl-lite.tar.gz",
+    "vendor": "liberica",
+    "version": "8u513+9"
+  },
+  {
+    "checksum": "sha1:9bf88e3d36b81ab0a14653a1319f41969bab7182",
+    "created_at": "2026-10-27T22:08:44.602132",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8u513+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u513%2B9/bellsoft-jdk8u513%2B9-linux-x64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "8u513+9"
+  },
+  {
+    "checksum": "sha1:6de338b43a9e6979a18793d5544693206bcd9e0b",
+    "created_at": "2026-10-27T22:08:44.602132",
+    "features": [
+      "javafx",
+      "libericafx",
+      "minimal-vm"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "8u513+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u513%2B9/bellsoft-jre8u513%2B9-linux-amd64-full.tar.gz",
+    "vendor": "liberica",
+    "version": "8u513+9"
+  },
+  {
+    "checksum": "sha1:1c39686848d3cfe5a8dc66e2ada5f3484a9b0ec6",
+    "created_at": "2026-10-27T22:08:44.602132",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "8u513+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u513%2B9/bellsoft-jre8u513%2B9-linux-amd64.tar.gz",
+    "vendor": "liberica",
+    "version": "8u513+9"
+  },
+  {
+    "checksum": "sha1:be464df12f27236701c9556c908e1628ff9e06c0",
+    "created_at": "2026-10-27T22:08:44.602132",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "8u513+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/bell-sw/Liberica/releases/download/8u513%2B9/bellsoft-jre8u513%2B9-linux-x64-musl.tar.gz",
+    "vendor": "liberica",
+    "version": "8u513+9"
   },
   {
     "checksum": "sha1:ae8d2b8faef65f0243dec8ea8d3c3c165486e3e1",
