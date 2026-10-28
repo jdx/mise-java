@@ -2976,6 +2976,18 @@
     "version": "25.0.4.1-b329.136"
   },
   {
+    "checksum": "sha512:8b779196c10ba276ec0b823f33deda8442d63e48e611594d057414802e9a280451d16a59867a39d1a99855a10d956d0594de1921a189b4b8d28421d3053e8d75",
+    "created_at": "2026-10-28T22:08:55.685240",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4.1-b329.142",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.4.1-osx-x64-b329.142.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4.1-b329.142"
+  },
+  {
     "checksum": "sha512:31da5541e8df1b931c6530dd1afb92d139058c925811fe7e2f043fa90d35974149e7a40606d6df0841dab2d0e7d09e12a5ba992e42c3ab22b02567a002dba7a7",
     "created_at": "2026-10-12T22:11:43.814648",
     "features": [],
@@ -6530,6 +6542,20 @@
     "version": "25.0.4.1-b329.136"
   },
   {
+    "checksum": "sha512:b80f259673bc559fb007bd24af176cb960e9bdcf14b7dda4978726c634cf48519c08e3c8bfd4e8dcb9c31956445dc01dbb8962c0a2ce4ed6b6bf36d7a736390c",
+    "created_at": "2026-10-28T22:08:55.685240",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.4.1-b329.142",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25.0.4.1-osx-x64-b329.142.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4.1-b329.142"
+  },
+  {
     "checksum": "sha512:fda5ea0cdbead847cf7ce31916637d9fa8ec8810c60b35a95ac96ecfc374b08978f0ecbf23d2936c1261e7cdf365980637dffbc5b10104872724cd89503c2fd4",
     "created_at": "2026-10-12T22:11:43.814648",
     "features": [
@@ -9588,6 +9614,18 @@
     "version": "25.0.4.1-b329.136"
   },
   {
+    "checksum": "sha512:03410f6fe19ee5f16cafbd933d13a21743c2d1a32b6eed47a0376128de50c6ea9f060d00a6f94c4b70797e2ea8790b535aec4cdc581c6be1e6d0f79af7466624",
+    "created_at": "2026-10-28T22:08:55.685240",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.1-b329.142",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.4.1-osx-x64-b329.142.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4.1-b329.142"
+  },
+  {
     "checksum": null,
     "created_at": "2026-10-12T22:11:43.814648",
     "features": [],
@@ -12334,6 +12372,20 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.4.1-osx-x64-b329.136.tar.gz",
     "vendor": "jetbrains",
     "version": "25.0.4.1-b329.136"
+  },
+  {
+    "checksum": "sha512:0f57955d981b42bd0bdf9577b06d7e152cdbb5119f8f048cbbec787dfb8a4a997591f793c075c5773a2dd22fdde25c3c7d7be4828e0cb612eeac5954e339116f",
+    "created_at": "2026-10-28T22:08:55.685240",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.4.1-b329.142",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.4.1-osx-x64-b329.142.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.4.1-b329.142"
   },
   {
     "checksum": "sha512:e26f3108fbb161c5fd07ae812e6a8f8aabaa0c6936a7bac186a174c3a0e2de8c813b84abdfc24747ece7758bb7db5c0200b2688b7cea4508de33eabaff307825",
@@ -45971,6 +46023,30 @@
     "version": "17.0.20+101"
   },
   {
+    "checksum": "sha256:868f5c672b3389fdbe48e44f94ae170f01668b1401360944fc7159d7cc9772cc",
+    "created_at": "2026-10-28T22:08:55.666157",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.21+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jdk_x64_mac_hotspot_17.0.21_9.tar.gz",
+    "vendor": "temurin",
+    "version": "17.0.21+9"
+  },
+  {
+    "checksum": "sha256:890214eb4d6c88dc06f990d5a6a3b72b91d5dffab6a0a6d8cffb98468bf26181",
+    "created_at": "2026-10-28T22:08:55.666157",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.21+9",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21%2B9/OpenJDK17U-jre_x64_mac_hotspot_17.0.21_9.tar.gz",
+    "vendor": "temurin",
+    "version": "17.0.21+9"
+  },
+  {
     "checksum": "sha256:a5db5927760d2864316354d98ff18d18bec2e72bfac59cd25a416ed67fa84594",
     "created_at": "2025-03-28T22:04:33.817456",
     "features": [],
@@ -75817,6 +75893,30 @@
     "version": "17.0.20.15"
   },
   {
+    "checksum": "sha256:c3e9afac2474ac39508397b73ceaa6ed528e2de9cbbee0d9318ea03097931535",
+    "created_at": "2026-10-28T22:09:21.332760",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.21.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.21.0/ibm-semeru-open-jdk_x64_mac_17.0.21.0.tar.gz",
+    "vendor": "semeru",
+    "version": "17.0.21.0"
+  },
+  {
+    "checksum": "sha256:5e82c8448e8350a32e16c167470d041c8cef6403ea5c1f7b55f0baa4aa06d72d",
+    "created_at": "2026-10-28T22:09:21.332760",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.21.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.21.0/ibm-semeru-open-jre_x64_mac_17.0.21.0.tar.gz",
+    "vendor": "semeru",
+    "version": "17.0.21.0"
+  },
+  {
     "checksum": "sha256:b4439c09ee0916a328f8aa8e4bd98e45b3621bbb3e2ecc59b81f98fa2ec7704a",
     "created_at": "2025-03-28T22:04:27.453987",
     "features": [],
@@ -76367,6 +76467,30 @@
     "url": "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.12.15/ibm-semeru-open-jre_x64_mac_21.0.12.15.tar.gz",
     "vendor": "semeru",
     "version": "21.0.12.15"
+  },
+  {
+    "checksum": "sha256:3d04c498609e3186d2df350eec9dec7f23213e3a46852626172cb37eee07d34e",
+    "created_at": "2026-10-28T22:09:21.332760",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.13.0/ibm-semeru-open-jdk_x64_mac_21.0.13.0.tar.gz",
+    "vendor": "semeru",
+    "version": "21.0.13.0"
+  },
+  {
+    "checksum": "sha256:423d01cb0e5dad4e918dc1e38fcdb5d4b181ab777de1cc725ed567670ae4f1de",
+    "created_at": "2026-10-28T22:09:21.332760",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.13.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru21-binaries/releases/download/jdk-21.0.13.0/ibm-semeru-open-jre_x64_mac_21.0.13.0.tar.gz",
+    "vendor": "semeru",
+    "version": "21.0.13.0"
   },
   {
     "checksum": "sha256:d4918284a06a921dcadeec700d2a22c7e3d9bf09f28b30423563daecececb8f4",
@@ -76991,6 +77115,30 @@
     "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25.0.4.15/ibm-semeru-open-jre_x64_mac_25.0.4.15.tar.gz",
     "vendor": "semeru",
     "version": "25.0.4.15"
+  },
+  {
+    "checksum": "sha256:97b4cfa8078406cf543d2007120704d7bd196be2c17b6072ba34e19538c6651c",
+    "created_at": "2026-10-28T22:09:21.332760",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25.0.5.0/ibm-semeru-open-jdk_x64_mac_25.0.5.0.tar.gz",
+    "vendor": "semeru",
+    "version": "25.0.5.0"
+  },
+  {
+    "checksum": "sha256:b0e23a71fa09713fc19ab764af125c6da2db36036d0753d9cc9452c426ce1b79",
+    "created_at": "2026-10-28T22:09:21.332760",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.5.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru25-binaries/releases/download/jdk-25.0.5.0/ibm-semeru-open-jre_x64_mac_25.0.5.0.tar.gz",
+    "vendor": "semeru",
+    "version": "25.0.5.0"
   },
   {
     "checksum": "sha256:c69086950c006b17484a70ef7bc85e92d121be15e69e282e1446fd238d42b6b4",
