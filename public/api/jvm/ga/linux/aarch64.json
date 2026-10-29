@@ -21969,6 +21969,58 @@
     "version": "17.70.111.0"
   },
   {
+    "checksum": "sha256:8a32c57a101b29fb2e31dd935709517d2a1117d4e696f13ff5035c665ac1d034",
+    "created_at": "2026-10-29T22:08:20.572100",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.21.0.3",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.70.113-ca-jdk17.0.21.0.3-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.70.113.0"
+  },
+  {
+    "checksum": "sha256:33d146a2d372aff6b742bda4742e29aa4e737eb8004c69a752852c59173871af",
+    "created_at": "2026-10-29T22:08:20.572100",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.21.0.3",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.70.113-ca-jdk17.0.21.0.3-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.70.113.0"
+  },
+  {
+    "checksum": "sha256:35f87569d36db2c4245ab49309b1e3f2c2cc279b07cc15140aabd9239015a23f",
+    "created_at": "2026-10-29T22:08:20.572100",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.21.0.3",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.70.113-ca-jre17.0.21.0.3-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.70.113.0"
+  },
+  {
+    "checksum": "sha256:d6f121d3580aa30b276c806d1ebdb74107a912636f63bb4af6e436f8f10bf7ec",
+    "created_at": "2026-10-29T22:08:20.572100",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.21.0.3",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.70.113-ca-jre17.0.21.0.3-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.70.113.0"
+  },
+  {
     "checksum": "sha256:a1d5f78172f32f819d08e9043b0f82fa7af738b37c55c6ca8d6092c61d204d53",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [],
@@ -24256,6 +24308,58 @@
     "version": "21.54.107.0"
   },
   {
+    "checksum": "sha256:eb6b89b23b9eb5661b29a4e8c09e8e91952cbdfa87045d36e9078e37388c2dc3",
+    "created_at": "2026-10-29T22:08:20.572100",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13.0.3",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.54.109-ca-jdk21.0.13.0.3-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.54.109.0"
+  },
+  {
+    "checksum": "sha256:9e0e1869d1de64709170b49671a04d61c3c9995155aeb596145e28310c3f9922",
+    "created_at": "2026-10-29T22:08:20.572100",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13.0.3",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.54.109-ca-jdk21.0.13.0.3-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.54.109.0"
+  },
+  {
+    "checksum": "sha256:e01ff9d096967f8814edca90e778550a1a68ab8fbde7494478edf3a6ac330f00",
+    "created_at": "2026-10-29T22:08:20.572100",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.13.0.3",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.54.109-ca-jre21.0.13.0.3-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.54.109.0"
+  },
+  {
+    "checksum": "sha256:2a229db97aa0d0b43fecb9dcb7719aff5396299f81ccd945ae3f7dfb07e0315a",
+    "created_at": "2026-10-29T22:08:20.572100",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.13.0.3",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.54.109-ca-jre21.0.13.0.3-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.54.109.0"
+  },
+  {
     "checksum": "sha256:dd12cd3446cc939c0066c4266d08ff8e9c7d8932ffcabf4ddf02f8b7b9ba73eb",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [],
@@ -26324,6 +26428,58 @@
     "version": "25.38.107.0"
   },
   {
+    "checksum": "sha256:6d773a4ed04d54eca6f0b8aa9d8829cdf7f5661024b6ac48ea155ab6b4ec9721",
+    "created_at": "2026-10-29T22:08:20.572100",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.0.3",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.38.109-ca-jdk25.0.5.0.3-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.38.109.0"
+  },
+  {
+    "checksum": "sha256:cf10352da83ff2faad04166fee22008e8c691e6f906885a56065ee8d5ab247e9",
+    "created_at": "2026-10-29T22:08:20.572100",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.0.3",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.38.109-ca-jdk25.0.5.0.3-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.38.109.0"
+  },
+  {
+    "checksum": "sha256:604d65f811f942d49099b7c1c1b865ff8b700d51299be0afffa24447a033b866",
+    "created_at": "2026-10-29T22:08:20.572100",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.5.0.3",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.38.109-ca-jre25.0.5.0.3-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.38.109.0"
+  },
+  {
+    "checksum": "sha256:f9101fe1f9bb3d6c0abb3f89d9b16d79d2fb13c814729a18cab0e87394669e20",
+    "created_at": "2026-10-29T22:08:20.572100",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.5.0.3",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.38.109-ca-jre25.0.5.0.3-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.38.109.0"
+  },
+  {
     "checksum": "sha256:797fdab7a0d279fc1f59e7710fb031cf20bd0d4be366f1da151009fa9b5d3ca0",
     "created_at": "2026-03-17T22:08:21.616921",
     "features": [],
@@ -27064,6 +27220,58 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu27.30.107-ca-jre27.0.1-linux_musl_aarch64.tar.gz",
     "vendor": "zulu",
     "version": "27.30.107.0"
+  },
+  {
+    "checksum": "sha256:4b4d2fb4a6bff5fa4d3a1f22ac5933c87d83e41d5f78bcd88df878326342d507",
+    "created_at": "2026-10-29T22:08:20.572100",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.1.0.3",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.30.109-ca-jdk27.0.1.0.3-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.30.109.0"
+  },
+  {
+    "checksum": "sha256:ade9c4df26278415a6a5cd4fd2a35ad91e2a5effb8a14d2168c11c60154588b5",
+    "created_at": "2026-10-29T22:08:20.572100",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.1.0.3",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.30.109-ca-jdk27.0.1.0.3-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.30.109.0"
+  },
+  {
+    "checksum": "sha256:9e958bff107998b6ed41e7b756e2cfb0fd0f77d2a00d060e2e4348701dadee1b",
+    "created_at": "2026-10-29T22:08:20.572100",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.1.0.3",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.30.109-ca-jre27.0.1.0.3-linux_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.30.109.0"
+  },
+  {
+    "checksum": "sha256:0fadc5f2cecfb9f8ab4e8d10987b4efb559e960de0c04dedc031a4c5db180ff9",
+    "created_at": "2026-10-29T22:08:20.572100",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.1.0.3",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.30.109-ca-jre27.0.1.0.3-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.30.109.0"
   },
   {
     "checksum": "sha256:0915ceca44ca50dde54362b3569d39a259a482b4f25df9857cbb46260c4de397",
