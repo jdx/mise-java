@@ -264,6 +264,18 @@
     "version": "11.0.32.1"
   },
   {
+    "checksum": "sha256:c1efc666076916a8ecbc2346ca588dfac7375ad4a53a383618d7c124febbc00e",
+    "created_at": "2026-11-05T02:00:46.806869",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.33",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-11.0.33-macos-aarch64.tar.gz",
+    "vendor": "microsoft",
+    "version": "11.0.33"
+  },
+  {
     "checksum": "sha256:c1d9c85d0a898724f0928c37ca9a30933b474e0b2681b125e56d45d3b0c95d1c",
     "created_at": "2025-03-28T22:04:32.217430",
     "features": [],
@@ -37386,6 +37398,20 @@
     "version": "11.0.32.b1"
   },
   {
+    "checksum": "md5:20dbe274b7f317b86f23ff5af8e0289d",
+    "created_at": "2026-11-05T02:00:41.472877",
+    "features": [
+      "notarized"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.33.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.33/TencentKona-11.0.33.b1_jdk_macosx-aarch64_notarized.tar.gz",
+    "vendor": "kona",
+    "version": "11.0.33.b1"
+  },
+  {
     "checksum": "md5:73a69cab6bfb8545b52b5cbf9f0d9807",
     "created_at": "2025-03-28T22:04:33.827899",
     "features": [
@@ -66086,6 +66112,30 @@
     "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.32.15/ibm-semeru-open-jre_aarch64_mac_11.0.32.15.tar.gz",
     "vendor": "semeru",
     "version": "11.0.32.15"
+  },
+  {
+    "checksum": "sha256:03b2897a6342ac233f702ce76667323737815e87459eb007b91d0d2d4a5a5c7b",
+    "created_at": "2026-11-05T02:01:22.152383",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.33.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.33.0/ibm-semeru-open-jdk_aarch64_mac_11.0.33.0.tar.gz",
+    "vendor": "semeru",
+    "version": "11.0.33.0"
+  },
+  {
+    "checksum": "sha256:44e63bd040176b82211bc8fc72747400464f154800e2ac40f86aa415880a68a8",
+    "created_at": "2026-11-05T02:01:22.152383",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.33.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.33.0/ibm-semeru-open-jre_aarch64_mac_11.0.33.0.tar.gz",
+    "vendor": "semeru",
+    "version": "11.0.33.0"
   },
   {
     "checksum": "sha256:8959721fc9b93eb8dae65e06332723019555672c8791f5518f1b487fe79d256c",

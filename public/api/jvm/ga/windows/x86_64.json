@@ -300,6 +300,18 @@
     "version": "11.0.32.1"
   },
   {
+    "checksum": "sha256:632ffd60faedb4047eadecb02b2f281e99e4c35e1e7711e5dcdc4c73e2185995",
+    "created_at": "2026-11-05T02:00:46.806869",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.33",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-11.0.33-windows-x64.zip",
+    "vendor": "microsoft",
+    "version": "11.0.33"
+  },
+  {
     "checksum": "sha256:68194c25be4b0de5c1cb4dc941ee3e6261346ddcc3fa1d9630c6faa2792fe714",
     "created_at": "2025-03-28T22:04:32.217430",
     "features": [],
@@ -38542,6 +38554,20 @@
     "version": "11.0.32.b1"
   },
   {
+    "checksum": "md5:a6c855e97c4745a50aa37993365296b3",
+    "created_at": "2026-11-05T02:00:41.472877",
+    "features": [
+      "signed"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.33.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.33/TencentKona-11.0.33.b1_jdk_windows-x86_64_signed.zip",
+    "vendor": "kona",
+    "version": "11.0.33.b1"
+  },
+  {
     "checksum": "md5:89161cde0eca84d2e85cce971fd6e45e",
     "created_at": "2025-03-28T22:04:33.827899",
     "features": [],
@@ -61355,6 +61381,30 @@
     "version": "11.0.32.15"
   },
   {
+    "checksum": "sha256:b699add8dfb44168e1ad396f1526173d079709521df650fffbd384ba3787a8d9",
+    "created_at": "2026-11-05T02:01:22.152383",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.33.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.33.0/ibm-semeru-open-jdk_x64_windows_11.0.33.0.zip",
+    "vendor": "semeru",
+    "version": "11.0.33.0"
+  },
+  {
+    "checksum": "sha256:6c35dfe0440d31a868669cb9428bf8cc5a5fd7657bb2263d079b9e04943ea9fc",
+    "created_at": "2026-11-05T02:01:22.152383",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "11.0.33.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.33.0/ibm-semeru-open-jre_x64_windows_11.0.33.0.zip",
+    "vendor": "semeru",
+    "version": "11.0.33.0"
+  },
+  {
     "checksum": "sha256:84555238a9a00d3ad118bb89c3ee8dff8a4eb1da7df417d98dd43b102db56da7",
     "created_at": "2025-03-28T22:04:27.453987",
     "features": [],
@@ -63177,6 +63227,30 @@
     "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk-8.0.504.5/ibm-semeru-open-jre_x64_windows_8.0.504.5.zip",
     "vendor": "semeru",
     "version": "8.0.504.5"
+  },
+  {
+    "checksum": "sha256:c4465bb459804295e45ea831f6746d18de460d619b7cb8811b4ec433001acac2",
+    "created_at": "2026-11-05T02:01:22.152383",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8.0.512.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk-8.0.512.0/ibm-semeru-open-jdk_x64_windows_8.0.512.0.zip",
+    "vendor": "semeru",
+    "version": "8.0.512.0"
+  },
+  {
+    "checksum": "sha256:8f01116146bca88ba9cac148aae9ad942ce8af2e4ac7451a44dbf66b9a958663",
+    "created_at": "2026-11-05T02:01:22.152383",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "8.0.512.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk-8.0.512.0/ibm-semeru-open-jre_x64_windows_8.0.512.0.zip",
+    "vendor": "semeru",
+    "version": "8.0.512.0"
   },
   {
     "checksum": "sha256:c3a607440e2eec16ddea659d0662e122af86b34c8f87fb8752eafc3b2b2e5487",
