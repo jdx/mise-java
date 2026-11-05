@@ -608,6 +608,32 @@
     "version": "11.0.32.1"
   },
   {
+    "checksum": "sha256:c67789fabe5176df9585fdaa5fb0c876dda8e6ac4dfe8168bf3c4cb5209ba64c",
+    "created_at": "2026-11-05T02:00:46.806869",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.33",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-11.0.33-alpine-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "11.0.33"
+  },
+  {
+    "checksum": "sha256:835411604b321042db7191479d9039f45d138f3d505183e24c3fad1713ed7fc0",
+    "created_at": "2026-11-05T02:00:46.806869",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.33",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-11.0.33-linux-x64.tar.gz",
+    "vendor": "microsoft",
+    "version": "11.0.33"
+  },
+  {
     "checksum": "sha256:77c0a8fa9c326003200e96bd09ca0efda483fd4cc2fbb8b3c8a73ea4bdcf8d55",
     "created_at": "2025-03-28T22:04:32.217430",
     "features": [],
@@ -57543,6 +57569,18 @@
     "version": "11.0.32.b1"
   },
   {
+    "checksum": null,
+    "created_at": "2026-11-05T02:00:41.472877",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.33.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.33/TencentKona-11.0.33.b1-jdk_linux-x86_64.tar.gz",
+    "vendor": "kona",
+    "version": "11.0.33.b1"
+  },
+  {
     "checksum": "md5:863bb955d5da279cf560ba89b8f0b66d",
     "created_at": "2025-03-28T22:04:33.827899",
     "features": [
@@ -94961,6 +94999,30 @@
     "version": "11.0.32.15"
   },
   {
+    "checksum": "sha256:dc4c3d88a1e2d64152e5c14109b5fbf35a1654d45b92b3419a2325c91ab15013",
+    "created_at": "2026-11-05T02:01:22.152383",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.33.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.33.0/ibm-semeru-open-jdk_x64_linux_11.0.33.0.tar.gz",
+    "vendor": "semeru",
+    "version": "11.0.33.0"
+  },
+  {
+    "checksum": "sha256:271b1e06189027d09c4cc80c964ac5e8d4bf77bfb34700e392a35ac15de7d5fb",
+    "created_at": "2026-11-05T02:01:22.152383",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.33.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.33.0/ibm-semeru-open-jre_x64_linux_11.0.33.0.tar.gz",
+    "vendor": "semeru",
+    "version": "11.0.33.0"
+  },
+  {
     "checksum": "sha256:1349eb9a1d9af491a1984d66a80126730357c4a5c4fcbe7112a2c832f6c0886e",
     "created_at": "2025-03-28T22:04:27.453987",
     "features": [],
@@ -96783,6 +96845,30 @@
     "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk-8.0.504.5/ibm-semeru-open-jre_x64_linux_8.0.504.5.tar.gz",
     "vendor": "semeru",
     "version": "8.0.504.5"
+  },
+  {
+    "checksum": "sha256:bd45587130f56feb746056e30d1fa1ebe5dd0ef44ec7b496e8aa072201981f8e",
+    "created_at": "2026-11-05T02:01:22.152383",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.0.512.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk-8.0.512.0/ibm-semeru-open-jdk_x64_linux_8.0.512.0.tar.gz",
+    "vendor": "semeru",
+    "version": "8.0.512.0"
+  },
+  {
+    "checksum": "sha256:a83ea13d6e79f7dc089e4ab54cd7cb4c271fcccf9794f2fe2b4afb86e1586dd9",
+    "created_at": "2026-11-05T02:01:22.152383",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "8.0.512.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk-8.0.512.0/ibm-semeru-open-jre_x64_linux_8.0.512.0.tar.gz",
+    "vendor": "semeru",
+    "version": "8.0.512.0"
   },
   {
     "checksum": "sha256:f1fea5d3049754ad13f9b90d90beb9157dbd7e84e00c255c2cef81441f0f348e",

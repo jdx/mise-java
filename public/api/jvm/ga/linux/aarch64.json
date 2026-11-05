@@ -288,6 +288,18 @@
     "version": "11.0.32.1"
   },
   {
+    "checksum": "sha256:a9102ad6478832df70ff1f35994c1c28aced8d8d4160cbca6688cad5133c4548",
+    "created_at": "2026-11-05T02:00:46.806869",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.33",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-11.0.33-linux-aarch64.tar.gz",
+    "vendor": "microsoft",
+    "version": "11.0.33"
+  },
+  {
     "checksum": "sha256:cd802f8c3a6f230692c56530a2b662bc60252c87ddf2aba2effe5b8d311699a3",
     "created_at": "2025-03-28T22:04:32.217430",
     "features": [],
@@ -39386,6 +39398,18 @@
     "version": "11.0.32.b1"
   },
   {
+    "checksum": "md5:f9e12e8445eb6992a8930637063fb91f",
+    "created_at": "2026-11-05T02:00:41.472877",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.33.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-11/releases/download/kona11.0.33/TencentKona-11.0.33.b1-jdk_linux-aarch64.tar.gz",
+    "vendor": "kona",
+    "version": "11.0.33.b1"
+  },
+  {
     "checksum": "md5:273eb9a8c0378644bfd2ec7c44301281",
     "created_at": "2025-03-28T22:04:33.827899",
     "features": [],
@@ -69352,6 +69376,30 @@
     "version": "11.0.32.15"
   },
   {
+    "checksum": "sha256:25947aef6c52a1ada2f53d73d8e71ee2e79398977f2f6f46e9f95886a917b085",
+    "created_at": "2026-11-05T02:01:22.152383",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.33.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.33.0/ibm-semeru-open-jdk_aarch64_linux_11.0.33.0.tar.gz",
+    "vendor": "semeru",
+    "version": "11.0.33.0"
+  },
+  {
+    "checksum": "sha256:bfa025a565fb64a4d73545aa2828111686d6c483dfa449b97aafef85f78be8cd",
+    "created_at": "2026-11-05T02:01:22.152383",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.33.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.33.0/ibm-semeru-open-jre_aarch64_linux_11.0.33.0.tar.gz",
+    "vendor": "semeru",
+    "version": "11.0.33.0"
+  },
+  {
     "checksum": "sha256:022cda1210331488c3db3d0d1282ea74467397fdabc34cb482cdfe81c45f6a15",
     "created_at": "2025-03-28T22:04:27.453987",
     "features": [],
@@ -71174,6 +71222,30 @@
     "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk-8.0.504.5/ibm-semeru-open-jre_aarch64_linux_8.0.504.5.tar.gz",
     "vendor": "semeru",
     "version": "8.0.504.5"
+  },
+  {
+    "checksum": "sha256:2090ee80f0a05889c62dae44c0479687bff9ad606ead0e367cde496c9ffcadb2",
+    "created_at": "2026-11-05T02:01:22.152383",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.0.512.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk-8.0.512.0/ibm-semeru-open-jdk_aarch64_linux_8.0.512.0.tar.gz",
+    "vendor": "semeru",
+    "version": "8.0.512.0"
+  },
+  {
+    "checksum": "sha256:449fae1d8de853aed2e5e07526487c7b6b83065cb57e408adc554a2d073896f2",
+    "created_at": "2026-11-05T02:01:22.152383",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "8.0.512.0",
+    "jvm_impl": "openj9",
+    "url": "https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk-8.0.512.0/ibm-semeru-open-jre_aarch64_linux_8.0.512.0.tar.gz",
+    "vendor": "semeru",
+    "version": "8.0.512.0"
   },
   {
     "checksum": "sha256:d802b80e8022c81973da0e56056ecd09ce44fc3dad6496aff24a7005e9f5e77e",
