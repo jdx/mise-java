@@ -38168,6 +38168,20 @@
     "version": "8.0.27.b1"
   },
   {
+    "checksum": "md5:33dff5ec9c44d4f160908d5f3b67c765",
+    "created_at": "2026-11-06T02:01:52.838367",
+    "features": [
+      "notarized"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.0.28.b1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/Tencent/TencentKona-8/releases/download/8.0.28-GA/TencentKona8.0.28.b1_jdk_macosx-aarch64_8u512_notarized.tar.gz",
+    "vendor": "kona",
+    "version": "8.0.28.b1"
+  },
+  {
     "checksum": "sha256:e84143a6c633a26aeefcb1fd5ad8dfb9e952cfec2a1af5c9d9b69f2390990dac",
     "created_at": "2025-03-28T22:04:33.817456",
     "features": [],
@@ -38694,6 +38708,18 @@
     "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.32.1%2B1/OpenJDK11U-jre_aarch64_mac_hotspot_11.0.32.1_1.tar.gz",
     "vendor": "temurin",
     "version": "11.0.32+101"
+  },
+  {
+    "checksum": "sha256:febbce3fa44cc26967d118900483080507afea5c7fc1ab52159ac3cb8715cb28",
+    "created_at": "2026-11-06T02:01:35.952123",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.33+10",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.33%2B10/OpenJDK11U-jre_aarch64_mac_hotspot_11.0.33_10.tar.gz",
+    "vendor": "temurin",
+    "version": "11.0.33+10"
   },
   {
     "checksum": "sha256:910bb88543211c63298e5b49f7144ac4463f1d903926e94a89bfbf10163bbba1",
