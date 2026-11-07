@@ -4256,6 +4256,34 @@
     "version": "11.92.109.0"
   },
   {
+    "checksum": "sha256:55a95ac455744b0187082ed9b48eee1387bc616075cd48f371aa16baba5f5d85",
+    "created_at": "2026-11-07T01:34:31.237202",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.33",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.92.113-ca-jdk11.0.33-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "11.92.113.0"
+  },
+  {
+    "checksum": "sha256:31e69bbe19ab0b8644c5164120da88ef40bf0f2e640f691d09a78029303a6eb3",
+    "created_at": "2026-11-07T01:34:31.237202",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.33",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.92.113-ca-jre11.0.33-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "11.92.113.0"
+  },
+  {
     "checksum": "sha256:027b214691342186e61309394d1a391017e86a6723263129ebcc5ce555ed1190",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [
@@ -8124,6 +8152,34 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu8.98.0.107-ca-jre8.0.512-linux_musl_aarch64.tar.gz",
     "vendor": "zulu",
     "version": "8.98.0.107"
+  },
+  {
+    "checksum": "sha256:247be91d5ec94fdb40ef4ca0ba835c72780e7c3c2740b0a88eb2c8b853be572c",
+    "created_at": "2026-11-07T01:34:31.237202",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "8.0.512",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.98.0.111-ca-jdk8.0.512-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "8.98.0.111"
+  },
+  {
+    "checksum": "sha256:f9f4996b1ecbf92db07f95b4a3f2e0665def024088597650b54860e93ec959f9",
+    "created_at": "2026-11-07T01:34:31.237202",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "8.0.512",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.98.0.111-ca-jre8.0.512-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "8.98.0.111"
   },
   {
     "checksum": "sha256:15e8cfee3ffcc2041c09b8a7b666b3f084b81d1d69c585370a5b4bfdf875e09f",
@@ -19416,6 +19472,34 @@
     "version": "23.0.13.1+1"
   },
   {
+    "checksum": "sha1:0d91e427862374e3089de7ff5c96588f655e3ce5",
+    "created_at": "2026-11-07T01:34:22.204317",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.21.0.3+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.14+1-17.0.21.0.3+6/bellsoft-liberica-vm-core-openjdk17.0.21.0.3+6-23.0.14+1-linux-aarch64-musl.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.0.14+1"
+  },
+  {
+    "checksum": "sha1:902a963281e0d34696d17b6e981e2607511e79f4",
+    "created_at": "2026-11-07T01:34:22.204317",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.21.0.3+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.14+1-17.0.21.0.3+6/bellsoft-liberica-vm-openjdk17.0.21.0.3+6-23.0.14+1-linux-aarch64-musl.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.0.14+1"
+  },
+  {
     "checksum": "sha1:e883f78304f3948518c7cc1cb10c00780d9db19c",
     "created_at": "2025-09-24T22:03:03.689318",
     "features": [
@@ -19750,6 +19834,34 @@
     "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.12.1+1-21.0.12.1+2/bellsoft-liberica-vm-openjdk21.0.12.1+2-23.1.12.1+1-linux-aarch64-musl.tar.gz",
     "vendor": "liberica-nik",
     "version": "23.1.12.1+1"
+  },
+  {
+    "checksum": "sha1:440be0d8f730a617cb8c64f4b69c589c8b58d347",
+    "created_at": "2026-11-07T01:34:22.204317",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13.0.3+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.13+1-21.0.13.0.3+6/bellsoft-liberica-vm-core-openjdk21.0.13.0.3+6-23.1.13+1-linux-aarch64-musl.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.1.13+1"
+  },
+  {
+    "checksum": "sha1:25067ad1b026f4fe86e0abe96dd018db46085da9",
+    "created_at": "2026-11-07T01:34:22.204317",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13.0.3+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.13+1-21.0.13.0.3+6/bellsoft-liberica-vm-openjdk21.0.13.0.3+6-23.1.13+1-linux-aarch64-musl.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.1.13+1"
   },
   {
     "checksum": "sha1:9cbd77dbf5da8a1b583f6485933754020cdb5c3f",
@@ -20296,5 +20408,19 @@
     "url": "https://github.com/bell-sw/LibericaNIK/releases/download/25.0.4.1+1-25.0.4.1+2/bellsoft-liberica-vm-openjdk25.0.4.1+2-25.0.4.1+1-linux-aarch64-musl.tar.gz",
     "vendor": "liberica-nik",
     "version": "25.0.4.1+1"
+  },
+  {
+    "checksum": "sha1:819a8e234ed0383bda5f61645e20eb5772cdcfc7",
+    "created_at": "2026-11-07T01:34:22.204317",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.0.3+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/25.0.5.0.3+1-25.0.5.0.3+6/bellsoft-liberica-vm-openjdk25.0.5.0.3+6-25.0.5.0.3+1-linux-aarch64-musl.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "25.0.5.0.3+1"
   }
 ]
