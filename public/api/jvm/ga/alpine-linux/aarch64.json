@@ -5321,6 +5321,21 @@
     "version": "17.70.111.0"
   },
   {
+    "checksum": "sha256:b33b542bf217d14790fb3cb2a997c3f45202c199155e909473de9ada3fb3951b",
+    "created_at": "2026-11-12T02:40:32.897456",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.21.0.3",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.70.113-ca-crac-jdk17.0.21.0.3-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.70.113.0"
+  },
+  {
     "checksum": "sha256:33d146a2d372aff6b742bda4742e29aa4e737eb8004c69a752852c59173871af",
     "created_at": "2026-10-29T22:08:20.572100",
     "features": [
@@ -6330,6 +6345,21 @@
     "version": "21.54.107.0"
   },
   {
+    "checksum": "sha256:21dd721246de2d656904a8e6cd09a332db9ca86af5eac03d888528f3bcefbaf2",
+    "created_at": "2026-11-12T02:40:32.897456",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13.0.3",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.54.109-ca-crac-jdk21.0.13.0.3-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.54.109.0"
+  },
+  {
     "checksum": "sha256:9e0e1869d1de64709170b49671a04d61c3c9995155aeb596145e28310c3f9922",
     "created_at": "2026-10-29T22:08:20.572100",
     "features": [
@@ -7164,6 +7194,21 @@
     "version": "25.38.107.0"
   },
   {
+    "checksum": "sha256:d8ffffa6ebdcbddb58df3f07782b1bb671189f13283b6b680ca3a620d9383eea",
+    "created_at": "2026-11-12T02:40:32.897456",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.0.3",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.38.109-ca-crac-jdk25.0.5.0.3-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.38.109.0"
+  },
+  {
     "checksum": "sha256:cf10352da83ff2faad04166fee22008e8c691e6f906885a56065ee8d5ab247e9",
     "created_at": "2026-10-29T22:08:20.572100",
     "features": [
@@ -7508,6 +7553,36 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu27.30.107-ca-jre27.0.1-linux_musl_aarch64.tar.gz",
     "vendor": "zulu",
     "version": "27.30.107.0"
+  },
+  {
+    "checksum": "sha256:4778c017726b3c6e2a5ca7756dd20ee60059ea39d38223addbc88577815e3741",
+    "created_at": "2026-11-12T02:40:32.897456",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.1.0.3",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.30.109-ca-crac-jdk27.0.1.0.3-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.30.109.0"
+  },
+  {
+    "checksum": "sha256:ae4e5960870fa91fef85495d7ee2d9bf1c8d79b9c1d1892988ee830c1163c3eb",
+    "created_at": "2026-11-12T02:40:32.897456",
+    "features": [
+      "crac",
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.1.0.3",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.30.109-ca-crac-jre27.0.1.0.3-linux_musl_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.30.109.0"
   },
   {
     "checksum": "sha256:ade9c4df26278415a6a5cd4fd2a35ad91e2a5effb8a14d2168c11c60154588b5",
