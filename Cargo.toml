@@ -24,8 +24,7 @@ path = "src/main.rs"
 [dependencies]
 clap = { version = "4", features = ["derive", "env", "string"] }
 color-eyre = "0.6"
-color-print = "0.3"
-comrak = "0.59"
+comrak = "1"
 confique = { version = "0.4", default-features = false, features = ["toml"] }
 crossbeam-channel = "0.5"
 env_logger = "0.11"
