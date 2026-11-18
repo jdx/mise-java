@@ -5570,6 +5570,30 @@
     "version": "11.92.113.0"
   },
   {
+    "checksum": "sha256:2b2c86dbc876b2c1150bec82982c4dd199779e283b5d200349dc2fb15213ebd0",
+    "created_at": "2026-11-18T03:17:43.149660",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.33.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.92.201-ca-jdk11.0.33.1-win_i686.zip",
+    "vendor": "zulu",
+    "version": "11.92.201.0"
+  },
+  {
+    "checksum": "sha256:8a13fe4e158e2cf9dc5e4b87c888082caaea02e0f6ca4b5a3e507553793f6738",
+    "created_at": "2026-11-18T03:17:43.149660",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "11.0.33.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu11.92.201-ca-jre11.0.33.1-win_i686.zip",
+    "vendor": "zulu",
+    "version": "11.92.201.0"
+  },
+  {
     "checksum": "sha256:d14abf12a09629d75272f40ef2317337b2a53b0ff39186d7ffab8ca14f16afd7",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [],
@@ -8598,6 +8622,42 @@
     "version": "17.70.113.0"
   },
   {
+    "checksum": "sha256:bd8304a6160a431ac790c5ebb34992167ae0c049590470807961e3d9326d9311",
+    "created_at": "2026-11-18T03:17:43.149660",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.21.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.70.201-ca-jdk17.0.21.1-win_i686.zip",
+    "vendor": "zulu",
+    "version": "17.70.201.0"
+  },
+  {
+    "checksum": "sha256:ac7af714eb8a5fec2522acb3230f04653ef39225d676d1c8481f6fe26138e1fb",
+    "created_at": "2026-11-18T03:17:43.149660",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.21.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.70.201-ca-jre17.0.21.1-win_i686.tar.gz",
+    "vendor": "zulu",
+    "version": "17.70.201.0"
+  },
+  {
+    "checksum": "sha256:2ee9fc0f9b1dba37851c90d653e3ea02e4fb33ea8617deb845485c468b208776",
+    "created_at": "2026-11-18T03:17:43.149660",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "17.0.21.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.70.201-ca-jre17.0.21.1-win_i686.zip",
+    "vendor": "zulu",
+    "version": "17.70.201.0"
+  },
+  {
     "checksum": "sha256:6b7182581510960162e2bd2f67b472021ff46287bf9ff2ab5ecf570322bd4236",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [
@@ -11294,6 +11354,30 @@
     "version": "8.98.0.111"
   },
   {
+    "checksum": "sha256:3e5a1b5d32f8a43b88d83d666b6619598ad1df8dac80a5f23de966d05600f69c",
+    "created_at": "2026-11-18T03:17:43.149660",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8.0.514",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.98.0.201-ca-jdk8.0.514-win_i686.zip",
+    "vendor": "zulu",
+    "version": "8.98.0.201"
+  },
+  {
+    "checksum": "sha256:ee98339ce75ba1f7c02d1cfc389c8e79b326e9dfdcd430ec16e6771ce72bddbe",
+    "created_at": "2026-11-18T03:17:43.149660",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "8.0.514",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu8.98.0.201-ca-jre8.0.514-win_i686.zip",
+    "vendor": "zulu",
+    "version": "8.98.0.201"
+  },
+  {
     "checksum": "sha256:a759c8d4f0effb436e5f7f19f8f7fd3c0451fc92789f7e58a7b9ee5904561e8e",
     "created_at": "2026-06-16T22:39:44.491761",
     "features": [],
@@ -11712,6 +11796,18 @@
     "url": "https://corretto.aws/downloads/resources/11.0.33.0.9/amazon-corretto-11.0.33.0.9-windows-x86-jdk.zip",
     "vendor": "corretto",
     "version": "11.0.33.0.9"
+  },
+  {
+    "checksum": "sha256:a141c0c0c5aea2c197f1380de1fabebca4298463c5f8d7d0745b37f536a95c85",
+    "created_at": "2026-11-18T03:20:06.930042",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.33.1.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/11.0.33.1.1/amazon-corretto-11.0.33.1.1-windows-x86-jdk.zip",
+    "vendor": "corretto",
+    "version": "11.0.33.1.1"
   },
   {
     "checksum": "md5:e134b836ea4ff07551e5b22870aafcfb",
@@ -12624,6 +12720,30 @@
     "url": "https://corretto.aws/downloads/resources/8.512.09.1/amazon-corretto-8.512.09.1-windows-x86-jre.zip",
     "vendor": "corretto",
     "version": "8.512.09.1"
+  },
+  {
+    "checksum": "sha256:3a49d128c7faca06deaf5684fd6ae4ec669dae91e864cacb7da21bfb56e97965",
+    "created_at": "2026-11-18T03:20:06.930042",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "8.514.01.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/8.514.01.1/amazon-corretto-8.514.01.1-windows-x86-jdk.zip",
+    "vendor": "corretto",
+    "version": "8.514.01.1"
+  },
+  {
+    "checksum": "sha256:cd527c33177edc39506bef8a42995d6c30a6f849324e90fbcf611d6d79fd3531",
+    "created_at": "2026-11-18T03:20:06.930042",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "8.514.01.1",
+    "jvm_impl": "hotspot",
+    "url": "https://corretto.aws/downloads/resources/8.514.01.1/amazon-corretto-8.514.01.1-windows-x86-jre.zip",
+    "vendor": "corretto",
+    "version": "8.514.01.1"
   },
   {
     "checksum": "md5:85dfaf1ee4117649d9bdf94fe9c05a64",
