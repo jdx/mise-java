@@ -3,6 +3,8 @@ use std::sync::LazyLock;
 use std::time::Duration;
 
 use eyre::Result;
+use jiff::Timestamp;
+use jiff::tz::TimeZone;
 use log::{debug, warn};
 use reqwest::blocking::{ClientBuilder, RequestBuilder, Response};
 use reqwest::header::HeaderMap;
@@ -93,8 +95,13 @@ fn display_github_rate_limit(resp: &Response) {
         }
         if let Some(reset) = resp.headers().get("x-ratelimit-reset") {
             let reset = reset.to_str().map(|r| r.to_string()).unwrap_or_default();
-            if let Some(reset) = chrono::DateTime::from_timestamp(reset.parse().unwrap(), 0) {
-                warn!("GitHub rate limit exceeded. Resets at {}", reset.naive_local());
+            if let Ok(epoch) = reset.parse()
+                && let Ok(reset) = Timestamp::from_second(epoch)
+            {
+                warn!(
+                    "GitHub rate limit exceeded. Resets at {}",
+                    reset.to_zoned(TimeZone::system()).strftime("%Y-%m-%d %H:%M:%S")
+                );
             }
         }
     }

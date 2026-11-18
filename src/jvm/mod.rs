@@ -1,4 +1,4 @@
-use chrono::NaiveDateTime;
+use jiff::civil::DateTime;
 use serde::{Deserialize, Serialize};
 use serde_json::{Map, Value, json};
 use std::collections::HashMap;
@@ -11,7 +11,7 @@ pub struct JvmData {
     pub architecture: String,
     pub checksum: Option<String>,
     pub checksum_url: Option<String>,
-    pub created_at: Option<NaiveDateTime>,
+    pub created_at: Option<DateTime>,
     #[serde(serialize_with = "empty_vec_if_none")]
     pub features: Option<Vec<String>>,
     pub file_type: String,
@@ -134,7 +134,7 @@ impl JvmData {
 
 #[cfg(test)]
 mod tests {
-    use chrono::DateTime;
+    use jiff::{Timestamp, tz::TimeZone};
 
     use super::*;
 
@@ -144,10 +144,11 @@ mod tests {
             checksum: Some("sha256:checksum".to_string()),
             checksum_url: Some("http://example.com/checksum".to_string()),
             created_at: Some(
-                DateTime::parse_from_rfc3339("2024-01-15T10:30:00Z")
+                "2024-01-15T10:30:00Z"
+                    .parse::<Timestamp>()
                     .unwrap()
-                    .with_timezone(&chrono::Utc)
-                    .naive_utc(),
+                    .to_zoned(TimeZone::UTC)
+                    .datetime(),
             ),
             features: Some(vec!["feature1".to_string(), "feature2".to_string()]),
             file_type: "tar.gz".to_string(),

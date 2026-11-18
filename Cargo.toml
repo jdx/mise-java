@@ -22,8 +22,6 @@ name = "roast"
 path = "src/main.rs"
 
 [dependencies]
-build-time = "0.1"
-chrono = { version = "0.4", default-features = false, features = ["clock", "serde", "std"] }
 clap = { version = "4", features = ["derive", "env", "string"] }
 color-eyre = "0.6"
 color-print = "0.3"
@@ -34,9 +32,10 @@ env_logger = "0.11"
 eyre = "0.6"
 indoc = "2"
 itertools = "0.15"
+jiff = { version = "0.2", features = ["serde"] }
 log = "0.4"
 openssl = "0.10"
-postgres = { version = "0.19", features = ["with-chrono-0_4"] }
+postgres = { version = "0.19", features = ["with-jiff-0_2"] }
 postgres-openssl = "0.5"
 r2d2 = "0.8"
 r2d2_postgres = "0.18"
@@ -50,9 +49,6 @@ shellexpand = "3"
 tokio = { version = "1", features = ["full", "rt"] }
 versions = { version = "8", features = ["serde"] }
 xx = "2"
-
-[build-dependencies]
-built = { version = "0.8", features = ["chrono"] }
 
 [profile.dev]
 debug = 1

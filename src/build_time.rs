@@ -1,10 +1,9 @@
 use std::sync::LazyLock;
 
-use chrono::{DateTime, FixedOffset};
+use jiff::{Timestamp, Zoned, tz::TimeZone};
 
-pub mod built_info {
-    include!(concat!(env!("OUT_DIR"), "/built.rs"));
-}
-
-pub static BUILD_TIME: LazyLock<DateTime<FixedOffset>> =
-    LazyLock::new(|| DateTime::parse_from_rfc2822(built_info::BUILT_TIME_UTC).unwrap());
+pub static BUILD_TIME: LazyLock<Zoned> = LazyLock::new(|| {
+    Timestamp::from_second(env!("BUILD_TIME_UNIX").parse().unwrap())
+        .unwrap()
+        .to_zoned(TimeZone::UTC)
+});

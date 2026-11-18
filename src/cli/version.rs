@@ -25,7 +25,7 @@ pub static VERSION: LazyLock<String> = LazyLock::new(|| {
     if cfg!(debug_assertions) {
         v.push_str("-DEBUG");
     };
-    let build_time = BUILD_TIME.format("%Y-%m-%d");
+    let build_time = BUILD_TIME.date();
     format!("{v} {os}-{arch} ({build_time})", os = *OS, arch = *ARCH)
 });
 
