@@ -32,7 +32,7 @@ eyre = "0.6"
 indoc = "2"
 itertools = "0.15"
 # postgres only supports jiff = "0.2"
-jiff = { version = "0.2", features = ["serde"] }
+jiff = { version = "1.0", features = ["serde"] }
 log = "0.4"
 openssl = "0.10"
 postgres = { version = "0.19", features = ["with-jiff-0_2"] }
