@@ -14,7 +14,7 @@ updates:
         update-types: [ "version-update:semver-patch" ]
       # postgres-types 0.2.14 only supports jiff = "0.2"
       - dependency-name: "jiff"
-        update-types: [ "version-update:semver-patch" ]
+        update-types: [ "version-update:semver-major", "version-update:semver-minor", "version-update:semver-patch" ]
     groups:
       all:
         patterns: [ "*" ]
