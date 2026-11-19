@@ -9,9 +9,6 @@ updates:
     schedule:
       interval: "daily"
     ignore:
-      # 0.6.4, has compilation issues with indirect dependencies
-      - dependency-name: "color-eyre"
-        update-types: [ "version-update:semver-patch" ]
       # postgres-types 0.2.14 only supports jiff = "0.2"
       - dependency-name: "jiff"
         update-types: [ "version-update:semver-major", "version-update:semver-minor", "version-update:semver-patch" ]
