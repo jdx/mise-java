@@ -31,6 +31,7 @@ env_logger = "0.11"
 eyre = "0.6"
 indoc = "2"
 itertools = "0.15"
+# postgres only supports jiff = "0.2"
 jiff = { version = "0.2", features = ["serde"] }
 log = "0.4"
 openssl = "0.10"
