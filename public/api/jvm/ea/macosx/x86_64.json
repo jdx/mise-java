@@ -145,7 +145,7 @@
   },
   {
     "checksum": "sha512:335fb4fc7491a42dc09da9eecf46bce54624c70de5bec54b4d960c9805ac573979c5fe698cf67263117e9a720aed72e26e2cb73e9cc08b63bc3588d2530f8c59",
-    "created_at": "2025-05-12T22:05:08.528920",
+    "created_at": "2025-05-12T22:05:08.52892",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jre",
@@ -401,7 +401,7 @@
   },
   {
     "checksum": "sha512:93c1aa6ba830fe96dec398b339aad47c21a57b2692f9ccda0261d93d07ae621b9d7d7a5b397588aa420d6c0b46c5f4ec2989b2c68ae763217de05a6b8bfc3b92",
-    "created_at": "2025-05-12T22:05:08.528920",
+    "created_at": "2025-05-12T22:05:08.52892",
     "features": [
       "jcef"
     ],
@@ -635,7 +635,7 @@
   },
   {
     "checksum": "sha512:15c81462261fa752a0ef7572525ee904a930df7c1e7c9f0d4f4cb04bbd2f0b2a85d3676f97834918e0b7f70864bfca6f5321c13cb6932463dbcf04f245430259",
-    "created_at": "2025-05-12T22:05:08.528920",
+    "created_at": "2025-05-12T22:05:08.52892",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -839,7 +839,7 @@
   },
   {
     "checksum": "sha512:93adb3394733c999d2c1fd2cbc6ca3878a2770193ed3580e50a294a3a6656f05eae090312ad9f65d6224605c465b35c2fae6c2bd1f475de4c05cf04c84934b24",
-    "created_at": "2025-05-12T22:05:08.528920",
+    "created_at": "2025-05-12T22:05:08.52892",
     "features": [
       "jcef"
     ],
@@ -7373,7 +7373,7 @@
   },
   {
     "checksum": "sha256:cde7fcb06b0f4a18cc569f7ac99ca4d4a7f220c960b93ec2070497d1d87a0aac",
-    "created_at": "2026-05-05T22:19:53.581190",
+    "created_at": "2026-05-05T22:19:53.58119",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -7385,7 +7385,7 @@
   },
   {
     "checksum": "sha256:0e52c60ec0f9a1b2ad8f4c70322be5e122aab30aeca5344f0afd384d5e763c38",
-    "created_at": "2026-05-05T22:19:53.581190",
+    "created_at": "2026-05-05T22:19:53.58119",
     "features": [],
     "file_type": "zip",
     "image_type": "jdk",
@@ -7853,7 +7853,7 @@
   },
   {
     "checksum": "sha256:f9a023ff6b239d0b3d918b482123b34c34229e707735386806d94bb785e8c132",
-    "created_at": "2026-10-29T22:08:20.572100",
+    "created_at": "2026-10-29T22:08:20.5721",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -7865,7 +7865,7 @@
   },
   {
     "checksum": "sha256:e9610122d626e66e89a6d983a7f870cc0fb2fcdebb5149425300da208c6a4275",
-    "created_at": "2026-10-29T22:08:20.572100",
+    "created_at": "2026-10-29T22:08:20.5721",
     "features": [],
     "file_type": "zip",
     "image_type": "jdk",
@@ -7946,6 +7946,30 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu28.0.55-beta-jdk28.0.0-beta.23-macosx_x64.zip",
     "vendor": "zulu",
     "version": "28.0.55.0"
+  },
+  {
+    "checksum": "sha256:4bf95e0ad13249c0540d8032a76bd398336a9808ff385b036958c67ac0c62886",
+    "created_at": "2026-11-19T02:56:45.09823",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "28.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu28.0.57-beta-jdk28.0.0-beta.24-macosx_x64.tar.gz",
+    "vendor": "zulu",
+    "version": "28.0.57.0"
+  },
+  {
+    "checksum": "sha256:289b07b038f74d7354d2b70f0a754c83e2c580c35891cec75812a3734d7dbae3",
+    "created_at": "2026-11-19T02:56:45.09823",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "28.0.0",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu28.0.57-beta-jdk28.0.0-beta.24-macosx_x64.zip",
+    "vendor": "zulu",
+    "version": "28.0.57.0"
   },
   {
     "checksum": "md5:6561fd13092df09ef9961d65b844d6c4",
@@ -8057,7 +8081,7 @@
   },
   {
     "checksum": "sha256:c7367135297ca2517b7d77b92d39dcde7fb1cbc00e6fdbfb3465a72ebbdc5353",
-    "created_at": "2025-08-22T22:04:01.247050",
+    "created_at": "2025-08-22T22:04:01.24705",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -8093,7 +8117,7 @@
   },
   {
     "checksum": "sha256:0fdec1f8ea31a66fc300d8a311d3d065f08710beea54c57cda3d7c22db82bece",
-    "created_at": "2026-09-19T17:30:11.832360",
+    "created_at": "2026-09-19T17:30:11.83236",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -8105,7 +8129,7 @@
   },
   {
     "checksum": "sha256:81300599163f8426aefcff8bbc419a8b92909bbf1dd9bbd812ed3d4eb3f4e790",
-    "created_at": "2026-09-19T17:30:11.832360",
+    "created_at": "2026-09-19T17:30:11.83236",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -8201,7 +8225,7 @@
   },
   {
     "checksum": "sha256:7950bdec190aea9d5085dbc6fae326309817581a3e47dd8dd4722bce7e0cc2ab",
-    "created_at": "2025-04-17T22:05:57.937460",
+    "created_at": "2025-04-17T22:05:57.93746",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -8357,7 +8381,7 @@
   },
   {
     "checksum": "sha256:9ae4dfdfdcdbb56b6f756308995ceb1c69f2ea4d57b525d0501700c69824bef4",
-    "created_at": "2025-07-18T22:06:11.151320",
+    "created_at": "2025-07-18T22:06:11.15132",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -8489,7 +8513,7 @@
   },
   {
     "checksum": "sha256:37a67c5004453a548a17d19d27012adc5e791d4e2ee75167927d6758f7ab7dfb",
-    "created_at": "2025-09-26T22:07:24.163690",
+    "created_at": "2025-09-26T22:07:24.16369",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -8765,7 +8789,7 @@
   },
   {
     "checksum": "sha256:f4573b8b1981e603f08bfda20efb280f5a362c57c97d99cd3f9f90381c8f21d8",
-    "created_at": "2025-07-18T22:06:11.151320",
+    "created_at": "2025-07-18T22:06:11.15132",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -8861,7 +8885,7 @@
   },
   {
     "checksum": "sha256:913f29aaeca07f3f55e42ff7538c7f4adaab2ebc2e3bf0fa408c20c283b01529",
-    "created_at": "2026-03-28T22:06:51.961680",
+    "created_at": "2026-03-28T22:06:51.96168",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -8969,7 +8993,7 @@
   },
   {
     "checksum": "sha256:edff1b1b7235b8e8e58bfd77c2f6111f9e0d708a716c4ead95643e9f38d4d181",
-    "created_at": "2026-02-08T22:08:32.807830",
+    "created_at": "2026-02-08T22:08:32.80783",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -9029,7 +9053,7 @@
   },
   {
     "checksum": "sha256:64d2deee65c221b7fbdfb936d42981987c1505a6057a1847e5fdb37afabb103a",
-    "created_at": "2026-03-14T22:05:36.843890",
+    "created_at": "2026-03-14T22:05:36.84389",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -19601,7 +19625,7 @@
   },
   {
     "checksum": "sha256:0fd318fa677d65bffcc5fb6118a6dbc792898bdef31cbb03c145fe4acf9c9327",
-    "created_at": "2025-04-01T22:04:43.963350",
+    "created_at": "2025-04-01T22:04:43.96335",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -19613,7 +19637,7 @@
   },
   {
     "checksum": "sha256:d6de06d25c71b70f11cb5dc6faa62336377a8bebbe56885ec4d71b0f20fe906d",
-    "created_at": "2025-04-01T22:04:43.963350",
+    "created_at": "2025-04-01T22:04:43.96335",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jre",
@@ -19937,7 +19961,7 @@
   },
   {
     "checksum": "sha256:2b1169aca282efeccb6460b5946b19cb9f6a4006aedc2df2eceda9750498916c",
-    "created_at": "2025-08-28T22:05:05.386340",
+    "created_at": "2025-08-28T22:05:05.38634",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -19949,7 +19973,7 @@
   },
   {
     "checksum": "sha256:34f499b62a7b5f3f79c489bf472469059a747608863bfd475400d3d6374d6f7d",
-    "created_at": "2025-08-28T22:05:05.386340",
+    "created_at": "2025-08-28T22:05:05.38634",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jre",
@@ -20393,7 +20417,7 @@
   },
   {
     "checksum": "sha256:299bef93949a3438d6f81b677790710e4c7109dfda93b460781ebe3b56fabf36",
-    "created_at": "2026-03-16T22:12:07.190580",
+    "created_at": "2026-03-16T22:12:07.19058",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -20405,7 +20429,7 @@
   },
   {
     "checksum": "sha256:e75273bbe780f0e48dc43f11309fd25aa9cb76497d44422253a346a11e13eda5",
-    "created_at": "2026-03-16T22:12:07.190580",
+    "created_at": "2026-03-16T22:12:07.19058",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jre",
@@ -20681,7 +20705,7 @@
   },
   {
     "checksum": "sha256:15dbbcda574aaeaa9013a3fe42ed74ce688c2c318b6fd871670235c94d1d76c6",
-    "created_at": "2026-06-13T22:28:02.618270",
+    "created_at": "2026-06-13T22:28:02.61827",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -20693,7 +20717,7 @@
   },
   {
     "checksum": "sha256:f062adcb7736bcf4be92b2e6f014bb83ae2abac780a1cd2b78b71370ab6bca1a",
-    "created_at": "2026-06-13T22:28:02.618270",
+    "created_at": "2026-06-13T22:28:02.61827",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jre",
@@ -20753,7 +20777,7 @@
   },
   {
     "checksum": "sha256:b10541e4ddfadf6c3c76ad7d8f77de02e0b4ac9afd4e867acb0c4a9df8dcc574",
-    "created_at": "2026-08-09T22:10:29.499140",
+    "created_at": "2026-08-09T22:10:29.49914",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -20765,7 +20789,7 @@
   },
   {
     "checksum": "sha256:b9e27a719bc8b4dc8e04e439b2f782aad929b8e50fa2bd168eea8a0cf008f41c",
-    "created_at": "2026-08-09T22:10:29.499140",
+    "created_at": "2026-08-09T22:10:29.49914",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jre",
@@ -26129,7 +26153,7 @@
   },
   {
     "checksum": "sha256:50316fe44558c69caae51eba5105df20da2e0ea7db21e9aa15c8d330ca039d0c",
-    "created_at": "2026-02-17T22:09:13.911920",
+    "created_at": "2026-02-17T22:09:13.91192",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -26141,7 +26165,7 @@
   },
   {
     "checksum": "sha256:d1f2a3f4065733f03c2065ad03a33640f230279c366347d79273f7bf7a1727de",
-    "created_at": "2026-02-17T22:09:13.911920",
+    "created_at": "2026-02-17T22:09:13.91192",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jre",
@@ -26249,7 +26273,7 @@
   },
   {
     "checksum": "sha256:08c88210d068eac3cd89370e9f4d8b9d5499f31d778f0d7ddfb597e85f061f9a",
-    "created_at": "2026-03-16T22:12:07.190580",
+    "created_at": "2026-03-16T22:12:07.19058",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -26261,7 +26285,7 @@
   },
   {
     "checksum": "sha256:4b4ba80d595405d685ef33d2ea18bd4effe5ec4f53228d7c9acd1c7d4cb7e368",
-    "created_at": "2026-03-16T22:12:07.190580",
+    "created_at": "2026-03-16T22:12:07.19058",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jre",
@@ -26777,7 +26801,7 @@
   },
   {
     "checksum": "sha256:ceed5b23710b7bb2cd005b59810e787d39d8cc7207fe9745f86778f53ad98b67",
-    "created_at": "2026-10-23T22:12:12.818280",
+    "created_at": "2026-10-23T22:12:12.81828",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -26789,7 +26813,7 @@
   },
   {
     "checksum": "sha256:01977fb315ec0c909961ed37c65c37efecb3c8f4c868b8c8a74c0581313bb19b",
-    "created_at": "2026-10-23T22:12:12.818280",
+    "created_at": "2026-10-23T22:12:12.81828",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jre",
@@ -26824,6 +26848,30 @@
     "version": "21.0.13.0.3-ea.1"
   },
   {
+    "checksum": "sha256:8c8b2eb2a96b53441ccc0c91a3ab48c19967e7d79e6e175ca6e350c40dda30d5",
+    "created_at": "2026-11-19T02:58:39.178656",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13.1-ea.2",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.13.1%2B2/sapmachine-jdk-21.0.13.1-ea.2_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.13.1-ea.2"
+  },
+  {
+    "checksum": "sha256:8fcab9d7bb5839957457518c185c9e047a7f31cdc481598a9ed913b35a457410",
+    "created_at": "2026-11-19T02:58:39.178656",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.13.1-ea.2",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.13.1%2B2/sapmachine-jre-21.0.13.1-ea.2_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.13.1-ea.2"
+  },
+  {
     "checksum": "sha256:3b098cdb32ac30774ffa00db72e7c099835d0f56f9363aab39834101392aee96",
     "created_at": "2026-11-12T02:43:53.051987",
     "features": [],
@@ -26846,6 +26894,30 @@
     "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.14%2B1/sapmachine-jre-21.0.14-ea.1_macos-x64_bin.tar.gz",
     "vendor": "sapmachine",
     "version": "21.0.14-ea.1"
+  },
+  {
+    "checksum": "sha256:82c9598b4cc9666dd19ce3239e51057152bf6654ec259f54040b668062ccbad3",
+    "created_at": "2026-11-19T02:58:39.178656",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.14-ea.2",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.14%2B2/sapmachine-jdk-21.0.14-ea.2_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.14-ea.2"
+  },
+  {
+    "checksum": "sha256:052a7c9e8dab4decd17cdb4a104ef0f82c9e8a41b65b09ed6eabe756c5825f54",
+    "created_at": "2026-11-19T02:58:39.178656",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "21.0.14-ea.2",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/SAP/SapMachine/releases/download/sapmachine-21.0.14%2B2/sapmachine-jre-21.0.14-ea.2_macos-x64_bin.tar.gz",
+    "vendor": "sapmachine",
+    "version": "21.0.14-ea.2"
   },
   {
     "checksum": "sha256:7c8fb99a45fcbfac1c4052671f6b0899f5d46b8ebf3eedf3ac2eb8823a0a9cd1",
@@ -27737,7 +27809,7 @@
   },
   {
     "checksum": "sha256:5d8bd3ab6912426323cef6d41bfc686f3ab352deb278342f536547a088c70511",
-    "created_at": "2025-04-01T22:04:43.963350",
+    "created_at": "2025-04-01T22:04:43.96335",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -27749,7 +27821,7 @@
   },
   {
     "checksum": "sha256:11c4836014e4d471ad48c3c399de29b1287e0e58352373e29aea0dd4d35dd918",
-    "created_at": "2025-04-01T22:04:43.963350",
+    "created_at": "2025-04-01T22:04:43.96335",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jre",
@@ -27929,7 +28001,7 @@
   },
   {
     "checksum": "sha256:98f170c9cf0530af3fbff01600cc539cee7a0282232ecc07ee393603ff4288a5",
-    "created_at": "2025-06-25T22:04:18.338170",
+    "created_at": "2025-06-25T22:04:18.33817",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -27941,7 +28013,7 @@
   },
   {
     "checksum": "sha256:2358ebd8cc95e47fab70a22567e9edb7b60976a99abdaf4404c884bca308640c",
-    "created_at": "2025-06-25T22:04:18.338170",
+    "created_at": "2025-06-25T22:04:18.33817",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jre",
@@ -31073,7 +31145,7 @@
   },
   {
     "checksum": "sha256:d77cf80bbf271e51e0ff48715f55edbd1c6642e82cdc1b86567599a6c1e9ebf3",
-    "created_at": "2025-07-10T22:04:34.943770",
+    "created_at": "2025-07-10T22:04:34.94377",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -31085,7 +31157,7 @@
   },
   {
     "checksum": "sha256:49a08a4dc7fcf84cb5958c02965f0dbd773eaaf5e45a349dd677775d66ea4a41",
-    "created_at": "2025-07-10T22:04:34.943770",
+    "created_at": "2025-07-10T22:04:34.94377",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jre",
@@ -31289,7 +31361,7 @@
   },
   {
     "checksum": "sha256:016a5eb143edc4c57558a25e669dc5504f8c953af69a563362ce5a8a58913204",
-    "created_at": "2025-04-01T22:04:43.963350",
+    "created_at": "2025-04-01T22:04:43.96335",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -31301,7 +31373,7 @@
   },
   {
     "checksum": "sha256:45ecb0e91e15f7e28d6659a99310da77789986b0fe4b2ca7d57d8c27278ce9da",
-    "created_at": "2025-04-01T22:04:43.963350",
+    "created_at": "2025-04-01T22:04:43.96335",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jre",
@@ -32153,7 +32225,7 @@
   },
   {
     "checksum": "sha256:551e04731bef2b0c9f88a9b179ff808f69e2dc92cea002ea48923e6b0e03f763",
-    "created_at": "2025-06-25T22:04:18.338170",
+    "created_at": "2025-06-25T22:04:18.33817",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -32165,7 +32237,7 @@
   },
   {
     "checksum": "sha256:410bfaa44352c248324e22073fcb57ec0a0aa3de969e3e6f2d733a8b338a25d5",
-    "created_at": "2025-06-25T22:04:18.338170",
+    "created_at": "2025-06-25T22:04:18.33817",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jre",
@@ -32655,7 +32727,7 @@
   },
   {
     "checksum": null,
-    "created_at": "2025-12-15T22:04:58.721840",
+    "created_at": "2025-12-15T22:04:58.72184",
     "features": [
       "lite"
     ],
@@ -32669,7 +32741,7 @@
   },
   {
     "checksum": null,
-    "created_at": "2025-12-15T22:04:58.721840",
+    "created_at": "2025-12-15T22:04:58.72184",
     "features": [
       "lite"
     ],
@@ -32683,7 +32755,7 @@
   },
   {
     "checksum": null,
-    "created_at": "2025-12-15T22:04:58.721840",
+    "created_at": "2025-12-15T22:04:58.72184",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jdk",
@@ -32695,7 +32767,7 @@
   },
   {
     "checksum": null,
-    "created_at": "2025-12-15T22:04:58.721840",
+    "created_at": "2025-12-15T22:04:58.72184",
     "features": [],
     "file_type": "zip",
     "image_type": "jdk",
@@ -32707,7 +32779,7 @@
   },
   {
     "checksum": null,
-    "created_at": "2025-12-15T22:04:58.721840",
+    "created_at": "2025-12-15T22:04:58.72184",
     "features": [],
     "file_type": "tar.gz",
     "image_type": "jre",
@@ -32719,7 +32791,7 @@
   },
   {
     "checksum": null,
-    "created_at": "2025-12-15T22:04:58.721840",
+    "created_at": "2025-12-15T22:04:58.72184",
     "features": [],
     "file_type": "zip",
     "image_type": "jre",
