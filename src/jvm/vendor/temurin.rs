@@ -118,7 +118,7 @@ fn map_release(release: &Release) -> Vec<JvmData> {
             release_type: release.release_type.clone().to_string(),
             url: package_link.unwrap_or_default().to_string(),
             vendor: "temurin".to_string(),
-            version: normalize_version(release.version_data.semver.clone().as_str()),
+            version: release_version(&release.version_data.openjdk_version, &release.version_data.semver),
         };
         jvm_data.push(java_jvm_data);
     }
@@ -184,9 +184,53 @@ struct Package {
     size: u64,
 }
 
+/// The version a release is published under.
+///
+/// Adoptium's `semver` folds a hotfix into the build number (`25.0.4+101`, or
+/// `25.0.5+100000002` in the newer encoding), which matches nothing outside Adoptium.
+/// A hotfix keeps the canonical Java version instead (`25.0.4.1+1`), the name SDKMAN
+/// and `java -version` use. Other releases keep the normalized semver.
+fn release_version(openjdk_version: &str, semver: &str) -> String {
+    let normalized = normalize_version(semver);
+    let Some((core, rest)) = openjdk_version.split_once('+') else {
+        return normalized;
+    };
+    let parts: Vec<&str> = core.split('.').collect();
+    let hotfix = parts.len() > 3 && parts[3..].iter().any(|p| *p != "0");
+    let build: String = rest.chars().take_while(char::is_ascii_digit).collect();
+    let Some((_, semver_build)) = normalized.split_once('+') else {
+        return normalized;
+    };
+    if !hotfix || build.is_empty() {
+        return normalized;
+    }
+    // keep what follows the build number in the semver ("101.0.LTS" -> ".0.LTS")
+    let suffix = semver_build.trim_start_matches(|c: char| c.is_ascii_digit());
+    format!("{core}+{build}{suffix}")
+}
+
 #[cfg(test)]
 mod tests {
-    use crate::jvm::vendor::temurin::{Binary, normalize_features, parse_release_timestamp};
+    use crate::jvm::vendor::temurin::{Binary, normalize_features, parse_release_timestamp, release_version};
+
+    #[test]
+    fn test_release_version() {
+        // hotfixes use the canonical Java version, in both Adoptium encodings
+        assert_eq!(
+            release_version("25.0.4.1+1-LTS", "25.0.4+101.0.LTS"),
+            "25.0.4.1+1.0.LTS"
+        );
+        assert_eq!(
+            release_version("25.0.5.1+2-LTS", "25.0.5+100000002.0.LTS"),
+            "25.0.5.1+2.0.LTS"
+        );
+        assert_eq!(release_version("17.0.21.1+2", "17.0.21+100000002"), "17.0.21.1+2");
+        assert_eq!(release_version("26.0.2.1+1", "26.0.2+101"), "26.0.2.1+1");
+        // regular releases and a zero fourth component are unchanged
+        assert_eq!(release_version("25.0.4+7-LTS", "25.0.4+7.0.LTS"), "25.0.4+7.0.LTS");
+        assert_eq!(release_version("27.0.1.0", "27.0.1+0"), "27.0.1+0");
+        assert_eq!(release_version("21", "21.0.0+35"), "21.0.0+35");
+    }
 
     #[test]
     fn test_parse_release_timestamp() {
