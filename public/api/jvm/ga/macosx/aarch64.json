@@ -40130,6 +40130,30 @@
     "version": "17.0.21+9"
   },
   {
+    "checksum": "sha256:2a88ccb044a8fb00957be93245da6357c11b55717511509d147cbcc5d93b2109",
+    "created_at": "2026-11-20T02:52:00.69582",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.21.1+2",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21.1%2B2/OpenJDK17U-jdk_aarch64_mac_hotspot_17.0.21.1_2.tar.gz",
+    "vendor": "temurin",
+    "version": "17.0.21+100000002"
+  },
+  {
+    "checksum": "sha256:398046289ca1acef2d3800d74c55a31f08b2fee32a17ee7c1c4e4ad7489f8311",
+    "created_at": "2026-11-20T02:52:00.69582",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "17.0.21.1+2",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.21.1%2B2/OpenJDK17U-jre_aarch64_mac_hotspot_17.0.21.1_2.tar.gz",
+    "vendor": "temurin",
+    "version": "17.0.21+100000002"
+  },
+  {
     "checksum": "sha256:ff42be4d7a348d0d7aee07749e4daec9f427dcc7eb46b343f8131e8f3906c05b",
     "created_at": "2025-03-28T22:04:33.817456",
     "features": [],
@@ -41508,6 +41532,30 @@
     "url": "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27.0.1.0.2%2B1/OpenJDK27U-jre_aarch64_mac_hotspot_27.0.1.0.2_1.tar.gz",
     "vendor": "temurin",
     "version": "27.0.1+0"
+  },
+  {
+    "checksum": "sha256:bd5ff11de5e247372e8b27df700938bd02fe8fe81e24cd297e1daeb027d3151b",
+    "created_at": "2026-11-20T02:52:00.69582",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.1.1+4",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27.0.1.1%2B4/OpenJDK27U-jdk_aarch64_mac_hotspot_27.0.1.1_4.tar.gz",
+    "vendor": "temurin",
+    "version": "27.0.1+100000004"
+  },
+  {
+    "checksum": "sha256:809398a4dc95ab15bfdad77b6c40921ea49d6d0333af530334e854a52e0456f4",
+    "created_at": "2026-11-20T02:52:00.69582",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.1.1+4",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27.0.1.1%2B4/OpenJDK27U-jre_aarch64_mac_hotspot_27.0.1.1_4.tar.gz",
+    "vendor": "temurin",
+    "version": "27.0.1+100000004"
   },
   {
     "checksum": "sha1:721583522bffded340fd91dd1bcebd36359fa714",
