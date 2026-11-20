@@ -38,7 +38,7 @@ impl JvmRepository {
                     query.push(',');
                 }
                 query.push_str(&format!(
-                    "(${}, ${}, ${}, COALESCE(${}, CURRENT_TIMESTAMP), ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${})",
+                    "(${}, ${}, ${}, COALESCE(${}, CURRENT_TIMESTAMP::timestamp), ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${})",
                     i * columns + 1,
                     i * columns + 2,
                     i * columns + 3,
