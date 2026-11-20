@@ -3,6 +3,7 @@ use std::collections::HashSet;
 use crate::jvm::JvmData;
 use eyre::Result;
 use indoc::indoc;
+use jiff::civil::DateTime;
 use postgres_openssl::MakeTlsConnector;
 use r2d2::Pool;
 use r2d2_postgres::PostgresConnectionManager;
@@ -22,12 +23,12 @@ impl JvmRepository {
         let mut conn = self.pool.get()?;
         let mut result = 0;
         let mut tx = conn.transaction()?;
-        let columns = 15;
+        let columns = 16;
 
         for chunk in map_workaround(jvm_data).chunks(BATCH_SIZE) {
             let mut query = String::from(
                 "INSERT INTO JVM
-                (architecture, checksum, checksum_url, features, file_type, filename, image_type, java_version, jvm_impl, os, release_type, size, url, vendor, version)
+                (architecture, checksum, checksum_url, created_at, features, file_type, filename, image_type, java_version, jvm_impl, os, release_type, size, url, vendor, version)
                 VALUES "
             );
 
@@ -37,7 +38,7 @@ impl JvmRepository {
                     query.push(',');
                 }
                 query.push_str(&format!(
-                    "(${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${})",
+                    "(${}, ${}, ${}, COALESCE(${}, CURRENT_TIMESTAMP), ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${}, ${})",
                     i * columns + 1,
                     i * columns + 2,
                     i * columns + 3,
@@ -52,11 +53,13 @@ impl JvmRepository {
                     i * columns + 12,
                     i * columns + 13,
                     i * columns + 14,
-                    i * columns + 15
+                    i * columns + 15,
+                    i * columns + 16
                 ));
                 params.push(&data.architecture);
                 params.push(&data.checksum);
                 params.push(&data.checksum_url);
+                params.push(&data.created_at);
                 params.push(&data.features);
                 params.push(&data.file_type);
                 params.push(&data.filename);
@@ -76,6 +79,7 @@ impl JvmRepository {
                 architecture = excluded.architecture,
                 checksum = excluded.checksum,
                 checksum_url = excluded.checksum_url,
+                created_at = LEAST(JVM.created_at, excluded.created_at),
                 features = excluded.features,
                 file_type = excluded.file_type,
                 filename = excluded.filename,
@@ -93,6 +97,7 @@ impl JvmRepository {
                    excluded.architecture != JVM.architecture
                 OR excluded.checksum != JVM.checksum
                 OR excluded.checksum_url != JVM.checksum_url
+                OR excluded.created_at < JVM.created_at
                 OR excluded.features != JVM.features
                 OR excluded.file_type != JVM.file_type
                 OR excluded.filename != JVM.filename
@@ -226,6 +231,7 @@ struct DbJvmData {
     pub architecture: String,
     pub checksum: Option<String>,
     pub checksum_url: Option<String>,
+    pub created_at: Option<DateTime>,
     pub features: Option<String>,
     pub file_type: String,
     pub filename: String,
@@ -250,6 +256,7 @@ fn map_workaround(jvm_data: &HashSet<JvmData>) -> Vec<DbJvmData> {
             architecture: item.architecture.clone(),
             checksum: item.checksum.clone(),
             checksum_url: item.checksum_url.clone(),
+            created_at: item.created_at,
             features: item.features.as_ref().map(|f| f.join(",")),
             file_type: item.file_type.clone(),
             filename: item.filename.clone(),

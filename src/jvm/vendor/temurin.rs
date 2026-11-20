@@ -2,6 +2,7 @@ use std::collections::HashSet;
 
 use eyre::Result;
 use indoc::formatdoc;
+use jiff::{Timestamp, civil::DateTime, tz::TimeZone};
 use log::debug;
 use rayon::iter::IntoParallelIterator;
 use rayon::iter::ParallelIterator;
@@ -82,8 +83,17 @@ fn normalize_features(binary: Binary) -> Option<Vec<String>> {
     if features.is_empty() { None } else { Some(features) }
 }
 
+/// Parses the Adoptium release `timestamp` (RFC 3339, UTC) into the naive UTC
+/// datetime stored as `created_at`. Returns `None` when it is missing or
+/// malformed, in which case the database falls back to the crawl time.
+fn parse_release_timestamp(timestamp: Option<&str>) -> Option<DateTime> {
+    let ts = timestamp?.parse::<Timestamp>().ok()?;
+    Some(ts.to_zoned(TimeZone::UTC).datetime())
+}
+
 fn map_release(release: &Release) -> Vec<JvmData> {
     let mut jvm_data = Vec::new();
+    let created_at = parse_release_timestamp(release.timestamp.as_deref());
     for binary in &release.binaries {
         let package = binary.package.clone();
         let package_checksum = package.as_ref().and_then(|p| p.checksum.clone());
@@ -96,7 +106,7 @@ fn map_release(release: &Release) -> Vec<JvmData> {
             architecture: normalize_architecture(binary.architecture.as_str()),
             checksum: package_checksum.and_then(|c| format!("sha256:{c}").into()),
             checksum_url: package_checksum_link,
-            created_at: None,
+            created_at,
             image_type: binary.image_type.clone(),
             features: normalize_features(binary.clone()),
             file_type: package_extension.unwrap_or_default().to_string(),
@@ -130,6 +140,9 @@ struct Release {
     binaries: Vec<Binary>,
     release_name: String,
     release_type: String,
+    /// When upstream published the release (not when we first crawled it).
+    #[serde(default)]
+    timestamp: Option<String>,
     updated_at: String,
     version_data: VersionData,
     vendor: String,
@@ -173,7 +186,15 @@ struct Package {
 
 #[cfg(test)]
 mod tests {
-    use crate::jvm::vendor::temurin::{Binary, normalize_features};
+    use crate::jvm::vendor::temurin::{Binary, normalize_features, parse_release_timestamp};
+
+    #[test]
+    fn test_parse_release_timestamp() {
+        let parsed = parse_release_timestamp(Some("2026-11-18T20:39:00Z")).unwrap();
+        assert_eq!(parsed.to_string(), "2026-11-18T20:39:00");
+        assert_eq!(parse_release_timestamp(None), None);
+        assert_eq!(parse_release_timestamp(Some("not a date")), None);
+    }
 
     #[test]
     fn test_normalize_features() {
