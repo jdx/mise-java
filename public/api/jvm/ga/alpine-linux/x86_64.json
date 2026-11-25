@@ -29586,6 +29586,34 @@
     "version": "23.0.14+1"
   },
   {
+    "checksum": "sha1:8aa7553cf50bd82bc84bfe2075b89205650ae419",
+    "created_at": "2026-11-25T04:45:38.742092",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.21.1+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.14.1+1-17.0.21.1+6/bellsoft-liberica-vm-core-openjdk17.0.21.1+6-23.0.14.1+1-linux-x64-musl.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.0.14.1+1"
+  },
+  {
+    "checksum": "sha1:56f787e5b2608ce6d8899a38f76ab1b7220f712e",
+    "created_at": "2026-11-25T04:45:38.742092",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.21.1+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.14.1+1-17.0.21.1+6/bellsoft-liberica-vm-openjdk17.0.21.1+6-23.0.14.1+1-linux-x64-musl.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.0.14.1+1"
+  },
+  {
     "checksum": "sha1:788abb2accae6b98d2028c09f9508a0819ff851b",
     "created_at": "2025-09-24T22:03:03.689318",
     "features": [
@@ -29948,6 +29976,34 @@
     "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.13+1-21.0.13.0.3+6/bellsoft-liberica-vm-openjdk21.0.13.0.3+6-23.1.13+1-linux-x64-musl.tar.gz",
     "vendor": "liberica-nik",
     "version": "23.1.13+1"
+  },
+  {
+    "checksum": "sha1:f7ece131ec229a0a31f652992315d195b9913043",
+    "created_at": "2026-11-25T04:45:38.742092",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13.1+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.13.1+1-21.0.13.1+6/bellsoft-liberica-vm-core-openjdk21.0.13.1+6-23.1.13.1+1-linux-x64-musl.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.1.13.1+1"
+  },
+  {
+    "checksum": "sha1:235de6d9633e839e72071cc1b82ee0e1a3c8012e",
+    "created_at": "2026-11-25T04:45:38.742092",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13.1+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.13.1+1-21.0.13.1+6/bellsoft-liberica-vm-openjdk21.0.13.1+6-23.1.13.1+1-linux-x64-musl.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.1.13.1+1"
   },
   {
     "checksum": "sha1:3245dc5fe6b210e4962f6cba916a0a3fed85c04b",
@@ -30508,6 +30564,20 @@
     "url": "https://github.com/bell-sw/LibericaNIK/releases/download/25.0.5.0.3+1-25.0.5.0.3+6/bellsoft-liberica-vm-openjdk25.0.5.0.3+6-25.0.5.0.3+1-linux-x64-musl.tar.gz",
     "vendor": "liberica-nik",
     "version": "25.0.5.0.3+1"
+  },
+  {
+    "checksum": "sha1:a83a506aa410865dd498d1e189a45bb32a9325d7",
+    "created_at": "2026-11-25T04:45:38.742092",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.1+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/25.0.5.1+1-25.0.5.1+6/bellsoft-liberica-vm-openjdk25.0.5.1+6-25.0.5.1+1-linux-x64-musl.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "25.0.5.1+1"
   },
   {
     "checksum": null,
@@ -31470,6 +31540,21 @@
     "version": "21.0.13.0.13.9"
   },
   {
+    "checksum": "sha256:321ad07ba09dc3a35181bc82524c15114d18fb980972b2f0201b79f70552e769",
+    "created_at": "2026-11-25T04:49:11.160511",
+    "features": [
+      "musl",
+      "extended"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13.1.14.2",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.13.1.14%2B2_jdk-21.0.13.1-ga/Alibaba_Dragonwell_Extended_21.0.13.1.14.2_x64_alpine-linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "21.0.13.1.14.2"
+  },
+  {
     "checksum": "sha256:a720d8922a613f1c47f3409fdb967ff0ac62a8c0ba217b5c7134e9a8346f1fba",
     "created_at": "2025-03-28T22:04:35.425188",
     "features": [
@@ -31799,6 +31884,21 @@
     "url": "https://github.com/dragonwell-project/dragonwell25/releases/download/dragonwell-extended-25.0.5.0.5%2B8_jdk-25.0.5-ga/Alibaba_Dragonwell_Extended_25.0.5.0.5.8_x64_alpine-linux.tar.gz",
     "vendor": "dragonwell",
     "version": "25.0.5.0.5.8"
+  },
+  {
+    "checksum": "sha256:8c387c6d18dc1ba8cda0cbf2dd863f9167bf76433695d6221e1e382e8669f41f",
+    "created_at": "2026-11-24T05:46:03.033255",
+    "features": [
+      "musl",
+      "extended"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.1.6.2",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell25/releases/download/dragonwell-extended-25.0.5.1.6%2B2_jdk-25.0.5.1-ga/Alibaba_Dragonwell_Extended_25.0.5.1.6.2_x64_alpine-linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "25.0.5.1.6.2"
   },
   {
     "checksum": "sha256:6e3fbb6498ff5abf70582de197207ca9377af4a1a74af9ab85e51a3a225deeef",

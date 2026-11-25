@@ -2172,6 +2172,30 @@
     "version": "11.0.33+10"
   },
   {
+    "checksum": "sha256:71ef874b6e202c91d16a7deb2da16669bd9d18b02556d433f1b10aa97dd64d8c",
+    "created_at": "2026-11-20T09:09:28",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.33.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.33.1%2B1/OpenJDK11U-jdk_arm_linux_hotspot_11.0.33.1_1.tar.gz",
+    "vendor": "temurin",
+    "version": "11.0.33.1+1"
+  },
+  {
+    "checksum": "sha256:858ea95a7f8090516365710e634823f72c99f41def60efc02d698a59b9c24005",
+    "created_at": "2026-11-20T09:09:28",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.33.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.33.1%2B1/OpenJDK11U-jre_arm_linux_hotspot_11.0.33.1_1.tar.gz",
+    "vendor": "temurin",
+    "version": "11.0.33.1+1"
+  },
+  {
     "checksum": "sha256:7721ef81416af8122a28448f3d661eb4bda40a9f78d400e4ecc55b58e627a00c",
     "created_at": "2021-07-30T17:08:13",
     "features": [],
@@ -3490,5 +3514,29 @@
     "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u512-b09/OpenJDK8U-jre_arm_linux_hotspot_8u512b09.tar.gz",
     "vendor": "temurin",
     "version": "8.0.512+9"
+  },
+  {
+    "checksum": "sha256:41f8991f2625089500a51f9c78a5e25369fc71de857bb35ebb47767b44c26d4d",
+    "created_at": "2026-11-19T20:41:10",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "1.8.0_514-b01",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u514-b01/OpenJDK8U-jdk_arm_linux_hotspot_8u514b01.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.514+1"
+  },
+  {
+    "checksum": "sha256:c682a2f8c41ec0a68bbb3ecea261621066951898c7ec8eb3276b593d039d0288",
+    "created_at": "2026-11-19T20:41:10",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "1.8.0_514-b01",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u514-b01/OpenJDK8U-jre_arm_linux_hotspot_8u514b01.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.514+1"
   }
 ]

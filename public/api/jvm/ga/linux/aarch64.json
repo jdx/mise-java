@@ -37824,6 +37824,20 @@
     "version": "25.0.5.0.3"
   },
   {
+    "checksum": "sha256:aa02942ba8a8860e330737919d5b77c28489fc56661d500bdb1436ab96d11799",
+    "created_at": "2026-11-25T04:48:54.902281",
+    "features": [
+      "innovation"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.1",
+    "jvm_impl": "graalvm",
+    "url": "https://gds.oracle.com/download/graal/25i6/archive/graalvm-jdk-25i6-25.0.5.1_linux-aarch64_bin.tar.gz",
+    "vendor": "oracle-graalvm",
+    "version": "25.0.5.1"
+  },
+  {
     "checksum": "sha256:f6798cdd2381297c22a632997eae79ff9d8d312ccdb0229e7dc0dc2968abbb7d",
     "created_at": "2025-03-28T22:04:28.081056",
     "features": [],
@@ -42360,6 +42374,30 @@
     "version": "11.0.33+10"
   },
   {
+    "checksum": "sha256:275b8e9f4c8892d6cbe1a2009e39124d46f8a22944c9b5722c81edd327947692",
+    "created_at": "2026-11-20T09:09:28",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.33.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.33.1%2B1/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.33.1_1.tar.gz",
+    "vendor": "temurin",
+    "version": "11.0.33.1+1"
+  },
+  {
+    "checksum": "sha256:f4e3f4c65854641062d33948ac4b6d9462ca24011a5a7fd118f14c8b016b60fd",
+    "created_at": "2026-11-20T09:09:28",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "11.0.33.1+1",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.33.1%2B1/OpenJDK11U-jre_aarch64_linux_hotspot_11.0.33.1_1.tar.gz",
+    "vendor": "temurin",
+    "version": "11.0.33.1+1"
+  },
+  {
     "checksum": "sha256:cb77d9d126f97898dfdc8b5fb694d1e0e5d93d13a0a6cb2aeda76f8635384340",
     "created_at": "2021-07-30T17:08:13",
     "features": [],
@@ -45254,6 +45292,18 @@
     "version": "27.0.1.1+4"
   },
   {
+    "checksum": "sha256:fc6986815165fc9506eb6a01ace00942f5c91c993102355ab01cea3e2de9736d",
+    "created_at": "2026-11-18T10:08:11",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.1.1+4",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27.0.1.1%2B4/OpenJDK27U-jdk_aarch64_linux_hotspot_27.0.1.1_4.tar.gz",
+    "vendor": "temurin",
+    "version": "27.0.1.1+4"
+  },
+  {
     "checksum": "sha256:827630703218b88a74f554d10d6e7fd04fa4d16de46f63f8b18acf69c5114a7c",
     "created_at": "2026-11-18T10:08:11",
     "features": [
@@ -45264,6 +45314,18 @@
     "java_version": "27.0.1.1+4",
     "jvm_impl": "hotspot",
     "url": "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27.0.1.1%2B4/OpenJDK27U-jre_aarch64_alpine-linux_hotspot_27.0.1.1_4.tar.gz",
+    "vendor": "temurin",
+    "version": "27.0.1.1+4"
+  },
+  {
+    "checksum": "sha256:335431b750ed364047db057a5ff6a79bc65172f760c3e28af2bedd636eafa77a",
+    "created_at": "2026-11-18T10:08:11",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "27.0.1.1+4",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin27-binaries/releases/download/jdk-27.0.1.1%2B4/OpenJDK27U-jre_aarch64_linux_hotspot_27.0.1.1_4.tar.gz",
     "vendor": "temurin",
     "version": "27.0.1.1+4"
   },
@@ -45842,6 +45904,30 @@
     "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u512-b09/OpenJDK8U-jre_aarch64_linux_hotspot_8u512b09.tar.gz",
     "vendor": "temurin",
     "version": "8.0.512+9"
+  },
+  {
+    "checksum": "sha256:41e3284f630ba8d3543e7f7395ae433406bedff926c23ce70a97373aa8930f92",
+    "created_at": "2026-11-19T20:41:10",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "1.8.0_514-b01",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u514-b01/OpenJDK8U-jdk_aarch64_linux_hotspot_8u514b01.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.514+1"
+  },
+  {
+    "checksum": "sha256:5669548cd06075421e2c1f8c9e9430f4f5c25179f1a72ed3bb25358f8070ad74",
+    "created_at": "2026-11-19T20:41:10",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "1.8.0_514-b01",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u514-b01/OpenJDK8U-jre_aarch64_linux_hotspot_8u514b01.tar.gz",
+    "vendor": "temurin",
+    "version": "8.0.514+1"
   },
   {
     "checksum": "sha1:5c1673f8941d5f7616b766603e0bd30f3874723d",
@@ -66062,6 +66148,58 @@
     "version": "23.0.14+1"
   },
   {
+    "checksum": "sha1:aef7ff3b67053111b3d0e45f03bdf39c518fa440",
+    "created_at": "2026-11-25T04:45:38.742092",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.21.1+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.14.1+1-17.0.21.1+6/bellsoft-liberica-vm-core-openjdk17.0.21.1+6-23.0.14.1+1-linux-aarch64-musl.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.0.14.1+1"
+  },
+  {
+    "checksum": "sha1:1e0f7e2f6c9d2ce95e8d131b1d04b3a8d6db024f",
+    "created_at": "2026-11-25T04:45:38.742092",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.21.1+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.14.1+1-17.0.21.1+6/bellsoft-liberica-vm-core-openjdk17.0.21.1+6-23.0.14.1+1-linux-aarch64.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.0.14.1+1"
+  },
+  {
+    "checksum": "sha1:18e48f77bcdcb933be660c7b9a59d8129fee0b71",
+    "created_at": "2026-11-25T04:45:38.742092",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.21.1+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.14.1+1-17.0.21.1+6/bellsoft-liberica-vm-openjdk17.0.21.1+6-23.0.14.1+1-linux-aarch64-musl.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.0.14.1+1"
+  },
+  {
+    "checksum": "sha1:3c8f3a559bcc0f60d4da6d4f1b2e75d8fa0ca56f",
+    "created_at": "2026-11-25T04:45:38.742092",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.21.1+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.14.1+1-17.0.21.1+6/bellsoft-liberica-vm-openjdk17.0.21.1+6-23.0.14.1+1-linux-aarch64.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.0.14.1+1"
+  },
+  {
     "checksum": "sha1:e883f78304f3948518c7cc1cb10c00780d9db19c",
     "created_at": "2025-09-24T22:03:03.689318",
     "features": [
@@ -66736,6 +66874,58 @@
     "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.13+1-21.0.13.0.3+6/bellsoft-liberica-vm-openjdk21.0.13.0.3+6-23.1.13+1-linux-aarch64.tar.gz",
     "vendor": "liberica-nik",
     "version": "23.1.13+1"
+  },
+  {
+    "checksum": "sha1:a543b761dc196a0a6f3e0226b0b1db38f935c2d6",
+    "created_at": "2026-11-25T04:45:38.742092",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13.1+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.13.1+1-21.0.13.1+6/bellsoft-liberica-vm-core-openjdk21.0.13.1+6-23.1.13.1+1-linux-aarch64-musl.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.1.13.1+1"
+  },
+  {
+    "checksum": "sha1:10e1f5bd5d45e9571aa8924acd88f0fe8b42e5b7",
+    "created_at": "2026-11-25T04:45:38.742092",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13.1+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.13.1+1-21.0.13.1+6/bellsoft-liberica-vm-core-openjdk21.0.13.1+6-23.1.13.1+1-linux-aarch64.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.1.13.1+1"
+  },
+  {
+    "checksum": "sha1:6cc53692ce60c204b697602642a451f02c3addf5",
+    "created_at": "2026-11-25T04:45:38.742092",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13.1+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.13.1+1-21.0.13.1+6/bellsoft-liberica-vm-openjdk21.0.13.1+6-23.1.13.1+1-linux-aarch64-musl.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.1.13.1+1"
+  },
+  {
+    "checksum": "sha1:24cc556409a4b6eb6145107cb35986d7757e9e7d",
+    "created_at": "2026-11-25T04:45:38.742092",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13.1+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.13.1+1-21.0.13.1+6/bellsoft-liberica-vm-openjdk21.0.13.1+6-23.1.13.1+1-linux-aarch64.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "23.1.13.1+1"
   },
   {
     "checksum": "sha1:9cbd77dbf5da8a1b583f6485933754020cdb5c3f",
@@ -67778,6 +67968,32 @@
     "version": "25.0.5.0.3+1"
   },
   {
+    "checksum": "sha1:1f480a4e0c4f43cd823351bedb912ac34854f304",
+    "created_at": "2026-11-25T04:45:38.742092",
+    "features": [
+      "musl"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.1+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/25.0.5.1+1-25.0.5.1+6/bellsoft-liberica-vm-openjdk25.0.5.1+6-25.0.5.1+1-linux-aarch64-musl.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "25.0.5.1+1"
+  },
+  {
+    "checksum": "sha1:65646b5d37e45b5ba477429b014faecabe9e81e4",
+    "created_at": "2026-11-25T04:45:38.742092",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.1+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/25.0.5.1+1-25.0.5.1+6/bellsoft-liberica-vm-openjdk25.0.5.1+6-25.0.5.1+1-linux-aarch64.tar.gz",
+    "vendor": "liberica-nik",
+    "version": "25.0.5.1+1"
+  },
+  {
     "checksum": null,
     "created_at": "2025-03-28T22:04:35.425188",
     "features": [],
@@ -68638,6 +68854,20 @@
     "version": "21.0.13.0.13.9"
   },
   {
+    "checksum": "sha256:6821e3ed2f4c1a86648221f41c0b41484fcded744d4400ca64a13001080c8145",
+    "created_at": "2026-11-25T04:49:11.160511",
+    "features": [
+      "extended"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13.1.14.2",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.13.1.14%2B2_jdk-21.0.13.1-ga/Alibaba_Dragonwell_Extended_21.0.13.1.14.2_aarch64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "21.0.13.1.14.2"
+  },
+  {
     "checksum": "sha256:d8c2fd0cda3c4de8f79b6c96b8687d6edeff52371f69a3c32b0543cda09d9d24",
     "created_at": "2025-03-28T22:04:35.425188",
     "features": [
@@ -68930,6 +69160,20 @@
     "url": "https://github.com/dragonwell-project/dragonwell25/releases/download/dragonwell-extended-25.0.5.0.5%2B8_jdk-25.0.5-ga/Alibaba_Dragonwell_Extended_25.0.5.0.5.8_aarch64_linux.tar.gz",
     "vendor": "dragonwell",
     "version": "25.0.5.0.5.8"
+  },
+  {
+    "checksum": "sha256:e870b58da7c90e780389a9fd92124bf0c77c0d6c4f04887386487771998cceda",
+    "created_at": "2026-11-24T05:46:03.033255",
+    "features": [
+      "extended"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.1.6.2",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell25/releases/download/dragonwell-extended-25.0.5.1.6%2B2_jdk-25.0.5.1-ga/Alibaba_Dragonwell_Extended_25.0.5.1.6.2_aarch64_linux.tar.gz",
+    "vendor": "dragonwell",
+    "version": "25.0.5.1.6.2"
   },
   {
     "checksum": "sha256:0c3d0f63a502ecceb510aa5317172af57dbee08e061226bb7f645e1a1b285a49",
@@ -69622,6 +69866,20 @@
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/graal-25.5.5.0.3/graalvm-community-jdk-25i5-25.0.5.0.3_linux-aarch64_bin.tar.gz",
     "vendor": "graalvm-community",
     "version": "25.0.5.0.3"
+  },
+  {
+    "checksum": "sha256:d8e6edf0009bb5d70c6a670eb030d36aa804795427306434c0f7f63c01435307",
+    "created_at": "2026-11-25T04:48:53.38965",
+    "features": [
+      "innovation"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.1",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/graal-25.6.5.1/graalvm-community-jdk-25i6-25.0.5.1_linux-aarch64_bin.tar.gz",
+    "vendor": "graalvm-community",
+    "version": "25.0.5.1"
   },
   {
     "checksum": "sha256:cb5bedf6244d30018856559a393029e98de48c9608eb35ec6c4937dcb7d97224",
