@@ -35858,6 +35858,20 @@
     "version": "25.0.5.0.3"
   },
   {
+    "checksum": "sha256:df911e6099eed9242d305f7ca31ec7f14ed9168f313c4953523b4e73a63c86f0",
+    "created_at": "2026-11-25T04:48:54.902281",
+    "features": [
+      "innovation"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.5.1",
+    "jvm_impl": "graalvm",
+    "url": "https://gds.oracle.com/download/graal/25i6/archive/graalvm-jdk-25i6-25.0.5.1_windows-x64_bin.zip",
+    "vendor": "oracle-graalvm",
+    "version": "25.0.5.1"
+  },
+  {
     "checksum": "sha256:1cb21c23dc89a34c0d974d2e3fc9553f4f06848dff7f3c5c969760ea1bc27479",
     "created_at": "2025-03-28T22:04:28.081056",
     "features": [],
@@ -57087,6 +57101,44 @@
     "version": "23.0.14+1"
   },
   {
+    "checksum": "sha1:c0f9f01aee9498bdf73b10ad6be94810ed97663a",
+    "created_at": "2026-11-25T04:45:38.742092",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.21.1+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.14.1+1-17.0.21.1+6/bellsoft-liberica-vm-core-openjdk17.0.21.1+6-23.0.14.1+1-windows-amd64.zip",
+    "vendor": "liberica-nik",
+    "version": "23.0.14.1+1"
+  },
+  {
+    "checksum": "sha1:fed626b8fab33021721a1ae603229a57c81a5073",
+    "created_at": "2026-11-25T04:45:38.742092",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.21.1+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.14.1+1-17.0.21.1+6/bellsoft-liberica-vm-full-openjdk17.0.21.1+6-23.0.14.1+1-windows-amd64.zip",
+    "vendor": "liberica-nik",
+    "version": "23.0.14.1+1"
+  },
+  {
+    "checksum": "sha1:e378a1a8b52dace21d39db8f459c76a08d7e0f9d",
+    "created_at": "2026-11-25T04:45:38.742092",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.21.1+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.0.14.1+1-17.0.21.1+6/bellsoft-liberica-vm-openjdk17.0.21.1+6-23.0.14.1+1-windows-amd64.zip",
+    "vendor": "liberica-nik",
+    "version": "23.0.14.1+1"
+  },
+  {
     "checksum": "sha1:918815f0daa6a1a1f6a92f6326c92fbdbd3c99db",
     "created_at": "2025-09-24T22:03:03.689318",
     "features": [],
@@ -57579,6 +57631,44 @@
     "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.13+1-21.0.13.0.3+6/bellsoft-liberica-vm-openjdk21.0.13.0.3+6-23.1.13+1-windows-amd64.zip",
     "vendor": "liberica-nik",
     "version": "23.1.13+1"
+  },
+  {
+    "checksum": "sha1:e3ae0c8280f441eee45c505b24c1f1d2606d3e82",
+    "created_at": "2026-11-25T04:45:38.742092",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.13.1+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.13.1+1-21.0.13.1+6/bellsoft-liberica-vm-core-openjdk21.0.13.1+6-23.1.13.1+1-windows-amd64.zip",
+    "vendor": "liberica-nik",
+    "version": "23.1.13.1+1"
+  },
+  {
+    "checksum": "sha1:f5372930c9819467db873e29c26118ce44e133ee",
+    "created_at": "2026-11-25T04:45:38.742092",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.13.1+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.13.1+1-21.0.13.1+6/bellsoft-liberica-vm-full-openjdk21.0.13.1+6-23.1.13.1+1-windows-amd64.zip",
+    "vendor": "liberica-nik",
+    "version": "23.1.13.1+1"
+  },
+  {
+    "checksum": "sha1:281f755d16603baca27bda4b98d195cde6ee3a26",
+    "created_at": "2026-11-25T04:45:38.742092",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.13.1+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/23.1.13.1+1-21.0.13.1+6/bellsoft-liberica-vm-openjdk21.0.13.1+6-23.1.13.1+1-windows-amd64.zip",
+    "vendor": "liberica-nik",
+    "version": "23.1.13.1+1"
   },
   {
     "checksum": "sha1:fad7032378b07c136953760779b347eae3f6b96a",
@@ -58481,6 +58571,32 @@
     "version": "25.0.5.0.3+1"
   },
   {
+    "checksum": "sha1:5ab00b2b65a7b052b88c404c484cdfbce1a9a5a1",
+    "created_at": "2026-11-25T04:45:38.742092",
+    "features": [
+      "javafx"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.5.1+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/25.0.5.1+1-25.0.5.1+6/bellsoft-liberica-vm-full-openjdk25.0.5.1+6-25.0.5.1+1-windows-amd64.zip",
+    "vendor": "liberica-nik",
+    "version": "25.0.5.1+1"
+  },
+  {
+    "checksum": "sha1:a4b58992c8a216891709bee97c757cb2aab34998",
+    "created_at": "2026-11-25T04:45:38.742092",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.5.1+6",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/bell-sw/LibericaNIK/releases/download/25.0.5.1+1-25.0.5.1+6/bellsoft-liberica-vm-openjdk25.0.5.1+6-25.0.5.1+1-windows-amd64.zip",
+    "vendor": "liberica-nik",
+    "version": "25.0.5.1+1"
+  },
+  {
     "checksum": null,
     "created_at": "2025-03-28T22:04:35.425188",
     "features": [],
@@ -59329,6 +59445,20 @@
     "version": "21.0.13.0.13.9"
   },
   {
+    "checksum": "sha256:bf0f6ffd08d6003b37c35de3f84d3ab7e7d52db0231a52aa3d1d3c2342882336",
+    "created_at": "2026-11-25T04:49:11.160511",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.13.1.14.2",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell21/releases/download/dragonwell-extended-21.0.13.1.14%2B2_jdk-21.0.13.1-ga/Alibaba_Dragonwell_Extended_21.0.13.1.14.2_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "21.0.13.1.14.2"
+  },
+  {
     "checksum": "sha256:597dbcf764dc011cc93f3c0e4bc7cd4482f0ecdfe578757aff837eb77d5b9963",
     "created_at": "2025-03-28T22:04:35.425188",
     "features": [
@@ -59621,6 +59751,20 @@
     "url": "https://github.com/dragonwell-project/dragonwell25/releases/download/dragonwell-extended-25.0.5.0.5%2B8_jdk-25.0.5-ga/Alibaba_Dragonwell_Extended_25.0.5.0.5.8_x64_windows.zip",
     "vendor": "dragonwell",
     "version": "25.0.5.0.5.8"
+  },
+  {
+    "checksum": "sha256:d5abe64f1e915dc04c1d6ff070a690a37f771ccb624c5784d75c0a0aeeaef154",
+    "created_at": "2026-11-24T05:46:03.033255",
+    "features": [
+      "extended"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.5.1.6.2",
+    "jvm_impl": "hotspot",
+    "url": "https://github.com/dragonwell-project/dragonwell25/releases/download/dragonwell-extended-25.0.5.1.6%2B2_jdk-25.0.5.1-ga/Alibaba_Dragonwell_Extended_25.0.5.1.6.2_x64_windows.zip",
+    "vendor": "dragonwell",
+    "version": "25.0.5.1.6.2"
   },
   {
     "checksum": "sha256:ce218fe1c381c33b9b6281cbb46df1e3df900b04edce6a08988e83171b941919",
@@ -60289,6 +60433,20 @@
     "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/graal-25.5.5.0.3/graalvm-community-jdk-25i5-25.0.5.0.3_windows-x64_bin.zip",
     "vendor": "graalvm-community",
     "version": "25.0.5.0.3"
+  },
+  {
+    "checksum": "sha256:1f534c46337f838880553c47f973a3d769b4058036288afcec930e2abddf06a1",
+    "created_at": "2026-11-25T04:48:53.38965",
+    "features": [
+      "innovation"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.5.1",
+    "jvm_impl": "graalvm",
+    "url": "https://github.com/graalvm/graalvm-ce-builds/releases/download/graal-25.6.5.1/graalvm-community-jdk-25i6-25.0.5.1_windows-x64_bin.zip",
+    "vendor": "graalvm-community",
+    "version": "25.0.5.1"
   },
   {
     "checksum": "sha256:1fa8d5f56e7d2bbc3033e7f1f562d9ff0d07431436ca7d781c40c5433eedd348",
