@@ -54,12 +54,26 @@ const MAX_ATTEMPTS: u32 = 3;
 /// large release listings: 5xx (e.g. 504 Gateway Timeout), timeouts and
 /// truncated response bodies.
 fn get_page(url: &str) -> Result<(Vec<GitHubRelease>, HeaderMap)> {
+    with_retry(
+        || HTTP.get_json_with_headers::<Vec<GitHubRelease>, _>(url),
+        is_transient,
+        sleep,
+        |attempt, err| warn!("failed to fetch {url} (attempt {attempt}/{MAX_ATTEMPTS}), retrying: {err}"),
+    )
+}
+
+fn with_retry<T>(
+    mut fetch: impl FnMut() -> Result<T>,
+    is_transient: impl Fn(&eyre::Report) -> bool,
+    mut sleep: impl FnMut(Duration),
+    mut on_retry: impl FnMut(u32, &eyre::Report),
+) -> Result<T> {
     let mut attempt = 1;
     loop {
-        match HTTP.get_json_with_headers::<Vec<GitHubRelease>, _>(url) {
+        match fetch() {
             Ok(result) => return Ok(result),
             Err(err) if attempt < MAX_ATTEMPTS && is_transient(&err) => {
-                warn!("failed to fetch {url} (attempt {attempt}/{MAX_ATTEMPTS}), retrying: {err}");
+                on_retry(attempt, &err);
                 sleep(Duration::from_secs(5 * u64::from(attempt)));
                 attempt += 1;
             }
@@ -86,4 +100,63 @@ fn next_page(headers: &HeaderMap) -> Option<String> {
     regex!(r#"<([^>]+)>; rel="next""#)
         .captures(&link)
         .map(|c| c.get(1).unwrap().as_str().to_string())
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use eyre::eyre;
+
+    fn transient(err: &eyre::Report) -> bool {
+        err.to_string() == "transient"
+    }
+
+    #[test]
+    fn retries_transient_error_then_succeeds() {
+        let mut calls = 0;
+        let mut sleeps = vec![];
+        let result = with_retry(
+            || {
+                calls += 1;
+                if calls < 3 { Err(eyre!("transient")) } else { Ok(calls) }
+            },
+            transient,
+            |d| sleeps.push(d),
+            |_, _| {},
+        );
+        assert_eq!(result.unwrap(), 3);
+        assert_eq!(sleeps, vec![Duration::from_secs(5), Duration::from_secs(10)]);
+    }
+
+    #[test]
+    fn gives_up_after_max_attempts() {
+        let mut calls = 0;
+        let result: Result<()> = with_retry(
+            || {
+                calls += 1;
+                Err(eyre!("transient"))
+            },
+            transient,
+            |_| {},
+            |_, _| {},
+        );
+        assert!(result.is_err());
+        assert_eq!(calls, MAX_ATTEMPTS);
+    }
+
+    #[test]
+    fn does_not_retry_permanent_error() {
+        let mut calls = 0;
+        let result: Result<()> = with_retry(
+            || {
+                calls += 1;
+                Err(eyre!("422 Unprocessable Entity"))
+            },
+            transient,
+            |_| {},
+            |_, _| {},
+        );
+        assert!(result.is_err());
+        assert_eq!(calls, 1);
+    }
 }
