@@ -276,6 +276,18 @@
     "version": "11.0.33"
   },
   {
+    "checksum": "sha256:45ade32d78b17c89bec096365c4ca80d21f15cfa5d7ea915b660c93bb3c5a7c6",
+    "created_at": "2026-11-28T00:21:55.792578",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "11.0.33.1",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-11.0.33.1-1-macos-aarch64.tar.gz",
+    "vendor": "microsoft",
+    "version": "11.0.33.1"
+  },
+  {
     "checksum": "sha256:1b516ffe4df3bcf3f916420b8887b865f6f54561e73bfc7f7e628d4d2179d7fd",
     "created_at": "2026-11-19T02:58:39.160521",
     "features": [],
@@ -466,6 +478,18 @@
     "url": "https://aka.ms/download-jdk/microsoft-jdk-17.0.21.0.2-macos-aarch64.tar.gz",
     "vendor": "microsoft",
     "version": "17.0.21.0.2"
+  },
+  {
+    "checksum": "sha256:f62a02db54516e248eec2d530f60aea4bf90c403b7491162563140d24274389f",
+    "created_at": "2026-11-28T00:21:55.792578",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.21.1",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-17.0.21.1-1-macos-aarch64.tar.gz",
+    "vendor": "microsoft",
+    "version": "17.0.21.1"
   },
   {
     "checksum": "sha256:dd01e975635e7d7d21f8862df63ec065c4dbf61a484c6c4468bb6ae022fc6986",
@@ -672,6 +696,18 @@
     "version": "21.0.13.0.2"
   },
   {
+    "checksum": "sha256:dfdde2116c13f8f6674d595753e70095f42085bf243195923e2e09d4c6cb06b8",
+    "created_at": "2026-11-28T00:21:55.792578",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13.1",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-21.0.13.1-1-macos-aarch64.tar.gz",
+    "vendor": "microsoft",
+    "version": "21.0.13.1"
+  },
+  {
     "checksum": "sha256:7143871c53d952caaa5a47fdb172c931be0573abd8d67eebb5de87075014ca46",
     "created_at": "2026-11-19T02:58:39.160521",
     "features": [],
@@ -862,6 +898,18 @@
     "url": "https://aka.ms/download-jdk/microsoft-jdk-25.0.5.0.2-macos-aarch64.tar.gz",
     "vendor": "microsoft",
     "version": "25.0.5.0.2"
+  },
+  {
+    "checksum": "sha256:30a242c5235b7c2a864c3a37ccc0418cc040232db283a175a8908f727678c25a",
+    "created_at": "2026-11-28T00:21:55.792578",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.1",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-25.0.5.1-1-macos-aarch64.tar.gz",
+    "vendor": "microsoft",
+    "version": "25.0.5.1"
   },
   {
     "checksum": "sha256:c18f5bfd07a8226d20388011b0fa07e3600fc1728a5d637aebbf842242e8f266",
@@ -3154,6 +3202,18 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.5.0.3-osx-aarch64-b700.17.tar.gz",
     "vendor": "jetbrains",
     "version": "25.0.5.0.3-b700.17"
+  },
+  {
+    "checksum": "sha512:669b8b5d936335b8c9407702eac3e84e94c3c411fa59fbbaa89db5c2ac3b8f458079eae250ef02602718ff78061063c686ee3cf24dae92e0d3f06cb4557a408c",
+    "created_at": "2026-11-28T03:45:17.535509",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.5.1-b508.47",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.5.1-osx-aarch64-b508.47.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.5.1-b508.47"
   },
   {
     "checksum": "sha512:c75f09ab37d9746eb903731e501af273b6c89fabfeef87c05cbc9dede1c39b2e1b7803e11e531b6f62051ecc837bde7c0d780cdf84c153006cfd9c0bbb6f0464",
@@ -6772,6 +6832,20 @@
     "version": "25.0.5.0.3-b700.17"
   },
   {
+    "checksum": "sha512:89f36a50be1471b9773a93fc408a861e9bdcbe7211124704db3bb54095d38e64d591aa49e710f8db60bdce3da724f602f798e0a5744893f73412bf1b081fa2ab",
+    "created_at": "2026-11-28T03:45:17.535509",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.5.1-b508.47",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25.0.5.1-osx-aarch64-b508.47.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.5.1-b508.47"
+  },
+  {
     "checksum": "sha512:825b6a02ae8f055ef2b3ced3488b3fe453c070b108a3b22fffcea006335c30abc0310c9f24e64528d7239386f2f60b0ccf7e14c48c82748a057ba9f2e835d300",
     "created_at": "2026-11-23T02:14:34.493361",
     "features": [
@@ -9846,6 +9920,18 @@
     "version": "25.0.5.0.3-b700.17"
   },
   {
+    "checksum": "sha512:4292e3b20c2dd4ac55638d3f464fdca23a33da7594356013f5054ce7df5859343bdf705a94db908490772beeebc5a615ff1746e75842d94d4c53d4e9051397cb",
+    "created_at": "2026-11-28T03:45:17.535509",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.1-b508.47",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.5.1-osx-aarch64-b508.47.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.5.1-b508.47"
+  },
+  {
     "checksum": "sha512:85e38eeb80f0f72698074933f63c1cf74ac8ca662333a4b6bff7f04cceb0a9756f32d4a51608bfa71ac05e60119d3234028c58992cdd5b5aa567da25c611cee0",
     "created_at": "2026-11-23T02:14:34.493361",
     "features": [],
@@ -12654,6 +12740,20 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.5.0.3-osx-aarch64-b700.17.tar.gz",
     "vendor": "jetbrains",
     "version": "25.0.5.0.3-b700.17"
+  },
+  {
+    "checksum": "sha512:ec6f563065c4b6692e5b29ad900ba50ad19f529d8deb065410149e9fa58e0a5c85a0be1789d82b66560bb0c06de3b879d7b49415a5666d809da31da3053d3ec2",
+    "created_at": "2026-11-28T03:45:17.535509",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.1-b508.47",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.5.1-osx-aarch64-b508.47.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.5.1-b508.47"
   },
   {
     "checksum": "sha512:585705d8cfac8e05de7ff307778ee73b3f4796c9ef5cfc3532ef854a7f6f048808c244cac0973767bd39cddc4186ac90b85eacff783f6ddab833f3859720aaca",
@@ -21308,6 +21408,34 @@
     "version": "17.70.201.0"
   },
   {
+    "checksum": "sha256:f4f2d23978c500b6b1d247804535eb936821779f31d03583e1f136b139ba679f",
+    "created_at": "2026-11-27T22:55:43.3725",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "17.0.21.1.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.70.203-ca-crac-jdk17.0.21.1.1-macosx_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "17.70.203.0"
+  },
+  {
+    "checksum": "sha256:c97d4177f208ca041cac9d6b053d7641472c7405c57f5bd2a97523674b15a5c1",
+    "created_at": "2026-11-27T22:55:43.3725",
+    "features": [
+      "crac"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.21.1.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu17.70.203-ca-crac-jdk17.0.21.1.1-macosx_aarch64.zip",
+    "vendor": "zulu",
+    "version": "17.70.203.0"
+  },
+  {
     "checksum": "sha256:3e63cdeeea22a50d9e886006736ef861b22a6b12b7cd8f4f612a2515c1a69652",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [
@@ -24528,6 +24656,34 @@
     "version": "21.54.201.0"
   },
   {
+    "checksum": "sha256:5a937103b2b9d13934b3bb082033cfd67d0a463fccd31347ddfbfb4078bfe159",
+    "created_at": "2026-11-27T22:55:43.3725",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "21.0.13.1.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.54.203-ca-crac-jdk21.0.13.1.1-macosx_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "21.54.203.0"
+  },
+  {
+    "checksum": "sha256:76aecac1a523d37f14d611b8cb9b72e26e7ca560debaa3cb50c998df9a0768e9",
+    "created_at": "2026-11-27T22:55:43.3725",
+    "features": [
+      "crac"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.13.1.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu21.54.203-ca-crac-jdk21.0.13.1.1-macosx_aarch64.zip",
+    "vendor": "zulu",
+    "version": "21.54.203.0"
+  },
+  {
     "checksum": "sha256:db9e943fa32d51179062a08a56dd1384df41543c8a2c031741376970307db76e",
     "created_at": "2025-03-28T22:02:46.826962",
     "features": [
@@ -26924,6 +27080,34 @@
     "version": "25.38.201.0"
   },
   {
+    "checksum": "sha256:cf52e8867e4bd941cabf111edd9c1a6e4faac0e6ea3f49ea7238a6595c72727c",
+    "created_at": "2026-11-27T22:55:43.3725",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.1.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.38.203-ca-crac-jdk25.0.5.1.1-macosx_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "25.38.203.0"
+  },
+  {
+    "checksum": "sha256:4768daad78c6ca82b900e7698a25cd796ed0080d8a0d8d4325c48b18e1abf557",
+    "created_at": "2026-11-27T22:55:43.3725",
+    "features": [
+      "crac"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.5.1.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu25.38.203-ca-crac-jdk25.0.5.1.1-macosx_aarch64.zip",
+    "vendor": "zulu",
+    "version": "25.38.203.0"
+  },
+  {
     "checksum": "sha256:f7d151adcc91b6a2513983066b0ca1db409df99d7a3a87ac31b21e60c978a5c7",
     "created_at": "2026-03-17T22:08:21.616921",
     "features": [],
@@ -27894,6 +28078,34 @@
     "url": "https://cdn.azul.com/zulu/bin/zulu27.30.201-ca-jre27.0.1.1-macosx_aarch64.zip",
     "vendor": "zulu",
     "version": "27.30.201.0"
+  },
+  {
+    "checksum": "sha256:476c8148bd8df4b353992c28e4ff6c390bb12da0db2baee47dc4708f1bea66b2",
+    "created_at": "2026-11-27T22:55:43.3725",
+    "features": [
+      "crac"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "27.0.1.1.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.30.203-ca-crac-jdk27.0.1.1.1-macosx_aarch64.tar.gz",
+    "vendor": "zulu",
+    "version": "27.30.203.0"
+  },
+  {
+    "checksum": "sha256:10cfce55dad262bbc5e0645003068a747db55bf9b3506449d5a451223b44837d",
+    "created_at": "2026-11-27T22:55:43.3725",
+    "features": [
+      "crac"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "27.0.1.1.1",
+    "jvm_impl": "hotspot",
+    "url": "https://cdn.azul.com/zulu/bin/zulu27.30.203-ca-crac-jdk27.0.1.1.1-macosx_aarch64.zip",
+    "vendor": "zulu",
+    "version": "27.30.203.0"
   },
   {
     "checksum": "sha256:42dd30d4e44bf9ebf160ba2af32184e644a86cc2debf676af863c7dababc91f8",

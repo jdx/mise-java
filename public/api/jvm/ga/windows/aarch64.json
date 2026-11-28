@@ -300,6 +300,18 @@
     "version": "11.0.33"
   },
   {
+    "checksum": "sha256:5a4a0f5448da11c756a7d45e2030d3063bce78d05630b16129c326dacea3d7da",
+    "created_at": "2026-11-28T00:21:55.792578",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "11.0.33.1",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-11.0.33.1-1-windows-aarch64.zip",
+    "vendor": "microsoft",
+    "version": "11.0.33.1"
+  },
+  {
     "checksum": "sha256:8465210c214c4e96e1b88652e2f2073816ff0785adaad6c28c23e9ddd292bab8",
     "created_at": "2026-11-19T02:58:39.160521",
     "features": [],
@@ -490,6 +502,18 @@
     "url": "https://aka.ms/download-jdk/microsoft-jdk-17.0.21.0.2-windows-aarch64.zip",
     "vendor": "microsoft",
     "version": "17.0.21.0.2"
+  },
+  {
+    "checksum": "sha256:40aa108f0aa028b26241a82e4787449139a98601f6e027504af82a191659abd8",
+    "created_at": "2026-11-28T00:21:55.792578",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "17.0.21.1",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-17.0.21.1-1-windows-aarch64.zip",
+    "vendor": "microsoft",
+    "version": "17.0.21.1"
   },
   {
     "checksum": "sha256:a352b538a9967a2361ed15ee3b560b1668e66ab89bdef4551ac2905c01cd9e57",
@@ -696,6 +720,18 @@
     "version": "21.0.13.0.2"
   },
   {
+    "checksum": "sha256:3545c14d3706dbea3165e8ab9bcc157f62ebed0da917b984cc02f577597ec991",
+    "created_at": "2026-11-28T00:21:55.792578",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "21.0.13.1",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-21.0.13.1-1-windows-aarch64.zip",
+    "vendor": "microsoft",
+    "version": "21.0.13.1"
+  },
+  {
     "checksum": "sha256:f2b0a3b3f684131c209b3d0f886d985bc6f5a1861cb4c3a4ea1450dd00218e7d",
     "created_at": "2026-11-19T02:58:39.160521",
     "features": [],
@@ -886,6 +922,18 @@
     "url": "https://aka.ms/download-jdk/microsoft-jdk-25.0.5.0.2-windows-aarch64.zip",
     "vendor": "microsoft",
     "version": "25.0.5.0.2"
+  },
+  {
+    "checksum": "sha256:7d1489ade6ba540211efe5a288c73e8315584d5023da1d2a341428ad15640c9c",
+    "created_at": "2026-11-28T00:21:55.792578",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.5.1",
+    "jvm_impl": "hotspot",
+    "url": "https://aka.ms/download-jdk/microsoft-jdk-25.0.5.1-1-windows-aarch64.zip",
+    "vendor": "microsoft",
+    "version": "25.0.5.1"
   },
   {
     "checksum": "sha256:a0fc659c6770e2c1a59329ae7dc5d080d4cc83230a62d78f7ffc77502ac3bba8",
@@ -3862,6 +3910,30 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.5.0.3-windows-aarch64-b700.17.zip",
     "vendor": "jetbrains",
     "version": "25.0.5.0.3-b700.17"
+  },
+  {
+    "checksum": "sha512:374e9ff3866d52bb8af9344bfc9c6ef8a2235e02b4081983222de5f306ba5cb83244fe3f04525015229386c3a80cb59749b8d31d1c3e8205854f4431e592a662",
+    "created_at": "2026-11-28T03:45:17.535509",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.5.1-b508.47",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.5.1-windows-aarch64-b508.47.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.5.1-b508.47"
+  },
+  {
+    "checksum": "sha512:0a51fbf1190ae1d00c7738ca40a867cfb7f4dd9b3bbb94ee29e1ec91a7a71a6ab73def15a02d7e5de9376f27fdc7f3298ce1e6cd1bc87d285f54dd8c07982b06",
+    "created_at": "2026-11-28T03:45:17.535509",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "25.0.5.1-b508.47",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr-25.0.5.1-windows-aarch64-b508.47.zip",
+    "vendor": "jetbrains",
+    "version": "25.0.5.1-b508.47"
   },
   {
     "checksum": "sha512:4b839396c23ebbeecd7d292f5af2f5212775d1905bfdfde9f6f35e90b28ad5e820f4ab02975ce8ed7877e4c2ef056e5b3af69d9b18f164ef5dc22ffdf28ac158",
@@ -7346,6 +7418,34 @@
     "version": "25.0.5.0.3-b700.17"
   },
   {
+    "checksum": "sha512:d015d9e8c561d0c63f04a0f20989eb4bac7aa5877364e4c12f1a3547c62ec77c9b48661033a68718c215f3e83d3ca9ea22288af89437102590a724179fe2bf28",
+    "created_at": "2026-11-28T03:45:17.535509",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jre",
+    "java_version": "25.0.5.1-b508.47",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25.0.5.1-windows-aarch64-b508.47.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.5.1-b508.47"
+  },
+  {
+    "checksum": "sha512:ffbe81a0711032beb1e36b0ed62b9a868fc0d423f87e4d5765be9e1545fa9c4a377fbdeb9faa4a6ece4f047b6a7e0e7bd67e08d73889809bf1bd634de2fc89ac",
+    "created_at": "2026-11-28T03:45:17.535509",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "zip",
+    "image_type": "jre",
+    "java_version": "25.0.5.1-b508.47",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbr_jcef-25.0.5.1-windows-aarch64-b508.47.zip",
+    "vendor": "jetbrains",
+    "version": "25.0.5.1-b508.47"
+  },
+  {
     "checksum": "sha512:1dbce47b42cca2c344dbd8ad8f216a49e576054f9127e38c35f70a583eef89b4dad43f676864d3dc3b634010306654b668095b95a64d208ad80eed05205fb7f6",
     "created_at": "2026-11-23T02:14:34.493361",
     "features": [
@@ -10456,6 +10556,30 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.5.0.3-windows-aarch64-b700.17.zip",
     "vendor": "jetbrains",
     "version": "25.0.5.0.3-b700.17"
+  },
+  {
+    "checksum": "sha512:06b7b487383868c9839996a8873c0dc84147efca1a28c13ace4c7cf05a34c45c158ab3c319df553897b2573527f4f69f497bb3f528ee90b8e07a4faa61cf5b83",
+    "created_at": "2026-11-28T03:45:17.535509",
+    "features": [],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.1-b508.47",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.5.1-windows-aarch64-b508.47.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.5.1-b508.47"
+  },
+  {
+    "checksum": "sha512:8826c6d0c61abcf7b4b62e72af3298c6366b137b5032a869b52cf7a94b0961dcb2e7e3cca3a13e2b14af025a30e3cf8374e1908cd502c1772ce586fa077d5989",
+    "created_at": "2026-11-28T03:45:17.535509",
+    "features": [],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.5.1-b508.47",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk-25.0.5.1-windows-aarch64-b508.47.zip",
+    "vendor": "jetbrains",
+    "version": "25.0.5.1-b508.47"
   },
   {
     "checksum": "sha512:9a9255e5273c8fceac32af6786199397c437555440082941a89911dfd358845c2ad41d4846c67acb29b74fc66921ff405caaf7086c2af47e65811d766e1e4ef2",
@@ -13966,6 +14090,34 @@
     "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.5.0.3-windows-aarch64-b700.17.zip",
     "vendor": "jetbrains",
     "version": "25.0.5.0.3-b700.17"
+  },
+  {
+    "checksum": "sha512:3c3b4902951ccc3ae2b0b79cd93bf709bef94624d9437c07deee655d8b7ffcc9211f11f04de3fa57413efc80efe19114dc1cacf85065d01cd33007042c434d47",
+    "created_at": "2026-11-28T03:45:17.535509",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "tar.gz",
+    "image_type": "jdk",
+    "java_version": "25.0.5.1-b508.47",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.5.1-windows-aarch64-b508.47.tar.gz",
+    "vendor": "jetbrains",
+    "version": "25.0.5.1-b508.47"
+  },
+  {
+    "checksum": "sha512:a0add654ea1ee9d91ec754945e72b7d92add2285319b088c74ee52e2286e401342c10b9890273fee457d84f94d1e6925380e634915e93454b7ceae209b5f0dbc",
+    "created_at": "2026-11-28T03:45:17.535509",
+    "features": [
+      "jcef"
+    ],
+    "file_type": "zip",
+    "image_type": "jdk",
+    "java_version": "25.0.5.1-b508.47",
+    "jvm_impl": "hotspot",
+    "url": "https://cache-redirector.jetbrains.com/intellij-jbr/jbrsdk_jcef-25.0.5.1-windows-aarch64-b508.47.zip",
+    "vendor": "jetbrains",
+    "version": "25.0.5.1-b508.47"
   },
   {
     "checksum": "sha512:4f508f215b62cd9230cb012bf133d039848f16fc3fe8367d83ca584a25a56eac07ebcbb1be15c19082229eb561dc6f693619c8b071a5815289f49139b87da778",
